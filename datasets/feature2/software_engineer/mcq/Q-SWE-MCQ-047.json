@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-047",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-04",
+  "skill_name": "Database Systems & Transaction Isolation",
+  "subtopic": "B-Tree and LSM-Tree Storage Engines",
+  "assessment_type": "mcq",
+  "difficulty": "hard",
+  "question_text": "What optimization prevents LSM-tree storage engines from performing costly disk seeks on SSTables that do not contain a queried key during point lookups?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Bloom Filters maintained in memory for each SSTable"
+    },
+    {
+      "id": "B",
+      "text": "Direct B-Tree pointer references"
+    },
+    {
+      "id": "C",
+      "text": "Disabling read cache"
+    },
+    {
+      "id": "D",
+      "text": "Sequential table scans"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "A Bloom filter tests set membership with zero false negatives. If the filter returns false, the key is guaranteed absent from that SSTable, completely skipping disk reads.",
+  "reference_solution": "Correct Choice: A. Rationale: A Bloom filter tests set membership with zero false negatives. If the filter returns false, the key is guaranteed absent from that SSTable, completely skipping disk reads.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

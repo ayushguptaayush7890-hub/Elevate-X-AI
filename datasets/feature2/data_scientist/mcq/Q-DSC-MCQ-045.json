@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-DSC-MCQ-045",
+  "role_id": "data_scientist",
+  "skill_id": "DSC-SKL-05",
+  "skill_name": "Data Storytelling & Business Metrics",
+  "subtopic": "Cohort Retention Analysis and Survival Curves",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "[Data Storytelling & Business Metrics - Q45] In non-parametric survival analysis, how does the Kaplan-Meier estimator handle right-censored observation subjects?",
+  "options": [
+    {
+      "id": "A",
+      "text": "It treats censored subjects as having experienced the event at the end of the study"
+    },
+    {
+      "id": "B",
+      "text": "It discards all censored subjects from the study cohort"
+    },
+    {
+      "id": "C",
+      "text": "It keeps subjects in the risk set up to their censoring timestamp, recalculating conditional survival probability only at known event times"
+    },
+    {
+      "id": "D",
+      "text": "It assumes event times follow an exponential hazard function"
+    }
+  ],
+  "correct_answer": "C",
+  "answer_explanation": "Kaplan-Meier estimates S(t) = Prod (1 - d_i / n_i). Censored subjects remain in the denominator risk set n_i until their censoring point, avoiding biased attrition estimates.",
+  "reference_solution": "Correct Choice: C. Rationale: Kaplan-Meier estimates S(t) = Prod (1 - d_i / n_i). Censored subjects remain in the denominator risk set n_i until their censoring point, avoiding biased attrition estimates.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

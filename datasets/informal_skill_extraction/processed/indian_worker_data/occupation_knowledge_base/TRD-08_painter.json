@@ -1,0 +1,135 @@
+{
+  "occupation_id": "TRD-08",
+  "file_slug": "TRD-08_painter",
+  "standard_occupation_name": "Painter",
+  "common_indian_names": [
+    "Rang Mistri",
+    "Painter",
+    "Putty Karigar",
+    "Polish Mistri",
+    "Rangwala"
+  ],
+  "hindi_names": [
+    "पेंटर",
+    "रंग मिस्त्री",
+    "पुट्टी कारीगर"
+  ],
+  "roman_hindi_names": [
+    "Rang Mistri",
+    "Painter",
+    "Putty Karigar"
+  ],
+  "regional_vocabulary": {
+    "delhi_up": [
+      "putty patti",
+      "regmar maarna",
+      "primer rolling",
+      "distemper",
+      "emulsion",
+      "doctor fixit",
+      "sheen",
+      "coat chadhana"
+    ],
+    "punjab_haryana": [
+      "wall polish",
+      "texture design",
+      "damp coat",
+      "touchwood"
+    ],
+    "maharashtra": [
+      "lakhdana polish",
+      "waterproofing paint",
+      "roller haath"
+    ]
+  },
+  "description": "Surface scraping, masonry crack filling, acrylic wall putty skimming, abrasive sanding, primer application, roller emulsion painting, and exterior waterproof coating on buildings.",
+  "daily_tasks": [
+    "Scraping old loose flaking paint and plaster efflorescence with steel scrapers",
+    "Mixing white-cement and acrylic wall putty powder into smooth paste",
+    "Applying first and second coats of wall putty with steel application blades",
+    "Hand-sanding dried putty surfaces with progressive sandpaper (grades 120 and 220)",
+    "Applying water-based primer coats using rollers to seal porous substrates",
+    "Rolling interior and exterior acrylic emulsion paints in cross-lap patterns",
+    "Cutting-in ceiling and door frame perimeter edges with fine sash brushes"
+  ],
+  "advanced_tasks": [
+    "Applying specialty metallic and rustic textured wall finishes with trowels and stencils",
+    "Waterproofing exterior masonry facades with elastomeric crack-bridging coatings",
+    "Hand-rubbing wood finishes with multi-layer French spirit polish and polyurethane sealer",
+    "Custom on-site paint tinting and colour matching by eye"
+  ],
+  "tools": [
+    "Steel putty application blades (patti: 6, 8, 10 inch)",
+    "Microfiber paint rollers (9 inch) & trays",
+    "Paint brushes (2, 3, 4 inch angled)",
+    "Paint scraper & wire brush",
+    "Extension telescopic poles",
+    "Sandpaper sanding block"
+  ],
+  "equipment": [
+    "Aluminum stepladders",
+    "Drop cloth floor protectors",
+    "Paint mixing paddle drill"
+  ],
+  "materials": [
+    "White cement-based wall putty",
+    "Water-thinnable wall primers",
+    "Interior acrylic emulsions (matte, silk, gloss)",
+    "Exterior weather-shield elastomeric paints",
+    "Abrasive silicon carbide sandpaper (80, 120, 220, 320 grit)",
+    "Waterproofing damp-proof chemicals"
+  ],
+  "work_processes": [
+    "Surface Scraping -> Primer Mist Coat -> Double Putty Skimming -> Sanding Smoothing -> Sealing Primer -> First Emulsion Coat -> Defect Touchup -> Final Finish Coat"
+  ],
+  "troubleshooting_tasks": [
+    "Remediating efflorescence and paint blistering caused by underlying wall dampness",
+    "Feathering out putty blade lap lines during fine sanding",
+    "Eliminating roller lap marks by maintaining a continuous wet paint edge",
+    "Fixing paint runs and sags by sanding when dry and re-coating"
+  ],
+  "quality_inspection": [
+    "Shining tangential inspection light across walls to verify zero hollows or scratch lines",
+    "Checking uniform paint film opacity without underlying putty shadows",
+    "Verifying razor-sharp clean perimeter lines around switchboards and ceiling cornices",
+    "Ensuring zero paint drips or splatters on customer tile floors and windows"
+  ],
+  "measurement_and_planning": [
+    "Calculating wall surface area and paint volume based on spreading rate (sq ft per liter)",
+    "Planning drying intervals between putty coats (min 4-6 hours) and paint coats"
+  ],
+  "safety_practices": [
+    "Wearing particulate dust respirators when dry-sanding wall putty",
+    "Maintaining 3-point ladder safety contact when painting elevated walls",
+    "Ensuring cross-ventilation when working with solvent-based enamel paints",
+    "Masking electrical outlets to prevent paint entry into live contacts"
+  ],
+  "maintenance": [
+    "Washing paint rollers and brushes in clean water immediately after use",
+    "Scraping dried putty buildup from steel application blades to maintain straight edges",
+    "Sealing partial paint cans airtight to prevent surface skin formation"
+  ],
+  "customer_communication": [
+    "Advising homeowners on washable vs non-washable paint finishes",
+    "Reviewing paint shade color cards under natural room daylight conditions",
+    "Estimating total job duration and masking furniture precautions"
+  ],
+  "transferable_competencies": [
+    "Chromatic aesthetic color sensibility",
+    "Surface texture tactile sensitivity",
+    "Meticulous masking and protection discipline"
+  ],
+  "official_vocational_references": {
+    "nsqf_qp_code": "CON/Q0501",
+    "nsqf_level": 3,
+    "ssc": "Construction Skill Development Council of India",
+    "dgt_cts_trade": "Painter (General) (CTS 030)"
+  },
+  "canonical_skills": [
+    "Blade Application of Double Coat Wall Putty",
+    "Abrasive Sanding and Wall Primer Sealing",
+    "Roller Application of Exterior Acrylic Emulsion",
+    "Damp-Proof Waterproof Barrier Coating",
+    "Perimeter Masking and Paint Cutting-In"
+  ]
+}

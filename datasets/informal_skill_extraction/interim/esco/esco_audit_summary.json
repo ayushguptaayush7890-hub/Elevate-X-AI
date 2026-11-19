@@ -1,0 +1,383 @@
+{
+  "file_overview": [
+    {
+      "filename": "ISCOGroups_en.csv",
+      "row_count": 619,
+      "col_count": 8,
+      "columns": [
+        "conceptType",
+        "conceptUri",
+        "code",
+        "preferredLabel",
+        "status",
+        "altLabels",
+        "inScheme",
+        "description"
+      ],
+      "null_cells": 619,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "broaderRelationsOccPillar_en.csv",
+      "row_count": 3648,
+      "col_count": 6,
+      "columns": [
+        "conceptType",
+        "conceptUri",
+        "conceptLabel",
+        "broaderType",
+        "broaderUri",
+        "broaderLabel"
+      ],
+      "null_cells": 0,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "broaderRelationsSkillPillar_en.csv",
+      "row_count": 20819,
+      "col_count": 6,
+      "columns": [
+        "conceptType",
+        "conceptUri",
+        "conceptLabel",
+        "broaderType",
+        "broaderUri",
+        "broaderLabel"
+      ],
+      "null_cells": 0,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "conceptSchemes_en.csv",
+      "row_count": 20,
+      "col_count": 7,
+      "columns": [
+        "conceptType",
+        "conceptSchemeUri",
+        "preferredLabel",
+        "title",
+        "status",
+        "description",
+        "hasTopConcept"
+      ],
+      "null_cells": 39,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "dictionary_en.csv",
+      "row_count": 160,
+      "col_count": 4,
+      "columns": [
+        "filename",
+        "data header",
+        "property",
+        "description"
+      ],
+      "null_cells": 47,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "digCompSkillsCollection_en.csv",
+      "row_count": 25,
+      "col_count": 10,
+      "columns": [
+        "conceptType",
+        "conceptUri",
+        "preferredLabel",
+        "status",
+        "skillType",
+        "reuseLevel",
+        "altLabels",
+        "description",
+        "broaderConceptUri",
+        "broaderConceptPT"
+      ],
+      "null_cells": 12,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "digitalSkillsCollection_en.csv",
+      "row_count": 1284,
+      "col_count": 10,
+      "columns": [
+        "conceptType",
+        "conceptUri",
+        "preferredLabel",
+        "status",
+        "skillType",
+        "reuseLevel",
+        "altLabels",
+        "description",
+        "broaderConceptUri",
+        "broaderConceptPT"
+      ],
+      "null_cells": 12,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "greenShareOcc_en.csv",
+      "row_count": 3590,
+      "col_count": 5,
+      "columns": [
+        "conceptType",
+        "conceptUri",
+        "code",
+        "preferredLabel",
+        "greenShare"
+      ],
+      "null_cells": 0,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "greenSkillsCollection_en.csv",
+      "row_count": 629,
+      "col_count": 10,
+      "columns": [
+        "conceptType",
+        "conceptUri",
+        "preferredLabel",
+        "status",
+        "skillType",
+        "reuseLevel",
+        "altLabels",
+        "description",
+        "broaderConceptUri",
+        "broaderConceptPT"
+      ],
+      "null_cells": 1,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "languageSkillsCollection_en.csv",
+      "row_count": 359,
+      "col_count": 10,
+      "columns": [
+        "conceptType",
+        "conceptUri",
+        "skillType",
+        "reuseLevel",
+        "preferredLabel",
+        "status",
+        "altLabels",
+        "description",
+        "broaderConceptUri",
+        "broaderConceptPT"
+      ],
+      "null_cells": 2,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "occupationSkillRelations_en.csv",
+      "row_count": 126051,
+      "col_count": 6,
+      "columns": [
+        "occupationUri",
+        "occupationLabel",
+        "relationType",
+        "skillType",
+        "skillUri",
+        "skillLabel"
+      ],
+      "null_cells": 59,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "occupations_en.csv",
+      "row_count": 3043,
+      "col_count": 15,
+      "columns": [
+        "conceptType",
+        "conceptUri",
+        "iscoGroup",
+        "preferredLabel",
+        "altLabels",
+        "hiddenLabels",
+        "status",
+        "modifiedDate",
+        "regulatedProfessionNote",
+        "scopeNote",
+        "definition",
+        "inScheme",
+        "description",
+        "code",
+        "naceCode"
+      ],
+      "null_cells": 8803,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "researchOccupationsCollection_en.csv",
+      "row_count": 122,
+      "col_count": 8,
+      "columns": [
+        "conceptType",
+        "conceptUri",
+        "preferredLabel",
+        "status",
+        "altLabels",
+        "description",
+        "broaderConceptUri",
+        "broaderConceptPT"
+      ],
+      "null_cells": 0,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "researchSkillsCollection_en.csv",
+      "row_count": 40,
+      "col_count": 10,
+      "columns": [
+        "conceptType",
+        "conceptUri",
+        "preferredLabel",
+        "status",
+        "skillType",
+        "reuseLevel",
+        "altLabels",
+        "description",
+        "broaderConceptUri",
+        "broaderConceptPT"
+      ],
+      "null_cells": 0,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "skillGroups_en.csv",
+      "row_count": 640,
+      "col_count": 11,
+      "columns": [
+        "conceptType",
+        "conceptUri",
+        "preferredLabel",
+        "altLabels",
+        "hiddenLabels",
+        "status",
+        "modifiedDate",
+        "scopeNote",
+        "inScheme",
+        "description",
+        "code"
+      ],
+      "null_cells": 1901,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "skillSkillRelations_en.csv",
+      "row_count": 5818,
+      "col_count": 5,
+      "columns": [
+        "originalSkillUri",
+        "originalSkillType",
+        "relationType",
+        "relatedSkillType",
+        "relatedSkillUri"
+      ],
+      "null_cells": 0,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "skillsHierarchy_en.csv",
+      "row_count": 640,
+      "col_count": 14,
+      "columns": [
+        "Level 0 URI",
+        "Level 0 preferred term",
+        "Level 1 URI",
+        "Level 1 preferred term",
+        "Level 2 URI",
+        "Level 2 preferred term",
+        "Level 3 URI",
+        "Level 3 preferred term",
+        "Description",
+        "Scope note",
+        "Level 0 code",
+        "Level 1 code",
+        "Level 2 code",
+        "Level 3 code"
+      ],
+      "null_cells": 1121,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "skills_en.csv",
+      "row_count": 13960,
+      "col_count": 13,
+      "columns": [
+        "conceptType",
+        "conceptUri",
+        "skillType",
+        "reuseLevel",
+        "preferredLabel",
+        "altLabels",
+        "hiddenLabels",
+        "status",
+        "modifiedDate",
+        "scopeNote",
+        "definition",
+        "inScheme",
+        "description"
+      ],
+      "null_cells": 41517,
+      "exact_duplicates": 0
+    },
+    {
+      "filename": "transversalSkillsCollection_en.csv",
+      "row_count": 95,
+      "col_count": 10,
+      "columns": [
+        "conceptType",
+        "conceptUri",
+        "skillType",
+        "reuseLevel",
+        "preferredLabel",
+        "status",
+        "altLabels",
+        "description",
+        "broaderConceptUri",
+        "broaderConceptPT"
+      ],
+      "null_cells": 0,
+      "exact_duplicates": 0
+    }
+  ],
+  "core_metrics": {
+    "occupations": {
+      "total_rows": 3043,
+      "unique_concepts": 3039,
+      "duplicate_uris": 8,
+      "valid_uri_format_count": 3043,
+      "unlinked_to_skills": 0
+    },
+    "skills": {
+      "total_rows": 13960,
+      "unique_concepts": 13939,
+      "duplicate_uris": 42,
+      "valid_uri_format_count": 13960,
+      "standalone_skills_not_linked_to_jobs": 464
+    },
+    "relations": {
+      "total_relationships": 126051,
+      "exact_duplicates": 0,
+      "pair_duplicates": 0,
+      "relation_types": {
+        "essential": 67600,
+        "optional": 58451
+      },
+      "skill_types": {
+        "skill/competence": 91608,
+        "knowledge": 34384,
+        "nan": 59
+      },
+      "broken_occupation_references": 0,
+      "broken_skill_references": 0
+    },
+    "skill_groups": {
+      "total_groups": 640,
+      "unique_groups": 640
+    },
+    "hierarchy": {
+      "occupations_mapped_to_isco": 3039,
+      "isco_group_relations": 609
+    }
+  }
+}

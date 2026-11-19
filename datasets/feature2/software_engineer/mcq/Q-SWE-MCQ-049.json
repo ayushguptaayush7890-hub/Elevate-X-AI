@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-049",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-05",
+  "skill_name": "API Architecture & Distributed RPC",
+  "subtopic": "RESTful Resource Modeling and HTTP Semantics",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "Which HTTP method is defined by RFC 9110 as idempotent but NOT safe?",
+  "options": [
+    {
+      "id": "A",
+      "text": "GET"
+    },
+    {
+      "id": "B",
+      "text": "POST"
+    },
+    {
+      "id": "C",
+      "text": "PUT"
+    },
+    {
+      "id": "D",
+      "text": "HEAD"
+    }
+  ],
+  "correct_answer": "C",
+  "answer_explanation": "PUT is idempotent (multiple identical requests result in the same server resource state) but not safe (it alters server state). GET/HEAD are both safe and idempotent.",
+  "reference_solution": "Correct Choice: C. Rationale: PUT is idempotent (multiple identical requests result in the same server resource state) but not safe (it alters server state). GET/HEAD are both safe and idempotent.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

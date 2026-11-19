@@ -1,0 +1,27 @@
+# Elevate X AI - Backend Requirements
+# Core Framework & Server
+fastapi>=0.115.0,<1.0.0
+uvicorn[standard]>=0.32.0,<1.0.0
+
+# Settings & Validation (Pydantic v2)
+pydantic>=2.9.2,<3.0.0
+pydantic-settings>=2.6.1,<3.0.0
+python-dotenv>=1.0.1,<2.0.0
+email-validator>=2.2.0,<3.0.0
+
+# Security & Authentication (JWT & Password Hashing)
+pyjwt[crypto]>=2.9.0,<3.0.0
+bcrypt>=4.2.0,<6.0.0
+
+# Database & Migrations (SQLAlchemy 2.0 & PostgreSQL)
+sqlalchemy>=2.0.36,<3.0.0
+alembic>=1.14.0,<2.0.0
+psycopg[binary]>=3.2.0,<4.0.0
+
+# HTTP Client (for testing & external calls)
+httpx>=0.27.2,<1.0.0
+
+# Testing
+pytest>=8.3.3,<9.0.0
+pytest-asyncio>=0.24.0,<1.0.0
+

@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-042",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-04",
+  "skill_name": "Database Systems & Transaction Isolation",
+  "subtopic": "ANSI SQL Isolation Levels (Read Committed to Serializable)",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "What is the 'Write Skew' anomaly in snapshot isolation (Repeatable Read)?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Two transactions read overlapping data sets, satisfy an invariant, but make disjoint writes that together violate the global integrity constraint"
+    },
+    {
+      "id": "B",
+      "text": "A transaction writes to a table while another drops it"
+    },
+    {
+      "id": "C",
+      "text": "A transaction reads dirty data from an uncommitted transaction"
+    },
+    {
+      "id": "D",
+      "text": "A transaction overwrites another transaction's committed write without reading it"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "Example: Two doctors on call both check if at least one doctor remains active. Both see 2 active, both request leave concurrently and write their own status to inactive. Now 0 doctors are on call.",
+  "reference_solution": "Correct Choice: A. Rationale: Example: Two doctors on call both check if at least one doctor remains active. Both see 2 active, both request leave concurrently and write their own status to inactive. Now 0 doctors are on call.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

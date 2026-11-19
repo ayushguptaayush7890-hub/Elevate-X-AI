@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-043",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-04",
+  "skill_name": "Database Systems & Transaction Isolation",
+  "subtopic": "Write-Ahead Logging (WAL) and MVCC Mechanics",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "In PostgreSQL's MVCC implementation, what happens to the physical disk space occupied by a row when an `UPDATE` statement is executed?",
+  "options": [
+    {
+      "id": "A",
+      "text": "The existing row is overwritten in place and previous bytes are lost"
+    },
+    {
+      "id": "B",
+      "text": "The existing row is marked dead (`xmax` set) and a new row version (`tuple`) is appended; disk space is reclaimed later by `VACUUM`"
+    },
+    {
+      "id": "C",
+      "text": "The table is locked and defragmented immediately"
+    },
+    {
+      "id": "D",
+      "text": "The update is stored in a separate undo log file"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "PostgreSQL does not update rows in place. An update writes a brand new tuple with `xmin` set to the updating transaction, setting `xmax` on the old tuple. Old dead tuples require VACUUM to reclaim space.",
+  "reference_solution": "Correct Choice: B. Rationale: PostgreSQL does not update rows in place. An update writes a brand new tuple with `xmin` set to the updating transaction, setting `xmax` on the old tuple. Old dead tuples require VACUUM to reclaim space.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

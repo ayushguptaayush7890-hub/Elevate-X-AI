@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-055",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-05",
+  "skill_name": "API Architecture & Distributed RPC",
+  "subtopic": "gRPC, Protocol Buffers and Streaming RPC",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "Why does Protocol Buffers wire format omit field names and rely exclusively on field tag numbers and wire types?",
+  "options": [
+    {
+      "id": "A",
+      "text": "To prevent reverse engineering of proprietary APIs"
+    },
+    {
+      "id": "B",
+      "text": "To achieve extreme compactness and sub-nanosecond binary decoding without string parsing overhead"
+    },
+    {
+      "id": "C",
+      "text": "To enable native encryption during transmission"
+    },
+    {
+      "id": "D",
+      "text": "Because field names are incompatible with UTF-8"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Omitting string field names from every serialized payload reduces payload size by up to 80% compared to JSON and allows fast bitmask decoding of field tag numbers.",
+  "reference_solution": "Correct Choice: B. Rationale: Omitting string field names from every serialized payload reduces payload size by up to 80% compared to JSON and allows fast bitmask decoding of field tag numbers.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

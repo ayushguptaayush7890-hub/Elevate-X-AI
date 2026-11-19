@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-DSC-MCQ-052",
+  "role_id": "data_scientist",
+  "skill_id": "DSC-SKL-02",
+  "skill_name": "Exploratory Data Analysis & Feature Engineering",
+  "subtopic": "Multicollinearity Diagnostics (Variance Inflation Factor - VIF)",
+  "assessment_type": "mcq",
+  "difficulty": "hard",
+  "question_text": "[Exploratory Data Analysis & Feature Engineering - Q52] In multiple linear regression, what does a Variance Inflation Factor (VIF) score greater than 10 for a feature indicate?",
+  "options": [
+    {
+      "id": "A",
+      "text": "The feature has zero explanatory power"
+    },
+    {
+      "id": "B",
+      "text": "Severe multicollinearity, meaning the feature's variance is largely explained by a linear combination of other features"
+    },
+    {
+      "id": "C",
+      "text": "The model has high heteroscedasticity"
+    },
+    {
+      "id": "D",
+      "text": "The residual errors follow a Poisson distribution"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "VIF = 1 / (1 - R^2_i). A VIF > 10 indicates that more than 90% of the variance of feature i is shared with other predictors, inflating coefficient standard errors.",
+  "reference_solution": "Correct Choice: B. Rationale: VIF = 1 / (1 - R^2_i). A VIF > 10 indicates that more than 90% of the variance of feature i is shared with other predictors, inflating coefficient standard errors.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

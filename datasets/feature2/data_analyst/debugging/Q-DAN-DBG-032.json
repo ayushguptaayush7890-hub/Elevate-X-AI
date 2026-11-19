@@ -1,0 +1,59 @@
+{
+  "question_id": "Q-DAN-DBG-032",
+  "role_id": "data_analyst",
+  "skill_id": "DAN-SKL-02",
+  "skill_name": "Data Cleaning, Wrangling & Transformation (Pandas)",
+  "subtopic": "Cartesian Join & Deduplication Debugging",
+  "assessment_type": "debugging",
+  "difficulty": "hard",
+  "question_text": "Diagnose and resolve a metric inflation bug caused by duplicate relational join keys (Data Cleaning, Wrangling & Transformation (Pandas)).\n\n### Defective Code:\n```python\nimport pandas as pd\ndef compute_churn_32(user_events_df):\n    # Defect: Inadvertent Cartesian product on merge without unique key enforcement\n    merged = pd.merge(user_events_df, user_events_df, on='user_id')\n    return merged.shape[0] # Returns artificially multiplied row counts\n```\n\n### Reported Anomaly / Error:\nRow explosion: Inner join on non-unique user_id creates duplicate record combinations and inflated metrics in Data Cleaning, Wrangling & Transformation (Pandas).\n\nIdentify the root cause of the defect and provide the corrected code snippet with rationale.",
+  "options": null,
+  "correct_answer": "import pandas as pd\ndef compute_churn_32(user_events_df):\n    # Fixed: Deduplicate user_id prior to join or merge on distinct composite keys\n    unique_users = user_events_df.drop_duplicates(subset=['user_id'])\n    return len(unique_users)",
+  "answer_explanation": "Merging on non-unique keys results in an M-to-N Cartesian product, exponentially distorting analytical counts and metrics.",
+  "reference_solution": "import pandas as pd\ndef compute_churn_32(user_events_df):\n    # Fixed: Deduplicate user_id prior to join or merge on distinct composite keys\n    unique_users = user_events_df.drop_duplicates(subset=['user_id'])\n    return len(unique_users)",
+  "coding_language": "python",
+  "sample_input": "Defective snippet causing runtime failure or logical discrepancy.",
+  "expected_output": "Corrected code snippet passing all edge conditions.",
+  "visible_test_cases": [
+    {
+      "input": "Defective state execution",
+      "output": "Root cause isolated and fixed"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "Edge condition regression check",
+      "output": "Zero regressions"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Root Cause Identification",
+        "weight": 0.4,
+        "description": "Accurately identifies the exact line and logic error causing failure."
+      },
+      {
+        "name": "Remediation Precision",
+        "weight": 0.4,
+        "description": "Provides clean fix without side effects or performance regressions."
+      },
+      {
+        "name": "Technical Rationale",
+        "weight": 0.2,
+        "description": "Explains underlying runtime or structural mechanics clearly."
+      }
+    ],
+    "max_score": 12.0
+  },
+  "estimated_time": 15,
+  "marks": 12,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/debugging",
+  "license": "MIT",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

@@ -1,0 +1,181 @@
+{
+  "registry_version": "1.0.0",
+  "updated_at": "2026-11-15T18:42:00Z",
+  "sources": [
+    {
+      "source_id": "SRC-MBPP",
+      "source_name": "Mostly Basic Python Problems (MBPP)",
+      "organization": "Google Research",
+      "original_url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "dataset_version": "v1.0",
+      "download_date": "2026-11-14",
+      "license": "Apache-2.0",
+      "commercial_use_allowed": true,
+      "attribution_required": true,
+      "redistribution_restrictions": "Retain copyright notice and license disclaimer.",
+      "relevant_roles": [
+        "software_engineer",
+        "backend_developer",
+        "ai_ml_engineer",
+        "data_scientist"
+      ],
+      "relevant_skills": [
+        "SWE-SKL-01",
+        "BED-SKL-01",
+        "AIM-SKL-01",
+        "DSC-SKL-02"
+      ],
+      "acquired_record_count": 420,
+      "processing_steps": "Curated clean algorithmic challenge prompts; extracted reference solutions and unit test assertions; added difficulty ratings, subtopic tags, and structured test-case harnesses."
+    },
+    {
+      "source_id": "SRC-HUMANEVAL",
+      "source_name": "HumanEval: Evaluating Large Language Models Trained on Code",
+      "organization": "OpenAI / BigCode",
+      "original_url": "https://github.com/openai/human-eval",
+      "dataset_version": "v1.0",
+      "download_date": "2026-11-14",
+      "license": "MIT",
+      "commercial_use_allowed": true,
+      "attribution_required": true,
+      "redistribution_restrictions": "None beyond MIT license copyright notice.",
+      "relevant_roles": [
+        "software_engineer",
+        "backend_developer"
+      ],
+      "relevant_skills": [
+        "SWE-SKL-01",
+        "BED-SKL-01"
+      ],
+      "acquired_record_count": 164,
+      "processing_steps": "Standardized Python function signatures; separated visible vs hidden unit test assertions; added role context and rubric criteria."
+    },
+    {
+      "source_id": "SRC-SPIDER-BIRD",
+      "source_name": "Spider & BIRD Cross-Domain Semantic Parsing and SQL Benchmark",
+      "organization": "Yale University & HKU / Alibaba",
+      "original_url": "https://yale-lily.github.io/spider",
+      "dataset_version": "v1.0 / BIRD v1.1",
+      "download_date": "2026-11-14",
+      "license": "CC-BY-SA-4.0",
+      "commercial_use_allowed": true,
+      "attribution_required": true,
+      "redistribution_restrictions": "ShareAlike under same terms.",
+      "relevant_roles": [
+        "software_engineer",
+        "backend_developer",
+        "data_analyst",
+        "data_scientist"
+      ],
+      "relevant_skills": [
+        "SWE-SKL-04",
+        "BED-SKL-02",
+        "DAN-SKL-01",
+        "DSC-SKL-02"
+      ],
+      "acquired_record_count": 350,
+      "processing_steps": "Extracted standalone SQLite DDL schemas and INSERT fixtures; verified deterministic query execution in memory; standardized expected tabular outputs."
+    },
+    {
+      "source_id": "SRC-OWASP",
+      "source_name": "OWASP Top 10 & WebGoat Security Benchmark",
+      "organization": "Open Web Application Security Project (OWASP)",
+      "original_url": "https://owasp.org/www-project-top-ten/",
+      "dataset_version": "2021/2023",
+      "download_date": "2026-11-14",
+      "license": "CC-BY-SA-4.0",
+      "commercial_use_allowed": true,
+      "attribution_required": true,
+      "redistribution_restrictions": "ShareAlike under same license.",
+      "relevant_roles": [
+        "cybersecurity_engineer",
+        "backend_developer",
+        "frontend_developer"
+      ],
+      "relevant_skills": [
+        "SEC-SKL-01",
+        "SEC-SKL-02",
+        "BED-SKL-04",
+        "FED-SKL-05"
+      ],
+      "acquired_record_count": 280,
+      "processing_steps": "Converted vulnerability demonstration scenarios and code patterns into debugging exercises, secure code refactoring challenges, and multi-factor threat model rubrics."
+    },
+    {
+      "source_id": "SRC-CNCF-K8S",
+      "source_name": "Kubernetes & Cloud Native Architecture Documentation & Lab Scenarios",
+      "organization": "Cloud Native Computing Foundation (Linux Foundation)",
+      "original_url": "https://github.com/kubernetes/website",
+      "dataset_version": "v1.30",
+      "download_date": "2026-11-14",
+      "license": "Apache-2.0",
+      "commercial_use_allowed": true,
+      "attribution_required": true,
+      "redistribution_restrictions": "Retain Apache-2.0 notices.",
+      "relevant_roles": [
+        "devops_engineer",
+        "cloud_engineer",
+        "backend_developer"
+      ],
+      "relevant_skills": [
+        "DVO-SKL-02",
+        "DVO-SKL-03",
+        "CLD-SKL-02",
+        "BED-SKL-03"
+      ],
+      "acquired_record_count": 320,
+      "processing_steps": "Curated realistic production manifests, broken YAML configurations, probe timing misconfigurations, and multi-node networking scenarios."
+    },
+    {
+      "source_id": "SRC-MDN-WEB",
+      "source_name": "MDN Web Docs Front-End Web Technology Specifications",
+      "organization": "Mozilla Developer Network",
+      "original_url": "https://github.com/mdn/content",
+      "dataset_version": "2026.11",
+      "download_date": "2026-11-14",
+      "license": "CC-BY-SA-2.5",
+      "commercial_use_allowed": true,
+      "attribution_required": true,
+      "redistribution_restrictions": "Attribution to Mozilla Contributors.",
+      "relevant_roles": [
+        "frontend_developer"
+      ],
+      "relevant_skills": [
+        "FED-SKL-01",
+        "FED-SKL-02",
+        "FED-SKL-03",
+        "FED-SKL-04"
+      ],
+      "acquired_record_count": 290,
+      "processing_steps": "Synthesized browser rendering invariants, microtask execution ordering, DOM event delegation mechanics, and accessibility keyboard trapping challenges."
+    },
+    {
+      "source_id": "SRC-ELEVATE-ORIGINAL",
+      "source_name": "Elevate X AI Technical Assessment Authoring Engine",
+      "organization": "Elevate X AI Team",
+      "original_url": "https://elevatex.ai/assessments/methodology",
+      "dataset_version": "v1.0",
+      "download_date": "2026-11-15",
+      "license": "Proprietary-ElevateX",
+      "commercial_use_allowed": true,
+      "attribution_required": false,
+      "redistribution_restrictions": "Proprietary platform asset.",
+      "relevant_roles": [
+        "software_engineer",
+        "ai_ml_engineer",
+        "data_scientist",
+        "frontend_developer",
+        "backend_developer",
+        "devops_engineer",
+        "data_analyst",
+        "cybersecurity_engineer",
+        "cloud_engineer"
+      ],
+      "relevant_skills": [
+        "ALL"
+      ],
+      "acquired_record_count": 2250,
+      "processing_steps": "Authored comprehensive scenario-based failure investigations, debugging exercises with simulated bug traces, and multi-tier system design specifications."
+    }
+  ]
+}

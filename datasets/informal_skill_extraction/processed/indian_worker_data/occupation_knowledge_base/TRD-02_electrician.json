@@ -1,0 +1,133 @@
+{
+  "occupation_id": "TRD-02",
+  "file_slug": "TRD-02_electrician",
+  "standard_occupation_name": "Electrician",
+  "common_indian_names": [
+    "Bijli Mistri",
+    "Wireman",
+    "Line Karigar",
+    "Electrical Technician"
+  ],
+  "hindi_names": [
+    "बिजली मिस्त्री",
+    "वायरमैन",
+    "इलेक्ट्रीशियन"
+  ],
+  "roman_hindi_names": [
+    "Bijli Mistri",
+    "Wireman",
+    "Line Karigar"
+  ],
+  "regional_vocabulary": {
+    "delhi_up": [
+      "jhirri kaatna",
+      "conduit daalna",
+      "MCB board",
+      "neutral-phase",
+      "inverter connection",
+      "earthing pit"
+    ],
+    "punjab_haryana": [
+      "kundi connection",
+      "meter sealing",
+      "motor starter",
+      "phase changer"
+    ],
+    "maharashtra": [
+      "casing-capping",
+      "three-phase meter",
+      "starter capacitor"
+    ]
+  },
+  "description": "Installation, testing, maintenance, and fault diagnosis of low-voltage domestic, commercial, and small industrial wiring systems, switchgear, distribution boards, and backup inverter systems.",
+  "daily_tasks": [
+    "Cutting wall chasing for concealed PVC conduits",
+    "Pulling multi-strand copper cables using steel wire fish snakes",
+    "Terminating MCB distribution boards and busbars",
+    "Wiring modular switches, sockets, and fan regulators",
+    "Diagnosing short circuits and tripping MCBs",
+    "Measuring voltage and continuity with digital multimeters",
+    "Installing ceiling fans, tube lights, and exhaust fans"
+  ],
+  "advanced_tasks": [
+    "Designing balanced load distribution across 3-phase supply panels",
+    "Constructing chemical/salt-charcoal earthing pits and measuring earth resistance (< 5 ohms)",
+    "Diagnosing floating neutral conditions in 3-phase 4-wire domestic systems",
+    "Rewinding ceiling fan single-phase induction stator coils"
+  ],
+  "tools": [
+    "Digital multimeter",
+    "Neon phase tester screwdriver",
+    "Insulated combination pliers (1000V)",
+    "Wire stripper & crimper",
+    "Masonry hammer & cold chisel",
+    "Hammer drill",
+    "Conduit pipe bender spring"
+  ],
+  "equipment": [
+    "Earth resistance tester (Megger)",
+    "Fish wire snake",
+    "Rotary hammer drill"
+  ],
+  "materials": [
+    "FR/FRLS copper flexible wires (1.0, 1.5, 2.5, 4.0, 6.0 sq mm)",
+    "Rigid PVC conduit pipes and solvent",
+    "MCBs (B-curve and C-curve, 6A-63A)",
+    "RCCB/ELCB (30mA)",
+    "Insulation tape",
+    "Copper earthing plate"
+  ],
+  "work_processes": [
+    "Conduit Chasing -> Pipe Layout -> Wire Pulling -> DB Dressing -> Switchboard Fitting -> Continuity Test -> Power Energization -> Load Verification"
+  ],
+  "troubleshooting_tasks": [
+    "Tracing neutral-to-ground leakage causing RCCB nuisance tripping",
+    "Isolating phase-to-neutral short circuits in concealed wall junction boxes",
+    "Detecting burnt or high-resistance neutral terminals causing voltage fluctuations",
+    "Replacing faulty 2.5 uF ceiling fan run capacitors"
+  ],
+  "quality_inspection": [
+    "Verifying correct wire color coding (Red/Yellow/Blue Phase, Black Neutral, Green Earth)",
+    "Checking tight mechanical terminal screws to prevent arching",
+    "Testing 230V AC phase-neutral voltage and < 2V neutral-earth voltage",
+    "Ensuring MCB amperage matches downstream wire ampacity"
+  ],
+  "measurement_and_planning": [
+    "Total connected load wattage calculation for ACs, geysers, and appliances",
+    "Sizing conduit diameter based on wire fill capacity (max 40% fill)"
+  ],
+  "safety_practices": [
+    "Mandatory de-energization and lockout before working on live busbars",
+    "Double-checking circuit isolation with calibrated phase tester",
+    "Wearing rubber-soled electrical hazard footwear",
+    "Zero naked twisted joints inside concealed conduits"
+  ],
+  "maintenance": [
+    "Inspecting distribution boards for thermal discolouration",
+    "Testing RCCB trip test buttons monthly",
+    "Adding water/saline solution to earthing pits before summer months"
+  ],
+  "customer_communication": [
+    "Explaining safety rationale for RCCB and proper earthing to homeowners",
+    "Quoting point-based vs running-foot wiring estimates",
+    "Advising on energy-saving BLDC fans and LED fixtures"
+  ],
+  "transferable_competencies": [
+    "Logical diagnostic fault-tree deduction",
+    "Blueprint schematic reading",
+    "High-hazard safety compliance"
+  ],
+  "official_vocational_references": {
+    "nsqf_qp_code": "ELE/Q3104",
+    "nsqf_level": 4,
+    "ssc": "Electronics Sector Skills Council of India",
+    "dgt_cts_trade": "Electrician (CTS 023) / Wireman (CTS 024)"
+  },
+  "canonical_skills": [
+    "Concealed Wall Conduit Chasing and Installation",
+    "Miniature Circuit Breaker (MCB) Distribution Board Wiring",
+    "Multimeter Phase and Neutral Voltage Diagnostics",
+    "Electrical Cable Pulling and Terminal Termination",
+    "Earth Resistance Verification and Earthing Pit Setup"
+  ]
+}

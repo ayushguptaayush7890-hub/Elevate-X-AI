@@ -1,0 +1,61 @@
+{
+  "question_id": "Q-SWE-SCN-010",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-02",
+  "skill_name": "Object-Oriented & Functional Design Patterns",
+  "subtopic": "Creational Patterns (Factory, Builder, Singleton)",
+  "assessment_type": "scenario",
+  "difficulty": "easy",
+  "question_text": "### Production Incident Scenario:\nProduction Incident #10: A high-throughput transaction processing engine reported severe performance degradation under Object-Oriented & Functional Design Patterns. P99 latency increased from 15ms to 850ms, and telemetry indicates elevated CPU instruction stalls and thread contention during 'Creational Patterns (Factory, Builder, Singleton)' operations.\n\n### Engineering Challenge:\nAs the Principal Software Engineer, what is the most technically rigorous root-cause remediation for this 'Creational Patterns (Factory, Builder, Singleton)' issue?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Increase the maximum thread pool limit by 4x and enable synchronous garbage collection passes."
+    },
+    {
+      "id": "B",
+      "text": "Restructure the critical section in Creational Patterns (Factory, Builder, Singleton) to utilize lock-free atomic primitives or fine-grained partition keys, eliminating thread convoying."
+    },
+    {
+      "id": "C",
+      "text": "Wrap the entire execution path in a global reentrant mutex to force strict serial execution."
+    },
+    {
+      "id": "D",
+      "text": "Disable thread affinity pinning and disable all memory cache prefetching on host CPUs."
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Under high concurrency in Object-Oriented & Functional Design Patterns, thread contention on coarse-grained synchronization locks causes thread convoying and frequent context switching. Migrating to lock-free atomic operations or partitioned striped locks resolves the bottleneck without latency spikes.",
+  "reference_solution": "Recommended Remediation: Option B. Rationale: Under high concurrency in Object-Oriented & Functional Design Patterns, thread contention on coarse-grained synchronization locks causes thread convoying and frequent context switching. Migrating to lock-free atomic operations or partitioned striped locks resolves the bottleneck without latency spikes.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Architecture & Operational Assessment",
+        "weight": 0.6,
+        "description": "Evaluates risk, system constraints, and root cause accurately."
+      },
+      {
+        "name": "Mitigation Strategy",
+        "weight": 0.4,
+        "description": "Selects the optimal zero-downtime or resilient recovery path."
+      }
+    ],
+    "max_score": 4.0
+  },
+  "estimated_time": 8,
+  "marks": 4,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/scenarios",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

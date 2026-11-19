@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-038",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-04",
+  "skill_name": "Database Systems & Transaction Isolation",
+  "subtopic": "ANSI SQL Isolation Levels (Read Committed to Serializable)",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "What concurrency anomaly is permitted under READ COMMITTED isolation but prevented under REPEATABLE READ isolation?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Dirty Read"
+    },
+    {
+      "id": "B",
+      "text": "Non-Repeatable (Fuzzy) Read"
+    },
+    {
+      "id": "C",
+      "text": "Write Skew"
+    },
+    {
+      "id": "D",
+      "text": "Phantom Read"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "In Read Committed, re-reading a row after another transaction commits an update yields the new value (non-repeatable read). Repeatable Read uses snapshot MVCC reads to guarantee identical rows.",
+  "reference_solution": "Correct Choice: B. Rationale: In Read Committed, re-reading a row after another transaction commits an update yields the new value (non-repeatable read). Repeatable Read uses snapshot MVCC reads to guarantee identical rows.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

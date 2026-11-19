@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-DSC-MCQ-054",
+  "role_id": "data_scientist",
+  "skill_id": "DSC-SKL-04",
+  "skill_name": "Experiment Design & A/B Testing",
+  "subtopic": "Variance Reduction Techniques (CUPED)",
+  "assessment_type": "mcq",
+  "difficulty": "hard",
+  "question_text": "[Experiment Design & A/B Testing - Q54] In online A/B testing, how does the CUPED (Controlled-experiment Using Pre-Experiment Data) method increase statistical power?",
+  "options": [
+    {
+      "id": "A",
+      "text": "By doubling the sample size via synthetic bootstrap samples"
+    },
+    {
+      "id": "B",
+      "text": "By using pre-experiment baseline covariates correlated with the outcome metric to subtract unexplained variance, narrowing confidence intervals"
+    },
+    {
+      "id": "C",
+      "text": "By converting two-tailed hypothesis tests into one-tailed tests"
+    },
+    {
+      "id": "D",
+      "text": "By removing users who convert in the control group"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "CUPED utilizes pre-experiment metric values Y_pre as a control variate: Y_cuped = Y - theta * (Y_pre - E[Y_pre]), drastically reducing variance and required sample size.",
+  "reference_solution": "Correct Choice: B. Rationale: CUPED utilizes pre-experiment metric values Y_pre as a control variate: Y_cuped = Y - theta * (Y_pre - E[Y_pre]), drastically reducing variance and required sample size.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

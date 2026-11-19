@@ -1,0 +1,573 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-11-15T18:41:00Z",
+  "roles": [
+    {
+      "role_id": "software_engineer",
+      "title": "Software Engineer",
+      "category": "Core Engineering",
+      "description": "Generalist software engineer specializing in algorithmic problem solving, clean system architecture, concurrency, and robust software craftsmanship.",
+      "skills": [
+        {
+          "skill_id": "SWE-SKL-01",
+          "name": "Data Structures & Algorithms",
+          "subtopics": [
+            "Array and Two-Pointer / Sliding Window Techniques",
+            "Binary Search and Monotonic Search Spaces",
+            "Tree and Graph Traversals (BFS, DFS, Dijkstra, A*)",
+            "Dynamic Programming and Memoization",
+            "Hash Maps, Heaps and Disjoint-Set Unions (DSU)"
+          ]
+        },
+        {
+          "skill_id": "SWE-SKL-02",
+          "name": "Object-Oriented & Functional Design Patterns",
+          "subtopics": [
+            "SOLID Principles and Component Coupling",
+            "Creational Patterns (Factory, Builder, Singleton)",
+            "Structural Patterns (Adapter, Decorator, Facade)",
+            "Behavioral Patterns (Strategy, Observer, Command)",
+            "Functional Composition and Immutability"
+          ]
+        },
+        {
+          "skill_id": "SWE-SKL-03",
+          "name": "Concurrency, Multithreading & Memory Management",
+          "subtopics": [
+            "Thread Synchronization, Mutexes and Semaphores",
+            "Deadlock Detection, Prevention and Race Conditions",
+            "Lock-Free Data Structures and Atomic Primitives",
+            "Garbage Collection Mechanics and Memory Leak Profiling",
+            "Asynchronous Event Loops and Coroutines"
+          ]
+        },
+        {
+          "skill_id": "SWE-SKL-04",
+          "name": "Database Systems & Transaction Isolation",
+          "subtopics": [
+            "ACID Properties and Transaction Boundaries",
+            "ANSI SQL Isolation Levels (Read Committed to Serializable)",
+            "Write-Ahead Logging (WAL) and MVCC Mechanics",
+            "B-Tree and LSM-Tree Storage Engines",
+            "Deadlock Resolution in Relational Transactions"
+          ]
+        },
+        {
+          "skill_id": "SWE-SKL-05",
+          "name": "API Architecture & Distributed RPC",
+          "subtopics": [
+            "RESTful Resource Modeling and HTTP Semantics",
+            "gRPC, Protocol Buffers and Streaming RPC",
+            "Idempotency Keys and Distributed Request Retries",
+            "API Rate Limiting (Token Bucket, Leaky Bucket)",
+            "Backward-Compatible Contract Versioning"
+          ]
+        }
+      ]
+    },
+    {
+      "role_id": "ai_ml_engineer",
+      "title": "AI/ML Engineer",
+      "category": "Data & Intelligence",
+      "description": "Engineer designing, training, optimizing, and deploying deep learning, LLM, and computer vision models into production.",
+      "skills": [
+        {
+          "skill_id": "AIM-SKL-01",
+          "name": "Machine Learning Foundations & Regularization",
+          "subtopics": [
+            "Bias-Variance Tradeoff and Generalization Bounds",
+            "L1/L2 Regularization, Dropout and Weight Decay",
+            "Loss Functions (Cross-Entropy, Triplet Loss, Focal Loss)",
+            "Optimization Algorithms (SGD, AdamW, Learning Rate Schedulers)",
+            "Evaluation Metrics (ROC-AUC, Precision-Recall AUC, F-beta)"
+          ]
+        },
+        {
+          "skill_id": "AIM-SKL-02",
+          "name": "Deep Learning Architectures (CNN, RNN, Transformers)",
+          "subtopics": [
+            "CNN Receptive Fields, Dilated Convolutions and ResNet Residuals",
+            "Multi-Head Self-Attention, KV Caching and FlashAttention",
+            "Positional Encodings (Sinusoidal, RoPE, ALiBi)",
+            "LayerNorm vs RMSNorm and Pre-LN vs Post-LN Dynamics",
+            "Mixture of Experts (MoE) Routing and Load Balancing"
+          ]
+        },
+        {
+          "skill_id": "AIM-SKL-03",
+          "name": "NLP & LLM Engineering",
+          "subtopics": [
+            "Byte-Pair Encoding (BPE) and WordPiece Tokenization",
+            "Dense Embeddings and Vector Similarity Search (HNSW, IVF-PQ)",
+            "Retrieval-Augmented Generation (RAG) Chunking & Re-ranking",
+            "Instruction Fine-Tuning with LoRA / QLoRA",
+            "Quantization (GPTQ, AWQ, GGUF) and Speculative Decoding"
+          ]
+        },
+        {
+          "skill_id": "AIM-SKL-04",
+          "name": "Computer Vision & Feature Extraction",
+          "subtopics": [
+            "Object Detection Anchors and Non-Maximum Suppression (NMS)",
+            "Image Segmentation (U-Net, Mask R-CNN)",
+            "Vision Transformers (ViT) and Patch Projections",
+            "Data Augmentation (Mixup, CutMix, RandAugment)",
+            "Edge Deployment and TensorRT / ONNX Optimization"
+          ]
+        },
+        {
+          "skill_id": "AIM-SKL-05",
+          "name": "MLOps, Model Serving & Drift Monitoring",
+          "subtopics": [
+            "Triton / TorchServe High-Throughput Model Serving",
+            "Feature Store Architecture (Feast, Hopsworks)",
+            "Data Drift and Concept Drift Detection (KS-Test, PSI)",
+            "A/B Model Canary Deployments and Shadow Routing",
+            "Model Lineage, Artifact Versioning and MLflow Tracking"
+          ]
+        }
+      ]
+    },
+    {
+      "role_id": "data_scientist",
+      "title": "Data Scientist",
+      "category": "Data & Intelligence",
+      "description": "Scientist applying rigorous statistical inference, exploratory data analysis, machine learning algorithms, and scientific experiment design to extract business insights.",
+      "skills": [
+        {
+          "skill_id": "DSC-SKL-01",
+          "name": "Probability, Statistics & Hypothesis Testing",
+          "subtopics": [
+            "Parametric vs Non-Parametric Tests (t-test, ANOVA, Mann-Whitney)",
+            "Central Limit Theorem and Sampling Distributions",
+            "Confidence Intervals and Margin of Error",
+            "p-value Misinterpretations and Multiple Testing Corrections (Bonferroni, FDR)",
+            "Bayesian Inference and Prior/Posterior Conjugacy"
+          ]
+        },
+        {
+          "skill_id": "DSC-SKL-02",
+          "name": "Exploratory Data Analysis & Feature Engineering",
+          "subtopics": [
+            "Multicollinearity Diagnostics (Variance Inflation Factor - VIF)",
+            "Target Encoding, Target Leakage and Out-of-Fold Encoding",
+            "Missing Data Mechanisms (MCAR, MAR, MNAR) and Imputation",
+            "Principal Component Analysis (PCA) and Dimensionality Reduction",
+            "Skewed Distributions and Box-Cox / Yeo-Johnson Power Transforms"
+          ]
+        },
+        {
+          "skill_id": "DSC-SKL-03",
+          "name": "Supervised & Unsupervised Modeling",
+          "subtopics": [
+            "Gradient Boosted Decision Trees (XGBoost, LightGBM, CatBoost)",
+            "Linear & Logistic Regression Assumptions and Residual Diagnostics",
+            "Class Imbalance Handling (SMOTE, Class Weights, Focal Loss)",
+            "Clustering Algorithms (K-Means, DBSCAN, Hierarchical)",
+            "Model Interpretability (SHAP Values, Partial Dependence Plots)"
+          ]
+        },
+        {
+          "skill_id": "DSC-SKL-04",
+          "name": "Experiment Design & A/B Testing",
+          "subtopics": [
+            "Statistical Power Analysis and Sample Size Estimation",
+            "Randomization Units and Clustered Assignment",
+            "Variance Reduction Techniques (CUPED)",
+            "Novelty Effects, Primacy Effects and Seasonality Filtering",
+            "Non-Inferiority and Superiority Testing Frameworks"
+          ]
+        },
+        {
+          "skill_id": "DSC-SKL-05",
+          "name": "Data Storytelling & Business Metrics",
+          "subtopics": [
+            "Customer Lifetime Value (LTV) and Churn Modeling",
+            "Cohort Retention Analysis and Survival Curves",
+            "Causal Inference (Difference-in-Differences, Synthetic Controls)",
+            "Trade-Off Curves and Cost-Sensitive Decision Thresholding",
+            "Executive Narrative Framing and Actionable Recommendations"
+          ]
+        }
+      ]
+    },
+    {
+      "role_id": "frontend_developer",
+      "title": "Frontend Developer",
+      "category": "Client Engineering",
+      "description": "Specialist in modern web architecture, JavaScript/TypeScript runtimes, reactive user interfaces, browser rendering pipelines, and accessible design.",
+      "skills": [
+        {
+          "skill_id": "FED-SKL-01",
+          "name": "Core JavaScript/TypeScript & Browser Runtime",
+          "subtopics": [
+            "Event Loop, Microtasks (Promises) and Macrotasks (Timers)",
+            "Closures, Lexical Scope and Execution Contexts",
+            "Prototypes, Prototypal Inheritance and ES Modules",
+            "TypeScript Generics, Conditional Types and Type Narrowing",
+            "DOM Event Propagation (Capturing, Target, Bubbling, Delegation)"
+          ]
+        },
+        {
+          "skill_id": "FED-SKL-02",
+          "name": "Modern UI Frameworks (React, Reconciliation, State)",
+          "subtopics": [
+            "Virtual DOM Reconciliation and Fiber Tree Mechanics",
+            "React Hooks Invariants and Dependency Arrays",
+            "State Management Architecture (Redux, Zustand, Context)",
+            "Server-Side Rendering (SSR) vs Static Site Generation (SSG)",
+            "Hydration Mismatches and Concurrent Mode Rendering"
+          ]
+        },
+        {
+          "skill_id": "FED-SKL-03",
+          "name": "Web Performance, Caching & Rendering Optimization",
+          "subtopics": [
+            "Core Web Vitals (LCP, INP, CLS) and Attribution",
+            "Critical Rendering Path, Layout Thrashing and Reflows",
+            "Code Splitting, Dynamic Imports and Tree Shaking",
+            "Browser Caching (Cache-Control, ETag, Service Workers)",
+            "Virtual Scrolling and Large Dataset DOM Virtualization"
+          ]
+        },
+        {
+          "skill_id": "FED-SKL-04",
+          "name": "CSS Architecture, Responsive Layouts & Accessibility (a11y)",
+          "subtopics": [
+            "CSS Grid, Flexbox Alignment and Box-Sizing Nuances",
+            "CSS Specificity, Cascade Layers (@layer) and BEM/Utility",
+            "WAI-ARIA Roles, Keyboard Navigation and Focus Trapping",
+            "Color Contrast, Semantic HTML and Screen Reader Compatibility",
+            "Container Queries and Responsive Design Breakpoints"
+          ]
+        },
+        {
+          "skill_id": "FED-SKL-05",
+          "name": "Client-Side Data Fetching, Offline Storage & Security",
+          "subtopics": [
+            "SWR / React Query Stale-While-Revalidate Patterns",
+            "IndexedDB, LocalStorage and Cache Storage API",
+            "Cross-Site Scripting (XSS) Prevention and Content Security Policy (CSP)",
+            "Cross-Origin Resource Sharing (CORS) and Preflight Requests",
+            "WebSockets and Server-Sent Events (SSE) Client Integration"
+          ]
+        }
+      ]
+    },
+    {
+      "role_id": "backend_developer",
+      "title": "Backend Developer",
+      "category": "Core Engineering",
+      "description": "Architect of resilient server applications, distributed microservices, secure APIs, relational database transaction layers, and asynchronous background workers.",
+      "skills": [
+        {
+          "skill_id": "BED-SKL-01",
+          "name": "Server-Side Frameworks & Asynchronous Programming",
+          "subtopics": [
+            "Non-Blocking I/O and Asynchronous Worker Pools",
+            "Middleware Pipelines and Global Error Interception",
+            "Connection Pool Sizing and Thread Exhaustion Defense",
+            "Graceful Shutdown and Drain Lifecycle Hooks",
+            "Streaming HTTP Responses and Backpressure Handling"
+          ]
+        },
+        {
+          "skill_id": "BED-SKL-02",
+          "name": "Relational & NoSQL Database Design & Indexing",
+          "subtopics": [
+            "B-Tree vs Hash vs GIN/GiST Index Selection",
+            "Composite Index Column Ordering and Covering Indexes",
+            "Database Normalization (1NF to BCNF) vs Selective Denormalization",
+            "Optimistic vs Pessimistic Concurrency Locking",
+            "Database Partitioning, Sharding Keys and Cross-Partition Overhead"
+          ]
+        },
+        {
+          "skill_id": "BED-SKL-03",
+          "name": "Distributed Systems, Message Brokers & Event Driven Architecture",
+          "subtopics": [
+            "Kafka / RabbitMQ Message Ordering and Consumer Groups",
+            "At-Least-Once vs Exactly-Once Processing Semantics",
+            "Transactional Outbox Pattern and Change Data Capture (CDC)",
+            "Saga Pattern for Distributed Transaction Orchestration",
+            "Distributed Locks (Redis Redlock, Zookeeper/etcd leases)"
+          ]
+        },
+        {
+          "skill_id": "BED-SKL-04",
+          "name": "Authentication, Authorization & API Security",
+          "subtopics": [
+            "JWT Verification, Token Expiration and Revocation Lists",
+            "Role-Based Access Control (RBAC) and Attribute-Based Access Control (ABAC)",
+            "Password Hashing Algorithms (Argon2id, bcrypt)",
+            "SQL Injection Defense via Parameterized Statements",
+            "Secure Session Management and CSRF Protection"
+          ]
+        },
+        {
+          "skill_id": "BED-SKL-05",
+          "name": "Caching Strategies, Invalidation & Idempotency",
+          "subtopics": [
+            "Cache-Aside, Write-Through and Write-Behind Topologies",
+            "Cache Stampede / Thundering Herd Prevention (Probabilistic Early Expiration)",
+            "Cache Invalidation Granularity and Key Versioning",
+            "Idempotency Key Storage, Locking and Payload Hashing",
+            "Distributed Rate Limiting with Redis Sliding Window"
+          ]
+        }
+      ]
+    },
+    {
+      "role_id": "devops_engineer",
+      "title": "DevOps Engineer",
+      "category": "Operations & Infrastructure",
+      "description": "Engineer automating CI/CD delivery pipelines, managing container orchestration platforms, maintaining telemetry infrastructure, and guaranteeing zero-downtime releases.",
+      "skills": [
+        {
+          "skill_id": "DVO-SKL-01",
+          "name": "Linux System Administration & Shell Scripting",
+          "subtopics": [
+            "Process Signals (SIGTERM, SIGKILL), Zombies and Orphan Reaping",
+            "File Permissions, POSIX ACLs and sticky bits",
+            "Linux Network Diagnostics (ss, netstat, tcpdump, iptables)",
+            "Memory Management (Virtual Memory, OOM Killer, Swap Tunables)",
+            "Bash Robust Scripting (set -euo pipefail, Trap Handlers)"
+          ]
+        },
+        {
+          "skill_id": "DVO-SKL-02",
+          "name": "Containerization & Image Optimization (Docker)",
+          "subtopics": [
+            "Multi-Stage Builds and Docker Layer Caching",
+            "Container Namespaces and Cgroups Resource Limits",
+            "Docker Networking (Bridge, Host, Overlay)",
+            "Rootless Containers and Image Vulnerability Scanning (Trivy)",
+            "Init Systems inside Containers (tini, dumb-init)"
+          ]
+        },
+        {
+          "skill_id": "DVO-SKL-03",
+          "name": "Container Orchestration (Kubernetes)",
+          "subtopics": [
+            "Pod Lifecycle, Liveness, Readiness and Startup Probes",
+            "Deployments, ReplicaSets and Rolling Updates vs Recreate",
+            "Service Types (ClusterIP, NodePort, LoadBalancer) and Ingress",
+            "ConfigMaps, Secrets and Volume Mount Race Conditions",
+            "Affinity, Anti-Affinity, Taints and Tolerations"
+          ]
+        },
+        {
+          "skill_id": "DVO-SKL-04",
+          "name": "CI/CD Pipelines & Automated Release Strategies",
+          "subtopics": [
+            "GitHub Actions / GitLab CI Job Dependencies and Caching",
+            "Blue-Green and Canary Deployment Orchestration",
+            "Automated Rollback Triggers based on Prometheus Metrics",
+            "Semantic Versioning and Artifact Promotion Lifecycles",
+            "Secret Management in Pipelines (Vault, KMS integration)"
+          ]
+        },
+        {
+          "skill_id": "DVO-SKL-05",
+          "name": "Observability, Telemetry & Incident Mitigation",
+          "subtopics": [
+            "The Four Golden Signals (Latency, Traffic, Errors, Saturation)",
+            "Prometheus Metrics Types (Counter, Gauge, Histogram, Summary)",
+            "OpenTelemetry Distributed Tracing and Span Context Propagation",
+            "Structured Logging and Centralized Aggregation (ELK, Loki)",
+            "Alertmanager Deduplication, Grouping and Routing Rules"
+          ]
+        }
+      ]
+    },
+    {
+      "role_id": "data_analyst",
+      "title": "Data Analyst",
+      "category": "Data & Intelligence",
+      "description": "Professional transforming raw transactional and operational data into executive dashboards, business intelligence insights, and actionable KPI measurements.",
+      "skills": [
+        {
+          "skill_id": "DAN-SKL-01",
+          "name": "Advanced SQL Querying & Relational Joins",
+          "subtopics": [
+            "Window Functions (ROW_NUMBER, RANK, DENSE_RANK, NTILE)",
+            "Common Table Expressions (CTEs) and Recursive Queries",
+            "Complex Joins (Self Joins, Full Outer Joins, Cross Joins)",
+            "Aggregations with GROUPING SETS, ROLLUP, and CUBE",
+            "Date/Time Arithmetic, Interval Bucketing and Timezone Normalization"
+          ]
+        },
+        {
+          "skill_id": "DAN-SKL-02",
+          "name": "Data Cleaning, Wrangling & Transformation (Pandas)",
+          "subtopics": [
+            "Handling Nulls, Coalescing and Imputation Strategies",
+            "String Manipulation, Regex Extraction and Standardization",
+            "Reshaping Data (Pivot Tables, Melt, Stack, Unstack)",
+            "Merging, Joining and Concatenating DataFrames",
+            "Vectorized Operations vs Slow Row-Wise Iterations"
+          ]
+        },
+        {
+          "skill_id": "DAN-SKL-03",
+          "name": "Statistical Analysis & Trend Forecasting",
+          "subtopics": [
+            "Descriptive Statistics (Mean, Median, Interquartile Range, Std Dev)",
+            "Moving Averages, Exponential Smoothing and Trend Decomposition",
+            "Correlation Analysis (Pearson vs Spearman Rank Correlation)",
+            "Outlier Detection (Z-Score, Tukey's IQR Method)",
+            "Cohort Drift and Seasonality Adjustment"
+          ]
+        },
+        {
+          "skill_id": "DAN-SKL-04",
+          "name": "BI Dashboards & Visual Analytics (PowerBI/Tableau/Metabase)",
+          "subtopics": [
+            "Star Schema vs Snowflake Schema Modeling for BI",
+            "Dimensionality, Fact Tables and Slowly Changing Dimensions (SCD)",
+            "Effective Visual Encodings (Avoiding Misleading Scales)",
+            "Interactive Filtering, Drill-Downs and Parameterization",
+            "Automated Data Refresh, Incremental Extracts and Caching"
+          ]
+        },
+        {
+          "skill_id": "DAN-SKL-05",
+          "name": "KPI Metric Definition & Business Impact Analysis",
+          "subtopics": [
+            "Revenue Metrics (MRR, ARR, ARPU, Net Revenue Retention)",
+            "Customer Acquisition Cost (CAC) vs Customer Lifetime Value (LTV)",
+            "Funnel Conversion Analysis and Drop-Off Pinpointing",
+            "Root Cause Decomposition of Metric Anomalies",
+            "Translating Analytical Findings into Actionable Executive Roadmaps"
+          ]
+        }
+      ]
+    },
+    {
+      "role_id": "cybersecurity_engineer",
+      "title": "Cybersecurity Engineer",
+      "category": "Security & Defense",
+      "description": "Specialist safeguarding systems against external and internal cyber threats, securing application code, hardening infrastructure, and conducting vulnerability analysis.",
+      "skills": [
+        {
+          "skill_id": "SEC-SKL-01",
+          "name": "Web Application Security & OWASP Top 10",
+          "subtopics": [
+            "SQL, NoSQL and OS Command Injection Mechanics",
+            "Cross-Site Scripting (Reflected, Stored, DOM-based XSS)",
+            "Cross-Site Request Forgery (CSRF) and SameSite Cookies",
+            "Server-Side Request Forgery (SSRF) and Cloud Metadata Access",
+            "Insecure Direct Object References (IDOR) and Broken Object Level Auth"
+          ]
+        },
+        {
+          "skill_id": "SEC-SKL-02",
+          "name": "Network Security, Firewalls & Protocols",
+          "subtopics": [
+            "TLS 1.3 Handshake, Cipher Suites and Perfect Forward Secrecy",
+            "Web Application Firewalls (WAF) Rule Inspection and Bypass Defense",
+            "Network Segmentation, DMZ and Zero Trust Architecture",
+            "TCP SYN Floods, DDoS Mitigation and Anycast Routing",
+            "DNS Security Extensions (DNSSEC) and DNS Spoofing Prevention"
+          ]
+        },
+        {
+          "skill_id": "SEC-SKL-03",
+          "name": "Cryptography, PKI & Key Management",
+          "subtopics": [
+            "Symmetric Encryption (AES-GCM) vs Asymmetric (RSA, ECC)",
+            "Cryptographic Hash Functions (SHA-256, SHA-3) and Salt/Pepper",
+            "Certificate Authorities, CRL, OCSP Stapling and Certificate Pinning",
+            "Hardware Security Modules (HSM) and Envelope Encryption",
+            "Common Cryptographic Implementation Pitfalls (ECB Mode, IV Reuse)"
+          ]
+        },
+        {
+          "skill_id": "SEC-SKL-04",
+          "name": "Identity and Access Management (IAM) & Least Privilege",
+          "subtopics": [
+            "IAM Policy Evaluation Logic (Explicit Deny, Allow, Resource Policies)",
+            "Multi-Factor Authentication (TOTP, WebAuthn/FIDO2) Mechanics",
+            "OAuth 2.0 Authorization Code Flow with PKCE",
+            "Service Account Token Rotation and Privilege Escalation Mitigation",
+            "Separation of Duties (SoD) and Role Engineering"
+          ]
+        },
+        {
+          "skill_id": "SEC-SKL-05",
+          "name": "Incident Response, Threat Modeling & Forensic Log Analysis",
+          "subtopics": [
+            "STRIDE Threat Modeling and Data Flow Diagrams",
+            "Security Information and Event Management (SIEM) Log Correlation",
+            "Detecting Lateral Movement and Living-off-the-Land (LotL) Attacks",
+            "Incident Containment, Forensic Preservation and Chain of Custody",
+            "Indicators of Compromise (IoC) vs Indicators of Attack (IoA)"
+          ]
+        }
+      ]
+    },
+    {
+      "role_id": "cloud_engineer",
+      "title": "Cloud Engineer",
+      "category": "Operations & Infrastructure",
+      "description": "Architect and operator of scalable, fault-tolerant, cost-effective, and highly available multi-region cloud infrastructures across AWS, Azure, and GCP.",
+      "skills": [
+        {
+          "skill_id": "CLD-SKL-01",
+          "name": "Cloud Infrastructure & Virtual Networks (VPC, Subnets)",
+          "subtopics": [
+            "VPC CIDR Subnetting (Public vs Private vs Isolated Subnets)",
+            "Route Tables, Internet Gateways, NAT Gateways and Egress-Only IGWs",
+            "Security Groups (Stateful) vs Network ACLs (Stateless)",
+            "VPC Peering, Transit Gateways and PrivateLink Endpoints",
+            "Hybrid Cloud Connectivity (IPsec VPN and Direct Connect)"
+          ]
+        },
+        {
+          "skill_id": "CLD-SKL-02",
+          "name": "Cloud Compute, Containers & Serverless",
+          "subtopics": [
+            "EC2 Instance Types, Placement Groups and Spot Instance Interruption Handling",
+            "Auto Scaling Groups, Dynamic Target Tracking and Cooldown Periods",
+            "Serverless (AWS Lambda) Cold Starts, Execution Limits and Concurrency Controls",
+            "Managed Kubernetes (EKS / GKE) Node Groups and Cluster Autoscaler",
+            "Application Load Balancers (ALB) vs Network Load Balancers (NLB)"
+          ]
+        },
+        {
+          "skill_id": "CLD-SKL-03",
+          "name": "Cloud Storage, Databases & Lifecycle Policies",
+          "subtopics": [
+            "Object Storage (S3) Consistency, Versioning, and Lifecycle Tiering",
+            "Block Storage (EBS) Volume Types (gp3, io2) and Multi-Attach / Snapshots",
+            "Managed Relational Databases (RDS / Aurora) Multi-AZ vs Read Replicas",
+            "Distributed NoSQL (DynamoDB) Partition Keys, Sort Keys and GSI Throttling",
+            "Backup Retention, Cross-Region Replication and Point-in-Time Recovery (PITR)"
+          ]
+        },
+        {
+          "skill_id": "CLD-SKL-04",
+          "name": "Infrastructure as Code (Terraform / CloudFormation)",
+          "subtopics": [
+            "Terraform State Management, Remote Backends and State Locking (DynamoDB)",
+            "Terraform Modules, Input Variables and Output Composition",
+            "Handling Infrastructure Drift and Targeted Imports (`terraform import`)",
+            "Resource Dependency Graph and Lifecycle Rules (prevent_destroy, create_before_destroy)",
+            "CI/CD GitOps Workflows for IaC (Atlantis, Terraform Cloud)"
+          ]
+        },
+        {
+          "skill_id": "CLD-SKL-05",
+          "name": "Cloud Security, Cost Optimization & High Availability / DR",
+          "subtopics": [
+            "Disaster Recovery Strategies (Backup & Restore, Pilot Light, Warm Standby, Multi-Region Active-Active)",
+            "Cloud Cost Optimization (Savings Plans, Reserved Instances, S3 Storage Lens)",
+            "IAM Permission Boundaries and Service Control Policies (SCPs)",
+            "Cloud Audit Logging (CloudTrail, VPC Flow Logs) and Centralized Log Bucketing",
+            "DDoS Resiliency (AWS Shield, CloudFront Edge Caching)"
+          ]
+        }
+      ]
+    }
+  ]
+}

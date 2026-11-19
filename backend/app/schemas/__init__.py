@@ -1,0 +1,81 @@
+"""
+Pydantic Schemas Package.
+Exports all API schemas.
+"""
+
+from app.schemas.health import HealthResponse, DatabaseHealthResponse
+from app.schemas.auth import (
+    UserRegisterRequest,
+    UserLoginRequest,
+    TokenResponse,
+    TokenRefreshRequest,
+    UserResponse,
+    AuthResponse,
+    PasswordChangeRequest,
+    ForgotPasswordRequest,
+    ResetPasswordRequest,
+    MessageResponse,
+)
+from app.schemas.profile import (
+    ProfileUpdateRequest,
+    ProfileResponse,
+    EducationCreate,
+    EducationResponse,
+    WorkExperienceCreate,
+    WorkExperienceUpdate,
+    WorkExperienceResponse,
+    CareerPreferenceUpdate,
+    CareerPreferenceResponse,
+)
+from app.schemas.skill import (
+    SkillCreate,
+    SkillResponse,
+    UserSkillCreate,
+    UserSkillUpdate,
+    UserSkillResponse,
+    SkillEvidenceCreate,
+    SkillEvidenceResponse,
+    SkillExtractionRequest,
+    SkillExtractionResponse,
+    ExtractedSkillSpan,
+    DetectedOccupation,
+    SkillExtractionMetadata,
+    SkillExtractionServiceStatus,
+)
+
+__all__ = [
+    "HealthResponse",
+    "DatabaseHealthResponse",
+    "UserRegisterRequest",
+    "UserLoginRequest",
+    "TokenResponse",
+    "TokenRefreshRequest",
+    "UserResponse",
+    "AuthResponse",
+    "PasswordChangeRequest",
+    "ForgotPasswordRequest",
+    "ResetPasswordRequest",
+    "MessageResponse",
+    "ProfileUpdateRequest",
+    "ProfileResponse",
+    "EducationCreate",
+    "EducationResponse",
+    "WorkExperienceCreate",
+    "WorkExperienceUpdate",
+    "WorkExperienceResponse",
+    "CareerPreferenceUpdate",
+    "CareerPreferenceResponse",
+    "SkillCreate",
+    "SkillResponse",
+    "UserSkillCreate",
+    "UserSkillUpdate",
+    "UserSkillResponse",
+    "SkillEvidenceCreate",
+    "SkillEvidenceResponse",
+    "SkillExtractionRequest",
+    "SkillExtractionResponse",
+    "ExtractedSkillSpan",
+    "DetectedOccupation",
+    "SkillExtractionMetadata",
+    "SkillExtractionServiceStatus",
+]

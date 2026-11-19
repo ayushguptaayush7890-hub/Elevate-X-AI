@@ -1,0 +1,51 @@
+{
+  "dataset_name": "Elevate X AI Feature 2 Technical Assessment Dataset",
+  "version": "1.0.0",
+  "generated_at": "2026-11-15T13:58:45.761136+00:00",
+  "total_questions": 2250,
+  "target_roles": [
+    "ai_ml_engineer",
+    "backend_developer",
+    "cloud_engineer",
+    "cybersecurity_engineer",
+    "data_analyst",
+    "data_scientist",
+    "devops_engineer",
+    "frontend_developer",
+    "software_engineer"
+  ],
+  "file_digests": {
+    "questions.jsonl": "f750bd94d37eca506f650c836f13720a7629aac75c332e0a57e323f12733c5f2",
+    "master_dataset.json": "ed66610126d99618e775143452a5485cfccb8de708ffdbcb5b3e0e19cb7b7442",
+    "questions_index.csv": "f0b17cf8f502435d82a0c312af46ccc3f85f87166d3aa2b63db6dcd2729f6492",
+    "roles_and_skills.json": "8b88e62719c795e875cf916396d1ef94e6f19d33a8986135244acc1b09bd17e1",
+    "source_registry.json": "6cddaf2d6d648ed0ff598f6c7e4999884eaf3d4f549dd5d130aa0272c2fb400d",
+    "license_audit.json": "352a3bf2fcf58c32098862a4c66d715b990be0988e15491868f0b2b2dc98362d",
+    "approved_questions.jsonl": "f750bd94d37eca506f650c836f13720a7629aac75c332e0a57e323f12733c5f2",
+    "question_coverage_report.json": "2ce016aea78df02cac5731700563323db058e58c9bd56fd62bb8c4b682a129ca",
+    "duplicate_detection_report.json": "337f87ea5bd18ca598bc6f0d3bf7ba32812fe3fce199bcf6142663d7f1d2c877",
+    "acceptance_gate_report.json": "5a2de28a37faac17ff863c55ff816d3a881f667c6c68e202423f94e4ae1f12b9"
+  },
+  "quality_metrics": {
+    "minimum_required_per_role": 250,
+    "achieved_per_role": {
+      "ai_ml_engineer": 250,
+      "backend_developer": 250,
+      "cloud_engineer": 250,
+      "cybersecurity_engineer": 250,
+      "data_analyst": 250,
+      "data_scientist": 250,
+      "devops_engineer": 250,
+      "frontend_developer": 250,
+      "software_engineer": 250
+    },
+    "all_roles_met_threshold": true,
+    "overall_difficulty_split": {
+      "easy": 675,
+      "medium": 1003,
+      "hard": 572
+    },
+    "acceptance_gate_verdict": "PASS",
+    "gates_passed": "13/13"
+  }
+}

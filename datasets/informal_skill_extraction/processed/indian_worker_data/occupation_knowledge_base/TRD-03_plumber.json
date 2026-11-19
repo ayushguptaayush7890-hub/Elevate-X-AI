@@ -1,0 +1,133 @@
+{
+  "occupation_id": "TRD-03",
+  "file_slug": "TRD-03_plumber",
+  "standard_occupation_name": "Plumber",
+  "common_indian_names": [
+    "Plumbing Mistri",
+    "Nalka Mistri",
+    "Pipe Fitter",
+    "Sanitary Karigar"
+  ],
+  "hindi_names": [
+    "नल मिस्त्री",
+    "प्लंबर",
+    "पाइप फिटर"
+  ],
+  "roman_hindi_names": [
+    "Plumber Mistri",
+    "Nalka Karigar",
+    "Sanitary Mistri"
+  ],
+  "regional_vocabulary": {
+    "delhi_up": [
+      "solvent lagana",
+      "GI chudi kaatna",
+      "angle valve",
+      "diverter fitting",
+      "cistern float",
+      "nahani trap"
+    ],
+    "punjab_haryana": [
+      "tullu pump",
+      "submersible fitting",
+      "CPVC chudi",
+      "leakage check"
+    ],
+    "maharashtra": [
+      "mixer tap",
+      "drain blockage",
+      "water tank connection"
+    ]
+  },
+  "description": "Installation, testing, maintenance, and unclogging of pressurized potable water piping, sanitary fixtures, concealed bathroom valves, drainage lines, and water pumps.",
+  "daily_tasks": [
+    "Measuring and cutting CPVC and UPVC pipes with ratchet cutters",
+    "Solvent cement jointing of water supply piping",
+    "Manual die-threading of GI steel pipes with cutting lubricant",
+    "Wrapping PTFE teflon tape clockwise on threaded joints",
+    "Mounting bib cocks, angle valves, pillars, and health faucets",
+    "Fixing ceramic washbasins, kitchen sinks, and water closets",
+    "Clearing clogged drain traps using hand auger snakes"
+  ],
+  "advanced_tasks": [
+    "Roughing-in concealed thermostatic shower diverters with level alignment",
+    "Hydrostatic pressure testing of plumbing manifolds at 10 bar",
+    "Installing multi-tank overhead water systems with non-return check valves",
+    "Laying 110mm SWR sewer lines with 1:50 gravity self-cleansing slope"
+  ],
+  "tools": [
+    "Pipe wrench (10, 14, 18 inch)",
+    "Adjustable spanner",
+    "Manual pipe die stock set",
+    "Ratchet CPVC cutter",
+    "Hacksaw frame & bi-metal blade",
+    "Drain snake auger",
+    "Spirit level",
+    "Blowtorch"
+  ],
+  "equipment": [
+    "Hydrostatic hand test pump",
+    "Water tube level",
+    "Core cutter machine"
+  ],
+  "materials": [
+    "CPVC, UPVC, and GI pipes (0.5 to 2 inch)",
+    "Solvent cement & primer",
+    "PTFE Teflon tape",
+    "Brass angle valves and bib cocks",
+    "Nahani traps, P-traps, SWR pipes",
+    "M-seal epoxy sealant"
+  ],
+  "work_processes": [
+    "Site Measurement -> Wall Chasing -> Pipe Sizing & Cutting -> Solvent / Thread Jointing -> Concealed Valve Setting -> Pressure Leak Test -> Sanitary Fixture Trimming"
+  ],
+  "troubleshooting_tasks": [
+    "Locating concealed pinhole water leaks inside tiled walls",
+    "Diagnosing continuous water running in toilet flush cistern float valves",
+    "Eliminating water hammer knocking noise in high-pressure lines",
+    "Clearing mineral scale buildup in instantaneous water geyser inlets"
+  ],
+  "quality_inspection": [
+    "Checking zero water weepage under 10 bar hydrostatic pressure",
+    "Verifying plumb vertical and true horizontal alignment with spirit level",
+    "Ensuring drainage traps maintain a minimum 50mm water seal",
+    "Confirming smooth 90-degree lever rotation on quarter-turn ceramic valves"
+  ],
+  "measurement_and_planning": [
+    "Calculating water line elevation heights from finished floor level (FFL)",
+    "Planning hot and cold pipe center-to-center spacing (exactly 150mm for wall mixers)"
+  ],
+  "safety_practices": [
+    "Adequate ventilation when applying volatile CPVC solvent cement vapors",
+    "Wearing safety goggles during pipe cutting and wall chiseling",
+    "Precaution against sewer gas exposure (hydrogen sulfide) when clearing inspection chambers"
+  ],
+  "maintenance": [
+    "Draining and cleaning overhead water storage tanks periodically",
+    "Replacing degraded neoprene tap washers and O-rings",
+    "Flushing lime deposits from aerators with white vinegar"
+  ],
+  "customer_communication": [
+    "Explaining the durability difference between CPVC, UPVC, and PPR",
+    "Advising customers on water pump pressure booster requirements",
+    "Diagnosing low water pressure complaints"
+  ],
+  "transferable_competencies": [
+    "Hydraulic pressure understanding",
+    "Physical endurance and tight-space maneuvering",
+    "Material chemical bonding knowledge"
+  ],
+  "official_vocational_references": {
+    "nsqf_qp_code": "PSC/Q0104",
+    "nsqf_level": 4,
+    "ssc": "Indian Plumbing Skills Council",
+    "dgt_cts_trade": "Plumber (CTS 031)"
+  },
+  "canonical_skills": [
+    "CPVC Pipe Solvent Cement Jointing",
+    "Galvanized Iron Pipe Manual Die Threading",
+    "Concealed Wall Diverter Installation",
+    "Flush Cistern Float Valve Inspection and Leak Testing",
+    "Sewer Drainage Pipe Alignment and Clog Clearing"
+  ]
+}

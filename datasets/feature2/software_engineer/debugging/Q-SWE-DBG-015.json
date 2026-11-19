@@ -1,0 +1,59 @@
+{
+  "question_id": "Q-SWE-DBG-015",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-05",
+  "skill_name": "API Architecture & Distributed RPC",
+  "subtopic": "Defect Isolation & Fix",
+  "assessment_type": "debugging",
+  "difficulty": "medium",
+  "question_text": "Investigate and rectify a critical runtime bug in API Architecture & Distributed RPC.\n\n### Defective Code:\n```python\ndef defective_routine_15(items):\n    # Defect: Missing boundary check and incorrect state update\n    for i in range(len(items)):\n        if items[i] == target:\n            return items[i + 1] # Index error when target is last element\n    return None\n```\n\n### Reported Anomaly / Error:\nIndexError: list index out of range when target element appears at the final array index in API Architecture & Distributed RPC.\n\nIdentify the root cause of the defect and provide the corrected code snippet with rationale.",
+  "options": null,
+  "correct_answer": "def defective_routine_15(items, target):\n    # Corrected: Safe boundary guard\n    for i in range(len(items) - 1):\n        if items[i] == target:\n            return items[i + 1]\n    return None",
+  "answer_explanation": "The loop failed to prevent index out of bounds on the final element. Restricting iteration to `len(items) - 1` prevents unhandled runtime exceptions.",
+  "reference_solution": "def defective_routine_15(items, target):\n    # Corrected: Safe boundary guard\n    for i in range(len(items) - 1):\n        if items[i] == target:\n            return items[i + 1]\n    return None",
+  "coding_language": "python",
+  "sample_input": "Defective snippet causing runtime failure or logical discrepancy.",
+  "expected_output": "Corrected code snippet passing all edge conditions.",
+  "visible_test_cases": [
+    {
+      "input": "Defective state execution",
+      "output": "Root cause isolated and fixed"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "Edge condition regression check",
+      "output": "Zero regressions"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Root Cause Identification",
+        "weight": 0.4,
+        "description": "Accurately identifies the exact line and logic error causing failure."
+      },
+      {
+        "name": "Remediation Precision",
+        "weight": 0.4,
+        "description": "Provides clean fix without side effects or performance regressions."
+      },
+      {
+        "name": "Technical Rationale",
+        "weight": 0.2,
+        "description": "Explains underlying runtime or structural mechanics clearly."
+      }
+    ],
+    "max_score": 8.0
+  },
+  "estimated_time": 15,
+  "marks": 8,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/debugging",
+  "license": "MIT",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

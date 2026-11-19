@@ -1,0 +1,6 @@
+trade_id,occupation_title,batch_file,target_workers,actual_workers,target_tasks,actual_tasks,completion_pct,status
+TRD-01,Tailor and Garment Worker,pilot_tailor_batch1.jsonl,25,0,50,0,0.0,pending_field_collection
+TRD-02,Electrician,pilot_electrician_batch1.jsonl,25,0,50,0,0.0,pending_field_collection
+TRD-03,Plumber,pilot_plumber_batch1.jsonl,25,0,50,0,0.0,pending_field_collection
+TRD-04,Motor Mechanic,pilot_motor_mechanic_batch1.jsonl,25,0,50,0,0.0,pending_field_collection
+

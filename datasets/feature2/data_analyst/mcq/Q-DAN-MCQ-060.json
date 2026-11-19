@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-DAN-MCQ-060",
+  "role_id": "data_analyst",
+  "skill_id": "DAN-SKL-05",
+  "skill_name": "KPI Metric Definition & Business Impact Analysis",
+  "subtopic": "Correlation Analysis (Pearson vs Spearman Rank Correlation)",
+  "assessment_type": "mcq",
+  "difficulty": "hard",
+  "question_text": "[KPI Metric Definition & Business Impact Analysis - Q60] Why is Spearman's rank correlation preferred over Pearson's correlation when assessing the relationship between two variables exhibiting a non-linear but strictly monotonic relationship with extreme outliers?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Spearman evaluates monotonic association based on ranks rather than linear raw values, making it robust to non-linearity and outliers"
+    },
+    {
+      "id": "B",
+      "text": "Pearson correlation only works on categorical text"
+    },
+    {
+      "id": "C",
+      "text": "Spearman correlation ignores negative values"
+    },
+    {
+      "id": "D",
+      "text": "Pearson requires zero degrees of freedom"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "Pearson measures strict linear proportionality and is sensitive to extreme values. Spearman assesses whether values increase together monotonically by ranking observations.",
+  "reference_solution": "Correct Choice: A. Rationale: Pearson measures strict linear proportionality and is sensitive to extreme values. Spearman assesses whether values increase together monotonically by ranking observations.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

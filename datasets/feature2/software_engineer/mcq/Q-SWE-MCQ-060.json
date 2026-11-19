@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-060",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-05",
+  "skill_name": "API Architecture & Distributed RPC",
+  "subtopic": "API Rate Limiting (Token Bucket, Leaky Bucket)",
+  "assessment_type": "mcq",
+  "difficulty": "hard",
+  "question_text": "Why does the Fixed Window Counter rate-limiting algorithm suffer from the 'Boundary Burst' vulnerability?",
+  "options": [
+    {
+      "id": "A",
+      "text": "It consumes O(N) memory per client"
+    },
+    {
+      "id": "B",
+      "text": "A client can send 100% of its quota at the very end of window 1 and another 100% at the immediate start of window 2, doubling permitted traffic over a 1-window span"
+    },
+    {
+      "id": "C",
+      "text": "It requires cryptographic hashing of client IPs"
+    },
+    {
+      "id": "D",
+      "text": "It causes high CPU usage during clock synchronization"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "In a 100 req/minute limit, sending 100 requests at 00:59 and 100 requests at 01:01 yields 200 requests in 2 seconds, potentially overwhelming downstream services.",
+  "reference_solution": "Correct Choice: B. Rationale: In a 100 req/minute limit, sending 100 requests at 00:59 and 100 requests at 01:01 yields 200 requests in 2 seconds, potentially overwhelming downstream services.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

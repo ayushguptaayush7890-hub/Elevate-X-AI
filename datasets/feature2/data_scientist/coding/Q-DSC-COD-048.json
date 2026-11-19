@@ -1,0 +1,63 @@
+{
+  "question_id": "Q-DSC-COD-048",
+  "role_id": "data_scientist",
+  "skill_id": "DSC-SKL-03",
+  "skill_name": "Supervised & Unsupervised Modeling",
+  "subtopic": "Statistical Computing & Feature Engineering",
+  "assessment_type": "coding",
+  "difficulty": "hard",
+  "question_text": "Write an analytical Data Science algorithm for **Challenge #48: Supervised & Unsupervised Modeling**.\n\n### Problem Specification:\n- Compute statistical estimators or feature engineering transformations using clean vectorized Pandas / NumPy.\n- Account for missing entries (NaN), zero-variance columns, and division-by-zero bounds.\n- Ensure deterministic reproducible results.",
+  "options": null,
+  "correct_answer": "import numpy as np\nimport pandas as pd\n\ndef compute_ds_metric_48(df: pd.DataFrame, target_col: str) -> dict:\n    # Vectorized statistical transformation for Supervised & Unsupervised Modeling\n    clean_series = df[target_col].dropna()\n    mean = np.mean(clean_series)\n    std = np.std(clean_series, ddof=1)\n    q25, q75 = np.percentile(clean_series, [25, 75])\n    iqr = q75 - q25\n    return {'mean': mean, 'std': std, 'iqr': iqr}",
+  "answer_explanation": "Evaluates statistical calculations, non-parametric percentiles, and NaN sanitization in Supervised & Unsupervised Modeling.",
+  "reference_solution": "import numpy as np\nimport pandas as pd\n\ndef compute_ds_metric_48(df: pd.DataFrame, target_col: str) -> dict:\n    # Vectorized statistical transformation for Supervised & Unsupervised Modeling\n    clean_series = df[target_col].dropna()\n    mean = np.mean(clean_series)\n    std = np.std(clean_series, ddof=1)\n    q25, q75 = np.percentile(clean_series, [25, 75])\n    iqr = q75 - q25\n    return {'mean': mean, 'std': std, 'iqr': iqr}",
+  "coding_language": "python",
+  "sample_input": "dataset_48 = pd.DataFrame(data)",
+  "expected_output": "metric_value_48 = 0.852",
+  "visible_test_cases": [
+    {
+      "input": "df_48_case1",
+      "output": "expected_metric_48_1"
+    },
+    {
+      "input": "df_48_case2",
+      "output": "expected_metric_48_2"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "df_48_edge_nan",
+      "output": "robust_handling_no_error"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Functional Correctness",
+        "weight": 0.5,
+        "description": "Passes all visible and hidden unit test cases without errors."
+      },
+      {
+        "name": "Time & Space Complexity",
+        "weight": 0.3,
+        "description": "Meets specified asymptotic computational boundaries."
+      },
+      {
+        "name": "Code Structure & Cleanliness",
+        "weight": 0.2,
+        "description": "Idiomatic naming, handling edge boundaries and null guards."
+      }
+    ],
+    "max_score": 14.0
+  },
+  "estimated_time": 35,
+  "marks": 14,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/coding",
+  "license": "Apache-2.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

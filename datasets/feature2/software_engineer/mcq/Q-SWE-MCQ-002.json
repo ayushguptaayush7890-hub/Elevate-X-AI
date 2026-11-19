@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-002",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-01",
+  "skill_name": "Data Structures & Algorithms",
+  "subtopic": "Array and Two-Pointer / Sliding Window Techniques",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "In a sliding window algorithm computing the minimum size subarray sum at least `target` with positive integers, what is the amortized time complexity of the right and left pointer movements?",
+  "options": [
+    {
+      "id": "A",
+      "text": "O(N^2) because of nested loops"
+    },
+    {
+      "id": "B",
+      "text": "O(N log N) due to binary window expansion"
+    },
+    {
+      "id": "C",
+      "text": "O(N) because each pointer visits each element at most once"
+    },
+    {
+      "id": "D",
+      "text": "O(N * target) proportional to value magnitude"
+    }
+  ],
+  "correct_answer": "C",
+  "answer_explanation": "Although the inner `while` loop contracts the left pointer, both `left` and `right` pointers advance monotonically from 0 to N. Thus, each element is enqueued and dequeued at most once, yielding strictly O(N) amortized time.",
+  "reference_solution": "Correct Choice: C. Rationale: Although the inner `while` loop contracts the left pointer, both `left` and `right` pointers advance monotonically from 0 to N. Thus, each element is enqueued and dequeued at most once, yielding strictly O(N) amortized time.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

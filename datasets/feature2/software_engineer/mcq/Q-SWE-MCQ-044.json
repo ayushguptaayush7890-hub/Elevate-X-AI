@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-044",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-04",
+  "skill_name": "Database Systems & Transaction Isolation",
+  "subtopic": "B-Tree and LSM-Tree Storage Engines",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "What is 'Write Amplification' in database storage engines?",
+  "options": [
+    {
+      "id": "A",
+      "text": "The ratio of total bytes written to non-volatile storage versus the logical payload bytes requested by the application"
+    },
+    {
+      "id": "B",
+      "text": "The increase in network bandwidth during replication"
+    },
+    {
+      "id": "C",
+      "text": "The number of concurrent insert queries"
+    },
+    {
+      "id": "D",
+      "text": "The size of the database connection pool"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "Due to writing to WAL, dirty page flushing in B-trees, or repeated multi-tier compaction in LSM-trees, writing 100 bytes of user data can cause 1,000+ bytes written to underlying storage disks.",
+  "reference_solution": "Correct Choice: A. Rationale: Due to writing to WAL, dirty page flushing in B-trees, or repeated multi-tier compaction in LSM-trees, writing 100 bytes of user data can cause 1,000+ bytes written to underlying storage disks.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

@@ -1,0 +1,67 @@
+{
+  "question_id": "Q-DAN-SQL-001",
+  "role_id": "data_analyst",
+  "skill_id": "DAN-SKL-01",
+  "skill_name": "Advanced SQL Querying & Relational Joins",
+  "subtopic": "Customer Cohort & LTV SQL",
+  "assessment_type": "sql",
+  "difficulty": "easy",
+  "question_text": "Write an ANSI SQL query to compute customer LTV, order frequency, and AOV from `customer_purchases_1`.",
+  "options": null,
+  "correct_answer": "SELECT customer_id,\n       SUM(amount) AS total_lifetime_value,\n       COUNT(*) AS order_count,\n       ROUND(AVG(amount), 2) AS aov\nFROM customer_purchases_1\nGROUP BY customer_id\nORDER BY total_lifetime_value DESC;",
+  "answer_explanation": "Aggregates customer lifetime value (LTV), total purchase count, and average order value (AOV).",
+  "reference_solution": "SELECT customer_id,\n       SUM(amount) AS total_lifetime_value,\n       COUNT(*) AS order_count,\n       ROUND(AVG(amount), 2) AS aov\nFROM customer_purchases_1\nGROUP BY customer_id\nORDER BY total_lifetime_value DESC;",
+  "coding_language": "sql",
+  "sample_input": "Relational database tables populated with sample records.",
+  "expected_output": "[{\"customer_id\": 102, \"total_lifetime_value\": 350.0, \"order_count\": 2, \"aov\": 175.0}, {\"customer_id\": 101, \"total_lifetime_value\": 250.0, \"order_count\": 2, \"aov\": 125.0}]",
+  "visible_test_cases": [
+    {
+      "input": "Sample DB execution",
+      "output": "[{\"customer_id\": 102, \"total_lifetime_value\": 350.0, \"order_count\": 2, \"aov\": 175.0}, {\"customer_id\": 101, \"total_lifetime_value\": 250.0, \"order_count\": 2, \"aov\": 125.0}]"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "Edge-case boundary verification",
+      "output": "Deterministic result set"
+    }
+  ],
+  "SQL_schema": "CREATE TABLE customer_purchases_1 (\n    purchase_id INTEGER PRIMARY KEY,\n    customer_id INTEGER NOT NULL,\n    amount DECIMAL(10, 2) NOT NULL,\n    purchase_date DATE NOT NULL\n);",
+  "sample_database": "INSERT INTO customer_purchases_1 VALUES (1, 101, 100.00, '2026-11-01');\nINSERT INTO customer_purchases_1 VALUES (2, 101, 150.00, '2026-11-05');\nINSERT INTO customer_purchases_1 VALUES (3, 102, 300.00, '2026-11-02');\nINSERT INTO customer_purchases_1 VALUES (4, 102, 50.00, '2026-11-04');",
+  "expected_SQL_result": [
+    {
+      "customer_id": 102,
+      "total_lifetime_value": 350.0,
+      "order_count": 2,
+      "aov": 175.0
+    },
+    {
+      "customer_id": 101,
+      "total_lifetime_value": 250.0,
+      "order_count": 2,
+      "aov": 125.0
+    }
+  ],
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Query Correctness & Result Match",
+        "weight": 0.6,
+        "description": "Returns exact rows, ordering, and aggregation without missing null handling."
+      },
+      {
+        "name": "Relational Efficiency & Index Friendliness",
+        "weight": 0.4,
+        "description": "Avoids cartesian products, redundant subqueries, and non-SARGable expressions."
+      }
+    ],
+    "max_score": 6.0
+  },
+  "estimated_time": 15,
+  "marks": 6,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/sql",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

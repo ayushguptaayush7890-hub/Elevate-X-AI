@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-AIM-MCQ-016",
+  "role_id": "ai_ml_engineer",
+  "skill_id": "AIM-SKL-01",
+  "skill_name": "Machine Learning Foundations & Regularization",
+  "subtopic": "Bias-Variance Tradeoff and Generalization Bounds",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "[Machine Learning Foundations & Regularization - Q16] Why does increasing L2 regularization (weight decay) coefficient lambda reduce model variance at the expense of increased bias?",
+  "options": [
+    {
+      "id": "A",
+      "text": "It forces weights to exact zero, performing aggressive feature selection"
+    },
+    {
+      "id": "B",
+      "text": "It constrains the Euclidean norm of weight vectors, smoothing the decision boundary and penalizing extreme parameter sensitivity"
+    },
+    {
+      "id": "C",
+      "text": "It multiplies the gradient learning rate by lambda"
+    },
+    {
+      "id": "D",
+      "text": "It increases the effective degrees of freedom in non-linear models"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "L2 regularization adds a quadratic penalty on weights, pulling parameter values towards zero. This reduces parameter magnitude and restricts model capacity, decreasing variance.",
+  "reference_solution": "Correct Choice: B. Rationale: L2 regularization adds a quadratic penalty on weights, pulling parameter values towards zero. This reduces parameter magnitude and restricts model capacity, decreasing variance.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

@@ -1,0 +1,141 @@
+{
+  "occupation_id": "TRD-01",
+  "file_slug": "TRD-01_tailor_garment",
+  "standard_occupation_name": "Tailor and Garment Worker",
+  "common_indian_names": [
+    "Darzi",
+    "Masterji",
+    "Karigar",
+    "Silai Master",
+    "Sewing Machine Operator"
+  ],
+  "hindi_names": [
+    "दर्ज़ी",
+    "सिलाई मास्टर",
+    "कारीगर",
+    "टेलर"
+  ],
+  "roman_hindi_names": [
+    "Darzi",
+    "Masterji",
+    "Silai Karigar",
+    "Cutting Master"
+  ],
+  "regional_vocabulary": {
+    "delhi_up": [
+      "silai",
+      "katora cutting",
+      "bakram",
+      "asteen",
+      "gala",
+      "fall piko",
+      "chaak"
+    ],
+    "rajasthan_gujarat": [
+      "choli cut",
+      "kanjari",
+      "lehenga ghera",
+      "aari taari",
+      "gota patti"
+    ],
+    "maharashtra": [
+      "nauvari pleating",
+      "blouse katori",
+      "dhoti stitching"
+    ]
+  },
+  "description": "Custom drafting, cutting, stitching, fitting, and alteration of men's, women's, and children's garments using manual and industrial lockstitch machinery in bespoke shops and micro-factories.",
+  "daily_tasks": [
+    "Taking body measurements with flexible tape",
+    "Inspecting client fabric for grain line and weaving defects",
+    "Chalking cutting pattern directly on cloth",
+    "Cutting fabric with heavy tailoring shears",
+    "Operating industrial single-needle lockstitch machine",
+    "Finishing seam edges with 3-thread overlock",
+    "Iron pressing seams flat with heavy steam or coal iron",
+    "Conducting fitting trials on clients"
+  ],
+  "advanced_tasks": [
+    "Pattern drafting for non-standard posture (stooped shoulders, scoliosis)",
+    "Lining and canvas floating in formal blazer chest pieces",
+    "Hand-bound buttonhole fabrication",
+    "Wedding lehenga multi-kali panel tapering and cancan netting insertion"
+  ],
+  "tools": [
+    "Single-needle lockstitch machine",
+    "3/5-thread overlock machine",
+    "Measuring tape",
+    "Tailor's chalk (mitti)",
+    "High-carbon fabric shears (10-12 inch)",
+    "Iron press",
+    "Seam ripper",
+    "Pinking shears"
+  ],
+  "equipment": [
+    "Steam iron boiler",
+    "Pattern drafting table",
+    "Buttonhole machine attachment",
+    "Mannequin dummy"
+  ],
+  "materials": [
+    "Cotton, silk, rayon, denim, polyester fabrics",
+    "Fusible canvas interlining (bakram)",
+    "Spun polyester threads (size 40/2)",
+    "Nylon and brass zippers",
+    "Hooks, eyes, buttons"
+  ],
+  "work_processes": [
+    "Measurement -> Pattern Drafting -> Fabric Cutting -> Interlining Fusing -> Assembly Stitching -> Overlocking -> Buttoning -> Trial Fitting -> Final Alteration & Pressing"
+  ],
+  "troubleshooting_tasks": [
+    "Balancing upper tension discs and bobbin tension to eliminate thread loops",
+    "Replacing burred needles causing skipped stitches or fabric pulls",
+    "Clearing compacted lint from feed dogs causing feed slippage",
+    "Rectifying armhole puckering by re-easing sleeve caps"
+  ],
+  "quality_inspection": [
+    "Verifying seam allowance width (minimum 1.5 cm)",
+    "Checking symmetry of collar points and pocket placements",
+    "Evaluating stitch density (10–12 stitches per inch)",
+    "Confirming zero tension puckering along long side seams"
+  ],
+  "measurement_and_planning": [
+    "Torso length, chest, waist, hip, shoulder width, sleeve length, bicep, wrist, inseam, outseam, crotch depth",
+    "Nesting layout to maximize fabric utilization on 44-inch and 54-inch widths"
+  ],
+  "safety_practices": [
+    "Maintaining finger clearance behind needle guard bar",
+    "Unplugging electric irons when unattended to prevent fabric scorching/fire",
+    "Safe storage of shears in closed position",
+    "Ergonomic seating to avoid chronic lumbar strain"
+  ],
+  "maintenance": [
+    "Daily cleaning of bobbin case and shuttle race",
+    "Twice-weekly lubrication with clear mineral machine oil",
+    "Periodic sharpening of shears on oilstone"
+  ],
+  "customer_communication": [
+    "Advising on fabric drape suitability for requested designs",
+    "Discussing ease margins (loose vs slim fit)",
+    "Agreeing on delivery commitments and alteration timelines"
+  ],
+  "transferable_competencies": [
+    "Spatial geometric visualization",
+    "Fine manual dexterity",
+    "Quality control inspection",
+    "Customer dispute negotiation"
+  ],
+  "official_vocational_references": {
+    "nsqf_qp_code": "AMH/Q1947",
+    "nsqf_level": 4,
+    "ssc": "Apparel Made-Ups & Home Furnishing Sector Skill Council",
+    "dgt_cts_trade": "Sewing Technology / Dress Making (CTS 033)"
+  },
+  "canonical_skills": [
+    "Single-Needle Lockstitch Garment Assembly",
+    "Overlock Seam Edging and Finishing",
+    "Fusible Interlining Application and Collar Stitching",
+    "Garment Pattern Measurement and Fabric Cutting",
+    "Garment Fitting and Tailoring Alteration"
+  ]
+}

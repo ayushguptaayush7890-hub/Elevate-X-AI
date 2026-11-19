@@ -1,0 +1,65 @@
+{
+  "question_id": "Q-DVO-SQL-026",
+  "role_id": "devops_engineer",
+  "skill_id": "DVO-SKL-05",
+  "skill_name": "Observability, Telemetry & Incident Mitigation",
+  "subtopic": "Container Telemetry & Restart Audit SQL",
+  "assessment_type": "sql",
+  "difficulty": "hard",
+  "question_text": "Write an ANSI SQL query to identify unstable pods with restarts > 0 and calculate their average CPU load from `container_metrics_26`.",
+  "options": null,
+  "correct_answer": "SELECT pod_name, MAX(restart_count) AS total_restarts, ROUND(AVG(cpu_usage_cores), 2) AS avg_cpu\nFROM container_metrics_26\nGROUP BY pod_name\nHAVING MAX(restart_count) > 0\nORDER BY total_restarts DESC;",
+  "answer_explanation": "Filters pods experiencing container crashes and restarts, computing their average CPU usage.",
+  "reference_solution": "SELECT pod_name, MAX(restart_count) AS total_restarts, ROUND(AVG(cpu_usage_cores), 2) AS avg_cpu\nFROM container_metrics_26\nGROUP BY pod_name\nHAVING MAX(restart_count) > 0\nORDER BY total_restarts DESC;",
+  "coding_language": "sql",
+  "sample_input": "Relational database tables populated with sample records.",
+  "expected_output": "[{\"pod_name\": \"payment-app\", \"total_restarts\": 3, \"avg_cpu\": 0.9}, {\"pod_name\": \"auth-app\", \"total_restarts\": 1, \"avg_cpu\": 0.4}]",
+  "visible_test_cases": [
+    {
+      "input": "Sample DB execution",
+      "output": "[{\"pod_name\": \"payment-app\", \"total_restarts\": 3, \"avg_cpu\": 0.9}, {\"pod_name\": \"auth-app\", \"total_restarts\": 1, \"avg_cpu\": 0.4}]"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "Edge-case boundary verification",
+      "output": "Deterministic result set"
+    }
+  ],
+  "SQL_schema": "CREATE TABLE container_metrics_26 (\n    metric_id INTEGER PRIMARY KEY,\n    pod_name VARCHAR(50) NOT NULL,\n    cpu_usage_cores FLOAT NOT NULL,\n    memory_bytes BIGINT NOT NULL,\n    restart_count INTEGER NOT NULL,\n    timestamp TIMESTAMP NOT NULL\n);",
+  "sample_database": "INSERT INTO container_metrics_26 VALUES (1, 'ingress-router', 1.8, 2147483648, 0, '2026-11-01 12:00:00');\nINSERT INTO container_metrics_26 VALUES (2, 'payment-app', 0.9, 1073741824, 3, '2026-11-01 12:00:00');\nINSERT INTO container_metrics_26 VALUES (3, 'ingress-router', 2.1, 2254857830, 0, '2026-11-01 12:05:00');\nINSERT INTO container_metrics_26 VALUES (4, 'auth-app', 0.4, 536870912, 1, '2026-11-01 12:00:00');",
+  "expected_SQL_result": [
+    {
+      "pod_name": "payment-app",
+      "total_restarts": 3,
+      "avg_cpu": 0.9
+    },
+    {
+      "pod_name": "auth-app",
+      "total_restarts": 1,
+      "avg_cpu": 0.4
+    }
+  ],
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Query Correctness & Result Match",
+        "weight": 0.6,
+        "description": "Returns exact rows, ordering, and aggregation without missing null handling."
+      },
+      {
+        "name": "Relational Efficiency & Index Friendliness",
+        "weight": 0.4,
+        "description": "Avoids cartesian products, redundant subqueries, and non-SARGable expressions."
+      }
+    ],
+    "max_score": 12.0
+  },
+  "estimated_time": 15,
+  "marks": 12,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/sql",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

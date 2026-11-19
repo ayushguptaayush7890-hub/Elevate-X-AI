@@ -1,0 +1,11 @@
+importance_rank,element_id,skill_name,skill_category,total_occupations_profiled,relevant_occupation_count,relevant_occupation_pct,mean_importance,std_importance,min_importance,max_importance,mean_level,std_level,min_level,max_level
+1,2.A.1.b,Active Listening,Basic Skills - Content,910,910,100.0,3.596,0.47,2.0,5.0,3.56,0.645,2.0,5.88
+2,2.A.1.d,Speaking,Basic Skills - Content,910,910,100.0,3.537,0.498,2.12,4.88,3.474,0.718,1.88,5.0
+3,2.A.2.a,Critical Thinking,Basic Skills - Process,910,910,100.0,3.518,0.468,2.25,4.88,3.581,0.654,1.62,5.75
+4,2.A.1.a,Reading Comprehension,Basic Skills - Content,910,910,100.0,3.491,0.564,1.88,5.0,3.659,0.851,1.62,5.88
+5,2.A.2.d,Monitoring,Basic Skills - Process,910,910,100.0,3.31,0.394,1.88,4.12,3.381,0.568,1.75,5.25
+6,2.A.1.c,Writing,Basic Skills - Content,910,910,100.0,3.193,0.647,1.75,5.0,3.316,0.858,0.88,5.75
+7,2.A.2.b,Active Learning,Basic Skills - Process,910,910,100.0,3.122,0.545,1.88,4.5,3.204,0.79,1.0,5.75
+8,2.A.2.c,Learning Strategies,Basic Skills - Process,910,909,99.89,2.787,0.581,1.12,4.88,2.851,0.779,0.12,5.25
+9,2.A.1.e,Mathematics,Basic Skills - Content,910,906,99.56,2.553,0.597,1.0,5.0,2.549,0.903,0.0,6.0
+10,2.A.1.f,Science,Basic Skills - Content,910,617,67.8,1.931,0.896,1.0,4.88,1.416,1.403,0.0,5.88

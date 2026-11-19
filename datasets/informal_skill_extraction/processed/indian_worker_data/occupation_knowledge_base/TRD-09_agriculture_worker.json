@@ -1,0 +1,136 @@
+{
+  "occupation_id": "TRD-09",
+  "file_slug": "TRD-09_agriculture_worker",
+  "standard_occupation_name": "Agriculture and Irrigation Worker",
+  "common_indian_names": [
+    "Khet Mazdoor",
+    "Kisan Karigar",
+    "Drip Operator",
+    "Farm Technician",
+    "Pump Operator"
+  ],
+  "hindi_names": [
+    "किसान",
+    "कृषि मजदूर",
+    "ड्रिप इरीगेशन ऑपरेटर"
+  ],
+  "roman_hindi_names": [
+    "Khet Mazdoor",
+    "Drip Operator",
+    "Kisan Karigar"
+  ],
+  "regional_vocabulary": {
+    "delhi_up": [
+      "drip line bichhana",
+      "nozzle saaf",
+      "filter dhona",
+      "khad paani chalana",
+      "venturi dosing",
+      "borewell motor",
+      "rotavator"
+    ],
+    "punjab_haryana": [
+      "tubewell starter",
+      "sprinkler line",
+      "fertigation tank",
+      "PTO shaft"
+    ],
+    "maharashtra_gujarat": [
+      "micro irrigation",
+      "submain valve",
+      "lateral punching",
+      "acid wash"
+    ]
+  },
+  "description": "Laying out and maintaining micro-irrigation drip and sprinkler networks, backwashing screen/disc filtration units, operating tractor PTO agricultural implements, and dosing fertilizers.",
+  "daily_tasks": [
+    "Laying 16mm LLDPE lateral drip tubing along crop rows",
+    "Punching holes and fitting online pressure-compensating button emitters",
+    "Monitoring borewell submersible pump pressure gauges and starter panels",
+    "Backwashing and cleaning disc and screen irrigation filter elements",
+    "Calibrating venturi injector suction valves for liquid fertigation dosing",
+    "Hitching rotavators, disc harrows, and cultivators to tractor 3-point linkages",
+    "Connecting and safety-locking tractor Power Take-Off (PTO) shafts"
+  ],
+  "advanced_tasks": [
+    "Flushing clogged drip lines with diluted hydrochloric or phosphoric acid solutions",
+    "Troubleshooting pressure drop discrepancies across multi-hectare drip sub-mains",
+    "Calibrating micro-sprinkler throw diameters for orchard frost and heat protection",
+    "Overhauling submersible pump non-return foot valves and impellers"
+  ],
+  "tools": [
+    "Drip tubing punch tool",
+    "Ratchet pipe cutter",
+    "Pressure gauge (0-7 bar)",
+    "Adjustable spanner set",
+    "Knapsack chemical sprayer",
+    "Pipe wrench",
+    "Lineman pliers"
+  ],
+  "equipment": [
+    "Disc filter assembly",
+    "Venturi fertilizer injector",
+    "Tractor 3-point hitch linkage & PTO shaft",
+    "Borewell motor starter panel"
+  ],
+  "materials": [
+    "16mm LLDPE lateral drip tubing",
+    "Online and inline drippers (2, 4, 8 LPH)",
+    "PVC control ball valves & air release valves",
+    "Water-soluble fertilizers (NPK 19:19:19, Urea)",
+    "Acid wash descaling chemical"
+  ],
+  "work_processes": [
+    "Head Control Unit Setup -> Mainline Laying -> Submain Installation -> Lateral Rolling -> Emitter Punching -> System Flushing -> Fertigation Injection -> Periodic Maintenance"
+  ],
+  "troubleshooting_tasks": [
+    "Detecting and clearing mineral carbonate scale clogs inside inline drippers",
+    "Rectifying vacuum lock or lack of suction in venturi fertilizer dosing manifolds",
+    "Tracing pressure loss caused by burst lateral lines or animal damage",
+    "Diagnosing single-phasing or low-voltage motor starter trip conditions"
+  ],
+  "quality_inspection": [
+    "Verifying uniform water discharge rate across both proximal and distal ends of laterals",
+    "Ensuring operating pressure at the end of the lateral remains within 1.0–1.2 bar",
+    "Confirming zero water leakage at grommet takeoff connections on PVC submains",
+    "Checking tight locking of tractor PTO safety shield chains"
+  ],
+  "measurement_and_planning": [
+    "Calculating crop water requirement based on daily pan evaporation and crop stage",
+    "Calculating fertigation dilution rates (kg fertilizer per 1,000 liters water)"
+  ],
+  "safety_practices": [
+    "Ensuring tractor PTO master safety guard is securely latched before engaging drive",
+    "Wearing chemical-resistant nitrile gloves and eye goggles when mixing liquid fertilizer/acid",
+    "Zero contact with live electrical starter terminals in damp agricultural pump sheds",
+    "Relieving pressurized irrigation lines before unscrewing filter casings"
+  ],
+  "maintenance": [
+    "Flushing lateral drip lines monthly by removing end caps",
+    "Lubricating tractor implement grease nipples daily with lithium grease",
+    "Cleaning suction foot valve strainers free of pond and well weeds"
+  ],
+  "customer_communication": [
+    "Explaining water savings (40–60%) of micro-irrigation to smallholder farmers",
+    "Advising on crop-specific emitter spacing (e.g. 30cm for vegetables, 1m for orchards)",
+    "Instructing farm helpers on daily filter backwash sequences"
+  ],
+  "transferable_competencies": [
+    "Agronomic hydrological understanding",
+    "Mechanical power transmission safety",
+    "Adaptive field resourcefulness"
+  ],
+  "official_vocational_references": {
+    "nsqf_qp_code": "AGR/Q1002",
+    "nsqf_level": 4,
+    "ssc": "Agriculture Skill Council of India",
+    "dgt_cts_trade": "Mechanic Agricultural Machinery (CTS 022) / Agro Processing"
+  },
+  "canonical_skills": [
+    "Micro-Irrigation Drip Lateral Pipe Layout",
+    "Venturi Fertigation Fertilizer Dosing Calibration",
+    "Irrigation Disc Filter Flushing and Cleaning",
+    "Tractor Three-Point Hitch Rotavator Coupling",
+    "Agricultural Pump Priming and Valve Regulation"
+  ]
+}

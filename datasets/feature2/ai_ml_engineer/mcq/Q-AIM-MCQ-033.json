@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-AIM-MCQ-033",
+  "role_id": "ai_ml_engineer",
+  "skill_id": "AIM-SKL-03",
+  "skill_name": "NLP & LLM Engineering",
+  "subtopic": "Byte-Pair Encoding (BPE) and WordPiece Tokenization",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "[NLP & LLM Engineering - Q33] How does Byte-Pair Encoding (BPE) handle previously unseen out-of-vocabulary (OOV) words at inference time?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Replaces them with an unknown token [UNK]"
+    },
+    {
+      "id": "B",
+      "text": "Decomposes the novel word into known subword tokens or individual byte-level character characters"
+    },
+    {
+      "id": "C",
+      "text": "Drops the token completely from the sequence"
+    },
+    {
+      "id": "D",
+      "text": "Hashes the word to a random embedding vector"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "BPE builds an iterative vocabulary of merged character pairs. If a complete word is missing from the vocabulary, it seamlessly falls back to composing the word from constituent subword units or UTF-8 bytes.",
+  "reference_solution": "Correct Choice: B. Rationale: BPE builds an iterative vocabulary of merged character pairs. If a complete word is missing from the vocabulary, it seamlessly falls back to composing the word from constituent subword units or UTF-8 bytes.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

@@ -1,0 +1,133 @@
+{
+  "occupation_id": "TRD-06",
+  "file_slug": "TRD-06_welder",
+  "standard_occupation_name": "Welder",
+  "common_indian_names": [
+    "Welding Mistri",
+    "Fabrication Karigar",
+    "Welder",
+    "Iron Mistri"
+  ],
+  "hindi_names": [
+    "वेल्डर",
+    "वेल्डिंग मिस्त्री",
+    "फैब्रिकेशन कारीगर"
+  ],
+  "roman_hindi_names": [
+    "Welding Mistri",
+    "Fabrication Karigar",
+    "Welder"
+  ],
+  "regional_vocabulary": {
+    "delhi_up": [
+      "arc welding",
+      "6013 rod",
+      "chhiping hammer",
+      "grinder maarna",
+      "channel fitting",
+      "gas cutting",
+      "taka lagana"
+    ],
+    "punjab_haryana": [
+      "gate grill",
+      "truss fabrication",
+      "trolley welding",
+      "inverter set"
+    ],
+    "maharashtra": [
+      "ms plate",
+      "bevel cutting",
+      "slag safai"
+    ]
+  },
+  "description": "Manual metal arc welding, oxy-fuel flame cutting, joint edge beveling, and metal fabrication of structural steel sections, gates, window grills, trusses, and containers.",
+  "daily_tasks": [
+    "Beveling and cleaning metal joint edges with 4-inch angle grinders",
+    "Positioning structural members and clamping with magnetic squares",
+    "Depositing short tack welds (taka) to lock alignment",
+    "Striking arc and depositing stringer and weave weld beads with SMAW electrodes",
+    "Chipping slag between passes with chipping hammer and wire brush",
+    "Cutting steel plates and channels with oxy-acetylene torch",
+    "Grinding structural weld seams flush for clean painted surfaces"
+  ],
+  "advanced_tasks": [
+    "Vertical-up (3G) and overhead (4G) position structural groove welding",
+    "Welding high-stress structural pipe joints using E7018 low-hydrogen electrodes",
+    "Fabricating roof trusses with expansion joint clearances to minimize thermal distortion",
+    "Oxy-fuel flame preheating and flame gouging to remove cracked root passes"
+  ],
+  "tools": [
+    "SMAW arc welding inverter/transformer",
+    "Electrode holder (stinger)",
+    "Earth ground clamp",
+    "Angle grinder (4-inch & 7-inch)",
+    "Chipping hammer",
+    "Wire scratch brush",
+    "Welding helmet (shade 10-11)"
+  ],
+  "equipment": [
+    "Oxy-acetylene cutting torch & regulators",
+    "Bench grinding wheel",
+    "Magnetic welding clamps"
+  ],
+  "materials": [
+    "AWS E6013 rutile mild steel electrodes (2.5, 3.15, 4.0 mm)",
+    "AWS E7018 low-hydrogen electrodes",
+    "Mild steel hollow sections, angles, channels, sheets",
+    "Oxygen and dissolved acetylene gases",
+    "Flap grinding discs"
+  ],
+  "work_processes": [
+    "Metal Cutting -> Edge Beveling -> Fit-Up & Clamping -> Tack Welding -> Root Pass -> Slag Chipping -> Capping Pass -> Weld Dressing"
+  ],
+  "troubleshooting_tasks": [
+    "Adjusting welding amperage to eliminate electrode sticking or burn-through holes",
+    "Diagnosing and re-welding porosity holes caused by damp electrodes or surface oil",
+    "Balancing heat input to prevent thermal warping in thin sheet metal gates",
+    "Rectifying weld undercut along the joint toe by adjusting electrode travel angle"
+  ],
+  "quality_inspection": [
+    "Inspecting weld bead for uniform convex profile without excessive reinforcement",
+    "Checking joint edges for complete fusion and absence of cold lap or cracking",
+    "Verifying complete slag removal before depositing successive capping passes",
+    "Checking finished fabrication dimensions against layout blueprints"
+  ],
+  "measurement_and_planning": [
+    "Calculating metal thermal contraction allowance (approx 1.5mm per meter)",
+    "Marking cutting lines on steel channels with soapstone / carbide scriber"
+  ],
+  "safety_practices": [
+    "Mandatory shade 10 or 11 optical filter to prevent retinal arc-eye flash",
+    "Wearing heavy cowhide leather welding gloves and protective leather apron",
+    "Keeping fire extinguisher / water bucket nearby during hot cutting",
+    "Ensuring proper fume ventilation when welding in confined workshops"
+  ],
+  "maintenance": [
+    "Inspecting welding lead cable insulation for bare copper exposure",
+    "Tightening loose earth ground clamp bolts to prevent resistance heating",
+    "Replacing worn grinding wheel discs before peripheral cracking occurs"
+  ],
+  "customer_communication": [
+    "Advising on gauge thickness of steel hollow pipes for boundary gates",
+    "Providing weight-based (per kg) vs square-foot fabrication estimates",
+    "Recommending zinc-chromate anti-rust primer coating before delivery"
+  ],
+  "transferable_competencies": [
+    "Thermal metallurgy intuition",
+    "Steely hand-eye coordination",
+    "Structural load geometry sense"
+  ],
+  "official_vocational_references": {
+    "nsqf_qp_code": "CSC/Q0204",
+    "nsqf_level": 3,
+    "ssc": "Capital Goods Skill Council",
+    "dgt_cts_trade": "Welder (CTS 019)"
+  },
+  "canonical_skills": [
+    "Shielded Metal Arc Welding with E6013 Electrodes",
+    "Weld Slag Removal and Bead Cleaning",
+    "Angle Grinder V-Groove Edge Beveling",
+    "Oxy-Acetylene Thermal Gas Cutting",
+    "Structural Steel Joint Tack Welding"
+  ]
+}

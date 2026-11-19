@@ -1,0 +1,8 @@
+datasets/
+backend/
+reports/
+ezgif*
+public/animation-frames/
+node_modules/
+node_modules.nosync/
+.next/

@@ -1,0 +1,63 @@
+{
+  "question_id": "Q-DAN-COD-010",
+  "role_id": "data_analyst",
+  "skill_id": "DAN-SKL-05",
+  "skill_name": "KPI Metric Definition & Business Impact Analysis",
+  "subtopic": "Data Transformation & KPI Calculation",
+  "assessment_type": "coding",
+  "difficulty": "easy",
+  "question_text": "Implement an analytics transformation algorithm for **Challenge #10: KPI Metric Definition & Business Impact Analysis**.\n\n### Problem Specification:\n- Clean, reshape, or aggregate time-series / tabular metrics using Python and Pandas.\n- Handle missing business records, group by cohorts, and calculate cumulative growth.\n- Avoid slow row-level `iterrows()` loops; use vectorized Pandas idioms.",
+  "options": null,
+  "correct_answer": "import pandas as pd\n\ndef transform_analytics_data_10(df: pd.DataFrame) -> dict:\n    # Vectorized KPI calculation for KPI Metric Definition & Business Impact Analysis\n    df['date'] = pd.to_datetime(df['date'])\n    df = df.sort_values('date')\n    total = float(df['amount'].sum())\n    avg = float(df['amount'].mean())\n    return {'total_volume': total, 'average_order': avg}",
+  "answer_explanation": "Evaluates tabular metric computation, datetime coercion, and vectorized aggregation in KPI Metric Definition & Business Impact Analysis.",
+  "reference_solution": "import pandas as pd\n\ndef transform_analytics_data_10(df: pd.DataFrame) -> dict:\n    # Vectorized KPI calculation for KPI Metric Definition & Business Impact Analysis\n    df['date'] = pd.to_datetime(df['date'])\n    df = df.sort_values('date')\n    total = float(df['amount'].sum())\n    avg = float(df['amount'].mean())\n    return {'total_volume': total, 'average_order': avg}",
+  "coding_language": "python",
+  "sample_input": "sales_records_10 = [{'date': '2026-01-01', 'amount': 150}]",
+  "expected_output": "{'total_volume': 150, 'growth_rate': 0.0}",
+  "visible_test_cases": [
+    {
+      "input": "sales_data_10_q1",
+      "output": "valid_aggregations_computed"
+    },
+    {
+      "input": "sales_data_10_q2",
+      "output": "cohort_growth_calculated"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "sales_data_10_missing_days",
+      "output": "forward_filled_correctly"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Functional Correctness",
+        "weight": 0.5,
+        "description": "Passes all visible and hidden unit test cases without errors."
+      },
+      {
+        "name": "Time & Space Complexity",
+        "weight": 0.3,
+        "description": "Meets specified asymptotic computational boundaries."
+      },
+      {
+        "name": "Code Structure & Cleanliness",
+        "weight": 0.2,
+        "description": "Idiomatic naming, handling edge boundaries and null guards."
+      }
+    ],
+    "max_score": 6.0
+  },
+  "estimated_time": 15,
+  "marks": 6,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/coding",
+  "license": "Apache-2.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

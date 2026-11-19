@@ -1,0 +1,135 @@
+{
+  "occupation_id": "TRD-07",
+  "file_slug": "TRD-07_mason",
+  "standard_occupation_name": "Mason / Raj Mistri",
+  "common_indian_names": [
+    "Raj Mistri",
+    "Chunai Mistri",
+    "Mason",
+    "Karigar",
+    "Chunai Master"
+  ],
+  "hindi_names": [
+    "राज मिस्त्री",
+    "चुनाई मिस्त्री",
+    "राज कारीगर"
+  ],
+  "roman_hindi_names": [
+    "Raj Mistri",
+    "Chunai Mistri",
+    "Mason Mistri"
+  ],
+  "regional_vocabulary": {
+    "delhi_up": [
+      "sahul lagana",
+      "sooth dekhna",
+      "1:4 masala",
+      "plaster chadhana",
+      "gurmala",
+      "ghoontai karna",
+      "tile lagana",
+      "fanti"
+    ],
+    "rajasthan_gujarat": [
+      "chuna work",
+      "dholpur stone",
+      "bunta banana",
+      "tancha maarna"
+    ],
+    "bihar_bengal": [
+      "garai kaam",
+      "radda baandhna",
+      "tasla masala"
+    ]
+  },
+  "description": "Laying clay brick and concrete block masonry, mixing cement-sand mortars, plumbing walls, plastering surfaces, screeding floors, and installing ceramic tiles on civil building sites.",
+  "daily_tasks": [
+    "Proportioning and mixing cement-sand mortar ratios (1:4 and 1:6)",
+    "Laying staggered brick courses in cement mortar with mason trowel (karni)",
+    "Checking wall verticality with heavy brass plumb bob (sahul)",
+    "Aligning horizontal course level with nylon stringline (sutra)",
+    "Transferring datum levels across rooms using clear water tube",
+    "Applying wall plaster coats and screeding flush with aluminum straight edge (fanti)",
+    "Smoothing plaster surfaces with wooden floats (gurmala)"
+  ],
+  "advanced_tasks": [
+    "Executing mirror-smooth water-resistant pure cement float finishing (ghoontai)",
+    "Constructing brick corbels, arches, and circular well masonry structures",
+    "Laying large-format vitrified floor tiles with level spacers and rubber mallets",
+    "Applying crystalline cementitious waterproofing slurry on sunken toilet slabs"
+  ],
+  "tools": [
+    "Mason trowel (karni)",
+    "Plumb bob with plate (sahul)",
+    "Wooden float (gurmala)",
+    "Aluminum straight edge (fanti, 8-10 ft)",
+    "Nylon stringline (sutra)",
+    "Masonry hammer & bolster chisel",
+    "Mortar pan (tasla)"
+  ],
+  "equipment": [
+    "Clear transparent water level tube",
+    "Tile cutting machine",
+    "Cement mixer machine"
+  ],
+  "materials": [
+    "Portland Pozzolana Cement (PPC)",
+    "River sand / Crushed stone M-sand",
+    "Burnt red clay bricks / AAC lightweight blocks",
+    "Ceramic and vitrified tiles",
+    "Tile adhesive mortar and epoxy grout"
+  ],
+  "work_processes": [
+    "Substrate Wetting -> Mortar Batching -> Corner Lead Masonry -> String Line Laying -> Plumb Checking -> Plaster Screeding -> Tile Fixing -> Water Curing"
+  ],
+  "troubleshooting_tasks": [
+    "Correcting wall out-of-plumb lean before mortar sets",
+    "Eliminating hollow drumming sounds under newly laid floor tiles",
+    "Preventing crazing cracks in curing plaster by regulating sand silt content",
+    "Ensuring bathroom floor slope directs water strictly toward floor drain traps"
+  ],
+  "quality_inspection": [
+    "Verifying consistent 10-12mm bed mortar joint thickness between brick courses",
+    "Confirming zero deviation against plumb bob line over 10-foot wall height",
+    "Checking absence of hollow voids under bedded masonry units",
+    "Testing 7-14 day water curing dampness on plaster and masonry"
+  ],
+  "measurement_and_planning": [
+    "Calculating brick count and cement bag requirements from wall area (approx 500 bricks per 100 cu ft)",
+    "Establishing finished floor level datum (FFL) across building rooms"
+  ],
+  "safety_practices": [
+    "Inspecting wooden or bamboo scaffolding knots and platform planks before elevation work",
+    "Wearing heavy rubber gloves when handling alkaline wet Portland cement",
+    "Using correct ergonomic lifting posture when hoisting heavy mortar pans",
+    "Wearing sturdy protective footwear on construction debris sites"
+  ],
+  "maintenance": [
+    "Washing cement encrustations off trowels and aluminum screeds daily",
+    "Checking water level tube for trapped air bubbles or kink deformities",
+    "Protecting plumb bob brass tip from blunt drop damage"
+  ],
+  "customer_communication": [
+    "Advising building owners on cement mortar ratios and sand washing necessity",
+    "Estimating material delivery schedules to avoid work stoppages",
+    "Explaining the vital structural importance of minimum 10-day water curing"
+  ],
+  "transferable_competencies": [
+    "Physical endurance and resilience",
+    "Macro-geometric dimensional alignment",
+    "Manual fluid trowel motion"
+  ],
+  "official_vocational_references": {
+    "nsqf_qp_code": "CON/Q0103",
+    "nsqf_level": 4,
+    "ssc": "Construction Skill Development Council of India",
+    "dgt_cts_trade": "Mason (Building Constructor) (CTS 032)"
+  },
+  "canonical_skills": [
+    "Plumb Bob Vertical Alignment Verification",
+    "Bricklaying in 1:4 Cement Sand Mortar",
+    "Clear Water Tube Horizontal Leveling",
+    "Wooden Float Cement Plaster Application",
+    "Ceramic Floor and Wall Tile Screeding"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-033",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-03",
+  "skill_name": "Concurrency, Multithreading & Memory Management",
+  "subtopic": "Deadlock Detection, Prevention and Race Conditions",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "What does a Memory Barrier (or Memory Fence) instruction enforce in CPU execution pipelines?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Enforces strict ordering constraints on memory operations before and after the fence, preventing hardware out-of-order reordering"
+    },
+    {
+      "id": "B",
+      "text": "Protects kernel memory space from user space writes"
+    },
+    {
+      "id": "C",
+      "text": "Allocates dedicated SRAM cache lines"
+    },
+    {
+      "id": "D",
+      "text": "Causes immediate context switching to another thread"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "CPUs reorder instructions for performance. Memory fences guarantee that all read/write operations preceding the fence complete before any operations following it are committed.",
+  "reference_solution": "Correct Choice: A. Rationale: CPUs reorder instructions for performance. Memory fences guarantee that all read/write operations preceding the fence complete before any operations following it are committed.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

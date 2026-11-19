@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SEC-MCQ-037",
+  "role_id": "cybersecurity_engineer",
+  "skill_id": "SEC-SKL-02",
+  "skill_name": "Network Security, Firewalls & Protocols",
+  "subtopic": "TLS 1.3 Handshake, Cipher Suites and Perfect Forward Secrecy",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "[Network Security, Firewalls & Protocols - Q37] In TLS 1.3, what property does Ephemeral Diffie-Hellman key exchange (DHE/ECDHE) provide that static RSA key exchange lacked?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Double encryption of certificate authorities"
+    },
+    {
+      "id": "B",
+      "text": "Perfect Forward Secrecy (PFS), guaranteeing that past recorded sessions cannot be decrypted even if the server's long-term private key is compromised in the future"
+    },
+    {
+      "id": "C",
+      "text": "Zero-latency TCP transmission"
+    },
+    {
+      "id": "D",
+      "text": "Elimination of SSL certificates"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "With ephemeral key exchange, unique session keys are generated dynamically per connection and discarded. Compromising the server's long-term private key does not reveal past session keys.",
+  "reference_solution": "Correct Choice: B. Rationale: With ephemeral key exchange, unique session keys are generated dynamically per connection and discarded. Compromising the server's long-term private key does not reveal past session keys.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}
