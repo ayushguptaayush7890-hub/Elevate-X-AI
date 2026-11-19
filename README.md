@@ -288,16 +288,6 @@ pytest tests/ -v
 
 ---
 
-## 15. Team Members
-
-| Name | Role / Contributions |
-| :--- | :--- |
-| **Ayush Gupta** | Full-Stack Architecture, Next.js Frontend, Feature 1 Skill Extraction ML Pipeline |
-| **Kush Vijay** | Feature 2 Technical Assessment Engine, Question Bank Curation & Sandbox Security |
-| **Reity Khurana** | Multilingual Prompt Engineering, Factuality Guardrails & UI/UX Design Tokens |
-
----
-
-## 16. License
+## 15. License
 
 This project is licensed for academic, evaluation, and open-source vocational research purposes. All third-party datasets and pre-trained model backbones belong to their respective copyright holders.
