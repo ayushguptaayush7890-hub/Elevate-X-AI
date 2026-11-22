@@ -1,0 +1,35 @@
+{
+  "audit_timestamp": "2026-11-21T12:24:00Z",
+  "dataset_1_internal_duplicates": {
+    "exact_duplicates": 38,
+    "near_duplicates_experience": 4655,
+    "rate": 0.79
+  },
+  "dataset_2_internal_duplicates": {
+    "candidate_cv_duplicates": 0,
+    "job_description_duplicates": 0,
+    "matching_pair_duplicates": 0,
+    "orphan_candidates": 0,
+    "orphan_jobs": 0
+  },
+  "dataset_3_internal_duplicates": {
+    "duplicate_pairs": 2,
+    "rate": 0.08
+  },
+  "cross_dataset_overlap": {
+    "shared_exact_resumes_d1_vs_d2": 0,
+    "shared_exact_resumes_d2_vs_d3": 0,
+    "shared_job_descriptions_d2_vs_d3": 0,
+    "finding": "No exact cross-dataset resume or job matches detected across primary corpora. Datasets represent distinct upstream collections."
+  },
+  "leakage_risks_identified": [
+    "In Dataset 2 (Shresth786), 1,167 jobs are matched against 9,544 CVs resulting in 122,560 pairs (averaging ~105 pairs per job). A naive random train/val/test split will leak identical job postings across splits, causing artificially inflated accuracy.",
+    "In Dataset 3 (harsh72877287), multiple rows share identical job skill requirements with varying candidate scores.",
+    "In Dataset 4 (vadimas22), GPT-4o was used to score and evaluate candidate-job fit. If GPT-4o is also used as an automated evaluation judge, this creates an automated self-preference circular evaluation loop."
+  ],
+  "recommended_splitting_strategy": {
+    "strategy": "Disjoint GroupKFold by Entity ID",
+    "details": "Candidates and Jobs must be partitioned into disjoint subsets (e.g. Candidate-Disjoint Split or Job-Disjoint Split). No candidate_id and no job_id present in the training partition should ever appear in the validation or test partitions.",
+    "ratio": "70% Train / 15% Validation / 15% Test"
+  }
+}

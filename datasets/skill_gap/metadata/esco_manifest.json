@@ -1,0 +1,83 @@
+[
+  {
+    "filename": "skills_en.csv",
+    "source_url": "https://esco.ec.europa.eu/en/use-esco",
+    "license": "ODbL (Open Database License) / European Union Open Data",
+    "version": "v1.1.1",
+    "file_size_bytes": 9302000,
+    "sha256": "d03b10efca94b4bcfa260a992cfde89c375f0fa12095d6662a663cfd2f9f2950",
+    "ingested_at": "2026-11-21T16:43:49.420069"
+  },
+  {
+    "filename": "occupations_en.csv",
+    "source_url": "https://esco.ec.europa.eu/en/use-esco",
+    "license": "ODbL (Open Database License) / European Union Open Data",
+    "version": "v1.1.1",
+    "file_size_bytes": 3047703,
+    "sha256": "8034348d84b6d1dd24a5bcf9609186ecbba0a85457ee2eacd65bddec33a51b4a",
+    "ingested_at": "2026-11-21T16:43:49.424543"
+  },
+  {
+    "filename": "occupationSkillRelations_en.csv",
+    "source_url": "https://esco.ec.europa.eu/en/use-esco",
+    "license": "ODbL (Open Database License) / European Union Open Data",
+    "version": "v1.1.1",
+    "file_size_bytes": 27986628,
+    "sha256": "e1a46511f0ef4d505f106f1d41f528ef76d289f93e59d4d0cbaac38986102c44",
+    "ingested_at": "2026-11-21T16:43:49.446406"
+  },
+  {
+    "filename": "skillGroups_en.csv",
+    "source_url": "https://esco.ec.europa.eu/en/use-esco",
+    "license": "ODbL (Open Database License) / European Union Open Data",
+    "version": "v1.1.1",
+    "file_size_bytes": 340935,
+    "sha256": "644b68a174299eb05336eec36e0716c4671a0c6bdd4ac268803ecd6533dc739d",
+    "ingested_at": "2026-11-21T16:43:49.447289"
+  },
+  {
+    "filename": "skillsHierarchy_en.csv",
+    "source_url": "https://esco.ec.europa.eu/en/use-esco",
+    "license": "ODbL (Open Database License) / European Union Open Data",
+    "version": "v1.1.1",
+    "file_size_bytes": 381733,
+    "sha256": "295133872c6be7b7560de943efa4a6aab833a1b15af4d60c03b050ab0a75edcb",
+    "ingested_at": "2026-11-21T16:43:49.448330"
+  },
+  {
+    "filename": "skillSkillRelations_en.csv",
+    "source_url": "https://esco.ec.europa.eu/en/use-esco",
+    "license": "ODbL (Open Database License) / European Union Open Data",
+    "version": "v1.1.1",
+    "file_size_bytes": 1031275,
+    "sha256": "64a5f8fb7b8dda4932ff06db4738ce1beed3906e45a49b14453349056c609439",
+    "ingested_at": "2026-11-21T16:43:49.450047"
+  },
+  {
+    "filename": "digitalSkillsCollection_en.csv",
+    "source_url": "https://esco.ec.europa.eu/en/use-esco",
+    "license": "ODbL (Open Database License) / European Union Open Data",
+    "version": "v1.1.1",
+    "file_size_bytes": 811101,
+    "sha256": "9f2ee9179f0720826cbfc65627bd3642926ba4dfb3bf29250f22cb232c225b1e",
+    "ingested_at": "2026-11-21T16:43:49.451331"
+  },
+  {
+    "filename": "transversalSkillsCollection_en.csv",
+    "source_url": "https://esco.ec.europa.eu/en/use-esco",
+    "license": "ODbL (Open Database License) / European Union Open Data",
+    "version": "v1.1.1",
+    "file_size_bytes": 57293,
+    "sha256": "40bd1884f1c62b91ab86b6c87d7fab11b082c17b425975d0d178d1b5cb5e01ca",
+    "ingested_at": "2026-11-21T16:43:49.451754"
+  },
+  {
+    "filename": "ISCOGroups_en.csv",
+    "source_url": "https://esco.ec.europa.eu/en/use-esco",
+    "license": "ODbL (Open Database License) / European Union Open Data",
+    "version": "v1.1.1",
+    "file_size_bytes": 966601,
+    "sha256": "7a829bb6fddccbdb028d3ae69d822f2f1ba581522667f6185949c6d0788eaa1c",
+    "ingested_at": "2026-11-21T16:43:49.453097"
+  }
+]

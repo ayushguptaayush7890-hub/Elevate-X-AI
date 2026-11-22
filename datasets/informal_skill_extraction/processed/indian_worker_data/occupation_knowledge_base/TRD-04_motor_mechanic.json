@@ -1,0 +1,136 @@
+{
+  "occupation_id": "TRD-04",
+  "file_slug": "TRD-04_motor_mechanic",
+  "standard_occupation_name": "Motor Mechanic",
+  "common_indian_names": [
+    "Auto Mistri",
+    "Gadi Mechanic",
+    "Bike Mechanic",
+    "Two-Wheeler Karigar",
+    "Four-Wheeler Karigar"
+  ],
+  "hindi_names": [
+    "मोटर मैकेनिक",
+    "ऑटो मिस्त्री",
+    "गाड़ी मैकेनिक"
+  ],
+  "roman_hindi_names": [
+    "Motor Mechanic",
+    "Auto Mistri",
+    "Bike Karigar"
+  ],
+  "regional_vocabulary": {
+    "delhi_up": [
+      "service karna",
+      "tappet setting",
+      "clutch plate daalna",
+      "brake bleed",
+      "carburetor tuning",
+      "spark plug saaf"
+    ],
+    "punjab_haryana": [
+      "bullet timing",
+      "ring-piston",
+      "suspension bush",
+      "head kholna"
+    ],
+    "maharashtra": [
+      "chassis alignment",
+      "disc pad badalna",
+      "engine oil drain"
+    ]
+  },
+  "description": "Routine servicing, mechanical repair, component replacement, and diagnostic troubleshooting of internal combustion two-wheelers and light motor vehicles in independent roadside garages.",
+  "daily_tasks": [
+    "Draining used engine motor oil and changing spin-on oil filters",
+    "Cleaning, de-carbonizing, and gapping spark plugs (0.7-0.9 mm)",
+    "Disassembling, jet-cleaning, and tuning carburetors",
+    "Replacing worn clutch friction plates and steel pressure plates",
+    "Bleeding air bubbles from hydraulic disc brake lines",
+    "Adjusting valve tappet clearances with feeler gauges",
+    "Tensioning and lubricating motorcycle drive chains"
+  ],
+  "advanced_tasks": [
+    "Engine top-end overhaul (cylinder boring, piston rings, valve lapping)",
+    "Front telescopic hydraulic fork disassembly and oil seal replacement",
+    "Diagnosing complex electrical stator coil and CDI ignition misfires",
+    "Replacing rear differential crown-wheel and pinion gears"
+  ],
+  "tools": [
+    "Socket wrench ratchet set (8mm-32mm)",
+    "Ring and open-ended spanners",
+    "Feeler gauge set",
+    "Torque wrench",
+    "Impact driver",
+    "T-spanners (8, 10, 12 mm)",
+    "Spark plug socket",
+    "Brake bleeder kit"
+  ],
+  "equipment": [
+    "Hydraulic trolley jack & jack stands",
+    "Air compressor & tyre inflator",
+    "Battery charger & hydrometer",
+    "Chain breaker tool"
+  ],
+  "materials": [
+    "4T motorcycle engine oil (10W-30, 20W-40)",
+    "Brake fluid (DOT 3 / DOT 4)",
+    "Carburetor cleaner spray",
+    "Clutch friction plates",
+    "Gasket paper and RTV silicone sealant",
+    "Kerosene cleaning solvent"
+  ],
+  "work_processes": [
+    "Road Test Diagnosis -> Engine Oil Drain -> Filter Replacement -> Ignition / Carburetor Service -> Brake & Clutch Overhaul -> Valve Adjustment -> Final Road Test"
+  ],
+  "troubleshooting_tasks": [
+    "Differentiating between spark plug misfire, lean fuel starvation, and poor compression",
+    "Diagnosing spongy brake lever feel caused by trapped hydraulic air bubbles",
+    "Tracing engine overheating to lean carburetor pilot jet or slipping clutch",
+    "Identifying worn wheel bearings by checking radial free play on raised wheel"
+  ],
+  "quality_inspection": [
+    "Verifying correct engine oil dipstick level between Min and Max marks",
+    "Checking firm front brake lever resistance with zero lever creep",
+    "Confirming smooth clutch engagement without slippage under load",
+    "Verifying steady idle RPM (1400 +/- 100 RPM) without stalling"
+  ],
+  "measurement_and_planning": [
+    "Calibrating valve tappet clearances strictly to engine specs (0.05mm intake, 0.08mm exhaust)",
+    "Torquing cylinder head studs in diagonal star sequence"
+  ],
+  "safety_practices": [
+    "Supporting elevated chassis on mechanical jack stands (never hydraulic jack alone)",
+    "Catching waste motor oil in dedicated pans to prevent environmental spills",
+    "Wearing safety eye protection when spraying pressurized aerosol carburetor cleaner",
+    "Avoiding contact with hot exhaust headers during live engine tuning"
+  ],
+  "maintenance": [
+    "Greasing wheel axles and swingarm pivot bushings",
+    "Cleaning compressor intake air filter weekly",
+    "Refacing deformed mechanic hand spanners and chisels"
+  ],
+  "customer_communication": [
+    "Explaining preventive maintenance schedules to vehicle owners",
+    "Demonstrating worn clutch friction plates or blackened motor oil",
+    "Providing transparent component cost and labor repair estimates"
+  ],
+  "transferable_competencies": [
+    "Mechanical kinematics understanding",
+    "Acoustic diagnostic intuition",
+    "Precision mechanical disassembly & reassembly"
+  ],
+  "official_vocational_references": {
+    "nsqf_qp_code": "ASC/Q1402",
+    "nsqf_level": 4,
+    "ssc": "Automotive Skills Development Council",
+    "dgt_cts_trade": "Mechanic Motor Vehicle (CTS 017) / Mechanic Two & Three Wheeler (CTS 018)"
+  },
+  "canonical_skills": [
+    "Motorcycle Engine Oil Drain and Replacement",
+    "Engine Valve Tappet Clearance Calibration",
+    "Hydraulic Disc Brake Caliper Fluid Bleeding",
+    "Clutch Friction Plate Disassembly and Replacement",
+    "Carburetor Jet Cleaning and Air-Fuel Mixture Tuning"
+  ]
+}

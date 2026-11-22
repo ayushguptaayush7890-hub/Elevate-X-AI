@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-030",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-03",
+  "skill_name": "Concurrency, Multithreading & Memory Management",
+  "subtopic": "Thread Synchronization, Mutexes and Semaphores",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "What is 'False Sharing' in multi-threaded concurrent programming on multi-core processors?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Two threads accessing different variables that reside on the same CPU cache line, causing constant invalidation traffic"
+    },
+    {
+      "id": "B",
+      "text": "Threads sharing heap pointers without atomic increments"
+    },
+    {
+      "id": "C",
+      "text": "Corrupted virtual memory pages mapped to multiple processes"
+    },
+    {
+      "id": "D",
+      "text": "Operating system scheduler swapping threads onto wrong NUMA nodes"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "Even if threads modify independent variables, if those variables share a 64-byte cache line, CPU cache coherence protocols (MESI) invalidate the entire line on every write.",
+  "reference_solution": "Correct Choice: A. Rationale: Even if threads modify independent variables, if those variables share a 64-byte cache line, CPU cache coherence protocols (MESI) invalidate the entire line on every write.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

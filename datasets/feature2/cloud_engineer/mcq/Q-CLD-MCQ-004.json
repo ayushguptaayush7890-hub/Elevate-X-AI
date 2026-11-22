@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-CLD-MCQ-004",
+  "role_id": "cloud_engineer",
+  "skill_id": "CLD-SKL-04",
+  "skill_name": "Infrastructure as Code (Terraform / CloudFormation)",
+  "subtopic": "Terraform State Management, Remote Backends and State Locking (DynamoDB)",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "[Infrastructure as Code (Terraform / CloudFormation) - Q04] Why is state locking via DynamoDB essential when using an S3 remote backend in a team Terraform environment?",
+  "options": [
+    {
+      "id": "A",
+      "text": "It speeds up Terraform plan execution by caching state in memory"
+    },
+    {
+      "id": "B",
+      "text": "It prevents race conditions where two engineers or CI pipelines run `terraform apply` concurrently, corrupting the shared remote state file"
+    },
+    {
+      "id": "C",
+      "text": "It encrypts the terraform state file with AES-256"
+    },
+    {
+      "id": "D",
+      "text": "It automatically generates rollback scripts"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "DynamoDB acts as a distributed lock. When an apply begins, an exclusive lock is acquired in DynamoDB. Concurrent attempts to apply will fail to obtain the lock, preventing catastrophic state file corruption.",
+  "reference_solution": "Correct Choice: B. Rationale: DynamoDB acts as a distributed lock. When an apply begins, an exclusive lock is acquired in DynamoDB. Concurrent attempts to apply will fail to obtain the lock, preventing catastrophic state file corruption.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

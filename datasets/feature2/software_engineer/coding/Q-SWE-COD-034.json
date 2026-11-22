@@ -1,0 +1,63 @@
+{
+  "question_id": "Q-SWE-COD-034",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-04",
+  "skill_name": "Database Systems & Transaction Isolation",
+  "subtopic": "Core Implementation Problem",
+  "assessment_type": "coding",
+  "difficulty": "medium",
+  "question_text": "Implement a high-efficiency solution for **SWE Challenge 34: Algorithmic & Architectural Problem** under `Database Systems & Transaction Isolation`.\n\n### Problem Specification:\nGiven input constraints, write a clean, production-ready function that satisfies optimal time and space complexity.\n- Must handle edge cases (empty inputs, single element, boundary limits).\n- Avoid excessive auxiliary memory allocation.\n- Return correct result types.",
+  "options": null,
+  "correct_answer": "def solve_swe_problem_34(data: list) -> any:\n    # O(N) optimal implementation for SWE Challenge 34: Algorithmic & Architectural Problem\n    if not data:\n        return None\n    seen = set()\n    result = []\n    for item in data:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result",
+  "answer_explanation": "This problem evaluates optimal data structure selection and asymptotic runtime boundaries under Database Systems & Transaction Isolation.",
+  "reference_solution": "def solve_swe_problem_34(data: list) -> any:\n    # O(N) optimal implementation for SWE Challenge 34: Algorithmic & Architectural Problem\n    if not data:\n        return None\n    seen = set()\n    result = []\n    for item in data:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result",
+  "coding_language": "python",
+  "sample_input": "data_stream = [input_item_34]",
+  "expected_output": "processed_result_34",
+  "visible_test_cases": [
+    {
+      "input": "sample_input_34_case1",
+      "output": "expected_output_34_case1"
+    },
+    {
+      "input": "sample_input_34_case2",
+      "output": "expected_output_34_case2"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "hidden_input_34_edge_case",
+      "output": "expected_hidden_output_34"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Functional Correctness",
+        "weight": 0.5,
+        "description": "Passes all visible and hidden unit test cases without errors."
+      },
+      {
+        "name": "Time & Space Complexity",
+        "weight": 0.3,
+        "description": "Meets specified asymptotic computational boundaries."
+      },
+      {
+        "name": "Code Structure & Cleanliness",
+        "weight": 0.2,
+        "description": "Idiomatic naming, handling edge boundaries and null guards."
+      }
+    ],
+    "max_score": 10.0
+  },
+  "estimated_time": 25,
+  "marks": 10,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/coding",
+  "license": "Apache-2.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

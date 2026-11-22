@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-BED-MCQ-032",
+  "role_id": "backend_developer",
+  "skill_id": "BED-SKL-02",
+  "skill_name": "Relational & NoSQL Database Design & Indexing",
+  "subtopic": "Composite Index Column Ordering and Covering Indexes",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "[Relational & NoSQL Database Design & Indexing - Q32] Given a B-tree composite index on `(status, created_at, user_id)`, which query CANNOT take advantage of the index's leading keys?",
+  "options": [
+    {
+      "id": "A",
+      "text": "WHERE status = 'ACTIVE' AND created_at > '2026-01-01'"
+    },
+    {
+      "id": "B",
+      "text": "WHERE status = 'ACTIVE'"
+    },
+    {
+      "id": "C",
+      "text": "WHERE created_at > '2026-01-01' AND user_id = 42"
+    },
+    {
+      "id": "D",
+      "text": "WHERE status = 'ACTIVE' AND user_id = 42"
+    }
+  ],
+  "correct_answer": "C",
+  "answer_explanation": "B-tree composite indexes can only be traversed using a contiguous prefix of columns starting from the leftmost column. A query omitting `status` cannot seek the index tree.",
+  "reference_solution": "Correct Choice: C. Rationale: B-tree composite indexes can only be traversed using a contiguous prefix of columns starting from the leftmost column. A query omitting `status` cannot seek the index tree.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

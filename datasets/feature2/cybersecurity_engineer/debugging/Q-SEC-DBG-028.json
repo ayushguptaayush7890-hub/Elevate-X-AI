@@ -1,0 +1,59 @@
+{
+  "question_id": "Q-SEC-DBG-028",
+  "role_id": "cybersecurity_engineer",
+  "skill_id": "SEC-SKL-03",
+  "skill_name": "Cryptography, PKI & Key Management",
+  "subtopic": "SQL Injection & Secure Coding Debugging",
+  "assessment_type": "debugging",
+  "difficulty": "hard",
+  "question_text": "Remediate a critical SQL Injection flaw in an authentication module (Cryptography, PKI & Key Management).\n\n### Defective Code:\n```python\nimport sqlite3\ndef authenticate_user_28(cursor, username, password):\n    # Defect: Critical SQL Injection via string formatting\n    query = f\"SELECT id FROM users WHERE username = '{username}' AND password = '{password}'\"\n    cursor.execute(query)\n    return cursor.fetchone()\n```\n\n### Reported Anomaly / Error:\nCWE-89 SQL Injection: An attacker passes `' OR '1'='1` to bypass authentication in Cryptography, PKI & Key Management.\n\nIdentify the root cause of the defect and provide the corrected code snippet with rationale.",
+  "options": null,
+  "correct_answer": "import sqlite3\ndef authenticate_user_28(cursor, username, password_hash):\n    # Fixed: Parameterized prepared statement preventing SQLi\n    query = \"SELECT id FROM users WHERE username = ? AND password_hash = ?\"\n    cursor.execute(query, (username, password_hash))\n    return cursor.fetchone()",
+  "answer_explanation": "Using parameter placeholders (`?` or `%s`) instructs the database driver to treat inputs strictly as bound literals, eliminating SQL injection.",
+  "reference_solution": "import sqlite3\ndef authenticate_user_28(cursor, username, password_hash):\n    # Fixed: Parameterized prepared statement preventing SQLi\n    query = \"SELECT id FROM users WHERE username = ? AND password_hash = ?\"\n    cursor.execute(query, (username, password_hash))\n    return cursor.fetchone()",
+  "coding_language": "python",
+  "sample_input": "Defective snippet causing runtime failure or logical discrepancy.",
+  "expected_output": "Corrected code snippet passing all edge conditions.",
+  "visible_test_cases": [
+    {
+      "input": "Defective state execution",
+      "output": "Root cause isolated and fixed"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "Edge condition regression check",
+      "output": "Zero regressions"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Root Cause Identification",
+        "weight": 0.4,
+        "description": "Accurately identifies the exact line and logic error causing failure."
+      },
+      {
+        "name": "Remediation Precision",
+        "weight": 0.4,
+        "description": "Provides clean fix without side effects or performance regressions."
+      },
+      {
+        "name": "Technical Rationale",
+        "weight": 0.2,
+        "description": "Explains underlying runtime or structural mechanics clearly."
+      }
+    ],
+    "max_score": 12.0
+  },
+  "estimated_time": 15,
+  "marks": 12,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/debugging",
+  "license": "MIT",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

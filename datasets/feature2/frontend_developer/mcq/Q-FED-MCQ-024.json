@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-FED-MCQ-024",
+  "role_id": "frontend_developer",
+  "skill_id": "FED-SKL-04",
+  "skill_name": "CSS Architecture, Responsive Layouts & Accessibility (a11y)",
+  "subtopic": "WAI-ARIA Roles, Keyboard Navigation and Focus Trapping",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "[CSS Architecture, Responsive Layouts & Accessibility (a11y) - Q24] When rendering an accessible modal dialog, why is keyboard 'Focus Trapping' mandatory under WCAG 2.1 Level AA?",
+  "options": [
+    {
+      "id": "A",
+      "text": "To prevent the mouse cursor from leaving the browser viewport"
+    },
+    {
+      "id": "B",
+      "text": "To ensure keyboard-only and screen reader users pressing Tab/Shift-Tab cannot navigate into obscured background elements behind the active modal"
+    },
+    {
+      "id": "C",
+      "text": "To disable all keyboard shortcuts on the webpage"
+    },
+    {
+      "id": "D",
+      "text": "To automatically submit forms when Enter is pressed"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Without focus trapping, pressing Tab allows focus to escape behind the backdrop into unreachable or obscured elements, stranding assistive technology users.",
+  "reference_solution": "Correct Choice: B. Rationale: Without focus trapping, pressing Tab allows focus to escape behind the backdrop into unreachable or obscured elements, stranding assistive technology users.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-003",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-01",
+  "skill_name": "Data Structures & Algorithms",
+  "subtopic": "Tree and Graph Traversals (BFS, DFS, Dijkstra, A*)",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "Why does Dijkstra's shortest path algorithm fail or produce incorrect results on graphs containing negative edge weights?",
+  "options": [
+    {
+      "id": "A",
+      "text": "It uses a FIFO queue instead of a priority queue"
+    },
+    {
+      "id": "B",
+      "text": "Its greedy choice assumes that visiting an unvisited node with minimal current distance permanently settles its optimal shortest path"
+    },
+    {
+      "id": "C",
+      "text": "It cannot handle directed cyclic graphs"
+    },
+    {
+      "id": "D",
+      "text": "It requires all vertices to have an even degree"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Dijkstra greedily marks nodes as permanently visited once dequeued from the min-heap, assuming any subsequent path extension will only increase the total cost. A negative edge later in the graph violates this monotonic distance growth assumption.",
+  "reference_solution": "Correct Choice: B. Rationale: Dijkstra greedily marks nodes as permanently visited once dequeued from the min-heap, assuming any subsequent path extension will only increase the total cost. A negative edge later in the graph violates this monotonic distance growth assumption.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

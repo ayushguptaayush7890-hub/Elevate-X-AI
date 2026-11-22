@@ -1,0 +1,118 @@
+{
+  "question_id": "Q-SWE-DBG-029",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-04",
+  "skill_name": "Database Systems & Transaction Isolation",
+  "subtopic": "Defect Isolation & Fix",
+  "assessment_type": "debugging",
+  "difficulty": "hard",
+  "question_text": "Investigate and rectify a critical runtime bug in Database Systems & Transaction Isolation.\n\n### Defective Code:\n```python\ndef defective_routine_29(items, target):\n    # Defect: Missing boundary check when target appears at the final array index\n    for i in range(len(items)):\n        if items[i] == target:\n            return items[i + 1]  # IndexError: list index out of range when target is the final array element\n    return None\n```\n\n### Problem Statement & Specification:\nThe routine `defective_routine_29(items, target)` searches for the first occurrence of `target` in `items` and returns the immediately following element `items[i + 1]`.\n\n- **Input:**\n  - `items`: List of elements (can be empty, single-element, or multi-element array).\n  - `target`: The element to search for in `items`.\n- **Output:**\n  - Returns `items[i + 1]` if `target` is found and has a subsequent element in `items`.\n  - Returns `None` if `target` is NOT present in `items`.\n  - Returns `None` if `target` is at the final array index (`i == len(items) - 1`), since no subsequent element exists.\n  - Returns `None` if `items` is empty (`[]`).\n\n### Reported Anomaly / Error:\n`IndexError: list index out of range` when `target` element appears at the final array index in Database Systems & Transaction Isolation.\n\nIdentify the root cause of the defect and provide the corrected code snippet that satisfies all edge cases.",
+  "options": null,
+  "correct_answer": "def defective_routine_29(items, target):\n    # Corrected: Safe boundary guard prevents IndexError when target is at the final index\n    for i in range(len(items) - 1):\n        if items[i] == target:\n            return items[i + 1]\n    return None",
+  "answer_explanation": "The loop failed to prevent index out of bounds on the final element. Restricting iteration to `len(items) - 1` prevents `IndexError: list index out of range` and returns `None` when target is at the final array index, empty, or absent.",
+  "reference_solution": "def defective_routine_29(items, target):\n    # Corrected: Safe boundary guard prevents IndexError when target is at the final index\n    for i in range(len(items) - 1):\n        if items[i] == target:\n            return items[i + 1]\n    return None",
+  "coding_language": "python",
+  "sample_input": "Defective snippet causing runtime failure or logical discrepancy.",
+  "expected_output": "Corrected code snippet passing all edge conditions.",
+  "visible_test_cases": [
+    {
+      "input": {
+        "items": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "target": 2
+      },
+      "output": 3,
+      "description": "Normal case: target in middle of list"
+    },
+    {
+      "input": {
+        "items": [
+          10,
+          20,
+          30
+        ],
+        "target": 30
+      },
+      "output": null,
+      "description": "Boundary case: target at final array index returns None without IndexError"
+    },
+    {
+      "input": {
+        "items": [],
+        "target": 5
+      },
+      "output": null,
+      "description": "Edge case: empty array returns None"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": {
+        "items": [
+          42
+        ],
+        "target": 42
+      },
+      "output": null,
+      "description": "Edge case: single-element array where target is the only element"
+    },
+    {
+      "input": {
+        "items": [
+          1,
+          3,
+          5
+        ],
+        "target": 7
+      },
+      "output": null,
+      "description": "Edge case: target not present in array"
+    },
+    {
+      "input": {
+        "items": [
+          "alpha",
+          "beta",
+          "gamma"
+        ],
+        "target": "alpha"
+      },
+      "output": "beta",
+      "description": "Normal case: string elements with target at initial index"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Root Cause Identification",
+        "weight": 0.4,
+        "description": "Accurately identifies the exact line and logic error causing failure."
+      },
+      {
+        "name": "Remediation Precision",
+        "weight": 0.4,
+        "description": "Provides clean fix without side effects or performance regressions."
+      },
+      {
+        "name": "Technical Rationale",
+        "weight": 0.2,
+        "description": "Explains underlying runtime or structural mechanics clearly."
+      }
+    ],
+    "max_score": 12.0
+  },
+  "estimated_time": 15,
+  "marks": 12,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/debugging",
+  "license": "MIT",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

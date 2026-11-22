@@ -1,0 +1,11 @@
+occupation_id,occupation_name,genuine_worker_count,genuine_description_count,genuine_skill_spans,synthetic_stub_count,synthetic_skill_spans,coverage_status,avg_description_char_length,median_description_char_length,hindi_count,hinglish_count,roman_hindi_count,devanagari_count,english_count,mixed_language_count,beginner_workers,intermediate_workers,advanced_workers,self_employed_workers,workshop_workers,contract_site_workers,annotated_records,reviewed_records,records_requiring_adjudication
+TRD-01,Tailor and Garment Worker,0,0,0,2,4,DEFICIT (0 Genuine Records),92.5,92.5,1,1,1,1,0,0,0,1,1,1,1,0,2,2,0
+TRD-02,Electrician,0,0,0,2,4,DEFICIT (0 Genuine Records),91,91.0,1,1,1,1,0,0,0,1,1,1,0,1,2,2,0
+TRD-03,Plumber,0,0,0,2,4,DEFICIT (0 Genuine Records),89.5,89.5,0,1,2,0,1,0,0,1,1,0,0,2,2,2,0
+TRD-04,Motor Mechanic,0,0,0,2,4,DEFICIT (0 Genuine Records),87.5,87.5,1,1,1,1,0,0,0,1,1,1,1,0,2,2,0
+TRD-05,Carpenter,0,0,0,2,4,DEFICIT (0 Genuine Records),81.5,81.5,1,1,1,1,0,0,0,0,2,1,1,0,2,2,0
+TRD-06,Welder,0,0,0,2,4,DEFICIT (0 Genuine Records),90.5,90.5,0,1,2,0,1,0,0,1,1,0,2,0,2,2,0
+TRD-07,Mason / Raj Mistri,0,0,0,2,4,DEFICIT (0 Genuine Records),93,93.0,1,1,1,1,0,0,0,0,2,0,0,2,2,2,0
+TRD-08,Painter,0,0,0,2,4,DEFICIT (0 Genuine Records),88.5,88.5,0,1,2,0,1,0,0,2,0,0,0,2,2,2,0
+TRD-09,Agriculture and Irrigation Worker,0,0,0,2,4,DEFICIT (0 Genuine Records),90,90.0,1,1,1,1,0,0,0,0,2,0,0,2,2,2,0
+TRD-10,Mobile Repair Technician,0,0,0,2,4,DEFICIT (0 Genuine Records),90,90.0,1,1,1,1,0,0,0,2,0,1,1,0,2,2,0

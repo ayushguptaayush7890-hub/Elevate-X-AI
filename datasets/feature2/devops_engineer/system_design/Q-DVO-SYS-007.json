@@ -1,0 +1,54 @@
+{
+  "question_id": "Q-DVO-SYS-007",
+  "role_id": "devops_engineer",
+  "skill_id": "DVO-SKL-03",
+  "skill_name": "Container Orchestration (Kubernetes)",
+  "subtopic": "Multi-Cluster GitOps & Observability Architecture",
+  "assessment_type": "system_design",
+  "difficulty": "easy",
+  "question_text": "### System Design Challenge: Multi-Cluster Kubernetes Platform Architecture #07\n\n#### Functional Requirements:\n- Orchestrate declarative GitOps continuous delivery across 5 production Kubernetes clusters\n- Implement centralized telemetry aggregation ingesting 500,000 metric samples/second\n- Automate zero-downtime cluster upgrades and blue-green node pool rotations\n\n#### Non-Functional & Scale Requirements:\n- SOC 2 Type II audit trail logging for all cluster API mutations\n- Zero single point of failure with cross-region disaster recovery within RTO < 5 minutes\n- Strict network segmentation with Calico eBPF network policies\n\n#### Scale Parameters:\n- **Managed Production Clusters**: 5 Multi-Region\n- **Total Worker Nodes**: 800 Instances\n- **Active Workload Pods**: 12,000 Containers\n\nDesign the end-to-end architecture. Specify API contracts, high-level data flow, database storage models, caching layers, partition keys, consensus mechanisms, and failure recovery strategies.",
+  "options": null,
+  "correct_answer": "### Reference Architecture Breakdown:\nGit repository stores declarative Helm / Kustomize manifests -> ArgoCD GitOps engine syncs state -> Cilium eBPF CNI handles pod networking and wireguard encryption -> Prometheus Agent pods scrape local nodes and remote-write to centralized Thanos storage -> OpenTelemetry collectors push traces to Jaeger/Tempo.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nCentralized Thanos object storage reduces per-cluster Prometheus disk footprints, but introduces network egress costs. Compactor downsampling (1h/5m retention) mitigates long-term storage bloat.",
+  "answer_explanation": "Evaluates enterprise Kubernetes platform engineering balancing GitOps automation, network security, and centralized telemetry.",
+  "reference_solution": "### Reference Architecture Breakdown:\nGit repository stores declarative Helm / Kustomize manifests -> ArgoCD GitOps engine syncs state -> Cilium eBPF CNI handles pod networking and wireguard encryption -> Prometheus Agent pods scrape local nodes and remote-write to centralized Thanos storage -> OpenTelemetry collectors push traces to Jaeger/Tempo.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nCentralized Thanos object storage reduces per-cluster Prometheus disk footprints, but introduces network egress costs. Compactor downsampling (1h/5m retention) mitigates long-term storage bloat.",
+  "coding_language": null,
+  "sample_input": "Enterprise-scale production traffic load and availability SLA constraints.",
+  "expected_output": "Comprehensive architectural blueprint detailing data models, caching, and resiliency.",
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "GitOps & Multi-Cluster Management",
+        "weight": 0.3,
+        "description": "Addresses ArgoCD, cluster drift, and fleet rollouts."
+      },
+      {
+        "name": "Networking & Security Policies",
+        "weight": 0.25,
+        "description": "Implements eBPF, mTLS, and network isolation."
+      },
+      {
+        "name": "Observability at Scale",
+        "weight": 0.25,
+        "description": "Designs Thanos, remote-write, and metric deduplication."
+      },
+      {
+        "name": "Disaster Recovery & Upgrades",
+        "weight": 0.2,
+        "description": "Handles control plane upgrades and multi-cluster failover."
+      }
+    ],
+    "max_score": 10.0
+  },
+  "estimated_time": 40,
+  "marks": 10,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/system-design",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-010",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-01",
+  "skill_name": "Data Structures & Algorithms",
+  "subtopic": "Array and Two-Pointer / Sliding Window Techniques",
+  "assessment_type": "mcq",
+  "difficulty": "hard",
+  "question_text": "What is the amortized complexity of maintaining a Monotonic Deque to find the sliding window maximum over an array of size N with window size K?",
+  "options": [
+    {
+      "id": "A",
+      "text": "O(N log K)"
+    },
+    {
+      "id": "B",
+      "text": "O(N)"
+    },
+    {
+      "id": "C",
+      "text": "O(N * K)"
+    },
+    {
+      "id": "D",
+      "text": "O(N log N)"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Every array element is pushed onto the tail of the monotonic deque exactly once, and popped from the tail or head at most once over the entire execution. Thus, the total number of deque operations across all windows is bounded by 2N, achieving O(N) overall.",
+  "reference_solution": "Correct Choice: B. Rationale: Every array element is pushed onto the tail of the monotonic deque exactly once, and popped from the tail or head at most once over the entire execution. Thus, the total number of deque operations across all windows is bounded by 2N, achieving O(N) overall.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

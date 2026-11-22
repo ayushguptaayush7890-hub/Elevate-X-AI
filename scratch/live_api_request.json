@@ -1,0 +1,28 @@
+{
+  "candidateSkills": [
+    "Python",
+    "C++",
+    "Machine Learning",
+    "Deep Learning",
+    "LLM",
+    "RAG",
+    "NLP",
+    "Computer Vision",
+    "Flask",
+    "FastAPI",
+    "PyTorch",
+    "TensorFlow",
+    "NumPy",
+    "Pandas",
+    "Docker",
+    "Postman",
+    "React.js",
+    "Node.js",
+    "SQL",
+    "Git",
+    "GitHub"
+  ],
+  "targetOccupationTitle": "AI / Machine Learning Engineer",
+  "targetOccupationSource": "esco",
+  "includeAiStrategy": true
+}

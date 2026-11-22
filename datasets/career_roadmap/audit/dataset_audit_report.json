@@ -1,0 +1,63 @@
+{
+  "audit_timestamp": "2026-11-21T23:14:00Z",
+  "dataset_name": "Elevate X AI Career Roadmap Datasets",
+  "checks": [
+    {
+      "target": "unified_occupations.json",
+      "passed": true,
+      "total_occupations": 3062,
+      "core_benchmarks_count": 5,
+      "benchmark_titles": [
+        "data scientist",
+        "software developer",
+        "ai engineer",
+        "backend developer",
+        "apparel quality assurance specialist (export standard)"
+      ]
+    },
+    {
+      "target": "occupation_competency_tiers.json",
+      "passed": true,
+      "occupations_tiered": [
+        "ai engineer",
+        "data scientist",
+        "backend developer",
+        "software developer",
+        "apparel quality assurance specialist (export standard)"
+      ],
+      "stage_distribution": {
+        "ai engineer": 4,
+        "data scientist": 4,
+        "backend developer": 4,
+        "software developer": 4,
+        "apparel quality assurance specialist (export standard)": 4
+      }
+    },
+    {
+      "target": "verified_resource_catalog.json",
+      "passed": true,
+      "total_resources": 19,
+      "verified_resources": 19,
+      "valid_url_count": 19,
+      "invalid_urls": [],
+      "whitelisted_domains": [
+        "docs.docker.com",
+        "docs.python.org",
+        "fastapi.tiangolo.com",
+        "learn.microsoft.com",
+        "nptel.ac.in",
+        "pytorch.org",
+        "react.dev",
+        "scikit-learn.org",
+        "skillbuilder.aws",
+        "sscamh.com",
+        "swayam.gov.in",
+        "www.astm.org",
+        "www.cloudskillsboost.google",
+        "www.freecodecamp.org",
+        "www.iso.org"
+      ]
+    }
+  ],
+  "overall_status": "PASSED"
+}

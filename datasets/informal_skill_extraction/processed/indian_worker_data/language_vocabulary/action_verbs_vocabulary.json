@@ -1,0 +1,51 @@
+[
+  {
+    "verb_id": "VRB-001",
+    "devanagari": "काटना",
+    "roman_hinglish": "kaatna",
+    "english_action": "cutting / slicing / chasing",
+    "trade_context": "fabric, pipe, wall conduit, metal plate"
+  },
+  {
+    "verb_id": "VRB-002",
+    "devanagari": "सिलना",
+    "roman_hinglish": "silna",
+    "english_action": "stitching / seaming",
+    "trade_context": "garments, curtains, canvas"
+  },
+  {
+    "verb_id": "VRB-003",
+    "devanagari": "चिपकाना",
+    "roman_hinglish": "chipkana",
+    "english_action": "gluing / bonding / fusing",
+    "trade_context": "sunmica, bakram, display folders"
+  },
+  {
+    "verb_id": "VRB-004",
+    "devanagari": "खींचना",
+    "roman_hinglish": "kheenchna",
+    "english_action": "skimming / pulling",
+    "trade_context": "putty application, wire pulling in conduits"
+  },
+  {
+    "verb_id": "VRB-005",
+    "devanagari": "घिसना",
+    "roman_hinglish": "ghisana",
+    "english_action": "sanding / abrading / grinding",
+    "trade_context": "regmar sanding, angle grinder beveling"
+  },
+  {
+    "verb_id": "VRB-006",
+    "devanagari": "जोड़ना",
+    "roman_hinglish": "jorna",
+    "english_action": "jointing / coupling / wiring",
+    "trade_context": "pipe solvent joints, MCB terminations, implement hitching"
+  },
+  {
+    "verb_id": "VRB-007",
+    "devanagari": "जांचना",
+    "roman_hinglish": "jaanchana",
+    "english_action": "inspecting / measuring / diagnosing",
+    "trade_context": "multimeter testing, feeler gauge, plumb bob"
+  }
+]

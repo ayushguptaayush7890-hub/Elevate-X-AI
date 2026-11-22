@@ -2,7 +2,7 @@
 FastAPI Dependencies for Authentication, Database Sessions, and Profile Resolution.
 """
 
-from typing import Generator
+from typing import Generator, Optional
 import uuid
 import jwt
 from fastapi import Depends, HTTPException, status
@@ -18,6 +18,11 @@ from app.models.profile import UserProfile
 oauth2_scheme = OAuth2PasswordBearer(
     tokenUrl=f"{settings.API_V1_PREFIX}/auth/login",
     auto_error=True,
+)
+
+oauth2_scheme_optional = OAuth2PasswordBearer(
+    tokenUrl=f"{settings.API_V1_PREFIX}/auth/login",
+    auto_error=False,
 )
 
 
@@ -115,4 +120,42 @@ def get_current_user_profile(
         db.refresh(profile)
 
     return profile
+
+
+def get_optional_current_user(
+    token: Optional[str] = Depends(oauth2_scheme_optional),
+    db: Session = Depends(get_db),
+) -> Optional[User]:
+    """
+    Attempts to decode bearer token and retrieve User.
+    Returns None if token is absent, invalid, or expired without throwing 401.
+    """
+    if not token:
+        return None
+
+    try:
+        payload = decode_token(token)
+        user_id_str: str = payload.get("sub")
+        token_type: str = payload.get("type", "access")
+        jti: str = payload.get("jti")
+
+        if user_id_str is None or token_type != "access":
+            return None
+
+        user_id = uuid.UUID(user_id_str)
+
+        if jti:
+            revoked = db.execute(
+                select(RevokedToken).where(RevokedToken.jti == jti)
+            ).scalar_one_or_none()
+            if revoked:
+                return None
+
+        user = db.execute(select(User).where(User.id == user_id)).scalar_one_or_none()
+        if user and user.is_active:
+            return user
+    except Exception:
+        return None
+
+    return None
 

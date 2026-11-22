@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-014",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-02",
+  "skill_name": "Object-Oriented & Functional Design Patterns",
+  "subtopic": "Creational Patterns (Factory, Builder, Singleton)",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "Why is the Bill Pugh Singleton implementation in Java considered superior to standard double-checked locking without volatile variables?",
+  "options": [
+    {
+      "id": "A",
+      "text": "It uses operating system mutexes directly"
+    },
+    {
+      "id": "B",
+      "text": "It relies on class-loader initialization semantics to guarantee thread safety without explicit synchronization locks"
+    },
+    {
+      "id": "C",
+      "text": "It permits multiple distinct instances when memory pressure occurs"
+    },
+    {
+      "id": "D",
+      "text": "It bypasses JVM bytecode verification"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "The nested static helper class is loaded only when `getInstance()` is called. The JVM guarantees class initialization is atomic and thread-safe without synchronization overhead.",
+  "reference_solution": "Correct Choice: B. Rationale: The nested static helper class is loaded only when `getInstance()` is called. The JVM guarantees class initialization is atomic and thread-safe without synchronization overhead.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

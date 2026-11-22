@@ -1,0 +1,76 @@
+{
+  "audit_timestamp": "2026-11-21T12:24:00Z",
+  "datasets": {
+    "uhfew_resumes": {
+      "format": "JSON Lines",
+      "total_records": 4817,
+      "valid_records": 4817,
+      "malformed_records": 0,
+      "section_completeness_rate": {
+        "personal_info": 99.98,
+        "experience": 100.0,
+        "education": 99.92,
+        "skills": 100.0,
+        "projects": 97.94,
+        "certifications": 0.19,
+        "achievements": 0.08
+      }
+    },
+    "job_resume_matching": {
+      "cv_csv": {
+        "rows": 9544,
+        "valid": 9544,
+        "columns": [
+          "candidate_id",
+          "source_row",
+          "target_position",
+          "resume_text",
+          "clean_skills"
+        ]
+      },
+      "job_csv": {
+        "rows": 1167,
+        "valid": 1167,
+        "columns": [
+          "job_id",
+          "job_title",
+          "category",
+          "job_description",
+          "job_text"
+        ]
+      },
+      "matches_csv": {
+        "rows": 122560,
+        "valid": 122560,
+        "columns": [
+          "candidate_id",
+          "job_id",
+          "final_score",
+          "raw_score",
+          "label_strength"
+        ]
+      }
+    },
+    "job_resume_fit": {
+      "format": "CSV",
+      "rows": 2385,
+      "valid": 2385,
+      "missing_values_by_column": {
+        "resume_text": 1
+      }
+    },
+    "resume_score_details": {
+      "format": "Individual JSON files",
+      "total_files": 1031,
+      "matched_files": 648,
+      "mismatched_files": 201,
+      "invalid_files": 142,
+      "empty_info_files": 40,
+      "invalid_reasons": {
+        "gibberish_synthetic_text": 30,
+        "malformed_job_description": 57,
+        "malformed_resume": 55
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "question_id": "Q-DVO-SCN-009",
+  "role_id": "devops_engineer",
+  "skill_id": "DVO-SKL-02",
+  "skill_name": "Containerization & Image Optimization (Docker)",
+  "subtopic": "Multi-Stage Builds and Docker Layer Caching",
+  "assessment_type": "scenario",
+  "difficulty": "easy",
+  "question_text": "### Production Incident Scenario:\nProduction Incident #09: A multi-tenant Kubernetes cluster suffered widespread Pod CrashLoopBackOff and node eviction events in Containerization & Image Optimization (Docker). Several critical ingress pods were repeatedly terminated with OOMKilled (Exit Code 137) during 'Multi-Stage Builds and Docker Layer Caching'.\n\n### Engineering Challenge:\nHow should the platform team configure Kubernetes resource management and probe semantics to stabilize 'Multi-Stage Builds and Docker Layer Caching'?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Set explicit memory limits matching container cgroup allocations, tune JVM/runtime heap ratios (MaxRAMPercentage), and configure startup probes with sufficient failureThreshold."
+    },
+    {
+      "id": "B",
+      "text": "Remove all memory and CPU resource limits so containers can consume unbounded host physical memory."
+    },
+    {
+      "id": "C",
+      "text": "Configure liveness probes to execute an intensive 5-second database write query every 500ms."
+    },
+    {
+      "id": "D",
+      "text": "Disable container restart policies by setting restartPolicy: Never across all deployments."
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "OOMKilled exit code 137 occurs when a container breaches its cgroup memory limit. Aligning runtime heap allocation (e.g., -XX:MaxRAMPercentage=75) with Kubernetes limits, accompanied by startup probes to decouple initial warm-up from liveness kills, ensures container resilience.",
+  "reference_solution": "Recommended Remediation: Option A. Rationale: OOMKilled exit code 137 occurs when a container breaches its cgroup memory limit. Aligning runtime heap allocation (e.g., -XX:MaxRAMPercentage=75) with Kubernetes limits, accompanied by startup probes to decouple initial warm-up from liveness kills, ensures container resilience.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Architecture & Operational Assessment",
+        "weight": 0.6,
+        "description": "Evaluates risk, system constraints, and root cause accurately."
+      },
+      {
+        "name": "Mitigation Strategy",
+        "weight": 0.4,
+        "description": "Selects the optimal zero-downtime or resilient recovery path."
+      }
+    ],
+    "max_score": 4.0
+  },
+  "estimated_time": 8,
+  "marks": 4,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/scenarios",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

@@ -1,0 +1,11 @@
+metric_name,value,unit
+test_samples,300,count
+token_precision,0.0233,score
+token_recall,0.0217,score
+token_f1,0.0225,score
+exact_span_precision,0.0208,score
+exact_span_recall,0.0217,score
+exact_span_f1,0.0213,score
+mean_latency_ms,29.45,milliseconds
+p95_latency_ms,17.81,milliseconds
+model_size_mb,1110.0,megabytes

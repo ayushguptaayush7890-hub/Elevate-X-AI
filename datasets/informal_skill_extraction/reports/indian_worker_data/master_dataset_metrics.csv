@@ -1,0 +1,15 @@
+metric_category,metric_name,value,unit_or_notes
+core_volume,genuine_worker_records,0,interviews
+core_volume,unique_genuine_workers,0,workers
+core_volume,genuine_skill_spans,0,spans
+core_volume,synthetic_records,522,stubs_and_augmented
+core_volume,synthetic_skill_spans,1044,spans
+core_volume,official_reference_trades,169,dgt_cts_qualifications
+core_volume,external_research_records,1,indicbert_nlp_summary
+knowledge_base,canonical_competencies,32,nsqf_esco_mapped
+knowledge_base,vocabulary_registry_terms,24,multilingual_lexicon
+quality_assurance,offset_validation_errors,0,errors
+quality_assurance,exact_duplicate_sentences,2,duplicates
+target_tracking,target_genuine_records,1000,records
+target_tracking,completion_percentage,0.00,percent
+governance,training_readiness_decision,BLOCKED,0_genuine_records_pending_fieldwork

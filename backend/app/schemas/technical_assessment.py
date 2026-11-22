@@ -59,6 +59,7 @@ class TechnicalAssessmentStartResponse(BaseModel):
     role_title: str
     difficulty_mode: str
     duration_minutes: int
+    expiry_timestamp: Optional[float] = None
     total_questions: int
     questions: List[TechnicalQuestionMasked]
 
@@ -182,3 +183,20 @@ class AdaptiveStepResponse(BaseModel):
     recommended_difficulty: str
     next_question: Optional[TechnicalQuestionMasked] = None
     is_completed: bool
+
+class AssessmentSessionProgressRequest(BaseModel):
+    current_index: int
+    answers: Dict[str, Any]
+
+class AssessmentSessionStateResponse(BaseModel):
+    session_id: str
+    role_id: str
+    role_title: str
+    difficulty_mode: str
+    questions: List[TechnicalQuestionMasked]
+    current_index: int
+    answers: Dict[str, Any]
+    time_left_seconds: int
+    remaining_seconds: Optional[int] = None
+    is_expired: bool
+    total_questions: int

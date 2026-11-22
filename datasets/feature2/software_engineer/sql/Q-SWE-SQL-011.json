@@ -1,0 +1,63 @@
+{
+  "question_id": "Q-SWE-SQL-011",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-04",
+  "skill_name": "Database Systems & Transaction Isolation",
+  "subtopic": "Relational Aggregations & Windowing",
+  "assessment_type": "sql",
+  "difficulty": "medium",
+  "question_text": "Write an ANSI SQL query to compute total settled balance per account from `transactions_11`.",
+  "options": null,
+  "correct_answer": "SELECT account_id, SUM(amount) AS total_settled\nFROM transactions_11\nWHERE status = 'COMPLETED'\nGROUP BY account_id\nORDER BY total_settled DESC;",
+  "answer_explanation": "Groups transactions by account, filters for completed state, aggregates settled amounts and orders descending.",
+  "reference_solution": "SELECT account_id, SUM(amount) AS total_settled\nFROM transactions_11\nWHERE status = 'COMPLETED'\nGROUP BY account_id\nORDER BY total_settled DESC;",
+  "coding_language": "sql",
+  "sample_input": "Relational database tables populated with sample records.",
+  "expected_output": "[{\"account_id\": 101, \"total_settled\": 400.0}, {\"account_id\": 102, \"total_settled\": 300.0}]",
+  "visible_test_cases": [
+    {
+      "input": "Sample DB execution",
+      "output": "[{\"account_id\": 101, \"total_settled\": 400.0}, {\"account_id\": 102, \"total_settled\": 300.0}]"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "Edge-case boundary verification",
+      "output": "Deterministic result set"
+    }
+  ],
+  "SQL_schema": "CREATE TABLE transactions_11 (\n    txn_id INTEGER PRIMARY KEY,\n    account_id INTEGER NOT NULL,\n    amount DECIMAL(12, 2) NOT NULL,\n    status VARCHAR(20) NOT NULL,\n    created_at TIMESTAMP NOT NULL\n);",
+  "sample_database": "INSERT INTO transactions_11 VALUES (1, 101, 250.00, 'COMPLETED', '2026-11-01 10:00:00');\nINSERT INTO transactions_11 VALUES (2, 101, 150.00, 'COMPLETED', '2026-11-01 11:00:00');\nINSERT INTO transactions_11 VALUES (3, 102, 500.00, 'FAILED', '2026-11-01 12:00:00');\nINSERT INTO transactions_11 VALUES (4, 102, 300.00, 'COMPLETED', '2026-11-02 09:00:00');",
+  "expected_SQL_result": [
+    {
+      "account_id": 101,
+      "total_settled": 400.0
+    },
+    {
+      "account_id": 102,
+      "total_settled": 300.0
+    }
+  ],
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Query Correctness & Result Match",
+        "weight": 0.6,
+        "description": "Returns exact rows, ordering, and aggregation without missing null handling."
+      },
+      {
+        "name": "Relational Efficiency & Index Friendliness",
+        "weight": 0.4,
+        "description": "Avoids cartesian products, redundant subqueries, and non-SARGable expressions."
+      }
+    ],
+    "max_score": 8.0
+  },
+  "estimated_time": 15,
+  "marks": 8,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/sql",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

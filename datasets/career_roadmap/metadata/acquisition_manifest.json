@@ -1,0 +1,42 @@
+[
+  {
+    "dataset_name": "European Skills, Competences, Qualifications and Occupations (ESCO)",
+    "version": "v1.1.1",
+    "publisher": "European Commission / Directorate-General for Employment, Social Affairs and Inclusion",
+    "source_url": "https://esco.ec.europa.eu/en/use-esco/download",
+    "license": "Open Data / Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "download_date": "2026-11-21",
+    "record_count": "3,039 occupations, 13,938 skills, 439,000+ relationships",
+    "sha256": "ab68822870aa3c987617f3e733874470ffe06883e8b72b1cbfdb48dfffee0034"
+  },
+  {
+    "dataset_name": "Occupational Information Network (O*NET)",
+    "version": "31.0 Database Release",
+    "publisher": "U.S. Department of Labor / Employment and Training Administration (USDOL/ETA)",
+    "source_url": "https://www.onetcenter.org/database.html",
+    "license": "Public Domain / Creative Commons Attribution 4.0 (CC BY 4.0)",
+    "download_date": "2026-11-21",
+    "record_count": "1,016 occupations, KSAs, technological skills, job zones",
+    "sha256": "0e235c9284e4ac1c36b23d425c581a919b51520b4138801b964a29ef40279fc9"
+  },
+  {
+    "dataset_name": "National Qualifications Register (NQR) & DGT CTS Trade Directory",
+    "version": "Official NCVET Release 2026",
+    "publisher": "National Council for Vocational Education and Training (NCVET) / DGT, Ministry of Skill Development",
+    "source_url": "https://nqr.gov.in/",
+    "license": "Government Open Access / Public Information (Govt of India)",
+    "download_date": "2026-11-14",
+    "record_count": "345 qualification packs and trade syllabi",
+    "sha256": "b3a9ca1467b9983da5f7f475ddb807694c15bb83852be60ea30e0e27b973a9e9"
+  },
+  {
+    "dataset_name": "Elevate X AI Verified Public Learning Resource Catalog",
+    "version": "2.1 Curated",
+    "publisher": "Official Technology Documentation Portals, NPTEL, SWAYAM, NIST, ASTM",
+    "source_url": "https://learn.microsoft.com, https://nptel.ac.in, https://pytorch.org, https://docs.python.org",
+    "license": "Public Open Documentation / Educational Course Ware",
+    "download_date": "2026-11-21",
+    "record_count": "19 verified resources, 100% reachable (200 OK)",
+    "sha256": "7c0cbd7f588f0c362aa2a21e1287ebdeae618c0caac7512abb6d6cfced3d8764"
+  }
+]

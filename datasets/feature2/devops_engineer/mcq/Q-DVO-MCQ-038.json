@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-DVO-MCQ-038",
+  "role_id": "devops_engineer",
+  "skill_id": "DVO-SKL-03",
+  "skill_name": "Container Orchestration (Kubernetes)",
+  "subtopic": "Multi-Stage Builds and Docker Layer Caching",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "[Container Orchestration (Kubernetes) - Q38] Why does placing `COPY package.json .` and `RUN npm install` before `COPY . .` in a Dockerfile dramatically speed up iterative CI builds?",
+  "options": [
+    {
+      "id": "A",
+      "text": "It forces Docker to compile packages in parallel"
+    },
+    {
+      "id": "B",
+      "text": "Docker caches layer results; if `package.json` has not changed, Docker reuses the cached `npm install` layer, avoiding downloading dependencies on source code edits"
+    },
+    {
+      "id": "C",
+      "text": "It bypasses Docker daemon authentication"
+    },
+    {
+      "id": "D",
+      "text": "It reduces the size of the Linux kernel image"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Docker layer cache invalidation cascades downwards. Placing infrequently changing dependency files first ensures that daily source code edits do not invalidate the cached dependency install step.",
+  "reference_solution": "Correct Choice: B. Rationale: Docker layer cache invalidation cascades downwards. Placing infrequently changing dependency files first ensures that daily source code edits do not invalidate the cached dependency install step.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

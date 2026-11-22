@@ -1,0 +1,54 @@
+{
+  "question_id": "Q-SEC-SYS-034",
+  "role_id": "cybersecurity_engineer",
+  "skill_id": "SEC-SKL-02",
+  "skill_name": "Network Security, Firewalls & Protocols",
+  "subtopic": "Zero Trust & Security Operations Architecture",
+  "assessment_type": "system_design",
+  "difficulty": "hard",
+  "question_text": "### System Design Challenge: Enterprise Zero Trust Architecture #34\n\n#### Functional Requirements:\n- Enforce continuous context-aware device health and user identity authentication per request\n- Eliminate legacy corporate VPN perimeter in favor of identity-aware micro-segmentation proxies\n- Centralize SIEM log ingestion analyzing 250,000 security events/sec with automated SOAR playbooks\n\n#### Non-Functional & Scale Requirements:\n- FIPS 140-3 cryptographic module compliance for all data in transit and at rest\n- High availability 99.999% SLA for identity authentication boundary\n- Automated lateral movement quarantine within 60 seconds of threat detection\n\n#### Scale Parameters:\n- **Enterprise Employees**: 45,000\n- **Managed Corporate & BYOD Devices**: 90,000\n- **Daily Ingested Security Logs**: 2.5 Terabytes\n\nDesign the end-to-end architecture. Specify API contracts, high-level data flow, database storage models, caching layers, partition keys, consensus mechanisms, and failure recovery strategies.",
+  "options": null,
+  "correct_answer": "### Reference Architecture Breakdown:\nClients connect via WireGuard / Identity-Aware Proxy (IAP) -> Okta / Azure AD evaluates WebAuthn FIDO2 MFA and CrowdStrike EDR device posture -> Enforces micro-segmentation with SPIFFE/SPIRE cryptographic mTLS identities -> All network flow logs, audit logs, and EDR events stream to centralized Splunk / OpenSearch SIEM -> SOAR triggers automated quarantine.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nContinuous posture re-evaluation per HTTP request adds latency; caching device posture state with a 60-second TTL in Redis balances strict security with acceptable employee user experience.",
+  "answer_explanation": "Evaluates comprehensive enterprise Zero Trust cybersecurity architecture balancing strict least-privilege, automated incident containment, and high availability.",
+  "reference_solution": "### Reference Architecture Breakdown:\nClients connect via WireGuard / Identity-Aware Proxy (IAP) -> Okta / Azure AD evaluates WebAuthn FIDO2 MFA and CrowdStrike EDR device posture -> Enforces micro-segmentation with SPIFFE/SPIRE cryptographic mTLS identities -> All network flow logs, audit logs, and EDR events stream to centralized Splunk / OpenSearch SIEM -> SOAR triggers automated quarantine.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nContinuous posture re-evaluation per HTTP request adds latency; caching device posture state with a 60-second TTL in Redis balances strict security with acceptable employee user experience.",
+  "coding_language": null,
+  "sample_input": "Enterprise-scale production traffic load and availability SLA constraints.",
+  "expected_output": "Comprehensive architectural blueprint detailing data models, caching, and resiliency.",
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Zero Trust Identity & Device Posture",
+        "weight": 0.3,
+        "description": "Designs mTLS, FIDO2, and continuous posture checks."
+      },
+      {
+        "name": "Micro-Segmentation & Network Security",
+        "weight": 0.25,
+        "description": "Eliminates flat networks using identity proxies."
+      },
+      {
+        "name": "SIEM / SOAR Telemetry & Forensics",
+        "weight": 0.25,
+        "description": "Scales log ingestion and automates containment."
+      },
+      {
+        "name": "Operational Usability & Redundancy",
+        "weight": 0.2,
+        "description": "Balances security friction against worker latency."
+      }
+    ],
+    "max_score": 20.0
+  },
+  "estimated_time": 40,
+  "marks": 20,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/system-design",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

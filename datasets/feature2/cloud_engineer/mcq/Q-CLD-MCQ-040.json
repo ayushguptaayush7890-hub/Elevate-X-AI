@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-CLD-MCQ-040",
+  "role_id": "cloud_engineer",
+  "skill_id": "CLD-SKL-05",
+  "skill_name": "Cloud Security, Cost Optimization & High Availability / DR",
+  "subtopic": "Disaster Recovery Strategies (Backup & Restore, Pilot Light, Warm Standby, Multi-Region Active-Active)",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "[Cloud Security, Cost Optimization & High Availability / DR - Q40] Which cloud Disaster Recovery (DR) strategy offers the lowest Recovery Time Objective (RTO) and Recovery Point Objective (RPO), at the highest operational cost?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Backup and Restore"
+    },
+    {
+      "id": "B",
+      "text": "Pilot Light"
+    },
+    {
+      "id": "C",
+      "text": "Warm Standby"
+    },
+    {
+      "id": "D",
+      "text": "Multi-Region Active-Active"
+    }
+  ],
+  "correct_answer": "D",
+  "answer_explanation": "Multi-Region Active-Active serves production traffic simultaneously across two or more geographical cloud regions with real-time continuous replication, providing near-zero RTO and RPO.",
+  "reference_solution": "Correct Choice: D. Rationale: Multi-Region Active-Active serves production traffic simultaneously across two or more geographical cloud regions with real-time continuous replication, providing near-zero RTO and RPO.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

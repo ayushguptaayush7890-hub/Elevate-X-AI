@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-019",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-02",
+  "skill_name": "Object-Oriented & Functional Design Patterns",
+  "subtopic": "Structural Patterns (Adapter, Decorator, Facade)",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "How does the Decorator pattern maintain transparency for client code interacting with wrapped components?",
+  "options": [
+    {
+      "id": "A",
+      "text": "By inheriting from the concrete implementation class"
+    },
+    {
+      "id": "B",
+      "text": "By implementing the exact same interface or abstract type as the component it wraps and delegating calls"
+    },
+    {
+      "id": "C",
+      "text": "By modifying the wrapped object's memory bytecode at runtime"
+    },
+    {
+      "id": "D",
+      "text": "By utilizing static class methods"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "The Decorator implements the same interface as the target component and holds a reference to it, allowing callers to invoke standard methods without knowing decoration occurred.",
+  "reference_solution": "Correct Choice: B. Rationale: The Decorator implements the same interface as the target component and holds a reference to it, allowing callers to invoke standard methods without knowing decoration occurred.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

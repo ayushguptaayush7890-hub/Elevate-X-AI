@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-BED-MCQ-015",
+  "role_id": "backend_developer",
+  "skill_id": "BED-SKL-05",
+  "skill_name": "Caching Strategies, Invalidation & Idempotency",
+  "subtopic": "Cache Stampede / Thundering Herd Prevention",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "[Caching Strategies, Invalidation & Idempotency - Q15] How does Probabilistic Early Expiration (XFetch algorithm) prevent a Cache Stampede when a high-traffic cache key expires?",
+  "options": [
+    {
+      "id": "A",
+      "text": "By permanently locking the database table"
+    },
+    {
+      "id": "B",
+      "text": "By computing an exponential probability that a random client will recompute and refresh the cache *before* it officially expires, based on delta compute time and remaining TTL"
+    },
+    {
+      "id": "C",
+      "text": "By serving HTTP 503 errors to all clients during expiration"
+    },
+    {
+      "id": "D",
+      "text": "By removing cache TTL entirely"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "XFetch evaluates `-beta * delta * ln(random()) > remaining_ttl`. As expiration approaches, probability increases that a single worker will refresh the key in the background, preventing stampedes.",
+  "reference_solution": "Correct Choice: B. Rationale: XFetch evaluates `-beta * delta * ln(random()) > remaining_ttl`. As expiration approaches, probability increases that a single worker will refresh the key in the background, preventing stampedes.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

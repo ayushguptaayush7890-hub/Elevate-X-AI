@@ -1,0 +1,1019 @@
+{
+  "timestamp": "2026-11-22T00:21:16.607596",
+  "datasets": {
+    "esco": {
+      "skillSkillRelations_en.csv": {
+        "file": "skillSkillRelations_en.csv",
+        "format": "csv",
+        "row_count": 5818,
+        "columns": [
+          "originalSkillUri",
+          "originalSkillType",
+          "relationType",
+          "relatedSkillType",
+          "relatedSkillUri"
+        ],
+        "dtypes": {
+          "originalSkillUri": "object",
+          "originalSkillType": "object",
+          "relationType": "object",
+          "relatedSkillType": "object",
+          "relatedSkillUri": "object"
+        },
+        "sample_record": {
+          "originalSkillUri": "http://data.europa.eu/esco/skill/00064735-8fad-454b-90c7-ed858cc993f2",
+          "originalSkillType": "skill/competence",
+          "relationType": "optional",
+          "relatedSkillType": "knowledge",
+          "relatedSkillUri": "http://data.europa.eu/esco/skill/d4a0744a-508b-4a5e-97a5-ad1fc7f55e6e"
+        }
+      },
+      "skillGroups_en.csv": {
+        "file": "skillGroups_en.csv",
+        "format": "csv",
+        "row_count": 3528,
+        "columns": [
+          "conceptType",
+          "conceptUri",
+          "preferredLabel",
+          "altLabels",
+          "hiddenLabels",
+          "status",
+          "modifiedDate",
+          "scopeNote",
+          "inScheme",
+          "description",
+          "code"
+        ],
+        "dtypes": {
+          "conceptType": "object",
+          "conceptUri": "object",
+          "preferredLabel": "object",
+          "altLabels": "float64",
+          "hiddenLabels": "float64",
+          "status": "object",
+          "modifiedDate": "object",
+          "scopeNote": "float64",
+          "inScheme": "object",
+          "description": "object",
+          "code": "int64"
+        },
+        "sample_record": {
+          "conceptType": "SkillGroup",
+          "conceptUri": "http://data.europa.eu/esco/isced-f/00",
+          "preferredLabel": "generic programmes and qualifications",
+          "altLabels": NaN,
+          "hiddenLabels": NaN,
+          "status": "released",
+          "modifiedDate": NaN,
+          "scopeNote": NaN,
+          "inScheme": "http://data.europa.eu/esco/concept-scheme/skills\nhttp://data.europa.eu/esco/concept-scheme/skills-hierarchy\nhttp://data.europa.eu/esco/concept-scheme/isced-f",
+          "description": "Generic programmes and qualifications are those providing fundamental and personal skills education which cover a broad range of subjects and do not emphasise or specialise in a particular broad or narrow field.\nThis broad field should not be used as a residual category. Programmes and qualifications with a specific subject emphasis should be classified in broad fields 01 to 10. In particular, education at the tertiary level should only by way of exception be classified here.",
+          "code": 0
+        }
+      },
+      "skillsHierarchy_en.csv": {
+        "file": "skillsHierarchy_en.csv",
+        "format": "csv",
+        "row_count": 2504,
+        "columns": [
+          "Level 0 URI",
+          "Level 0 preferred term",
+          "Level 1 URI",
+          "Level 1 preferred term",
+          "Level 2 URI",
+          "Level 2 preferred term",
+          "Level 3 URI",
+          "Level 3 preferred term",
+          "Description",
+          "Scope note",
+          "Level 0 code",
+          "Level 1 code",
+          "Level 2 code",
+          "Level 3 code"
+        ],
+        "dtypes": {
+          "Level 0 URI": "object",
+          "Level 0 preferred term": "object",
+          "Level 1 URI": "object",
+          "Level 1 preferred term": "object",
+          "Level 2 URI": "float64",
+          "Level 2 preferred term": "float64",
+          "Level 3 URI": "float64",
+          "Level 3 preferred term": "float64",
+          "Description": "object",
+          "Scope note": "object",
+          "Level 0 code": "object",
+          "Level 1 code": "object",
+          "Level 2 code": "float64",
+          "Level 3 code": "float64"
+        },
+        "sample_record": {
+          "Level 0 URI": "http://data.europa.eu/esco/skill/e35a5936-091d-4e87-bafe-f264e55bd656",
+          "Level 0 preferred term": "language skills and knowledge",
+          "Level 1 URI": NaN,
+          "Level 1 preferred term": NaN,
+          "Level 2 URI": NaN,
+          "Level 2 preferred term": NaN,
+          "Level 3 URI": NaN,
+          "Level 3 preferred term": NaN,
+          "Description": NaN,
+          "Scope note": NaN,
+          "Level 0 code": "L",
+          "Level 1 code": NaN,
+          "Level 2 code": NaN,
+          "Level 3 code": NaN
+        }
+      },
+      "digitalSkillsCollection_en.csv": {
+        "file": "digitalSkillsCollection_en.csv",
+        "format": "csv",
+        "row_count": 1284,
+        "columns": [
+          "conceptType",
+          "conceptUri",
+          "preferredLabel",
+          "status",
+          "skillType",
+          "reuseLevel",
+          "altLabels",
+          "description",
+          "broaderConceptUri",
+          "broaderConceptPT"
+        ],
+        "dtypes": {
+          "conceptType": "object",
+          "conceptUri": "object",
+          "preferredLabel": "object",
+          "status": "object",
+          "skillType": "object",
+          "reuseLevel": "object",
+          "altLabels": "object",
+          "description": "object",
+          "broaderConceptUri": "object",
+          "broaderConceptPT": "object"
+        },
+        "sample_record": {
+          "conceptType": "KnowledgeSkillCompetence",
+          "conceptUri": "http://data.europa.eu/esco/skill/000f1d3d-220f-4789-9c0a-cc742521fb02",
+          "preferredLabel": "Haskell",
+          "status": "released",
+          "skillType": "knowledge",
+          "reuseLevel": "sector-specific",
+          "altLabels": "Haskell techniques",
+          "description": "The techniques and principles of software development, such as analysis, algorithms, coding, testing and compiling of programming paradigms in Haskell.",
+          "broaderConceptUri": "http://data.europa.eu/esco/skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97 | http://data.europa.eu/esco/isced-f/0613",
+          "broaderConceptPT": "computer programming | software and applications development and analysis"
+        }
+      },
+      "ISCOGroups_en.csv": {
+        "file": "ISCOGroups_en.csv",
+        "format": "csv",
+        "row_count": 9024,
+        "columns": [
+          "conceptType",
+          "conceptUri",
+          "code",
+          "preferredLabel",
+          "status",
+          "altLabels",
+          "inScheme",
+          "description"
+        ],
+        "dtypes": {
+          "conceptType": "object",
+          "conceptUri": "object",
+          "code": "int64",
+          "preferredLabel": "object",
+          "status": "object",
+          "altLabels": "float64",
+          "inScheme": "object",
+          "description": "object"
+        },
+        "sample_record": {
+          "conceptType": "ISCOGroup",
+          "conceptUri": "http://data.europa.eu/esco/isco/C0",
+          "code": 0,
+          "preferredLabel": "Armed forces occupations",
+          "status": "released",
+          "altLabels": NaN,
+          "inScheme": "http://data.europa.eu/esco/concept-scheme/occupations,\nhttp://data.europa.eu/esco/concept-scheme/isco",
+          "description": "Armed forces occupations include all jobs held by members of the armed forces. Members of the armed forces are those personnel who are currently serving in the armed forces, including auxiliary services, whether on a voluntary or compulsory basis, and who are not free to accept civilian employment and are subject to military discipline. Included are regular members of the army, navy, air force and other military services, as well as conscripts enrolled for military training or other service for a specified period.\nOccupations in this major group are classified into the following sub-major groups:\n01 Commissioned Armed Forces Officers\n02 Non-commissioned Armed Forces Officers\n03 Armed Forces Occupations, Other Ranks\nExcluded from this group are: - jobs held by persons in civilian employment of government establishments concerned with defence issues; - police (other than military police); - customs inspectors and members of border or other armed civilian services.\nNotes\nMany jobs performed by members of the armed forces are similar, in terms of the nature of the work performed, to civilian occupations such as medical doctors, radio operators, cooks, secretaries and heavy truck drivers. Conceptually, it may be appropriate, therefore, to classify such jobs in the armed forces with similar civilian jobs. This approach is adopted in several national occupation classifications. Typically such classifications also identify a number of military-specific occupational groups. In many countries, however, it is not possible to produce information about the nature of the work performed by members of the armed forces. In adapting ISCO-08 for national purposes countries may wish, therefore, to consider what approach best suits their circumstances and user needs. For purposes of international comparability, however, where data pertaining to members of the armed forces are reported and classified by occupation, they should be included, where possible, in ISCO-08 Major Group 0: Armed Forces Occupations."
+        }
+      },
+      "skills_en.csv": {
+        "file": "skills_en.csv",
+        "format": "csv",
+        "row_count": 104064,
+        "columns": [
+          "conceptType",
+          "conceptUri",
+          "skillType",
+          "reuseLevel",
+          "preferredLabel",
+          "altLabels",
+          "hiddenLabels",
+          "status",
+          "modifiedDate",
+          "scopeNote",
+          "definition",
+          "inScheme",
+          "description"
+        ],
+        "dtypes": {
+          "conceptType": "object",
+          "conceptUri": "object",
+          "skillType": "object",
+          "reuseLevel": "object",
+          "preferredLabel": "object",
+          "altLabels": "object",
+          "hiddenLabels": "float64",
+          "status": "object",
+          "modifiedDate": "object",
+          "scopeNote": "float64",
+          "definition": "float64",
+          "inScheme": "object",
+          "description": "object"
+        },
+        "sample_record": {
+          "conceptType": "KnowledgeSkillCompetence",
+          "conceptUri": "http://data.europa.eu/esco/skill/0005c151-5b5a-4a66-8aac-60e734beb1ab",
+          "skillType": "skill/competence",
+          "reuseLevel": "sector-specific",
+          "preferredLabel": "manage musical staff",
+          "altLabels": "manage music staff\ncoordinate duties of musical staff\ndirect musical staff\nmanage staff of music",
+          "hiddenLabels": NaN,
+          "status": "released",
+          "modifiedDate": "2023-11-30T15:53:37.136Z",
+          "scopeNote": NaN,
+          "definition": NaN,
+          "inScheme": "http://data.europa.eu/esco/concept-scheme/skills,\nhttp://data.europa.eu/esco/concept-scheme/member-skills",
+          "description": "Assign and manage staff tasks in areas such as scoring, arranging, copying music and vocal coaching."
+        }
+      },
+      "transversalSkillsCollection_en.csv": {
+        "file": "transversalSkillsCollection_en.csv",
+        "format": "csv",
+        "row_count": 95,
+        "columns": [
+          "conceptType",
+          "conceptUri",
+          "skillType",
+          "reuseLevel",
+          "preferredLabel",
+          "status",
+          "altLabels",
+          "description",
+          "broaderConceptUri",
+          "broaderConceptPT"
+        ],
+        "dtypes": {
+          "conceptType": "object",
+          "conceptUri": "object",
+          "skillType": "object",
+          "reuseLevel": "object",
+          "preferredLabel": "object",
+          "status": "object",
+          "altLabels": "object",
+          "description": "object",
+          "broaderConceptUri": "object",
+          "broaderConceptPT": "object"
+        },
+        "sample_record": {
+          "conceptType": "KnowledgeSkillCompetence",
+          "conceptUri": "http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f",
+          "skillType": "skill/competence",
+          "reuseLevel": "transversal",
+          "preferredLabel": "show initiative",
+          "status": "released",
+          "altLabels": "initiate action | be a driving force | give impetus | take the initiative | show sense of initiative | show active initiative | demonstrate sense of initiative",
+          "description": "Be proactive and take the first step in an action without waiting for what others say or do.",
+          "broaderConceptUri": "http://data.europa.eu/esco/skill/91860993-1a8b-4473-91f3-600aa1924bd0",
+          "broaderConceptPT": "taking a proactive approach"
+        }
+      },
+      "occupationSkillRelations_en.csv": {
+        "file": "occupationSkillRelations_en.csv",
+        "format": "csv",
+        "row_count": 126051,
+        "columns": [
+          "occupationUri",
+          "occupationLabel",
+          "relationType",
+          "skillType",
+          "skillUri",
+          "skillLabel"
+        ],
+        "dtypes": {
+          "occupationUri": "object",
+          "occupationLabel": "object",
+          "relationType": "object",
+          "skillType": "object",
+          "skillUri": "object",
+          "skillLabel": "object"
+        },
+        "sample_record": {
+          "occupationUri": "http://data.europa.eu/esco/occupation/00030d09-2b3a-4efd-87cc-c4ea39d27c34",
+          "occupationLabel": "technical director",
+          "relationType": "essential",
+          "skillType": "knowledge",
+          "skillUri": "http://data.europa.eu/esco/skill/fed5b267-73fa-461d-9f69-827c78beb39d",
+          "skillLabel": "theatre techniques"
+        }
+      },
+      "occupations_en.csv": {
+        "file": "occupations_en.csv",
+        "format": "csv",
+        "row_count": 35203,
+        "columns": [
+          "conceptType",
+          "conceptUri",
+          "iscoGroup",
+          "preferredLabel",
+          "altLabels",
+          "hiddenLabels",
+          "status",
+          "modifiedDate",
+          "regulatedProfessionNote",
+          "scopeNote",
+          "definition",
+          "inScheme",
+          "description",
+          "code",
+          "naceCode"
+        ],
+        "dtypes": {
+          "conceptType": "object",
+          "conceptUri": "object",
+          "iscoGroup": "int64",
+          "preferredLabel": "object",
+          "altLabels": "object",
+          "hiddenLabels": "float64",
+          "status": "object",
+          "modifiedDate": "object",
+          "regulatedProfessionNote": "object",
+          "scopeNote": "float64",
+          "definition": "float64",
+          "inScheme": "object",
+          "description": "object",
+          "code": "object",
+          "naceCode": "object"
+        },
+        "sample_record": {
+          "conceptType": "Occupation",
+          "conceptUri": "http://data.europa.eu/esco/occupation/00030d09-2b3a-4efd-87cc-c4ea39d27c34",
+          "iscoGroup": 2654,
+          "preferredLabel": "technical director",
+          "altLabels": "director of technical arts\ntechnical supervisor\nhead of technical\ntechnical and operations director\ntechnical manager\nhead of technical department",
+          "hiddenLabels": NaN,
+          "status": "released",
+          "modifiedDate": "2024-01-25T11:28:50.295Z",
+          "regulatedProfessionNote": "http://data.europa.eu/esco/regulated-professions/unregulated",
+          "scopeNote": NaN,
+          "definition": NaN,
+          "inScheme": "http://data.europa.eu/esco/concept-scheme/member-occupations,\nhttp://data.europa.eu/esco/concept-scheme/occupations",
+          "description": "Technical directors realise the artistic visions of the creators within technical constraints. They coordinate the operations of various production units, such as scene, wardrobe, sound and lighting, and make-up. They adapt the prototype and study the feasibility, implementation, operation and technical monitoring of the artistic project. They are also responsible for the stage equipment and technical equipment.",
+          "code": "2654.1.7",
+          "naceCode": "http://data.europa.eu/ux2/nace2.1/9031"
+        }
+      }
+    },
+    "onet": {
+      "Abilities.txt": {
+        "file": "Abilities.txt",
+        "format": "tsv",
+        "row_count": 94640,
+        "columns": [
+          "O*NET-SOC Code",
+          "Element ID",
+          "Element Name",
+          "Scale ID",
+          "Data Value",
+          "N",
+          "Standard Error",
+          "Lower CI Bound",
+          "Upper CI Bound",
+          "Recommend Suppress",
+          "Not Relevant",
+          "Date",
+          "Domain Source"
+        ],
+        "dtypes": {
+          "O*NET-SOC Code": "object",
+          "Element ID": "object",
+          "Element Name": "object",
+          "Scale ID": "object",
+          "Data Value": "float64",
+          "N": "int64",
+          "Standard Error": "float64",
+          "Lower CI Bound": "float64",
+          "Upper CI Bound": "float64",
+          "Recommend Suppress": "object",
+          "Not Relevant": "object",
+          "Date": "object",
+          "Domain Source": "object"
+        },
+        "sample_record": {
+          "O*NET-SOC Code": "11-1011.00",
+          "Element ID": "1.A.1.a.1",
+          "Element Name": "Oral Comprehension",
+          "Scale ID": "IM",
+          "Data Value": 4.62,
+          "N": 8,
+          "Standard Error": 0.183,
+          "Lower CI Bound": 4.2664,
+          "Upper CI Bound": 4.9836,
+          "Recommend Suppress": "N",
+          "Not Relevant": NaN,
+          "Date": "08/2023",
+          "Domain Source": "Analyst"
+        }
+      },
+      "Tasks to DWAs.txt": {
+        "file": "Tasks to DWAs.txt",
+        "format": "tsv",
+        "row_count": 24087,
+        "columns": [
+          "O*NET-SOC Code",
+          "Task ID",
+          "DWA Element ID",
+          "Date",
+          "Domain Source"
+        ],
+        "dtypes": {
+          "O*NET-SOC Code": "object",
+          "Task ID": "int64",
+          "DWA Element ID": "object",
+          "Date": "object",
+          "Domain Source": "object"
+        },
+        "sample_record": {
+          "O*NET-SOC Code": "11-1011.00",
+          "Task ID": 20461,
+          "DWA Element ID": "4.A.2.a.4.i.3",
+          "Date": "07/2014",
+          "Domain Source": "Analyst"
+        }
+      },
+      "Sample of Reported Titles.txt": {
+        "file": "Sample of Reported Titles.txt",
+        "format": "tsv",
+        "row_count": 8189,
+        "columns": [
+          "O*NET-SOC Code",
+          "Reported Job Title",
+          "Shown in My Next Move"
+        ],
+        "dtypes": {
+          "O*NET-SOC Code": "object",
+          "Reported Job Title": "object",
+          "Shown in My Next Move": "object"
+        },
+        "sample_record": {
+          "O*NET-SOC Code": "11-1011.00",
+          "Reported Job Title": "CEO (Chief Executive Officer)",
+          "Shown in My Next Move": "Y"
+        }
+      },
+      "Job Titles.txt": {
+        "file": "Job Titles.txt",
+        "format": "tsv",
+        "row_count": 54269,
+        "columns": [
+          "O*NET-SOC Code",
+          "Job Title",
+          "Short Title",
+          "Source(s)"
+        ],
+        "dtypes": {
+          "O*NET-SOC Code": "object",
+          "Job Title": "object",
+          "Short Title": "float64",
+          "Source(s)": "int64"
+        },
+        "sample_record": {
+          "O*NET-SOC Code": "11-1011.00",
+          "Job Title": "Aeronautics Commission Director",
+          "Short Title": NaN,
+          "Source(s)": 8
+        }
+      },
+      "Occupation Data.txt": {
+        "file": "Occupation Data.txt",
+        "format": "tsv",
+        "row_count": 1016,
+        "columns": [
+          "O*NET-SOC Code",
+          "Title",
+          "Description"
+        ],
+        "dtypes": {
+          "O*NET-SOC Code": "object",
+          "Title": "object",
+          "Description": "object"
+        },
+        "sample_record": {
+          "O*NET-SOC Code": "11-1011.00",
+          "Title": "Chief Executives",
+          "Description": "Determine and formulate policies and provide overall direction of companies or private and public sector organizations within guidelines set up by a board of directors or similar governing body. Plan, direct, or coordinate operational activities at the highest level of management with the help of subordinate executives and staff managers."
+        }
+      },
+      "Knowledge.txt": {
+        "file": "Knowledge.txt",
+        "format": "tsv",
+        "row_count": 60060,
+        "columns": [
+          "O*NET-SOC Code",
+          "Element ID",
+          "Element Name",
+          "Scale ID",
+          "Data Value",
+          "N",
+          "Standard Error",
+          "Lower CI Bound",
+          "Upper CI Bound",
+          "Recommend Suppress",
+          "Not Relevant",
+          "Date",
+          "Domain Source"
+        ],
+        "dtypes": {
+          "O*NET-SOC Code": "object",
+          "Element ID": "object",
+          "Element Name": "object",
+          "Scale ID": "object",
+          "Data Value": "float64",
+          "N": "int64",
+          "Standard Error": "float64",
+          "Lower CI Bound": "float64",
+          "Upper CI Bound": "float64",
+          "Recommend Suppress": "object",
+          "Not Relevant": "object",
+          "Date": "object",
+          "Domain Source": "object"
+        },
+        "sample_record": {
+          "O*NET-SOC Code": "11-1011.00",
+          "Element ID": "2.C.1.a",
+          "Element Name": "Administration and Management",
+          "Scale ID": "IM",
+          "Data Value": 4.78,
+          "N": 28,
+          "Standard Error": 0.1102,
+          "Lower CI Bound": 4.5564,
+          "Upper CI Bound": 5.0,
+          "Recommend Suppress": "N",
+          "Not Relevant": NaN,
+          "Date": "08/2023",
+          "Domain Source": "Incumbent"
+        }
+      },
+      "Work Context.txt": {
+        "file": "Work Context.txt",
+        "format": "tsv",
+        "row_count": 305389,
+        "columns": [
+          "O*NET-SOC Code",
+          "Element ID",
+          "Element Name",
+          "Scale ID",
+          "Category",
+          "Data Value",
+          "N",
+          "Standard Error",
+          "Lower CI Bound",
+          "Upper CI Bound",
+          "Recommend Suppress",
+          "Not Relevant",
+          "Date",
+          "Domain Source"
+        ],
+        "dtypes": {
+          "O*NET-SOC Code": "object",
+          "Element ID": "object",
+          "Element Name": "object",
+          "Scale ID": "object",
+          "Category": "float64",
+          "Data Value": "float64",
+          "N": "int64",
+          "Standard Error": "float64",
+          "Lower CI Bound": "float64",
+          "Upper CI Bound": "float64",
+          "Recommend Suppress": "object",
+          "Not Relevant": "float64",
+          "Date": "object",
+          "Domain Source": "object"
+        },
+        "sample_record": {
+          "O*NET-SOC Code": "11-1011.00",
+          "Element ID": "4.C.1.a.2.c",
+          "Element Name": "Public Speaking",
+          "Scale ID": "CX",
+          "Category": NaN,
+          "Data Value": 3.07,
+          "N": 37,
+          "Standard Error": 0.2851,
+          "Lower CI Bound": 2.4923,
+          "Upper CI Bound": 3.6486,
+          "Recommend Suppress": "N",
+          "Not Relevant": NaN,
+          "Date": "08/2023",
+          "Domain Source": "Incumbent"
+        }
+      },
+      "Work Activities.txt": {
+        "file": "Work Activities.txt",
+        "format": "tsv",
+        "row_count": 74702,
+        "columns": [
+          "O*NET-SOC Code",
+          "Element ID",
+          "Element Name",
+          "Scale ID",
+          "Data Value",
+          "N",
+          "Standard Error",
+          "Lower CI Bound",
+          "Upper CI Bound",
+          "Recommend Suppress",
+          "Not Relevant",
+          "Date",
+          "Domain Source"
+        ],
+        "dtypes": {
+          "O*NET-SOC Code": "object",
+          "Element ID": "object",
+          "Element Name": "object",
+          "Scale ID": "object",
+          "Data Value": "float64",
+          "N": "int64",
+          "Standard Error": "float64",
+          "Lower CI Bound": "float64",
+          "Upper CI Bound": "float64",
+          "Recommend Suppress": "object",
+          "Not Relevant": "object",
+          "Date": "object",
+          "Domain Source": "object"
+        },
+        "sample_record": {
+          "O*NET-SOC Code": "11-1011.00",
+          "Element ID": "4.A.1.a.1",
+          "Element Name": "Getting Information",
+          "Scale ID": "IM",
+          "Data Value": 4.56,
+          "N": 29,
+          "Standard Error": 0.1559,
+          "Lower CI Bound": 4.2369,
+          "Upper CI Bound": 4.8756,
+          "Recommend Suppress": "N",
+          "Not Relevant": NaN,
+          "Date": "08/2023",
+          "Domain Source": "Incumbent"
+        }
+      },
+      "Task Statements.txt": {
+        "file": "Task Statements.txt",
+        "format": "tsv",
+        "row_count": 18838,
+        "columns": [
+          "O*NET-SOC Code",
+          "Task ID",
+          "Task",
+          "Task Type",
+          "Incumbents Responding",
+          "Date",
+          "Domain Source"
+        ],
+        "dtypes": {
+          "O*NET-SOC Code": "object",
+          "Task ID": "int64",
+          "Task": "object",
+          "Task Type": "object",
+          "Incumbents Responding": "int64",
+          "Date": "object",
+          "Domain Source": "object"
+        },
+        "sample_record": {
+          "O*NET-SOC Code": "11-1011.00",
+          "Task ID": 8823,
+          "Task": "Direct or coordinate an organization's financial or budget activities to fund operations, maximize investments, or increase efficiency.",
+          "Task Type": "Core",
+          "Incumbents Responding": 95,
+          "Date": "08/2023",
+          "Domain Source": "Incumbent"
+        }
+      },
+      "Essential Skills.txt": {
+        "file": "Essential Skills.txt",
+        "format": "tsv",
+        "row_count": 18200,
+        "columns": [
+          "O*NET-SOC Code",
+          "Element ID",
+          "Element Name",
+          "Scale ID",
+          "Data Value",
+          "N",
+          "Standard Error",
+          "Lower CI Bound",
+          "Upper CI Bound",
+          "Recommend Suppress",
+          "Not Relevant",
+          "Date",
+          "Domain Source"
+        ],
+        "dtypes": {
+          "O*NET-SOC Code": "object",
+          "Element ID": "object",
+          "Element Name": "object",
+          "Scale ID": "object",
+          "Data Value": "float64",
+          "N": "int64",
+          "Standard Error": "float64",
+          "Lower CI Bound": "float64",
+          "Upper CI Bound": "float64",
+          "Recommend Suppress": "object",
+          "Not Relevant": "object",
+          "Date": "object",
+          "Domain Source": "object"
+        },
+        "sample_record": {
+          "O*NET-SOC Code": "11-1011.00",
+          "Element ID": "2.A.1.a",
+          "Element Name": "Reading Comprehension",
+          "Scale ID": "IM",
+          "Data Value": 4.12,
+          "N": 8,
+          "Standard Error": 0.125,
+          "Lower CI Bound": 3.88,
+          "Upper CI Bound": 4.37,
+          "Recommend Suppress": "N",
+          "Not Relevant": NaN,
+          "Date": "08/2023",
+          "Domain Source": "Analyst"
+        }
+      },
+      "Training and Experience.txt": {
+        "file": "Training and Experience.txt",
+        "format": "tsv",
+        "row_count": 26812,
+        "columns": [
+          "O*NET-SOC Code",
+          "Element ID",
+          "Element Name",
+          "Scale ID",
+          "Category",
+          "Data Value",
+          "N",
+          "Standard Error",
+          "Lower CI Bound",
+          "Upper CI Bound",
+          "Recommend Suppress",
+          "Date",
+          "Domain Source"
+        ],
+        "dtypes": {
+          "O*NET-SOC Code": "object",
+          "Element ID": "object",
+          "Element Name": "object",
+          "Scale ID": "object",
+          "Category": "int64",
+          "Data Value": "float64",
+          "N": "int64",
+          "Standard Error": "float64",
+          "Lower CI Bound": "float64",
+          "Upper CI Bound": "float64",
+          "Recommend Suppress": "object",
+          "Date": "object",
+          "Domain Source": "object"
+        },
+        "sample_record": {
+          "O*NET-SOC Code": "11-1011.00",
+          "Element ID": "3.A.1",
+          "Element Name": "Related Work Experience",
+          "Scale ID": "RW",
+          "Category": 1,
+          "Data Value": 0.0,
+          "N": 28,
+          "Standard Error": 0.0,
+          "Lower CI Bound": NaN,
+          "Upper CI Bound": NaN,
+          "Recommend Suppress": "N",
+          "Date": "08/2023",
+          "Domain Source": "Incumbent"
+        }
+      },
+      "Job Zones.txt": {
+        "file": "Job Zones.txt",
+        "format": "tsv",
+        "row_count": 923,
+        "columns": [
+          "O*NET-SOC Code",
+          "Job Zone",
+          "Date",
+          "Domain Source"
+        ],
+        "dtypes": {
+          "O*NET-SOC Code": "object",
+          "Job Zone": "int64",
+          "Date": "object",
+          "Domain Source": "object"
+        },
+        "sample_record": {
+          "O*NET-SOC Code": "11-1011.00",
+          "Job Zone": 5,
+          "Date": "08/2023",
+          "Domain Source": "Analyst"
+        }
+      },
+      "Transferable Skills.txt": {
+        "file": "Transferable Skills.txt",
+        "format": "tsv",
+        "row_count": 45500,
+        "columns": [
+          "O*NET-SOC Code",
+          "Element ID",
+          "Element Name",
+          "Scale ID",
+          "Data Value",
+          "N",
+          "Standard Error",
+          "Lower CI Bound",
+          "Upper CI Bound",
+          "Recommend Suppress",
+          "Not Relevant",
+          "Date",
+          "Domain Source"
+        ],
+        "dtypes": {
+          "O*NET-SOC Code": "object",
+          "Element ID": "object",
+          "Element Name": "object",
+          "Scale ID": "object",
+          "Data Value": "float64",
+          "N": "int64",
+          "Standard Error": "float64",
+          "Lower CI Bound": "float64",
+          "Upper CI Bound": "float64",
+          "Recommend Suppress": "object",
+          "Not Relevant": "object",
+          "Date": "object",
+          "Domain Source": "object"
+        },
+        "sample_record": {
+          "O*NET-SOC Code": "11-1011.00",
+          "Element ID": "2.B.1.a",
+          "Element Name": "Social Perceptiveness",
+          "Scale ID": "IM",
+          "Data Value": 4.12,
+          "N": 8,
+          "Standard Error": 0.125,
+          "Lower CI Bound": 3.88,
+          "Upper CI Bound": 4.37,
+          "Recommend Suppress": "N",
+          "Not Relevant": NaN,
+          "Date": "08/2023",
+          "Domain Source": "Analyst"
+        }
+      },
+      "Related Occupations.txt": {
+        "file": "Related Occupations.txt",
+        "format": "tsv",
+        "row_count": 18460,
+        "columns": [
+          "O*NET-SOC Code",
+          "Related O*NET-SOC Code",
+          "Relatedness Tier",
+          "Index"
+        ],
+        "dtypes": {
+          "O*NET-SOC Code": "object",
+          "Related O*NET-SOC Code": "object",
+          "Relatedness Tier": "object",
+          "Index": "int64"
+        },
+        "sample_record": {
+          "O*NET-SOC Code": "11-1011.00",
+          "Related O*NET-SOC Code": "11-1021.00",
+          "Relatedness Tier": "Primary-Short",
+          "Index": 1
+        }
+      }
+    },
+    "india_nco": {
+      "National_Classification_of_Occupations_Vol_I-2015.pdf": {
+        "file": "National_Classification_of_Occupations_Vol_I-2015.pdf",
+        "format": "pdf",
+        "page_count": 384,
+        "is_encrypted": false,
+        "sample_snippet": "National Classification of Occupations \u2013 2015                       Introduction \n  \n  \n  VOLUME I 4 \n \ngovernment office or even a shop. Similarly, drivers have been grouped together, and so are \nthose engaged in services. \n \nThe branch of economic "
+      },
+      "National_Classification_of_Occupations_Vol_II-B-2015.pdf": {
+        "file": "National_Classification_of_Occupations_Vol_II-B-2015.pdf",
+        "format": "pdf",
+        "page_count": 581,
+        "is_encrypted": false,
+        "sample_snippet": "National Classification of Occupations \u2013 2015  Divison 6 \n \n \n VOLUME II B  4 \n \n \n6111.0301 \nMaize Cultivator \n \nMaize Cultivator undertakes the \ncultivation of maize crop at the farm level. \nThe individual is also responsible for \nharvesting the ma"
+      },
+      "National_Classification_of_Occupations_Vol_II-A-2015.pdf": {
+        "file": "National_Classification_of_Occupations_Vol_II-A-2015.pdf",
+        "format": "pdf",
+        "page_count": 587,
+        "is_encrypted": false,
+        "sample_snippet": "VOLUME II A \nNational Classification of Occupations \u2013 2015   Division 1 \n \n \n4 \n \nadministrative and advisory functions, \nwhich include advising minister on all \nmatters of policy and administration \nwithin his sphere of responsibility; \norganizing a"
+      }
+    },
+    "job_descriptions": {
+      "recruitment_jds_english.parquet": {
+        "file": "recruitment_jds_english.parquet",
+        "format": "parquet",
+        "row_count": 141897,
+        "columns": [
+          "Position",
+          "Long Description",
+          "Company Name",
+          "Exp Years",
+          "Primary Keyword",
+          "English Level",
+          "Published",
+          "Long Description_lang",
+          "id",
+          "__index_level_0__"
+        ],
+        "dtypes": {
+          "Position": "object",
+          "Long Description": "object",
+          "Company Name": "object",
+          "Exp Years": "object",
+          "Primary Keyword": "object",
+          "English Level": "object",
+          "Published": "object",
+          "Long Description_lang": "object",
+          "id": "object",
+          "__index_level_0__": "int64"
+        },
+        "sample_record": {
+          "Position": "10 + Blockchain Nodes / Masternodes to set up",
+          "Long Description": "*Requirements*\r\n\r\nWe're looking for a long term collaboration with someone that has an experience in",
+          "Company Name": "MyCointainer",
+          "Exp Years": "2y",
+          "Primary Keyword": "Sysadmin",
+          "English Level": "intermediate",
+          "Published": "2020-10-01T00:00:00+03:00",
+          "Long Description_lang": "en",
+          "id": "c0ca96e7-85df-50df-a64e-d934cd02a170",
+          "__index_level_0__": "27461"
+        }
+      },
+      "shresth_jobs.csv": {
+        "file": "shresth_jobs.csv",
+        "format": "csv",
+        "row_count": 45119,
+        "columns": [
+          "job_id",
+          "job_title",
+          "category",
+          "job_description",
+          "job_text",
+          "clean_skills",
+          "clean_skills_json",
+          "education_text",
+          "years_required",
+          "embedding"
+        ],
+        "dtypes": {
+          "job_id": "int64",
+          "job_title": "object",
+          "category": "object",
+          "job_description": "object",
+          "job_text": "object",
+          "clean_skills": "object",
+          "clean_skills_json": "object",
+          "education_text": "object",
+          "years_required": "float64",
+          "embedding": "object"
+        },
+        "sample_record": {
+          "job_id": 3651735073,
+          "job_title": "Director of Finance",
+          "category": "FINANCE",
+          "job_description": "APPLY HERE\nHTTPS://WWW.INDEED.COM/JOB/DIRECTOR-FINANCE-9C0196508A30CB63\nJOB DESCRIPTIONJOB TITLE: DIRECTOR OF FINANCEREPORTS TO: CEO, SVDP-DETROITFLSA STATUS: EXEMPT\nSUMMARYTHE SOCIETY OF ST. VINCENT DE PAUL DETROIT EXISTS TO BUILD A MORE EQUITABLE AND COMPASSIONATE WORLD THROUGH MEANINGFUL PERSONAL RELATIONSHIPS, PROVIDING WHATEVER IS NEEDED TO HELP OUR NEIGHBORS GET BACK ON THEIR FEET AND ON A PATH TOWARDS SELF-SUSTAINABILITY. OUR PROGRAMS PROVIDE SUPPORT RANGING FROM UTILITY, HOUSING, AND FOOD ASSISTANCE, TO EDUCATION AND MENTORSHIP. WE ALSO OPERATE A NETWORK OF THRIFT STORES, TWO CAMPS AND A NUTRITIONAL CENTER. WE ARE PASSIONATE ABOUT DRIVING SYSTEMIC CHANGE AND HELPING OUR NEIGHBORS IN METRO-DETROIT BREAK OUT OF POVERTY.\nTHE DIRECTOR OF FINANCE IS THE PRIMARY INTERFACE WITH THE OUTSOURCED FINANCE FUNCTION AS WELL AS THE PRIMARY ADMINISTRATIVE CONTACT WITH THE EMPLOYEE-OUTSOURCING VENDOR AS WELL AS PROVIDING ONGOING LEADERSHIP AND SUPPORT IN THE AREAS OF RISK MANAGEMENT, EMPLOYEE BENEFITS AND COMPLIANCE.\nTHE DIRECTOR OF FINANCE REPORTS TO THE CHIEF EXECUTIVE OFFICER, PROVIDES LEADERSHIP AND SUPPORT TO THE BOARD OF DIRECTORS AND ITS COMMITTEES.IN ADDITION TO ENSURING THE FISCAL HEALTH OF THE ORGANIZATION, THE DIRECTOR OF FINANCE PROVIDES LEADERSHIP AND DIRECTION IN THE AREAS OF FINANCE & ACCOUNTING, PAYROLL, ACCOUNTS RECEIVABLE, ACCOUNTS PAYABLE, CENTRALIZED PURCHASING, INVESTMENT MANAGEMENT, HUMAN RESOURCES, AND RISK MANAGEMENT.\nTO BE SUCCESSFUL IN THIS ROLE, THE INDIVIDUAL MUST HAVE EXPERIENCE IN FINANCIAL MANAGEMENT OF MULTIPLE BUSINESS UNITS WITH REVENUES IN EXCESS OF $15 MILLION IN A NONPROFIT ENVIRONMENT.\nESSENTIAL DUTIES AND RESPONSIBILITIES:\nFINANCE:ACT AS PRIMARY SVDP-DETROIT INTERFACE WITH THE ORGANIZATION\u2019S OUTSOURCED FINANCE AND ACCOUNTING VENDOR.ENSURE THE RELATIONSHIP WITH THE OUTSOURCED FINANCE AND ACCOUNTING VENDOR IS ADMINISTERED IN ACCORDANCE WITH ITS CONTRACT AND WITHIN THE PERFORMANCE GUARANTEES OF ITS KEY DELIVERABLES.PREVIEW THE OUTSOURCED FINANCE AND ACCOUNTING VENDOR'S REPORTS AND ACTIVITY FOR CONSISTENCY WITH THE CONTRACT STATEMENT OF WORK AND QUALITY STANDARDS.REVIEW CASH FLOW REPORTS AND ESTIMATES AND ADVISE ON NECESSARY ADJUSTMENTS.MONITOR SYSTEM OF INTERNAL CONTROLS, INCLUDING SEPARATION OF DUTIES AND REVIEW PROCESSES, TO PREVENT, DETECT AND CORRECT INCIDENTS OF FRAUD AND MATERIAL MISSTATEMENTS.PARTNER WITH SVDP-DETROIT AUDITORS AND THE OUTSOURCED FINANCE AND ACCOUNTING VENDOR IN COMPLETION OF ANNUAL FINANCIAL AUDIT AND 990 FILING.COORDINATE WITH DEPARTMENT HEADS AND THE OUTSOURCED FINANCE AND ACCOUNTING VENDOR IN DEVELOPING BUDGETS AND IN BUDGET ANALYSIS.ASSIST SENIOR MANAGEMENT IN DEVELOPING SHORT-MEDIUM-LONG RANGE FINANCIAL GOALS AND PROJECTIONS.ASSIST THE TREASURER IN CASH FLOW ANALYSIS, FINANCING STRATEGIES, AND ALL TREASURY MANAGEMENT ACTIVITIES. PROVIDE LEADERSHIP TO AUDIT AND FINANCE COMMITTEES.LEAD QUARTERLY MEETINGS WITH INVESTMENT COMMITTEE TO REVIEW INVESTMENT PERFORMANCE AND FUND MANAGERS. ASSESS AND UPDATE INVESTMENT POLICY STATEMENTS. ADVISE ON ASSET ALLOCATION AND RISK TOLERANCE.DEVELOP AND UTILIZE FORWARD-LOOKING, PREDICTIVE MODELS AND ACTIVITY BASED FINANCIAL ANALYSIS TO PROVIDE INSIGHT INTO THE ORGANIZATION\u2019S OPERATIONS AND BUSINESS PLANS.DEVELOP FINANCIAL BUSINESS PLANS AND FORECASTS FOR ALL SPECIAL PROJECTS OR CAPITAL ACQUISITIONS.PARTICIPATE IN DEVELOPING NEW BUSINESS, SPECIFICALLY: ASSIST SENIOR MANAGEMENT IN IDENTIFYING NEW FUNDING OPPORTUNITIES, THE DRAFTING OF PROSPECTIVE PROGRAMMATIC BUDGETS, AND DETERMINING COST EFFECTIVENESS OF PROSPECTIVE SERVICE DELIVERY.RESPONSIBLE FOR COORDINATION AND MANAGEMENT OF ALL CAPITAL PROJECTS FOR SVDPD RELATIVE TO FINANCIAL ANALYSIS OF PROJECTS, TIMING, AND FUNDING REQUIREMENTS WITH THE DIRECTORS OF VARIOUS AREAS.RESPONSIBLE, IN CONJUNCTION WITH SENIOR MANAGEMENT, WITH ENSURING ADHERENCE TO THE CAPITAL BUDGET AND ASSOCIATED PROCESSES (BIDDING, CONTRACT MANAGEMENT, PAYMENT) FOR ALL CAPITAL PROJECTS.ENSURE THE COMPLIANCE OF CONTRACT MANAGEMENT PROCEDURES FOR THE ENTIRE ORGANIZATION, INCLUDING ADHERENCE TO EXISTING COMPANY POLICIES REGARDING MULTIPLE BID REQUIREMENTS FOR GOODS AND SERVICES.ASSESS THE COSTS AND BENEFITS OF ALL PROSPECTIVE CONTRACTS AND PROGRAMMATIC ACTIVITIES.PARTICIPATE IN THE DEVELOPMENT OF THE SVDP-DETROIT NEXT PHASE STRATEGIC PLAN.\nHUMAN RESOURCES/PAYROLL/BENEFITS:RESPONSIBLE FOR COORDINATION, ALONG WITH THE CEO, OF THE OUTSIDE PROFESSIONAL EMPLOYER ORGANIZATION (PEO) WITH OVERALL EMPLOYEE MATTERS INCLUDING; DETERMINING SELECTION OF BENEFITS PACKAGE, CHANGE TO AND UPDATING THE EMPLOYEE HANDBOOK, AND ANY REGULATORY AND LEGAL CONSIDERATIONS THAT MAY ARISE.ENSURE THE RELATIONSHIP WITH THE PEO IS ADMINISTERED IN ACCORDANCE WITH ITS CONTRACT AND WITHIN THE PERFORMANCE GUARANTEES OF ITS KEY DELIVERABLES.RESPONSIBLE FOR COORDINATING WITH DIRECTORS THAT THE BI-WEEKLY PAYROLL HOURS ARE CORRECT AND ENSURING THE SUBMISSION AND RUNNING OF THE PAYROLL OCCURS ACCURATELY AND TIMELY, AND THAT THE PAYROLL IS FUNDED PRIOR TO SUBMISSION.COORDINATE WITH THE PEO ON EMPLOYEE WELFARE PLANS OFFERINGS, COST ANALYSIS AND COMPETITIVENESS.COORDINATE WITH THE PEO ON THE WELFARE PLANS OPEN ENROLLMENT PROCESS AND VENDOR SELECTION.OVERSEE AND COORDINATE WITH THE SVDP-DETROIT PENSION PLAN ACTUARY AND ADVISORS ON ANNUAL COMPLIANCE, PARTICIPANT COMMUNICATIONS, BENEFIT DELIVERY, AND GOVERNMENT FILINGS.OVERSEE AND COORDINATE WITH THE SVDP-DETROIT 401(K) PLAN ADMINISTRATOR, RECORD KEEPER, ADVISORS, AND TRUST ON EMPLOYEE ELIGIBILITY COMMUNICATION, SUITABILITY OF INVESTMENT OPTIONS, ONGOING COMPLIANCE, AND GOVERNMENT FILINGS.\nRISK:IN CONJUNCTION WITH THE SVDP-DETROIT CEO IDENTIFY, EVALUATE AND MONITOR POTENTIAL NEGATIVE EVENTS TO THE ORGANIZATION IN AREAS OF RISK SUCH AS REPUTATIONAL, SAFETY, FINANCIAL, WEATHER EVENTS, POTENTIAL FIRES, CYBER RISKS, AND OTHER RISKS.DEVELOP PROGRAMS AND PLANS TO MINIMIZE RISK AND PRIORITIZE PROCESSES TO ADDRESS POTENTIAL ADVERSE EVENTS.OVERSEE CORPORATE INSURANCE COVERAGE AND WORK WITH SVDP STAFF AND VINCENTIANS TO MITIGATE RISK.\nINFORMATION TECHNOLOGY:RESPONSIBLE FOR IT SUPPORT SERVICES RELATED TO OVERALL SVDPD NEEDS, AND COORDINATION WITH OUTSOURCED SERVICE PROVIDER TO MANAGE DAILY AND MONTHLY SUPPORT NEEDS OF THE CENTRAL OFFICE STAFF.RESPONSIBLE FOR COORDINATING WITH THE DIRECTORS OF STORES/WAREHOUSE AND CAMPS FOR SUPPORT AND INTEGRATION OF THESE AREAS INTO THE OVERALL SVDPD SYSTEMS ENVIRONMENT.ESTABLISHING APPROPRIATE CONTROLS ON ACQUISITION OF HARDWARE AND SOFTWARE FOR ALL THE SVDPD ORGANIZATION TO ENSURE COMPLIANCE WITH OPERATING AND CAPITAL BUDGET PROCESSES AND GUIDELINES.\nEDUCATION AND/OR EXPERIENCEBACHELOR\u2019S DEGREE IN ACCOUNTING, BUSINESS ADMINISTRATION OR FINANCE; MBA OR CPA DESIRED5 YEARS MINIMUM NONPROFIT EXPERIENCE AS A FINANCE MANAGER, CONTROLLER, DIRECTOR OF FINANCE, OR CFOSTRONG UNDERSTANDING OF, AND EXTENSIVE PROFESSIONAL EXPERIENCE, WITH:- ACCOUNTING/GAAP PRINCIPLES, PARTICULARLY FOR NONPROFITORGANIZATIONS- TAX REQUIREMENTS FOR NONPROFIT ORGANIZATIONS- BUDGETING AND FORECASTING- FINANCIAL STATEMENT PREPARATION AND REPORTING- CASH FLOW MANAGEMENT- ACCOUNT RECONCILIATIONS AND ACCOUNTS PAYABLE- BANKING SERVICES- INTERNAL CONTROLS- INVESTMENT OVERSIGHT- RISK MANAGEMENTEXPERIENCE IN PENSION AND BENEFIT PLANS ADMINISTRATIONMANAGEMENT-LEVEL RESPONSIBILITY FOR HUMAN RESOURCES, IT, FACILITIES MANAGEMENT, AND GENERAL ADMINISTRATIVE FUNCTIONSSIGNIFICANT EXPERIENCE WORKING WITH VARIOUS FINANCIAL PACKAGES AND MICROSOFT EXCELCOMPUTER EXPERIENCE WITH MICROSOFT OFFICE SUITE A MUST. RAISER\u2019S EDGE SOFTWARE AND RETAIL POS SYSTEMS EXPERIENCE A PLUS\nKNOWLEDGE AND ABILITIESMUST BE SELF-MOTIVATED, RESULTS ORIENTED, AND ABLE TO SET PRIORITIES AND WORK ON NUMEROUS PROJECTS SIMULTANEOUSLY WITH STRONG ATTENTION TO DETAIL.EXCELLENT INTERPERSONAL, ORGANIZATIONAL, COMMUNICATION (BOTH VERBAL AND WRITTEN), ANALYTICAL AND NEGOTIATING SKILLS.STRONG ABILITY TO LEAD SVDPD TO THE BEST OUTCOMES FOR THE ENTIRE ORGANIZATION BY BUILDING CONSENSUS AMONG ALL LEVELS, INCLUDING INTERNAL STAFF, BOARD OF DIRECTORS AND BOARD-LEVEL COMMITTEES, DISTRICTS AND CONFERENCES.COMMUNICATE CLEARLY AND CONCISELY WITH SENIOR SVDPD MANAGEMENT, VENDORS AND EMPLOYEES.MAINTAINS A HIGH LEVEL OF CONFIDENTIALITY REGARDING SENSITIVE INFORMATIONHIGHEST LEVEL OF ETHICS AND INTEGRITYEXPERIENCE IN THE NONPROFIT SECTOR. FAMILIARITY WITH THE ARCHDIOCESE OF DETROIT CATHOLIC FAITH COMMUNITY DESIRABLE.\nBENEFITS OFFERED401(K)401(K) MATCHINGDENTAL INSURANCEHEALTH INSURANCELIFE INSURANCEPAID TIME OFFVISION INSURANCESTD\nJOB TYPE: FULL-TIME\nSCHEDULE:MONDAY TO FRIDAY\nWORK LOCATION: IN PERSON",
+          "job_text": "Job title: Director of Finance Category: FINANCE Skills: financial management, accounting, gaap principles, budgeting, forecasting, financial statement preparation, cash flow management, accounts payable, internal controls, risk management, microsoft excel, microsoft office suite, negotiating skills, attention to detail, self-motivated, results oriented, confidentiality, ethics and integrity, investment oversight, pension administration, raiser s edge software, pos systems, consensus building Description: APPLY HERE HTTPS://WWW.INDEED.COM/JOB/DIRECTOR-FINANCE-9C0196508A30CB63 JOB DESCRIPTIONJOB TITLE: DIRECTOR OF FINANCEREPORTS TO: CEO, SVDP-DETROITFLSA STATUS: EXEMPT SUMMARYTHE SOCIETY OF ST. VINCENT DE PAUL DETROIT EXISTS TO BUILD A MORE EQUITABLE AND COMPASSIONATE WORLD THROUGH MEANINGFUL PERSONAL RELATIONSHIPS, PROVIDING WHATEVER IS NEEDED TO HELP OUR NEIGHBORS GET BACK ON THEIR FEET AND ON A PATH TOWARDS SELF-SUSTAINABILITY. OUR PROGRAMS PROVIDE SUPPORT RANGING FROM UTILITY, HOUSING, AND FOOD ASSISTANCE, TO EDUCATION AND MENTORSHIP. WE ALSO OPERATE A NETWORK OF THRIFT STORES, TWO CAMPS AND A NUTRITIONAL CENTER. WE ARE PASSIONATE ABOUT DRIVING SYSTEMIC CHANGE AND HELPING OUR NEIGHBORS IN METRO-DETROIT BREAK OUT OF POVERTY. THE DIRECTOR OF FINANCE IS THE PRIMARY INTERFACE WITH THE OUTSOURCED FINANCE FUNCTION AS WELL AS THE PRIMARY ADMINISTRATIVE CONTACT WITH THE EMPLOYEE-OUTSOURCING VENDOR AS WELL AS PROVIDING ONGOING LEADERSHIP AND SUPPORT IN THE AREAS OF RISK MANAGEMENT, EMPLOYEE BENEFITS AND COMPLIANCE. THE DIRECTOR OF FINANCE REPORTS TO THE CHIEF EXECUTIVE OFFICER, PROVIDES LEADERSHIP AND SUPPORT TO THE BOARD OF DIRECTORS AND ITS COMMITTEES.IN ADDITION TO ENSURING THE FISCAL HEALTH OF THE ORGANIZATION, THE DIRECTOR OF FINANCE PROVIDES LEADERSHIP AND DIRECTION IN THE AREAS OF FINANCE & ACCOUNTING, PAYROLL, ACCOUNTS RECEIVABLE, ACCOUNTS PAYABLE, CENTRALIZED PURCHASING, INVESTMENT MANAGEMENT, HUMAN RESOURCES, AND RISK MANAGEMENT. TO BE SUCCESSFUL IN THIS ROLE, THE INDIVIDUAL MUST HAVE EXPERIENCE IN FINANCIAL MANAGEMENT OF MULTIPLE BUSINESS UNITS WITH REVENUES IN EXCESS OF $15 MILLION IN A NONPROFIT ENVIRONMENT. ESSENTIAL DUTIES AND RESPONSIBILITIES: FINANCE:ACT AS PRIMARY SVDP-DETROIT INTERFACE WITH THE ORGANIZATION\u2019S OUTSOURCED FINANCE AND ACCOUNTING VENDOR.ENSURE THE RELATIONSHIP WITH THE OUTSOURCED FINANCE AND ACCOUNTING VENDOR IS ADMINISTERED IN ACCORDANCE WITH ITS CONTRACT AND WITHIN THE PERFORMANCE GUARANTEES OF ITS KEY DELIVERABLES.PREVIEW THE OUTSOURCED FINANCE AND ACCOUNTING VENDOR'S REPORTS AND ACTIVITY FOR CONSISTENCY WITH THE CONTRACT STATEMENT OF WORK AND QUALITY STANDARDS.REVIEW CASH FLOW REPORTS AND ESTIMATES AND ADVISE ON NECESSARY ADJUSTMENTS.MONITOR SYSTEM OF INTERNAL CONTROLS, INCLUDING SEPARATION OF DUTIES AND REVIEW PROCESSES, TO PREVENT, DETECT AND CORRECT INCIDENTS OF FRAUD AND MATERIAL MISSTATEMENTS.PARTNER WITH SVDP-DETROIT AUDITORS AND THE OUTSOURCED FINANCE AND ACCOUNTING VENDOR IN COMPLETION OF ANNUAL FINANCIAL AUDIT AND 990 FILING.COORDINATE WITH DEPARTMENT HEADS AND THE OUTSOURCED FINANCE AND ACCOUNTING VENDOR IN DEVELOPING BUDGETS AND IN BUDGET ANALYSIS.ASSIST SENIOR MANAGEMENT IN DEVELOPING SHORT-MEDIUM-LONG RANGE FINANCIAL GOALS AND PROJECTIONS.ASSIST THE TREASURER IN CASH FLOW ANALYSIS, FINANCING STRATEGIES, AND ALL TREASURY MANAGEMENT ACTIVITIES. PROVIDE LEADERSHIP TO AUDIT AND FINANCE COMMITTEES.LEAD QUARTERLY MEETINGS WITH INVESTMENT COMMITTEE TO REVIEW INVESTMENT PERFORMANCE AND FUND MANAGERS. A",
+          "clean_skills": "[\"financial management\", \"accounting\", \"gaap principles\", \"budgeting\", \"forecasting\", \"financial statement preparation\", \"cash flow management\", \"accounts payable\", \"internal controls\", \"risk management\", \"microsoft excel\", \"microsoft office suite\", \"negotiating skills\", \"attention to detail\", \"self-motivated\", \"results oriented\", \"confidentiality\", \"ethics and integrity\", \"investment oversight\", \"pension administration\", \"raiser s edge software\", \"pos systems\", \"consensus building\"]",
+          "clean_skills_json": "[\"financial management\", \"accounting\", \"gaap principles\", \"budgeting\", \"forecasting\", \"financial statement preparation\", \"cash flow management\", \"accounts payable\", \"internal controls\", \"risk management\", \"microsoft excel\", \"microsoft office suite\", \"negotiating skills\", \"attention to detail\", \"self-motivated\", \"results oriented\", \"confidentiality\", \"ethics and integrity\", \"investment oversight\", \"pension administration\", \"raiser s edge software\", \"pos systems\", \"consensus building\"]",
+          "education_text": "APPLY HERE\nHTTPS://WWW.INDEED.COM/JOB/DIRECTOR-FINANCE-9C0196508A30CB63\nJOB DESCRIPTIONJOB TITLE: DIRECTOR OF FINANCEREPORTS TO: CEO, SVDP-DETROITFLSA STATUS: EXEMPT\nSUMMARYTHE SOCIETY OF ST. VINCENT DE PAUL DETROIT EXISTS TO BUILD A MORE EQUITABLE AND COMPASSIONATE WORLD THROUGH MEANINGFUL PERSONAL RELATIONSHIPS, PROVIDING WHATEVER IS NEEDED TO HELP OUR NEIGHBORS GET BACK ON THEIR FEET AND ON A PATH TOWARDS SELF-SUSTAINABILITY. OUR PROGRAMS PROVIDE SUPPORT RANGING FROM UTILITY, HOUSING, AND FOOD ASSISTANCE, TO EDUCATION AND MENTORSHIP. WE ALSO OPERATE A NETWORK OF THRIFT STORES, TWO CAMPS AND A NUTRITIONAL CENTER. WE ARE PASSIONATE ABOUT DRIVING SYSTEMIC CHANGE AND HELPING OUR NEIGHBORS IN METRO-DETROIT BREAK OUT OF POVERTY.\nTHE DIRECTOR OF FINANCE IS THE PRIMARY INTERFACE WITH THE OUTSOURCED FINANCE FUNCTION AS WELL AS THE PRIMARY ADMINISTRATIVE CONTACT WITH THE EMPLOYEE-OUTSOURCING VENDOR AS WELL AS PROVIDING ONGOING LEADERSHIP AND SUPPORT IN THE AREAS OF RISK MANAGEMENT, EMPLOYEE BENEFITS AND COMPLIANCE.\nTHE DIRECTOR OF FINANCE REPORTS TO THE CHIEF EXECUTIVE OFFICER, PROVIDES LEADERSHIP AND SUPPORT TO THE BOARD OF DIRECTORS AND ITS COMMITTEES.IN ADDITION TO ENSURING THE FISCAL HEALTH OF THE ORGANIZATION, THE DIRECTOR OF FINANCE PROVIDES LEADERSHIP AND DIRECTION IN THE AREAS OF FINANCE & ACCOUNTING, PAYROLL, ACCOUNTS RECEIVABLE, ACCOUNTS PAYABLE, CENTRALIZED PURCHASING, INVESTMENT MANAGEMENT, HUMAN RESOURCES, AND RISK MANAGEMENT.\nTO BE SUCCESSFUL IN THIS ROLE, THE INDIVIDUAL MUST HAVE EXPERIENCE IN FINANCIAL MANAGEMENT OF MULTIPLE BUSINESS UNITS WITH REVENUES IN EXCESS OF $15 MILLION IN A NONPROFIT ENVIRONMENT.\nESSENTIAL DUTIES AND RESPONSIBILITIES:\nFINANCE:ACT AS PRIMARY SVDP-DETROIT INTERFACE WITH THE ORGANIZATION\u2019S OUTSOURCED FINANCE AND ACCOUNTING VENDOR.ENSURE THE RELATIONSHIP WITH THE OUTSOURCED FINANCE AND ACCOUNTING VENDOR IS ADMINISTERED IN ACCORDANCE WITH ITS CONTRACT AND WITHIN THE PERFORMANCE GUARANTEES OF ITS KEY DELIVERABLES.PREVIEW THE OUTSOURCED FINANCE AND ACCOUNTING VENDOR'S REPORTS AND ACTIVITY FOR CONSISTENCY WITH THE CONTRACT STATEMENT OF WORK AND QUALITY STANDARDS.REVIEW CASH FLOW REPORTS AND ESTIMATES AND ADVISE ON NECESSARY ADJUSTMENTS.MONITOR SYSTEM OF INTERNAL CONTROLS, INCLUDING SEPARATION OF DUTIES AND REVIEW PROCESSES, TO PREVENT, DETECT AND CORRECT INCIDENTS OF FRAUD AND MATERIAL MISSTATEMENTS.PARTNER WITH SVDP-DETROIT AUDITORS AND THE OUTSOURCED FINANCE AND ACCOUNTING VENDOR IN COMPLETION OF ANNUAL FINANCIAL AUDIT AND 990 FILING.COORDINATE WITH DEPARTMENT HEADS AND THE OUTSOURCED FINANCE AND ACCOUNTING VENDOR IN DEVELOPING BUDGETS AND IN BUDGET ANALYSIS.ASSIST SENIOR MANAGEMENT IN DEVELOPING SHORT-MEDIUM-LONG RANGE FINANCIAL GOALS AND PROJECTIONS.ASSIST THE TREASURER IN CASH FLOW ANALYSIS, FINANCING STRATEGIES, AND ALL TREASURY MANAGEMENT ACTIVITIES. PROVIDE LEADERSHIP TO AUDIT AND FINANCE COMMITTEES.LEAD QUARTERLY MEETINGS WITH INVESTMENT COMMITTEE TO REVIEW INVESTMENT PERFORMANCE AND FUND MANAGERS. ASSESS AND UPDATE INVESTMENT POLICY STATEMENTS. ADVISE ON ASSET ALLOCATION AND RISK TOLERANCE.DEVELOP AND UTILIZE FORWARD-LOOKING, PREDICTIVE MODELS AND ACTIVITY BASED FINANCIAL ANALYSIS TO PROVIDE INSIGHT INTO THE ORGANIZATION\u2019S OPERATIONS AND BUSINESS PLANS.DEVELOP FINANCIAL BUSINESS PLANS AND FORECASTS FOR ALL SPECIAL PROJECTS OR CAPITAL ACQUISITIONS.PARTICIPATE IN DEVELOPING NEW BUSINESS, SPECIFICALLY: ASSIST SENIOR MANAGEMENT IN IDENTIFYING NEW FUNDING OPPORTUNITIES, THE DRAFTING OF PROSPECTIVE PROGRAMMATIC BUDGETS, AND DETERMINING COST EFFECTIVENESS OF PROSPECTIVE SERVICE DELIVERY.RESPONSIBLE FOR COORDINATION AND MANAGEMENT OF ALL CAPITAL PROJECTS FOR SVDPD RELATIVE TO FINANCIAL ANALYSIS OF PROJECTS, TIMING, AND FUNDING REQUIREMENTS WITH THE DIRECTORS OF VARIOUS AREAS.RESPONSIBLE, IN CONJUNCTION WITH SENIOR MANAGEMENT, WITH ENSURING ADHERENCE TO THE CAPITAL BUDGET AND ASSOCIATED PROCESSES (BIDDING, CONTRACT MANAGEMENT, PAYMENT) FOR ALL CAPITAL PROJECTS.ENSURE THE COMPLIANCE OF CONTRACT MANAGEMENT PROCEDURES FOR THE ENTIRE ORGANIZATION, INCLUDING ADHERENCE TO EXISTING COMPANY POLICIES REGARDING MULTIPLE BID REQUIREMENTS FOR GOODS AND SERVICES.ASSESS THE COSTS AND BENEFITS OF ALL PROSPECTIVE CONTRACTS AND PROGRAMMATIC ACTIVITIES.PARTICIPATE IN THE DEVELOPMENT OF THE SVDP-DETROIT NEXT PHASE STRATEGIC PLAN.\nHUMAN RESOURCES/PAYROLL/BENEFITS:RESPONSIBLE FOR COORDINATION, ALONG WITH THE CEO, OF THE OUTSIDE PROFESSIONAL EMPLOYER ORGANIZATION (PEO) WITH OVERALL EMPLOYEE MATTERS INCLUDING; DETERMINING SELECTION OF BENEFITS PACKAGE, CHANGE TO AND UPDATING THE EMPLOYEE HANDBOOK, AND ANY REGULATORY AND LEGAL CONSIDERATIONS THAT MAY ARISE.ENSURE THE RELATIONSHIP WITH THE PEO IS ADMINISTERED IN ACCORDANCE WITH ITS CONTRACT AND WITHIN THE PERFORMANCE GUARANTEES OF ITS KEY DELIVERABLES.RESPONSIBLE FOR COORDINATING WITH DIRECTORS THAT THE BI-WEEKLY PAYROLL HOURS ARE CORRECT AND ENSURING THE SUBMISSION AND RUNNING OF THE PAYROLL OCCURS ACCURATELY AND TIMELY, AND THAT THE PAYROLL IS FUNDED PRIOR TO SUBMISSION.COORDINATE WITH THE PEO ON EMPLOYEE WELFARE PLANS OFFERINGS, COST ANALYSIS AND COMPETITIVENESS.COORDINATE WITH THE PEO ON THE WELFARE PLANS OPEN ENROLLMENT PROCESS AND VENDOR SELECTION.OVERSEE AND COORDINATE WITH THE SVDP-DETROIT PENSION PLAN ACTUARY AND ADVISORS ON ANNUAL COMPLIANCE, PARTICIPANT COMMUNICATIONS, BENEFIT DELIVERY, AND GOVERNMENT FILINGS.OVERSEE AND COORDINATE WITH THE SVDP-DETROIT 401(K) PLAN ADMINISTRATOR, RECORD KEEPER, ADVISORS, AND TRUST ON EMPLOYEE ELIGIBILITY COMMUNICATION, SUITABILITY OF INVESTMENT OPTIONS, ONGOING COMPLIANCE, AND GOVERNMENT FILINGS.\nRISK:IN CONJUNCTION WITH THE SVDP-DETROIT CEO IDENTIFY, EVALUATE AND MONITOR POTENTIAL NEGATIVE EVENTS TO THE ORGANIZATION IN AREAS OF RISK SUCH AS REPUTATIONAL, SAFETY, FINANCIAL, WEATHER EVENTS, POTENTIAL FIRES, CYBER RISKS, AND OTHER RISKS.DEVELOP PROGRAMS AND PLANS TO MINIMIZE RISK AND PRIORITIZE PROCESSES TO ADDRESS POTENTIAL ADVERSE EVENTS.OVERSEE CORPORATE INSURANCE COVERAGE AND WORK WITH SVDP STAFF AND VINCENTIANS TO MITIGATE RISK.\nINFORMATION TECHNOLOGY:RESPONSIBLE FOR IT SUPPORT SERVICES RELATED TO OVERALL SVDPD NEEDS, AND COORDINATION WITH OUTSOURCED SERVICE PROVIDER TO MANAGE DAILY AND MONTHLY SUPPORT NEEDS OF THE CENTRAL OFFICE STAFF.RESPONSIBLE FOR COORDINATING WITH THE DIRECTORS OF STORES/WAREHOUSE AND CAMPS FOR SUPPORT AND INTEGRATION OF THESE AREAS INTO THE OVERALL SVDPD SYSTEMS ENVIRONMENT.ESTABLISHING APPROPRIATE CONTROLS ON ACQUISITION OF HARDWARE AND SOFTWARE FOR ALL THE SVDPD ORGANIZATION TO ENSURE COMPLIANCE WITH OPERATING AND CAPITAL BUDGET PROCESSES AND GUIDELINES.\nEDUCATION AND/OR EXPERIENCEBACHELOR\u2019S DEGREE IN ACCOUNTING, BUSINESS ADMINISTRATION OR FINANCE; MBA OR CPA DESIRED5 YEARS MINIMUM NONPROFIT EXPERIENCE AS A FINANCE MANAGER, CONTROLLER, DIRECTOR OF FINANCE, OR CFOSTRONG UNDERSTANDING OF, AND EXTENSIVE PROFESSIONAL EXPERIENCE, WITH:- ACCOUNTING/GAAP PRINCIPLES, PARTICULARLY FOR NONPROFITORGANIZATIONS- TAX REQUIREMENTS FOR NONPROFIT ORGANIZATIONS- BUDGETING AND FORECASTING- FINANCIAL STATEMENT PREPARATION AND REPORTING- CASH FLOW MANAGEMENT- ACCOUNT RECONCILIATIONS AND ACCOUNTS PAYABLE- BANKING SERVICES- INTERNAL CONTROLS- INVESTMENT OVERSIGHT- RISK MANAGEMENTEXPERIENCE IN PENSION AND BENEFIT PLANS ADMINISTRATIONMANAGEMENT-LEVEL RESPONSIBILITY FOR HUMAN RESOURCES, IT, FACILITIES MANAGEMENT, AND GENERAL ADMINISTRATIVE FUNCTIONSSIGNIFICANT EXPERIENCE WORKING WITH VARIOUS FINANCIAL PACKAGES AND MICROSOFT EXCELCOMPUTER EXPERIENCE WITH MICROSOFT OFFICE SUITE A MUST. RAISER\u2019S EDGE SOFTWARE AND RETAIL POS SYSTEMS EXPERIENCE A PLUS\nKNOWLEDGE AND ABILITIESMUST BE SELF-MOTIVATED, RESULTS ORIENTED, AND ABLE TO SET PRIORITIES AND WORK ON NUMEROUS PROJECTS SIMULTANEOUSLY WITH STRONG ATTENTION TO DETAIL.EXCELLENT INTERPERSONAL, ORGANIZATIONAL, COMMUNICATION (BOTH VERBAL AND WRITTEN), ANALYTICAL AND NEGOTIATING SKILLS.STRONG ABILITY TO LEAD SVDPD TO THE BEST OUTCOMES FOR THE ENTIRE ORGANIZATION BY BUILDING CONSENSUS AMONG ALL LEVELS, INCLUDING INTERNAL STAFF, BOARD OF DIRECTORS AND BOARD-LEVEL COMMITTEES, DISTRICTS AND CONFERENCES.COMMUNICATE CLEARLY AND CONCISELY WITH SENIOR SVDPD MANAGEMENT, VENDORS AND EMPLOYEES.MAINTAINS A HIGH LEVEL OF CONFIDENTIALITY REGARDING SENSITIVE INFORMATIONHIGHEST LEVEL OF ETHICS AND INTEGRITYEXPERIENCE IN THE NONPROFIT SECTOR. FAMILIARITY WITH THE ARCHDIOCESE OF DETROIT CATHOLIC FAITH COMMUNITY DESIRABLE.\nBENEFITS OFFERED401(K)401(K) MATCHINGDENTAL INSURANCEHEALTH INSURANCELIFE INSURANCEPAID TIME OFFVISION INSURANCESTD\nJOB TYPE: FULL-TIME\nSCHEDULE:MONDAY TO FRIDAY\nWORK LOCATION: IN PERSON",
+          "years_required": 30.0,
+          "embedding": "[-0.006719283293932676, 0.1176915317773819, -0.004483179654926062, 0.042868949472904205, 0.032560624182224274, 0.046416062861680984, -0.047530777752399445, -0.009987003169953823, -0.03191830590367317, -0.008380231447517872, -0.02591743879020214, 0.04118978604674339, 0.026475485414266586, 0.0626579076051712, -0.0012651202268898487, 0.05103188008069992, 0.0036132638342678547, 0.03874348849058151, -0.009557962417602539, -0.0479111485183239, 0.012535415589809418, 0.027553841471672058, -0.02228003554046154, -0.020542072132229805, -0.0397256538271904, -0.01225203089416027, 0.023309243842959404, 0.03737516701221466, 0.015666702762246132, 0.009636185131967068, 0.022791320458054543, 0.013849559240043163, 0.012861322611570358, -0.04522564262151718, 2.679826138773933e-06, -0.006794503889977932, 0.015576271340250969, -0.0263123270124197, -0.018953578546643257, -8.757402247283608e-05, -0.009858259931206703, -0.07534642517566681, 0.006157029885798693, 0.013966716825962067, -0.021875813603401184, -0.01810874603688717, 0.022011544555425644, -0.0130154425278306, -0.012895348481833935, -0.029684772714972496, -0.01080714538693428, -0.02602301351726055, -0.053237080574035645, -0.0062991902232170105, -0.07279713451862335, 0.0062021175399422646, -0.000153504908666946, 0.04123552516102791, 0.0021916108671575785, -0.06791551411151886, -0.015098335221409798, 0.001912711071781814, -0.012853028252720833, -0.021814772859215736, 0.06936284154653549, 0.045198921114206314, 0.03739249333739281, -0.011990108527243137, 0.019542984664440155, -0.012893108651041985, 0.08941834419965744, -0.0012065296759828925, 0.030815696343779564, 0.048207856714725494, 0.05555522069334984, 0.023097356781363487, 0.011307168751955032, -0.04868937283754349, -0.015494498424232006, -0.021918589249253273, -0.018154600635170937, 0.07451656460762024, 0.011836199089884758, 0.001264176331460476, 0.00763368047773838, -0.08094056695699692, -0.009723176248371601, -0.031104804947972298, -0.007231625262647867, 0.06373787671327591, -0.03920567035675049, -0.04413902759552002, 0.02276172675192356, -0.0061241863295435905, 0.04619591310620308, -0.016161497682332993, -0.00969222467392683, -0.0424591526389122, -0.029603946954011917, -0.031095322221517563, 0.003191671334207058, 0.012853681109845638, 0.0265207476913929, 1.815982068364974e-05, -0.007728549186140299, 0.07024616748094559, -0.024139774963259697, 0.018915852531790733, -0.031680233776569366, 0.030569029971957207, 0.008175920695066452, 0.026516661047935486, 0.004078125115483999, 0.004706873558461666, -0.025276796892285347, -0.004609445575624704, -0.0020802542567253113, 0.0009502926841378212, 0.031531382352113724, 0.02466459386050701, 0.017419718205928802, 0.01742035709321499, 0.06989694386720657, 0.05055603012442589, 0.003532540751621127, -0.030747853219509125, -0.017931731417775154, -0.028681142255663872, 0.0009771445766091347, 0.11464662849903107, -0.004903024528175592, -0.02929564192891121, 0.01855829730629921, 0.0014408682473003864, 0.01936175674200058, 0.07354480028152466, -0.004496672656387091, 0.04832391440868378, 0.038614220917224884, 0.045303601771593094, -0.03984305262565613, -0.020312083885073662, -0.035115133970975876, -0.011678745038807392, -0.023629195988178253, -0.015222289599478245, -0.022951770573854446, 0.01784077100455761, 0.007461530156433582, -0.0037296919617801905, -0.013410737738013268, -0.01777542755007744, -0.02719273790717125, 0.02280791476368904, 0.08860793709754944, 0.012913063168525696, -0.001366455340757966, -0.00996447540819645, -0.0003991721896454692, -0.02940288931131363, 0.050719741731882095, -0.03580229729413986, -0.04789300635457039, 0.03701785206794739, 0.004141740035265684, 0.034144628793001175, 0.04885555058717728, 0.022351905703544617, -0.006931328680366278, -0.02005370706319809, 0.050800807774066925, -0.005996776279062033, -0.05367181450128555, 0.002628678223118186, 0.0315861813724041, 0.008605238981544971, 0.07757066935300827, -0.07404261827468872, 0.002146081067621708, 0.031690385192632675, 0.00904792919754982, -0.10248004645109177, -0.034059956669807434, 0.013461378403007984, 0.04908182844519615, 0.05714545398950577, -0.05258439853787422, 0.003283142112195492, -0.020231926813721657, -0.008474033325910568, 0.0008209992083720863, 0.012318936176598072, -0.07977523654699326, 0.021450109779834747, -0.036634113639593124, 0.02734360657632351, -0.051934223622083664, 0.025765351951122284, 0.02780322916805744, 0.032076653093099594, -0.035391341894865036, 0.001895912573672831, 0.032453637570142746, 0.09133945405483246, 0.026248380541801453, -0.02271217107772827, 0.0109147559851408, -0.014000816270709038, -0.04680437222123146, 0.007822435349225998, 0.031017085537314415, 0.026972252875566483, 0.00386232603341341, -0.007166663184762001, 0.000624532054644078, 0.036558397114276886, 0.04186815768480301, 0.033617664128541946, 0.0007559352670796216, 0.03778756409883499, -0.0014404194662347436, -0.004590210039168596, 0.00576157309114933, 0.008671840652823448, 0.06813114136457443, -0.02704501524567604, 0.012587402947247028, -0.028932329267263412, -0.053792476654052734, -0.00023839256027713418, -0.013148177415132523, 0.013879375532269478, -0.039160799235105515, 0.006547014228999615, 0.044199083000421524, -0.0334322415292263, -0.016107818111777306, 0.022440621629357338, 0.04156283289194107, 0.010974394157528877, -0.06410074234008789, 0.07492445409297943, 0.02470388263463974, 0.030959179624915123, 0.059807777404785156, 0.018520230427384377, -0.11083554476499557, -0.03210853040218353, -0.008384570479393005, 0.03461267799139023, -0.005246213637292385, 0.03560062497854233, 0.03586345911026001, 0.00744581688195467, 0.010793554596602917, 0.005302795674651861, 0.0780119076371193, 0.027850566431879997, -0.050171248614788055, 0.07333928346633911, -0.04145759344100952, -0.051149237900972366, -0.06003284826874733, 0.02420073002576828, 0.06404276192188263, -0.0020211960654705763, 0.03451284393668175, 0.034781575202941895, -0.05398888513445854, -0.0010534444591030478, -0.00429631257429719, 0.001552277011796832, 0.018122827634215355, -0.012004458345472813, 0.030989430844783783, -0.0019052723655477166, -0.020281976088881493, 0.07193423062562943, -0.012860653921961784, 0.03723478317260742, -0.0058509670197963715, -0.042495064437389374, -0.02663460001349449, 0.0023293986450880766, 0.020280053839087486, -0.0037318638060241938, 0.06577572226524353, -0.06416410952806473, -0.018853940069675446, 0.0011105561861768365, -0.024364598095417023, 0.01116784755140543, 0.028167132288217545, -0.04093298316001892, -0.0009085027268156409, 0.012419508770108223, 0.014849942177534103, -0.054198119789361954, -0.014832595363259315, 0.026274602860212326, -0.06302434206008911, -0.026427021250128746, 0.060971032828092575, -0.02401627227663994, 0.03846873715519905, 0.05788980796933174, -0.008456490002572536, 0.10211460292339325, -0.035898637026548386, -0.03678891807794571, 0.0025571382138878107, 0.025430088862776756, 0.0032420121133327484, 0.0019288765033707023, -0.002057362115010619, -0.03572750836610794, -0.024071335792541504, -0.04110981151461601, -0.027285728603601456, 0.07851529121398926, -0.013289441354572773, 0.032538704574108124, -0.06631620228290558, -0.017233166843652725, -0.026240799576044083, 0.04361458495259285, -0.05730995535850525, -0.034080568701028824, 0.02147749625146389, -0.08585155010223389, 0.018841546028852463, -0.026655113324522972, -0.061979979276657104, -0.05099796876311302, 0.021690066903829575, 0.0028504731599241495, 0.00983639806509018, 0.013447757810354233, 0.02380148507654667, -0.016432253643870354, -0.051458314061164856, -0.07743732631206512, -0.05671633034944534, -0.009411012753844261, -0.013329233974218369, 0.011816560290753841, -0.00320803327485919, -0.01992131397128105, -0.08239751309156418, -0.024523967877030373, -0.023268146440386772, 0.043611396104097366, 0.012282026000320911, -0.01616637408733368, -0.002518748166039586, -0.02474365383386612, -0.059940144419670105, -0.0006000595167279243, 0.03210194781422615, -0.07371990382671356, 0.01549232006072998, -0.03499636799097061, 0.03156924620270729, -0.014120975509285927, 0.014192064292728901, 0.01035213191062212, -0.009458865970373154, 0.017244776710867882, -0.029583413153886795, -0.02899295650422573, -0.05234958603978157, 0.018993856385350227, -0.07883083820343018, 0.027911528944969177, -0.012170042842626572, 0.01261244434863329, 0.0561753511428833, 0.03726644814014435, -0.003735356032848358, 0.006574760656803846, 0.054907236248254776, -0.08165358006954193, 0.031799763441085815, -0.02182774618268013, 0.023105693981051445, 0.011158195324242115, -0.048259567469358444, -0.04710809886455536, 0.02365952357649803, 0.036645036190748215, 0.010223254561424255, 0.04219746217131615, -0.03489195927977562, 0.020011430606245995, -0.04649394005537033, -0.004424457438290119, -0.041986074298620224, -0.005661118309944868, 0.01482979767024517, -0.005272177513688803, 0.01074435655027628, 0.018673714250326157, 0.06585486978292465, 0.01200014166533947, 0.05117649957537651, -0.15524327754974365, 0.09849098324775696, -0.02006307803094387, -0.01336932647973299, 0.07791481912136078, -0.05387549847364426, -0.021207228302955627, -0.038905031979084015, 0.05071866139769554, -0.04640796035528183, -0.051873404532670975, -0.03634518012404442, 0.03037169575691223, 0.020057791844010353, -0.06798131763935089, 0.05824032798409462, 0.03267041593790054, 0.003448903327807784, 0.04274982586503029, 0.08144998550415039, 0.0067756581120193005, 0.09205703437328339, -0.03942371532320976, -0.0045122611336410046, -0.027749555185437202, 0.02689233236014843, 0.05942355841398239, 0.015222585760056973, 0.007982182316482067, 0.004198161419481039, 0.0476129874587059, -0.019915631040930748, 0.008106083609163761, 0.012365982867777348, -0.03267420083284378, -0.017792755737900734, 0.04832127317786217, 0.004277427215129137, -0.031547341495752335, -0.07637636363506317, -0.020629888400435448, -0.04872557893395424, -0.004033075179904699, -0.07560623437166214, -0.045970618724823, 0.07184557616710663, 0.02758188173174858, -0.0204051174223423, -0.0802217498421669, 0.017406225204467773, -0.04091079160571098, -0.012141149491071701, 0.013018285855650902, 0.003118787659332156, 0.012497857213020325, -0.03830162063241005, 0.020203083753585815, -0.014225847087800503, -0.0015910544898360968, 0.06673212349414825, -0.02008592151105404, 0.03949769213795662, -0.004449079744517803, -0.0028838771395385265, -0.033097971230745316, 0.05612826347351074, 0.008409161120653152, -0.028469573706388474, -0.06967907398939133, 0.048535194247961044, -0.027878547087311745, -0.03221963346004486, 0.004103443119674921, -0.0055496543645858765, 0.009670530445873737, 0.005238605197519064, -0.03939853608608246, 0.03226926922798157, -0.0015115097630769014, -0.033355288207530975, -0.01234130747616291, 0.0059598819352686405, 0.0010636746883392334, -0.025959782302379608, -0.013613495975732803, 0.01611894555389881, 0.0025371285155415535, -0.029900139197707176, -0.026714477688074112, -0.00039537824341095984, -0.012556163594126701, 0.005182739347219467, 0.01980362832546234, 0.05492817610502243, 0.014339739456772804, -0.022486666217446327, -0.01877712644636631, 0.012654944323003292, 0.028557874262332916, 0.008854515850543976, -0.036324482411146164, -0.028912438079714775, 0.002694566734135151, 0.009927071630954742, 0.04905570298433304, -0.044255346059799194, -0.017327509820461273, -0.04894150793552399, -0.0416632741689682, 0.018825426697731018, -0.00017870932060759515, -0.010659727267920971, -0.005045157857239246, -0.05595392733812332, -0.056450288742780685, 0.029912278056144714, -0.007201481610536575, -0.007903928868472576, 0.020156696438789368, -0.010723474435508251, 0.0011175840627402067, 0.02196635864675045, -0.004783115349709988, -0.027117615565657616, 0.037526994943618774, -0.003232132876291871, -0.016897138208150864, -0.08154928684234619, 0.03183630853891373, 0.009630100801587105, -0.028944620862603188, -0.0018587459344416857, 0.07097085565328598, 0.05216636881232262, 0.007088356651365757, -0.06393544375896454, 0.011925462633371353, 0.03317510336637497, -0.008085370063781738, 0.013424339704215527, -0.011204157024621964, -0.01685919426381588, -0.05226906016469002, 0.016242878511548042, 0.06256049871444702, -0.010527493432164192, -0.037325918674468994, 0.004801818169653416, -0.02446332387626171, -0.023569969460368156, -6.427899922619851e-33, 0.03473014757037163, -0.04237912595272064, 0.011168510653078556, -0.0045557222329080105, -0.042850226163864136, 0.022758862003684044, 0.022611455991864204, -0.026530839502811432, -0.05179883539676666, 0.03133711963891983, -0.0057173785753548145, 0.016337864100933075, 0.01104515790939331, 0.005227226298302412, 0.013207316398620605, -0.006483145523816347, -0.004798623267561197, -0.03820649906992912, 0.0035621915012598038, -0.04009655863046646, -0.02506878226995468, 0.045813459903001785, 0.015148721635341644, 0.04952625185251236, 0.00632955739274621, -0.021252064034342766, 0.011461845599114895, 0.02997666597366333, 0.08009231835603714, -0.03544050455093384, 0.024612203240394592, -0.018916936591267586, -0.04584036394953728, -0.09576302021741867, 0.005986820440739393, 0.013569270260632038, -0.04675213620066643, -0.006034376565366983, 0.02180558443069458, 0.0175440963357687, -0.013872390612959862, 0.03901368007063866, 0.005694638937711716, 0.005845080129802227, 0.003841388039290905, -0.022563381120562553, -0.034700967371463776, -0.006781908683478832, 0.03251877427101135, -0.057946816086769104, -0.04748440533876419, 0.025506526231765747, -0.002590467454865575, 0.027777517214417458, 0.023258546367287636, 0.0013713306980207562, -0.004525874275714159, 0.005390242673456669, 0.05155697837471962, -0.061909861862659454, -0.056091632694005966, -0.029042193666100502, 0.001466035726480186, 0.01587248407304287, -0.01094867568463087, 0.0009867822518572211, 0.021080920472741127, 0.022316589951515198, -0.003567043226212263, -0.009657701477408409, -0.0030388333834707737, 0.05960705131292343, -0.017331000417470932, 0.006796836853027344, -0.0666508674621582, 0.013662507757544518, -0.028647804632782936, 0.007293631788343191, -0.00662135798484087, -0.04818962886929512, -0.008246628567576408, 0.028337186202406883, -0.01600261591374874, -0.019810762256383896, 0.005429925862699747, -0.015510151162743568, -0.01204774808138609, 0.041456472128629684, 0.01137972716242075, -0.008894729427993298, 0.031047573313117027, -0.018209749832749367, -0.011956077069044113, -0.032082632184028625, 0.017548764124512672, -0.020711258053779602, 0.030895790085196495, -0.036260124295949936, 0.016269195824861526, 0.025835009291768074, -0.0742587223649025, 0.05924777314066887, 0.037047579884529114, 0.0740254819393158, 0.01119173876941204, 0.006983023136854172, -0.024663297459483147, -0.04340381920337677, -0.00015748445002827793, 0.033557988703250885, 0.016240103170275688, -0.0010056080063804984, 0.0007938584894873202, 0.04814409092068672, -0.060111306607723236, -0.04996297508478165, -0.0006333939381875098, -0.09415200352668762, 0.020250258967280388, -0.0001721071166684851, 0.06753190606832504, 0.03918597474694252, 0.03176229074597359, 0.06709408760070801, -0.05134671553969383, 0.015028383582830429, 0.02285641059279442, -0.0003344908473081887, -0.0032691729720681906, 0.020627468824386597, 0.006775628309696913, -0.0014182638842612505, 3.210521981600323e-07, 0.03721712902188301, -0.01923336274921894, -0.007037271745502949, -0.0157142486423254, 0.019768783822655678, 0.0015515239210799336, -0.019935300573706627, -0.020814506337046623, -0.03427373617887497, -0.0035340418107807636, 0.03897835686802864, 0.01519843190908432, 0.02743084728717804, -0.044337403029203415, -0.01901990920305252, -0.08455144613981247, -0.04209957271814346, -0.055990464985370636, 0.013977088034152985, -0.018879367038607597, -0.06487414985895157, 0.014664107002317905, 0.013538803905248642, -0.04850001633167267, 0.05225061625242233, 0.005475705023854971, 0.0012390551855787635, 0.02335766889154911, -0.026351749897003174, -0.03993773087859154, 0.032401859760284424, 0.016278782859444618, 7.945547258714214e-05, -0.015814252197742462, -0.036348458379507065, -0.017077084630727768, 0.035514283925294876, -0.003380639711394906, -0.0002963752776850015, 0.051423367112874985, -0.019588522613048553, -0.054377101361751556, -0.043566636741161346, 0.03166038542985916, -0.020745646208524704, -0.02095397561788559, -0.04724258556962013, 0.021883957087993622, -0.07789166271686554, 0.037344951182603836, -0.026821143925189972, 0.0804469883441925, -0.058802928775548935, 0.04029570892453194, 0.022718388587236404, 0.017028313130140305, -0.0410732701420784, -0.01571393571794033, 0.05778476968407631, -0.0019896687008440495, 0.03397419676184654, -0.019093144685029984, 0.012523714452981949, 0.039239395409822464, 0.06269171088933945, 0.024986019358038902, -0.015217168256640434, 3.108127827251576e-34, 0.0008965686429291964, -0.019882244989275932, -0.02909880317747593, -0.036790214478969574, 0.049651410430669785, -0.05926064774394035, -0.004890632349997759, 0.048033881932497025, 0.0100362878292799, -0.010734635405242443, -0.0005233762785792351]"
+        }
+      }
+    },
+    "learning_resources": {
+      "verified_resource_catalog.json": {
+        "file": "verified_resource_catalog.json",
+        "format": "json",
+        "record_count": 19,
+        "sample": "{'id': 'res-py-official-tutorial', 'title': 'The Python Tutorial \u2014 Official Python 3 Documentation', 'provider': 'Python Software Foundation', 'url': 'https://docs.python.org/3/tutorial/', 'skills': ["
+      }
+    }
+  }
+}

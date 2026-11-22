@@ -1,0 +1,63 @@
+{
+  "question_id": "Q-CLD-COD-050",
+  "role_id": "cloud_engineer",
+  "skill_id": "CLD-SKL-05",
+  "skill_name": "Cloud Security, Cost Optimization & High Availability / DR",
+  "subtopic": "Cloud Resource Audit & IaC Automation",
+  "assessment_type": "coding",
+  "difficulty": "hard",
+  "question_text": "Implement a Cloud Infrastructure as Code or Cloud SDK automation utility for **Challenge #50: Cloud Security, Cost Optimization & High Availability / DR**.\n\n### Problem Specification:\n- Write an automated script in Python (Boto3) or declarative HCL parsing module.\n- Validate cloud resource tags, manage lifecycle transitions, or audit unattached volumes.\n- Handle API pagination and retry with exponential backoff on `ThrottlingException`.",
+  "options": null,
+  "correct_answer": "def audit_cloud_resources_50(resources: list) -> list:\n    # Cloud resource tag and compliance verification for Cloud Security, Cost Optimization & High Availability / DR\n    non_compliant = []\n    required_tags = {'Environment', 'Owner', 'Project'}\n    for r in resources:\n        tags = set(r.get('Tags', {}).keys())\n        if not required_tags.issubset(tags):\n            non_compliant.append(r.get('ResourceId'))\n    return non_compliant",
+  "answer_explanation": "Evaluates cloud resource tagging compliance, audit automation, and safe resource lifecycle management in Cloud Security, Cost Optimization & High Availability / DR.",
+  "reference_solution": "def audit_cloud_resources_50(resources: list) -> list:\n    # Cloud resource tag and compliance verification for Cloud Security, Cost Optimization & High Availability / DR\n    non_compliant = []\n    required_tags = {'Environment', 'Owner', 'Project'}\n    for r in resources:\n        tags = set(r.get('Tags', {}).keys())\n        if not required_tags.issubset(tags):\n            non_compliant.append(r.get('ResourceId'))\n    return non_compliant",
+  "coding_language": "python",
+  "sample_input": "resource_tags_50 = {'Environment': 'Production', 'CostCenter': 'ENG-50'}",
+  "expected_output": "compliance_status = True",
+  "visible_test_cases": [
+    {
+      "input": "compliant_tags_50",
+      "output": "tags_approved"
+    },
+    {
+      "input": "missing_env_tag_50",
+      "output": "non_compliant_flagged"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "unattached_ebs_volume_50",
+      "output": "isolated_for_cleanup"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Functional Correctness",
+        "weight": 0.5,
+        "description": "Passes all visible and hidden unit test cases without errors."
+      },
+      {
+        "name": "Time & Space Complexity",
+        "weight": 0.3,
+        "description": "Meets specified asymptotic computational boundaries."
+      },
+      {
+        "name": "Code Structure & Cleanliness",
+        "weight": 0.2,
+        "description": "Idiomatic naming, handling edge boundaries and null guards."
+      }
+    ],
+    "max_score": 14.0
+  },
+  "estimated_time": 35,
+  "marks": 14,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/coding",
+  "license": "Apache-2.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

@@ -1,0 +1,195 @@
+{
+  "model_name": "ResumeSectionNeuralClassifier",
+  "dataset": "uhfew/resumes (cleaned, PII redacted)",
+  "supervision_mode": "Weak supervision via JSON schema keys (Heuristic Mapping)",
+  "generalization_note": "Evaluated on structured resumes. Real-world noisy OCR or non-standard formatting may exhibit lower accuracy.",
+  "completed_epochs": 10,
+  "best_epoch": 2,
+  "best_val_macro_f1": 1.0,
+  "test_accuracy": 0.9976,
+  "test_unweighted_macro_f1_6_classes": 0.9983,
+  "test_weighted_f1": 0.9976,
+  "cross_split_phrase_overlap_pct": 18.72,
+  "per_class_metrics": {
+    "personal_info": {
+      "precision": 0.9979338842975206,
+      "recall": 1.0,
+      "f1-score": 0.9989658738366081,
+      "support": 483.0
+    },
+    "experience": {
+      "precision": 1.0,
+      "recall": 0.9917269906928645,
+      "f1-score": 0.995846313603323,
+      "support": 967.0
+    },
+    "education": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 713.0
+    },
+    "skills": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 481.0
+    },
+    "projects": {
+      "precision": 0.9904240766073872,
+      "recall": 1.0,
+      "f1-score": 0.9951890034364261,
+      "support": 724.0
+    },
+    "certifications": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      483,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      959,
+      0,
+      0,
+      7,
+      0
+    ],
+    [
+      0,
+      0,
+      713,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      481,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      724,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ]
+  ],
+  "epoch_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.0737,
+      "val_loss": 0.0365,
+      "val_acc": 0.9997,
+      "val_macro_f1": 0.9997,
+      "val_weighted_f1": 0.9997,
+      "duration_sec": 3.76
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.0197,
+      "val_loss": 0.0009,
+      "val_acc": 1.0,
+      "val_macro_f1": 1.0,
+      "val_weighted_f1": 1.0,
+      "duration_sec": 3.22
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.0023,
+      "val_loss": 0.0003,
+      "val_acc": 1.0,
+      "val_macro_f1": 1.0,
+      "val_weighted_f1": 1.0,
+      "duration_sec": 3.16
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.0009,
+      "val_loss": 0.0002,
+      "val_acc": 1.0,
+      "val_macro_f1": 1.0,
+      "val_weighted_f1": 1.0,
+      "duration_sec": 3.64
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.0011,
+      "val_loss": 0.0002,
+      "val_acc": 0.9988,
+      "val_macro_f1": 0.9988,
+      "val_weighted_f1": 0.9988,
+      "duration_sec": 3.86
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.0011,
+      "val_loss": 0.0002,
+      "val_acc": 0.9988,
+      "val_macro_f1": 0.9988,
+      "val_weighted_f1": 0.9988,
+      "duration_sec": 3.48
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.0004,
+      "val_loss": 0.0005,
+      "val_acc": 0.9988,
+      "val_macro_f1": 0.9988,
+      "val_weighted_f1": 0.9988,
+      "duration_sec": 4.11
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.0002,
+      "val_loss": 0.0006,
+      "val_acc": 0.9985,
+      "val_macro_f1": 0.9986,
+      "val_weighted_f1": 0.9985,
+      "duration_sec": 3.84
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.0003,
+      "val_loss": 0.0023,
+      "val_acc": 0.9985,
+      "val_macro_f1": 0.9986,
+      "val_weighted_f1": 0.9985,
+      "duration_sec": 3.16
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.0001,
+      "val_loss": 0.0005,
+      "val_acc": 0.9988,
+      "val_macro_f1": 0.9988,
+      "val_weighted_f1": 0.9988,
+      "duration_sec": 3.02
+    }
+  ],
+  "device": "mps",
+  "timestamp": "2026-11-21T14:17:50Z"
+}

@@ -1,0 +1,59 @@
+{
+  "question_id": "Q-CLD-DBG-018",
+  "role_id": "cloud_engineer",
+  "skill_id": "CLD-SKL-03",
+  "skill_name": "Cloud Storage, Databases & Lifecycle Policies",
+  "subtopic": "Terraform VPC Routing & Security Debugging",
+  "assessment_type": "debugging",
+  "difficulty": "medium",
+  "question_text": "Identify and rectify a misconfigured VPC route table exposing private subnets (Cloud Storage, Databases & Lifecycle Policies).\n\n### Defective Code:\n```hcl\n# Terraform Configuration Defect\nresource \"aws_route_table\" \"private_rt_18\" {\n  vpc_id = aws_vpc.main.id\n  # Defect: Private subnet routes 0.0.0.0/0 to IGW instead of NAT Gateway\n  route {\n    cidr_block = \"0.0.0.0/0\"\n    gateway_id = aws_internet_gateway.gw.id\n  }\n}\n```\n\n### Reported Anomaly / Error:\nSecurity vulnerability: Private database subnets inadvertently exposed to public internet ingress in Cloud Storage, Databases & Lifecycle Policies.\n\nIdentify the root cause of the defect and provide the corrected code snippet with rationale.",
+  "options": null,
+  "correct_answer": "# Corrected Terraform Configuration\nresource \"aws_route_table\" \"private_rt_18\" {\n  vpc_id = aws_vpc.main.id\n  # Fixed: Route outbound egress strictly via managed NAT Gateway\n  route {\n    cidr_block     = \"0.0.0.0/0\"\n    nat_gateway_id = aws_nat_gateway.nat.id\n  }\n}",
+  "answer_explanation": "Routing private subnets directly to an Internet Gateway violates network isolation. Private subnets must route internet egress through a NAT Gateway.",
+  "reference_solution": "# Corrected Terraform Configuration\nresource \"aws_route_table\" \"private_rt_18\" {\n  vpc_id = aws_vpc.main.id\n  # Fixed: Route outbound egress strictly via managed NAT Gateway\n  route {\n    cidr_block     = \"0.0.0.0/0\"\n    nat_gateway_id = aws_nat_gateway.nat.id\n  }\n}",
+  "coding_language": "hcl",
+  "sample_input": "Defective snippet causing runtime failure or logical discrepancy.",
+  "expected_output": "Corrected code snippet passing all edge conditions.",
+  "visible_test_cases": [
+    {
+      "input": "Defective state execution",
+      "output": "Root cause isolated and fixed"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "Edge condition regression check",
+      "output": "Zero regressions"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Root Cause Identification",
+        "weight": 0.4,
+        "description": "Accurately identifies the exact line and logic error causing failure."
+      },
+      {
+        "name": "Remediation Precision",
+        "weight": 0.4,
+        "description": "Provides clean fix without side effects or performance regressions."
+      },
+      {
+        "name": "Technical Rationale",
+        "weight": 0.2,
+        "description": "Explains underlying runtime or structural mechanics clearly."
+      }
+    ],
+    "max_score": 8.0
+  },
+  "estimated_time": 15,
+  "marks": 8,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/debugging",
+  "license": "MIT",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

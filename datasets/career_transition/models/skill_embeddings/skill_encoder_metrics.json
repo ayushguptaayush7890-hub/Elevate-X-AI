@@ -1,0 +1,7 @@
+{
+  "benchmark_pairs": 1001,
+  "synonym_recall_at_85": 0.942,
+  "unrelated_rejection_rate_at_65": 0.988,
+  "f1_score": 0.964,
+  "calibration_status": "OPTIMAL"
+}

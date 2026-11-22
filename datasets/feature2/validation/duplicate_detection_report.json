@@ -1,0 +1,624 @@
+{
+  "generated_at": "2026-11-15T13:58:45.761136+00:00",
+  "total_questions": 2250,
+  "unique_question_count": 2250,
+  "exact_duplicates": {
+    "count": 0,
+    "groups": []
+  },
+  "normalized_duplicates": {
+    "count": 0,
+    "groups": []
+  },
+  "near_duplicates": {
+    "threshold": 0.85,
+    "count": 17435,
+    "audit_note": "Near-duplicates reflect parametric prompt wrappers across coding/SQL/debugging questions. Each question tests a distinct technical objective, but structural boilerplate causes token set overlap. Flagged for review.",
+    "flagged_sample_pairs": [
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-003",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-006",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-008",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-011",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-013",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-016",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-018",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-021",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-023",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-026",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-028",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-031",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-033",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-036",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-038",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-041",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-043",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-046",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-001",
+        "q2": "Q-SWE-COD-048",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-002",
+        "q2": "Q-SWE-COD-007",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-002",
+        "q2": "Q-SWE-COD-012",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-002",
+        "q2": "Q-SWE-COD-017",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-002",
+        "q2": "Q-SWE-COD-022",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-002",
+        "q2": "Q-SWE-COD-027",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-002",
+        "q2": "Q-SWE-COD-032",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-002",
+        "q2": "Q-SWE-COD-037",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-002",
+        "q2": "Q-SWE-COD-042",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-002",
+        "q2": "Q-SWE-COD-047",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-006",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-008",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-011",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-013",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-016",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-018",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-021",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-023",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-026",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-028",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-031",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-033",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-036",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-038",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-041",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-043",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-046",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-003",
+        "q2": "Q-SWE-COD-048",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-004",
+        "q2": "Q-SWE-COD-009",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-004",
+        "q2": "Q-SWE-COD-014",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-004",
+        "q2": "Q-SWE-COD-019",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-004",
+        "q2": "Q-SWE-COD-024",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-004",
+        "q2": "Q-SWE-COD-029",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-004",
+        "q2": "Q-SWE-COD-034",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-004",
+        "q2": "Q-SWE-COD-039",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-004",
+        "q2": "Q-SWE-COD-044",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-004",
+        "q2": "Q-SWE-COD-049",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-005",
+        "q2": "Q-SWE-COD-010",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-005",
+        "q2": "Q-SWE-COD-015",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-005",
+        "q2": "Q-SWE-COD-020",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-005",
+        "q2": "Q-SWE-COD-025",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-005",
+        "q2": "Q-SWE-COD-030",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-005",
+        "q2": "Q-SWE-COD-035",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-005",
+        "q2": "Q-SWE-COD-040",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-005",
+        "q2": "Q-SWE-COD-045",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-005",
+        "q2": "Q-SWE-COD-050",
+        "jaccard": 0.9623,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-008",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-011",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-013",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-016",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-018",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-021",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-023",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-026",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-028",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-031",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-033",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-036",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-038",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-041",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-043",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-046",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-006",
+        "q2": "Q-SWE-COD-048",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-007",
+        "q2": "Q-SWE-COD-012",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-007",
+        "q2": "Q-SWE-COD-017",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-007",
+        "q2": "Q-SWE-COD-022",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-007",
+        "q2": "Q-SWE-COD-027",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-007",
+        "q2": "Q-SWE-COD-032",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-007",
+        "q2": "Q-SWE-COD-037",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-007",
+        "q2": "Q-SWE-COD-042",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-007",
+        "q2": "Q-SWE-COD-047",
+        "jaccard": 0.963,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-008",
+        "q2": "Q-SWE-COD-011",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-008",
+        "q2": "Q-SWE-COD-013",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-008",
+        "q2": "Q-SWE-COD-016",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-008",
+        "q2": "Q-SWE-COD-018",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-008",
+        "q2": "Q-SWE-COD-021",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-008",
+        "q2": "Q-SWE-COD-023",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-008",
+        "q2": "Q-SWE-COD-026",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-008",
+        "q2": "Q-SWE-COD-028",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-008",
+        "q2": "Q-SWE-COD-031",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-008",
+        "q2": "Q-SWE-COD-033",
+        "jaccard": 0.9615,
+        "role_type": "software_engineer_coding"
+      },
+      {
+        "q1": "Q-SWE-COD-008",
+        "q2": "Q-SWE-COD-036",
+        "jaccard": 0.8545,
+        "role_type": "software_engineer_coding"
+      }
+    ]
+  },
+  "cross_role_duplicates": {
+    "count": 0,
+    "instances": []
+  }
+}

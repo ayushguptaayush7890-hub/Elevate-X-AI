@@ -4,7 +4,15 @@ import React, { useState, Suspense } from "react";
 import { DashboardSidebar } from "./DashboardSidebar";
 import { DashboardHeader } from "./DashboardHeader";
 
-function AppShellInner({ children }: { children: React.ReactNode }) {
+function AppShellInner({ 
+  children,
+  isLocked = false,
+  onLockedNavigation,
+}: { 
+  children: React.ReactNode;
+  isLocked?: boolean;
+  onLockedNavigation?: () => void;
+}) {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
   return (
@@ -13,6 +21,8 @@ function AppShellInner({ children }: { children: React.ReactNode }) {
       <DashboardSidebar
         mobileOpen={mobileSidebarOpen}
         setMobileOpen={setMobileSidebarOpen}
+        isLocked={isLocked}
+        onLockedNavigation={onLockedNavigation}
       />
 
       {/* Main Workspace Area */}
@@ -20,6 +30,8 @@ function AppShellInner({ children }: { children: React.ReactNode }) {
         {/* Sticky Header */}
         <DashboardHeader
           onMenuToggle={() => setMobileSidebarOpen(!mobileSidebarOpen)}
+          isLocked={isLocked}
+          onLockedNavigation={onLockedNavigation}
         />
 
         {/* Dynamic Page Content */}
@@ -31,7 +43,15 @@ function AppShellInner({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function AppShell({ children }: { children: React.ReactNode }) {
+export function AppShell({ 
+  children,
+  isLocked = false,
+  onLockedNavigation,
+}: { 
+  children: React.ReactNode;
+  isLocked?: boolean;
+  onLockedNavigation?: () => void;
+}) {
   return (
     <Suspense
       fallback={
@@ -40,7 +60,9 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         </div>
       }
     >
-      <AppShellInner>{children}</AppShellInner>
+      <AppShellInner isLocked={isLocked} onLockedNavigation={onLockedNavigation}>
+        {children}
+      </AppShellInner>
     </Suspense>
   );
 }

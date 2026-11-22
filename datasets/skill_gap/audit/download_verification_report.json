@@ -1,0 +1,64 @@
+{
+  "verified_at": "2026-11-21T16:54:50.032392",
+  "components": {
+    "esco": {
+      "status": "PASS",
+      "file_count": 9,
+      "files": {
+        "skillSkillRelations_en.csv": {
+          "size_bytes": 1031275,
+          "sha256": "64a5f8fb7b8dda4932ff06db4738ce1beed3906e45a49b14453349056c609439"
+        },
+        "skillGroups_en.csv": {
+          "size_bytes": 340935,
+          "sha256": "644b68a174299eb05336eec36e0716c4671a0c6bdd4ac268803ecd6533dc739d"
+        },
+        "skillsHierarchy_en.csv": {
+          "size_bytes": 381733,
+          "sha256": "295133872c6be7b7560de943efa4a6aab833a1b15af4d60c03b050ab0a75edcb"
+        },
+        "digitalSkillsCollection_en.csv": {
+          "size_bytes": 811101,
+          "sha256": "9f2ee9179f0720826cbfc65627bd3642926ba4dfb3bf29250f22cb232c225b1e"
+        },
+        "ISCOGroups_en.csv": {
+          "size_bytes": 966601,
+          "sha256": "7a829bb6fddccbdb028d3ae69d822f2f1ba581522667f6185949c6d0788eaa1c"
+        }
+      }
+    },
+    "onet": {
+      "status": "PASS",
+      "zip_present": true,
+      "zip_size_bytes": 13183034,
+      "extracted_tables_count": 46
+    },
+    "job_descriptions": {
+      "status": "PASS",
+      "file_count": 2,
+      "files": {
+        "recruitment_jds_english.parquet": {
+          "size_bytes": 145859589,
+          "sha256": "71dddaf0d9660f34ddf946953b67f54f1e7d60e22dcf9a4b8139b6378b18aab9"
+        },
+        "shresth_jobs.csv": {
+          "size_bytes": 32930476,
+          "sha256": "301a382ebec72d574817cc3d4b9ee34cf08e7f8ecdfa3d373142767fe4f9f789"
+        }
+      }
+    },
+    "learning_resources": {
+      "status": "PASS",
+      "catalog_present": true,
+      "size_bytes": 6799,
+      "sha256": "fabb43286d6525b2eb7d2bd98d02d27c26549b43cc0eabf40a92f5c1f4db19cf"
+    },
+    "models": {
+      "bge_small_weights_present": true,
+      "bge_small_size_bytes": 133466304,
+      "bge_small_sha256": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad",
+      "qwen_llm_present": true,
+      "status": "PASS"
+    }
+  }
+}

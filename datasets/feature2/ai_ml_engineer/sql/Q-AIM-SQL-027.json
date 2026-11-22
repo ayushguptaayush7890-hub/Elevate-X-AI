@@ -1,0 +1,65 @@
+{
+  "question_id": "Q-AIM-SQL-027",
+  "role_id": "ai_ml_engineer",
+  "skill_id": "AIM-SKL-05",
+  "skill_name": "MLOps, Model Serving & Drift Monitoring",
+  "subtopic": "Model Inference Telemetry SQL",
+  "assessment_type": "sql",
+  "difficulty": "hard",
+  "question_text": "Write an ANSI SQL query to compute total high-confidence inferences and average latency per model version from `model_predictions_27`.",
+  "options": null,
+  "correct_answer": "SELECT model_version, COUNT(*) AS total_inferences, ROUND(AVG(latency_ms), 2) AS avg_latency\nFROM model_predictions_27\nWHERE confidence_score >= 0.90\nGROUP BY model_version\nORDER BY avg_latency ASC;",
+  "answer_explanation": "Filters predictions with high confidence, groups by model version, and calculates average inference latency.",
+  "reference_solution": "SELECT model_version, COUNT(*) AS total_inferences, ROUND(AVG(latency_ms), 2) AS avg_latency\nFROM model_predictions_27\nWHERE confidence_score >= 0.90\nGROUP BY model_version\nORDER BY avg_latency ASC;",
+  "coding_language": "sql",
+  "sample_input": "Relational database tables populated with sample records.",
+  "expected_output": "[{\"model_version\": \"v1.1.0\", \"total_inferences\": 2, \"avg_latency\": 29.7}, {\"model_version\": \"v1.0.0\", \"total_inferences\": 1, \"avg_latency\": 45.2}]",
+  "visible_test_cases": [
+    {
+      "input": "Sample DB execution",
+      "output": "[{\"model_version\": \"v1.1.0\", \"total_inferences\": 2, \"avg_latency\": 29.7}, {\"model_version\": \"v1.0.0\", \"total_inferences\": 1, \"avg_latency\": 45.2}]"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "Edge-case boundary verification",
+      "output": "Deterministic result set"
+    }
+  ],
+  "SQL_schema": "CREATE TABLE model_predictions_27 (\n    prediction_id INTEGER PRIMARY KEY,\n    model_version VARCHAR(20) NOT NULL,\n    predicted_label INTEGER NOT NULL,\n    confidence_score FLOAT NOT NULL,\n    latency_ms FLOAT NOT NULL,\n    created_at TIMESTAMP NOT NULL\n);",
+  "sample_database": "INSERT INTO model_predictions_27 VALUES (1, 'v1.0.0', 1, 0.95, 45.2, '2026-11-01 10:00:00');\nINSERT INTO model_predictions_27 VALUES (2, 'v1.0.0', 0, 0.88, 52.1, '2026-11-01 10:05:00');\nINSERT INTO model_predictions_27 VALUES (3, 'v1.1.0', 1, 0.99, 28.4, '2026-11-01 10:10:00');\nINSERT INTO model_predictions_27 VALUES (4, 'v1.1.0', 1, 0.92, 31.0, '2026-11-01 10:15:00');",
+  "expected_SQL_result": [
+    {
+      "model_version": "v1.1.0",
+      "total_inferences": 2,
+      "avg_latency": 29.7
+    },
+    {
+      "model_version": "v1.0.0",
+      "total_inferences": 1,
+      "avg_latency": 45.2
+    }
+  ],
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Query Correctness & Result Match",
+        "weight": 0.6,
+        "description": "Returns exact rows, ordering, and aggregation without missing null handling."
+      },
+      {
+        "name": "Relational Efficiency & Index Friendliness",
+        "weight": 0.4,
+        "description": "Avoids cartesian products, redundant subqueries, and non-SARGable expressions."
+      }
+    ],
+    "max_score": 12.0
+  },
+  "estimated_time": 15,
+  "marks": 12,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/sql",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

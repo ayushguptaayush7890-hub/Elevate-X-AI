@@ -1,0 +1,36 @@
+{
+  "model_version": "v1.0.0-deterministic-calibrated",
+  "weights": {
+    "skill_overlap_weight": 0.45,
+    "graph_structural_weight": 0.35,
+    "semantic_competency_weight": 0.2
+  },
+  "difficulty_thresholds": {
+    "low_friction_min": 75.0,
+    "moderate_bridge_min": 50.0,
+    "high_pivot_max": 49.9
+  },
+  "max_recommendations": 10,
+  "blueprint_stage_framework": [
+    {
+      "stage": 1,
+      "name": "Foundational Bridge",
+      "weeks": "1-3"
+    },
+    {
+      "stage": 2,
+      "name": "Core Technical Competency",
+      "weeks": "4-8"
+    },
+    {
+      "stage": 3,
+      "name": "Applied Practice & Tooling",
+      "weeks": "9-12"
+    },
+    {
+      "stage": 4,
+      "name": "Job-Ready Transition & Portfolio",
+      "weeks": "13-16"
+    }
+  ]
+}

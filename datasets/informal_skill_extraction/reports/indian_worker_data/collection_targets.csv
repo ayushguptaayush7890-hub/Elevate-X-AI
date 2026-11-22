@@ -1,0 +1,12 @@
+occupation_id,occupation_name,current_genuine_count,pilot_target_min,pilot_target_max,main_target_min,main_target_max,advanced_target,pilot_gap,main_gap,priority_rank,collection_status,target_hindi_pct,target_hinglish_pct,target_english_pct,target_devanagari_pct,target_latin_pct,annotation_target_spans_per_record,double_annotation_requirement_pct,lead_reviewer_signoff_required
+TRD-01,Tailor and Garment Worker,0,10,20,100,200,500,10,100,1,Ready for Pilot Ingestion,40%,45%,15%,40%,60%,2.5,20%,Required
+TRD-02,Electrician,0,10,20,100,200,500,10,100,2,Questionnaire Ready,35%,50%,15%,35%,65%,2.8,20%,Required
+TRD-03,Plumber,0,10,20,100,200,500,10,100,2,Questionnaire Ready,40%,45%,15%,40%,60%,2.4,20%,Required
+TRD-04,Motor Mechanic,0,10,20,100,200,500,10,100,3,Questionnaire Ready,30%,55%,15%,30%,70%,2.6,20%,Required
+TRD-05,Carpenter,0,10,20,100,200,500,10,100,3,Questionnaire Ready,45%,45%,10%,45%,55%,2.3,20%,Required
+TRD-06,Welder,0,10,20,100,200,500,10,100,3,Questionnaire Ready,40%,50%,10%,40%,60%,2.5,20%,Required
+TRD-07,Mason / Raj Mistri,0,10,20,100,200,500,10,100,4,Questionnaire Ready,60%,35%,5%,60%,40%,2.2,20%,Required
+TRD-08,Painter,0,10,20,100,200,500,10,100,4,Questionnaire Ready,50%,40%,10%,50%,50%,2.3,20%,Required
+TRD-09,Agriculture and Irrigation Worker,0,10,20,100,200,500,10,100,5,Questionnaire Ready,65%,30%,5%,65%,35%,2.1,20%,Required
+TRD-10,Mobile Repair Technician,0,10,20,100,200,500,10,100,5,Questionnaire Ready,25%,55%,20%,25%,75%,2.9,20%,Required
+

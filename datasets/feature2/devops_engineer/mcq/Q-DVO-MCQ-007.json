@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-DVO-MCQ-007",
+  "role_id": "devops_engineer",
+  "skill_id": "DVO-SKL-02",
+  "skill_name": "Containerization & Image Optimization (Docker)",
+  "subtopic": "Pod Lifecycle, Liveness, Readiness and Startup Probes",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "[Containerization & Image Optimization (Docker) - Q07] What is the functional difference between a Kubernetes `livenessProbe` and a `readinessProbe`?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Liveness probe removes the Pod from Service endpoints; readiness probe kills and restarts the Pod"
+    },
+    {
+      "id": "B",
+      "text": "Liveness probe determines if the container needs to be killed and restarted; readiness probe determines if the container is ready to receive network traffic via Service endpoints"
+    },
+    {
+      "id": "C",
+      "text": "Readiness probe only runs during cluster bootstrap"
+    },
+    {
+      "id": "D",
+      "text": "They execute the exact same actions upon failure"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "If a readiness probe fails, the Pod is removed from Service endpoint load balancers without restarting. If a liveness probe fails, kubelet kills the container and initiates restart policies.",
+  "reference_solution": "Correct Choice: B. Rationale: If a readiness probe fails, the Pod is removed from Service endpoint load balancers without restarting. If a liveness probe fails, kubelet kills the container and initiates restart policies.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

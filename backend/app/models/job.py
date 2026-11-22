@@ -2,10 +2,10 @@
 Employer, Job Listing, Requirements, and Skill Mapping Database Models.
 """
 
-from datetime import date
+from datetime import date, datetime
 from typing import Optional, List
 import uuid
-from sqlalchemy import String, Integer, Float, Text, Boolean, Date, ForeignKey, Uuid, UniqueConstraint
+from sqlalchemy import String, Integer, Float, Text, Boolean, Date, DateTime, ForeignKey, Uuid, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.core.database import Base
 from app.models.base import TimestampMixin
@@ -83,6 +83,12 @@ class JobListing(Base, TimestampMixin):
         index=True,
         nullable=False,
     )
+    country: Mapped[str] = mapped_column(
+        String(50),
+        default="India",
+        index=True,
+        nullable=False,
+    )
     description: Mapped[str] = mapped_column(
         Text,
         nullable=False,
@@ -120,8 +126,50 @@ class JobListing(Base, TimestampMixin):
         nullable=False,
     )
     source_url: Mapped[Optional[str]] = mapped_column(
-        String(500),
+        String(1000),
         nullable=True,
+    )
+    provider_job_id: Mapped[Optional[str]] = mapped_column(
+        String(255),
+        index=True,
+        nullable=True,
+    )
+    source_provider: Mapped[str] = mapped_column(
+        String(100),
+        default="Direct",
+        index=True,
+        nullable=False,
+    )
+    application_url: Mapped[Optional[str]] = mapped_column(
+        String(1000),
+        nullable=True,
+    )
+    work_mode: Mapped[str] = mapped_column(
+        String(50),
+        default="On-site",
+        nullable=False,
+    )
+    experience_min_years: Mapped[Optional[int]] = mapped_column(
+        Integer,
+        nullable=True,
+    )
+    experience_max_years: Mapped[Optional[int]] = mapped_column(
+        Integer,
+        nullable=True,
+    )
+    required_skills_json: Mapped[Optional[str]] = mapped_column(
+        Text,
+        nullable=True,
+    )
+    last_verified_at: Mapped[Optional[datetime]] = mapped_column(
+        DateTime,
+        default=datetime.utcnow,
+        nullable=True,
+    )
+    listing_status: Mapped[str] = mapped_column(
+        String(50),
+        default="active",
+        nullable=False,
     )
     posted_date: Mapped[Optional[date]] = mapped_column(
         Date,
@@ -226,4 +274,47 @@ class JobSkill(Base, TimestampMixin):
     # Relationships
     job: Mapped["JobListing"] = relationship("JobListing", back_populates="skills")
     skill: Mapped["Skill"] = relationship("Skill")
+
+
+class AggregatorSyncLog(Base):
+    """Execution log for multi-source job aggregation runs."""
+
+    __tablename__ = "aggregator_sync_logs"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        Uuid(as_uuid=True),
+        primary_key=True,
+        default=uuid.uuid4,
+    )
+    provider_name: Mapped[str] = mapped_column(
+        String(100),
+        nullable=False,
+        index=True,
+    )
+    status: Mapped[str] = mapped_column(
+        String(50),
+        nullable=False,
+    )
+    jobs_fetched: Mapped[int] = mapped_column(
+        Integer,
+        default=0,
+        nullable=False,
+    )
+    jobs_imported: Mapped[int] = mapped_column(
+        Integer,
+        default=0,
+        nullable=False,
+    )
+    error_message: Mapped[Optional[str]] = mapped_column(
+        Text,
+        nullable=True,
+    )
+    sync_started_at: Mapped[Optional[datetime]] = mapped_column(
+        DateTime,
+        nullable=True,
+    )
+    sync_completed_at: Mapped[Optional[datetime]] = mapped_column(
+        DateTime,
+        nullable=True,
+    )
 

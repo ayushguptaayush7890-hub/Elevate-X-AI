@@ -1,0 +1,266 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TechnicalAssessmentQuestion",
+  "description": "Standardized schema for Elevate X AI technical diagnostic assessment questions.",
+  "type": "object",
+  "required": [
+    "question_id",
+    "role_id",
+    "skill_id",
+    "skill_name",
+    "subtopic",
+    "assessment_type",
+    "difficulty",
+    "question_text",
+    "answer_explanation",
+    "evaluation_rubric",
+    "estimated_time",
+    "marks",
+    "source_type",
+    "license",
+    "content_version",
+    "review_status"
+  ],
+  "properties": {
+    "question_id": {
+      "type": "string",
+      "pattern": "^Q-[A-Z0-9]{3}-[A-Z0-9]{3,6}-[0-9]{3,}$"
+    },
+    "role_id": {
+      "type": "string",
+      "enum": [
+        "software_engineer",
+        "ai_ml_engineer",
+        "data_scientist",
+        "frontend_developer",
+        "backend_developer",
+        "devops_engineer",
+        "data_analyst",
+        "cybersecurity_engineer",
+        "cloud_engineer"
+      ]
+    },
+    "skill_id": {
+      "type": "string"
+    },
+    "skill_name": {
+      "type": "string"
+    },
+    "subtopic": {
+      "type": "string"
+    },
+    "assessment_type": {
+      "type": "string",
+      "enum": [
+        "mcq",
+        "coding",
+        "debugging",
+        "scenario",
+        "sql",
+        "system_design"
+      ]
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    },
+    "question_text": {
+      "type": "string",
+      "minLength": 20
+    },
+    "options": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "text"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "correct_answer": {
+      "type": [
+        "string",
+        "array",
+        "null"
+      ],
+      "description": "Option ID, code string, or array of option IDs for multi-select."
+    },
+    "answer_explanation": {
+      "type": "string",
+      "minLength": 20
+    },
+    "reference_solution": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "coding_language": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sample_input": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "expected_output": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "visible_test_cases": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "object",
+        "required": [
+          "input",
+          "output"
+        ],
+        "properties": {
+          "input": {
+            "type": "string"
+          },
+          "output": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "hidden_test_cases": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "object",
+        "required": [
+          "input",
+          "output"
+        ],
+        "properties": {
+          "input": {
+            "type": "string"
+          },
+          "output": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "SQL_schema": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sample_database": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "expected_SQL_result": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "evaluation_rubric": {
+      "type": "object",
+      "required": [
+        "criteria",
+        "max_score"
+      ],
+      "properties": {
+        "criteria": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "weight",
+              "description"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "weight": {
+                "type": "number"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "max_score": {
+          "type": "number"
+        }
+      }
+    },
+    "estimated_time": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 120
+    },
+    "marks": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 50
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "original_authored",
+        "curated_benchmark",
+        "public_educational_standard"
+      ]
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "license": {
+      "type": "string"
+    },
+    "content_version": {
+      "type": "string"
+    },
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "pending_review",
+        "approved",
+        "rejected"
+      ]
+    }
+  }
+}

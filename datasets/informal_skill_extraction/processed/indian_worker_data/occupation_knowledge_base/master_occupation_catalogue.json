@@ -1,0 +1,1357 @@
+[
+  {
+    "occupation_id": "TRD-01",
+    "file_slug": "TRD-01_tailor_garment",
+    "standard_occupation_name": "Tailor and Garment Worker",
+    "common_indian_names": [
+      "Darzi",
+      "Masterji",
+      "Karigar",
+      "Silai Master",
+      "Sewing Machine Operator"
+    ],
+    "hindi_names": [
+      "दर्ज़ी",
+      "सिलाई मास्टर",
+      "कारीगर",
+      "टेलर"
+    ],
+    "roman_hindi_names": [
+      "Darzi",
+      "Masterji",
+      "Silai Karigar",
+      "Cutting Master"
+    ],
+    "regional_vocabulary": {
+      "delhi_up": [
+        "silai",
+        "katora cutting",
+        "bakram",
+        "asteen",
+        "gala",
+        "fall piko",
+        "chaak"
+      ],
+      "rajasthan_gujarat": [
+        "choli cut",
+        "kanjari",
+        "lehenga ghera",
+        "aari taari",
+        "gota patti"
+      ],
+      "maharashtra": [
+        "nauvari pleating",
+        "blouse katori",
+        "dhoti stitching"
+      ]
+    },
+    "description": "Custom drafting, cutting, stitching, fitting, and alteration of men's, women's, and children's garments using manual and industrial lockstitch machinery in bespoke shops and micro-factories.",
+    "daily_tasks": [
+      "Taking body measurements with flexible tape",
+      "Inspecting client fabric for grain line and weaving defects",
+      "Chalking cutting pattern directly on cloth",
+      "Cutting fabric with heavy tailoring shears",
+      "Operating industrial single-needle lockstitch machine",
+      "Finishing seam edges with 3-thread overlock",
+      "Iron pressing seams flat with heavy steam or coal iron",
+      "Conducting fitting trials on clients"
+    ],
+    "advanced_tasks": [
+      "Pattern drafting for non-standard posture (stooped shoulders, scoliosis)",
+      "Lining and canvas floating in formal blazer chest pieces",
+      "Hand-bound buttonhole fabrication",
+      "Wedding lehenga multi-kali panel tapering and cancan netting insertion"
+    ],
+    "tools": [
+      "Single-needle lockstitch machine",
+      "3/5-thread overlock machine",
+      "Measuring tape",
+      "Tailor's chalk (mitti)",
+      "High-carbon fabric shears (10-12 inch)",
+      "Iron press",
+      "Seam ripper",
+      "Pinking shears"
+    ],
+    "equipment": [
+      "Steam iron boiler",
+      "Pattern drafting table",
+      "Buttonhole machine attachment",
+      "Mannequin dummy"
+    ],
+    "materials": [
+      "Cotton, silk, rayon, denim, polyester fabrics",
+      "Fusible canvas interlining (bakram)",
+      "Spun polyester threads (size 40/2)",
+      "Nylon and brass zippers",
+      "Hooks, eyes, buttons"
+    ],
+    "work_processes": [
+      "Measurement -> Pattern Drafting -> Fabric Cutting -> Interlining Fusing -> Assembly Stitching -> Overlocking -> Buttoning -> Trial Fitting -> Final Alteration & Pressing"
+    ],
+    "troubleshooting_tasks": [
+      "Balancing upper tension discs and bobbin tension to eliminate thread loops",
+      "Replacing burred needles causing skipped stitches or fabric pulls",
+      "Clearing compacted lint from feed dogs causing feed slippage",
+      "Rectifying armhole puckering by re-easing sleeve caps"
+    ],
+    "quality_inspection": [
+      "Verifying seam allowance width (minimum 1.5 cm)",
+      "Checking symmetry of collar points and pocket placements",
+      "Evaluating stitch density (10–12 stitches per inch)",
+      "Confirming zero tension puckering along long side seams"
+    ],
+    "measurement_and_planning": [
+      "Torso length, chest, waist, hip, shoulder width, sleeve length, bicep, wrist, inseam, outseam, crotch depth",
+      "Nesting layout to maximize fabric utilization on 44-inch and 54-inch widths"
+    ],
+    "safety_practices": [
+      "Maintaining finger clearance behind needle guard bar",
+      "Unplugging electric irons when unattended to prevent fabric scorching/fire",
+      "Safe storage of shears in closed position",
+      "Ergonomic seating to avoid chronic lumbar strain"
+    ],
+    "maintenance": [
+      "Daily cleaning of bobbin case and shuttle race",
+      "Twice-weekly lubrication with clear mineral machine oil",
+      "Periodic sharpening of shears on oilstone"
+    ],
+    "customer_communication": [
+      "Advising on fabric drape suitability for requested designs",
+      "Discussing ease margins (loose vs slim fit)",
+      "Agreeing on delivery commitments and alteration timelines"
+    ],
+    "transferable_competencies": [
+      "Spatial geometric visualization",
+      "Fine manual dexterity",
+      "Quality control inspection",
+      "Customer dispute negotiation"
+    ],
+    "official_vocational_references": {
+      "nsqf_qp_code": "AMH/Q1947",
+      "nsqf_level": 4,
+      "ssc": "Apparel Made-Ups & Home Furnishing Sector Skill Council",
+      "dgt_cts_trade": "Sewing Technology / Dress Making (CTS 033)"
+    },
+    "canonical_skills": [
+      "Single-Needle Lockstitch Garment Assembly",
+      "Overlock Seam Edging and Finishing",
+      "Fusible Interlining Application and Collar Stitching",
+      "Garment Pattern Measurement and Fabric Cutting",
+      "Garment Fitting and Tailoring Alteration"
+    ]
+  },
+  {
+    "occupation_id": "TRD-02",
+    "file_slug": "TRD-02_electrician",
+    "standard_occupation_name": "Electrician",
+    "common_indian_names": [
+      "Bijli Mistri",
+      "Wireman",
+      "Line Karigar",
+      "Electrical Technician"
+    ],
+    "hindi_names": [
+      "बिजली मिस्त्री",
+      "वायरमैन",
+      "इलेक्ट्रीशियन"
+    ],
+    "roman_hindi_names": [
+      "Bijli Mistri",
+      "Wireman",
+      "Line Karigar"
+    ],
+    "regional_vocabulary": {
+      "delhi_up": [
+        "jhirri kaatna",
+        "conduit daalna",
+        "MCB board",
+        "neutral-phase",
+        "inverter connection",
+        "earthing pit"
+      ],
+      "punjab_haryana": [
+        "kundi connection",
+        "meter sealing",
+        "motor starter",
+        "phase changer"
+      ],
+      "maharashtra": [
+        "casing-capping",
+        "three-phase meter",
+        "starter capacitor"
+      ]
+    },
+    "description": "Installation, testing, maintenance, and fault diagnosis of low-voltage domestic, commercial, and small industrial wiring systems, switchgear, distribution boards, and backup inverter systems.",
+    "daily_tasks": [
+      "Cutting wall chasing for concealed PVC conduits",
+      "Pulling multi-strand copper cables using steel wire fish snakes",
+      "Terminating MCB distribution boards and busbars",
+      "Wiring modular switches, sockets, and fan regulators",
+      "Diagnosing short circuits and tripping MCBs",
+      "Measuring voltage and continuity with digital multimeters",
+      "Installing ceiling fans, tube lights, and exhaust fans"
+    ],
+    "advanced_tasks": [
+      "Designing balanced load distribution across 3-phase supply panels",
+      "Constructing chemical/salt-charcoal earthing pits and measuring earth resistance (< 5 ohms)",
+      "Diagnosing floating neutral conditions in 3-phase 4-wire domestic systems",
+      "Rewinding ceiling fan single-phase induction stator coils"
+    ],
+    "tools": [
+      "Digital multimeter",
+      "Neon phase tester screwdriver",
+      "Insulated combination pliers (1000V)",
+      "Wire stripper & crimper",
+      "Masonry hammer & cold chisel",
+      "Hammer drill",
+      "Conduit pipe bender spring"
+    ],
+    "equipment": [
+      "Earth resistance tester (Megger)",
+      "Fish wire snake",
+      "Rotary hammer drill"
+    ],
+    "materials": [
+      "FR/FRLS copper flexible wires (1.0, 1.5, 2.5, 4.0, 6.0 sq mm)",
+      "Rigid PVC conduit pipes and solvent",
+      "MCBs (B-curve and C-curve, 6A-63A)",
+      "RCCB/ELCB (30mA)",
+      "Insulation tape",
+      "Copper earthing plate"
+    ],
+    "work_processes": [
+      "Conduit Chasing -> Pipe Layout -> Wire Pulling -> DB Dressing -> Switchboard Fitting -> Continuity Test -> Power Energization -> Load Verification"
+    ],
+    "troubleshooting_tasks": [
+      "Tracing neutral-to-ground leakage causing RCCB nuisance tripping",
+      "Isolating phase-to-neutral short circuits in concealed wall junction boxes",
+      "Detecting burnt or high-resistance neutral terminals causing voltage fluctuations",
+      "Replacing faulty 2.5 uF ceiling fan run capacitors"
+    ],
+    "quality_inspection": [
+      "Verifying correct wire color coding (Red/Yellow/Blue Phase, Black Neutral, Green Earth)",
+      "Checking tight mechanical terminal screws to prevent arching",
+      "Testing 230V AC phase-neutral voltage and < 2V neutral-earth voltage",
+      "Ensuring MCB amperage matches downstream wire ampacity"
+    ],
+    "measurement_and_planning": [
+      "Total connected load wattage calculation for ACs, geysers, and appliances",
+      "Sizing conduit diameter based on wire fill capacity (max 40% fill)"
+    ],
+    "safety_practices": [
+      "Mandatory de-energization and lockout before working on live busbars",
+      "Double-checking circuit isolation with calibrated phase tester",
+      "Wearing rubber-soled electrical hazard footwear",
+      "Zero naked twisted joints inside concealed conduits"
+    ],
+    "maintenance": [
+      "Inspecting distribution boards for thermal discolouration",
+      "Testing RCCB trip test buttons monthly",
+      "Adding water/saline solution to earthing pits before summer months"
+    ],
+    "customer_communication": [
+      "Explaining safety rationale for RCCB and proper earthing to homeowners",
+      "Quoting point-based vs running-foot wiring estimates",
+      "Advising on energy-saving BLDC fans and LED fixtures"
+    ],
+    "transferable_competencies": [
+      "Logical diagnostic fault-tree deduction",
+      "Blueprint schematic reading",
+      "High-hazard safety compliance"
+    ],
+    "official_vocational_references": {
+      "nsqf_qp_code": "ELE/Q3104",
+      "nsqf_level": 4,
+      "ssc": "Electronics Sector Skills Council of India",
+      "dgt_cts_trade": "Electrician (CTS 023) / Wireman (CTS 024)"
+    },
+    "canonical_skills": [
+      "Concealed Wall Conduit Chasing and Installation",
+      "Miniature Circuit Breaker (MCB) Distribution Board Wiring",
+      "Multimeter Phase and Neutral Voltage Diagnostics",
+      "Electrical Cable Pulling and Terminal Termination",
+      "Earth Resistance Verification and Earthing Pit Setup"
+    ]
+  },
+  {
+    "occupation_id": "TRD-03",
+    "file_slug": "TRD-03_plumber",
+    "standard_occupation_name": "Plumber",
+    "common_indian_names": [
+      "Plumbing Mistri",
+      "Nalka Mistri",
+      "Pipe Fitter",
+      "Sanitary Karigar"
+    ],
+    "hindi_names": [
+      "नल मिस्त्री",
+      "प्लंबर",
+      "पाइप फिटर"
+    ],
+    "roman_hindi_names": [
+      "Plumber Mistri",
+      "Nalka Karigar",
+      "Sanitary Mistri"
+    ],
+    "regional_vocabulary": {
+      "delhi_up": [
+        "solvent lagana",
+        "GI chudi kaatna",
+        "angle valve",
+        "diverter fitting",
+        "cistern float",
+        "nahani trap"
+      ],
+      "punjab_haryana": [
+        "tullu pump",
+        "submersible fitting",
+        "CPVC chudi",
+        "leakage check"
+      ],
+      "maharashtra": [
+        "mixer tap",
+        "drain blockage",
+        "water tank connection"
+      ]
+    },
+    "description": "Installation, testing, maintenance, and unclogging of pressurized potable water piping, sanitary fixtures, concealed bathroom valves, drainage lines, and water pumps.",
+    "daily_tasks": [
+      "Measuring and cutting CPVC and UPVC pipes with ratchet cutters",
+      "Solvent cement jointing of water supply piping",
+      "Manual die-threading of GI steel pipes with cutting lubricant",
+      "Wrapping PTFE teflon tape clockwise on threaded joints",
+      "Mounting bib cocks, angle valves, pillars, and health faucets",
+      "Fixing ceramic washbasins, kitchen sinks, and water closets",
+      "Clearing clogged drain traps using hand auger snakes"
+    ],
+    "advanced_tasks": [
+      "Roughing-in concealed thermostatic shower diverters with level alignment",
+      "Hydrostatic pressure testing of plumbing manifolds at 10 bar",
+      "Installing multi-tank overhead water systems with non-return check valves",
+      "Laying 110mm SWR sewer lines with 1:50 gravity self-cleansing slope"
+    ],
+    "tools": [
+      "Pipe wrench (10, 14, 18 inch)",
+      "Adjustable spanner",
+      "Manual pipe die stock set",
+      "Ratchet CPVC cutter",
+      "Hacksaw frame & bi-metal blade",
+      "Drain snake auger",
+      "Spirit level",
+      "Blowtorch"
+    ],
+    "equipment": [
+      "Hydrostatic hand test pump",
+      "Water tube level",
+      "Core cutter machine"
+    ],
+    "materials": [
+      "CPVC, UPVC, and GI pipes (0.5 to 2 inch)",
+      "Solvent cement & primer",
+      "PTFE Teflon tape",
+      "Brass angle valves and bib cocks",
+      "Nahani traps, P-traps, SWR pipes",
+      "M-seal epoxy sealant"
+    ],
+    "work_processes": [
+      "Site Measurement -> Wall Chasing -> Pipe Sizing & Cutting -> Solvent / Thread Jointing -> Concealed Valve Setting -> Pressure Leak Test -> Sanitary Fixture Trimming"
+    ],
+    "troubleshooting_tasks": [
+      "Locating concealed pinhole water leaks inside tiled walls",
+      "Diagnosing continuous water running in toilet flush cistern float valves",
+      "Eliminating water hammer knocking noise in high-pressure lines",
+      "Clearing mineral scale buildup in instantaneous water geyser inlets"
+    ],
+    "quality_inspection": [
+      "Checking zero water weepage under 10 bar hydrostatic pressure",
+      "Verifying plumb vertical and true horizontal alignment with spirit level",
+      "Ensuring drainage traps maintain a minimum 50mm water seal",
+      "Confirming smooth 90-degree lever rotation on quarter-turn ceramic valves"
+    ],
+    "measurement_and_planning": [
+      "Calculating water line elevation heights from finished floor level (FFL)",
+      "Planning hot and cold pipe center-to-center spacing (exactly 150mm for wall mixers)"
+    ],
+    "safety_practices": [
+      "Adequate ventilation when applying volatile CPVC solvent cement vapors",
+      "Wearing safety goggles during pipe cutting and wall chiseling",
+      "Precaution against sewer gas exposure (hydrogen sulfide) when clearing inspection chambers"
+    ],
+    "maintenance": [
+      "Draining and cleaning overhead water storage tanks periodically",
+      "Replacing degraded neoprene tap washers and O-rings",
+      "Flushing lime deposits from aerators with white vinegar"
+    ],
+    "customer_communication": [
+      "Explaining the durability difference between CPVC, UPVC, and PPR",
+      "Advising customers on water pump pressure booster requirements",
+      "Diagnosing low water pressure complaints"
+    ],
+    "transferable_competencies": [
+      "Hydraulic pressure understanding",
+      "Physical endurance and tight-space maneuvering",
+      "Material chemical bonding knowledge"
+    ],
+    "official_vocational_references": {
+      "nsqf_qp_code": "PSC/Q0104",
+      "nsqf_level": 4,
+      "ssc": "Indian Plumbing Skills Council",
+      "dgt_cts_trade": "Plumber (CTS 031)"
+    },
+    "canonical_skills": [
+      "CPVC Pipe Solvent Cement Jointing",
+      "Galvanized Iron Pipe Manual Die Threading",
+      "Concealed Wall Diverter Installation",
+      "Flush Cistern Float Valve Inspection and Leak Testing",
+      "Sewer Drainage Pipe Alignment and Clog Clearing"
+    ]
+  },
+  {
+    "occupation_id": "TRD-04",
+    "file_slug": "TRD-04_motor_mechanic",
+    "standard_occupation_name": "Motor Mechanic",
+    "common_indian_names": [
+      "Auto Mistri",
+      "Gadi Mechanic",
+      "Bike Mechanic",
+      "Two-Wheeler Karigar",
+      "Four-Wheeler Karigar"
+    ],
+    "hindi_names": [
+      "मोटर मैकेनिक",
+      "ऑटो मिस्त्री",
+      "गाड़ी मैकेनिक"
+    ],
+    "roman_hindi_names": [
+      "Motor Mechanic",
+      "Auto Mistri",
+      "Bike Karigar"
+    ],
+    "regional_vocabulary": {
+      "delhi_up": [
+        "service karna",
+        "tappet setting",
+        "clutch plate daalna",
+        "brake bleed",
+        "carburetor tuning",
+        "spark plug saaf"
+      ],
+      "punjab_haryana": [
+        "bullet timing",
+        "ring-piston",
+        "suspension bush",
+        "head kholna"
+      ],
+      "maharashtra": [
+        "chassis alignment",
+        "disc pad badalna",
+        "engine oil drain"
+      ]
+    },
+    "description": "Routine servicing, mechanical repair, component replacement, and diagnostic troubleshooting of internal combustion two-wheelers and light motor vehicles in independent roadside garages.",
+    "daily_tasks": [
+      "Draining used engine motor oil and changing spin-on oil filters",
+      "Cleaning, de-carbonizing, and gapping spark plugs (0.7-0.9 mm)",
+      "Disassembling, jet-cleaning, and tuning carburetors",
+      "Replacing worn clutch friction plates and steel pressure plates",
+      "Bleeding air bubbles from hydraulic disc brake lines",
+      "Adjusting valve tappet clearances with feeler gauges",
+      "Tensioning and lubricating motorcycle drive chains"
+    ],
+    "advanced_tasks": [
+      "Engine top-end overhaul (cylinder boring, piston rings, valve lapping)",
+      "Front telescopic hydraulic fork disassembly and oil seal replacement",
+      "Diagnosing complex electrical stator coil and CDI ignition misfires",
+      "Replacing rear differential crown-wheel and pinion gears"
+    ],
+    "tools": [
+      "Socket wrench ratchet set (8mm-32mm)",
+      "Ring and open-ended spanners",
+      "Feeler gauge set",
+      "Torque wrench",
+      "Impact driver",
+      "T-spanners (8, 10, 12 mm)",
+      "Spark plug socket",
+      "Brake bleeder kit"
+    ],
+    "equipment": [
+      "Hydraulic trolley jack & jack stands",
+      "Air compressor & tyre inflator",
+      "Battery charger & hydrometer",
+      "Chain breaker tool"
+    ],
+    "materials": [
+      "4T motorcycle engine oil (10W-30, 20W-40)",
+      "Brake fluid (DOT 3 / DOT 4)",
+      "Carburetor cleaner spray",
+      "Clutch friction plates",
+      "Gasket paper and RTV silicone sealant",
+      "Kerosene cleaning solvent"
+    ],
+    "work_processes": [
+      "Road Test Diagnosis -> Engine Oil Drain -> Filter Replacement -> Ignition / Carburetor Service -> Brake & Clutch Overhaul -> Valve Adjustment -> Final Road Test"
+    ],
+    "troubleshooting_tasks": [
+      "Differentiating between spark plug misfire, lean fuel starvation, and poor compression",
+      "Diagnosing spongy brake lever feel caused by trapped hydraulic air bubbles",
+      "Tracing engine overheating to lean carburetor pilot jet or slipping clutch",
+      "Identifying worn wheel bearings by checking radial free play on raised wheel"
+    ],
+    "quality_inspection": [
+      "Verifying correct engine oil dipstick level between Min and Max marks",
+      "Checking firm front brake lever resistance with zero lever creep",
+      "Confirming smooth clutch engagement without slippage under load",
+      "Verifying steady idle RPM (1400 +/- 100 RPM) without stalling"
+    ],
+    "measurement_and_planning": [
+      "Calibrating valve tappet clearances strictly to engine specs (0.05mm intake, 0.08mm exhaust)",
+      "Torquing cylinder head studs in diagonal star sequence"
+    ],
+    "safety_practices": [
+      "Supporting elevated chassis on mechanical jack stands (never hydraulic jack alone)",
+      "Catching waste motor oil in dedicated pans to prevent environmental spills",
+      "Wearing safety eye protection when spraying pressurized aerosol carburetor cleaner",
+      "Avoiding contact with hot exhaust headers during live engine tuning"
+    ],
+    "maintenance": [
+      "Greasing wheel axles and swingarm pivot bushings",
+      "Cleaning compressor intake air filter weekly",
+      "Refacing deformed mechanic hand spanners and chisels"
+    ],
+    "customer_communication": [
+      "Explaining preventive maintenance schedules to vehicle owners",
+      "Demonstrating worn clutch friction plates or blackened motor oil",
+      "Providing transparent component cost and labor repair estimates"
+    ],
+    "transferable_competencies": [
+      "Mechanical kinematics understanding",
+      "Acoustic diagnostic intuition",
+      "Precision mechanical disassembly & reassembly"
+    ],
+    "official_vocational_references": {
+      "nsqf_qp_code": "ASC/Q1402",
+      "nsqf_level": 4,
+      "ssc": "Automotive Skills Development Council",
+      "dgt_cts_trade": "Mechanic Motor Vehicle (CTS 017) / Mechanic Two & Three Wheeler (CTS 018)"
+    },
+    "canonical_skills": [
+      "Motorcycle Engine Oil Drain and Replacement",
+      "Engine Valve Tappet Clearance Calibration",
+      "Hydraulic Disc Brake Caliper Fluid Bleeding",
+      "Clutch Friction Plate Disassembly and Replacement",
+      "Carburetor Jet Cleaning and Air-Fuel Mixture Tuning"
+    ]
+  },
+  {
+    "occupation_id": "TRD-05",
+    "file_slug": "TRD-05_carpenter",
+    "standard_occupation_name": "Carpenter",
+    "common_indian_names": [
+      "Badhai",
+      "Suthar",
+      "Khatee",
+      "Mistri",
+      "Furniture Karigar"
+    ],
+    "hindi_names": [
+      "बढ़ई",
+      "खाती",
+      "सुथार",
+      "फर्नीचर कारीगर"
+    ],
+    "roman_hindi_names": [
+      "Badhai",
+      "Wood Karigar",
+      "Mistri",
+      "Carpenter"
+    ],
+    "regional_vocabulary": {
+      "delhi_up": [
+        "plywood kaatna",
+        "sunmica press",
+        "fevicol lagana",
+        "randa chalana",
+        "chaurasi",
+        "kabja fitting",
+        "channel"
+      ],
+      "rajasthan_gujarat": [
+        "chugath fitting",
+        "sheesham lakdi",
+        "sal-kabja",
+        "dholiya"
+      ],
+      "maharashtra": [
+        "teak wood",
+        "laminate pasting",
+        "hydraulic hinge"
+      ]
+    },
+    "description": "Cutting, planing, shaping, joining, laminating, and assembling wooden architectural fixtures, modular cabinetry, doors, window frames, and commercial furniture.",
+    "daily_tasks": [
+      "Marking cut lines on commercial MR and BWP plywood sheets",
+      "Ripping and crosscutting plywood panels with circular saws",
+      "Smoothing timber surface and squaring edges with hand wood planer (randa)",
+      "Spreading synthetic resin adhesive (Fevicol) and laminating sunmica sheets",
+      "Chiseling mortise pockets and cutting matching tenon joints",
+      "Installing soft-close concealed hydraulic cabinet hinges",
+      "Fitting telescopic ball-bearing drawer slide channels"
+    ],
+    "advanced_tasks": [
+      "Fabricating curved architectural reception desks and fluted wall paneling",
+      "Crafting traditional solid teak mortise-and-tenon panel doors",
+      "Operating portable electric wood routers for edge profiling and grooving",
+      "Refinishing antique furniture with hand-rubbed French spirit polish (lakhdana)"
+    ],
+    "tools": [
+      "Hand wood planer (randa)",
+      "Wood chisels (chaurasi: 1/4 to 1.5 inch)",
+      "Circular saw (7.25 inch)",
+      "Try square (guniya)",
+      "Claw hammer",
+      "Sash and G-clamps",
+      "Marking gauge",
+      "Hand saw"
+    ],
+    "equipment": [
+      "Electric hand planer",
+      "Plunge router machine",
+      "Orbital palm sander",
+      "Laser distance measurer"
+    ],
+    "materials": [
+      "BWP & MR grade plywood (6, 9, 12, 18 mm)",
+      "Decorative laminates (sunmica 0.8 & 1.0 mm)",
+      "Solid wood (Teak, Sheesham, Pine)",
+      "Synthetic PVA wood glue (Fevicol SH)",
+      "Steel screws, brad nails, concealed hinges"
+    ],
+    "work_processes": [
+      "Architectural Sizing -> Sheet Nesting -> Panel Saws -> Edge Planing -> Laminate Pressing -> Carcass Assembly -> Hardware Fitting -> Final Sanding & Edge Banding"
+    ],
+    "troubleshooting_tasks": [
+      "Eliminating air bubbles and delamination pockets in pressed sunmica sheets",
+      "Adjusting sagging cabinet shutters using 3-way concealed hinge adjustment screws",
+      "Easing sticking door stiles caused by monsoon moisture expansion",
+      "Rectifying binding drawer channels by shimming carcass out-of-square deviations"
+    ],
+    "quality_inspection": [
+      "Checking 90-degree squareness of assembled carcasses across opposite diagonals",
+      "Verifying seamless laminate edge trimming without chipping or visible glue lines",
+      "Confirming consistent 3mm reveal gaps around all cabinet doors and drawers",
+      "Ensuring perfectly flat joint surfaces without planer gouges"
+    ],
+    "measurement_and_planning": [
+      "Converting site architectural dimensions into detailed sheet cutting lists",
+      "Allowing 1mm saw blade kerf allowance in cutting layout"
+    ],
+    "safety_practices": [
+      "Inspecting circular saw lower blade retracting guard before every cut",
+      "Wearing N95 particulate respirators when cutting MDF and composite sheets",
+      "Never standing in direct kickback trajectory of high-speed power saws",
+      "Using push sticks when guiding narrow workpieces near power blades"
+    ],
+    "maintenance": [
+      "Honing and stropping planer irons and chisels to razor edge on oilstone",
+      "Removing dried PVA glue encrustations from sash clamp threads",
+      "Blowing wood dust from electric power tool motor ventilation vents"
+    ],
+    "customer_communication": [
+      "Advising clients on BWP marine vs commercial plywood durability in wet zones",
+      "Assisting in laminate texture and finish selection (matte, suede, high-gloss)",
+      "Explaining modular kitchen storage hardware options"
+    ],
+    "transferable_competencies": [
+      "Spatial three-dimensional planning",
+      "Aesthetic material grain appreciation",
+      "Sub-millimeter tactile accuracy"
+    ],
+    "official_vocational_references": {
+      "nsqf_qp_code": "FFS/Q0103",
+      "nsqf_level": 4,
+      "ssc": "Furniture & Fittings Skill Council",
+      "dgt_cts_trade": "Carpenter (CTS 034)"
+    },
+    "canonical_skills": [
+      "Circular Saw Plywood Panel Sizing",
+      "Adhesive Application and Laminate Sheet Pressing",
+      "Manual Wood Surface Planing and Smoothing",
+      "Wood Chisel Mortise and Tenon Joinery",
+      "Concealed Cabinet Hinge and Drawer Slide Installation"
+    ]
+  },
+  {
+    "occupation_id": "TRD-06",
+    "file_slug": "TRD-06_welder",
+    "standard_occupation_name": "Welder",
+    "common_indian_names": [
+      "Welding Mistri",
+      "Fabrication Karigar",
+      "Welder",
+      "Iron Mistri"
+    ],
+    "hindi_names": [
+      "वेल्डर",
+      "वेल्डिंग मिस्त्री",
+      "फैब्रिकेशन कारीगर"
+    ],
+    "roman_hindi_names": [
+      "Welding Mistri",
+      "Fabrication Karigar",
+      "Welder"
+    ],
+    "regional_vocabulary": {
+      "delhi_up": [
+        "arc welding",
+        "6013 rod",
+        "chhiping hammer",
+        "grinder maarna",
+        "channel fitting",
+        "gas cutting",
+        "taka lagana"
+      ],
+      "punjab_haryana": [
+        "gate grill",
+        "truss fabrication",
+        "trolley welding",
+        "inverter set"
+      ],
+      "maharashtra": [
+        "ms plate",
+        "bevel cutting",
+        "slag safai"
+      ]
+    },
+    "description": "Manual metal arc welding, oxy-fuel flame cutting, joint edge beveling, and metal fabrication of structural steel sections, gates, window grills, trusses, and containers.",
+    "daily_tasks": [
+      "Beveling and cleaning metal joint edges with 4-inch angle grinders",
+      "Positioning structural members and clamping with magnetic squares",
+      "Depositing short tack welds (taka) to lock alignment",
+      "Striking arc and depositing stringer and weave weld beads with SMAW electrodes",
+      "Chipping slag between passes with chipping hammer and wire brush",
+      "Cutting steel plates and channels with oxy-acetylene torch",
+      "Grinding structural weld seams flush for clean painted surfaces"
+    ],
+    "advanced_tasks": [
+      "Vertical-up (3G) and overhead (4G) position structural groove welding",
+      "Welding high-stress structural pipe joints using E7018 low-hydrogen electrodes",
+      "Fabricating roof trusses with expansion joint clearances to minimize thermal distortion",
+      "Oxy-fuel flame preheating and flame gouging to remove cracked root passes"
+    ],
+    "tools": [
+      "SMAW arc welding inverter/transformer",
+      "Electrode holder (stinger)",
+      "Earth ground clamp",
+      "Angle grinder (4-inch & 7-inch)",
+      "Chipping hammer",
+      "Wire scratch brush",
+      "Welding helmet (shade 10-11)"
+    ],
+    "equipment": [
+      "Oxy-acetylene cutting torch & regulators",
+      "Bench grinding wheel",
+      "Magnetic welding clamps"
+    ],
+    "materials": [
+      "AWS E6013 rutile mild steel electrodes (2.5, 3.15, 4.0 mm)",
+      "AWS E7018 low-hydrogen electrodes",
+      "Mild steel hollow sections, angles, channels, sheets",
+      "Oxygen and dissolved acetylene gases",
+      "Flap grinding discs"
+    ],
+    "work_processes": [
+      "Metal Cutting -> Edge Beveling -> Fit-Up & Clamping -> Tack Welding -> Root Pass -> Slag Chipping -> Capping Pass -> Weld Dressing"
+    ],
+    "troubleshooting_tasks": [
+      "Adjusting welding amperage to eliminate electrode sticking or burn-through holes",
+      "Diagnosing and re-welding porosity holes caused by damp electrodes or surface oil",
+      "Balancing heat input to prevent thermal warping in thin sheet metal gates",
+      "Rectifying weld undercut along the joint toe by adjusting electrode travel angle"
+    ],
+    "quality_inspection": [
+      "Inspecting weld bead for uniform convex profile without excessive reinforcement",
+      "Checking joint edges for complete fusion and absence of cold lap or cracking",
+      "Verifying complete slag removal before depositing successive capping passes",
+      "Checking finished fabrication dimensions against layout blueprints"
+    ],
+    "measurement_and_planning": [
+      "Calculating metal thermal contraction allowance (approx 1.5mm per meter)",
+      "Marking cutting lines on steel channels with soapstone / carbide scriber"
+    ],
+    "safety_practices": [
+      "Mandatory shade 10 or 11 optical filter to prevent retinal arc-eye flash",
+      "Wearing heavy cowhide leather welding gloves and protective leather apron",
+      "Keeping fire extinguisher / water bucket nearby during hot cutting",
+      "Ensuring proper fume ventilation when welding in confined workshops"
+    ],
+    "maintenance": [
+      "Inspecting welding lead cable insulation for bare copper exposure",
+      "Tightening loose earth ground clamp bolts to prevent resistance heating",
+      "Replacing worn grinding wheel discs before peripheral cracking occurs"
+    ],
+    "customer_communication": [
+      "Advising on gauge thickness of steel hollow pipes for boundary gates",
+      "Providing weight-based (per kg) vs square-foot fabrication estimates",
+      "Recommending zinc-chromate anti-rust primer coating before delivery"
+    ],
+    "transferable_competencies": [
+      "Thermal metallurgy intuition",
+      "Steely hand-eye coordination",
+      "Structural load geometry sense"
+    ],
+    "official_vocational_references": {
+      "nsqf_qp_code": "CSC/Q0204",
+      "nsqf_level": 3,
+      "ssc": "Capital Goods Skill Council",
+      "dgt_cts_trade": "Welder (CTS 019)"
+    },
+    "canonical_skills": [
+      "Shielded Metal Arc Welding with E6013 Electrodes",
+      "Weld Slag Removal and Bead Cleaning",
+      "Angle Grinder V-Groove Edge Beveling",
+      "Oxy-Acetylene Thermal Gas Cutting",
+      "Structural Steel Joint Tack Welding"
+    ]
+  },
+  {
+    "occupation_id": "TRD-07",
+    "file_slug": "TRD-07_mason",
+    "standard_occupation_name": "Mason / Raj Mistri",
+    "common_indian_names": [
+      "Raj Mistri",
+      "Chunai Mistri",
+      "Mason",
+      "Karigar",
+      "Chunai Master"
+    ],
+    "hindi_names": [
+      "राज मिस्त्री",
+      "चुनाई मिस्त्री",
+      "राज कारीगर"
+    ],
+    "roman_hindi_names": [
+      "Raj Mistri",
+      "Chunai Mistri",
+      "Mason Mistri"
+    ],
+    "regional_vocabulary": {
+      "delhi_up": [
+        "sahul lagana",
+        "sooth dekhna",
+        "1:4 masala",
+        "plaster chadhana",
+        "gurmala",
+        "ghoontai karna",
+        "tile lagana",
+        "fanti"
+      ],
+      "rajasthan_gujarat": [
+        "chuna work",
+        "dholpur stone",
+        "bunta banana",
+        "tancha maarna"
+      ],
+      "bihar_bengal": [
+        "garai kaam",
+        "radda baandhna",
+        "tasla masala"
+      ]
+    },
+    "description": "Laying clay brick and concrete block masonry, mixing cement-sand mortars, plumbing walls, plastering surfaces, screeding floors, and installing ceramic tiles on civil building sites.",
+    "daily_tasks": [
+      "Proportioning and mixing cement-sand mortar ratios (1:4 and 1:6)",
+      "Laying staggered brick courses in cement mortar with mason trowel (karni)",
+      "Checking wall verticality with heavy brass plumb bob (sahul)",
+      "Aligning horizontal course level with nylon stringline (sutra)",
+      "Transferring datum levels across rooms using clear water tube",
+      "Applying wall plaster coats and screeding flush with aluminum straight edge (fanti)",
+      "Smoothing plaster surfaces with wooden floats (gurmala)"
+    ],
+    "advanced_tasks": [
+      "Executing mirror-smooth water-resistant pure cement float finishing (ghoontai)",
+      "Constructing brick corbels, arches, and circular well masonry structures",
+      "Laying large-format vitrified floor tiles with level spacers and rubber mallets",
+      "Applying crystalline cementitious waterproofing slurry on sunken toilet slabs"
+    ],
+    "tools": [
+      "Mason trowel (karni)",
+      "Plumb bob with plate (sahul)",
+      "Wooden float (gurmala)",
+      "Aluminum straight edge (fanti, 8-10 ft)",
+      "Nylon stringline (sutra)",
+      "Masonry hammer & bolster chisel",
+      "Mortar pan (tasla)"
+    ],
+    "equipment": [
+      "Clear transparent water level tube",
+      "Tile cutting machine",
+      "Cement mixer machine"
+    ],
+    "materials": [
+      "Portland Pozzolana Cement (PPC)",
+      "River sand / Crushed stone M-sand",
+      "Burnt red clay bricks / AAC lightweight blocks",
+      "Ceramic and vitrified tiles",
+      "Tile adhesive mortar and epoxy grout"
+    ],
+    "work_processes": [
+      "Substrate Wetting -> Mortar Batching -> Corner Lead Masonry -> String Line Laying -> Plumb Checking -> Plaster Screeding -> Tile Fixing -> Water Curing"
+    ],
+    "troubleshooting_tasks": [
+      "Correcting wall out-of-plumb lean before mortar sets",
+      "Eliminating hollow drumming sounds under newly laid floor tiles",
+      "Preventing crazing cracks in curing plaster by regulating sand silt content",
+      "Ensuring bathroom floor slope directs water strictly toward floor drain traps"
+    ],
+    "quality_inspection": [
+      "Verifying consistent 10-12mm bed mortar joint thickness between brick courses",
+      "Confirming zero deviation against plumb bob line over 10-foot wall height",
+      "Checking absence of hollow voids under bedded masonry units",
+      "Testing 7-14 day water curing dampness on plaster and masonry"
+    ],
+    "measurement_and_planning": [
+      "Calculating brick count and cement bag requirements from wall area (approx 500 bricks per 100 cu ft)",
+      "Establishing finished floor level datum (FFL) across building rooms"
+    ],
+    "safety_practices": [
+      "Inspecting wooden or bamboo scaffolding knots and platform planks before elevation work",
+      "Wearing heavy rubber gloves when handling alkaline wet Portland cement",
+      "Using correct ergonomic lifting posture when hoisting heavy mortar pans",
+      "Wearing sturdy protective footwear on construction debris sites"
+    ],
+    "maintenance": [
+      "Washing cement encrustations off trowels and aluminum screeds daily",
+      "Checking water level tube for trapped air bubbles or kink deformities",
+      "Protecting plumb bob brass tip from blunt drop damage"
+    ],
+    "customer_communication": [
+      "Advising building owners on cement mortar ratios and sand washing necessity",
+      "Estimating material delivery schedules to avoid work stoppages",
+      "Explaining the vital structural importance of minimum 10-day water curing"
+    ],
+    "transferable_competencies": [
+      "Physical endurance and resilience",
+      "Macro-geometric dimensional alignment",
+      "Manual fluid trowel motion"
+    ],
+    "official_vocational_references": {
+      "nsqf_qp_code": "CON/Q0103",
+      "nsqf_level": 4,
+      "ssc": "Construction Skill Development Council of India",
+      "dgt_cts_trade": "Mason (Building Constructor) (CTS 032)"
+    },
+    "canonical_skills": [
+      "Plumb Bob Vertical Alignment Verification",
+      "Bricklaying in 1:4 Cement Sand Mortar",
+      "Clear Water Tube Horizontal Leveling",
+      "Wooden Float Cement Plaster Application",
+      "Ceramic Floor and Wall Tile Screeding"
+    ]
+  },
+  {
+    "occupation_id": "TRD-08",
+    "file_slug": "TRD-08_painter",
+    "standard_occupation_name": "Painter",
+    "common_indian_names": [
+      "Rang Mistri",
+      "Painter",
+      "Putty Karigar",
+      "Polish Mistri",
+      "Rangwala"
+    ],
+    "hindi_names": [
+      "पेंटर",
+      "रंग मिस्त्री",
+      "पुट्टी कारीगर"
+    ],
+    "roman_hindi_names": [
+      "Rang Mistri",
+      "Painter",
+      "Putty Karigar"
+    ],
+    "regional_vocabulary": {
+      "delhi_up": [
+        "putty patti",
+        "regmar maarna",
+        "primer rolling",
+        "distemper",
+        "emulsion",
+        "doctor fixit",
+        "sheen",
+        "coat chadhana"
+      ],
+      "punjab_haryana": [
+        "wall polish",
+        "texture design",
+        "damp coat",
+        "touchwood"
+      ],
+      "maharashtra": [
+        "lakhdana polish",
+        "waterproofing paint",
+        "roller haath"
+      ]
+    },
+    "description": "Surface scraping, masonry crack filling, acrylic wall putty skimming, abrasive sanding, primer application, roller emulsion painting, and exterior waterproof coating on buildings.",
+    "daily_tasks": [
+      "Scraping old loose flaking paint and plaster efflorescence with steel scrapers",
+      "Mixing white-cement and acrylic wall putty powder into smooth paste",
+      "Applying first and second coats of wall putty with steel application blades",
+      "Hand-sanding dried putty surfaces with progressive sandpaper (grades 120 and 220)",
+      "Applying water-based primer coats using rollers to seal porous substrates",
+      "Rolling interior and exterior acrylic emulsion paints in cross-lap patterns",
+      "Cutting-in ceiling and door frame perimeter edges with fine sash brushes"
+    ],
+    "advanced_tasks": [
+      "Applying specialty metallic and rustic textured wall finishes with trowels and stencils",
+      "Waterproofing exterior masonry facades with elastomeric crack-bridging coatings",
+      "Hand-rubbing wood finishes with multi-layer French spirit polish and polyurethane sealer",
+      "Custom on-site paint tinting and colour matching by eye"
+    ],
+    "tools": [
+      "Steel putty application blades (patti: 6, 8, 10 inch)",
+      "Microfiber paint rollers (9 inch) & trays",
+      "Paint brushes (2, 3, 4 inch angled)",
+      "Paint scraper & wire brush",
+      "Extension telescopic poles",
+      "Sandpaper sanding block"
+    ],
+    "equipment": [
+      "Aluminum stepladders",
+      "Drop cloth floor protectors",
+      "Paint mixing paddle drill"
+    ],
+    "materials": [
+      "White cement-based wall putty",
+      "Water-thinnable wall primers",
+      "Interior acrylic emulsions (matte, silk, gloss)",
+      "Exterior weather-shield elastomeric paints",
+      "Abrasive silicon carbide sandpaper (80, 120, 220, 320 grit)",
+      "Waterproofing damp-proof chemicals"
+    ],
+    "work_processes": [
+      "Surface Scraping -> Primer Mist Coat -> Double Putty Skimming -> Sanding Smoothing -> Sealing Primer -> First Emulsion Coat -> Defect Touchup -> Final Finish Coat"
+    ],
+    "troubleshooting_tasks": [
+      "Remediating efflorescence and paint blistering caused by underlying wall dampness",
+      "Feathering out putty blade lap lines during fine sanding",
+      "Eliminating roller lap marks by maintaining a continuous wet paint edge",
+      "Fixing paint runs and sags by sanding when dry and re-coating"
+    ],
+    "quality_inspection": [
+      "Shining tangential inspection light across walls to verify zero hollows or scratch lines",
+      "Checking uniform paint film opacity without underlying putty shadows",
+      "Verifying razor-sharp clean perimeter lines around switchboards and ceiling cornices",
+      "Ensuring zero paint drips or splatters on customer tile floors and windows"
+    ],
+    "measurement_and_planning": [
+      "Calculating wall surface area and paint volume based on spreading rate (sq ft per liter)",
+      "Planning drying intervals between putty coats (min 4-6 hours) and paint coats"
+    ],
+    "safety_practices": [
+      "Wearing particulate dust respirators when dry-sanding wall putty",
+      "Maintaining 3-point ladder safety contact when painting elevated walls",
+      "Ensuring cross-ventilation when working with solvent-based enamel paints",
+      "Masking electrical outlets to prevent paint entry into live contacts"
+    ],
+    "maintenance": [
+      "Washing paint rollers and brushes in clean water immediately after use",
+      "Scraping dried putty buildup from steel application blades to maintain straight edges",
+      "Sealing partial paint cans airtight to prevent surface skin formation"
+    ],
+    "customer_communication": [
+      "Advising homeowners on washable vs non-washable paint finishes",
+      "Reviewing paint shade color cards under natural room daylight conditions",
+      "Estimating total job duration and masking furniture precautions"
+    ],
+    "transferable_competencies": [
+      "Chromatic aesthetic color sensibility",
+      "Surface texture tactile sensitivity",
+      "Meticulous masking and protection discipline"
+    ],
+    "official_vocational_references": {
+      "nsqf_qp_code": "CON/Q0501",
+      "nsqf_level": 3,
+      "ssc": "Construction Skill Development Council of India",
+      "dgt_cts_trade": "Painter (General) (CTS 030)"
+    },
+    "canonical_skills": [
+      "Blade Application of Double Coat Wall Putty",
+      "Abrasive Sanding and Wall Primer Sealing",
+      "Roller Application of Exterior Acrylic Emulsion",
+      "Damp-Proof Waterproof Barrier Coating",
+      "Perimeter Masking and Paint Cutting-In"
+    ]
+  },
+  {
+    "occupation_id": "TRD-09",
+    "file_slug": "TRD-09_agriculture_worker",
+    "standard_occupation_name": "Agriculture and Irrigation Worker",
+    "common_indian_names": [
+      "Khet Mazdoor",
+      "Kisan Karigar",
+      "Drip Operator",
+      "Farm Technician",
+      "Pump Operator"
+    ],
+    "hindi_names": [
+      "किसान",
+      "कृषि मजदूर",
+      "ड्रिप इरीगेशन ऑपरेटर"
+    ],
+    "roman_hindi_names": [
+      "Khet Mazdoor",
+      "Drip Operator",
+      "Kisan Karigar"
+    ],
+    "regional_vocabulary": {
+      "delhi_up": [
+        "drip line bichhana",
+        "nozzle saaf",
+        "filter dhona",
+        "khad paani chalana",
+        "venturi dosing",
+        "borewell motor",
+        "rotavator"
+      ],
+      "punjab_haryana": [
+        "tubewell starter",
+        "sprinkler line",
+        "fertigation tank",
+        "PTO shaft"
+      ],
+      "maharashtra_gujarat": [
+        "micro irrigation",
+        "submain valve",
+        "lateral punching",
+        "acid wash"
+      ]
+    },
+    "description": "Laying out and maintaining micro-irrigation drip and sprinkler networks, backwashing screen/disc filtration units, operating tractor PTO agricultural implements, and dosing fertilizers.",
+    "daily_tasks": [
+      "Laying 16mm LLDPE lateral drip tubing along crop rows",
+      "Punching holes and fitting online pressure-compensating button emitters",
+      "Monitoring borewell submersible pump pressure gauges and starter panels",
+      "Backwashing and cleaning disc and screen irrigation filter elements",
+      "Calibrating venturi injector suction valves for liquid fertigation dosing",
+      "Hitching rotavators, disc harrows, and cultivators to tractor 3-point linkages",
+      "Connecting and safety-locking tractor Power Take-Off (PTO) shafts"
+    ],
+    "advanced_tasks": [
+      "Flushing clogged drip lines with diluted hydrochloric or phosphoric acid solutions",
+      "Troubleshooting pressure drop discrepancies across multi-hectare drip sub-mains",
+      "Calibrating micro-sprinkler throw diameters for orchard frost and heat protection",
+      "Overhauling submersible pump non-return foot valves and impellers"
+    ],
+    "tools": [
+      "Drip tubing punch tool",
+      "Ratchet pipe cutter",
+      "Pressure gauge (0-7 bar)",
+      "Adjustable spanner set",
+      "Knapsack chemical sprayer",
+      "Pipe wrench",
+      "Lineman pliers"
+    ],
+    "equipment": [
+      "Disc filter assembly",
+      "Venturi fertilizer injector",
+      "Tractor 3-point hitch linkage & PTO shaft",
+      "Borewell motor starter panel"
+    ],
+    "materials": [
+      "16mm LLDPE lateral drip tubing",
+      "Online and inline drippers (2, 4, 8 LPH)",
+      "PVC control ball valves & air release valves",
+      "Water-soluble fertilizers (NPK 19:19:19, Urea)",
+      "Acid wash descaling chemical"
+    ],
+    "work_processes": [
+      "Head Control Unit Setup -> Mainline Laying -> Submain Installation -> Lateral Rolling -> Emitter Punching -> System Flushing -> Fertigation Injection -> Periodic Maintenance"
+    ],
+    "troubleshooting_tasks": [
+      "Detecting and clearing mineral carbonate scale clogs inside inline drippers",
+      "Rectifying vacuum lock or lack of suction in venturi fertilizer dosing manifolds",
+      "Tracing pressure loss caused by burst lateral lines or animal damage",
+      "Diagnosing single-phasing or low-voltage motor starter trip conditions"
+    ],
+    "quality_inspection": [
+      "Verifying uniform water discharge rate across both proximal and distal ends of laterals",
+      "Ensuring operating pressure at the end of the lateral remains within 1.0–1.2 bar",
+      "Confirming zero water leakage at grommet takeoff connections on PVC submains",
+      "Checking tight locking of tractor PTO safety shield chains"
+    ],
+    "measurement_and_planning": [
+      "Calculating crop water requirement based on daily pan evaporation and crop stage",
+      "Calculating fertigation dilution rates (kg fertilizer per 1,000 liters water)"
+    ],
+    "safety_practices": [
+      "Ensuring tractor PTO master safety guard is securely latched before engaging drive",
+      "Wearing chemical-resistant nitrile gloves and eye goggles when mixing liquid fertilizer/acid",
+      "Zero contact with live electrical starter terminals in damp agricultural pump sheds",
+      "Relieving pressurized irrigation lines before unscrewing filter casings"
+    ],
+    "maintenance": [
+      "Flushing lateral drip lines monthly by removing end caps",
+      "Lubricating tractor implement grease nipples daily with lithium grease",
+      "Cleaning suction foot valve strainers free of pond and well weeds"
+    ],
+    "customer_communication": [
+      "Explaining water savings (40–60%) of micro-irrigation to smallholder farmers",
+      "Advising on crop-specific emitter spacing (e.g. 30cm for vegetables, 1m for orchards)",
+      "Instructing farm helpers on daily filter backwash sequences"
+    ],
+    "transferable_competencies": [
+      "Agronomic hydrological understanding",
+      "Mechanical power transmission safety",
+      "Adaptive field resourcefulness"
+    ],
+    "official_vocational_references": {
+      "nsqf_qp_code": "AGR/Q1002",
+      "nsqf_level": 4,
+      "ssc": "Agriculture Skill Council of India",
+      "dgt_cts_trade": "Mechanic Agricultural Machinery (CTS 022) / Agro Processing"
+    },
+    "canonical_skills": [
+      "Micro-Irrigation Drip Lateral Pipe Layout",
+      "Venturi Fertigation Fertilizer Dosing Calibration",
+      "Irrigation Disc Filter Flushing and Cleaning",
+      "Tractor Three-Point Hitch Rotavator Coupling",
+      "Agricultural Pump Priming and Valve Regulation"
+    ]
+  },
+  {
+    "occupation_id": "TRD-10",
+    "file_slug": "TRD-10_mobile_repair",
+    "standard_occupation_name": "Mobile Repair Technician",
+    "common_indian_names": [
+      "Mobile Mistri",
+      "Phone Repair Karigar",
+      "Hardware Technician",
+      "Mobile Karigar"
+    ],
+    "hindi_names": [
+      "मोबाइल मिस्त्री",
+      "फोन रिपेयर कारीगर",
+      "मोबाइल हार्डवेयर टेक्नीशियन"
+    ],
+    "roman_hindi_names": [
+      "Mobile Mistri",
+      "Phone Technician",
+      "Hardware Mistri"
+    ],
+    "regional_vocabulary": {
+      "delhi_up": [
+        "SMD chalana",
+        "CC pin badalna",
+        "folder chipkana",
+        "shorting nikalna",
+        "jumper maarna",
+        "DC power test",
+        "OCA machine"
+      ],
+      "punjab_haryana": [
+        "glass change",
+        "charging jack",
+        "IC reballing",
+        "dead set"
+      ],
+      "maharashtra_gujarat": [
+        "touch folder",
+        "rosin smoke",
+        "motherboard repair",
+        "multimeter buzzer"
+      ]
+    },
+    "description": "Component-level micro-soldering, SMD hot air rework, touchscreen display folder separation and lamination, charging port replacement, and circuit diagnostics on smartphones.",
+    "daily_tasks": [
+      "Heating and disassembling smartphone back panels with suction cards",
+      "Separating broken front glass folders on temperature-controlled heating plates",
+      "Desoldering burnt micro-USB and Type-C charging ports with SMD hot air rework stations",
+      "Micro-soldering replacement charging connector pins with fine iron tips and rosin flux",
+      "Testing motherboard power rails and short circuits using digital multimeters in buzzer mode",
+      "Analyzing boot current draw sequences using regulated DC benchtop power supplies",
+      "Soldering 0.02mm enameled jumper wires to bypass severed copper PCB traces"
+    ],
+    "advanced_tasks": [
+      "BGA chip reballing (power ICs, audio codecs, charging ICs) using precision steel stencils",
+      "Laminating curved OLED display panels in OCA vacuum autoclave chambers",
+      "Diagnosing complex secondary circuit half-shorts using rosin flux vapor smoke and thermal cameras",
+      "Restoring water-damaged motherboards with ultrasonic cleaning and descaling"
+    ],
+    "tools": [
+      "SMD hot air rework station",
+      "Temperature-controlled micro-soldering station",
+      "Digital multimeter with needle probes",
+      "Stereo zoom microscope",
+      "Precision tweezers & curved pry blades",
+      "Display heating separator plate (80°C)"
+    ],
+    "equipment": [
+      "Regulated DC benchtop power supply (0-30V, 5A)",
+      "OCA vacuum laminator & bubble remover autoclave",
+      "Ultrasonic cleaning bath"
+    ],
+    "materials": [
+      "Lead-free solder wire (0.3mm) and solder paste (Sn42/Bi58)",
+      "Rosin / no-clean liquid soldering flux",
+      "0.02mm insulated copper jumper wire",
+      "Copper solder wick desoldering braid",
+      "Type-C / micro-USB connectors",
+      "T-7000 / B-7000 display adhesive glue",
+      "Isopropyl alcohol (IPA 99.9%)"
+    ],
+    "work_processes": [
+      "Visual & DC Diagnostic -> Thermal Disassembly -> Motherboard Extraction -> Component Desoldering -> Micro-Soldering -> Ultrasonic Cleaning -> Reassembly & Function Testing"
+    ],
+    "troubleshooting_tasks": [
+      "Distinguishing between dead battery, shorted charging IC, and faulty sub-board PCB",
+      "Diagnosing touch screen digitizer non-responsiveness vs broken display flex cable",
+      "Locating VPH_PWR / VREG shorted ceramic capacitors heating up under DC supply",
+      "Resolving speaker or mic audio distortion caused by acoustic mesh debris or solder bridges"
+    ],
+    "quality_inspection": [
+      "Inspecting soldered connector pins under microscope for solder bridges or dry joints",
+      "Testing rapid charging current (> 1.5A) with USB digital power meters",
+      "Verifying full digitizer touch sensitivity across screen edges using touch test apps",
+      "Ensuring proximity sensor turns off screen during voice call simulations"
+    ],
+    "measurement_and_planning": [
+      "Regulating SMD hot air temperature (320°C–360°C) to prevent motherboard layer delamination",
+      "Setting soldering iron tip temperature (350°C) for quick thermal transfer without pad peeling"
+    ],
+    "safety_practices": [
+      "Wearing grounded ESD anti-static wrist strap to protect sensitive CMOS integrated circuits",
+      "Never puncturing or bending lithium-ion battery cells to avoid thermal runaway fires",
+      "Operating soldering fume absorber fans to extract hazardous rosin flux particulates",
+      "Storing lithium battery cells in fire-resistant metal containers"
+    ],
+    "maintenance": [
+      "Tinning soldering iron copper tips with tip activator after every repair session",
+      "Cleaning microscope objective lenses and hotplate silicone pads with isopropyl alcohol",
+      "Calibrating DC benchtop power supply voltage outputs"
+    ],
+    "customer_communication": [
+      "Explaining data privacy protections and guaranteeing no customer data access",
+      "Differentiating between original display folder vs first-copy replacement options",
+      "Setting transparent warranty terms on replaced charging ports and batteries"
+    ],
+    "transferable_competencies": [
+      "Micro-scale hand steadiness under magnification",
+      "Electronic circuit schematic tracking",
+      "Precision diagnostic instrumentation"
+    ],
+    "official_vocational_references": {
+      "nsqf_qp_code": "ELE/Q8104",
+      "nsqf_level": 4,
+      "ssc": "Electronics Sector Skills Council of India",
+      "dgt_cts_trade": "Technician Power Electronic System / Electronics Mechanic (CTS 026)"
+    },
+    "canonical_skills": [
+      "SMD Hot Air Desoldering and USB Port Micro-Soldering",
+      "Touchscreen Display Folder Thermal Separation",
+      "DC Benchtop Power Supply Motherboard Short Circuit Diagnostics",
+      "Micro-Wire PCB Track Jumper Bypass",
+      "Smartphone Lithium Battery Testing and Safe Replacement"
+    ]
+  }
+]

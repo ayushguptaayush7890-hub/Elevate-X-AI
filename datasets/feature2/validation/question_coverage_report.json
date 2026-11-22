@@ -1,0 +1,1187 @@
+{
+  "generated_at": "2026-11-15T13:58:45.761136+00:00",
+  "total_questions": 2250,
+  "roles": {
+    "ai_ml_engineer": {
+      "total": 250,
+      "by_type": {
+        "mcq": 60,
+        "coding": 50,
+        "debugging": 35,
+        "scenario": 40,
+        "sql": 30,
+        "system_design": 35
+      },
+      "by_skill": {
+        "AIM-SKL-01": 37,
+        "AIM-SKL-02": 37,
+        "AIM-SKL-03": 37,
+        "AIM-SKL-04": 37,
+        "AIM-SKL-05": 102
+      },
+      "by_difficulty": {
+        "easy": 75,
+        "medium": 112,
+        "hard": 63
+      },
+      "skill_type_difficulty": {
+        "AIM-SKL-01": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "AIM-SKL-02": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "AIM-SKL-03": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "AIM-SKL-04": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "AIM-SKL-05": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 10,
+            "system_design": 10
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "sql": 15,
+            "system_design": 12
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 5,
+            "system_design": 13
+          }
+        }
+      }
+    },
+    "backend_developer": {
+      "total": 250,
+      "by_type": {
+        "mcq": 60,
+        "coding": 50,
+        "debugging": 35,
+        "scenario": 40,
+        "sql": 30,
+        "system_design": 35
+      },
+      "by_skill": {
+        "BED-SKL-01": 37,
+        "BED-SKL-02": 67,
+        "BED-SKL-03": 72,
+        "BED-SKL-04": 37,
+        "BED-SKL-05": 37
+      },
+      "by_difficulty": {
+        "easy": 75,
+        "medium": 112,
+        "hard": 63
+      },
+      "skill_type_difficulty": {
+        "BED-SKL-01": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "BED-SKL-02": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 10
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "sql": 15
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 5
+          }
+        },
+        "BED-SKL-03": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "system_design": 10
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "system_design": 12
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "system_design": 13
+          }
+        },
+        "BED-SKL-04": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "BED-SKL-05": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        }
+      }
+    },
+    "cloud_engineer": {
+      "total": 250,
+      "by_type": {
+        "mcq": 60,
+        "coding": 50,
+        "debugging": 35,
+        "scenario": 40,
+        "sql": 30,
+        "system_design": 35
+      },
+      "by_skill": {
+        "CLD-SKL-01": 37,
+        "CLD-SKL-02": 37,
+        "CLD-SKL-03": 37,
+        "CLD-SKL-04": 37,
+        "CLD-SKL-05": 102
+      },
+      "by_difficulty": {
+        "easy": 75,
+        "medium": 112,
+        "hard": 63
+      },
+      "skill_type_difficulty": {
+        "CLD-SKL-01": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "CLD-SKL-02": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "CLD-SKL-03": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "CLD-SKL-04": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "CLD-SKL-05": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 10,
+            "system_design": 10
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "sql": 15,
+            "system_design": 12
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 5,
+            "system_design": 13
+          }
+        }
+      }
+    },
+    "cybersecurity_engineer": {
+      "total": 250,
+      "by_type": {
+        "mcq": 60,
+        "coding": 50,
+        "debugging": 35,
+        "scenario": 40,
+        "sql": 30,
+        "system_design": 35
+      },
+      "by_skill": {
+        "SEC-SKL-01": 37,
+        "SEC-SKL-02": 72,
+        "SEC-SKL-03": 37,
+        "SEC-SKL-04": 37,
+        "SEC-SKL-05": 67
+      },
+      "by_difficulty": {
+        "easy": 75,
+        "medium": 112,
+        "hard": 63
+      },
+      "skill_type_difficulty": {
+        "SEC-SKL-01": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "SEC-SKL-02": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "system_design": 10
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "system_design": 12
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "system_design": 13
+          }
+        },
+        "SEC-SKL-03": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "SEC-SKL-04": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "SEC-SKL-05": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 10
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "sql": 15
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 5
+          }
+        }
+      }
+    },
+    "data_analyst": {
+      "total": 250,
+      "by_type": {
+        "mcq": 60,
+        "coding": 50,
+        "debugging": 35,
+        "scenario": 40,
+        "sql": 30,
+        "system_design": 35
+      },
+      "by_skill": {
+        "DAN-SKL-01": 67,
+        "DAN-SKL-02": 37,
+        "DAN-SKL-03": 37,
+        "DAN-SKL-04": 72,
+        "DAN-SKL-05": 37
+      },
+      "by_difficulty": {
+        "easy": 75,
+        "medium": 112,
+        "hard": 63
+      },
+      "skill_type_difficulty": {
+        "DAN-SKL-01": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 10
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "sql": 15
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 5
+          }
+        },
+        "DAN-SKL-02": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "DAN-SKL-03": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "DAN-SKL-04": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "system_design": 10
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "system_design": 12
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "system_design": 13
+          }
+        },
+        "DAN-SKL-05": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        }
+      }
+    },
+    "data_scientist": {
+      "total": 250,
+      "by_type": {
+        "mcq": 60,
+        "coding": 50,
+        "debugging": 35,
+        "scenario": 40,
+        "sql": 30,
+        "system_design": 35
+      },
+      "by_skill": {
+        "DSC-SKL-01": 67,
+        "DSC-SKL-02": 37,
+        "DSC-SKL-03": 37,
+        "DSC-SKL-04": 72,
+        "DSC-SKL-05": 37
+      },
+      "by_difficulty": {
+        "easy": 75,
+        "medium": 112,
+        "hard": 63
+      },
+      "skill_type_difficulty": {
+        "DSC-SKL-01": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 10
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "sql": 15
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 5
+          }
+        },
+        "DSC-SKL-02": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "DSC-SKL-03": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "DSC-SKL-04": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "system_design": 10
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "system_design": 12
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "system_design": 13
+          }
+        },
+        "DSC-SKL-05": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        }
+      }
+    },
+    "devops_engineer": {
+      "total": 250,
+      "by_type": {
+        "mcq": 60,
+        "coding": 50,
+        "debugging": 35,
+        "scenario": 40,
+        "sql": 30,
+        "system_design": 35
+      },
+      "by_skill": {
+        "DVO-SKL-01": 37,
+        "DVO-SKL-02": 37,
+        "DVO-SKL-03": 72,
+        "DVO-SKL-04": 37,
+        "DVO-SKL-05": 67
+      },
+      "by_difficulty": {
+        "easy": 75,
+        "medium": 112,
+        "hard": 63
+      },
+      "skill_type_difficulty": {
+        "DVO-SKL-01": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "DVO-SKL-02": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "DVO-SKL-03": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "system_design": 10
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "system_design": 12
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "system_design": 13
+          }
+        },
+        "DVO-SKL-04": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "DVO-SKL-05": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 10
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "sql": 15
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 5
+          }
+        }
+      }
+    },
+    "frontend_developer": {
+      "total": 250,
+      "by_type": {
+        "mcq": 60,
+        "coding": 50,
+        "debugging": 35,
+        "scenario": 40,
+        "sql": 30,
+        "system_design": 35
+      },
+      "by_skill": {
+        "FED-SKL-01": 37,
+        "FED-SKL-02": 37,
+        "FED-SKL-03": 72,
+        "FED-SKL-04": 37,
+        "FED-SKL-05": 67
+      },
+      "by_difficulty": {
+        "easy": 75,
+        "medium": 112,
+        "hard": 63
+      },
+      "skill_type_difficulty": {
+        "FED-SKL-01": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "FED-SKL-02": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "FED-SKL-03": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "system_design": 10
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "system_design": 12
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "system_design": 13
+          }
+        },
+        "FED-SKL-04": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "FED-SKL-05": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 10
+          },
+          "medium": {
+            "mcq": 5,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "sql": 15
+          },
+          "hard": {
+            "mcq": 2,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 5
+          }
+        }
+      }
+    },
+    "software_engineer": {
+      "total": 250,
+      "by_type": {
+        "mcq": 60,
+        "coding": 50,
+        "debugging": 35,
+        "scenario": 40,
+        "sql": 30,
+        "system_design": 35
+      },
+      "by_skill": {
+        "SWE-SKL-01": 37,
+        "SWE-SKL-02": 37,
+        "SWE-SKL-03": 37,
+        "SWE-SKL-04": 67,
+        "SWE-SKL-05": 72
+      },
+      "by_difficulty": {
+        "easy": 75,
+        "medium": 107,
+        "hard": 68
+      },
+      "skill_type_difficulty": {
+        "SWE-SKL-01": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 4,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 3,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "SWE-SKL-02": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 4,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 3,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "SWE-SKL-03": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2
+          },
+          "medium": {
+            "mcq": 4,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4
+          },
+          "hard": {
+            "mcq": 3,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2
+          }
+        },
+        "SWE-SKL-04": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 10
+          },
+          "medium": {
+            "mcq": 4,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "sql": 15
+          },
+          "hard": {
+            "mcq": 3,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "sql": 5
+          }
+        },
+        "SWE-SKL-05": {
+          "easy": {
+            "mcq": 5,
+            "coding": 2,
+            "debugging": 2,
+            "scenario": 2,
+            "system_design": 10
+          },
+          "medium": {
+            "mcq": 4,
+            "coding": 5,
+            "debugging": 3,
+            "scenario": 4,
+            "system_design": 12
+          },
+          "hard": {
+            "mcq": 3,
+            "coding": 3,
+            "debugging": 2,
+            "scenario": 2,
+            "system_design": 13
+          }
+        }
+      }
+    }
+  },
+  "gaps": [],
+  "gap_count": 0
+}

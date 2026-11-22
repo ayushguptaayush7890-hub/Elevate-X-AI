@@ -1,0 +1,290 @@
+[
+  {
+    "term_id": "TRM-001",
+    "trade_id": "TRD-01",
+    "devanagari": "सिलाई",
+    "roman_hinglish": "silai",
+    "english_standard": "sewing / stitching",
+    "phonetic_variants": [
+      "seelai",
+      "silaai"
+    ],
+    "trade_domain": "Tailoring"
+  },
+  {
+    "term_id": "TRM-002",
+    "trade_id": "TRD-01",
+    "devanagari": "बकरम",
+    "roman_hinglish": "bakram",
+    "english_standard": "fusible canvas interlining",
+    "phonetic_variants": [
+      "bukram",
+      "buckram"
+    ],
+    "trade_domain": "Tailoring"
+  },
+  {
+    "term_id": "TRM-003",
+    "trade_id": "TRD-01",
+    "devanagari": "कटोरी कटिंग",
+    "roman_hinglish": "katora cutting",
+    "english_standard": "contoured blouse cup pattern",
+    "phonetic_variants": [
+      "katori cut",
+      "choli cut"
+    ],
+    "trade_domain": "Tailoring"
+  },
+  {
+    "term_id": "TRM-004",
+    "trade_id": "TRD-01",
+    "devanagari": "ओवरलॉक",
+    "roman_hinglish": "overlock",
+    "english_standard": "overedge serging",
+    "phonetic_variants": [
+      "interlock",
+      "overlok"
+    ],
+    "trade_domain": "Tailoring"
+  },
+  {
+    "term_id": "TRM-005",
+    "trade_id": "TRD-02",
+    "devanagari": "झिरी",
+    "roman_hinglish": "jhirri",
+    "english_standard": "wall conduit chasing groove",
+    "phonetic_variants": [
+      "jhiri",
+      "jheeri"
+    ],
+    "trade_domain": "Electrical"
+  },
+  {
+    "term_id": "TRM-006",
+    "trade_id": "TRD-02",
+    "devanagari": "अर्थिंग",
+    "roman_hinglish": "earthing",
+    "english_standard": "electrical ground electrode",
+    "phonetic_variants": [
+      "arthing",
+      "ground"
+    ],
+    "trade_domain": "Electrical"
+  },
+  {
+    "term_id": "TRM-007",
+    "trade_id": "TRD-02",
+    "devanagari": "न्यूट्रल-फेज",
+    "roman_hinglish": "neutral-phase",
+    "english_standard": "AC mains live and neutral polarity",
+    "phonetic_variants": [
+      "neutral phase",
+      "line neutral"
+    ],
+    "trade_domain": "Electrical"
+  },
+  {
+    "term_id": "TRM-008",
+    "trade_id": "TRD-03",
+    "devanagari": "सॉल्वेंट",
+    "roman_hinglish": "solvent",
+    "english_standard": "CPVC/UPVC chemical cement",
+    "phonetic_variants": [
+      "solvant",
+      "salvent"
+    ],
+    "trade_domain": "Plumbing"
+  },
+  {
+    "term_id": "TRM-009",
+    "trade_id": "TRD-03",
+    "devanagari": "चूड़ी",
+    "roman_hinglish": "chudi",
+    "english_standard": "external pipe screw threads",
+    "phonetic_variants": [
+      "choori",
+      "churi"
+    ],
+    "trade_domain": "Plumbing"
+  },
+  {
+    "term_id": "TRM-010",
+    "trade_id": "TRD-03",
+    "devanagari": "डायवर्टर",
+    "roman_hinglish": "diverter",
+    "english_standard": "concealed shower mixer valve",
+    "phonetic_variants": [
+      "divertor",
+      "mixer"
+    ],
+    "trade_domain": "Plumbing"
+  },
+  {
+    "term_id": "TRM-011",
+    "trade_id": "TRD-04",
+    "devanagari": "टैपेट",
+    "roman_hinglish": "tappet",
+    "english_standard": "engine valve rocker clearance",
+    "phonetic_variants": [
+      "tapet",
+      "tepet"
+    ],
+    "trade_domain": "Mechanic"
+  },
+  {
+    "term_id": "TRM-012",
+    "trade_id": "TRD-04",
+    "devanagari": "क्लच प्लेट",
+    "roman_hinglish": "clutch plate",
+    "english_standard": "friction clutch disk",
+    "phonetic_variants": [
+      "clutch plate",
+      "kalach"
+    ],
+    "trade_domain": "Mechanic"
+  },
+  {
+    "term_id": "TRM-013",
+    "trade_id": "TRD-05",
+    "devanagari": "रंदा",
+    "roman_hinglish": "randa",
+    "english_standard": "wood hand planer",
+    "phonetic_variants": [
+      "randha",
+      "randaa"
+    ],
+    "trade_domain": "Carpentry"
+  },
+  {
+    "term_id": "TRM-014",
+    "trade_id": "TRD-05",
+    "devanagari": "सनमाइका",
+    "roman_hinglish": "sunmica",
+    "english_standard": "decorative high-pressure laminate",
+    "phonetic_variants": [
+      "sanmika",
+      "laminate"
+    ],
+    "trade_domain": "Carpentry"
+  },
+  {
+    "term_id": "TRM-015",
+    "trade_id": "TRD-06",
+    "devanagari": "चिप्पिंग",
+    "roman_hinglish": "chipping",
+    "english_standard": "weld slag chipping hammer action",
+    "phonetic_variants": [
+      "chipin",
+      "slag safai"
+    ],
+    "trade_domain": "Welding"
+  },
+  {
+    "term_id": "TRM-016",
+    "trade_id": "TRD-06",
+    "devanagari": "टांका",
+    "roman_hinglish": "taka",
+    "english_standard": "tack weld bead",
+    "phonetic_variants": [
+      "taanka",
+      "tack"
+    ],
+    "trade_domain": "Welding"
+  },
+  {
+    "term_id": "TRM-017",
+    "trade_id": "TRD-07",
+    "devanagari": "साहुल",
+    "roman_hinglish": "sahul",
+    "english_standard": "mason's brass plumb bob",
+    "phonetic_variants": [
+      "sahool",
+      "plumb bob"
+    ],
+    "trade_domain": "Masonry"
+  },
+  {
+    "term_id": "TRM-018",
+    "trade_id": "TRD-07",
+    "devanagari": "घोंटाई",
+    "roman_hinglish": "ghoontai",
+    "english_standard": "neat cement float waterproofing",
+    "phonetic_variants": [
+      "ghontai",
+      "ghotai"
+    ],
+    "trade_domain": "Masonry"
+  },
+  {
+    "term_id": "TRM-019",
+    "trade_id": "TRD-08",
+    "devanagari": "रेगमार",
+    "roman_hinglish": "regmar",
+    "english_standard": "abrasive silicon carbide sandpaper",
+    "phonetic_variants": [
+      "regmaal",
+      "sandpaper"
+    ],
+    "trade_domain": "Painting"
+  },
+  {
+    "term_id": "TRM-020",
+    "trade_id": "TRD-08",
+    "devanagari": "पुट्टी पत्ती",
+    "roman_hinglish": "putty patti",
+    "english_standard": "steel wall putty knife blade",
+    "phonetic_variants": [
+      "patti",
+      "patra"
+    ],
+    "trade_domain": "Painting"
+  },
+  {
+    "term_id": "TRM-021",
+    "trade_id": "TRD-09",
+    "devanagari": "ड्रिप लाइन",
+    "roman_hinglish": "drip line",
+    "english_standard": "micro-irrigation lateral tubing",
+    "phonetic_variants": [
+      "drip pipe",
+      "lateral line"
+    ],
+    "trade_domain": "Agriculture"
+  },
+  {
+    "term_id": "TRM-022",
+    "trade_id": "TRD-09",
+    "devanagari": "वेंचुरी",
+    "roman_hinglish": "venturi",
+    "english_standard": "differential fertilizer injector",
+    "phonetic_variants": [
+      "venchury",
+      "venturi dosing"
+    ],
+    "trade_domain": "Agriculture"
+  },
+  {
+    "term_id": "TRM-023",
+    "trade_id": "TRD-10",
+    "devanagari": "सीसी पिन",
+    "roman_hinglish": "CC pin",
+    "english_standard": "charging connector port pin",
+    "phonetic_variants": [
+      "charging pin",
+      "jack"
+    ],
+    "trade_domain": "Mobile Repair"
+  },
+  {
+    "term_id": "TRM-024",
+    "trade_id": "TRD-10",
+    "devanagari": "जंपर",
+    "roman_hinglish": "jumper",
+    "english_standard": "fine micro-wire PCB track bypass",
+    "phonetic_variants": [
+      "jampar",
+      "jumper wire"
+    ],
+    "trade_domain": "Mobile Repair"
+  }
+]

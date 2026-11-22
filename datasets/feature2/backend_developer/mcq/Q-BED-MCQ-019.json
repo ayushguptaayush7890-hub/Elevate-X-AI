@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-BED-MCQ-019",
+  "role_id": "backend_developer",
+  "skill_id": "BED-SKL-04",
+  "skill_name": "Authentication, Authorization & API Security",
+  "subtopic": "JWT Verification, Token Expiration and Revocation Lists",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "[Authentication, Authorization & API Security - Q19] Why is stateless JWT validation unable to immediately revoke an individual compromised token without additional backend state?",
+  "options": [
+    {
+      "id": "A",
+      "text": "JWT signatures expire after 1 millisecond"
+    },
+    {
+      "id": "B",
+      "text": "Because standard JWT validation relies entirely on cryptographic signature verification against the public key without querying a central database"
+    },
+    {
+      "id": "C",
+      "text": "JWTs can only be decoded by the client"
+    },
+    {
+      "id": "D",
+      "text": "Operating systems cache JWTs in CPU registers"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Stateless tokens are self-contained. Any server with the public key verifies them as valid until their `exp` timestamp, necessitating a distributed blocklist (e.g. Redis) for instant revocation.",
+  "reference_solution": "Correct Choice: B. Rationale: Stateless tokens are self-contained. Any server with the public key verifies them as valid until their `exp` timestamp, necessitating a distributed blocklist (e.g. Redis) for instant revocation.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

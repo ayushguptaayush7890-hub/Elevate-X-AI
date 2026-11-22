@@ -1,0 +1,230 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ElevateXIndianWorkerDescriptionRecord",
+  "description": "Standard multi-span schema for Dataset 4: Indian Informal Worker Descriptions and Verified Skill Annotations",
+  "type": "object",
+  "required": [
+    "record_id",
+    "worker_description",
+    "original_language",
+    "script_type",
+    "occupation_id",
+    "occupation",
+    "skill_spans",
+    "annotation_status",
+    "source_type",
+    "source_reference",
+    "consent_status",
+    "reviewer_status"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "description": "Unique identifier for the record, e.g. IND-TLR-0001",
+      "pattern": "^[A-Z]{3,4}-[A-Z0-9]{2,5}-[0-9]{4,6}$"
+    },
+    "worker_id": {
+      "type": ["string", "null"],
+      "description": "Anonymized worker alias, e.g. WRK-DEL-TLR-012"
+    },
+    "worker_description": {
+      "type": "string",
+      "description": "Original raw, unedited verbatim response from the worker in Hindi, Hinglish, or English"
+    },
+    "original_language": {
+      "type": "string",
+      "enum": ["hindi", "hinglish", "english", "multilingual"],
+      "description": "Primary linguistic mode of the worker description"
+    },
+    "script_type": {
+      "type": "string",
+      "enum": ["devanagari", "latin", "mixed"],
+      "description": "Writing script of the verbatim description (Devanagari, Roman/Latin, or Mixed)"
+    },
+    "region": {
+      "type": ["string", "null"],
+      "description": "Geographic district, vocational cluster, or state if consented and appropriate (e.g. Delhi NCR, Kanpur UP)"
+    },
+    "occupation_id": {
+      "type": "string",
+      "description": "Trade taxonomy identifier from occupation_taxonomy.csv, e.g. TRD-01"
+    },
+    "occupation": {
+      "type": "string",
+      "description": "Standard trade domain name matching occupation_taxonomy.csv"
+    },
+    "secondary_occupations": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Any secondary or auxiliary trades demonstrated in multi-trade work"
+    },
+    "experience_years": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 65,
+      "description": "Self-reported years of work experience in this trade (null if not stated)"
+    },
+    "work_context": {
+      "type": "string",
+      "enum": [
+        "home_based",
+        "micro_workshop",
+        "independent_repair_shop",
+        "customer_site",
+        "construction_site",
+        "industrial_cluster",
+        "agricultural_field",
+        "street_vendor",
+        "service_center",
+        "other"
+      ],
+      "description": "Operational working environment where trade is practiced"
+    },
+    "collection_date": {
+      "type": ["string", "null"],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Date of field interview collection in YYYY-MM-DD format (null if unknown/synthetic)"
+    },
+    "skill_spans": {
+      "type": "array",
+      "description": "List of annotated actionable skill spans identified in worker_description",
+      "items": {
+        "type": "object",
+        "required": [
+          "span_id",
+          "extracted_skill",
+          "start_offset",
+          "end_offset",
+          "skill_category",
+          "canonical_skill"
+        ],
+        "properties": {
+          "span_id": {
+            "type": "string",
+            "description": "Identifier for the span, e.g. SP-01, SP-02",
+            "pattern": "^SP-[0-9]{2,4}$"
+          },
+          "extracted_skill": {
+            "type": "string",
+            "description": "Exact verbatim substring inside worker_description representing the actionable competence"
+          },
+          "start_offset": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "0-indexed character start position of extracted_skill in worker_description"
+          },
+          "end_offset": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "0-indexed character end position (exclusive) of extracted_skill in worker_description"
+          },
+          "skill_category": {
+            "type": "string",
+            "enum": [
+              "technical_tactile",
+              "tool_operation",
+              "quality_inspection",
+              "troubleshooting_repair",
+              "safety_compliance",
+              "measurement_planning",
+              "client_communication",
+              "material_handling"
+            ],
+            "description": "Functional capability classification for the extracted competence"
+          },
+          "canonical_skill": {
+            "type": "string",
+            "description": "Standardized English capability term mapped to formal competency catalogs"
+          },
+          "alternative_skill_names": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Synonymous skill labels or colloquial trade names"
+          },
+          "esco_uri": {
+            "type": ["string", "null"],
+            "format": "uri",
+            "description": "Direct concept URI from ESCO v1.2.1 Skills pillar (null if no exact match)"
+          },
+          "onet_soc_code": {
+            "type": ["string", "null"],
+            "pattern": "^\\d{2}-\\d{4}\\.\\d{2}$",
+            "description": "Associated O*NET-SOC occupation code (null if cross-sectoral)"
+          },
+          "nsqf_reference": {
+            "type": ["string", "null"],
+            "description": "Official Indian NQR Qualification Pack (QP) code or NOS reference (e.g. AMH/Q1947:NOS-101)"
+          },
+          "confidence_score": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "description": "Annotator confidence score between 0.0 and 1.0"
+          },
+          "mapping_status": {
+            "type": "string",
+            "enum": ["mapped", "unmapped", "pending_review"],
+            "description": "Ontological mapping state (mapped, unmapped, pending_review)"
+          },
+          "is_unmapped_skill": {
+            "type": "boolean",
+            "description": "True if competence is unique to informal market and lacks an international ontology match"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "ambiguity_flag": {
+      "type": "boolean",
+      "description": "True if description contains dialectal idioms or ambiguous claims requiring expert adjudication"
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Field notes or annotator comments on dialect or tools"
+    },
+    "annotation_source": {
+      "type": "string",
+      "enum": ["human_expert", "field_interviewer", "synthetic_generator"],
+      "description": "Entity that performed the initial annotation"
+    },
+    "annotation_status": {
+      "type": "string",
+      "enum": ["pending", "annotated", "reviewed", "approved", "rejected"],
+      "description": "Progress state through the human annotation quality control pipeline"
+    },
+    "source_type": {
+      "type": "string",
+      "enum": ["real_field_interview", "curriculum_adapted", "synthetic_test_stub"],
+      "description": "Authenticity classification: real field collection, curriculum source, or marked synthetic test stub"
+    },
+    "source_reference": {
+      "type": "string",
+      "description": "Traceable field collection batch ID, partner center, or curriculum syllabus citation"
+    },
+    "annotator_id": {
+      "type": ["string", "null"],
+      "description": "Identifier of the primary annotator"
+    },
+    "reviewer_id": {
+      "type": ["string", "null"],
+      "description": "Identifier of the secondary reviewer or adjudicator"
+    },
+    "reviewer_status": {
+      "type": "string",
+      "enum": ["pending", "approved", "flagged_for_adjudication", "rejected"],
+      "description": "Senior vocational expert sign-off status"
+    },
+    "consent_status": {
+      "type": "string",
+      "enum": [
+        "confirmed_dpdp_signed",
+        "confirmed_dpdp_audio",
+        "confirmed_dpdp_exempt_synthetic",
+        "pending_consent",
+        "withdrawn"
+      ],
+      "description": "Verification that DPDP Act-compliant worker consent is documented"
+    }
+  },
+  "additionalProperties": false
+}

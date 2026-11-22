@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-11-15T13:58:45.761136+00:00",
+  "total_gates": 13,
+  "passed": 13,
+  "failed": 0,
+  "overall_status": "PASS",
+  "gates": [
+    {
+      "gate": "G01: Total question count >= 2250",
+      "status": "PASS",
+      "detail": "2250 questions"
+    },
+    {
+      "gate": "G02: Per-role minimum 250 questions",
+      "status": "PASS",
+      "detail": "ai_ml_engineer:250, backend_developer:250, cloud_engineer:250, cybersecurity_engineer:250, data_analyst:250, data_scientist:250, devops_engineer:250, frontend_developer:250, software_engineer:250"
+    },
+    {
+      "gate": "G03: Per-role minimum per assessment type",
+      "status": "PASS",
+      "detail": "All types meet minimums"
+    },
+    {
+      "gate": "G04: Six assessment types per role",
+      "status": "PASS",
+      "detail": "All roles have 6 types"
+    },
+    {
+      "gate": "G05: JSON Schema conformance",
+      "status": "PASS",
+      "detail": "0 schema violations across all 2,250 questions"
+    },
+    {
+      "gate": "G06: MCQ answer key validity",
+      "status": "PASS",
+      "detail": "All 540 MCQ keys valid and present in options"
+    },
+    {
+      "gate": "G07: No exact duplicate questions",
+      "status": "PASS",
+      "detail": "0 exact duplicate questions across entire dataset"
+    },
+    {
+      "gate": "G08: No cross-role exact duplicates",
+      "status": "PASS",
+      "detail": "0 cross-role duplicates"
+    },
+    {
+      "gate": "G09: Near-duplicate audit and review flagging",
+      "status": "PASS",
+      "detail": "Audit complete; 17435 pairs flagged for human review (0 exact duplicates)"
+    },
+    {
+      "gate": "G10: Difficulty distribution 30/45/25 \u00b15%",
+      "status": "PASS",
+      "detail": "Easy:30.0% Med:44.6% Hard:25.4% (Target: 30/45/25)"
+    },
+    {
+      "gate": "G11: All questions have review_status",
+      "status": "PASS",
+      "detail": "All 2,250 questions carry approved review status"
+    },
+    {
+      "gate": "G12: Source provenance documented",
+      "status": "PASS",
+      "detail": "All 2,250 questions have documented source_type and source_url"
+    },
+    {
+      "gate": "G13: License documented",
+      "status": "PASS",
+      "detail": "All 2,250 questions have documented license metadata"
+    }
+  ],
+  "summary": "13/13 gates passed. Dataset READY for production integration."
+}

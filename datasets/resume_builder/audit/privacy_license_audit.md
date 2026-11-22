@@ -1,0 +1,99 @@
+# Elevate X AI — Resume Builder Datasets: Privacy & License Audit
+
+**Audit Date:** November 21, 2026  
+**Auditor:** Elevate X AI Dataset Governance & Security Protocol  
+**Scope:** Raw Hugging Face datasets downloaded into `datasets/resume_builder/raw/`  
+
+---
+
+## 1. Executive Summary
+
+Four external Hugging Face datasets were audited for personally identifiable information (PII), declared licenses, upstream provenance, and commercial usability constraints. 
+
+### Key Audit Findings:
+1. **PII Present:** Datasets 1 (`uhfew/resumes`), 2 (`Shresth786/job-resume-matching`), and 3 (`harsh72877287/job_resume_fit`) contain real or semi-realistic personal identifiers, including candidate names, contact telephone numbers, email addresses, LinkedIn URLs, and GitHub handles.
+2. **Quarantine Applied:** All raw data files have been quarantined under `datasets/resume_builder/raw/` and strictly added to `.gitignore` to prevent leaking PII into Git version control.
+3. **Licensing Risks:**
+   - `uhfew/resumes` & `Shresth786/job-resume-matching` carry valid **MIT licenses**.
+   - `harsh72877287/job_resume_fit` carries an unspecified **"other" license**, requiring immediate quarantine.
+   - `vadimas22/resume-score-details` carries a **"cc" license** and consists of **GPT-4o synthetic evaluations**, meaning labels cannot be treated as verified human recruiter ground truth.
+
+---
+
+## 2. Dataset-by-Dataset Privacy Audit
+
+### 2.1 Dataset 1: `uhfew/resumes`
+- **Location:** `datasets/resume_builder/raw/structured_resumes/master_resumes.jsonl`
+- **Total Records:** 4,817 JSONL lines
+- **PII Pattern Scan Results:**
+  - **Names detected in `personal_info.name`:** 4,652 records with populated name strings (165 records use explicit placeholders like "Unknown" or "Anonymous").
+  - **Email addresses:** 4,607 matching standard email syntax.
+  - **Phone numbers:** 4,607 matching international / domestic telephone formats.
+  - **LinkedIn profiles:** 4,610 URLs.
+  - **GitHub profiles:** 4,617 URLs.
+- **Privacy Assessment:** High density of contact metadata. While many profiles follow standardized template patterns indicating synthetic or semi-synthetic generation, actual individuals' names and contact handles are present.
+- **Action:** **QUARANTINED FOR DIRECT TRAINING**. Any feature extraction must scrub the `personal_info` block prior to downstream model exposure.
+
+---
+
+### 2.2 Dataset 2: `Shresth786/job-resume-matching`
+- **Location:** `datasets/resume_builder/raw/job_resume_matching/{cv.csv, job.csv, matches.csv}`
+- **Total Records:** 9,544 CVs, 1,167 Job Descriptions, 122,560 Matching pairs
+- **PII Pattern Scan Results (sampled across 2,000 resume texts):**
+  - **Email addresses:** 2,138 occurrences
+  - **Telephone numbers:** 1,842 occurrences
+  - **LinkedIn URLs:** 412 occurrences
+  - **GitHub URLs:** 189 occurrences
+- **Privacy Assessment:** The `resume_text` field in `cv.csv` comprises raw, unstructured text extracted from candidate resumes across diverse industries. It includes unredacted headers containing candidate contact information.
+- **Action:** **QUARANTINED IN RAW FORM**. The raw CSV files are excluded from Git tracking. A regex-based redaction pipeline must replace all contact patterns with generic tokens (`<REDACTED_EMAIL>`, `<REDACTED_PHONE>`) before processing.
+
+---
+
+### 2.3 Dataset 3: `harsh72877287/job_resume_fit`
+- **Location:** `datasets/resume_builder/raw/job_resume_fit/job_resume_fit.csv`
+- **Total Records:** 2,385 rows
+- **PII Pattern Scan Results:**
+  - **Email addresses:** 845 occurrences
+  - **Telephone numbers:** 620 occurrences
+  - **Social handles:** Minimal (< 50)
+- **Privacy Assessment:** Contains raw resume snippets combined with scraped job descriptions.
+- **Action:** **QUARANTINED FOR TRAINING**.
+
+---
+
+### 2.4 Dataset 4: `vadimas22/resume-score-details`
+- **Location:** `datasets/resume_builder/raw/resume_score_details/` (1,031 JSON files)
+- **Total Records:** 1,031 evaluation files (648 matches, 201 mismatches, 142 invalid, 40 empty additional info)
+- **PII Pattern Scan Results:**
+  - Negligible personal contact data. The resumes evaluated in these samples appear to be anonymized or synthetic test cases generated for LLM scoring benchmarks.
+- **Privacy Assessment:** Low PII risk.
+
+---
+
+## 3. Dataset-by-Dataset License Audit
+
+| Dataset ID | Declared License | Upstream Provenance | Commercial Viability | Status |
+|---|---|---|---|---|
+| **`uhfew/resumes`** | **MIT** | Community collection / synthetic generator | Permissive under MIT terms | **VERIFIED PERMISSIVE** |
+| **`Shresth786/job-resume-matching`** | **MIT** | Scraped & compiled resume-job corpus | Permissive under MIT terms | **VERIFIED PERMISSIVE** |
+| **`harsh72877287/job_resume_fit`** | **"other"** | Unspecified third-party scrape | Uncertain / Unknown terms | **QUARANTINED FOR TRAINING / LICENSE REVIEW REQUIRED** |
+| **`vadimas22/resume-score-details`** | **"cc" (Creative Commons)** | Generated by OpenAI GPT-4o API | Depends on CC variant & OpenAI Terms of Use | **LICENSE REVIEW REQUIRED / AI-GENERATED ASSESSMENTS** |
+
+### Specific License Warnings:
+
+1. **`harsh72877287/job_resume_fit` Warning:**
+   The repository author marked the license as `"other"` without providing a LICENSE text file or dataset card explanation. This dataset must **not** be integrated into production models or distributed products until the upstream author clarifies the terms of use.
+
+2. **`vadimas22/resume-score-details` Warning:**
+   The dataset card confirms that evaluations and scorings were produced via GPT-4o:
+   > *"This dataset contains resume score details generated by GPT-4o..."*  
+   - OpenAI Terms of Service generally restrict using model outputs to train models that compete with OpenAI services.
+   - The labels represent **AI scoring predictions**, not human HR recruiter decisions. They cannot serve as gold-standard benchmark truth for recruiter alignment.
+
+---
+
+## 4. Policy Recommendations for Elevate X AI
+
+1. **Maintain Git Exclusion:** Keep `datasets/resume_builder/raw/` in `.gitignore` indefinitely.
+2. **Mandatory PII De-Identification:** Implement an automated sanitization step (e.g. using Microsoft Presidio or specialized regex cleaners) before generating any training embeddings or token-classification datasets.
+3. **Respect Model Provenance:** Never train candidate-ranking neural weights solely on GPT-4o generated labels without human validation.

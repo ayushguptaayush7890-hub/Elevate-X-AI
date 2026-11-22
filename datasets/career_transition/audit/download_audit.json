@@ -1,0 +1,212 @@
+{
+  "timestamp": "2026-11-22T00:21:15.804436",
+  "total_files": 29,
+  "verified_files": 29,
+  "failed_files": 0,
+  "missing_files": 0,
+  "details": [
+    {
+      "file": "occupations_en.csv",
+      "path": "datasets/career_transition/raw/esco/occupations_en.csv",
+      "size_bytes": 3047703,
+      "status": "VERIFIED_OK",
+      "sha256": "8034348d84b6d1dd24a5bcf9609186ecbba0a85457ee2eacd65bddec33a51b4a"
+    },
+    {
+      "file": "skills_en.csv",
+      "path": "datasets/career_transition/raw/esco/skills_en.csv",
+      "size_bytes": 9302000,
+      "status": "VERIFIED_OK",
+      "sha256": "d03b10efca94b4bcfa260a992cfde89c375f0fa12095d6662a663cfd2f9f2950"
+    },
+    {
+      "file": "occupationSkillRelations_en.csv",
+      "path": "datasets/career_transition/raw/esco/occupationSkillRelations_en.csv",
+      "size_bytes": 27986628,
+      "status": "VERIFIED_OK",
+      "sha256": "e1a46511f0ef4d505f106f1d41f528ef76d289f93e59d4d0cbaac38986102c44"
+    },
+    {
+      "file": "skillSkillRelations_en.csv",
+      "path": "datasets/career_transition/raw/esco/skillSkillRelations_en.csv",
+      "size_bytes": 1031275,
+      "status": "VERIFIED_OK",
+      "sha256": "64a5f8fb7b8dda4932ff06db4738ce1beed3906e45a49b14453349056c609439"
+    },
+    {
+      "file": "skillsHierarchy_en.csv",
+      "path": "datasets/career_transition/raw/esco/skillsHierarchy_en.csv",
+      "size_bytes": 381733,
+      "status": "VERIFIED_OK",
+      "sha256": "295133872c6be7b7560de943efa4a6aab833a1b15af4d60c03b050ab0a75edcb"
+    },
+    {
+      "file": "skillGroups_en.csv",
+      "path": "datasets/career_transition/raw/esco/skillGroups_en.csv",
+      "size_bytes": 340935,
+      "status": "VERIFIED_OK",
+      "sha256": "644b68a174299eb05336eec36e0716c4671a0c6bdd4ac268803ecd6533dc739d"
+    },
+    {
+      "file": "ISCOGroups_en.csv",
+      "path": "datasets/career_transition/raw/esco/ISCOGroups_en.csv",
+      "size_bytes": 966601,
+      "status": "VERIFIED_OK",
+      "sha256": "7a829bb6fddccbdb028d3ae69d822f2f1ba581522667f6185949c6d0788eaa1c"
+    },
+    {
+      "file": "digitalSkillsCollection_en.csv",
+      "path": "datasets/career_transition/raw/esco/digitalSkillsCollection_en.csv",
+      "size_bytes": 811101,
+      "status": "VERIFIED_OK",
+      "sha256": "9f2ee9179f0720826cbfc65627bd3642926ba4dfb3bf29250f22cb232c225b1e"
+    },
+    {
+      "file": "transversalSkillsCollection_en.csv",
+      "path": "datasets/career_transition/raw/esco/transversalSkillsCollection_en.csv",
+      "size_bytes": 57293,
+      "status": "VERIFIED_OK",
+      "sha256": "40bd1884f1c62b91ab86b6c87d7fab11b082c17b425975d0d178d1b5cb5e01ca"
+    },
+    {
+      "file": "Occupation Data.txt",
+      "path": "datasets/career_transition/raw/onet/Occupation Data.txt",
+      "size_bytes": 265794,
+      "status": "VERIFIED_OK",
+      "sha256": "63e6029d3d30ff5c7cf39b5304a733b77a409e01c65ae7095fe92f6d18d74a66"
+    },
+    {
+      "file": "Knowledge.txt",
+      "path": "datasets/career_transition/raw/onet/Knowledge.txt",
+      "size_bytes": 5710599,
+      "status": "VERIFIED_OK",
+      "sha256": "8a1ae01ed9c54de80a9049a635b43668c7f8b67cf7dbd2b349d795e6c6a7d624"
+    },
+    {
+      "file": "Abilities.txt",
+      "path": "datasets/career_transition/raw/onet/Abilities.txt",
+      "size_bytes": 8710678,
+      "status": "VERIFIED_OK",
+      "sha256": "c80469ecc7d303b821068628ddd937afab8d726b0bf632bee05aca7c5356fc61"
+    },
+    {
+      "file": "Work Activities.txt",
+      "path": "datasets/career_transition/raw/onet/Work Activities.txt",
+      "size_bytes": 8921964,
+      "status": "VERIFIED_OK",
+      "sha256": "7e308154c3d138b19f4b74956c6f5f20037abc2d441355ae13e1f6070a12ff7f"
+    },
+    {
+      "file": "Work Context.txt",
+      "path": "datasets/career_transition/raw/onet/Work Context.txt",
+      "size_bytes": 37760322,
+      "status": "VERIFIED_OK",
+      "sha256": "349a1c21dea7a7ebf77c94c1a5e4824ae0e4b13b2ca8cd9472d012fb63653127"
+    },
+    {
+      "file": "Job Zones.txt",
+      "path": "datasets/career_transition/raw/onet/Job Zones.txt",
+      "size_bytes": 27874,
+      "status": "VERIFIED_OK",
+      "sha256": "1112ff4c077817fe650b28c65bfe30cc1436b92f96e7922fc903f05da83bc216"
+    },
+    {
+      "file": "Tasks to DWAs.txt",
+      "path": "datasets/career_transition/raw/onet/Tasks to DWAs.txt",
+      "size_bytes": 1150747,
+      "status": "VERIFIED_OK",
+      "sha256": "8667a918008973103390072da720a09db02812faf93610df659f653750e2769d"
+    },
+    {
+      "file": "Task Statements.txt",
+      "path": "datasets/career_transition/raw/onet/Task Statements.txt",
+      "size_bytes": 2772538,
+      "status": "VERIFIED_OK",
+      "sha256": "aee1788c7ce2ebf19c1700bc4a1d7aa69a59965736d56a521945256df3f68d08"
+    },
+    {
+      "file": "Essential Skills.txt",
+      "path": "datasets/career_transition/raw/onet/Essential Skills.txt",
+      "size_bytes": 1567178,
+      "status": "VERIFIED_OK",
+      "sha256": "91ef60f7e43231136d08e8234f1624883a0ee7b951510d11851c693a2f8edea9"
+    },
+    {
+      "file": "Transferable Skills.txt",
+      "path": "datasets/career_transition/raw/onet/Transferable Skills.txt",
+      "size_bytes": 4178878,
+      "status": "VERIFIED_OK",
+      "sha256": "7bb190ea7e58192ebd024a6775684b1d3b0216f45194669f0bf5854b2fac6596"
+    },
+    {
+      "file": "Related Occupations.txt",
+      "path": "datasets/career_transition/raw/onet/Related Occupations.txt",
+      "size_bytes": 716310,
+      "status": "VERIFIED_OK",
+      "sha256": "af539f6f01a36e9514a0dd13cbe125df8cca1114c690505342837f338621906c"
+    },
+    {
+      "file": "Job Titles.txt",
+      "path": "datasets/career_transition/raw/onet/Job Titles.txt",
+      "size_bytes": 2397744,
+      "status": "VERIFIED_OK",
+      "sha256": "95e4b2ca0be4b37d0dcf79588c5c039500cd6ffbf1b0bb5e85b02cdb53c8b1b8"
+    },
+    {
+      "file": "Sample of Reported Titles.txt",
+      "path": "datasets/career_transition/raw/onet/Sample of Reported Titles.txt",
+      "size_bytes": 310850,
+      "status": "VERIFIED_OK",
+      "sha256": "f012e8d5add676958a09c017eb53724b90429b34a4a75fba158bfb76361db4ff"
+    },
+    {
+      "file": "Training and Experience.txt",
+      "path": "datasets/career_transition/raw/onet/Training and Experience.txt",
+      "size_bytes": 2604501,
+      "status": "VERIFIED_OK",
+      "sha256": "a1a0815dbaeff49165b42436448b3dc062282f83345c86a1c0e89c20865bab57"
+    },
+    {
+      "file": "National_Classification_of_Occupations_Vol_I-2015.pdf",
+      "path": "datasets/career_transition/raw/india_nco/National_Classification_of_Occupations_Vol_I-2015.pdf",
+      "size_bytes": 7115143,
+      "status": "VERIFIED_OK",
+      "sha256": "4543dede4ac9a8e6d7c5ea82914382c00e39755c778472e69f3186da4546d839"
+    },
+    {
+      "file": "National_Classification_of_Occupations_Vol_II-A-2015.pdf",
+      "path": "datasets/career_transition/raw/india_nco/National_Classification_of_Occupations_Vol_II-A-2015.pdf",
+      "size_bytes": 7024082,
+      "status": "VERIFIED_OK",
+      "sha256": "7e90fa42f4a55d35c3031a0d29ca998aa369040410b7dd555571313800173c51"
+    },
+    {
+      "file": "National_Classification_of_Occupations_Vol_II-B-2015.pdf",
+      "path": "datasets/career_transition/raw/india_nco/National_Classification_of_Occupations_Vol_II-B-2015.pdf",
+      "size_bytes": 6624287,
+      "status": "VERIFIED_OK",
+      "sha256": "d9147732f98c48c5353658f22580e495895e20f4682368035c6a7cfd252ae7f4"
+    },
+    {
+      "file": "recruitment_jds_english.parquet",
+      "path": "datasets/career_transition/raw/job_descriptions/recruitment_jds_english.parquet",
+      "size_bytes": 145859589,
+      "status": "VERIFIED_OK",
+      "sha256": "71dddaf0d9660f34ddf946953b67f54f1e7d60e22dcf9a4b8139b6378b18aab9"
+    },
+    {
+      "file": "shresth_jobs.csv",
+      "path": "datasets/career_transition/raw/job_descriptions/shresth_jobs.csv",
+      "size_bytes": 32930476,
+      "status": "VERIFIED_OK",
+      "sha256": "301a382ebec72d574817cc3d4b9ee34cf08e7f8ecdfa3d373142767fe4f9f789"
+    },
+    {
+      "file": "verified_resource_catalog.json",
+      "path": "datasets/career_transition/raw/learning_resources/verified_resource_catalog.json",
+      "size_bytes": 9756,
+      "status": "VERIFIED_OK",
+      "sha256": "7c0cbd7f588f0c362aa2a21e1287ebdeae618c0caac7512abb6d6cfced3d8764"
+    }
+  ]
+}

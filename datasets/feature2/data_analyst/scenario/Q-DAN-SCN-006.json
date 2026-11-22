@@ -1,0 +1,61 @@
+{
+  "question_id": "Q-DAN-SCN-006",
+  "role_id": "data_analyst",
+  "skill_id": "DAN-SKL-01",
+  "skill_name": "Advanced SQL Querying & Relational Joins",
+  "subtopic": "Window Functions (ROW_NUMBER, RANK, DENSE_RANK, NTILE)",
+  "assessment_type": "scenario",
+  "difficulty": "medium",
+  "question_text": "### Production Incident Scenario:\nProduction Incident #06: An executive revenue dashboard reported an overnight 200% discrepancy in Customer Lifetime Value (LTV) and Month-over-Month retention in Advanced SQL Querying & Relational Joins. Audit logs show data pipeline inaccuracies stemming from 'Window Functions (ROW_NUMBER, RANK, DENSE_RANK, NTILE)'.\n\n### Engineering Challenge:\nWhat is the correct analytical SQL and data modeling approach to ensure accurate metric aggregation for 'Window Functions (ROW_NUMBER, RANK, DENSE_RANK, NTILE)'?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Enforce distinct user-level keys in dimensional joins, isolate fan-out via CTE pre-aggregations, and utilize window framing (ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)."
+    },
+    {
+      "id": "B",
+      "text": "Execute a CROSS JOIN between customer tables and raw event logs without deduplication."
+    },
+    {
+      "id": "C",
+      "text": "Hardcode arbitrary multiplier factors into the reporting query to offset the calculated inflation."
+    },
+    {
+      "id": "D",
+      "text": "Suppress all rows with duplicate dates by applying SELECT DISTINCT * across the entire warehouse."
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "Metric distortion in Advanced SQL Querying & Relational Joins typically arises from accidental Cartesian joins or improper window framing that multi-counts transactions when dimensional tables have multiple active rows. Pre-aggregating at the user/date grain before joining eliminates fan-out.",
+  "reference_solution": "Recommended Remediation: Option A. Rationale: Metric distortion in Advanced SQL Querying & Relational Joins typically arises from accidental Cartesian joins or improper window framing that multi-counts transactions when dimensional tables have multiple active rows. Pre-aggregating at the user/date grain before joining eliminates fan-out.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Architecture & Operational Assessment",
+        "weight": 0.6,
+        "description": "Evaluates risk, system constraints, and root cause accurately."
+      },
+      {
+        "name": "Mitigation Strategy",
+        "weight": 0.4,
+        "description": "Selects the optimal zero-downtime or resilient recovery path."
+      }
+    ],
+    "max_score": 6.0
+  },
+  "estimated_time": 12,
+  "marks": 6,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/scenarios",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

@@ -9,7 +9,7 @@ from app.models.user import User, PasswordResetToken, RevokedToken
 from app.models.profile import UserProfile, Education, WorkExperience, CareerPreference
 from app.models.skill import Skill, UserSkill, SkillEvidence
 from app.models.occupation import Occupation, OccupationSkill
-from app.models.job import Employer, JobListing, JobRequirement, JobSkill
+from app.models.job import Employer, JobListing, JobRequirement, JobSkill, AggregatorSyncLog
 from app.models.assessment import (
     Assessment,
     AssessmentQuestion,
@@ -24,6 +24,7 @@ from app.models.career_transition import (
     CareerTransition,
     TransferableSkillMapping,
     TransitionRequirement,
+    UserCareerTransitionGoal,
 )
 from app.models.resume import ResumeDocument, ResumeVersion, ResumeSection
 from app.models.interview import (
@@ -34,6 +35,7 @@ from app.models.interview import (
 )
 from app.models.application import JobApplication, SavedJob, ApplicationNote
 from app.models.learning_resource import ResourceProvider, LearningResource, ResourceSkill
+from app.models.consultation import Consultation, ConsultationMessage
 
 __all__ = [
     "Base",
@@ -54,6 +56,7 @@ __all__ = [
     "JobListing",
     "JobRequirement",
     "JobSkill",
+    "AggregatorSyncLog",
     "Assessment",
     "AssessmentQuestion",
     "AssessmentOption",
@@ -68,6 +71,7 @@ __all__ = [
     "CareerTransition",
     "TransferableSkillMapping",
     "TransitionRequirement",
+    "UserCareerTransitionGoal",
     "ResumeDocument",
     "ResumeVersion",
     "ResumeSection",
@@ -81,4 +85,6 @@ __all__ = [
     "ResourceProvider",
     "LearningResource",
     "ResourceSkill",
+    "Consultation",
+    "ConsultationMessage",
 ]

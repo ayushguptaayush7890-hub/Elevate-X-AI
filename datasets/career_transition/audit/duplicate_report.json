@@ -1,0 +1,558 @@
+{
+  "total_occupations_analyzed": 5805,
+  "total_skills_analyzed": 14011,
+  "exact_intra_taxonomy_occupation_duplicates": 10,
+  "cross_taxonomy_occupation_equivalences": 107,
+  "duplicate_skill_names_count": 23,
+  "sample_cross_taxonomy_equivalences": [
+    {
+      "normalized_title": "physiotherapist",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2264.2",
+          "title": "physiotherapist",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2264"
+        },
+        {
+          "canonical_id": "NCO:2264.0100",
+          "title": "Physiotherapist",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "biomedical engineer",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2149.5.1",
+          "title": "biomedical engineer",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2149"
+        },
+        {
+          "canonical_id": "NCO:2143.0200",
+          "title": "Bio-Medical Engineer",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "primary school teacher",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2341.1",
+          "title": "primary school teacher",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2341"
+        },
+        {
+          "canonical_id": "NCO:2341.0400",
+          "title": "Primary School Teacher",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "plumbing supervisor",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:3123.1.17",
+          "title": "plumbing supervisor",
+          "source": "ESCO v1.2.1",
+          "isco_group": "3123"
+        },
+        {
+          "canonical_id": "NCO:3123.0302",
+          "title": "Plumbing Supervisor",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "3"
+        }
+      ]
+    },
+    {
+      "normalized_title": "dancer",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2653.2",
+          "title": "dancer",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2653"
+        },
+        {
+          "canonical_id": "NCO:2653.0300",
+          "title": "Dancer",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "shop assistant",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:5223.6",
+          "title": "shop assistant",
+          "source": "ESCO v1.2.1",
+          "isco_group": "5223"
+        },
+        {
+          "canonical_id": "NCO:5223.0100",
+          "title": "Shop Assistant",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "5"
+        }
+      ]
+    },
+    {
+      "normalized_title": "historian",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2633.1",
+          "title": "historian",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2633"
+        },
+        {
+          "canonical_id": "NCO:2633.0100",
+          "title": "Historian",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "textile designer",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2163.1.8",
+          "title": "textile designer",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2163"
+        },
+        {
+          "canonical_id": "NCO:2163.0600",
+          "title": "Textile Designer",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "pharmacologist",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2131.7",
+          "title": "pharmacologist",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2131"
+        },
+        {
+          "canonical_id": "NCO:2212.1500",
+          "title": "Pharmacologist",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "product development manager",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:1223.2.1",
+          "title": "product development manager",
+          "source": "ESCO v1.2.1",
+          "isco_group": "1223"
+        },
+        {
+          "canonical_id": "NCO:3122.6502",
+          "title": "Product Development Manager",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "3"
+        }
+      ]
+    },
+    {
+      "normalized_title": "choreographer",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2653.1",
+          "title": "choreographer",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2653"
+        },
+        {
+          "canonical_id": "NCO:2653.0100",
+          "title": "Choreographer",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "translator",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2643.6",
+          "title": "translator",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2643"
+        },
+        {
+          "canonical_id": "NCO:2643.0200",
+          "title": "Translator",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "meteorologist",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2112.1",
+          "title": "meteorologist",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2112"
+        },
+        {
+          "canonical_id": "NCO:2112.0100",
+          "title": "Meteorologist",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "disc jockey",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2652.6",
+          "title": "disc jockey",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2652"
+        },
+        {
+          "canonical_id": "NCO:2656.0200",
+          "title": "Disc Jockey",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "diplomat",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:1112.3",
+          "title": "diplomat",
+          "source": "ESCO v1.2.1",
+          "isco_group": "1112"
+        },
+        {
+          "canonical_id": "NCO:1112.0200",
+          "title": "Diplomat",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "1"
+        }
+      ]
+    },
+    {
+      "normalized_title": "archaeologist",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2632.2",
+          "title": "archaeologist",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2632"
+        },
+        {
+          "canonical_id": "NCO:2632.1100",
+          "title": "Archaeologist",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "interpreter",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2643.2",
+          "title": "interpreter",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2643"
+        },
+        {
+          "canonical_id": "NCO:2643.0300",
+          "title": "Interpreter",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "bookmaker",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:4212.2",
+          "title": "bookmaker",
+          "source": "ESCO v1.2.1",
+          "isco_group": "4212"
+        },
+        {
+          "canonical_id": "NCO:4212.0200",
+          "title": "Bookmaker",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "4"
+        }
+      ]
+    },
+    {
+      "normalized_title": "puppeteer",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2659.2.3",
+          "title": "puppeteer",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2659"
+        },
+        {
+          "canonical_id": "NCO:2659.1200",
+          "title": "Puppeteer",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "dresser",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:3435.7",
+          "title": "dresser",
+          "source": "ESCO v1.2.1",
+          "isco_group": "3435"
+        },
+        {
+          "canonical_id": "NCO:2240.0400",
+          "title": "Dresser",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    }
+  ],
+  "sample_intra_taxonomy_duplicates": [
+    {
+      "normalized_title": "early years teaching assistant",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:5312.1",
+          "title": "early years teaching assistant",
+          "source": "ESCO v1.2.1",
+          "isco_group": "5312"
+        },
+        {
+          "canonical_id": "ESCO:5312.1",
+          "title": "early years teaching assistant",
+          "source": "ESCO v1.2.1",
+          "isco_group": "5312"
+        }
+      ]
+    },
+    {
+      "normalized_title": "legal policy officer",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:2422.12.11",
+          "title": "legal policy officer",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2422"
+        },
+        {
+          "canonical_id": "ESCO:2422.12.11",
+          "title": "legal policy officer",
+          "source": "ESCO v1.2.1",
+          "isco_group": "2422"
+        }
+      ]
+    },
+    {
+      "normalized_title": "mining construction and civil engineering machinery distribution manager",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:1324.3.1.6.23",
+          "title": "mining, construction and civil engineering machinery distribution manager",
+          "source": "ESCO v1.2.1",
+          "isco_group": "1324"
+        },
+        {
+          "canonical_id": "ESCO:1324.3.1.6.23",
+          "title": "mining, construction and civil engineering machinery distribution manager",
+          "source": "ESCO v1.2.1",
+          "isco_group": "1324"
+        }
+      ]
+    },
+    {
+      "normalized_title": "food service worker",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "ESCO:5246.1",
+          "title": "food service worker",
+          "source": "ESCO v1.2.1",
+          "isco_group": "5246"
+        },
+        {
+          "canonical_id": "ESCO:5246.1",
+          "title": "food service worker",
+          "source": "ESCO v1.2.1",
+          "isco_group": "5246"
+        }
+      ]
+    },
+    {
+      "normalized_title": "modeller",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "NCO:2144.0802",
+          "title": "Modeller",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        },
+        {
+          "canonical_id": "NCO:2166.0202",
+          "title": "Modeller",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "chemist pharmaceuticals",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "NCO:2262.0100",
+          "title": "Chemist, Pharmaceuticals",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        },
+        {
+          "canonical_id": "NCO:2262.0101",
+          "title": "Chemist, Pharmaceuticals",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "university and college teacher",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "NCO:2310.0400",
+          "title": "University and College Teacher,",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        },
+        {
+          "canonical_id": "NCO:2310.0500",
+          "title": "University and College Teacher,",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "senior secondary and secondary school teacher",
+      "count": 3,
+      "records": [
+        {
+          "canonical_id": "NCO:2330.0100",
+          "title": "Senior Secondary and Secondary School Teacher,",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        },
+        {
+          "canonical_id": "NCO:2330.0200",
+          "title": "Senior Secondary and Secondary School Teacher,",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        },
+        {
+          "canonical_id": "NCO:2330.0300",
+          "title": "Senior Secondary and Secondary School Teacher,",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "2"
+        }
+      ]
+    },
+    {
+      "normalized_title": "sales supervisor wholesale trade",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "NCO:3322.0500",
+          "title": "Sales Supervisor, Wholesale Trade",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "3"
+        },
+        {
+          "canonical_id": "NCO:5222.0100",
+          "title": "Sales Supervisor, Wholesale Trade",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "5"
+        }
+      ]
+    },
+    {
+      "normalized_title": "plumber maintenance and servicing",
+      "count": 2,
+      "records": [
+        {
+          "canonical_id": "NCO:7126.0106",
+          "title": "Plumber, Maintenance and Servicing",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "7"
+        },
+        {
+          "canonical_id": "NCO:7126.0107",
+          "title": "Plumber, Maintenance and Servicing",
+          "source": "DGE Ministry of Labour & Employment India",
+          "isco_group": "7"
+        }
+      ]
+    }
+  ],
+  "deduplication_policy": "Preserve distinct taxonomy primary keys while linking via unified crosswalk to maintain exact government taxonomy fidelity."
+}

@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-FED-MCQ-026",
+  "role_id": "frontend_developer",
+  "skill_id": "FED-SKL-01",
+  "skill_name": "Core JavaScript/TypeScript & Browser Runtime",
+  "subtopic": "Event Loop, Microtasks (Promises) and Macrotasks (Timers)",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "[Core JavaScript/TypeScript & Browser Runtime - Q26] In the standard browser event loop, in what order are execution queues processed after the current call stack empties?",
+  "options": [
+    {
+      "id": "A",
+      "text": "All pending microtasks (Promise reactions, queueMicrotask) are drained completely before the next macrotask (setTimeout, setInterval, I/O) is dequeued"
+    },
+    {
+      "id": "B",
+      "text": "One microtask executes, followed by one macrotask in alternating round-robin order"
+    },
+    {
+      "id": "C",
+      "text": "Macrotasks have strict priority over microtasks"
+    },
+    {
+      "id": "D",
+      "text": "Rendering updates occur between every individual microtask"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "The microtask queue drains completely until empty before the event loop advances to the next task or performs animation frame rendering callbacks.",
+  "reference_solution": "Correct Choice: A. Rationale: The microtask queue drains completely until empty before the event loop advances to the next task or performs animation frame rendering callbacks.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

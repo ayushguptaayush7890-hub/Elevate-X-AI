@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-005",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-01",
+  "skill_name": "Data Structures & Algorithms",
+  "subtopic": "Hash Maps, Heaps and Disjoint-Set Unions (DSU)",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "What is the nearly constant amortized time complexity per operation in a Disjoint Set Union (DSU) data structure utilizing both Path Compression and Union by Rank/Size?",
+  "options": [
+    {
+      "id": "A",
+      "text": "O(log N)"
+    },
+    {
+      "id": "B",
+      "text": "O(log* N)"
+    },
+    {
+      "id": "C",
+      "text": "O(alpha(N)), where alpha is the Inverse Ackermann function"
+    },
+    {
+      "id": "D",
+      "text": "O(1) strict worst-case"
+    }
+  ],
+  "correct_answer": "C",
+  "answer_explanation": "Combining path compression on `find` with union by rank/size bounds the amortized complexity per operation to O(alpha(N)), where alpha is the inverse Ackermann function, which is <= 4 for all practical universe sizes.",
+  "reference_solution": "Correct Choice: C. Rationale: Combining path compression on `find` with union by rank/size bounds the amortized complexity per operation to O(alpha(N)), where alpha is the inverse Ackermann function, which is <= 4 for all practical universe sizes.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

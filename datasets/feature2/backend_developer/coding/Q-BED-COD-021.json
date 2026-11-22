@@ -1,0 +1,63 @@
+{
+  "question_id": "Q-BED-COD-021",
+  "role_id": "backend_developer",
+  "skill_id": "BED-SKL-01",
+  "skill_name": "Server-Side Frameworks & Asynchronous Programming",
+  "subtopic": "Backend Service Implementation",
+  "assessment_type": "coding",
+  "difficulty": "medium",
+  "question_text": "Implement an enterprise backend service component for **Challenge #21: Server-Side Frameworks & Asynchronous Programming**.\n\n### Problem Specification:\n- Write an asynchronous or transactional backend routine (e.g., token bucket limiter, connection retry backoff, queue consumer, or idempotent deduplicator).\n- Guarantee thread-safety and handle transient timeouts.\n- Avoid resource leaks and ensure clean connection lifecycle.",
+  "options": null,
+  "correct_answer": "import time\n\nclass BackendProcessor_21:\n    def __init__(self):\n        self._processed = {}\n    \n    def execute_idempotent(self, key: str, action_fn):\n        if key in self._processed:\n            return self._processed[key]\n        res = action_fn()\n        self._processed[key] = res\n        return res",
+  "answer_explanation": "Demonstrates atomic state check and idempotent execution guarantee in Server-Side Frameworks & Asynchronous Programming.",
+  "reference_solution": "import time\n\nclass BackendProcessor_21:\n    def __init__(self):\n        self._processed = {}\n    \n    def execute_idempotent(self, key: str, action_fn):\n        if key in self._processed:\n            return self._processed[key]\n        res = action_fn()\n        self._processed[key] = res\n        return res",
+  "coding_language": "python",
+  "sample_input": "request_payload = {'txn_id': 'TXN-21', 'amount': 100}",
+  "expected_output": "{'status': 'SUCCESS', 'idempotency_matched': False}",
+  "visible_test_cases": [
+    {
+      "input": "payload_21_standard",
+      "output": "processed_cleanly"
+    },
+    {
+      "input": "payload_21_duplicate",
+      "output": "idempotent_cached_result"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "payload_21_concurrent_clash",
+      "output": "isolated_lock_handled"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Functional Correctness",
+        "weight": 0.5,
+        "description": "Passes all visible and hidden unit test cases without errors."
+      },
+      {
+        "name": "Time & Space Complexity",
+        "weight": 0.3,
+        "description": "Meets specified asymptotic computational boundaries."
+      },
+      {
+        "name": "Code Structure & Cleanliness",
+        "weight": 0.2,
+        "description": "Idiomatic naming, handling edge boundaries and null guards."
+      }
+    ],
+    "max_score": 10.0
+  },
+  "estimated_time": 25,
+  "marks": 10,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/coding",
+  "license": "Apache-2.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

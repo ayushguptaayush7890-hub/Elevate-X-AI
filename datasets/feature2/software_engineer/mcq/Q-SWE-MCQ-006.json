@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-006",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-01",
+  "skill_name": "Data Structures & Algorithms",
+  "subtopic": "Binary Search and Monotonic Search Spaces",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "When searching for a target in a sorted array that has been rotated at an unknown pivot with distinct elements, what condition determines whether the left half [left...mid] is normally ordered?",
+  "options": [
+    {
+      "id": "A",
+      "text": "nums[left] < nums[right]"
+    },
+    {
+      "id": "B",
+      "text": "nums[left] <= nums[mid]"
+    },
+    {
+      "id": "C",
+      "text": "nums[mid] < nums[right]"
+    },
+    {
+      "id": "D",
+      "text": "nums[mid] - nums[left] == mid - left"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Because all elements are distinct and the array was sorted prior to rotation, if `nums[left] <= nums[mid]`, the inflection pivot cannot lie in the range `[left, mid]`. Thus the left half is guaranteed monotonically increasing.",
+  "reference_solution": "Correct Choice: B. Rationale: Because all elements are distinct and the array was sorted prior to rotation, if `nums[left] <= nums[mid]`, the inflection pivot cannot lie in the range `[left, mid]`. Thus the left half is guaranteed monotonically increasing.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

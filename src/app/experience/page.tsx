@@ -19,9 +19,9 @@ import {
   RefreshCw,
   Info,
   Check,
-  HelpCircle,
   Tag
 } from "lucide-react";
+import { createSkillId, normalizeSkillKey } from "@/utils/skill-normalization";
 
 export default function ExperienceRecognitionPage() {
   const { user, updateUser } = useAuth();
@@ -34,13 +34,12 @@ export default function ExperienceRecognitionPage() {
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [analysisError, setAnalysisError] = useState<string | null>(null);
   
-  // Live AI extraction results (Starts empty - NO stale tailor mock data)
+  // Live AI extraction results (Starts empty - strictly neural predictions only)
   const [identifiedOccupation, setIdentifiedOccupation] = useState<string | null>(null);
   const [occupationConfidence, setOccupationConfidence] = useState<number | null>(null);
   const [occupationId, setOccupationId] = useState<string | null>(null);
   const [skillsList, setSkillsList] = useState<RecognizedSkill[]>([]);
   const [extractionMetadata, setExtractionMetadata] = useState<SkillExtractionMetadata | null>(null);
-  const [isDemoMode, setIsDemoMode] = useState<boolean>(false);
   const [hasRunAnalysis, setHasRunAnalysis] = useState<boolean>(false);
 
   const [activeTab, setActiveTab] = useState<"text" | "voice">("text");
@@ -159,7 +158,6 @@ export default function ExperienceRecognitionPage() {
     setOccupationId(null);
     setExtractionMetadata(null);
     setAnalysisError(null);
-    setIsDemoMode(false);
     setHasRunAnalysis(true);
 
     // 2. Set loading state and increment request sequence ID
@@ -180,25 +178,35 @@ export default function ExperienceRecognitionPage() {
         throw new Error("Invalid response format received from extraction service.");
       }
 
-      // 4. Update occupation state with genuine model prediction
-      setIdentifiedOccupation(resData.detected_occupation.occupation_title);
-      setOccupationConfidence(Math.round(resData.detected_occupation.confidence * 100));
-      setOccupationId(resData.detected_occupation.occupation_id);
+      // 4. Update occupation state ONLY if classified with confidence > 0
+      const occ = resData.detected_occupation;
+      if (occ.occupation_id && occ.occupation_id !== "UNCLASSIFIED" && (occ.confidence || 0) > 0) {
+        setIdentifiedOccupation(occ.occupation_title);
+        setOccupationConfidence(Math.round(occ.confidence * 100));
+        setOccupationId(occ.occupation_id);
+      } else {
+        setIdentifiedOccupation(null);
+        setOccupationConfidence(null);
+        setOccupationId(null);
+      }
       setExtractionMetadata(resData.metadata);
 
-      // 5. Map verbatim extracted skill spans (preserving Unicode offset slicing)
+      // 5. Map verbatim extracted skill spans (Model-predicted only)
       const mappedSkills: RecognizedSkill[] = (resData.extracted_skills || []).map((sp) => {
-        const displayName = sp.normalized_skill || sp.canonical_skill || sp.extracted_skill;
+        const displayName = sp.extracted_skill;
         const evidenceStr = sp.evidence_text || sp.extracted_skill;
-        const tokenConfPercent = Math.round((sp.category_confidence || 0.85) * 100);
+        const modelConfPercent = Math.round((sp.category_confidence || 0.90) * 100);
+        const stableId = sp.canonical_skill_id
+          ? `skill-canon-${sp.canonical_skill_id}`
+          : `skill-span-${sp.span_id}-${createSkillId(displayName)}`;
 
         return {
-          id: sp.span_id,
+          id: stableId,
           name: displayName,
-          normalizedSkill: sp.normalized_skill,
+          normalizedSkill: sp.normalized_skill || sp.extracted_skill,
           evidenceText: evidenceStr,
           category: mapCategoryToRecognizedType(sp.skill_category),
-          confidence: Math.max(15, Math.min(99, tokenConfPercent)),
+          confidence: Math.max(1, Math.min(100, modelConfPercent)),
           status: "ai_inferred",
           proficiency: "Not assessed",
           evidence: `Evidence: "${evidenceStr}" [chars ${sp.start_offset}:${sp.end_offset}]`,
@@ -215,70 +223,33 @@ export default function ExperienceRecognitionPage() {
       });
 
       setSkillsList(mappedSkills);
-      toast.success(`AI Analysis Complete! Detected: ${resData.detected_occupation.occupation_title}`);
+      if (mappedSkills.length > 0) {
+        toast.success(`Model Inference Complete! ${mappedSkills.length} skills identified.`);
+      } else {
+        toast.info("Model Inference Complete: No skill spans detected.");
+      }
     } catch (err: any) {
       if (currentSeq !== requestSeqRef.current) return;
-      const errMsg = err?.message || "Connection to Feature 1 AI backend failed.";
-      setAnalysisError(errMsg);
-      toast.error(`Extraction Error: ${errMsg}`);
+      let rawMsg = err?.message || "Connection to Feature 1 AI backend failed.";
+      let friendlyMsg = rawMsg;
+      if (rawMsg.includes("Failed to fetch") || rawMsg.includes("NetworkError") || rawMsg.includes("ECONNREFUSED") || rawMsg.includes("Load failed")) {
+        friendlyMsg = "Unable to connect to the extraction service. Please check that the backend is running.";
+      } else if (rawMsg.includes("401") || rawMsg.includes("Unauthorized")) {
+        friendlyMsg = "Your session has expired. Please sign in again.";
+      } else if (rawMsg.includes("422") || rawMsg.includes("Unprocessable")) {
+        friendlyMsg = "Input narrative cannot be blank. Please enter a valid description of your work experience.";
+      } else if (rawMsg.includes("timeout") || rawMsg.includes("aborted")) {
+        friendlyMsg = "Analysis is taking longer than expected. Please retry.";
+      } else if (rawMsg.includes("500") || rawMsg.includes("InternalServerError")) {
+        friendlyMsg = "The extraction service encountered an internal processing error. Please retry your request.";
+      }
+      setAnalysisError(friendlyMsg);
+      toast.error(`Extraction Error: ${friendlyMsg}`);
     } finally {
       if (currentSeq === requestSeqRef.current) {
         setIsAnalyzing(false);
       }
     }
-  };
-
-  const handleLoadDemoData = () => {
-    setIsDemoMode(true);
-    setHasRunAnalysis(true);
-    setAnalysisError(null);
-    setIdentifiedOccupation("Master Tailor & Garment Artisan");
-    setOccupationConfidence(94);
-    setOccupationId("TRD-01");
-    setExtractionMetadata({
-      model_version: "demo_reference_catalogue_v1",
-      inference_device: "Demo Reference Cache",
-      latency_ms: 0.1,
-      training_safety_gate_status: "LOCKED (Reference Sample)",
-      model_provenance: "synthetic_mock_development",
-      benchmark_type: "REFERENCE DEMO"
-    });
-
-    const demoSkills: RecognizedSkill[] = [
-      {
-        id: "demo-sk-1",
-        name: "Industrial Sewing Machine Operation",
-        category: "Tools & Machinery",
-        confidence: 96,
-        status: "ai_inferred",
-        proficiency: "Advanced",
-        evidence: 'Sample reference: "Operating single-needle lockstitch and overlock sewing machines."',
-        isDemoData: true
-      },
-      {
-        id: "demo-sk-2",
-        name: "Garment Pattern Drafting & Grading",
-        category: "Technical",
-        confidence: 91,
-        status: "ai_inferred",
-        proficiency: "Advanced",
-        evidence: 'Sample reference: "Custom pattern drafting for blazers and bespoke fitting."',
-        isDemoData: true
-      },
-      {
-        id: "demo-sk-3",
-        name: "Apparel Quality Inspection & Finishing",
-        category: "Technical",
-        confidence: 86,
-        status: "ai_inferred",
-        proficiency: "Intermediate",
-        evidence: 'Sample reference: "Checking seam puckering and hem dimensions before packaging."',
-        isDemoData: true
-      }
-    ];
-
-    setSkillsList(demoSkills);
-    toast.info("Loaded sample demo dataset (clearly marked as DEMO DATA).");
   };
 
   const handleRemoveSkill = (id: string) => {
@@ -288,13 +259,13 @@ export default function ExperienceRecognitionPage() {
   };
 
   const handleSaveToMasterProfile = () => {
-    if (skillsList.length === 0) {
-      toast.error("No extracted skills to save. Please run analysis first.");
+    if (skillsList.length === 0 || analysisError) {
+      toast.error("No verified extracted skills to save. Please run analysis first.");
       return;
     }
     const combined = [
       ...skillsList,
-      ...user.skills.filter((s) => !skillsList.some((n) => n.name === s.name))
+      ...user.skills.filter((s) => !skillsList.some((n) => normalizeSkillKey(n.name) === normalizeSkillKey(s.name)))
     ];
     updateUser({ skills: combined });
     toast.success(`${skillsList.length} competencies successfully synchronized with your master profile!`);
@@ -350,14 +321,6 @@ export default function ExperienceRecognitionPage() {
                   Voice Recognition
                 </button>
               </div>
-
-              <button
-                onClick={handleLoadDemoData}
-                className="text-[11px] text-[#687187] hover:text-[#17233F] underline flex items-center gap-1"
-                title="Preview sample mock dataset"
-              >
-                <HelpCircle className="w-3 h-3" /> Preview Demo Data
-              </button>
             </div>
 
             {/* Input Box */}
@@ -457,11 +420,6 @@ export default function ExperienceRecognitionPage() {
               <div>
                 <div className="flex items-center gap-1.5">
                   <h3 className="text-sm font-black text-[#17233F]">Extracted Competencies</h3>
-                  {isDemoMode && (
-                    <span className="text-[9px] font-black uppercase tracking-wider bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded border border-amber-300">
-                      DEMO DATA
-                    </span>
-                  )}
                 </div>
                 {identifiedOccupation ? (
                   <p className="text-[11px] text-[#D6A84B] font-extrabold flex items-center gap-1 mt-0.5">
@@ -475,18 +433,24 @@ export default function ExperienceRecognitionPage() {
                   </p>
                 ) : (
                   <p className="text-[10px] text-[#8E97AB] italic mt-0.5">
-                    {isAnalyzing ? "Classifying trade domain..." : "Awaiting input analysis"}
+                    {isAnalyzing ? "Processing neural token inference..." : "Model Extraction Mode"}
                   </p>
                 )}
               </div>
               
-              <span className={`text-[10px] font-black px-2 py-0.5 rounded-full ${
-                skillsList.length > 0 
-                  ? "text-[#27856B] bg-[#27856B]/15" 
-                  : "text-[#8E97AB] bg-gray-100"
-              }`}>
-                {skillsList.length} Extracted
-              </span>
+              {analysisError ? (
+                <span className="text-[10px] font-black px-2 py-0.5 rounded-full text-rose-700 bg-rose-100">
+                  Extraction Error
+                </span>
+              ) : (
+                <span className={`text-[10px] font-black px-2 py-0.5 rounded-full ${
+                  skillsList.length > 0 
+                    ? "text-[#27856B] bg-[#27856B]/15" 
+                    : "text-[#8E97AB] bg-gray-100"
+                }`}>
+                  {skillsList.length} Extracted
+                </span>
+              )}
             </div>
 
             {/* Content Area: Loading, Error, Empty, or Skills List */}
@@ -494,9 +458,9 @@ export default function ExperienceRecognitionPage() {
               <div className="py-16 text-center space-y-3">
                 <RefreshCw className="w-8 h-8 text-[#7355D9] animate-spin mx-auto" />
                 <div>
-                  <h4 className="text-xs font-black text-[#17233F]">Extracting Trade Competencies</h4>
+                  <h4 className="text-xs font-black text-[#17233F]">Running Neural Token Classification</h4>
                   <p className="text-[11px] text-[#687187] mt-1 max-w-xs mx-auto">
-                    Running XLM-RoBERTa token classification and BIO sequence decoding on Apple Silicon MPS...
+                    Executing fine-tuned XLM-RoBERTa token classification and BIO sequence decoding on Apple Silicon MPS...
                   </p>
                 </div>
               </div>
@@ -524,9 +488,9 @@ export default function ExperienceRecognitionPage() {
                   <Sparkles className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-black text-[#17233F]">Ready to Recognize Your Skills</h4>
+                  <h4 className="text-xs font-black text-[#17233F]">Ready to Extract Skills</h4>
                   <p className="text-[11px] text-[#687187] mt-1 leading-relaxed">
-                    Click <strong className="text-[#17233F]">Analyze Experience</strong> to run our live multilingual neural model and extract verified skill spans.
+                    Click <strong className="text-[#17233F]">Analyze Experience</strong> to run our fine-tuned XLM-RoBERTa neural model and extract verified skill spans.
                   </p>
                 </div>
                 <button
@@ -539,9 +503,9 @@ export default function ExperienceRecognitionPage() {
             ) : skillsList.length === 0 ? (
               <div className="py-12 text-center space-y-2 px-4">
                 <Info className="w-8 h-8 text-[#8E97AB] mx-auto" />
-                <h4 className="text-xs font-black text-[#17233F]">No Vocational Skills Detected</h4>
+                <h4 className="text-xs font-black text-[#17233F]">No Skills Detected by Model</h4>
                 <p className="text-[11px] text-[#687187] leading-relaxed max-w-xs mx-auto">
-                  Our model could not isolate specific tool, equipment, or process terms in this description. Try elaborating on tools, machinery, or tasks you perform.
+                  Our trained machine learning model did not predict any skill spans for this input text.
                 </p>
               </div>
             ) : (
@@ -549,11 +513,7 @@ export default function ExperienceRecognitionPage() {
                 {skillsList.map((skill) => (
                   <div
                     key={skill.id}
-                    className={`p-3.5 rounded-2xl bg-gradient-to-br from-[#FFFDF8] via-[#FBF4E7] to-white border ${
-                      skill.isDemoData
-                        ? "border-amber-300"
-                        : "border-[#D6A84B]/50 hover:border-[#D6A84B]"
-                    } transition-all space-y-2 shadow-xs`}
+                    className="p-3.5 rounded-2xl bg-gradient-to-br from-[#FFFDF8] via-[#FBF4E7] to-white border border-[#D6A84B]/50 hover:border-[#D6A84B] transition-all space-y-2 shadow-xs"
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-1.5">
@@ -563,11 +523,6 @@ export default function ExperienceRecognitionPage() {
                         {skill.humanReviewRequired && (
                           <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-300">
                             Human Review
-                          </span>
-                        )}
-                        {skill.isDemoData && (
-                          <span className="text-[9px] font-black uppercase tracking-wider bg-amber-200 text-amber-900 px-1 py-0.5 rounded">
-                            DEMO
                           </span>
                         )}
                       </div>

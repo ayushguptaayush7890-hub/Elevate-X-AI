@@ -1,0 +1,63 @@
+{
+  "question_id": "Q-AIM-COD-036",
+  "role_id": "ai_ml_engineer",
+  "skill_id": "AIM-SKL-01",
+  "skill_name": "Machine Learning Foundations & Regularization",
+  "subtopic": "Machine Learning Algorithm Implementation",
+  "assessment_type": "coding",
+  "difficulty": "hard",
+  "question_text": "Implement an optimized machine learning algorithm routine for **Challenge #36: Machine Learning Foundations & Regularization**.\n\n### Requirements:\n- Write an efficient NumPy / PyTorch algorithmic module.\n- Satisfy numerical stability (e.g., log-sum-exp trick, epsilon guards against division by zero).\n- Vectorize matrix computations without Python nested loops.\n- Handle batch dimension tensor broadcasting.",
+  "options": null,
+  "correct_answer": "import numpy as np\n\ndef compute_ml_operation_36(x: np.ndarray, weights: np.ndarray, eps: float = 1e-8) -> np.ndarray:\n    # Numerically stable vectorized forward computation for Machine Learning Foundations & Regularization\n    logits = np.dot(x, weights)\n    max_logits = np.max(logits, axis=-1, keepdims=True)\n    exp_logits = np.exp(logits - max_logits)\n    probs = exp_logits / (np.sum(exp_logits, axis=-1, keepdims=True) + eps)\n    return probs",
+  "answer_explanation": "Demonstrates numerically stable vectorized computation, subtract-max softmax normalization, and zero-NaN safety under Machine Learning Foundations & Regularization.",
+  "reference_solution": "import numpy as np\n\ndef compute_ml_operation_36(x: np.ndarray, weights: np.ndarray, eps: float = 1e-8) -> np.ndarray:\n    # Numerically stable vectorized forward computation for Machine Learning Foundations & Regularization\n    logits = np.dot(x, weights)\n    max_logits = np.max(logits, axis=-1, keepdims=True)\n    exp_logits = np.exp(logits - max_logits)\n    probs = exp_logits / (np.sum(exp_logits, axis=-1, keepdims=True) + eps)\n    return probs",
+  "coding_language": "python",
+  "sample_input": "tensor_x = np.random.randn(32, 128)",
+  "expected_output": "tensor_y = shape (32, 10)",
+  "visible_test_cases": [
+    {
+      "input": "batch_input_36_standard",
+      "output": "expected_tensor_shape_36"
+    },
+    {
+      "input": "batch_input_36_edge_zero",
+      "output": "expected_loss_finite_36"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "batch_input_36_numerical_instability",
+      "output": "finite_no_nan_output"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Functional Correctness",
+        "weight": 0.5,
+        "description": "Passes all visible and hidden unit test cases without errors."
+      },
+      {
+        "name": "Time & Space Complexity",
+        "weight": 0.3,
+        "description": "Meets specified asymptotic computational boundaries."
+      },
+      {
+        "name": "Code Structure & Cleanliness",
+        "weight": 0.2,
+        "description": "Idiomatic naming, handling edge boundaries and null guards."
+      }
+    ],
+    "max_score": 14.0
+  },
+  "estimated_time": 35,
+  "marks": 14,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/coding",
+  "license": "Apache-2.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

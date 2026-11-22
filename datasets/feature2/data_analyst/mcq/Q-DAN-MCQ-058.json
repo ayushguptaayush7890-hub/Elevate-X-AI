@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-DAN-MCQ-058",
+  "role_id": "data_analyst",
+  "skill_id": "DAN-SKL-03",
+  "skill_name": "Statistical Analysis & Trend Forecasting",
+  "subtopic": "Star Schema vs Snowflake Schema Modeling for BI",
+  "assessment_type": "mcq",
+  "difficulty": "hard",
+  "question_text": "[Statistical Analysis & Trend Forecasting - Q58] What is the key architectural difference between a Star Schema and a Snowflake Schema in data warehousing?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A Star Schema has denormalized dimension tables directly connected to the fact table; a Snowflake Schema normalizes dimension tables into multiple related sub-tables"
+    },
+    {
+      "id": "B",
+      "text": "A Snowflake schema cannot store numeric facts"
+    },
+    {
+      "id": "C",
+      "text": "A Star schema requires graph databases"
+    },
+    {
+      "id": "D",
+      "text": "A Snowflake schema eliminates fact tables"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "Star schemas prioritize query simplicity and fast BI join performance via denormalized dimensions. Snowflake schemas normalize dimensions to reduce data redundancy at the cost of more joins.",
+  "reference_solution": "Correct Choice: A. Rationale: Star schemas prioritize query simplicity and fast BI join performance via denormalized dimensions. Snowflake schemas normalize dimensions to reduce data redundancy at the cost of more joins.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

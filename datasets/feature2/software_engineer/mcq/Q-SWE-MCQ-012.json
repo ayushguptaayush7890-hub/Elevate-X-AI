@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-012",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-01",
+  "skill_name": "Data Structures & Algorithms",
+  "subtopic": "Dynamic Programming and Memoization",
+  "assessment_type": "mcq",
+  "difficulty": "hard",
+  "question_text": "What mathematical condition must a cost function `C(i, j)` satisfy to enable Divide and Conquer Optimization in 2D dynamic programming of the form `dp[i][j] = min_{k < j} (dp[i-1][k] + C(k, j))`?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Lipschitz continuity"
+    },
+    {
+      "id": "B",
+      "text": "Monge property (Quadrangle Inequality): C(a, c) + C(b, d) <= C(a, d) + C(b, c) for a <= b <= c <= d"
+    },
+    {
+      "id": "C",
+      "text": "Commutativity and transitivity across all states"
+    },
+    {
+      "id": "D",
+      "text": "Linear separability in dual coordinate space"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "The quadrangle inequality (Monge property) ensures that the optimal transition point `opt(i, j)` is monotonic with respect to `j`: `opt(i, j) <= opt(i, j+1)`. This reduces the complexity from O(K * N^2) to O(K * N log N).",
+  "reference_solution": "Correct Choice: B. Rationale: The quadrangle inequality (Monge property) ensures that the optimal transition point `opt(i, j)` is monotonic with respect to `j`: `opt(i, j) <= opt(i, j+1)`. This reduces the complexity from O(K * N^2) to O(K * N log N).",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

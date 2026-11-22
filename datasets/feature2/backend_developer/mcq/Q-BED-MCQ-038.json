@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-BED-MCQ-038",
+  "role_id": "backend_developer",
+  "skill_id": "BED-SKL-03",
+  "skill_name": "Distributed Systems, Message Brokers & Event Driven Architecture",
+  "subtopic": "Transactional Outbox Pattern and Change Data Capture (CDC)",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "[Distributed Systems, Message Brokers & Event Driven Architecture - Q38] How does the Transactional Outbox Pattern solve the dual-write problem between a relational database and a message broker (e.g. Kafka)?",
+  "options": [
+    {
+      "id": "A",
+      "text": "By executing a distributed 2-Phase Commit (2PC) between database and Kafka"
+    },
+    {
+      "id": "B",
+      "text": "By inserting outgoing events into an `outbox` table within the same local database transaction as business entities, and using an asynchronous CDC relay to publish to Kafka"
+    },
+    {
+      "id": "C",
+      "text": "By publishing to Kafka first and rolling back Kafka if the database fails"
+    },
+    {
+      "id": "D",
+      "text": "By disabling transactions in the database"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Because both entity state and outbox event are saved in the same local ACID transaction, either both commit or neither commits, eliminating dual-write inconsistency.",
+  "reference_solution": "Correct Choice: B. Rationale: Because both entity state and outbox event are saved in the same local ACID transaction, either both commit or neither commits, eliminating dual-write inconsistency.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

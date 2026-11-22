@@ -1,0 +1,59 @@
+{
+  "question_id": "Q-BED-DBG-033",
+  "role_id": "backend_developer",
+  "skill_id": "BED-SKL-03",
+  "skill_name": "Distributed Systems, Message Brokers & Event Driven Architecture",
+  "subtopic": "Race Condition & Thread Safety Debugging",
+  "assessment_type": "debugging",
+  "difficulty": "hard",
+  "question_text": "Diagnose and resolve a critical concurrent balance deduction race condition (Distributed Systems, Message Brokers & Event Driven Architecture).\n\n### Defective Code:\n```python\nimport threading\nclass BalanceTracker_33:\n    def __init__(self):\n        self.balance = 1000\n    def withdraw(self, amount):\n        # Defect: Check-then-act race condition without mutex synchronization\n        if self.balance >= amount:\n            time.sleep(0.001) # Context switch\n            self.balance -= amount\n            return True\n        return False\n```\n\n### Reported Anomaly / Error:\nConcurrency race condition: multiple threads withdraw concurrently, causing balance to become negative in Distributed Systems, Message Brokers & Event Driven Architecture.\n\nIdentify the root cause of the defect and provide the corrected code snippet with rationale.",
+  "options": null,
+  "correct_answer": "import threading\nclass BalanceTracker_33:\n    def __init__(self):\n        self.balance = 1000\n        self.lock = threading.Lock()\n    def withdraw(self, amount):\n        # Fixed: Thread-safe critical section under mutex\n        with self.lock:\n            if self.balance >= amount:\n                self.balance -= amount\n                return True\n            return False",
+  "answer_explanation": "The check-then-act sequence must be protected by a mutex lock to make evaluation and deduction atomic across competing threads.",
+  "reference_solution": "import threading\nclass BalanceTracker_33:\n    def __init__(self):\n        self.balance = 1000\n        self.lock = threading.Lock()\n    def withdraw(self, amount):\n        # Fixed: Thread-safe critical section under mutex\n        with self.lock:\n            if self.balance >= amount:\n                self.balance -= amount\n                return True\n            return False",
+  "coding_language": "python",
+  "sample_input": "Defective snippet causing runtime failure or logical discrepancy.",
+  "expected_output": "Corrected code snippet passing all edge conditions.",
+  "visible_test_cases": [
+    {
+      "input": "Defective state execution",
+      "output": "Root cause isolated and fixed"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "Edge condition regression check",
+      "output": "Zero regressions"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Root Cause Identification",
+        "weight": 0.4,
+        "description": "Accurately identifies the exact line and logic error causing failure."
+      },
+      {
+        "name": "Remediation Precision",
+        "weight": 0.4,
+        "description": "Provides clean fix without side effects or performance regressions."
+      },
+      {
+        "name": "Technical Rationale",
+        "weight": 0.2,
+        "description": "Explains underlying runtime or structural mechanics clearly."
+      }
+    ],
+    "max_score": 12.0
+  },
+  "estimated_time": 15,
+  "marks": 12,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/debugging",
+  "license": "MIT",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

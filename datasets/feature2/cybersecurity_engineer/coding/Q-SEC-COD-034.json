@@ -1,0 +1,63 @@
+{
+  "question_id": "Q-SEC-COD-034",
+  "role_id": "cybersecurity_engineer",
+  "skill_id": "SEC-SKL-04",
+  "skill_name": "Identity and Access Management (IAM) & Least Privilege",
+  "subtopic": "Secure Cryptographic Implementation",
+  "assessment_type": "coding",
+  "difficulty": "medium",
+  "question_text": "Implement a secure cryptographic or defensive utility for **Challenge #34: Identity and Access Management (IAM) & Least Privilege**.\n\n### Problem Specification:\n- Write an algorithm in Python that enforces safe token hashing, secure session generation, or constant-time comparison.\n- Defend against timing attacks (use `hmac.compare_digest`).\n- Avoid deprecated algorithms (MD5, SHA1, DES, ECB mode).",
+  "options": null,
+  "correct_answer": "import hmac\nimport hashlib\n\ndef verify_signature_34(secret_key: bytes, message: bytes, received_signature: str) -> bool:\n    # Constant-time HMAC comparison for Identity and Access Management (IAM) & Least Privilege\n    expected_sig = hmac.new(secret_key, message, hashlib.sha256).hexdigest()\n    return hmac.compare_digest(expected_sig, received_signature)",
+  "answer_explanation": "Evaluates secure HMAC-SHA256 signature verification and constant-time comparison resisting side-channel timing attacks in Identity and Access Management (IAM) & Least Privilege.",
+  "reference_solution": "import hmac\nimport hashlib\n\ndef verify_signature_34(secret_key: bytes, message: bytes, received_signature: str) -> bool:\n    # Constant-time HMAC comparison for Identity and Access Management (IAM) & Least Privilege\n    expected_sig = hmac.new(secret_key, message, hashlib.sha256).hexdigest()\n    return hmac.compare_digest(expected_sig, received_signature)",
+  "coding_language": "python",
+  "sample_input": "secret_key_34 = 'secure_random_bytes'",
+  "expected_output": "generated_hmac_token_34",
+  "visible_test_cases": [
+    {
+      "input": "payload_34_valid",
+      "output": "valid_signature_verified"
+    },
+    {
+      "input": "payload_34_tampered",
+      "output": "signature_rejected"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "timing_attack_probe_34",
+      "output": "constant_time_evaluation"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Functional Correctness",
+        "weight": 0.5,
+        "description": "Passes all visible and hidden unit test cases without errors."
+      },
+      {
+        "name": "Time & Space Complexity",
+        "weight": 0.3,
+        "description": "Meets specified asymptotic computational boundaries."
+      },
+      {
+        "name": "Code Structure & Cleanliness",
+        "weight": 0.2,
+        "description": "Idiomatic naming, handling edge boundaries and null guards."
+      }
+    ],
+    "max_score": 10.0
+  },
+  "estimated_time": 25,
+  "marks": 10,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/coding",
+  "license": "Apache-2.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

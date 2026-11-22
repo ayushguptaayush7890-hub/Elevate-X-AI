@@ -1,0 +1,41 @@
+occupation_id,occupation_name,language,script,genuine_record_count,unique_genuine_workers,genuine_skill_spans,synthetic_test_stub_count,synthetic_skill_spans,regional_coverage,coverage_status
+TRD-01,Tailor and Garment Worker,hindi,devanagari,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-01,Tailor and Garment Worker,hinglish,latin,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-01,Tailor and Garment Worker,english,latin,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-01,Tailor and Garment Worker,multilingual,mixed,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-02,Electrician,hindi,devanagari,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-02,Electrician,hinglish,latin,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-02,Electrician,english,latin,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-02,Electrician,multilingual,mixed,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-03,Plumber,hindi,devanagari,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-03,Plumber,hinglish,latin,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-03,Plumber,english,latin,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-03,Plumber,multilingual,mixed,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-04,Motor Mechanic,hindi,devanagari,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-04,Motor Mechanic,hinglish,latin,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-04,Motor Mechanic,english,latin,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-04,Motor Mechanic,multilingual,mixed,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-05,Carpenter,hindi,devanagari,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-05,Carpenter,hinglish,latin,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-05,Carpenter,english,latin,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-05,Carpenter,multilingual,mixed,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-06,Welder,hindi,devanagari,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-06,Welder,hinglish,latin,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-06,Welder,english,latin,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-06,Welder,multilingual,mixed,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-07,Mason / Raj Mistri,hindi,devanagari,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-07,Mason / Raj Mistri,hinglish,latin,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-07,Mason / Raj Mistri,english,latin,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-07,Mason / Raj Mistri,multilingual,mixed,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-08,Painter,hindi,devanagari,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-08,Painter,hinglish,latin,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-08,Painter,english,latin,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-08,Painter,multilingual,mixed,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-09,Agriculture and Irrigation Worker,hindi,devanagari,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-09,Agriculture and Irrigation Worker,hinglish,latin,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-09,Agriculture and Irrigation Worker,english,latin,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-09,Agriculture and Irrigation Worker,multilingual,mixed,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-10,Mobile Repair Technician,hindi,devanagari,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-10,Mobile Repair Technician,hinglish,latin,0,0,0,1,2,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-10,Mobile Repair Technician,english,latin,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records
+TRD-10,Mobile Repair Technician,multilingual,mixed,0,0,0,0,0,None (Field Pending),Critical Deficit: 0 Genuine Records

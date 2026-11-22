@@ -1,0 +1,59 @@
+[
+  {
+    "source_id": "SRC-DGT-CTS-01",
+    "title": "DGT Craftsmen Training Scheme (CTS) Official Trade Syllabi Directory",
+    "url": "https://dgt.gov.in/cts-details",
+    "local_path": "datasets/informal_skill_extraction/raw/indian_worker_data/official_standards/dgt_cts_trade_directory.html",
+    "format": "HTML",
+    "category": "Official Vocational Standard Listing",
+    "publisher": "Directorate General of Training (DGT), Ministry of Skill Development",
+    "license": "Government Open Data / Public Information (Govt of India)",
+    "occupations": [
+      "All 10 Trades",
+      "CTS ITI Engineering & Non-Engineering Crafts"
+    ],
+    "download_status": "download_success",
+    "error_message": null,
+    "size_bytes": 538833,
+    "sha256": "a44444e20f0e41d81abccdc599cdf2a74d82b4e77f08d30cd0b5db7f4e7fffe0",
+    "retrieval_date": "2026-11-14 20:48:36"
+  },
+  {
+    "source_id": "SRC-NQR-PORTAL-01",
+    "title": "National Qualifications Register (NQR) Official Qualification Catalog Index",
+    "url": "https://nqr.gov.in/",
+    "local_path": "datasets/informal_skill_extraction/raw/indian_worker_data/official_standards/nqr_portal_index.html",
+    "format": "HTML",
+    "category": "Official National Repository",
+    "publisher": "NCVET / National Qualifications Register (NQR)",
+    "license": "Government Open Access / Public Information (Govt of India)",
+    "occupations": [
+      "All National Occupational Standards (NOS)",
+      "Qualification Packs (QPs)"
+    ],
+    "download_status": "download_success",
+    "error_message": null,
+    "size_bytes": 576440,
+    "sha256": "b3a9ca1467b9983da5f7f475ddb807694c15bb83852be60ea30e0e27b973a9e9",
+    "retrieval_date": "2026-11-14 20:48:37"
+  },
+  {
+    "source_id": "SRC-AI4BHARAT-INDIC-01",
+    "title": "AI4Bharat IndicBERT Multilingual Language Architecture Specification",
+    "url": "https://raw.githubusercontent.com/AI4Bharat/IndicBERT/main/README.md",
+    "local_path": "datasets/informal_skill_extraction/raw/indian_worker_data/external_sources/ai4bharat_indicbert_readme.md",
+    "format": "MD",
+    "category": "Open Research Dataset Reference",
+    "publisher": "AI4Bharat / IIT Madras",
+    "license": "MIT Open Source License",
+    "occupations": [
+      "Multilingual Indic NLP",
+      "Hindi / Roman Script Processing"
+    ],
+    "download_status": "download_success",
+    "error_message": null,
+    "size_bytes": 11158,
+    "sha256": "311e34d655f447993299b9f4f0e2b8d739b233b0abfd747439aaa02031f71816",
+    "retrieval_date": "2026-11-14 20:48:37"
+  }
+]

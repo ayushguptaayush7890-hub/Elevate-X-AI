@@ -36,9 +36,13 @@ interface NavItem {
 export function DashboardSidebar({
   mobileOpen = false,
   setMobileOpen,
+  isLocked = false,
+  onLockedNavigation,
 }: {
   mobileOpen?: boolean;
   setMobileOpen?: (open: boolean) => void;
+  isLocked?: boolean;
+  onLockedNavigation?: () => void;
 }) {
   const pathname = usePathname();
   const { user, logout } = useAuth();
@@ -149,10 +153,19 @@ export function DashboardSidebar({
           <Link
             key={item.href}
             href={item.href}
-            onClick={() => setMobileOpen && setMobileOpen(false)}
+            onClick={(e) => {
+              if (isLocked) {
+                e.preventDefault();
+                onLockedNavigation?.();
+                return;
+              }
+              if (setMobileOpen) setMobileOpen(false);
+            }}
             className={`group flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold transition-all duration-200 ${
               isActive
                 ? "bg-gradient-to-r from-[#D6A84B] to-[#F0D99B] text-[#10192D] font-bold shadow-md shadow-[#D6A84B]/20"
+                : isLocked 
+                ? "text-white/40 cursor-not-allowed hover:text-white/60"
                 : "text-white/80 hover:text-white hover:bg-white/10"
             }`}
           >
@@ -202,7 +215,22 @@ export function DashboardSidebar({
       >
         {/* Brand Header */}
         <div className="h-16 px-5 border-b border-[#D6A84B]/20 flex items-center justify-between shrink-0 bg-[#10192D]">
-          <Logo size="sm" lightText={true} />
+          <div 
+            onClick={(e) => {
+              if (isLocked) {
+                e.preventDefault();
+                e.stopPropagation();
+                onLockedNavigation?.();
+              }
+            }}
+          >
+            <Logo size="sm" lightText={true} />
+          </div>
+          {isLocked && (
+            <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-amber-500/20 text-[#F0D99B] border border-amber-500/30">
+              🔒 Locked
+            </span>
+          )}
         </div>
 
         {/* Scrollable Navigation Groups */}

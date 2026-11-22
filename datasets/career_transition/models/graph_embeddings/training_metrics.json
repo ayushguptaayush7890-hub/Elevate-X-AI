@@ -1,0 +1,33 @@
+{
+  "model_type": "Node2Vec / Graph Skip-gram Embedding",
+  "embedding_dim": 64,
+  "total_nodes": 19208,
+  "total_edges": 192802,
+  "epochs": 4,
+  "training_time_seconds": 5.34,
+  "device": "mps",
+  "final_loss": 0.0567,
+  "final_link_prediction_acc": 0.9976,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.1559,
+      "link_prediction_acc": 0.7057
+    },
+    {
+      "epoch": 2,
+      "loss": 0.4509,
+      "link_prediction_acc": 0.9486
+    },
+    {
+      "epoch": 3,
+      "loss": 0.141,
+      "link_prediction_acc": 0.9893
+    },
+    {
+      "epoch": 4,
+      "loss": 0.0567,
+      "link_prediction_acc": 0.9976
+    }
+  ]
+}

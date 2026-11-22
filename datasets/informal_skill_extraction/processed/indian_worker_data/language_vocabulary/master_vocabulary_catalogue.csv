@@ -1,0 +1,25 @@
+term_id,trade_id,devanagari,roman_hinglish,english_standard,phonetic_variants,trade_domain
+TRM-001,TRD-01,सिलाई,silai,sewing / stitching,seelai; silaai,Tailoring
+TRM-002,TRD-01,बकरम,bakram,fusible canvas interlining,bukram; buckram,Tailoring
+TRM-003,TRD-01,कटोरी कटिंग,katora cutting,contoured blouse cup pattern,katori cut; choli cut,Tailoring
+TRM-004,TRD-01,ओवरलॉक,overlock,overedge serging,interlock; overlok,Tailoring
+TRM-005,TRD-02,झिरी,jhirri,wall conduit chasing groove,jhiri; jheeri,Electrical
+TRM-006,TRD-02,अर्थिंग,earthing,electrical ground electrode,arthing; ground,Electrical
+TRM-007,TRD-02,न्यूट्रल-फेज,neutral-phase,AC mains live and neutral polarity,neutral phase; line neutral,Electrical
+TRM-008,TRD-03,सॉल्वेंट,solvent,CPVC/UPVC chemical cement,solvant; salvent,Plumbing
+TRM-009,TRD-03,चूड़ी,chudi,external pipe screw threads,choori; churi,Plumbing
+TRM-010,TRD-03,डायवर्टर,diverter,concealed shower mixer valve,divertor; mixer,Plumbing
+TRM-011,TRD-04,टैपेट,tappet,engine valve rocker clearance,tapet; tepet,Mechanic
+TRM-012,TRD-04,क्लच प्लेट,clutch plate,friction clutch disk,clutch plate; kalach,Mechanic
+TRM-013,TRD-05,रंदा,randa,wood hand planer,randha; randaa,Carpentry
+TRM-014,TRD-05,सनमाइका,sunmica,decorative high-pressure laminate,sanmika; laminate,Carpentry
+TRM-015,TRD-06,चिप्पिंग,chipping,weld slag chipping hammer action,chipin; slag safai,Welding
+TRM-016,TRD-06,टांका,taka,tack weld bead,taanka; tack,Welding
+TRM-017,TRD-07,साहुल,sahul,mason's brass plumb bob,sahool; plumb bob,Masonry
+TRM-018,TRD-07,घोंटाई,ghoontai,neat cement float waterproofing,ghontai; ghotai,Masonry
+TRM-019,TRD-08,रेगमार,regmar,abrasive silicon carbide sandpaper,regmaal; sandpaper,Painting
+TRM-020,TRD-08,पुट्टी पत्ती,putty patti,steel wall putty knife blade,patti; patra,Painting
+TRM-021,TRD-09,ड्रिप लाइन,drip line,micro-irrigation lateral tubing,drip pipe; lateral line,Agriculture
+TRM-022,TRD-09,वेंचुरी,venturi,differential fertilizer injector,venchury; venturi dosing,Agriculture
+TRM-023,TRD-10,सीसी पिन,CC pin,charging connector port pin,charging pin; jack,Mobile Repair
+TRM-024,TRD-10,जंपर,jumper,fine micro-wire PCB track bypass,jampar; jumper wire,Mobile Repair

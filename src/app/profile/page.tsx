@@ -6,6 +6,7 @@ import { GlassCard } from "@/components/ui/GlassCard";
 import { CircularProgress } from "@/components/ui/ProgressBar";
 import { useAuth } from "@/context/AuthContext";
 import { toast } from "sonner";
+import { createSkillId } from "@/utils/skill-normalization";
 import {
   User,
   Award,
@@ -191,9 +192,9 @@ export default function ProfilePage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-          {user.skills.map((skill) => (
+          {user.skills.map((skill, idx) => (
             <div
-              key={skill.id}
+              key={`prof-skill-${createSkillId(skill.name)}-${skill.id || idx}`}
               className="p-3.5 rounded-2xl bg-[#FBF8F1] border border-[#E6DFD1] hover:border-[#7355D9] transition-all space-y-1.5"
             >
               <div className="flex items-center justify-between">

@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-AIM-MCQ-060",
+  "role_id": "ai_ml_engineer",
+  "skill_id": "AIM-SKL-05",
+  "skill_name": "MLOps, Model Serving & Drift Monitoring",
+  "subtopic": "Data Drift and Concept Drift Detection (KS-Test, PSI)",
+  "assessment_type": "mcq",
+  "difficulty": "hard",
+  "question_text": "[MLOps, Model Serving & Drift Monitoring - Q60] In production MLOps monitoring, what differentiates Concept Drift from Covariate (Data) Drift?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Covariate drift means P(X) changes while P(Y|X) is constant; Concept drift means the conditional relationship P(Y|X) between features and target labels changes"
+    },
+    {
+      "id": "B",
+      "text": "Concept drift only applies to unsupervised models"
+    },
+    {
+      "id": "C",
+      "text": "Covariate drift requires human ground truth labels to detect"
+    },
+    {
+      "id": "D",
+      "text": "They are synonymous terms in statistical testing"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "Covariate drift reflects shifting input distributions P(X) (e.g., younger users sign up), whereas concept drift fundamentally shifts the underlying ground truth mapping P(Y|X) (e.g., fraudster tactics change).",
+  "reference_solution": "Correct Choice: A. Rationale: Covariate drift reflects shifting input distributions P(X) (e.g., younger users sign up), whereas concept drift fundamentally shifts the underlying ground truth mapping P(Y|X) (e.g., fraudster tactics change).",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

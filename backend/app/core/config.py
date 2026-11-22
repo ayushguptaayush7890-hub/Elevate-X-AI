@@ -54,6 +54,10 @@ class Settings(BaseSettings):
     REFRESH_TOKEN_EXPIRE_DAYS: int = 30        # 30 Days
     PASSWORD_RESET_TOKEN_EXPIRE_HOURS: int = 2
 
+    # Google Gemini API Configuration
+    GEMINI_API_KEY: str = Field(default="")
+    GEMINI_MODEL: str = Field(default="gemini-3.1-flash-lite")
+
     @field_validator("CORS_ORIGINS", mode="before")
     @classmethod
     def assemble_cors_origins(cls, v: Union[str, List[str]]) -> List[str]:

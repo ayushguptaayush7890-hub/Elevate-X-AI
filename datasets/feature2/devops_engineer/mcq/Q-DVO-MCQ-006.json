@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-DVO-MCQ-006",
+  "role_id": "devops_engineer",
+  "skill_id": "DVO-SKL-01",
+  "skill_name": "Linux System Administration & Shell Scripting",
+  "subtopic": "Process Signals (SIGTERM, SIGKILL), Zombies and Orphan Reaping",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "[Linux System Administration & Shell Scripting - Q06] When a process PID 1 inside a Docker container runs an application directly without an init system (like `tini`), why can orphan child processes cause container instability?",
+  "options": [
+    {
+      "id": "A",
+      "text": "They consume network ports automatically"
+    },
+    {
+      "id": "B",
+      "text": "Linux relies on PID 1 to reap terminated orphan zombie processes; standard applications do not handle `waitpid()`, leading to zombie accumulation and PID exhaustion"
+    },
+    {
+      "id": "C",
+      "text": "Containers crash if any child process terminates"
+    },
+    {
+      "id": "D",
+      "text": "Orphans bypass container cgroup memory limits"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "PID 1 is responsible for reaping adopted orphan processes. Standard application binaries (e.g. Node, Python) do not register SIGCHLD handlers to reap zombies, causing PID table exhaustion.",
+  "reference_solution": "Correct Choice: B. Rationale: PID 1 is responsible for reaping adopted orphan processes. Standard application binaries (e.g. Node, Python) do not register SIGCHLD handlers to reap zombies, causing PID table exhaustion.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

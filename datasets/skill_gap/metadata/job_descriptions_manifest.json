@@ -1,0 +1,20 @@
+[
+  {
+    "dataset_id": "lang-uk/recruitment-dataset-job-descriptions-english",
+    "filename": "recruitment_jds_english.parquet",
+    "source_url": "https://huggingface.co/datasets/lang-uk/recruitment-dataset-job-descriptions-english",
+    "license": "MIT",
+    "file_size_bytes": 145859589,
+    "sha256": "71dddaf0d9660f34ddf946953b67f54f1e7d60e22dcf9a4b8139b6378b18aab9",
+    "ingested_at": "2026-11-21T16:43:52.226989"
+  },
+  {
+    "dataset_id": "Shresth786/job-resume-matching",
+    "filename": "shresth_jobs.csv",
+    "source_url": "https://huggingface.co/datasets/Shresth786/job-resume-matching",
+    "license": "MIT",
+    "file_size_bytes": 32930476,
+    "sha256": "301a382ebec72d574817cc3d4b9ee34cf08e7f8ecdfa3d373142767fe4f9f789",
+    "ingested_at": "2026-11-21T16:43:52.288022"
+  }
+]

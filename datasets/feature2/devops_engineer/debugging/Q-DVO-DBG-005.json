@@ -1,0 +1,59 @@
+{
+  "question_id": "Q-DVO-DBG-005",
+  "role_id": "devops_engineer",
+  "skill_id": "DVO-SKL-05",
+  "skill_name": "Observability, Telemetry & Incident Mitigation",
+  "subtopic": "Kubernetes Manifest & Probe Debugging",
+  "assessment_type": "debugging",
+  "difficulty": "easy",
+  "question_text": "Resolve a CrashLoopBackOff failure caused by aggressive liveness probe timing (Observability, Telemetry & Incident Mitigation).\n\n### Defective Code:\n```yaml\n# Kubernetes Pod Manifest Defect\napiVersion: v1\nkind: Pod\nmetadata:\n  name: payment-service-5\nspec:\n  containers:\n  - name: app\n    image: payment:v1.2\n    livenessProbe:\n      httpGet:\n        path: /healthz\n        port: 8080\n      initialDelaySeconds: 0 # BUG: App takes 15s to warm up; probe kills it immediately\n      periodSeconds: 3\n      failureThreshold: 1\n```\n\n### Reported Anomaly / Error:\nCrashLoopBackOff: Container killed repeatedly during bootstrap before server starts listening in Observability, Telemetry & Incident Mitigation.\n\nIdentify the root cause of the defect and provide the corrected code snippet with rationale.",
+  "options": null,
+  "correct_answer": "# Corrected Kubernetes Pod Manifest\napiVersion: v1\nkind: Pod\nmetadata:\n  name: payment-service-5\nspec:\n  containers:\n  - name: app\n    image: payment:v1.2\n    startupProbe: # Use startupProbe or adequate initialDelay\n      httpGet:\n        path: /healthz\n        port: 8080\n      failureThreshold: 30\n      periodSeconds: 2\n    livenessProbe:\n      httpGet:\n        path: /healthz\n        port: 8080\n      periodSeconds: 10",
+  "answer_explanation": "Setting zero initial delay causes liveness probes to fail during JVM/framework startup, creating a CrashLoopBackOff. A startupProbe grants warmup time.",
+  "reference_solution": "# Corrected Kubernetes Pod Manifest\napiVersion: v1\nkind: Pod\nmetadata:\n  name: payment-service-5\nspec:\n  containers:\n  - name: app\n    image: payment:v1.2\n    startupProbe: # Use startupProbe or adequate initialDelay\n      httpGet:\n        path: /healthz\n        port: 8080\n      failureThreshold: 30\n      periodSeconds: 2\n    livenessProbe:\n      httpGet:\n        path: /healthz\n        port: 8080\n      periodSeconds: 10",
+  "coding_language": "yaml",
+  "sample_input": "Defective snippet causing runtime failure or logical discrepancy.",
+  "expected_output": "Corrected code snippet passing all edge conditions.",
+  "visible_test_cases": [
+    {
+      "input": "Defective state execution",
+      "output": "Root cause isolated and fixed"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "Edge condition regression check",
+      "output": "Zero regressions"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Root Cause Identification",
+        "weight": 0.4,
+        "description": "Accurately identifies the exact line and logic error causing failure."
+      },
+      {
+        "name": "Remediation Precision",
+        "weight": 0.4,
+        "description": "Provides clean fix without side effects or performance regressions."
+      },
+      {
+        "name": "Technical Rationale",
+        "weight": 0.2,
+        "description": "Explains underlying runtime or structural mechanics clearly."
+      }
+    ],
+    "max_score": 6.0
+  },
+  "estimated_time": 15,
+  "marks": 6,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/debugging",
+  "license": "MIT",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

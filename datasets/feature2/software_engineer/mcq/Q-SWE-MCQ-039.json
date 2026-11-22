@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-039",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-04",
+  "skill_name": "Database Systems & Transaction Isolation",
+  "subtopic": "Write-Ahead Logging (WAL) and MVCC Mechanics",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "What fundamental recovery invariant does the Write-Ahead Log (WAL) protocol enforce?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Log records describing a change must be flushed to non-volatile storage before corresponding dirty database pages are written to disk"
+    },
+    {
+      "id": "B",
+      "text": "Data pages must be flushed before transaction commit is acknowledged"
+    },
+    {
+      "id": "C",
+      "text": "WAL records are discarded upon system reboot"
+    },
+    {
+      "id": "D",
+      "text": "All indexes must be updated synchronously in memory"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "The WAL invariant ensures that if a crash occurs while dirty database pages reside in volatile memory or are partially written, the database engine can reconstruct committed changes via the log.",
+  "reference_solution": "Correct Choice: A. Rationale: The WAL invariant ensures that if a crash occurs while dirty database pages reside in volatile memory or are partially written, the database engine can reconstruct committed changes via the log.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

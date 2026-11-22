@@ -1,0 +1,61 @@
+{
+  "question_id": "Q-CLD-SCN-005",
+  "role_id": "cloud_engineer",
+  "skill_id": "CLD-SKL-01",
+  "skill_name": "Cloud Infrastructure & Virtual Networks (VPC, Subnets)",
+  "subtopic": "Hybrid Cloud Connectivity (IPsec VPN and Direct Connect)",
+  "assessment_type": "scenario",
+  "difficulty": "medium",
+  "question_text": "### Production Incident Scenario:\nProduction Incident #05: A multi-region cloud deployment experienced severe traffic blackholing and split-brain DNS state in Cloud Infrastructure & Virtual Networks (VPC, Subnets). During an automated regional failover simulation for 'Hybrid Cloud Connectivity (IPsec VPN and Direct Connect)', cross-region database replication lagged by 18 minutes.\n\n### Engineering Challenge:\nWhich cloud architecture configuration guarantees minimal Recovery Time Objective (RTO) and Recovery Point Objective (RPO) for 'Hybrid Cloud Connectivity (IPsec VPN and Direct Connect)'?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Manually update authoritative public nameserver records at the domain registrar during outages."
+    },
+    {
+      "id": "B",
+      "text": "Implement Route 53 latency-based routing with health checks, Global Accelerator anycast IP failover, and asynchronous cross-region Aurora Global Database storage replication."
+    },
+    {
+      "id": "C",
+      "text": "Deploy synchronous two-phase commit over public internet transit across 10,000 miles."
+    },
+    {
+      "id": "D",
+      "text": "Rely on nightly tape backups restored to a single cold server instance."
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "In Cloud Infrastructure & Virtual Networks (VPC, Subnets), automated disaster recovery requires Anycast IP routing (AWS Global Accelerator) or DNS health-checked failover combined with storage-level replication (Aurora Global Database) to achieve RTO under 1 minute and RPO under 1 second without split-brain.",
+  "reference_solution": "Recommended Remediation: Option B. Rationale: In Cloud Infrastructure & Virtual Networks (VPC, Subnets), automated disaster recovery requires Anycast IP routing (AWS Global Accelerator) or DNS health-checked failover combined with storage-level replication (Aurora Global Database) to achieve RTO under 1 minute and RPO under 1 second without split-brain.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Architecture & Operational Assessment",
+        "weight": 0.6,
+        "description": "Evaluates risk, system constraints, and root cause accurately."
+      },
+      {
+        "name": "Mitigation Strategy",
+        "weight": 0.4,
+        "description": "Selects the optimal zero-downtime or resilient recovery path."
+      }
+    ],
+    "max_score": 6.0
+  },
+  "estimated_time": 12,
+  "marks": 6,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/scenarios",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

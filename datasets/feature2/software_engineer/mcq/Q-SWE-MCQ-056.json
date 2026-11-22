@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-056",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-05",
+  "skill_name": "API Architecture & Distributed RPC",
+  "subtopic": "Idempotency Keys and Distributed Request Retries",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "In an idempotent payment processing API, what race condition must the server guard against when two identical requests with the same Idempotency-Key arrive simultaneously?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Duplicate debit execution caused by concurrent cache misses before the first transaction completes and persists its result"
+    },
+    {
+      "id": "B",
+      "text": "HTTP 404 Not Found error returned to the client"
+    },
+    {
+      "id": "C",
+      "text": "DNS cache poisoning"
+    },
+    {
+      "id": "D",
+      "text": "SSL handshake failure"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "The server must use an atomic lock/reservation on the key (e.g. Redis `SET key in_progress NX EX 30` or SQL `INSERT ON CONFLICT DO NOTHING`). Concurrent calls must wait or return HTTP 409 Conflict.",
+  "reference_solution": "Correct Choice: A. Rationale: The server must use an atomic lock/reservation on the key (e.g. Redis `SET key in_progress NX EX 30` or SQL `INSERT ON CONFLICT DO NOTHING`). Concurrent calls must wait or return HTTP 409 Conflict.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

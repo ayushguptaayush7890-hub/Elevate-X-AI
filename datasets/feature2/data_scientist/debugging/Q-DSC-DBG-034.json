@@ -1,0 +1,59 @@
+{
+  "question_id": "Q-DSC-DBG-034",
+  "role_id": "data_scientist",
+  "skill_id": "DSC-SKL-04",
+  "skill_name": "Experiment Design & A/B Testing",
+  "subtopic": "Data Leakage & Preprocessing Debugging",
+  "assessment_type": "debugging",
+  "difficulty": "hard",
+  "question_text": "Isolate and resolve a data leakage bug in a machine learning pipeline (Experiment Design & A/B Testing).\n\n### Defective Code:\n```python\nfrom sklearn.preprocessing import StandardScaler\ndef prepare_features_34(X_train, X_test):\n    # Defect: Data leakage! Fitting scaler on entire dataset or test set\n    scaler = StandardScaler()\n    X_train_scaled = scaler.fit_transform(X_train)\n    X_test_scaled = scaler.fit_transform(X_test) # BUG: fit_transform instead of transform\n    return X_train_scaled, X_test_scaled\n```\n\n### Reported Anomaly / Error:\nData Leakage and distribution inconsistency caused by fitting test set independently in Experiment Design & A/B Testing.\n\nIdentify the root cause of the defect and provide the corrected code snippet with rationale.",
+  "options": null,
+  "correct_answer": "from sklearn.preprocessing import StandardScaler\ndef prepare_features_34(X_train, X_test):\n    # Fixed: Fit ONLY on training set, transform test set using training parameters\n    scaler = StandardScaler()\n    X_train_scaled = scaler.fit_transform(X_train)\n    X_test_scaled = scaler.transform(X_test)\n    return X_train_scaled, X_test_scaled",
+  "answer_explanation": "Calling `fit_transform` on the test set leaks test distribution statistics and causes evaluation bias. Only `transform` must be applied to test/validation partitions.",
+  "reference_solution": "from sklearn.preprocessing import StandardScaler\ndef prepare_features_34(X_train, X_test):\n    # Fixed: Fit ONLY on training set, transform test set using training parameters\n    scaler = StandardScaler()\n    X_train_scaled = scaler.fit_transform(X_train)\n    X_test_scaled = scaler.transform(X_test)\n    return X_train_scaled, X_test_scaled",
+  "coding_language": "python",
+  "sample_input": "Defective snippet causing runtime failure or logical discrepancy.",
+  "expected_output": "Corrected code snippet passing all edge conditions.",
+  "visible_test_cases": [
+    {
+      "input": "Defective state execution",
+      "output": "Root cause isolated and fixed"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "Edge condition regression check",
+      "output": "Zero regressions"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Root Cause Identification",
+        "weight": 0.4,
+        "description": "Accurately identifies the exact line and logic error causing failure."
+      },
+      {
+        "name": "Remediation Precision",
+        "weight": 0.4,
+        "description": "Provides clean fix without side effects or performance regressions."
+      },
+      {
+        "name": "Technical Rationale",
+        "weight": 0.2,
+        "description": "Explains underlying runtime or structural mechanics clearly."
+      }
+    ],
+    "max_score": 12.0
+  },
+  "estimated_time": 15,
+  "marks": 12,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/debugging",
+  "license": "MIT",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

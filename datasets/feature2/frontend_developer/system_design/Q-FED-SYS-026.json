@@ -1,0 +1,54 @@
+{
+  "question_id": "Q-FED-SYS-026",
+  "role_id": "frontend_developer",
+  "skill_id": "FED-SKL-03",
+  "skill_name": "Web Performance, Caching & Rendering Optimization",
+  "subtopic": "Client-Side Frontend Architecture",
+  "assessment_type": "system_design",
+  "difficulty": "hard",
+  "question_text": "### System Design Challenge: High-Performance Web Frontend Architecture #26\n\n#### Functional Requirements:\n- Render large infinite-scrolling feeds (100,000+ items) with 60 FPS scrolling and zero DOM bloat\n- Support offline mutation queuing with optimistic UI updates and background synchronization\n- Achieve sub-1.2s Largest Contentful Paint (LCP) and zero Cumulative Layout Shift (CLS)\n\n#### Non-Functional & Scale Requirements:\n- WCAG 2.1 AA accessibility compliance across all dynamic widgets\n- Bundle size budget < 120KB initial critical JavaScript payload\n- Cross-browser compatibility across mobile Safari, Chrome, and Firefox\n\n#### Scale Parameters:\n- **Daily Active Web Users**: 15 Million\n- **Peak Concurrent Sessions**: 250,000\n- **Global CDN Cache Hit Ratio**: > 92%\n\nDesign the end-to-end architecture. Specify API contracts, high-level data flow, database storage models, caching layers, partition keys, consensus mechanisms, and failure recovery strategies.",
+  "options": null,
+  "correct_answer": "### Reference Architecture Breakdown:\nEdge CDN terminates SSL and serves Static Site Assets with Cache-Control immutable -> Server Components stream HTML chunks with Suspense boundaries -> DOM Virtualizer windowing keeps active nodes under 50 elements -> Service Worker caches API responses in CacheStorage -> IndexedDB manages offline mutation queues with exponential backoff sync.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nVirtual scrolling breaks native browser find-in-page (Ctrl+F) unless custom search index indexing is implemented. Offscreen rendering buffer prevents visible blank flashing during rapid fling scrolling.",
+  "answer_explanation": "Evaluates modern frontend engineering architecture balancing Core Web Vitals, state synchronization, and DOM efficiency.",
+  "reference_solution": "### Reference Architecture Breakdown:\nEdge CDN terminates SSL and serves Static Site Assets with Cache-Control immutable -> Server Components stream HTML chunks with Suspense boundaries -> DOM Virtualizer windowing keeps active nodes under 50 elements -> Service Worker caches API responses in CacheStorage -> IndexedDB manages offline mutation queues with exponential backoff sync.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nVirtual scrolling breaks native browser find-in-page (Ctrl+F) unless custom search index indexing is implemented. Offscreen rendering buffer prevents visible blank flashing during rapid fling scrolling.",
+  "coding_language": null,
+  "sample_input": "Enterprise-scale production traffic load and availability SLA constraints.",
+  "expected_output": "Comprehensive architectural blueprint detailing data models, caching, and resiliency.",
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Rendering Architecture & DOM Optimization",
+        "weight": 0.3,
+        "description": "Applies virtualization, SSR/SSG, and code splitting."
+      },
+      {
+        "name": "State Management & Offline Storage",
+        "weight": 0.25,
+        "description": "Designs optimistic updates and IndexedDB sync."
+      },
+      {
+        "name": "Performance & Core Web Vitals",
+        "weight": 0.25,
+        "description": "Addresses LCP, INP, CLS, and asset budgeting."
+      },
+      {
+        "name": "Accessibility & Cross-Platform",
+        "weight": 0.2,
+        "description": "Ensures ARIA semantics, responsive layouts, and screen reader flow."
+      }
+    ],
+    "max_score": 20.0
+  },
+  "estimated_time": 40,
+  "marks": 20,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/system-design",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

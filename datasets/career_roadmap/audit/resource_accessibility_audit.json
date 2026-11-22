@@ -1,0 +1,173 @@
+[
+  {
+    "id": "res-py-official-tutorial",
+    "title": "The Python Tutorial \u2014 Official Python 3 Documentation",
+    "url": "https://docs.python.org/3/tutorial/",
+    "domain": "docs.python.org",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-py-dsa-stdlib",
+    "title": "Data Structures and Algorithms in Python (Standard Library Reference)",
+    "url": "https://docs.python.org/3/tutorial/datastructures.html",
+    "domain": "docs.python.org",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-pytorch-tutorials-deep-learning",
+    "title": "Deep Learning with PyTorch: A 60 Minute Blitz",
+    "url": "https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html",
+    "domain": "pytorch.org",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-pytorch-nlp-tutorials",
+    "title": "Natural Language Processing (NLP) with TorchText & Transformers",
+    "url": "https://pytorch.org/tutorials/beginner/text_sentiment_ngrams_tutorial.html",
+    "domain": "pytorch.org",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-sklearn-user-guide",
+    "title": "Scikit-Learn Machine Learning in Python: User Guide & Model Selection",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "domain": "scikit-learn.org",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-react-quick-start",
+    "title": "Quick Start \u2014 Learn React",
+    "url": "https://react.dev/learn",
+    "domain": "react.dev",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-fastapi-tutorial",
+    "title": "FastAPI Tutorial \u2014 User Guide",
+    "url": "https://fastapi.tiangolo.com/tutorial/",
+    "domain": "fastapi.tiangolo.com",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-ms-azure-fundamentals",
+    "title": "Microsoft Azure Fundamentals: Describe Cloud Concepts (AZ-900)",
+    "url": "https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+    "domain": "learn.microsoft.com",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-ms-ai-engineer",
+    "title": "Microsoft Certified: Azure AI Engineer Associate & AI Foundations",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/",
+    "domain": "learn.microsoft.com",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-gcp-genai-pathway",
+    "title": "Generative AI Fundamentals Learning Path",
+    "url": "https://www.cloudskillsboost.google/paths/118",
+    "domain": "cloudskillsboost.google",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-aws-cloud-practitioner",
+    "title": "AWS Cloud Practitioner Essentials",
+    "url": "https://skillbuilder.aws/course/aws-cloud-practitioner-essentials",
+    "domain": "skillbuilder.aws",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-fcc-relational-db",
+    "title": "Relational Database Certification (PostgreSQL & Linux CLI)",
+    "url": "https://www.freecodecamp.org/learn/relational-database/",
+    "domain": "freecodecamp.org",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-fcc-data-analysis-python",
+    "title": "Data Analysis with Python Certification",
+    "url": "https://www.freecodecamp.org/learn/data-analysis-with-python/",
+    "domain": "freecodecamp.org",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-docker-getting-started",
+    "title": "Docker Getting Started Guide & Container Fundamentals",
+    "url": "https://docs.docker.com/get-started/",
+    "domain": "docs.docker.com",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-nptel-textile-testing",
+    "title": "Testing of Functional and Technical Textiles \u2014 NPTEL / IIT Delhi",
+    "url": "https://nptel.ac.in/courses/116102029",
+    "domain": "nptel.ac.in",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-swayam-apparel-quality",
+    "title": "Quality Assurance in Garment Manufacturing \u2014 SWAYAM Portal",
+    "url": "https://swayam.gov.in/explorer?searchText=apparel+quality",
+    "domain": "swayam.gov.in",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-astm-textile-standards",
+    "title": "ASTM D5430 Standard Test Methods for Visually Inspecting and Grading Fabrics",
+    "url": "https://www.astm.org/d5430-13r17.html",
+    "domain": "astm.org",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-iso-2859-sampling",
+    "title": "NIST Engineering Statistics Handbook: Acceptance Sampling & Operating Characteristic Plans",
+    "url": "https://www.itl.nist.gov/div898/handbook/pmc/section2/pmc2.htm",
+    "domain": "itl.nist.gov",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  },
+  {
+    "id": "res-skill-india-apparel-ssc",
+    "title": "Apparel, Made-Ups & Home Furnishing Sector Skill Council (AMHSSC) Standards",
+    "url": "https://sscamh.com/",
+    "domain": "sscamh.com",
+    "http_status": 200,
+    "error": null,
+    "accessible": true
+  }
+]

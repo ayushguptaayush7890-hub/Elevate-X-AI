@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SEC-MCQ-020",
+  "role_id": "cybersecurity_engineer",
+  "skill_id": "SEC-SKL-05",
+  "skill_name": "Incident Response, Threat Modeling & Forensic Log Analysis",
+  "subtopic": "STRIDE Threat Modeling and Data Flow Diagrams",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "[Incident Response, Threat Modeling & Forensic Log Analysis - Q20] In Microsoft's STRIDE threat modeling framework, which security property corresponds to the threat of 'Repudiation'?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Confidentiality"
+    },
+    {
+      "id": "B",
+      "text": "Integrity"
+    },
+    {
+      "id": "C",
+      "text": "Non-Repudiation (Auditability / Proof of Action)"
+    },
+    {
+      "id": "D",
+      "text": "Availability"
+    }
+  ],
+  "correct_answer": "C",
+  "answer_explanation": "Repudiation refers to an attacker performing an unauthorized action and denying it occurred. It is mitigated by Non-Repudiation mechanisms (tamper-evident audit logs and digital signatures).",
+  "reference_solution": "Correct Choice: C. Rationale: Repudiation refers to an attacker performing an unauthorized action and denying it occurred. It is mitigated by Non-Repudiation mechanisms (tamper-evident audit logs and digital signatures).",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

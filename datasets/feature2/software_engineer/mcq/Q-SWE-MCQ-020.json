@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-020",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-02",
+  "skill_name": "Object-Oriented & Functional Design Patterns",
+  "subtopic": "Behavioral Patterns (Strategy, Observer, Command)",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "What critical memory management defect commonly occurs in the classic Observer pattern when observers are dynamically registered but never unregistered?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Stack overflow during notification"
+    },
+    {
+      "id": "B",
+      "text": "Lapsed Listener leak (Subject maintains strong references preventing garbage collection of listeners)"
+    },
+    {
+      "id": "C",
+      "text": "Deadlock on observer instantiation"
+    },
+    {
+      "id": "D",
+      "text": "Thread pool starvation"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "The subject retains strong references to observers in its subscription list. Even if caller references are dropped, the GC cannot collect observers, causing a Lapsed Listener leak.",
+  "reference_solution": "Correct Choice: B. Rationale: The subject retains strong references to observers in its subscription list. Even if caller references are dropped, the GC cannot collect observers, causing a Lapsed Listener leak.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

@@ -1,0 +1,20 @@
+{
+  "models": {
+    "primary_embedding": {
+      "name": "BAAI/bge-small-en-v1.5",
+      "path": "/Users/ayushgupta/Desktop/Resume_Ai/backend/app/ml/models/skill_gap/bge-small-en-v1.5",
+      "embedding_dimension": 384,
+      "framework": "SentenceTransformers / PyTorch (Metal/CPU)",
+      "verified": true,
+      "safetensors_sha256": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad"
+    },
+    "llm_reasoning": {
+      "name": "mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+      "path": "/Users/ayushgupta/Desktop/Resume_Ai/backend/app/ml/models/skill_gap/Qwen2.5-1.5B-Instruct-4bit",
+      "framework": "Apple Silicon MLX Metal Acceleration",
+      "quantization": "4-bit AWQ/GGUF/MLX",
+      "verified": true
+    }
+  },
+  "verified_at": "2026-11-21T16:43:52.397667"
+}

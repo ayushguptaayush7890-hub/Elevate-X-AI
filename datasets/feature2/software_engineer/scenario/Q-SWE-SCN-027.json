@@ -1,0 +1,61 @@
+{
+  "question_id": "Q-SWE-SCN-027",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-04",
+  "skill_name": "Database Systems & Transaction Isolation",
+  "subtopic": "Write-Ahead Logging (WAL) and MVCC Mechanics",
+  "assessment_type": "scenario",
+  "difficulty": "medium",
+  "question_text": "### Production Incident Scenario:\nProduction Incident #27: A high-throughput transaction processing engine reported severe performance degradation under Database Systems & Transaction Isolation. P99 latency increased from 15ms to 850ms, and telemetry indicates elevated CPU instruction stalls and thread contention during 'Write-Ahead Logging (WAL) and MVCC Mechanics' operations.\n\n### Engineering Challenge:\nAs the Principal Software Engineer, what is the most technically rigorous root-cause remediation for this 'Write-Ahead Logging (WAL) and MVCC Mechanics' issue?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Increase the maximum thread pool limit by 4x and enable synchronous garbage collection passes."
+    },
+    {
+      "id": "B",
+      "text": "Wrap the entire execution path in a global reentrant mutex to force strict serial execution."
+    },
+    {
+      "id": "C",
+      "text": "Restructure the critical section in Write-Ahead Logging (WAL) and MVCC Mechanics to utilize lock-free atomic primitives or fine-grained partition keys, eliminating thread convoying."
+    },
+    {
+      "id": "D",
+      "text": "Disable thread affinity pinning and disable all memory cache prefetching on host CPUs."
+    }
+  ],
+  "correct_answer": "C",
+  "answer_explanation": "Under high concurrency in Database Systems & Transaction Isolation, thread contention on coarse-grained synchronization locks causes thread convoying and frequent context switching. Migrating to lock-free atomic operations or partitioned striped locks resolves the bottleneck without latency spikes.",
+  "reference_solution": "Recommended Remediation: Option C. Rationale: Under high concurrency in Database Systems & Transaction Isolation, thread contention on coarse-grained synchronization locks causes thread convoying and frequent context switching. Migrating to lock-free atomic operations or partitioned striped locks resolves the bottleneck without latency spikes.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Architecture & Operational Assessment",
+        "weight": 0.6,
+        "description": "Evaluates risk, system constraints, and root cause accurately."
+      },
+      {
+        "name": "Mitigation Strategy",
+        "weight": 0.4,
+        "description": "Selects the optimal zero-downtime or resilient recovery path."
+      }
+    ],
+    "max_score": 6.0
+  },
+  "estimated_time": 12,
+  "marks": 6,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/scenarios",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

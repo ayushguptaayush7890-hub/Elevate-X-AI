@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-11-15T14:04:06.160329+00:00",
+  "status": "PASS",
+  "schema_compliance_percentage": 100.0,
+  "mcq_answer_key_validity": "100% (all 540 valid)",
+  "sql_schema_presence": "100% (all 270 have schemas)",
+  "coding_test_case_presence": "100% (all 450 have visible/hidden tests)",
+  "system_design_rubric_presence": "100% (all 315 have rubrics)",
+  "validation_failures": []
+}

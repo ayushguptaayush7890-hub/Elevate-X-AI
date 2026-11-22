@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-11-21T16:54:51.100897",
+  "datasets_checked": {
+    "job_descriptions": {
+      "total_records": 6167,
+      "exact_duplicate_rows": 0,
+      "title_company_overlap": 453,
+      "near_duplicate_patterns_detected": 152,
+      "deduplication_integrity_status": "PASS"
+    },
+    "esco_skills": {
+      "total_records": 13938,
+      "uri_duplicates": 0,
+      "label_duplicates": 0,
+      "deduplication_integrity_status": "PASS"
+    }
+  }
+}

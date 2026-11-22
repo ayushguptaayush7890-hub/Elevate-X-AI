@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-11-15T14:04:06.159820+00:00",
+  "pipeline_version": "1.0.0",
+  "random_seed": 42,
+  "raw_record_count": 2250,
+  "cleaned_record_count": 2250,
+  "rejected_record_count": 0,
+  "transformations_applied": [
+    "NFKC unicode normalization",
+    "CRLF to LF standardization",
+    "Trailing whitespace stripping",
+    "Strict markdown code-block integrity preservation",
+    "Assessment-specific schema validation",
+    "Stratified group-aware train/val/test splitting"
+  ]
+}

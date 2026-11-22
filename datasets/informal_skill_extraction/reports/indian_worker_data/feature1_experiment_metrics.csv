@@ -1,0 +1,5 @@
+model_name,model_type,total_params,trainable_params,disk_size,tok_p,tok_r,tok_f1,bin_tok_p,bin_tok_r,bin_tok_f1,exact_p,exact_r,exact_f1,partial_p,partial_r,partial_f1,mean_latency_ms,median_latency_ms,p95_latency_ms
+"Model D (Rule-Based)","Dictionary & Regex Matcher","0 (Rule-based)","0","0.5 MB (Vocabulary)",0.9943,0.3003,0.4612,1.0,0.2152,0.3542,0.9943,0.3003,0.4612,1.0,0.302,0.4639,0.01,0.01,0.02
+"Model A (English Zero-Shot)","XLM-RoBERTa (Trained on English SkillSpan)","277.4M","14.2M (during English training)","1,110 MB",0.0445,0.0181,0.0258,0.8066,0.1267,0.219,0.0212,0.0086,0.0123,0.5169,0.2105,0.2992,26.55,0.35,24.16
+"Model B (XLM-RoBERTa Fine-Tuned)","XLM-RoBERTa (Fine-Tuned Top 2 Layers + Head)","277.4M","14,178,051 (5.11%)","1,110 MB",0.9905,0.9948,0.9927,0.9992,0.9998,0.9995,0.8316,0.8352,0.8334,0.9957,1.0,0.9978,0.46,0.35,0.96
+"Model C (Linear Probe Baseline)","Multilingual Linear Probe Baseline (Frozen Backbone)","277.4M","2,307 (0.001%)","1,110 MB",0.9943,0.3003,0.4612,1.0,0.2152,0.3542,0.9943,0.3003,0.4612,1.0,0.302,0.4639,0.01,0.01,0.03

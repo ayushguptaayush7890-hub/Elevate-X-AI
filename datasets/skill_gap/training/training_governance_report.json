@@ -1,0 +1,27 @@
+{
+  "assessment_timestamp": "2026-11-21T16:54:52.142854",
+  "task": "Skill Gap Analysis Semantic Retrieval & Learning Strategy",
+  "models_evaluated": {
+    "sentence_embeddings": "BAAI/bge-small-en-v1.5",
+    "instruction_llm": "mlx-community/Qwen2.5-1.5B-Instruct-4bit"
+  },
+  "datasets_evaluated_for_supervision": [
+    {
+      "dataset": "ESCO v1.1.1",
+      "contains_supervised_pairs": false,
+      "reason": "Taxonomic ontology defining occupations and skills; no candidate-job supervision labels exist."
+    },
+    {
+      "dataset": "O*NET 31.0",
+      "contains_supervised_pairs": false,
+      "reason": "Expert occupational benchmark ratings (Importance/Level); not pairwise candidate skill-gap labels."
+    },
+    {
+      "dataset": "lang-uk/recruitment-dataset-job-descriptions-english",
+      "contains_supervised_pairs": false,
+      "reason": "Raw job posting text without paired candidate gap annotations."
+    }
+  ],
+  "governance_determination": "PRETRAINED INFERENCE MANDATED (NO SYNTHETIC FINE-TUNING)",
+  "governance_rationale": "No authentic, non-synthetic supervised training dataset exists for candidate-to-occupation skill gap classification. Creating artificial negative pairs or synthetic gap labels would violate strict ML data integrity rules. In accordance with Section 8 instructions, the system deploys BAAI/bge-small-en-v1.5 (pretrained 384-dimensional dense semantic embeddings) and Qwen2.5-1.5B-Instruct-4bit for genuine zero-shot inference, explicitly disclosing that supervised fine-tuning was omitted to preserve scientific rigor."
+}

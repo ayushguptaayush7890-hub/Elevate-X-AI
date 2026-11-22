@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-016",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-02",
+  "skill_name": "Object-Oriented & Functional Design Patterns",
+  "subtopic": "Behavioral Patterns (Strategy, Observer, Command)",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "How does the Strategy pattern differ fundamentally from the State pattern, despite sharing similar UML class diagrams?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Strategy pattern objects are aware of each other and handle transitions; State objects are isolated"
+    },
+    {
+      "id": "B",
+      "text": "Strategy encapsulates interchangeable algorithms chosen by the client; State encapsulates state-dependent behaviors and drives automatic transitions"
+    },
+    {
+      "id": "C",
+      "text": "Strategy applies only to asynchronous operations; State applies to synchronous calls"
+    },
+    {
+      "id": "D",
+      "text": "State pattern requires compile-time polymorphism; Strategy is purely dynamic"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "In Strategy, clients generally configure the context with an algorithm strategy. In State, the context's behavior changes dynamically based on internal state changes.",
+  "reference_solution": "Correct Choice: B. Rationale: In Strategy, clients generally configure the context with an algorithm strategy. In State, the context's behavior changes dynamically based on internal state changes.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

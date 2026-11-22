@@ -1,0 +1,54 @@
+{
+  "question_id": "Q-SWE-SYS-025",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-05",
+  "skill_name": "API Architecture & Distributed RPC",
+  "subtopic": "Distributed System Architecture",
+  "assessment_type": "system_design",
+  "difficulty": "hard",
+  "question_text": "### System Design Challenge: Distributed Scalable Architecture #25\n\n#### Functional Requirements:\n- Support at least 50,000 active concurrent connections\n- Provide sub-50ms p99 latency SLA\n- Guarantee zero data loss with durable append logs\n\n#### Non-Functional & Scale Requirements:\n- 99.99% high availability SLA\n- Multi-region active-passive failover\n- Strict end-to-end data encryption\n\n#### Scale Parameters:\n- **Daily Active Users**: 5 Million\n- **Peak Ingestion QPS**: 25,000 requests/sec\n- **Data Retention**: 3 Years\n\nDesign the end-to-end architecture. Specify API contracts, high-level data flow, database storage models, caching layers, partition keys, consensus mechanisms, and failure recovery strategies.",
+  "options": null,
+  "correct_answer": "### Reference Architecture Breakdown:\nLoad Balancers (ALB) terminate TLS -> API Gateway clusters route requests -> Stateless microservices process business logic -> Kafka event bus buffers events -> PostgreSQL stores relational state with Redis read-through caching.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nPartitioning by user_id avoids cross-node joins but risks hotspotting on viral celebrity accounts. Consistent hashing with virtual nodes mitigates hotspot skew.",
+  "answer_explanation": "Demonstrates holistic distributed systems design balancing latency, consistency, and operational complexity.",
+  "reference_solution": "### Reference Architecture Breakdown:\nLoad Balancers (ALB) terminate TLS -> API Gateway clusters route requests -> Stateless microservices process business logic -> Kafka event bus buffers events -> PostgreSQL stores relational state with Redis read-through caching.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nPartitioning by user_id avoids cross-node joins but risks hotspotting on viral celebrity accounts. Consistent hashing with virtual nodes mitigates hotspot skew.",
+  "coding_language": null,
+  "sample_input": "Enterprise-scale production traffic load and availability SLA constraints.",
+  "expected_output": "Comprehensive architectural blueprint detailing data models, caching, and resiliency.",
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Requirements & Scale Estimation",
+        "weight": 0.25,
+        "description": "Accurately calculates storage, memory, and network throughput needs."
+      },
+      {
+        "name": "High-Level Component Architecture",
+        "weight": 0.35,
+        "description": "Selects appropriate storage, messaging, and caching topologies."
+      },
+      {
+        "name": "Data Models & API Contracts",
+        "weight": 0.2,
+        "description": "Defines relational schemas, index strategies, and idempotent APIs."
+      },
+      {
+        "name": "Fault Tolerance & Bottlenecks",
+        "weight": 0.2,
+        "description": "Analyzes single points of failure and disaster recovery."
+      }
+    ],
+    "max_score": 20.0
+  },
+  "estimated_time": 40,
+  "marks": 20,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/system-design",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

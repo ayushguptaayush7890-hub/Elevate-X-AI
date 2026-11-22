@@ -1,0 +1,76 @@
+{
+  "audit_timestamp": "2026-11-22T00:28:47.709427",
+  "status": "HEALTHY",
+  "occupations": {
+    "total_records": 5805,
+    "columns": [
+      "canonical_id",
+      "uri",
+      "occupation_title",
+      "clean_title",
+      "aliases",
+      "description",
+      "classification_system",
+      "source",
+      "isco_group",
+      "national_system"
+    ],
+    "missing_titles": 0,
+    "missing_descriptions": 0,
+    "by_source": {
+      "ESCO v1.2.1": 3043,
+      "DGE Ministry of Labour & Employment India": 1746,
+      "O*NET 28.1": 1016
+    }
+  },
+  "skills": {
+    "total_records": 14011,
+    "columns": [
+      "skill_id",
+      "name",
+      "type",
+      "alternative_labels",
+      "description",
+      "source"
+    ],
+    "missing_names": 0,
+    "by_source": {
+      "ESCO v1.2.1": 13960,
+      "O*NET 28.1": 51
+    }
+  },
+  "knowledge_graph_edges": {
+    "total_edges": 192802,
+    "columns": [
+      "source",
+      "target",
+      "weight",
+      "relation_type",
+      "provenance"
+    ],
+    "by_provenance": {
+      "ESCO v1.2.1": 126051,
+      "O*NET 28.1": 40771,
+      "India NCO Crosswalk": 25980
+    }
+  },
+  "job_market_postings": {
+    "total_postings": 13999,
+    "columns": [
+      "job_id",
+      "job_title",
+      "company",
+      "category",
+      "location",
+      "description",
+      "extracted_skills",
+      "years_required",
+      "source"
+    ],
+    "by_source": {
+      "Recruitment JDs English": 13279,
+      "Shresth786 Job Dataset": 720
+    },
+    "with_salary": 0
+  }
+}

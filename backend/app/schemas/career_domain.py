@@ -118,6 +118,7 @@ class JobListingCreate(BaseModel):
     title: str = Field(..., max_length=255)
     employer_id: uuid.UUID
     location: str = Field(..., max_length=255)
+    country: str = "India"
     description: str
     salary_min: Optional[int] = None
     salary_max: Optional[int] = None
@@ -151,19 +152,31 @@ class JobListingResponse(BaseModel):
     employer: Optional[EmployerResponse] = None
     title: str
     location: str
+    country: str = "India"
     description: str
     salary_min: Optional[int] = None
     salary_max: Optional[int] = None
-    salary_currency: str
-    employment_type: str
+    salary_currency: str = "INR"
+    employment_type: str = "Full-time"
     experience_required_years: Optional[int] = 0
+    experience_min_years: Optional[int] = None
+    experience_max_years: Optional[int] = None
     education_required: Optional[str] = None
-    source_type: str
+    source_type: str = "direct"
+    source_provider: str = "Direct"
     source_url: Optional[str] = None
+    application_url: Optional[str] = None
+    provider_job_id: Optional[str] = None
+    work_mode: str = "On-site"
+    required_skills_list: List[str] = []
+    last_verified_at: Optional[datetime] = None
+    listing_status: str = "active"
+    match_details: Optional[Dict[str, Any]] = None
+    is_saved: bool = False
     posted_date: Optional[date] = None
     expiry_date: Optional[date] = None
-    is_verified: bool
-    is_active: bool
+    is_verified: bool = True
+    is_active: bool = True
     requirements: List[JobRequirementResponse] = []
     skills: List[JobSkillResponse] = []
     created_at: datetime

@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-021",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-02",
+  "skill_name": "Object-Oriented & Functional Design Patterns",
+  "subtopic": "Creational Patterns (Factory, Builder, Singleton)",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "When designing an immutable domain object with 12 optional validation-dependent fields, why is the Builder pattern preferred over telescoping constructors?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Telescoping constructors violate thread safety during heap allocation"
+    },
+    {
+      "id": "B",
+      "text": "The Builder avoids constructor combinatorial explosion, enforces atomic validation upon `.build()`, and prevents parameter transposition errors"
+    },
+    {
+      "id": "C",
+      "text": "Telescoping constructors prevent inheritance in all compiled languages"
+    },
+    {
+      "id": "D",
+      "text": "The Builder eliminates object allocation overhead"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Builders provide explicit named parameter setting, eliminate ambiguous positional parameter swapping of identical types, and centralize consistency invariant checks in `.build()`.",
+  "reference_solution": "Correct Choice: B. Rationale: Builders provide explicit named parameter setting, eliminate ambiguous positional parameter swapping of identical types, and centralize consistency invariant checks in `.build()`.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

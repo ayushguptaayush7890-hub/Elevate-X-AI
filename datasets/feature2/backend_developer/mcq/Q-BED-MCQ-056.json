@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-BED-MCQ-056",
+  "role_id": "backend_developer",
+  "skill_id": "BED-SKL-01",
+  "skill_name": "Server-Side Frameworks & Asynchronous Programming",
+  "subtopic": "Connection Pool Sizing and Thread Exhaustion Defense",
+  "assessment_type": "mcq",
+  "difficulty": "hard",
+  "question_text": "[Server-Side Frameworks & Asynchronous Programming - Q56] According to HikariCP research and Little's Law, what formula provides the optimal pool size for database connection pools under concurrent load?",
+  "options": [
+    {
+      "id": "A",
+      "text": "pool_size = max_concurrent_http_threads * 2"
+    },
+    {
+      "id": "B",
+      "text": "pool_size = (core_count * 2) + effective_spindle_count"
+    },
+    {
+      "id": "C",
+      "text": "pool_size = RAM_in_GB / 2"
+    },
+    {
+      "id": "D",
+      "text": "pool_size = 1,000 fixed connections"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Excessive database connections degrade performance due to CPU context switching and disk thrashing. The formula (cores * 2) + disk spindles keeps CPUs saturated without queue thrashing.",
+  "reference_solution": "Correct Choice: B. Rationale: Excessive database connections degrade performance due to CPU context switching and disk thrashing. The formula (cores * 2) + disk spindles keeps CPUs saturated without queue thrashing.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

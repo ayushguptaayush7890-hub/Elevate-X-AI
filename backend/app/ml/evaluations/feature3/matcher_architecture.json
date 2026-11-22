@@ -1,0 +1,65 @@
+{
+  "system": "Elevate X AI Feature 3 — 6-Layer Hybrid Semantic Evidence Matcher",
+  "layers": [
+    {
+      "layer": 1,
+      "name": "Exact Phrase Matching",
+      "mechanism": "Regex word boundary matching (\bpattern\b)",
+      "target": "Raw technical tokens and compound terms",
+      "confidence": 0.95
+    },
+    {
+      "layer": 2,
+      "name": "Normalized Lexical Matching",
+      "mechanism": "Case folding, whitespace collapse, punctuation stripping",
+      "target": "Varied casing and punctuation (e.g. node.js vs nodejs, c++ vs cpp)",
+      "confidence": 0.95
+    },
+    {
+      "layer": 3,
+      "name": "Technical Entity Alias Expansion",
+      "mechanism": "Curated bidirectional technical alias ontology (32 major technical taxonomy families)",
+      "target": "Standard industry aliases (e.g., LLM -> Large Language Model, Generative AI; RAG -> Retrieval Augmented Generation)",
+      "confidence": 0.95
+    },
+    {
+      "layer": 4,
+      "name": "Pretrained DistilBERT Semantic Embedding Cosine Similarity",
+      "mechanism": "typeform/distilbert-base-uncased-mnli (768-dimensional sentence embeddings, mean-pooled, L2-normalized)",
+      "target": "Full responsibility statements, contextual experience bullets, and soft qualifications",
+      "thresholds": {
+        "explicit_match": 0.72,
+        "partially_supported": 0.50,
+        "not_found": "<0.50"
+      }
+    },
+    {
+      "layer": 5,
+      "name": "Source Evidence Retrieval & Provenance Tagging",
+      "mechanism": "Section-specific citation formatting ([Technical Skill], [Project Evidence], [Work Experience], [Coursework Evidence], [Certification Evidence])",
+      "target": "Every match references authentic extracted candidate text lines"
+    },
+    {
+      "layer": 6,
+      "name": "Deterministic 5-State Requirement Classification & Academic Distinction",
+      "states": [
+        "explicitly_matched",
+        "partially_supported",
+        "not_found_in_resume",
+        "uncertain_extraction",
+        "confirmed_missing"
+      ],
+      "coursework_rule": "Candidate evidence found solely in academic coursework is strictly tagged as [Coursework Evidence] and classified as partially_supported (score 0.65) to separate commercial work experience from coursework."
+    }
+  ],
+  "underlying_models": {
+    "embedding_model": "typeform/distilbert-base-uncased-mnli",
+    "embedding_dimensions": 768,
+    "max_sequence_length": 128,
+    "section_classifier_model": "ResumeSectionNeuralClassifier (Linear(10000, 256) -> ReLU -> Dropout -> Linear(256, 128) -> ReLU -> Dropout -> Linear(128, 6))",
+    "improvement_model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit"
+  },
+  "retraining_determination": "PIPELINE BUG FIXED — RETRAINING NOT REQUIRED",
+  "model_verification_status": "MODEL VERIFIED",
+  "timestamp": "2026-11-21T14:30:00Z"
+}

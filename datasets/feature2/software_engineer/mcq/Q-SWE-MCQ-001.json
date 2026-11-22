@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-001",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-01",
+  "skill_name": "Data Structures & Algorithms",
+  "subtopic": "Binary Search and Monotonic Search Spaces",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "When implementing binary search on a monotonically increasing array to find the first occurrence of an element, which boundary update prevents infinite looping when `left + 1 == right`?",
+  "options": [
+    {
+      "id": "A",
+      "text": "mid = left + (right - left) // 2 and left = mid + 1"
+    },
+    {
+      "id": "B",
+      "text": "mid = left + (right - left) // 2 and right = mid"
+    },
+    {
+      "id": "C",
+      "text": "mid = (left + right + 1) // 2 and right = mid - 1"
+    },
+    {
+      "id": "D",
+      "text": "mid = left + (right - left) // 2 and left = mid"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "When searching for the first occurrence with an open/closed boundary invariant, choosing `mid = left + (right - left) // 2` truncates towards left. Setting `right = mid` safely preserves candidate first matches without infinite looping.",
+  "reference_solution": "Correct Choice: B. Rationale: When searching for the first occurrence with an open/closed boundary invariant, choosing `mid = left + (right - left) // 2` truncates towards left. Setting `right = mid` safely preserves candidate first matches without infinite looping.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

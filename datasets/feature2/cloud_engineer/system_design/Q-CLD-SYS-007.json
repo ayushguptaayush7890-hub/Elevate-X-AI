@@ -1,0 +1,54 @@
+{
+  "question_id": "Q-CLD-SYS-007",
+  "role_id": "cloud_engineer",
+  "skill_id": "CLD-SKL-05",
+  "skill_name": "Cloud Security, Cost Optimization & High Availability / DR",
+  "subtopic": "Multi-Region Cloud DR Architecture",
+  "assessment_type": "system_design",
+  "difficulty": "easy",
+  "question_text": "### System Design Challenge: Multi-Region Active-Active Cloud Architecture #07\n\n#### Functional Requirements:\n- Serve global user traffic across us-east-1 and eu-west-1 with latency-based DNS routing\n- Maintain bi-directional multi-region database replication with conflict resolution\n- Guarantee Recovery Time Objective (RTO) < 30 seconds upon full region outage\n\n#### Non-Functional & Scale Requirements:\n- Data residency compliance ensuring EU citizen PII does not leave eu-west-1\n- Automated health check DNS failover via Amazon Route 53 with zero manual intervention\n- 99.999% global compute availability SLA\n\n#### Scale Parameters:\n- **Global Active Users**: 30 Million\n- **Total Regional Footprint**: 2 Cloud Regions, 6 Availability Zones\n- **Replication Latency Budget**: < 500ms cross-region\n\nDesign the end-to-end architecture. Specify API contracts, high-level data flow, database storage models, caching layers, partition keys, consensus mechanisms, and failure recovery strategies.",
+  "options": null,
+  "correct_answer": "### Reference Architecture Breakdown:\nRoute 53 uses Geolocation and Latency routing with health checks -> CloudFront edge caches assets -> Application Load Balancer distributes to regional EKS clusters -> Amazon Aurora Global Database handles cross-region storage with physical storage-level replication (< 1s lag) -> S3 Cross-Region Replication (CRR) syncs object assets.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nMulti-region active-active writes risk write conflicts without CRDTs or regional sharding. Restricting primary writes by user residency (EU users write to EU Aurora, US to US) eliminates split-brain conflicts.",
+  "answer_explanation": "Evaluates multi-region cloud disaster recovery and high-availability architecture balancing RTO/RPO, data consistency, and global latency.",
+  "reference_solution": "### Reference Architecture Breakdown:\nRoute 53 uses Geolocation and Latency routing with health checks -> CloudFront edge caches assets -> Application Load Balancer distributes to regional EKS clusters -> Amazon Aurora Global Database handles cross-region storage with physical storage-level replication (< 1s lag) -> S3 Cross-Region Replication (CRR) syncs object assets.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nMulti-region active-active writes risk write conflicts without CRDTs or regional sharding. Restricting primary writes by user residency (EU users write to EU Aurora, US to US) eliminates split-brain conflicts.",
+  "coding_language": null,
+  "sample_input": "Enterprise-scale production traffic load and availability SLA constraints.",
+  "expected_output": "Comprehensive architectural blueprint detailing data models, caching, and resiliency.",
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Multi-Region Routing & Failover",
+        "weight": 0.3,
+        "description": "Designs Route 53 health checks and DNS routing policies."
+      },
+      {
+        "name": "Cross-Region Storage & Data Replication",
+        "weight": 0.3,
+        "description": "Evaluates Aurora Global DB, DynamoDB Global Tables, and S3 CRR."
+      },
+      {
+        "name": "Compliance & Data Residency",
+        "weight": 0.2,
+        "description": "Guarantees GDPR boundary isolation."
+      },
+      {
+        "name": "Cost vs RTO/RPO Tradeoffs",
+        "weight": 0.2,
+        "description": "Balances active-active infrastructure cost against warm standby."
+      }
+    ],
+    "max_score": 10.0
+  },
+  "estimated_time": 40,
+  "marks": 10,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/system-design",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

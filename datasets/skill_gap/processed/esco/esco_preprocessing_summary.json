@@ -1,0 +1,8 @@
+{
+  "dataset": "ESCO v1.1.1",
+  "processed_at": "2026-11-21T16:44:04.210886",
+  "total_canonical_skills": 13938,
+  "total_canonical_occupations": 3039,
+  "total_verified_relationships": 126005,
+  "mapped_occupations_with_profiles": 3039
+}

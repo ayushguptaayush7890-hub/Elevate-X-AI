@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-057",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-05",
+  "skill_name": "API Architecture & Distributed RPC",
+  "subtopic": "API Rate Limiting (Token Bucket, Leaky Bucket)",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "In a distributed cluster of 20 API gateway instances, why is naive in-memory rate limiting inadequate?",
+  "options": [
+    {
+      "id": "A",
+      "text": "In-memory rate limiters cannot track IP addresses"
+    },
+    {
+      "id": "B",
+      "text": "Requests are distributed across instances; an attacker could cycle requests across all 20 nodes, effectively multiplying their allowed threshold by 20x"
+    },
+    {
+      "id": "C",
+      "text": "Operating system memory leaks will occur on high traffic"
+    },
+    {
+      "id": "D",
+      "text": "In-memory counters violate HTTP specifications"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Without a centralized shared atomic state (e.g. Redis sliding window or token bucket via Lua scripts), independent node counters fail to enforce cluster-wide limits.",
+  "reference_solution": "Correct Choice: B. Rationale: Without a centralized shared atomic state (e.g. Redis sliding window or token bucket via Lua scripts), independent node counters fail to enforce cluster-wide limits.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

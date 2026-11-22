@@ -1,0 +1,213 @@
+{
+  "python": [
+    "res-py-official-tutorial",
+    "res-py-dsa-stdlib",
+    "res-fastapi-tutorial",
+    "res-fcc-data-analysis-python"
+  ],
+  "object-oriented programming": [
+    "res-py-official-tutorial"
+  ],
+  "data structures": [
+    "res-py-official-tutorial",
+    "res-py-dsa-stdlib"
+  ],
+  "scripting": [
+    "res-py-official-tutorial"
+  ],
+  "algorithms": [
+    "res-py-dsa-stdlib"
+  ],
+  "pytorch": [
+    "res-pytorch-tutorials-deep-learning",
+    "res-pytorch-nlp-tutorials"
+  ],
+  "deep learning": [
+    "res-pytorch-tutorials-deep-learning"
+  ],
+  "neural networks": [
+    "res-pytorch-tutorials-deep-learning"
+  ],
+  "tensors": [
+    "res-pytorch-tutorials-deep-learning"
+  ],
+  "gpu computing": [
+    "res-pytorch-tutorials-deep-learning"
+  ],
+  "natural language processing": [
+    "res-pytorch-nlp-tutorials"
+  ],
+  "nlp": [
+    "res-pytorch-nlp-tutorials"
+  ],
+  "text classification": [
+    "res-pytorch-nlp-tutorials"
+  ],
+  "machine learning": [
+    "res-sklearn-user-guide"
+  ],
+  "scikit-learn": [
+    "res-sklearn-user-guide"
+  ],
+  "classification": [
+    "res-sklearn-user-guide"
+  ],
+  "regression": [
+    "res-sklearn-user-guide"
+  ],
+  "clustering": [
+    "res-sklearn-user-guide"
+  ],
+  "react.js": [
+    "res-react-quick-start"
+  ],
+  "javascript": [
+    "res-react-quick-start"
+  ],
+  "frontend development": [
+    "res-react-quick-start"
+  ],
+  "component architecture": [
+    "res-react-quick-start"
+  ],
+  "state management": [
+    "res-react-quick-start"
+  ],
+  "fastapi": [
+    "res-fastapi-tutorial"
+  ],
+  "rest apis": [
+    "res-fastapi-tutorial"
+  ],
+  "api development": [
+    "res-fastapi-tutorial"
+  ],
+  "microservices": [
+    "res-fastapi-tutorial"
+  ],
+  "pydantic": [
+    "res-fastapi-tutorial"
+  ],
+  "cloud computing": [
+    "res-ms-azure-fundamentals",
+    "res-aws-cloud-practitioner"
+  ],
+  "microsoft azure": [
+    "res-ms-azure-fundamentals"
+  ],
+  "cloud architecture": [
+    "res-ms-azure-fundamentals"
+  ],
+  "artificial intelligence": [
+    "res-ms-ai-engineer"
+  ],
+  "large language models": [
+    "res-ms-ai-engineer",
+    "res-gcp-genai-pathway"
+  ],
+  "computer vision": [
+    "res-ms-ai-engineer"
+  ],
+  "azure ai": [
+    "res-ms-ai-engineer"
+  ],
+  "generative ai": [
+    "res-gcp-genai-pathway"
+  ],
+  "llms": [
+    "res-gcp-genai-pathway"
+  ],
+  "rag": [
+    "res-gcp-genai-pathway"
+  ],
+  "prompt engineering": [
+    "res-gcp-genai-pathway"
+  ],
+  "aws": [
+    "res-aws-cloud-practitioner"
+  ],
+  "devops": [
+    "res-aws-cloud-practitioner",
+    "res-docker-getting-started"
+  ],
+  "infrastructure": [
+    "res-aws-cloud-practitioner"
+  ],
+  "sql": [
+    "res-fcc-relational-db"
+  ],
+  "postgresql": [
+    "res-fcc-relational-db"
+  ],
+  "database management systems": [
+    "res-fcc-relational-db"
+  ],
+  "bash": [
+    "res-fcc-relational-db"
+  ],
+  "git": [
+    "res-fcc-relational-db"
+  ],
+  "pandas": [
+    "res-fcc-data-analysis-python"
+  ],
+  "numpy": [
+    "res-fcc-data-analysis-python"
+  ],
+  "data analysis": [
+    "res-fcc-data-analysis-python"
+  ],
+  "matplotlib": [
+    "res-fcc-data-analysis-python"
+  ],
+  "docker": [
+    "res-docker-getting-started"
+  ],
+  "containerization": [
+    "res-docker-getting-started"
+  ],
+  "ci/cd": [
+    "res-docker-getting-started"
+  ],
+  "developer tools": [
+    "res-docker-getting-started"
+  ],
+  "fabric grading & 4-point system": [
+    "res-nptel-textile-testing",
+    "res-astm-textile-standards"
+  ],
+  "textile lab testing (shrinkage & colorfastness)": [
+    "res-nptel-textile-testing"
+  ],
+  "garment inspection": [
+    "res-nptel-textile-testing",
+    "res-swayam-apparel-quality",
+    "res-astm-textile-standards",
+    "res-skill-india-apparel-ssc"
+  ],
+  "quality management systems (qms)": [
+    "res-nptel-textile-testing",
+    "res-iso-2859-sampling"
+  ],
+  "aql 2.5 sampling standards": [
+    "res-swayam-apparel-quality",
+    "res-iso-2859-sampling"
+  ],
+  "stitch & seam quality analysis": [
+    "res-swayam-apparel-quality"
+  ],
+  "apparel export documentation": [
+    "res-swayam-apparel-quality",
+    "res-skill-india-apparel-ssc"
+  ],
+  "apparel standards": [
+    "res-astm-textile-standards"
+  ],
+  "buyer compliance & audit protocols": [
+    "res-iso-2859-sampling",
+    "res-skill-india-apparel-ssc"
+  ],
+  "pattern making & tech pack review": [
+    "res-skill-india-apparel-ssc"
+  ]
+}

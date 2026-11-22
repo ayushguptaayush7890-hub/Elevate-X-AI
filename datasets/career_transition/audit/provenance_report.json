@@ -1,0 +1,42 @@
+{
+  "audit_timestamp": "2026-11-22T00:28:47.710519",
+  "datasets": [
+    {
+      "name": "ESCO v1.2.1",
+      "authority": "European Commission DG Employment, Social Affairs & Inclusion",
+      "license": "Open Data / CC BY 4.0",
+      "records_extracted": {
+        "occupations": 3043,
+        "skills": 13960,
+        "edges": 126051
+      }
+    },
+    {
+      "name": "O*NET 28.1",
+      "authority": "U.S. Department of Labor / Employment and Training Administration (USDOL/ETA)",
+      "license": "CC BY 4.0",
+      "records_extracted": {
+        "occupations": 1016,
+        "competencies": 51,
+        "edges": 40771
+      }
+    },
+    {
+      "name": "India National Classification of Occupations (NCO-2015)",
+      "authority": "Ministry of Labour and Employment, Directorate General of Employment (DGE), Government of India",
+      "license": "Open Government Data License - India",
+      "records_extracted": {
+        "occupations": 0,
+        "cross_taxonomy_edges": 25980
+      }
+    },
+    {
+      "name": "Authentic Job Postings",
+      "authority": "Recruitment JD & Shresth Job Postings Corpus",
+      "license": "Research & Educational Public Datasets",
+      "records_extracted": {
+        "job_postings": 13999
+      }
+    }
+  ]
+}

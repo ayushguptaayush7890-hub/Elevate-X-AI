@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-CLD-MCQ-018",
+  "role_id": "cloud_engineer",
+  "skill_id": "CLD-SKL-03",
+  "skill_name": "Cloud Storage, Databases & Lifecycle Policies",
+  "subtopic": "Managed Relational Databases (RDS / Aurora) Multi-AZ vs Read Replicas",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "[Cloud Storage, Databases & Lifecycle Policies - Q18] In Amazon RDS, what is the fundamental architectural difference between Multi-AZ deployment and Read Replicas?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Multi-AZ uses synchronous block-level physical replication to a standby instance in another availability zone for automated failover (high availability); Read Replicas use asynchronous engine-level replication to serve read traffic"
+    },
+    {
+      "id": "B",
+      "text": "Read Replicas handle automated failover; Multi-AZ only serves read traffic"
+    },
+    {
+      "id": "C",
+      "text": "Multi-AZ is hosted in another AWS region"
+    },
+    {
+      "id": "D",
+      "text": "Read replicas cannot be promoted to standalone instances"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "Multi-AZ is a disaster recovery and high-availability mechanism: the standby is not accessible for queries and syncs synchronously. Read replicas replicate asynchronously and actively scale read query capacity.",
+  "reference_solution": "Correct Choice: A. Rationale: Multi-AZ is a disaster recovery and high-availability mechanism: the standby is not accessible for queries and syncs synchronously. Read replicas replicate asynchronously and actively scale read query capacity.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

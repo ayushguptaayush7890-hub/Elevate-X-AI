@@ -1,0 +1,63 @@
+{
+  "question_id": "Q-FED-COD-003",
+  "role_id": "frontend_developer",
+  "skill_id": "FED-SKL-03",
+  "skill_name": "Web Performance, Caching & Rendering Optimization",
+  "subtopic": "Frontend Utility Implementation",
+  "assessment_type": "coding",
+  "difficulty": "easy",
+  "question_text": "Implement an idiomatic JavaScript/TypeScript frontend utility for **Challenge #03: Web Performance, Caching & Rendering Optimization**.\n\n### Problem Specification:\n- Write an asynchronous or state-synchronization utility (e.g., custom hook, debounce/throttle, event emitter, or reactive state store).\n- Handle cancellation, unmount cleanups, and race conditions.\n- Adhere to clean closure scope semantics.",
+  "options": null,
+  "correct_answer": "function debounceUtility_3(fn, delay) {\n    let timerId = null;\n    const debounced = function(...args) {\n        if (timerId) clearTimeout(timerId);\n        timerId = setTimeout(() => {\n            fn.apply(this, args);\n        }, delay);\n    };\n    debounced.cancel = () => { if (timerId) clearTimeout(timerId); };\n    return debounced;\n}",
+  "answer_explanation": "Implements closure-based function decoration with cancellation and context preservation for Web Performance, Caching & Rendering Optimization.",
+  "reference_solution": "function debounceUtility_3(fn, delay) {\n    let timerId = null;\n    const debounced = function(...args) {\n        if (timerId) clearTimeout(timerId);\n        timerId = setTimeout(() => {\n            fn.apply(this, args);\n        }, delay);\n    };\n    debounced.cancel = () => { if (timerId) clearTimeout(timerId); };\n    return debounced;\n}",
+  "coding_language": "javascript",
+  "sample_input": "fn = debounce(callback, 200)",
+  "expected_output": "debounced_function_execution",
+  "visible_test_cases": [
+    {
+      "input": "call_events_burst_3",
+      "output": "single_invoked_call_3"
+    },
+    {
+      "input": "immediate_execution_3",
+      "output": "proper_debounce_delay_3"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "component_unmount_cancel_3",
+      "output": "clean_timer_clear"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Functional Correctness",
+        "weight": 0.5,
+        "description": "Passes all visible and hidden unit test cases without errors."
+      },
+      {
+        "name": "Time & Space Complexity",
+        "weight": 0.3,
+        "description": "Meets specified asymptotic computational boundaries."
+      },
+      {
+        "name": "Code Structure & Cleanliness",
+        "weight": 0.2,
+        "description": "Idiomatic naming, handling edge boundaries and null guards."
+      }
+    ],
+    "max_score": 6.0
+  },
+  "estimated_time": 15,
+  "marks": 6,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/coding",
+  "license": "Apache-2.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

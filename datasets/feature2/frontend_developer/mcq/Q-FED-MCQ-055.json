@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-FED-MCQ-055",
+  "role_id": "frontend_developer",
+  "skill_id": "FED-SKL-05",
+  "skill_name": "Client-Side Data Fetching, Offline Storage & Security",
+  "subtopic": "Cross-Site Scripting (XSS) Prevention and Content Security Policy (CSP)",
+  "assessment_type": "mcq",
+  "difficulty": "hard",
+  "question_text": "[Client-Side Data Fetching, Offline Storage & Security - Q55] How does a robust Content Security Policy (CSP) with `script-src 'nonce-...';` mitigate Cross-Site Scripting (XSS)?",
+  "options": [
+    {
+      "id": "A",
+      "text": "It encrypts all JavaScript files on the server"
+    },
+    {
+      "id": "B",
+      "text": "It instructs the browser to refuse execution of any inline `<script>` or external script tag that does not possess the cryptographic per-request nonce"
+    },
+    {
+      "id": "C",
+      "text": "It disables all REST API calls made with fetch()"
+    },
+    {
+      "id": "D",
+      "text": "It sanitizes SQL queries executed in WebSQL"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Attackers injecting arbitrary `<script>evil()</script>` cannot predict the server-generated cryptographic nonce, so the browser unconditionally blocks execution.",
+  "reference_solution": "Correct Choice: B. Rationale: Attackers injecting arbitrary `<script>evil()</script>` cannot predict the server-generated cryptographic nonce, so the browser unconditionally blocks execution.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

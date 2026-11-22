@@ -81,6 +81,11 @@ export default function AssessmentPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, any>>({});
   const [timeLeftSeconds, setTimeLeftSeconds] = useState<number>(1200);
+  const [isNavigating, setIsNavigating] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showExitModal, setShowExitModal] = useState(false);
+  const [showUnansweredModal, setShowUnansweredModal] = useState(false);
+  const [unansweredList, setUnansweredList] = useState<number[]>([]);
 
   // Sandbox State
   const [sandboxOutput, setSandboxOutput] = useState<{ [qid: string]: any }>({});
@@ -95,6 +100,61 @@ export default function AssessmentPage() {
     const token = typeof window !== "undefined" ? localStorage.getItem("elevate_auth_token") : null;
     setHasToken(Boolean(token));
   }, [isAuthenticated]);
+
+  // Restore Active Session on Mount / Page Reload (Timer & Session Resilience)
+  useEffect(() => {
+    const savedSessionId = typeof window !== "undefined" ? localStorage.getItem("elevate_active_assessment_session_id") : null;
+    if (!savedSessionId) return;
+
+    const token = typeof window !== "undefined" ? localStorage.getItem("elevate_auth_token") : null;
+    if (!token) {
+      localStorage.removeItem("elevate_active_assessment_session_id");
+      return;
+    }
+
+    apiService.getAssessmentSession(savedSessionId).then((res) => {
+      if (res.data) {
+        if (res.data.is_expired) {
+          toast.warning("Your previous timed assessment session has expired.");
+          localStorage.removeItem("elevate_active_assessment_session_id");
+          return;
+        }
+        setSessionId(res.data.session_id);
+        setQuestions(res.data.questions);
+        setCurrentIndex(res.data.current_index || 0);
+        setAnswers(res.data.answers || {});
+        setTimeLeftSeconds(res.data.time_left_seconds);
+        setViewState("in_progress");
+        toast.info("Resumed active timed assessment session.");
+      }
+    }).catch(() => {
+      localStorage.removeItem("elevate_active_assessment_session_id");
+    });
+  }, []);
+
+  // In-app Navigation Lock: Intercept Back Navigation
+  useEffect(() => {
+    if (viewState !== "in_progress") return;
+    window.history.pushState(null, "", window.location.href);
+    const handlePopState = () => {
+      window.history.pushState(null, "", window.location.href);
+      setShowExitModal(true);
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [viewState]);
+
+  // In-app Navigation Lock: Warn on Page Refresh / Tab Close
+  useEffect(() => {
+    if (viewState !== "in_progress") return;
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      e.preventDefault();
+      e.returnValue = "Assessment in progress. Are you sure you want to exit? Your timer will continue running.";
+      return e.returnValue;
+    };
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => window.removeEventListener("beforeunload", handleBeforeUnload);
+  }, [viewState]);
 
   // 1. Load initial roles list
   useEffect(() => {
@@ -136,14 +196,14 @@ export default function AssessmentPage() {
       setTimeLeftSeconds((prev) => {
         if (prev <= 1) {
           clearInterval(interval);
-          handleSubmitAssessment();
+          handleSubmitAssessment(true);
           return 0;
         }
         return prev - 1;
       });
     }, 1000);
     return () => clearInterval(interval);
-  }, [viewState]);
+  }, [viewState, sessionId, questions, answers]);
 
   // 2. Start Assessment
   const handleStartAssessment = async () => {
@@ -175,6 +235,7 @@ export default function AssessmentPage() {
         setSandboxOutput({});
         setTimeLeftSeconds(res.data.duration_minutes * 60);
         setViewState("in_progress");
+        localStorage.setItem("elevate_active_assessment_session_id", res.data.session_id);
         toast.success(`Assessment started: ${res.data.total_questions} questions loaded`);
       } else {
         toast.error("No questions available matching your filters");
@@ -191,7 +252,24 @@ export default function AssessmentPage() {
     }
   };
 
-  // 3. Interactive Sandbox Execution
+  // 3. Answer Updates and Persistence
+  const handleSelectOption = (qid: string, optionId: string) => {
+    const updatedAnswers = { ...answers, [qid]: optionId };
+    setAnswers(updatedAnswers);
+    if (sessionId) {
+      apiService.saveAssessmentSessionProgress(sessionId, currentIndex, updatedAnswers).catch(() => {});
+    }
+  };
+
+  const handleUpdateCode = (qid: string, code: string) => {
+    const updatedAnswers = { ...answers, [qid]: code };
+    setAnswers(updatedAnswers);
+    if (sessionId) {
+      apiService.saveAssessmentSessionProgress(sessionId, currentIndex, updatedAnswers).catch(() => {});
+    }
+  };
+
+  // 4. Interactive Sandbox Execution (Testing only, does not mark correct)
   const handleRunCode = async (code: string, qid: string) => {
     setRunningSandbox(true);
     try {
@@ -206,7 +284,7 @@ export default function AssessmentPage() {
       if (res.data.passed) {
         toast.success(`All visible tests passed (${res.data.passed_tests}/${res.data.total_tests})!`);
       } else {
-        toast.error(res.data.error || "Some tests failed");
+        toast.error(res.data.error || "Some tests failed. Inspect details below.");
       }
     } catch (err: any) {
       toast.error("Sandbox error: " + err.message);
@@ -238,9 +316,85 @@ export default function AssessmentPage() {
     }
   };
 
-  // 4. Submit Assessment
-  const handleSubmitAssessment = async () => {
-    if (!selectedRole || !sessionId) return;
+  // 5. Navigation & Validation Controls
+  const currentQ = questions[currentIndex];
+
+  const isCurrentQuestionAnswered = Boolean(
+    currentQ &&
+    answers[currentQ.question_id] !== undefined &&
+    answers[currentQ.question_id] !== null &&
+    String(answers[currentQ.question_id]).trim().length > (["coding", "debugging"].includes(currentQ.assessment_type) ? 14 : 0)
+  );
+
+  const answeredCount = questions.filter((q) => {
+    const val = answers[q.question_id];
+    if (val === undefined || val === null) return false;
+    const str = String(val).trim();
+    if (["coding", "debugging"].includes(q.assessment_type)) return str.length >= 15;
+    if (q.assessment_type === "sql") return str.length >= 6;
+    return str.length > 0;
+  }).length;
+
+  const handleNextQuestion = () => {
+    if (!isCurrentQuestionAnswered) {
+      toast.warning("Please select an answer before proceeding.");
+      return;
+    }
+    if (isNavigating) return;
+    setIsNavigating(true);
+    const nextIdx = currentIndex + 1;
+    if (sessionId) {
+      apiService.saveAssessmentSessionProgress(sessionId, nextIdx, answers).catch(() => {});
+    }
+    setCurrentIndex(nextIdx);
+    setTimeout(() => setIsNavigating(false), 200);
+  };
+
+  const handlePreviousQuestion = () => {
+    if (currentIndex <= 0 || isNavigating) return;
+    setIsNavigating(true);
+    const prevIdx = currentIndex - 1;
+    if (sessionId) {
+      apiService.saveAssessmentSessionProgress(sessionId, prevIdx, answers).catch(() => {});
+    }
+    setCurrentIndex(prevIdx);
+    setTimeout(() => setIsNavigating(false), 200);
+  };
+
+  const handleJumpToQuestion = (targetIdx: number) => {
+    if (targetIdx === currentIndex || isNavigating) return;
+    setIsNavigating(true);
+    if (sessionId) {
+      apiService.saveAssessmentSessionProgress(sessionId, targetIdx, answers).catch(() => {});
+    }
+    setCurrentIndex(targetIdx);
+    setShowUnansweredModal(false);
+    setTimeout(() => setIsNavigating(false), 200);
+  };
+
+  // 6. Submit Assessment
+  const handleSubmitAssessment = async (forceSubmit: boolean = false) => {
+    if (!sessionId) return;
+    if (isSubmitting) return;
+
+    if (!forceSubmit) {
+      const missing = questions
+        .map((q, idx) => {
+          const val = answers[q.question_id];
+          const isAns = val !== undefined && val !== null && String(val).trim().length > (["coding", "debugging"].includes(q.assessment_type) ? 14 : 0);
+          return { idx, isAns };
+        })
+        .filter((item) => !item.isAns)
+        .map((item) => item.idx);
+
+      if (missing.length > 0) {
+        setUnansweredList(missing);
+        setShowUnansweredModal(true);
+        return;
+      }
+    }
+
+    setIsSubmitting(true);
     setLoading(true);
     try {
       const payloadAnswers = questions.map((q) => ({
@@ -252,20 +406,35 @@ export default function AssessmentPage() {
 
       const res = await apiService.submitTechnicalAssessment({
         session_id: sessionId,
-        role_id: selectedRole.role_id,
+        role_id: selectedRole?.role_id || "ai_ml_engineer",
         answers: payloadAnswers,
       });
 
       if (res.data) {
         setActiveResult(res.data);
         setViewState("result");
+        localStorage.removeItem("elevate_active_assessment_session_id");
+        setShowUnansweredModal(false);
         toast.success(`Assessment submitted! Score: ${res.data.overall_score_percentage}%`);
       }
     } catch (err: any) {
       toast.error("Failed to submit assessment: " + err.message);
     } finally {
       setLoading(false);
+      setIsSubmitting(false);
     }
+  };
+
+  const handleConfirmExit = async () => {
+    setShowExitModal(false);
+    if (sessionId) {
+      try {
+        await apiService.cancelAssessmentSession(sessionId);
+      } catch {}
+      localStorage.removeItem("elevate_active_assessment_session_id");
+    }
+    setViewState("catalog");
+    toast.info("Assessment session exited and navigation lock released.");
   };
 
   // 5. Load History
@@ -289,10 +458,8 @@ export default function AssessmentPage() {
     }
   };
 
-  const currentQ = questions[currentIndex];
-
   return (
-    <AppShell>
+    <AppShell isLocked={viewState === "in_progress"} onLockedNavigation={() => setShowExitModal(true)}>
       <div className="max-w-7xl mx-auto px-4 py-8 space-y-8">
         {/* Navigation & Header with Authentication Status */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#E6DFD1] pb-6">
@@ -599,7 +766,7 @@ export default function AssessmentPage() {
                 </span>
               </div>
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3 flex-wrap">
                 <div className="flex items-center gap-2 text-[#17233F] font-mono text-sm font-bold bg-[#F5F0E6] px-3.5 py-1.5 rounded-xl border border-[#D6A84B]">
                   <Clock className="w-4 h-4 text-[#D6A84B] animate-pulse" />
                   <span>
@@ -607,10 +774,17 @@ export default function AssessmentPage() {
                     {(timeLeftSeconds % 60).toString().padStart(2, "0")}
                   </span>
                 </div>
+                <button
+                  type="button"
+                  onClick={() => setShowExitModal(true)}
+                  className="px-3 py-1.5 rounded-xl border border-rose-300 text-rose-700 bg-rose-50 hover:bg-rose-100 text-xs font-bold transition-all cursor-pointer"
+                >
+                  Exit Test
+                </button>
                 <BrandButton
                   variant="violet"
                   size="sm"
-                  onClick={handleSubmitAssessment}
+                  onClick={() => handleSubmitAssessment(false)}
                   className="text-xs font-bold"
                 >
                   Submit Final Test
@@ -618,9 +792,42 @@ export default function AssessmentPage() {
               </div>
             </GlassCard>
 
+            {/* Question Quick Jump Drawer */}
+            <div className="p-3.5 bg-white border border-[#E6DFD1] rounded-2xl shadow-2xs space-y-2">
+              <div className="flex items-center justify-between px-1 text-xs">
+                <span className="font-bold text-[#17233F] flex items-center gap-1.5">
+                  <Layers className="w-3.5 h-3.5 text-[#7355D9]" /> Question Navigation ({answeredCount}/{questions.length} Answered)
+                </span>
+                <span className="text-[10px] text-[#687187]">Click any question number to review or answer</span>
+              </div>
+              <div className="flex flex-wrap gap-1.5">
+                {questions.map((q, idx) => {
+                  const val = answers[q.question_id];
+                  const hasAns = val !== undefined && val !== null && String(val).trim().length > (["coding", "debugging"].includes(q.assessment_type) ? 14 : 0);
+                  const isCur = idx === currentIndex;
+                  return (
+                    <button
+                      key={q.question_id}
+                      type="button"
+                      onClick={() => handleJumpToQuestion(idx)}
+                      className={`w-8 h-8 rounded-xl text-xs font-bold flex items-center justify-center transition-all ${
+                        isCur
+                          ? "bg-[#17233F] text-[#F0D99B] ring-2 ring-[#D6A84B] shadow-sm"
+                          : hasAns
+                          ? "bg-emerald-50 text-emerald-800 border border-emerald-300 hover:bg-emerald-100"
+                          : "bg-[#FBF8F1] text-[#687187] border border-[#E6DFD1] hover:border-[#D6A84B]"
+                      }`}
+                    >
+                      {idx + 1}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
             <ProgressBar
-              value={Math.round(((currentIndex + 1) / questions.length) * 100)}
-              label={`Progress: ${currentIndex + 1} / ${questions.length} answered`}
+              value={Math.round((answeredCount / Math.max(1, questions.length)) * 100)}
+              label={`Progress: ${answeredCount} / ${questions.length} answered`}
             />
 
             {/* Question Workspace Card */}
@@ -640,12 +847,7 @@ export default function AssessmentPage() {
                     return (
                       <div
                         key={opt.id}
-                        onClick={() =>
-                          setAnswers((prev) => ({
-                            ...prev,
-                            [currentQ.question_id]: opt.id,
-                          }))
-                        }
+                        onClick={() => handleSelectOption(currentQ.question_id, opt.id)}
                         className={`p-4 rounded-xl border-2 cursor-pointer transition-all flex items-start gap-3.5 ${
                           isSelected
                             ? "bg-[#FFFDF5] border-[#D6A84B] shadow-sm ring-1 ring-[#D6A84B]/30"
@@ -712,12 +914,7 @@ export default function AssessmentPage() {
                     <textarea
                       rows={12}
                       value={answers[currentQ.question_id] || ""}
-                      onChange={(e) =>
-                        setAnswers((prev) => ({
-                          ...prev,
-                          [currentQ.question_id]: e.target.value,
-                        }))
-                      }
+                      onChange={(e) => handleUpdateCode(currentQ.question_id, e.target.value)}
                       placeholder="# Write your implementation here in Python..."
                       className="w-full bg-[#10192D] border-2 border-slate-700 rounded-xl p-4 font-mono text-sm text-[#F5F0E6] focus:outline-none focus:border-[#D6A84B] transition-all"
                     />
@@ -789,12 +986,7 @@ export default function AssessmentPage() {
                     <textarea
                       rows={8}
                       value={answers[currentQ.question_id] || ""}
-                      onChange={(e) =>
-                        setAnswers((prev) => ({
-                          ...prev,
-                          [currentQ.question_id]: e.target.value,
-                        }))
-                      }
+                      onChange={(e) => handleUpdateCode(currentQ.question_id, e.target.value)}
                       placeholder="SELECT ... FROM ... WHERE ...;"
                       className="w-full bg-[#10192D] border-2 border-slate-700 rounded-xl p-4 font-mono text-sm text-[#F5F0E6] focus:outline-none focus:border-[#D6A84B] transition-all"
                     />
@@ -859,12 +1051,7 @@ export default function AssessmentPage() {
                   <textarea
                     rows={12}
                     value={answers[currentQ.question_id] || ""}
-                    onChange={(e) =>
-                      setAnswers((prev) => ({
-                        ...prev,
-                        [currentQ.question_id]: e.target.value,
-                      }))
-                    }
+                    onChange={(e) => handleUpdateCode(currentQ.question_id, e.target.value)}
                     placeholder="Describe your distributed system architecture, load balancer placement, cache invalidation strategy, and database replication..."
                     className="w-full bg-[#10192D] border-2 border-slate-700 rounded-xl p-4 text-sm text-[#F5F0E6] focus:outline-none focus:border-[#D6A84B] transition-all"
                   />
@@ -872,36 +1059,47 @@ export default function AssessmentPage() {
               )}
 
               {/* Question Navigation Controls */}
-              <div className="flex items-center justify-between pt-6 border-t border-[#E6DFD1]">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-[#E6DFD1]">
                 <BrandButton
                   variant="navy"
                   size="sm"
-                  disabled={currentIndex === 0}
-                  onClick={() => setCurrentIndex((prev) => prev - 1)}
-                  className="gap-2 font-bold"
+                  disabled={currentIndex === 0 || isNavigating}
+                  onClick={handlePreviousQuestion}
+                  className="gap-2 font-bold w-full sm:w-auto"
                 >
                   <ArrowLeft className="w-4 h-4" /> Previous
                 </BrandButton>
 
-                {currentIndex < questions.length - 1 ? (
-                  <BrandButton
-                    variant="gold"
-                    size="sm"
-                    onClick={() => setCurrentIndex((prev) => prev + 1)}
-                    className="gap-2 font-bold"
-                  >
-                    Next Question <ArrowRight className="w-4 h-4" />
-                  </BrandButton>
-                ) : (
-                  <BrandButton
-                    variant="gold"
-                    size="sm"
-                    onClick={handleSubmitAssessment}
-                    className="gap-2 bg-emerald-600 hover:bg-emerald-500 font-bold"
-                  >
-                    <CheckCircle2 className="w-4 h-4" /> Complete & Submit
-                  </BrandButton>
-                )}
+                <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto justify-end">
+                  {!isCurrentQuestionAnswered && (
+                    <span className="text-xs font-semibold text-amber-800 bg-amber-50 px-3 py-1.5 rounded-xl border border-amber-200 text-center flex items-center gap-1.5 shadow-2xs">
+                      <AlertTriangle className="w-3.5 h-3.5 text-amber-600 shrink-0" />
+                      Please select an answer before proceeding.
+                    </span>
+                  )}
+
+                  {currentIndex < questions.length - 1 ? (
+                    <BrandButton
+                      variant="gold"
+                      size="sm"
+                      disabled={!isCurrentQuestionAnswered || isNavigating}
+                      onClick={handleNextQuestion}
+                      className="gap-2 font-bold w-full sm:w-auto disabled:opacity-40 disabled:cursor-not-allowed"
+                    >
+                      Next Question <ArrowRight className="w-4 h-4" />
+                    </BrandButton>
+                  ) : (
+                    <BrandButton
+                      variant="gold"
+                      size="sm"
+                      disabled={!isCurrentQuestionAnswered || isSubmitting}
+                      onClick={() => handleSubmitAssessment(false)}
+                      className="gap-2 bg-emerald-600 hover:bg-emerald-500 font-bold w-full sm:w-auto disabled:opacity-40 disabled:cursor-not-allowed"
+                    >
+                      <CheckCircle2 className="w-4 h-4" /> Complete & Submit
+                    </BrandButton>
+                  )}
+                </div>
               </div>
             </GlassCard>
           </div>
@@ -1162,6 +1360,88 @@ export default function AssessmentPage() {
                 ))}
               </div>
             )}
+          </div>
+        )}
+
+        {/* Exit Assessment Confirmation Modal */}
+        {showExitModal && (
+          <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+            <div className="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border-2 border-amber-300 space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mx-auto shadow-xs">
+                <AlertTriangle className="w-6 h-6" />
+              </div>
+              <div className="text-center space-y-1.5">
+                <h3 className="text-base font-black text-[#17233F]">Assessment In Progress</h3>
+                <p className="text-xs text-[#687187] leading-relaxed">
+                  Your timed test is currently active. Leaving this page will not pause the timer. You can return later while the timer is still active, or exit to release the in-app navigation lock.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-2 pt-2">
+                <button
+                  type="button"
+                  onClick={() => setShowExitModal(false)}
+                  className="btn-gold flex-1 py-2.5 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5"
+                >
+                  Continue Assessment
+                </button>
+                <button
+                  type="button"
+                  onClick={handleConfirmExit}
+                  className="px-4 py-2.5 rounded-xl text-xs font-bold text-rose-700 bg-rose-50 hover:bg-rose-100 border border-rose-200 transition-all flex items-center justify-center gap-1.5"
+                >
+                  Exit & Release Lock
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Unanswered Questions Warning Modal */}
+        {showUnansweredModal && (
+          <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+            <div className="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border-2 border-rose-300 space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center mx-auto shadow-xs">
+                <HelpCircle className="w-6 h-6" />
+              </div>
+              <div className="text-center space-y-1.5">
+                <h3 className="text-base font-black text-[#17233F]">Unanswered Questions Detected</h3>
+                <p className="text-xs text-[#687187] leading-relaxed">
+                  You have <strong className="text-rose-700 font-black">{unansweredList.length}</strong> unanswered question(s): Question {unansweredList.map((i) => i + 1).join(", ")}. Please review before final submission.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-1.5 justify-center max-h-28 overflow-y-auto p-2 bg-[#FBF8F1] rounded-xl border border-[#E6DFD1]">
+                {unansweredList.map((qIdx) => (
+                  <button
+                    key={qIdx}
+                    type="button"
+                    onClick={() => handleJumpToQuestion(qIdx)}
+                    className="px-2.5 py-1 rounded-lg text-xs font-bold bg-white border border-[#D6A84B] text-[#17233F] hover:bg-[#FFFDF5] shadow-2xs"
+                  >
+                    Question {qIdx + 1}
+                  </button>
+                ))}
+              </div>
+              <div className="flex flex-col sm:flex-row gap-2 pt-2">
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (unansweredList.length > 0) {
+                      handleJumpToQuestion(unansweredList[0]);
+                    }
+                  }}
+                  className="btn-gold flex-1 py-2.5 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5"
+                >
+                  Return to Question {unansweredList[0] !== undefined ? unansweredList[0] + 1 : 1}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleSubmitAssessment(true)}
+                  className="px-4 py-2.5 rounded-xl text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-300 transition-all flex items-center justify-center gap-1.5"
+                >
+                  Submit Anyway
+                </button>
+              </div>
+            </div>
           </div>
         )}
       </div>

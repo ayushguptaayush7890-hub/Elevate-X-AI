@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-DAN-MCQ-042",
+  "role_id": "data_analyst",
+  "skill_id": "DAN-SKL-02",
+  "skill_name": "Data Cleaning, Wrangling & Transformation (Pandas)",
+  "subtopic": "Reshaping Data (Pivot Tables, Melt, Stack, Unstack)",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "[Data Cleaning, Wrangling & Transformation (Pandas) - Q42] In tidy data principles, what transformation does Pandas `melt()` perform on a DataFrame?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Unpivots a DataFrame from wide format to long format, gathering column headers into a variable column and values into a value column"
+    },
+    {
+      "id": "B",
+      "text": "Pivots a DataFrame from long format to wide format"
+    },
+    {
+      "id": "C",
+      "text": "Drops duplicate rows based on index"
+    },
+    {
+      "id": "D",
+      "text": "Merges two tables on primary keys"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "`melt()` reverses wide format structures, consolidating multiple metric columns into key-value attribute pairs for relational reporting.",
+  "reference_solution": "Correct Choice: A. Rationale: `melt()` reverses wide format structures, consolidating multiple metric columns into key-value attribute pairs for relational reporting.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

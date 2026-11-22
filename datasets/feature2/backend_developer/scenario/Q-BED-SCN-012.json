@@ -1,0 +1,61 @@
+{
+  "question_id": "Q-BED-SCN-012",
+  "role_id": "backend_developer",
+  "skill_id": "BED-SKL-02",
+  "skill_name": "Relational & NoSQL Database Design & Indexing",
+  "subtopic": "Optimistic vs Pessimistic Concurrency Locking",
+  "assessment_type": "scenario",
+  "difficulty": "medium",
+  "question_text": "### Production Incident Scenario:\nProduction Incident #12: A mission-critical microservice backend experienced cascading failure and connection pool starvation in Relational & NoSQL Database Design & Indexing. Upstream service timeouts surged to 45% following a database failover during 'Optimistic vs Pessimistic Concurrency Locking'.\n\n### Engineering Challenge:\nWhich backend engineering pattern provides resilient fault tolerance and zero-downtime recovery for 'Optimistic vs Pessimistic Concurrency Locking'?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Configure infinite HTTP request timeouts so clients wait indefinitely until the downstream database recovers."
+    },
+    {
+      "id": "B",
+      "text": "Scale the backend process replica count to 500 instances to force more simultaneous connection attempts to the recovering database."
+    },
+    {
+      "id": "C",
+      "text": "Disable all connection pooling and open an unpooled TCP socket for every incoming API request."
+    },
+    {
+      "id": "D",
+      "text": "Implement distributed circuit breakers with exponential jittered backoff, connection pool timeouts, and cache-aside read fallbacks."
+    }
+  ],
+  "correct_answer": "D",
+  "answer_explanation": "When downstream databases recover from failover, unthrottled retries create a thundering herd. Circuit breakers with jittered exponential backoff allow dependent dependencies to stabilize without overwhelming connection limits.",
+  "reference_solution": "Recommended Remediation: Option D. Rationale: When downstream databases recover from failover, unthrottled retries create a thundering herd. Circuit breakers with jittered exponential backoff allow dependent dependencies to stabilize without overwhelming connection limits.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Architecture & Operational Assessment",
+        "weight": 0.6,
+        "description": "Evaluates risk, system constraints, and root cause accurately."
+      },
+      {
+        "name": "Mitigation Strategy",
+        "weight": 0.4,
+        "description": "Selects the optimal zero-downtime or resilient recovery path."
+      }
+    ],
+    "max_score": 6.0
+  },
+  "estimated_time": 12,
+  "marks": 6,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/scenarios",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

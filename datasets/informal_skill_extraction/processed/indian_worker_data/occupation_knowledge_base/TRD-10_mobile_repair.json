@@ -1,0 +1,135 @@
+{
+  "occupation_id": "TRD-10",
+  "file_slug": "TRD-10_mobile_repair",
+  "standard_occupation_name": "Mobile Repair Technician",
+  "common_indian_names": [
+    "Mobile Mistri",
+    "Phone Repair Karigar",
+    "Hardware Technician",
+    "Mobile Karigar"
+  ],
+  "hindi_names": [
+    "मोबाइल मिस्त्री",
+    "फोन रिपेयर कारीगर",
+    "मोबाइल हार्डवेयर टेक्नीशियन"
+  ],
+  "roman_hindi_names": [
+    "Mobile Mistri",
+    "Phone Technician",
+    "Hardware Mistri"
+  ],
+  "regional_vocabulary": {
+    "delhi_up": [
+      "SMD chalana",
+      "CC pin badalna",
+      "folder chipkana",
+      "shorting nikalna",
+      "jumper maarna",
+      "DC power test",
+      "OCA machine"
+    ],
+    "punjab_haryana": [
+      "glass change",
+      "charging jack",
+      "IC reballing",
+      "dead set"
+    ],
+    "maharashtra_gujarat": [
+      "touch folder",
+      "rosin smoke",
+      "motherboard repair",
+      "multimeter buzzer"
+    ]
+  },
+  "description": "Component-level micro-soldering, SMD hot air rework, touchscreen display folder separation and lamination, charging port replacement, and circuit diagnostics on smartphones.",
+  "daily_tasks": [
+    "Heating and disassembling smartphone back panels with suction cards",
+    "Separating broken front glass folders on temperature-controlled heating plates",
+    "Desoldering burnt micro-USB and Type-C charging ports with SMD hot air rework stations",
+    "Micro-soldering replacement charging connector pins with fine iron tips and rosin flux",
+    "Testing motherboard power rails and short circuits using digital multimeters in buzzer mode",
+    "Analyzing boot current draw sequences using regulated DC benchtop power supplies",
+    "Soldering 0.02mm enameled jumper wires to bypass severed copper PCB traces"
+  ],
+  "advanced_tasks": [
+    "BGA chip reballing (power ICs, audio codecs, charging ICs) using precision steel stencils",
+    "Laminating curved OLED display panels in OCA vacuum autoclave chambers",
+    "Diagnosing complex secondary circuit half-shorts using rosin flux vapor smoke and thermal cameras",
+    "Restoring water-damaged motherboards with ultrasonic cleaning and descaling"
+  ],
+  "tools": [
+    "SMD hot air rework station",
+    "Temperature-controlled micro-soldering station",
+    "Digital multimeter with needle probes",
+    "Stereo zoom microscope",
+    "Precision tweezers & curved pry blades",
+    "Display heating separator plate (80°C)"
+  ],
+  "equipment": [
+    "Regulated DC benchtop power supply (0-30V, 5A)",
+    "OCA vacuum laminator & bubble remover autoclave",
+    "Ultrasonic cleaning bath"
+  ],
+  "materials": [
+    "Lead-free solder wire (0.3mm) and solder paste (Sn42/Bi58)",
+    "Rosin / no-clean liquid soldering flux",
+    "0.02mm insulated copper jumper wire",
+    "Copper solder wick desoldering braid",
+    "Type-C / micro-USB connectors",
+    "T-7000 / B-7000 display adhesive glue",
+    "Isopropyl alcohol (IPA 99.9%)"
+  ],
+  "work_processes": [
+    "Visual & DC Diagnostic -> Thermal Disassembly -> Motherboard Extraction -> Component Desoldering -> Micro-Soldering -> Ultrasonic Cleaning -> Reassembly & Function Testing"
+  ],
+  "troubleshooting_tasks": [
+    "Distinguishing between dead battery, shorted charging IC, and faulty sub-board PCB",
+    "Diagnosing touch screen digitizer non-responsiveness vs broken display flex cable",
+    "Locating VPH_PWR / VREG shorted ceramic capacitors heating up under DC supply",
+    "Resolving speaker or mic audio distortion caused by acoustic mesh debris or solder bridges"
+  ],
+  "quality_inspection": [
+    "Inspecting soldered connector pins under microscope for solder bridges or dry joints",
+    "Testing rapid charging current (> 1.5A) with USB digital power meters",
+    "Verifying full digitizer touch sensitivity across screen edges using touch test apps",
+    "Ensuring proximity sensor turns off screen during voice call simulations"
+  ],
+  "measurement_and_planning": [
+    "Regulating SMD hot air temperature (320°C–360°C) to prevent motherboard layer delamination",
+    "Setting soldering iron tip temperature (350°C) for quick thermal transfer without pad peeling"
+  ],
+  "safety_practices": [
+    "Wearing grounded ESD anti-static wrist strap to protect sensitive CMOS integrated circuits",
+    "Never puncturing or bending lithium-ion battery cells to avoid thermal runaway fires",
+    "Operating soldering fume absorber fans to extract hazardous rosin flux particulates",
+    "Storing lithium battery cells in fire-resistant metal containers"
+  ],
+  "maintenance": [
+    "Tinning soldering iron copper tips with tip activator after every repair session",
+    "Cleaning microscope objective lenses and hotplate silicone pads with isopropyl alcohol",
+    "Calibrating DC benchtop power supply voltage outputs"
+  ],
+  "customer_communication": [
+    "Explaining data privacy protections and guaranteeing no customer data access",
+    "Differentiating between original display folder vs first-copy replacement options",
+    "Setting transparent warranty terms on replaced charging ports and batteries"
+  ],
+  "transferable_competencies": [
+    "Micro-scale hand steadiness under magnification",
+    "Electronic circuit schematic tracking",
+    "Precision diagnostic instrumentation"
+  ],
+  "official_vocational_references": {
+    "nsqf_qp_code": "ELE/Q8104",
+    "nsqf_level": 4,
+    "ssc": "Electronics Sector Skills Council of India",
+    "dgt_cts_trade": "Technician Power Electronic System / Electronics Mechanic (CTS 026)"
+  },
+  "canonical_skills": [
+    "SMD Hot Air Desoldering and USB Port Micro-Soldering",
+    "Touchscreen Display Folder Thermal Separation",
+    "DC Benchtop Power Supply Motherboard Short Circuit Diagnostics",
+    "Micro-Wire PCB Track Jumper Bypass",
+    "Smartphone Lithium Battery Testing and Safe Replacement"
+  ]
+}

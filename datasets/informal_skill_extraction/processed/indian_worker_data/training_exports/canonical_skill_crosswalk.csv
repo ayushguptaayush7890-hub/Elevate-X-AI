@@ -1,0 +1,33 @@
+skill_id,skill_name,occupation_id,nsqf_reference,esco_uri,onet_code,is_indigenous,vernacular_terms_count
+SKL-TLR-001,Single-Needle Lockstitch Garment Assembly,TRD-01,AMH/Q1947:NOS-101,http://data.europa.eu/esco/skill/08d51185-df0e-4360-aee8-2a210f968be8,51-6052.00,False,4
+SKL-TLR-002,Overlock Seam Edging and Finishing,TRD-01,AMH/Q1947:NOS-102,http://data.europa.eu/esco/skill/901726a8-bf64-469d-8c4d-a9914c62bca8,51-6052.00,False,6
+SKL-TLR-003,Fusible Interlining Application and Collar Stitching,TRD-01,AMH/Q1947:NOS-102,http://data.europa.eu/esco/skill/08d51185-df0e-4360-aee8-2a210f968be8,51-6052.00,False,4
+SKL-TLR-004,Garment Pattern Measurement and Fabric Cutting,TRD-01,AMH/Q1947:NOS-101,http://data.europa.eu/esco/skill/56c702b8-9ee2-402f-b4ec-86f3ea833a69,51-6052.00,False,4
+SKL-TLR-005,Traditional Katori Blouse Drafting and Dart Stitching,TRD-01,AMH/Q1947:NOS-103,,51-6052.00,True,4
+SKL-TLR-006,Sewing Machine Tension Calibration and Feed Dog Maintenance,TRD-01,AMH/Q0301:NOS-201,http://data.europa.eu/esco/skill/ea444455-beee-4367-9aa8-f58473e6ab18,51-6052.00,False,4
+SKL-ELE-001,Concealed Wall Conduit Chasing and Installation,TRD-02,ELE/Q3104:NOS-201,http://data.europa.eu/esco/skill/3d3d82d9-e932-430b-9df0-e3ebc707db9e,47-2111.00,False,4
+SKL-ELE-002,Miniature Circuit Breaker (MCB) Distribution Board Wiring,TRD-02,ELE/Q3104:NOS-201,http://data.europa.eu/esco/skill/3d3d82d9-e932-430b-9df0-e3ebc707db9e,47-2111.00,False,4
+SKL-ELE-003,Multimeter Phase and Neutral Voltage Diagnostics,TRD-02,ELE/Q3104:NOS-202,http://data.europa.eu/esco/skill/a638bfe4-7d5b-4fa8-9585-e7f09700eb87,47-2111.00,False,4
+SKL-ELE-004,Earth Resistance Verification and Earthing Pit Setup,TRD-02,ELE/Q3104:NOS-203,http://data.europa.eu/esco/skill/a638bfe4-7d5b-4fa8-9585-e7f09700eb87,47-2111.00,False,4
+SKL-PLM-001,CPVC Pipe Solvent Cement Jointing,TRD-03,PSC/Q0104:NOS-101,http://data.europa.eu/esco/skill/b5e28a52-c80f-48d6-9430-c3dcfdcfda98,47-2152.00,False,4
+SKL-PLM-002,Galvanized Iron Pipe Manual Die Threading,TRD-03,PSC/Q0104:NOS-102,http://data.europa.eu/esco/skill/e3223ca8-7fba-4f2d-b108-e71e72f9fafe,47-2152.00,False,4
+SKL-PLM-003,Concealed Wall Diverter Installation,TRD-03,PSC/Q0104:NOS-101,http://data.europa.eu/esco/skill/b5e28a52-c80f-48d6-9430-c3dcfdcfda98,47-2152.00,False,4
+SKL-PLM-004,Flush Cistern Float Valve Inspection and Leak Testing,TRD-03,PSC/Q0104:NOS-103,http://data.europa.eu/esco/skill/e3223ca8-7fba-4f2d-b108-e71e72f9fafe,47-2152.00,False,4
+SKL-MEC-001,Motorcycle Engine Oil Drain and Replacement,TRD-04,ASC/Q1411:NOS-101,http://data.europa.eu/esco/skill/ea444455-beee-4367-9aa8-f58473e6ab18,49-3023.00,False,4
+SKL-MEC-002,Engine Valve Tappet Clearance Calibration,TRD-04,ASC/Q1411:NOS-102,http://data.europa.eu/esco/skill/96253c55-6b83-4a12-87f5-201ea1815e45,49-3023.00,False,4
+SKL-MEC-003,Hydraulic Disc Brake Caliper Fluid Bleeding,TRD-04,ASC/Q1402:NOS-101,http://data.europa.eu/esco/skill/ea444455-beee-4367-9aa8-f58473e6ab18,49-3023.00,False,4
+SKL-CRP-001,Circular Saw Plywood Panel Sizing,TRD-05,FFS/Q0103:NOS-101,http://data.europa.eu/esco/skill/a83fa741-9c60-4416-86f1-a1d2931db26e,47-2031.00,False,4
+SKL-CRP-002,Adhesive Application and Laminate Sheet Pressing,TRD-05,FFS/Q0103:NOS-102,http://data.europa.eu/esco/skill/474c10a4-e7fa-42f0-a29d-439ea8ba0784,47-2031.00,False,4
+SKL-CRP-003,Manual Wood Surface Planing and Smoothing,TRD-05,FFS/Q0103:NOS-101,http://data.europa.eu/esco/skill/a83fa741-9c60-4416-86f1-a1d2931db26e,47-2031.00,False,4
+SKL-WLD-001,Shielded Metal Arc Welding with E6013 Electrodes,TRD-06,CSC/Q0204:NOS-101,http://data.europa.eu/esco/skill/85aa0e37-f4e3-4710-91fc-1b776c5f7881,51-4121.00,False,4
+SKL-WLD-002,Weld Slag Removal and Bead Cleaning,TRD-06,CSC/Q0204:NOS-102,http://data.europa.eu/esco/skill/901726a8-bf64-469d-8c4d-a9914c62bca8,51-4121.00,False,4
+SKL-WLD-003,Angle Grinder V-Groove Edge Beveling,TRD-06,CSC/Q0204:NOS-101,http://data.europa.eu/esco/skill/85aa0e37-f4e3-4710-91fc-1b776c5f7881,51-4121.00,False,4
+SKL-MSN-001,Plumb Bob Vertical Alignment Verification,TRD-07,CON/Q0103:NOS-101,http://data.europa.eu/esco/skill/3035f299-4458-45ec-9f5b-6f0a67cf4798,47-2061.00,False,4
+SKL-MSN-002,Bricklaying in 1:4 Cement Sand Mortar,TRD-07,CON/Q0103:NOS-102,http://data.europa.eu/esco/skill/065b2169-d419-4e78-98f5-30ad8a5fa689,47-2061.00,False,4
+SKL-MSN-003,Neat Cement Trowel Floating (Ghoontai),TRD-07,CON/Q0103:NOS-103,,47-2061.00,True,4
+SKL-PNT-001,Blade Application of Double Coat Wall Putty,TRD-08,CON/Q0501:NOS-101,http://data.europa.eu/esco/skill/107a637f-eb6a-4ee1-b755-f7169fef89e2,47-2141.00,False,4
+SKL-PNT-002,Abrasive Sanding and Wall Primer Sealing,TRD-08,CON/Q0501:NOS-102,http://data.europa.eu/esco/skill/6ffea371-678a-4d33-bcbe-8e01bb285ec5,47-2141.00,False,4
+SKL-AGR-001,Micro-Irrigation Drip Lateral Pipe Layout,TRD-09,AGR/Q1002:NOS-101,http://data.europa.eu/esco/skill/42435b86-fb12-4217-b6f1-a1d2931db26e,45-2092.00,False,4
+SKL-AGR-002,Venturi Fertigation Fertilizer Dosing Calibration,TRD-09,AGR/Q1002:NOS-102,http://data.europa.eu/esco/skill/14109407-7d63-455b-80a5-f865ee1dfcb1,45-2092.00,False,4
+SKL-MOB-001,SMD Hot Air Desoldering and USB Port Micro-Soldering,TRD-10,ELE/Q8104:NOS-101,http://data.europa.eu/esco/skill/8f220311-bf12-4217-b6f1-a1d2931db26e,49-2022.00,False,4
+SKL-MOB-002,Micro-Wire PCB Track Jumper Bypass,TRD-10,ELE/Q8104:NOS-102,http://data.europa.eu/esco/skill/96253c55-6b83-4a12-87f5-201ea1815e45,49-2022.00,False,4

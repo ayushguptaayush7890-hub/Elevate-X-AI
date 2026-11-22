@@ -1,0 +1,61 @@
+{
+  "question_id": "Q-FED-SCN-006",
+  "role_id": "frontend_developer",
+  "skill_id": "FED-SKL-01",
+  "skill_name": "Core JavaScript/TypeScript & Browser Runtime",
+  "subtopic": "Event Loop, Microtasks (Promises) and Macrotasks (Timers)",
+  "assessment_type": "scenario",
+  "difficulty": "medium",
+  "question_text": "### Production Incident Scenario:\nProduction Incident #06: Real User Monitoring (RUM) alerts triggered on the core customer checkout flow due to severe Interaction to Next Paint (INP) degradation and frame dropping in Core JavaScript/TypeScript & Browser Runtime. Profiling reveals frequent 250ms long tasks originating from 'Event Loop, Microtasks (Promises) and Macrotasks (Timers)'.\n\n### Engineering Challenge:\nWhat is the most effective frontend architecture pattern to bring INP below the 200ms 'Good' threshold for 'Event Loop, Microtasks (Promises) and Macrotasks (Timers)'?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Yield execution to the main thread using scheduler.yield() or requestIdleCallback, and defer non-urgent state recalculations via useTransition/web workers."
+    },
+    {
+      "id": "B",
+      "text": "Wrap all DOM mutation handlers inside synchronous while-loops until layout computation finishes."
+    },
+    {
+      "id": "C",
+      "text": "Replace modern reactive state hooks with direct synchronous document.write calls."
+    },
+    {
+      "id": "D",
+      "text": "Disable hardware acceleration and set CSS will-change on all DOM nodes globally."
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "Long synchronous JavaScript execution during 'Event Loop, Microtasks (Promises) and Macrotasks (Timers)' blocks the browser main thread from processing user taps and keystrokes. Decomposing monolithic tasks with scheduler.yield() or React concurrent transitions allows the browser to interleave urgent paint updates, ensuring responsive INP.",
+  "reference_solution": "Recommended Remediation: Option A. Rationale: Long synchronous JavaScript execution during 'Event Loop, Microtasks (Promises) and Macrotasks (Timers)' blocks the browser main thread from processing user taps and keystrokes. Decomposing monolithic tasks with scheduler.yield() or React concurrent transitions allows the browser to interleave urgent paint updates, ensuring responsive INP.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Architecture & Operational Assessment",
+        "weight": 0.6,
+        "description": "Evaluates risk, system constraints, and root cause accurately."
+      },
+      {
+        "name": "Mitigation Strategy",
+        "weight": 0.4,
+        "description": "Selects the optimal zero-downtime or resilient recovery path."
+      }
+    ],
+    "max_score": 6.0
+  },
+  "estimated_time": 12,
+  "marks": 6,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/scenarios",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

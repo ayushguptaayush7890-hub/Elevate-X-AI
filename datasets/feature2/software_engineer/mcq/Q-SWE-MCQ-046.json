@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-046",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-04",
+  "skill_name": "Database Systems & Transaction Isolation",
+  "subtopic": "Write-Ahead Logging (WAL) and MVCC Mechanics",
+  "assessment_type": "mcq",
+  "difficulty": "hard",
+  "question_text": "In the ARIES database recovery algorithm, what is the role of the Analysis phase during crash recovery?",
+  "options": [
+    {
+      "id": "A",
+      "text": "It reapplies all logged operations starting from the oldest uncommitted transaction"
+    },
+    {
+      "id": "B",
+      "text": "It scans the log forward from the most recent checkpoint to reconstruct the Dirty Page Table (DPT) and Active Transaction Table (ATT) at the time of the crash"
+    },
+    {
+      "id": "C",
+      "text": "It rolls back all active transactions in reverse order"
+    },
+    {
+      "id": "D",
+      "text": "It verifies cryptographic checksums of disk sectors"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "ARIES has 3 phases: 1) Analysis: scans forward from checkpoint to identify active transactions and dirty pages at crash time; 2) Redo: repeats history; 3) Undo: rolls back losers.",
+  "reference_solution": "Correct Choice: B. Rationale: ARIES has 3 phases: 1) Analysis: scans forward from checkpoint to identify active transactions and dirty pages at crash time; 2) Redo: repeats history; 3) Undo: rolls back losers.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

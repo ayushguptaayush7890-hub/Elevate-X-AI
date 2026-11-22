@@ -1,0 +1,54 @@
+{
+  "question_id": "Q-BED-SYS-015",
+  "role_id": "backend_developer",
+  "skill_id": "BED-SKL-03",
+  "skill_name": "Distributed Systems, Message Brokers & Event Driven Architecture",
+  "subtopic": "Distributed Financial Architecture",
+  "assessment_type": "system_design",
+  "difficulty": "medium",
+  "question_text": "### System Design Challenge: Distributed Event-Driven Payment Gateway #15\n\n#### Functional Requirements:\n- Support at-least-once message delivery with guaranteed idempotent payment execution\n- Handle distributed state rollback across order, inventory, and payment microservices\n- Provide sub-100ms p99 response time for synchronous payment authorizations\n\n#### Non-Functional & Scale Requirements:\n- PCI-DSS compliant cardholder data tokenization and storage isolation\n- Zero single points of failure with multi-AZ active-active failover\n- Audit log immutability guaranteeing non-repudiation\n\n#### Scale Parameters:\n- **Peak Authorization QPS**: 15,000\n- **Daily Transaction Volume**: $80 Million USD\n- **Ledger Write Throughput**: 30,000 writes/sec\n\nDesign the end-to-end architecture. Specify API contracts, high-level data flow, database storage models, caching layers, partition keys, consensus mechanisms, and failure recovery strategies.",
+  "options": null,
+  "correct_answer": "### Reference Architecture Breakdown:\nAPI Gateway validates mTLS & JWT -> Payment Orchestrator saves Intent to Postgres with Transactional Outbox -> Debezium CDC streams to Kafka -> Payment Workers invoke Banking Acquiring Networks with idempotency keys -> Saga Orchestrator coordinates compensations upon card decline.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nSaga choreography avoids a single orchestrator bottleneck but creates complex event dependencies. An orchestrator saga clarifies workflows and simplifies auditing at the cost of centralized coordination.",
+  "answer_explanation": "Evaluates resilient distributed transaction architecture under high-throughput financial compliance constraints.",
+  "reference_solution": "### Reference Architecture Breakdown:\nAPI Gateway validates mTLS & JWT -> Payment Orchestrator saves Intent to Postgres with Transactional Outbox -> Debezium CDC streams to Kafka -> Payment Workers invoke Banking Acquiring Networks with idempotency keys -> Saga Orchestrator coordinates compensations upon card decline.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nSaga choreography avoids a single orchestrator bottleneck but creates complex event dependencies. An orchestrator saga clarifies workflows and simplifies auditing at the cost of centralized coordination.",
+  "coding_language": null,
+  "sample_input": "Enterprise-scale production traffic load and availability SLA constraints.",
+  "expected_output": "Comprehensive architectural blueprint detailing data models, caching, and resiliency.",
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Distributed Consistency & Sagas",
+        "weight": 0.3,
+        "description": "Addresses distributed transactions and compensations."
+      },
+      {
+        "name": "Idempotency & Deduplication",
+        "weight": 0.25,
+        "description": "Designs atomic token reservations and duplicate defense."
+      },
+      {
+        "name": "Security & PCI Compliance",
+        "weight": 0.25,
+        "description": "Isolates card tokens, handles encryption, and audit logs."
+      },
+      {
+        "name": "Throughput & Scalability",
+        "weight": 0.2,
+        "description": "Designs partitioning, connection pools, and queue backpressure."
+      }
+    ],
+    "max_score": 15.0
+  },
+  "estimated_time": 40,
+  "marks": 15,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/system-design",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

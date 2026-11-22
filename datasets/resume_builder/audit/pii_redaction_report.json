@@ -1,0 +1,39 @@
+{
+  "audit_timestamp": "2026-11-21T12:24:00Z",
+  "redaction_methodology": "Pre-tokenization regex entity masking with canonical tokens ([REDACTED_EMAIL], [REDACTED_PHONE], [REDACTED_LINKEDIN], [REDACTED_GITHUB], [REDACTED_NAME])",
+  "summary_by_dataset": {
+    "uhfew_resumes": {
+      "emails": 4722,
+      "phones": 4722,
+      "linkedin": 4718,
+      "github": 4718,
+      "names": 4652
+    },
+    "job_resume_matching_cv": {
+      "emails": 0,
+      "phones": 0,
+      "linkedin": 0,
+      "github": 0
+    },
+    "job_resume_fit": {
+      "emails": 30,
+      "phones": 160,
+      "linkedin": 24,
+      "github": 1
+    },
+    "resume_score_details": {
+      "emails": 0,
+      "phones": 0,
+      "names": 0,
+      "note": "Resumes in GPT-4o evaluation corpus are synthetic/pre-anonymized"
+    }
+  },
+  "total_redactions": {
+    "emails": 4752,
+    "phones": 4882,
+    "linkedin": 4742,
+    "github": 4719,
+    "names": 4652
+  },
+  "compliance_status": "Cleaned copies in datasets/resume_builder/processed/ are sanitized. Raw copies are quarantined under raw/ and git-ignored."
+}

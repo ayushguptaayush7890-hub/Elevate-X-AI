@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-027",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-03",
+  "skill_name": "Concurrency, Multithreading & Memory Management",
+  "subtopic": "Garbage Collection Mechanics and Memory Leak Profiling",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "In a generational garbage collector, what foundational assumption (generational hypothesis) justifies separating objects into young and old generations?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Old objects consume significantly less memory than young objects"
+    },
+    {
+      "id": "B",
+      "text": "Most allocated objects have very short lifespans and die shortly after creation"
+    },
+    {
+      "id": "C",
+      "text": "Young generation collectors require full application stop-the-world pauses"
+    },
+    {
+      "id": "D",
+      "text": "Thread stacks can only reference old generation objects"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "The weak generational hypothesis states that the vast majority of objects die shortly after allocation. Focusing frequent minor collections on the young generation maximizes throughput.",
+  "reference_solution": "Correct Choice: B. Rationale: The weak generational hypothesis states that the vast majority of objects die shortly after allocation. Focusing frequent minor collections on the young generation maximizes throughput.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

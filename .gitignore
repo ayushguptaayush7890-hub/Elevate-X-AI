@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 node_modules.nosync/
+node_modules.old/
 /.pnp
 .pnp.*
 .yarn/*
@@ -73,7 +74,13 @@ backend/*.sqlite*
 *.pth
 *.onnx
 
-# Temporary archives
+# Large raw datasets exceeding GitHub 100MB file limit
+datasets/career_transition/raw/job_descriptions/recruitment_jds_english.parquet
+datasets/skill_gap/raw/job_descriptions/recruitment_jds_english.parquet
+
+# Raw and processed resume datasets (contain large CSVs and PII)
+datasets/resume_builder/raw/
+datasets/resume_builder/processed/
 ezgif*.zip
 *.zip
 *.tar.gz

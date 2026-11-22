@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-032",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-03",
+  "skill_name": "Concurrency, Multithreading & Memory Management",
+  "subtopic": "Garbage Collection Mechanics and Memory Leak Profiling",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "In tracing garbage collection, how does the Tri-Color Marking algorithm classify an object marked 'Gray'?",
+  "options": [
+    {
+      "id": "A",
+      "text": "The object is unreachable and eligible for immediate collection"
+    },
+    {
+      "id": "B",
+      "text": "The object is reachable, but its referenced outgoing child objects have not yet been scanned"
+    },
+    {
+      "id": "C",
+      "text": "The object has been scanned and all its references are verified live"
+    },
+    {
+      "id": "D",
+      "text": "The object resides in an off-heap direct buffer"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "White = unvisited candidate for deletion; Gray = visited/live, but children pending scan; Black = visited/live, and all referenced children have been identified.",
+  "reference_solution": "Correct Choice: B. Rationale: White = unvisited candidate for deletion; Gray = visited/live, but children pending scan; Black = visited/live, and all referenced children have been identified.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

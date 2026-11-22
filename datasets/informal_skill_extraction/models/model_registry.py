@@ -86,14 +86,10 @@ class ModelRegistry:
             print(f"[ModelRegistry] Loading fine-tuned token classification checkpoint from: {ckpt}")
             model = AutoModelForTokenClassification.from_pretrained(ckpt)
         else:
-            print(f"[ModelRegistry] No local fine-tuned checkpoint found. Initializing base {hf_id} token classifier.")
-            config = AutoConfig.from_pretrained(
-                hf_id,
-                num_labels=num_labels,
-                id2label=ID2TAG,
-                label2id=TAG2ID
+            raise FileNotFoundError(
+                f"[ModelRegistry] Critical: No trained fine-tuned token classification checkpoint found at '{ckpt}'. "
+                f"Automatic random initialization or silent fallback is strictly prohibited."
             )
-            model = AutoModelForTokenClassification.from_pretrained(hf_id, config=config)
 
         model = model.to(device)
         model.eval()

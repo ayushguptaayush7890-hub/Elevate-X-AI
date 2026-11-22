@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-054",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-05",
+  "skill_name": "API Architecture & Distributed RPC",
+  "subtopic": "RESTful Resource Modeling and HTTP Semantics",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "When designing a REST API, what is the semantic difference between `PUT` and `PATCH`?",
+  "options": [
+    {
+      "id": "A",
+      "text": "PUT is for creation only; PATCH is for deletion"
+    },
+    {
+      "id": "B",
+      "text": "PUT replaces the entire resource representation; PATCH applies partial modifications to specific fields"
+    },
+    {
+      "id": "C",
+      "text": "PATCH is guaranteed idempotent; PUT is never idempotent"
+    },
+    {
+      "id": "D",
+      "text": "PUT requires SSL; PATCH does not"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "PUT semantically replaces the complete target resource. Any omitted fields in a PUT payload are cleared or defaulted. PATCH applies partial deltas to modify only specified fields.",
+  "reference_solution": "Correct Choice: B. Rationale: PUT semantically replaces the complete target resource. Any omitted fields in a PUT payload are cleared or defaulted. PATCH applies partial deltas to modify only specified fields.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

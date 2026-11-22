@@ -1,0 +1,54 @@
+{
+  "question_id": "Q-AIM-SYS-024",
+  "role_id": "ai_ml_engineer",
+  "skill_id": "AIM-SKL-05",
+  "skill_name": "MLOps, Model Serving & Drift Monitoring",
+  "subtopic": "Production ML System Architecture",
+  "assessment_type": "system_design",
+  "difficulty": "hard",
+  "question_text": "### System Design Challenge: Enterprise ML Platform Architecture #24\n\n#### Functional Requirements:\n- Support real-time streaming feature extraction with sub-10ms point lookups\n- Serve low-latency model predictions with p99 < 30ms under 20,000 QPS\n- Automate continuous model evaluation and statistical drift detection\n\n#### Non-Functional & Scale Requirements:\n- Zero downtime rolling model updates without cold start drops\n- End-to-end model artifact versioning and reproducibility\n- Multi-tenant GPU cluster resource isolation\n\n#### Scale Parameters:\n- **Daily Inferences**: 500 Million\n- **Peak Request QPS**: 35,000\n- **Online Feature Store SLA**: < 5ms p99\n\nDesign the end-to-end architecture. Specify API contracts, high-level data flow, database storage models, caching layers, partition keys, consensus mechanisms, and failure recovery strategies.",
+  "options": null,
+  "correct_answer": "### Reference Architecture Breakdown:\nStreaming events ingest via Apache Kafka -> Flink computes real-time windowed features -> Online Feature Store (Redis) serves low-latency feature vectors -> Triton Inference Server runs dynamic batching on NVIDIA A100 GPU nodes -> Output predictions stream to Kafka for async drift auditing.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nOnline feature store replication across regions adds write synchronization latency; choosing local read replicas with asynchronous multi-master replication guarantees sub-5ms reads.",
+  "answer_explanation": "Evaluates production-grade machine learning platform architecture balancing model accuracy, low-latency inference, and operational cost.",
+  "reference_solution": "### Reference Architecture Breakdown:\nStreaming events ingest via Apache Kafka -> Flink computes real-time windowed features -> Online Feature Store (Redis) serves low-latency feature vectors -> Triton Inference Server runs dynamic batching on NVIDIA A100 GPU nodes -> Output predictions stream to Kafka for async drift auditing.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nOnline feature store replication across regions adds write synchronization latency; choosing local read replicas with asynchronous multi-master replication guarantees sub-5ms reads.",
+  "coding_language": null,
+  "sample_input": "Enterprise-scale production traffic load and availability SLA constraints.",
+  "expected_output": "Comprehensive architectural blueprint detailing data models, caching, and resiliency.",
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "ML Lifecycle & Data Flow",
+        "weight": 0.3,
+        "description": "Addresses feature engineering, training pipelines, and online inference."
+      },
+      {
+        "name": "Model Serving & Acceleration",
+        "weight": 0.3,
+        "description": "Optimizes GPU allocation, batching queues, and KV cache."
+      },
+      {
+        "name": "Drift Monitoring & Retraining",
+        "weight": 0.2,
+        "description": "Implements KS-tests, PSI drift detection, and trigger feedback."
+      },
+      {
+        "name": "Cost & Scalability Tradeoffs",
+        "weight": 0.2,
+        "description": "Balances GPU autoscaling, spot instances, and model quantization."
+      }
+    ],
+    "max_score": 20.0
+  },
+  "estimated_time": 40,
+  "marks": 20,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/system-design",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

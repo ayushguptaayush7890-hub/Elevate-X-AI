@@ -1,0 +1,61 @@
+{
+  "question_id": "Q-SEC-SCN-008",
+  "role_id": "cybersecurity_engineer",
+  "skill_id": "SEC-SKL-01",
+  "skill_name": "Web Application Security & OWASP Top 10",
+  "subtopic": "Cross-Site Request Forgery (CSRF) and SameSite Cookies",
+  "assessment_type": "scenario",
+  "difficulty": "hard",
+  "question_text": "### Production Incident Scenario:\nProduction Incident #08: Security Operations Center (SOC) telemetry triggered an alert for anomalous lateral movement and unauthorized API credential enumeration in Web Application Security & OWASP Top 10. Evidence points to a credential compromise involving 'Cross-Site Request Forgery (CSRF) and SameSite Cookies'.\n\n### Engineering Challenge:\nWhat is the immediate zero-trust containment and architectural remediation to neutralize this 'Cross-Site Request Forgery (CSRF) and SameSite Cookies' vulnerability?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Send an unencrypted email to all engineers asking them to change their passwords within 30 days."
+    },
+    {
+      "id": "B",
+      "text": "Whitelist the attacker's source IP address in firewall rules to observe further commands."
+    },
+    {
+      "id": "C",
+      "text": "Disable all logging across CloudTrail and WAF to prevent alert logs from overflowing disk."
+    },
+    {
+      "id": "D",
+      "text": "Revoke active token signing keys, invalidate STS sessions via explicit IAM deny policies, enforce mTLS authentication, and restrict egress via strict security groups."
+    }
+  ],
+  "correct_answer": "D",
+  "answer_explanation": "In Web Application Security & OWASP Top 10, effective incident response requires immediate credential invalidation, session revoking, and network micro-segmentation (mTLS + restrictive egress rules) to stop lateral traversal before conducting forensic analysis.",
+  "reference_solution": "Recommended Remediation: Option D. Rationale: In Web Application Security & OWASP Top 10, effective incident response requires immediate credential invalidation, session revoking, and network micro-segmentation (mTLS + restrictive egress rules) to stop lateral traversal before conducting forensic analysis.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Architecture & Operational Assessment",
+        "weight": 0.6,
+        "description": "Evaluates risk, system constraints, and root cause accurately."
+      },
+      {
+        "name": "Mitigation Strategy",
+        "weight": 0.4,
+        "description": "Selects the optimal zero-downtime or resilient recovery path."
+      }
+    ],
+    "max_score": 10.0
+  },
+  "estimated_time": 18,
+  "marks": 10,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/scenarios",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

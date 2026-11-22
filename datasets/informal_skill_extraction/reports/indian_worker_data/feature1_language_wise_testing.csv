@@ -1,0 +1,6 @@
+language_mode,test_records,exact_precision,exact_recall,exact_span_f1,partial_overlap_f1
+"english",110,0.3983,0.4017,0.4,0.9957
+"hindi",110,0.8831,0.8831,0.8831,1.0
+"hinglish",110,0.9957,0.9957,0.9957,1.0
+"mixed",110,0.9336,0.9375,0.9356,0.9979
+"roman_hindi",110,0.9432,0.9515,0.9474,0.9956

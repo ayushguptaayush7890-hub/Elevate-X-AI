@@ -1,0 +1,52 @@
+{
+  "audit_timestamp": "2026-11-21T12:24:00Z",
+  "tasks_evaluated": [
+    "A. Resume Parsing",
+    "B. Resume Section Classification",
+    "C. Skill Extraction",
+    "D. Job Description Parsing",
+    "E. Resume-Job Matching",
+    "F. ATS Compatibility Scoring",
+    "G. Resume Content Generation"
+  ],
+  "evaluations": {
+    "uhfew_resumes": {
+      "classification": "APPROVED FOR RESEARCH & SECTION MODELING (REQUIRES PII REDACTION)",
+      "task_suitability": {
+        "resume_parsing": "HIGH \u2014 Strict JSON section hierarchy provides clean ground truth",
+        "section_classification": "HIGH \u2014 Distinct labels for experience, education, skills, certifications",
+        "skill_extraction": "MEDIUM-HIGH \u2014 Comprehensive skills lists across 4,817 profiles",
+        "resume_content_generation": "HIGH \u2014 Standardized professional bullet points for generative fine-tuning",
+        "resume_job_matching": "LOW \u2014 Lacks paired job descriptions or target postings"
+      },
+      "governance_status": "APPROVED FOR PROCESSED REDACTED TRAINING"
+    },
+    "job_resume_matching": {
+      "classification": "APPROVED FOR RESEARCH & EMBEDDING BENCHMARKS",
+      "task_suitability": {
+        "resume_parsing": "MEDIUM \u2014 Unstructured text extracted from diverse CV formats",
+        "job_description_parsing": "HIGH \u2014 1,167 structured job postings with categories",
+        "skill_extraction": "HIGH \u2014 'clean_skills' field provides tokenized reference skills",
+        "resume_job_matching": "HIGH \u2014 122,560 paired match scores and strength labels",
+        "ats_compatibility_scoring": "HIGH \u2014 Multi-tier score distributions for ranking calibration"
+      },
+      "governance_status": "APPROVED FOR MATCHING BENCHMARKS (Disjoint GroupKFold Required)"
+    },
+    "job_resume_fit": {
+      "classification": "QUARANTINED FOR TRAINING (LICENSE REVIEW REQUIRED)",
+      "task_suitability": {
+        "resume_job_matching": "MEDIUM \u2014 2,385 pairs with AI and fuzzy match scores",
+        "skill_extraction": "MEDIUM \u2014 Extracted required and resume skills"
+      },
+      "governance_status": "QUARANTINED FOR TRAINING \u2014 Unverified 'other' license prevents commercial model weights"
+    },
+    "resume_score_details": {
+      "classification": "QUARANTINED FOR TRAINING (AI-GENERATED ASSESSMENTS / LICENSE REVIEW REQUIRED)",
+      "task_suitability": {
+        "ats_compatibility_scoring": "MEDIUM \u2014 Provides detailed explanatory rationales",
+        "resume_job_matching": "LOW-MEDIUM \u2014 GPT-4o synthetic evaluations cannot serve as recruiter ground truth"
+      },
+      "governance_status": "QUARANTINED FOR TRAINING \u2014 Synthetic LLM self-preference loop risk; CC license review needed"
+    }
+  }
+}

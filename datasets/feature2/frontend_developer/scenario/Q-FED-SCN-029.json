@@ -1,0 +1,61 @@
+{
+  "question_id": "Q-FED-SCN-029",
+  "role_id": "frontend_developer",
+  "skill_id": "FED-SKL-04",
+  "skill_name": "CSS Architecture, Responsive Layouts & Accessibility (a11y)",
+  "subtopic": "Container Queries and Responsive Design Breakpoints",
+  "assessment_type": "scenario",
+  "difficulty": "medium",
+  "question_text": "### Production Incident Scenario:\nProduction Incident #29: Real User Monitoring (RUM) alerts triggered on the core customer checkout flow due to severe Interaction to Next Paint (INP) degradation and frame dropping in CSS Architecture, Responsive Layouts & Accessibility (a11y). Profiling reveals frequent 250ms long tasks originating from 'Container Queries and Responsive Design Breakpoints'.\n\n### Engineering Challenge:\nWhat is the most effective frontend architecture pattern to bring INP below the 200ms 'Good' threshold for 'Container Queries and Responsive Design Breakpoints'?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Wrap all DOM mutation handlers inside synchronous while-loops until layout computation finishes."
+    },
+    {
+      "id": "B",
+      "text": "Yield execution to the main thread using scheduler.yield() or requestIdleCallback, and defer non-urgent state recalculations via useTransition/web workers."
+    },
+    {
+      "id": "C",
+      "text": "Replace modern reactive state hooks with direct synchronous document.write calls."
+    },
+    {
+      "id": "D",
+      "text": "Disable hardware acceleration and set CSS will-change on all DOM nodes globally."
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Long synchronous JavaScript execution during 'Container Queries and Responsive Design Breakpoints' blocks the browser main thread from processing user taps and keystrokes. Decomposing monolithic tasks with scheduler.yield() or React concurrent transitions allows the browser to interleave urgent paint updates, ensuring responsive INP.",
+  "reference_solution": "Recommended Remediation: Option B. Rationale: Long synchronous JavaScript execution during 'Container Queries and Responsive Design Breakpoints' blocks the browser main thread from processing user taps and keystrokes. Decomposing monolithic tasks with scheduler.yield() or React concurrent transitions allows the browser to interleave urgent paint updates, ensuring responsive INP.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Architecture & Operational Assessment",
+        "weight": 0.6,
+        "description": "Evaluates risk, system constraints, and root cause accurately."
+      },
+      {
+        "name": "Mitigation Strategy",
+        "weight": 0.4,
+        "description": "Selects the optimal zero-downtime or resilient recovery path."
+      }
+    ],
+    "max_score": 6.0
+  },
+  "estimated_time": 12,
+  "marks": 6,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/scenarios",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

@@ -13,12 +13,14 @@ from app.api.v1 import (
     assessments,
     technical_assessments,
     skill_gaps,
+    career_roadmaps,
     roadmaps,
     career_transitions,
     resumes,
     interviews,
     applications,
     resources,
+    assistant,
 )
 
 api_router = APIRouter()
@@ -55,10 +57,12 @@ api_router.include_router(assessments.router, prefix="/assessments", tags=["Skil
 api_router.include_router(skill_gaps.router, prefix="/skill-gaps", tags=["Skill Gap Management"])
 
 # 10. Career Roadmaps & Progress Tracking
-api_router.include_router(roadmaps.router, prefix="/roadmaps", tags=["Career Roadmap"])
+api_router.include_router(career_roadmaps.router, prefix="/career-roadmaps", tags=["Career Roadmap"])
+api_router.include_router(roadmaps.router, prefix="/roadmaps", tags=["Career Roadmap Legacy"])
 
 # 11. Career Transition Pathways
 api_router.include_router(career_transitions.router, prefix="/career-transitions", tags=["Career Transition"])
+api_router.include_router(career_transitions.router, prefix="/career/transitions", tags=["Career Transition Legacy"])
 
 # 12. Structured Resume Documents
 api_router.include_router(resumes.router, prefix="/resumes", tags=["Resume Management"])
@@ -72,3 +76,6 @@ api_router.include_router(applications.saved_router, prefix="/saved-jobs", tags=
 
 # 15. Curated Learning Resources & Providers
 api_router.include_router(resources.router, prefix="/resources", tags=["Learning Resources"])
+
+# 16. AI Assistant / Career Mentor (Gemini API)
+api_router.include_router(assistant.router, prefix="/assistant", tags=["AI Assistant"])

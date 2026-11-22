@@ -127,6 +127,72 @@ export interface JobListing {
   };
 }
 
+export interface AggregatedJobListing {
+  id: string;
+  employer_id?: string;
+  employer?: {
+    id?: string;
+    name: string;
+    website?: string | null;
+    location?: string | null;
+    logo_url?: string | null;
+  } | null;
+  title: string;
+  location: string;
+  country?: string;
+  description: string;
+  salary_min?: number | null;
+  salary_max?: number | null;
+  salary_currency?: string;
+  employment_type?: string;
+  experience_required_years?: number;
+  experience_min_years?: number | null;
+  experience_max_years?: number | null;
+  education_required?: string | null;
+  source_type?: string;
+  source_provider?: string;
+  source_url?: string | null;
+  application_url?: string | null;
+  provider_job_id?: string | null;
+  work_mode?: string;
+  required_skills_list?: string[];
+  last_verified_at?: string | null;
+  listing_status?: string;
+  match_details?: {
+    match_score: number;
+    match_tier: string;
+    matching_verified_skills: string[];
+    missing_required_skills: string[];
+    relevant_experience_years: number;
+    experience_fit: string;
+    academic_alignment?: string | null;
+    matching_methodology: string;
+  } | null;
+  is_saved?: boolean;
+  posted_date?: string | null;
+  expiry_date?: string | null;
+  is_verified?: boolean;
+  is_active?: boolean;
+  created_at?: string;
+}
+
+export interface JobProviderStatus {
+  provider_id: string;
+  name: string;
+  official_website: string;
+  api_docs_url?: string | null;
+  status: "active" | "ready_for_key" | "pending_partner_approval";
+  public_api_available: boolean;
+  auth_requirements: string;
+  commercial_usage_permission: string;
+  data_fields_available: string[];
+  original_listing_url_available: boolean;
+  direct_application_url_available: boolean;
+  refresh_restrictions: string;
+  jobs_imported_count: number;
+  last_sync_timestamp?: string | null;
+}
+
 export interface AssessmentQuestion {
   id: string;
   questionNumber: number;
@@ -208,21 +274,64 @@ export interface ResumeData {
   template: 'modern' | 'minimal' | 'skills_focused';
 }
 
+export interface RoadmapTaskItem {
+  id: string;
+  milestone_id?: string;
+  title: string;
+  description?: string;
+  task_type?: string;
+  estimated_hours?: number;
+  is_completed: boolean;
+  resource_url?: string;
+}
+
 export interface RoadmapMilestone {
   id: string;
-  stageNumber: number;
+  stageNumber?: number;
+  stage_number?: number;
+  order_index?: number;
   title: string;
-  timeEstimate: string;
-  status: 'completed' | 'in_progress' | 'upcoming';
+  timeEstimate?: string;
+  time_estimate?: string;
+  status: 'completed' | 'in_progress' | 'upcoming' | 'blocked';
+  is_completed?: boolean;
   description: string;
-  skillsToAcquire: string[];
-  practicalTasks: string[];
+  rationale?: string;
+  skillsToAcquire?: string[];
+  skills_to_acquire?: string[];
+  practicalTasks?: string[];
+  practical_tasks?: string[];
+  competencyEvidence?: Record<string, string>;
+  competency_evidence?: Record<string, string>;
+  tasks?: RoadmapTaskItem[];
   resources: {
     name: string;
+    title?: string;
     type: string;
     duration: string;
     free: boolean;
+    url?: string;
+    source_domain?: string;
   }[];
+}
+
+export interface CareerRoadmapData {
+  id: string;
+  user_id?: string;
+  title: string;
+  target_role: string;
+  target_occupation_id?: string;
+  estimated_duration_weeks: number;
+  progress_percentage: number;
+  status: string;
+  total_milestones: number;
+  completed_milestones: number;
+  total_tasks: number;
+  completed_tasks: number;
+  estimated_total_hours: number;
+  milestones: RoadmapMilestone[];
+  created_at?: string;
+  updated_at?: string;
 }
 
 export interface CareerTransitionPath {
@@ -265,7 +374,28 @@ export interface AssistantMessage {
   content: string;
   timestamp: string;
   suggestions?: string[];
-  language?: 'English' | 'Hindi';
+  language?: 'English' | 'Hindi' | string;
+  model_used?: string;
+  tokens_used?: number;
+}
+
+export interface ConsultationItem {
+  id: string;
+  title: string;
+  language: string;
+  date: string;
+  last_message_preview?: string;
+  message_count: number;
+  updated_at: string;
+}
+
+export interface ConsultationDetail {
+  id: string;
+  title: string;
+  language: string;
+  created_at: string;
+  updated_at: string;
+  messages: AssistantMessage[];
 }
 
 export interface JobApplication {

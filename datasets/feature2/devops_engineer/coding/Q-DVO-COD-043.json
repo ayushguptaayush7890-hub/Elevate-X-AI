@@ -1,0 +1,63 @@
+{
+  "question_id": "Q-DVO-COD-043",
+  "role_id": "devops_engineer",
+  "skill_id": "DVO-SKL-03",
+  "skill_name": "Container Orchestration (Kubernetes)",
+  "subtopic": "Infrastructure Automation Scripting",
+  "assessment_type": "coding",
+  "difficulty": "hard",
+  "question_text": "Implement an infrastructure automation script for **Challenge #43: Container Orchestration (Kubernetes)**.\n\n### Problem Specification:\n- Write a robust Python or Bash systems script (e.g., container health checker, log parser, deployment validator, or Prometheus metric exporter).\n- Incorporate error trapping (`set -euo pipefail` or `try/except`), timeout limits, and clean exit codes.\n- Ensure idempotent execution.",
+  "options": null,
+  "correct_answer": "import sys\n\ndef check_infrastructure_43(nodes: list) -> list:\n    # Robust node health audit for Container Orchestration (Kubernetes)\n    unhealthy = []\n    for node_info in nodes:\n        parts = node_info.split(':')\n        if len(parts) == 2 and parts[1].strip() != 'Ready':\n            unhealthy.append(parts[0].strip())\n    return unhealthy",
+  "answer_explanation": "Evaluates infrastructure parsing, status filtering, and safe script execution under Container Orchestration (Kubernetes).",
+  "reference_solution": "import sys\n\ndef check_infrastructure_43(nodes: list) -> list:\n    # Robust node health audit for Container Orchestration (Kubernetes)\n    unhealthy = []\n    for node_info in nodes:\n        parts = node_info.split(':')\n        if len(parts) == 2 and parts[1].strip() != 'Ready':\n            unhealthy.append(parts[0].strip())\n    return unhealthy",
+  "coding_language": "python",
+  "sample_input": "node_status_input_43 = ['node-1:Ready', 'node-2:NotReady']",
+  "expected_output": "['node-2']",
+  "visible_test_cases": [
+    {
+      "input": "cluster_nodes_43",
+      "output": "unhealthy_nodes_isolated"
+    },
+    {
+      "input": "healthy_nodes_43",
+      "output": "empty_alert_list"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "network_partition_timeout_43",
+      "output": "safe_exit_code_1"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Functional Correctness",
+        "weight": 0.5,
+        "description": "Passes all visible and hidden unit test cases without errors."
+      },
+      {
+        "name": "Time & Space Complexity",
+        "weight": 0.3,
+        "description": "Meets specified asymptotic computational boundaries."
+      },
+      {
+        "name": "Code Structure & Cleanliness",
+        "weight": 0.2,
+        "description": "Idiomatic naming, handling edge boundaries and null guards."
+      }
+    ],
+    "max_score": 14.0
+  },
+  "estimated_time": 35,
+  "marks": 14,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/coding",
+  "license": "Apache-2.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

@@ -1,0 +1,138 @@
+{
+  "occupation_id": "TRD-05",
+  "file_slug": "TRD-05_carpenter",
+  "standard_occupation_name": "Carpenter",
+  "common_indian_names": [
+    "Badhai",
+    "Suthar",
+    "Khatee",
+    "Mistri",
+    "Furniture Karigar"
+  ],
+  "hindi_names": [
+    "बढ़ई",
+    "खाती",
+    "सुथार",
+    "फर्नीचर कारीगर"
+  ],
+  "roman_hindi_names": [
+    "Badhai",
+    "Wood Karigar",
+    "Mistri",
+    "Carpenter"
+  ],
+  "regional_vocabulary": {
+    "delhi_up": [
+      "plywood kaatna",
+      "sunmica press",
+      "fevicol lagana",
+      "randa chalana",
+      "chaurasi",
+      "kabja fitting",
+      "channel"
+    ],
+    "rajasthan_gujarat": [
+      "chugath fitting",
+      "sheesham lakdi",
+      "sal-kabja",
+      "dholiya"
+    ],
+    "maharashtra": [
+      "teak wood",
+      "laminate pasting",
+      "hydraulic hinge"
+    ]
+  },
+  "description": "Cutting, planing, shaping, joining, laminating, and assembling wooden architectural fixtures, modular cabinetry, doors, window frames, and commercial furniture.",
+  "daily_tasks": [
+    "Marking cut lines on commercial MR and BWP plywood sheets",
+    "Ripping and crosscutting plywood panels with circular saws",
+    "Smoothing timber surface and squaring edges with hand wood planer (randa)",
+    "Spreading synthetic resin adhesive (Fevicol) and laminating sunmica sheets",
+    "Chiseling mortise pockets and cutting matching tenon joints",
+    "Installing soft-close concealed hydraulic cabinet hinges",
+    "Fitting telescopic ball-bearing drawer slide channels"
+  ],
+  "advanced_tasks": [
+    "Fabricating curved architectural reception desks and fluted wall paneling",
+    "Crafting traditional solid teak mortise-and-tenon panel doors",
+    "Operating portable electric wood routers for edge profiling and grooving",
+    "Refinishing antique furniture with hand-rubbed French spirit polish (lakhdana)"
+  ],
+  "tools": [
+    "Hand wood planer (randa)",
+    "Wood chisels (chaurasi: 1/4 to 1.5 inch)",
+    "Circular saw (7.25 inch)",
+    "Try square (guniya)",
+    "Claw hammer",
+    "Sash and G-clamps",
+    "Marking gauge",
+    "Hand saw"
+  ],
+  "equipment": [
+    "Electric hand planer",
+    "Plunge router machine",
+    "Orbital palm sander",
+    "Laser distance measurer"
+  ],
+  "materials": [
+    "BWP & MR grade plywood (6, 9, 12, 18 mm)",
+    "Decorative laminates (sunmica 0.8 & 1.0 mm)",
+    "Solid wood (Teak, Sheesham, Pine)",
+    "Synthetic PVA wood glue (Fevicol SH)",
+    "Steel screws, brad nails, concealed hinges"
+  ],
+  "work_processes": [
+    "Architectural Sizing -> Sheet Nesting -> Panel Saws -> Edge Planing -> Laminate Pressing -> Carcass Assembly -> Hardware Fitting -> Final Sanding & Edge Banding"
+  ],
+  "troubleshooting_tasks": [
+    "Eliminating air bubbles and delamination pockets in pressed sunmica sheets",
+    "Adjusting sagging cabinet shutters using 3-way concealed hinge adjustment screws",
+    "Easing sticking door stiles caused by monsoon moisture expansion",
+    "Rectifying binding drawer channels by shimming carcass out-of-square deviations"
+  ],
+  "quality_inspection": [
+    "Checking 90-degree squareness of assembled carcasses across opposite diagonals",
+    "Verifying seamless laminate edge trimming without chipping or visible glue lines",
+    "Confirming consistent 3mm reveal gaps around all cabinet doors and drawers",
+    "Ensuring perfectly flat joint surfaces without planer gouges"
+  ],
+  "measurement_and_planning": [
+    "Converting site architectural dimensions into detailed sheet cutting lists",
+    "Allowing 1mm saw blade kerf allowance in cutting layout"
+  ],
+  "safety_practices": [
+    "Inspecting circular saw lower blade retracting guard before every cut",
+    "Wearing N95 particulate respirators when cutting MDF and composite sheets",
+    "Never standing in direct kickback trajectory of high-speed power saws",
+    "Using push sticks when guiding narrow workpieces near power blades"
+  ],
+  "maintenance": [
+    "Honing and stropping planer irons and chisels to razor edge on oilstone",
+    "Removing dried PVA glue encrustations from sash clamp threads",
+    "Blowing wood dust from electric power tool motor ventilation vents"
+  ],
+  "customer_communication": [
+    "Advising clients on BWP marine vs commercial plywood durability in wet zones",
+    "Assisting in laminate texture and finish selection (matte, suede, high-gloss)",
+    "Explaining modular kitchen storage hardware options"
+  ],
+  "transferable_competencies": [
+    "Spatial three-dimensional planning",
+    "Aesthetic material grain appreciation",
+    "Sub-millimeter tactile accuracy"
+  ],
+  "official_vocational_references": {
+    "nsqf_qp_code": "FFS/Q0103",
+    "nsqf_level": 4,
+    "ssc": "Furniture & Fittings Skill Council",
+    "dgt_cts_trade": "Carpenter (CTS 034)"
+  },
+  "canonical_skills": [
+    "Circular Saw Plywood Panel Sizing",
+    "Adhesive Application and Laminate Sheet Pressing",
+    "Manual Wood Surface Planing and Smoothing",
+    "Wood Chisel Mortise and Tenon Joinery",
+    "Concealed Cabinet Hinge and Drawer Slide Installation"
+  ]
+}

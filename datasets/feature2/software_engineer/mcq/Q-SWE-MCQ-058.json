@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-058",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-05",
+  "skill_name": "API Architecture & Distributed RPC",
+  "subtopic": "Backward-Compatible Contract Versioning",
+  "assessment_type": "mcq",
+  "difficulty": "hard",
+  "question_text": "In gRPC / Protocol Buffers, what happens when an older client receives a message containing unknown fields serialized by a newer server in Proto3?",
+  "options": [
+    {
+      "id": "A",
+      "text": "The client crashes with an UnrecognizedFieldException"
+    },
+    {
+      "id": "B",
+      "text": "The unknown fields are parsed and preserved in the message's unknown fields buffer, retaining them if re-serialized"
+    },
+    {
+      "id": "C",
+      "text": "The entire message payload is discarded"
+    },
+    {
+      "id": "D",
+      "text": "The client sends an automatic rollback RPC to the server"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Since Protobuf 3.5+, unknown fields are preserved during parsing and included in subsequent re-serialization, supporting seamless forwarding proxies without data loss.",
+  "reference_solution": "Correct Choice: B. Rationale: Since Protobuf 3.5+, unknown fields are preserved during parsing and included in subsequent re-serialization, supporting seamless forwarding proxies without data loss.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

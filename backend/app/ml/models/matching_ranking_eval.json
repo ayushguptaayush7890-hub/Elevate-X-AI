@@ -1,0 +1,13 @@
+{
+  "experiment": "Shresth786 Job-Resume Graded Semantic Ranking",
+  "dataset": "Shresth786/job-resume-matching",
+  "evaluated_test_pairs": 24977,
+  "evaluated_queries": 628,
+  "metrics": {
+    "nDCG@5": 0.9654,
+    "MRR": 0.3469,
+    "spearman_rho": 0.2831
+  },
+  "governance_note": "Positive-only pairs used solely for graded ranking evaluation with disjoint candidate splits. Binary classification omitted to prevent ungrounded negative label hallucination.",
+  "timestamp": "2026-11-21T11:05:00Z"
+}

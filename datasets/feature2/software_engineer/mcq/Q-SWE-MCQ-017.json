@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-017",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-02",
+  "skill_name": "Object-Oriented & Functional Design Patterns",
+  "subtopic": "Functional Composition and Immutability",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "What is a pure function in functional software engineering?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A function that has zero arguments"
+    },
+    {
+      "id": "B",
+      "text": "A function whose return value depends only on its arguments and causes no observable side effects"
+    },
+    {
+      "id": "C",
+      "text": "A function that executes inside a sandbox environment"
+    },
+    {
+      "id": "D",
+      "text": "A function written without loops"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Pure functions guarantee referential transparency: given identical inputs, they always produce identical outputs with zero observable mutation of external state.",
+  "reference_solution": "Correct Choice: B. Rationale: Pure functions guarantee referential transparency: given identical inputs, they always produce identical outputs with zero observable mutation of external state.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

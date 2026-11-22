@@ -21,8 +21,12 @@ import {
 
 export function DashboardHeader({
   onMenuToggle,
+  isLocked = false,
+  onLockedNavigation,
 }: {
   onMenuToggle?: () => void;
+  isLocked?: boolean;
+  onLockedNavigation?: () => void;
 }) {
   const { user, role, switchRole, logout } = useAuth();
   const { language, setLanguage } = useLanguage();

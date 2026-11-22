@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-059",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-05",
+  "skill_name": "API Architecture & Distributed RPC",
+  "subtopic": "RESTful Resource Modeling and HTTP Semantics",
+  "assessment_type": "mcq",
+  "difficulty": "hard",
+  "question_text": "What does the HTTP header `If-Match: \"<ETag>\"` achieve when updating a resource via `PUT`?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Enforces client-side caching in the browser"
+    },
+    {
+      "id": "B",
+      "text": "Prevents the 'Lost Update' problem by ensuring the server updates the resource only if its current ETag matches the client's cached representation"
+    },
+    {
+      "id": "C",
+      "text": "Enables Gzip compression of the response body"
+    },
+    {
+      "id": "D",
+      "text": "Authenticates the client using HMAC signatures"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Optimistic concurrency control: if another user modified the resource between read and write, the server's ETag changed. The `If-Match` condition fails with HTTP 412 Precondition Failed.",
+  "reference_solution": "Correct Choice: B. Rationale: Optimistic concurrency control: if another user modified the resource between read and write, the server's ETag changed. The `If-Match` condition fails with HTTP 412 Precondition Failed.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

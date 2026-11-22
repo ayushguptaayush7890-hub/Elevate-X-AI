@@ -1,0 +1,59 @@
+{
+  "question_id": "Q-FED-DBG-020",
+  "role_id": "frontend_developer",
+  "skill_id": "FED-SKL-05",
+  "skill_name": "Client-Side Data Fetching, Offline Storage & Security",
+  "subtopic": "React Hook Race Condition Debugging",
+  "assessment_type": "debugging",
+  "difficulty": "medium",
+  "question_text": "Diagnose and resolve an asynchronous state race condition in a React component (Client-Side Data Fetching, Offline Storage & Security).\n\n### Defective Code:\n```javascript\nimport React, { useEffect, useState } from 'react';\nfunction UserProfile_20({ userId }) {\n    const [user, setUser] = useState(null);\n    useEffect(() => {\n        // Defect: Race condition on rapid userId change and missing unmount cleanup\n        fetchUser(userId).then(data => setUser(data));\n    }, [userId]);\n    return <div>{user?.name}</div>;\n}\n```\n\n### Reported Anomaly / Error:\nStale props race condition: if userId updates from 1 to 2 rapidly, response 1 can resolve after response 2, overwriting state with stale data in Client-Side Data Fetching, Offline Storage & Security.\n\nIdentify the root cause of the defect and provide the corrected code snippet with rationale.",
+  "options": null,
+  "correct_answer": "import React, { useEffect, useState } from 'react';\nfunction UserProfile_20({ userId }) {\n    const [user, setUser] = useState(null);\n    useEffect(() => {\n        let isCurrent = true;\n        fetchUser(userId).then(data => {\n            if (isCurrent) setUser(data);\n        });\n        return () => { isCurrent = false; };\n    }, [userId]);\n    return <div>{user?.name}</div>;\n}",
+  "answer_explanation": "Using a boolean cancellation flag inside the `useEffect` cleanup hook discards out-of-order asynchronous responses when props change or component unmounts.",
+  "reference_solution": "import React, { useEffect, useState } from 'react';\nfunction UserProfile_20({ userId }) {\n    const [user, setUser] = useState(null);\n    useEffect(() => {\n        let isCurrent = true;\n        fetchUser(userId).then(data => {\n            if (isCurrent) setUser(data);\n        });\n        return () => { isCurrent = false; };\n    }, [userId]);\n    return <div>{user?.name}</div>;\n}",
+  "coding_language": "javascript",
+  "sample_input": "Defective snippet causing runtime failure or logical discrepancy.",
+  "expected_output": "Corrected code snippet passing all edge conditions.",
+  "visible_test_cases": [
+    {
+      "input": "Defective state execution",
+      "output": "Root cause isolated and fixed"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "Edge condition regression check",
+      "output": "Zero regressions"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Root Cause Identification",
+        "weight": 0.4,
+        "description": "Accurately identifies the exact line and logic error causing failure."
+      },
+      {
+        "name": "Remediation Precision",
+        "weight": 0.4,
+        "description": "Provides clean fix without side effects or performance regressions."
+      },
+      {
+        "name": "Technical Rationale",
+        "weight": 0.2,
+        "description": "Explains underlying runtime or structural mechanics clearly."
+      }
+    ],
+    "max_score": 8.0
+  },
+  "estimated_time": 15,
+  "marks": 8,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/debugging",
+  "license": "MIT",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

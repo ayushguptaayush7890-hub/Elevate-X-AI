@@ -1,0 +1,21 @@
+{
+  "resource_name": "AI4Bharat IndicBERT / IndicCorp Reference",
+  "publisher": "AI4Bharat / IIT Madras",
+  "license": "MIT Open Source",
+  "supported_languages": [
+    "Hindi",
+    "Bengali",
+    "Gujarati",
+    "Marathi",
+    "Tamil",
+    "Telugu",
+    "Kannada",
+    "Malayalam",
+    "Punjabi",
+    "Odia",
+    "Assamese"
+  ],
+  "relevance_to_elevatex": "Informs phonetic script tokenization, Hindi Romanization handling, and transformer backbone selection for Indic trade text.",
+  "char_count": 11158,
+  "source_url": "https://raw.githubusercontent.com/AI4Bharat/IndicBERT/main/README.md"
+}

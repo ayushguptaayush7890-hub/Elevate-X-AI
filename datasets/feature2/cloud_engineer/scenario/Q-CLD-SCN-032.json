@@ -1,0 +1,61 @@
+{
+  "question_id": "Q-CLD-SCN-032",
+  "role_id": "cloud_engineer",
+  "skill_id": "CLD-SKL-04",
+  "skill_name": "Infrastructure as Code (Terraform / CloudFormation)",
+  "subtopic": "Handling Infrastructure Drift and Targeted Imports (`terraform import`)",
+  "assessment_type": "scenario",
+  "difficulty": "hard",
+  "question_text": "### Production Incident Scenario:\nProduction Incident #32: A multi-region cloud deployment experienced severe traffic blackholing and split-brain DNS state in Infrastructure as Code (Terraform / CloudFormation). During an automated regional failover simulation for 'Handling Infrastructure Drift and Targeted Imports (`terraform import`)', cross-region database replication lagged by 18 minutes.\n\n### Engineering Challenge:\nWhich cloud architecture configuration guarantees minimal Recovery Time Objective (RTO) and Recovery Point Objective (RPO) for 'Handling Infrastructure Drift and Targeted Imports (`terraform import`)'?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Manually update authoritative public nameserver records at the domain registrar during outages."
+    },
+    {
+      "id": "B",
+      "text": "Deploy synchronous two-phase commit over public internet transit across 10,000 miles."
+    },
+    {
+      "id": "C",
+      "text": "Rely on nightly tape backups restored to a single cold server instance."
+    },
+    {
+      "id": "D",
+      "text": "Implement Route 53 latency-based routing with health checks, Global Accelerator anycast IP failover, and asynchronous cross-region Aurora Global Database storage replication."
+    }
+  ],
+  "correct_answer": "D",
+  "answer_explanation": "In Infrastructure as Code (Terraform / CloudFormation), automated disaster recovery requires Anycast IP routing (AWS Global Accelerator) or DNS health-checked failover combined with storage-level replication (Aurora Global Database) to achieve RTO under 1 minute and RPO under 1 second without split-brain.",
+  "reference_solution": "Recommended Remediation: Option D. Rationale: In Infrastructure as Code (Terraform / CloudFormation), automated disaster recovery requires Anycast IP routing (AWS Global Accelerator) or DNS health-checked failover combined with storage-level replication (Aurora Global Database) to achieve RTO under 1 minute and RPO under 1 second without split-brain.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Architecture & Operational Assessment",
+        "weight": 0.6,
+        "description": "Evaluates risk, system constraints, and root cause accurately."
+      },
+      {
+        "name": "Mitigation Strategy",
+        "weight": 0.4,
+        "description": "Selects the optimal zero-downtime or resilient recovery path."
+      }
+    ],
+    "max_score": 10.0
+  },
+  "estimated_time": 18,
+  "marks": 10,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/scenarios",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

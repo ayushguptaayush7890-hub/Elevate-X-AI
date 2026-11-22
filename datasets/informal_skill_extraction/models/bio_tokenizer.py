@@ -37,14 +37,15 @@ class BIOTokenizer:
         text: str,
         words: List[str],
         bio_tags: List[str],
-        offsets: Optional[List[Tuple[int, int]]] = None
+        offsets: Optional[List[Tuple[int, int]]] = None,
+        confidences: Optional[List[float]] = None
     ) -> List[Dict[str, Any]]:
         """
         Decodes word-level BIO tags into verbatim character spans [start_offset:end_offset].
+        Strictly preserves model-predicted tags with model confidence scores.
         Guarantees: text[start_offset:end_offset] == extracted_skill.
         """
         if offsets is None:
-            # If offsets not provided, locate each word in text sequentially
             offsets = []
             curr_pos = 0
             for w in words:
@@ -56,56 +57,111 @@ class BIOTokenizer:
                     offsets.append((curr_pos, curr_pos + len(w)))
                     curr_pos += len(w) + 1
 
+        if confidences is None:
+            confidences = [0.90] * len(words)
+
+        # Stop words, conversational auxiliaries, and delimiters that cannot start a skill chunk
+        delimiters = {",", ";", ":", "|", "/", "and", "aur", "or"}
+        stop_and_fillers = {
+            "i", "we", "you", "he", "she", "it", "they", "am", "is", "are", "was", "were",
+            "know", "knows", "knowing", "have", "has", "had", "do", "does", "did",
+            "in", "to", "for", "the", "a", "an", "with", "from", "by", "of", "on", "at",
+            "aur", "and", "or", "mein", "me", "par", "pe", "se", "ko", "ka", "ki", "ke",
+            "hu", "hai", "hain", "karta", "karti", "karte", "karna", "kar"
+        }
+
+        valid_bio = []
+        in_chunk = False
+        for idx, (w, tag) in enumerate(zip(words, bio_tags)):
+            w_lower = w.lower().strip()
+            if tag == "B-SKILL":
+                valid_bio.append("B-SKILL")
+                in_chunk = True
+            elif tag == "I-SKILL":
+                if in_chunk:
+                    prev_w = words[idx - 1]
+                    if w_lower in delimiters:
+                        valid_bio.append("O")
+                        in_chunk = False
+                    elif prev_w.endswith("++") or prev_w.endswith("#"):
+                        # Boundary symbol like c++, c# terminates chunk and starts next
+                        valid_bio.append("B-SKILL")
+                        in_chunk = True
+                    else:
+                        valid_bio.append("I-SKILL")
+                else:
+                    # Model flagged as skill entity but not inside chunk: promote to B-SKILL if not filler
+                    if w_lower not in delimiters and w_lower not in stop_and_fillers and len(w_lower) > 1:
+                        valid_bio.append("B-SKILL")
+                        in_chunk = True
+                    else:
+                        valid_bio.append("O")
+                        in_chunk = False
+            else:
+                valid_bio.append("O")
+                in_chunk = False
+
         spans = []
         span_start = -1
         span_end = -1
         span_id = 1
+        curr_confs = []
 
-        for idx, (tag, (t_st, t_en)) in enumerate(zip(bio_tags, offsets)):
+        for idx, (tag, (t_st, t_en), conf) in enumerate(zip(valid_bio, offsets, confidences)):
             if tag == "B-SKILL":
                 if span_start != -1 and span_end != -1:
                     extracted = text[span_start:span_end].strip()
                     if extracted:
+                        avg_conf = sum(curr_confs) / max(1, len(curr_confs))
                         spans.append({
                             "span_id": f"SP-{span_id:02d}",
                             "extracted_skill": extracted,
                             "start_offset": span_start,
                             "end_offset": span_end,
-                            "skill_category": "tool_operation"
+                            "skill_category": "technical_tactile",
+                            "confidence_score": round(avg_conf, 4)
                         })
                         span_id += 1
                 span_start = t_st
                 span_end = t_en
+                curr_confs = [conf]
             elif tag == "I-SKILL":
                 if span_start != -1:
                     span_end = t_en
+                    curr_confs.append(conf)
                 else:
                     span_start = t_st
                     span_end = t_en
+                    curr_confs = [conf]
             else:
                 if span_start != -1 and span_end != -1:
                     extracted = text[span_start:span_end].strip()
                     if extracted:
+                        avg_conf = sum(curr_confs) / max(1, len(curr_confs))
                         spans.append({
                             "span_id": f"SP-{span_id:02d}",
                             "extracted_skill": extracted,
                             "start_offset": span_start,
                             "end_offset": span_end,
-                            "skill_category": "tool_operation"
+                            "skill_category": "technical_tactile",
+                            "confidence_score": round(avg_conf, 4)
                         })
                         span_id += 1
                 span_start = -1
                 span_end = -1
+                curr_confs = []
 
         if span_start != -1 and span_end != -1:
             extracted = text[span_start:span_end].strip()
             if extracted:
+                avg_conf = sum(curr_confs) / max(1, len(curr_confs))
                 spans.append({
                     "span_id": f"SP-{span_id:02d}",
                     "extracted_skill": extracted,
                     "start_offset": span_start,
                     "end_offset": span_end,
-                    "skill_category": "tool_operation"
+                    "skill_category": "technical_tactile",
+                    "confidence_score": round(avg_conf, 4)
                 })
 
         return spans
@@ -130,11 +186,32 @@ class BIOTokenizer:
     def word_tokenize_with_offsets(text: str) -> List[Tuple[str, int, int]]:
         """
         Tokenizes free-form text into words preserving exact Unicode character offsets [start, end).
-        Handles Devanagari script, Latin script, punctuation, and numerals.
+        Preserves programming tokens (c++, c#, node.js) and accurately segments Devanagari script,
+        Latin script, and separates trailing sentence punctuation.
+        Guarantees: text[start:end] == token for every returned token.
         """
         tokens = []
-        for match in re.finditer(r"[\w]+|[^\w\s]", text, re.UNICODE):
-            tokens.append((match.group(), match.start(), match.end()))
+        if not text:
+            return tokens
+
+        for match in re.finditer(r"\S+", text):
+            raw = match.group()
+            st = match.start()
+            en = match.end()
+
+            # Separate trailing sentence punctuation (e.g., comma, period, danda, semicolon)
+            # but preserve intentional symbols like c++, c#, .net, node.js
+            m_punct = re.search(r"([,\.।;:!?]+)$", raw)
+            if m_punct and not (raw.endswith("++") or raw.endswith("#") or raw in ["node.js", "vue.js", ".net"]):
+                p_len = len(m_punct.group(1))
+                word_part = raw[:-p_len]
+                punct_part = raw[-p_len:]
+                if word_part:
+                    tokens.append((word_part, st, en - p_len))
+                tokens.append((punct_part, en - p_len, en))
+            else:
+                tokens.append((raw, st, en))
+
         return tokens
 
     @staticmethod

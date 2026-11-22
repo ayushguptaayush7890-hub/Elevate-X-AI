@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-CLD-MCQ-037",
+  "role_id": "cloud_engineer",
+  "skill_id": "CLD-SKL-02",
+  "skill_name": "Cloud Compute, Containers & Serverless",
+  "subtopic": "Security Groups (Stateful) vs Network ACLs (Stateless)",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "[Cloud Compute, Containers & Serverless - Q37] Why must a Network Access Control List (NACL) rule explicitly permit ephemeral return ports (e.g. 1024-65535) for outbound client connections, while a Security Group does not?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Security Groups are stateful (automatically permitting return response traffic regardless of inbound rules), while NACLs are stateless (evaluating outbound response traffic independently against outbound rules)"
+    },
+    {
+      "id": "B",
+      "text": "NACLs only operate on UDP traffic"
+    },
+    {
+      "id": "C",
+      "text": "Security Groups execute inside the operating system kernel"
+    },
+    {
+      "id": "D",
+      "text": "NACLs do not support IP CIDR blocks"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "Security groups track connection state: if inbound traffic is allowed, corresponding response traffic is automatically allowed outbound. Stateless NACLs evaluate outbound traffic afresh against explicit outbound rules.",
+  "reference_solution": "Correct Choice: A. Rationale: Security groups track connection state: if inbound traffic is allowed, corresponding response traffic is automatically allowed outbound. Stateless NACLs evaluate outbound traffic afresh against explicit outbound rules.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

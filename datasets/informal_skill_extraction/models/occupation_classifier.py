@@ -96,10 +96,27 @@ class OccupationClassifier:
         if not clean_text:
             return {"occupation_id": "TRD-01", "occupation_title": TRADE_NAMES["TRD-01"], "confidence": 0.1}
 
-        pred_id = self.pipeline.predict([clean_text])[0]
+        pred_id = str(self.pipeline.predict([clean_text])[0])
         prob_vec = self.pipeline.predict_proba([clean_text])[0]
-        classes = self.pipeline.classes_
         conf = float(np.max(prob_vec))
+
+        # Check if trade vocabulary keyword actually matched in text
+        has_direct_keyword = False
+        for tid, kws in TRADE_VOCABULARY.items():
+            for kw in kws:
+                if re.search(rf"\b{re.escape(kw)}\b", clean_text, re.IGNORECASE):
+                    has_direct_keyword = True
+                    break
+            if has_direct_keyword:
+                break
+
+        # If confidence is low and no direct vocational trade keyword is present, abstain
+        if conf < 0.35 and not has_direct_keyword:
+            return {
+                "occupation_id": "UNCLASSIFIED",
+                "occupation_title": "General / Technical Professional",
+                "confidence": round(conf, 4)
+            }
 
         return {
             "occupation_id": pred_id,

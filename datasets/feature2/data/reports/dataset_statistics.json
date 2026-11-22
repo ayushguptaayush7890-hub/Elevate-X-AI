@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-11-15T14:04:06.159343+00:00",
+  "total_raw": 2250,
+  "total_cleaned": 2250,
+  "total_rejected": 0,
+  "train_count": 1574,
+  "validation_count": 377,
+  "test_count": 299,
+  "difficulty_distribution": {
+    "easy": 675,
+    "medium": 1003,
+    "hard": 572
+  },
+  "assessment_type_distribution": {
+    "mcq": 540,
+    "coding": 450,
+    "debugging": 315,
+    "scenario": 360,
+    "sql": 270,
+    "system_design": 315
+  },
+  "role_distribution": {
+    "software_engineer": {
+      "mcq": 60,
+      "coding": 50,
+      "debugging": 35,
+      "scenario": 40,
+      "sql": 30,
+      "system_design": 35
+    },
+    "ai_ml_engineer": {
+      "mcq": 60,
+      "coding": 50,
+      "debugging": 35,
+      "scenario": 40,
+      "sql": 30,
+      "system_design": 35
+    },
+    "data_scientist": {
+      "mcq": 60,
+      "coding": 50,
+      "debugging": 35,
+      "scenario": 40,
+      "sql": 30,
+      "system_design": 35
+    },
+    "frontend_developer": {
+      "mcq": 60,
+      "coding": 50,
+      "debugging": 35,
+      "scenario": 40,
+      "sql": 30,
+      "system_design": 35
+    },
+    "backend_developer": {
+      "mcq": 60,
+      "coding": 50,
+      "debugging": 35,
+      "scenario": 40,
+      "sql": 30,
+      "system_design": 35
+    },
+    "devops_engineer": {
+      "mcq": 60,
+      "coding": 50,
+      "debugging": 35,
+      "scenario": 40,
+      "sql": 30,
+      "system_design": 35
+    },
+    "data_analyst": {
+      "mcq": 60,
+      "coding": 50,
+      "debugging": 35,
+      "scenario": 40,
+      "sql": 30,
+      "system_design": 35
+    },
+    "cybersecurity_engineer": {
+      "mcq": 60,
+      "coding": 50,
+      "debugging": 35,
+      "scenario": 40,
+      "sql": 30,
+      "system_design": 35
+    },
+    "cloud_engineer": {
+      "mcq": 60,
+      "coding": 50,
+      "debugging": 35,
+      "scenario": 40,
+      "sql": 30,
+      "system_design": 35
+    }
+  }
+}

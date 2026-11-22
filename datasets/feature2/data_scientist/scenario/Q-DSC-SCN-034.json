@@ -1,0 +1,61 @@
+{
+  "question_id": "Q-DSC-SCN-034",
+  "role_id": "data_scientist",
+  "skill_id": "DSC-SKL-05",
+  "skill_name": "Data Storytelling & Business Metrics",
+  "subtopic": "Cohort Retention Analysis and Survival Curves",
+  "assessment_type": "scenario",
+  "difficulty": "easy",
+  "question_text": "### Production Incident Scenario:\nProduction Incident #34: An online A/B experimentation platform detected anomalous metric movements and sample ratio mismatch (SRM) in Data Storytelling & Business Metrics. In an active experiment evaluating 'Cohort Retention Analysis and Survival Curves', p-values were artificially deflated, and variance was underestimated by 60%.\n\n### Engineering Challenge:\nWhich statistical remediation correctly eliminates false positive statistical significance in this 'Cohort Retention Analysis and Survival Curves' evaluation?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Run standard two-sample independent t-tests treating every individual page event as an independent observation."
+    },
+    {
+      "id": "B",
+      "text": "Apply cluster-robust standard errors or Delta method variance corrections to account for intra-cluster correlation across repeated user sessions."
+    },
+    {
+      "id": "C",
+      "text": "Drop all users who logged in more than once during the experimental trial window."
+    },
+    {
+      "id": "D",
+      "text": "Increase the alpha threshold from 0.05 to 0.20 to accept the observed metric variance."
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "In Data Storytelling & Business Metrics, analyzing session-level observations when randomization occurs at the user level introduces intra-cluster correlation. Using naive standard errors severely underestimates variance. Cluster-robust variance estimators or the Delta method restore nominal false positive rates.",
+  "reference_solution": "Recommended Remediation: Option B. Rationale: In Data Storytelling & Business Metrics, analyzing session-level observations when randomization occurs at the user level introduces intra-cluster correlation. Using naive standard errors severely underestimates variance. Cluster-robust variance estimators or the Delta method restore nominal false positive rates.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Architecture & Operational Assessment",
+        "weight": 0.6,
+        "description": "Evaluates risk, system constraints, and root cause accurately."
+      },
+      {
+        "name": "Mitigation Strategy",
+        "weight": 0.4,
+        "description": "Selects the optimal zero-downtime or resilient recovery path."
+      }
+    ],
+    "max_score": 4.0
+  },
+  "estimated_time": 8,
+  "marks": 4,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/scenarios",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

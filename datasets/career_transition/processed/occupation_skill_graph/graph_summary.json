@@ -1,0 +1,16 @@
+{
+  "num_nodes": 22434,
+  "num_edges": 183702,
+  "num_occupations": 5801,
+  "num_skills": 13990,
+  "sources": {
+    "ESCO": 3043,
+    "ONET": 1016,
+    "NCO": 0
+  },
+  "edge_sources": {
+    "esco_edges": 126051,
+    "onet_edges": 40771,
+    "nco_cross_edges": 25980
+  }
+}

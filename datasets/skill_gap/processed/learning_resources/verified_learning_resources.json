@@ -1,0 +1,233 @@
+[
+  {
+    "id": "res-py-official-tutorial",
+    "title": "The Python Tutorial \u2014 Official Python 3 Documentation",
+    "provider": "Python Software Foundation",
+    "url": "https://docs.python.org/3/tutorial/",
+    "skills": [
+      "Python",
+      "Object-Oriented Programming",
+      "Data Structures",
+      "Scripting"
+    ],
+    "difficulty": "Beginner to Intermediate",
+    "type": "Official Documentation",
+    "verified": true,
+    "source_domain": "docs.python.org"
+  },
+  {
+    "id": "res-py-dsa-stdlib",
+    "title": "Data Structures and Algorithms in Python (Standard Library Reference)",
+    "provider": "Python Software Foundation",
+    "url": "https://docs.python.org/3/tutorial/datastructures.html",
+    "skills": [
+      "Data Structures",
+      "Algorithms",
+      "Python"
+    ],
+    "difficulty": "Intermediate",
+    "type": "Official Documentation",
+    "verified": true,
+    "source_domain": "docs.python.org"
+  },
+  {
+    "id": "res-pytorch-tutorials-deep-learning",
+    "title": "Deep Learning with PyTorch: A 60 Minute Blitz",
+    "provider": "PyTorch / Linux Foundation",
+    "url": "https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html",
+    "skills": [
+      "PyTorch",
+      "Deep Learning",
+      "Neural Networks",
+      "Tensors",
+      "GPU Computing"
+    ],
+    "difficulty": "Intermediate",
+    "type": "Official Interactive Tutorial",
+    "verified": true,
+    "source_domain": "pytorch.org"
+  },
+  {
+    "id": "res-pytorch-nlp-tutorials",
+    "title": "Natural Language Processing (NLP) with TorchText & Transformers",
+    "provider": "PyTorch / Linux Foundation",
+    "url": "https://pytorch.org/tutorials/beginner/text_sentiment_ngrams_tutorial.html",
+    "skills": [
+      "PyTorch",
+      "Natural Language Processing",
+      "NLP",
+      "Text Classification"
+    ],
+    "difficulty": "Advanced",
+    "type": "Official Tutorial",
+    "verified": true,
+    "source_domain": "pytorch.org"
+  },
+  {
+    "id": "res-sklearn-user-guide",
+    "title": "Scikit-Learn Machine Learning in Python: User Guide & Model Selection",
+    "provider": "Scikit-learn Developers",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "skills": [
+      "Machine Learning",
+      "Scikit-learn",
+      "Classification",
+      "Regression",
+      "Clustering"
+    ],
+    "difficulty": "Intermediate",
+    "type": "Official Documentation",
+    "verified": true,
+    "source_domain": "scikit-learn.org"
+  },
+  {
+    "id": "res-react-quick-start",
+    "title": "Quick Start \u2014 Learn React",
+    "provider": "Meta Open Source / React Core Team",
+    "url": "https://react.dev/learn",
+    "skills": [
+      "React.js",
+      "JavaScript",
+      "Frontend Development",
+      "Component Architecture",
+      "State Management"
+    ],
+    "difficulty": "Beginner to Intermediate",
+    "type": "Official Documentation",
+    "verified": true,
+    "source_domain": "react.dev"
+  },
+  {
+    "id": "res-fastapi-tutorial",
+    "title": "FastAPI Tutorial \u2014 User Guide",
+    "provider": "Tiangolo / FastAPI",
+    "url": "https://fastapi.tiangolo.com/tutorial/",
+    "skills": [
+      "FastAPI",
+      "Python",
+      "REST APIs",
+      "API Development",
+      "Microservices",
+      "Pydantic"
+    ],
+    "difficulty": "Intermediate",
+    "type": "Official Documentation",
+    "verified": true,
+    "source_domain": "fastapi.tiangolo.com"
+  },
+  {
+    "id": "res-ms-azure-fundamentals",
+    "title": "Microsoft Azure Fundamentals: Describe Cloud Concepts (AZ-900)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+    "skills": [
+      "Cloud Computing",
+      "Microsoft Azure",
+      "Cloud Architecture"
+    ],
+    "difficulty": "Beginner",
+    "type": "Interactive Learning Path",
+    "verified": true,
+    "source_domain": "learn.microsoft.com"
+  },
+  {
+    "id": "res-ms-ai-engineer",
+    "title": "Microsoft Certified: Azure AI Engineer Associate & AI Foundations",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/",
+    "skills": [
+      "Artificial Intelligence",
+      "Large Language Models",
+      "Computer Vision",
+      "Azure AI"
+    ],
+    "difficulty": "Intermediate",
+    "type": "Interactive Learning Path & Official Certification Guide",
+    "verified": true,
+    "source_domain": "learn.microsoft.com"
+  },
+  {
+    "id": "res-gcp-genai-pathway",
+    "title": "Generative AI Fundamentals Learning Path",
+    "provider": "Google Cloud Skills Boost",
+    "url": "https://www.cloudskillsboost.google/paths/118",
+    "skills": [
+      "Generative AI",
+      "Large Language Models",
+      "LLMs",
+      "RAG",
+      "Prompt Engineering"
+    ],
+    "difficulty": "Beginner to Intermediate",
+    "type": "Hands-on Lab Course",
+    "verified": true,
+    "source_domain": "cloudskillsboost.google"
+  },
+  {
+    "id": "res-aws-cloud-practitioner",
+    "title": "AWS Cloud Practitioner Essentials",
+    "provider": "AWS Training & Certification",
+    "url": "https://skillbuilder.aws/course/aws-cloud-practitioner-essentials",
+    "skills": [
+      "AWS",
+      "Cloud Computing",
+      "DevOps",
+      "Infrastructure"
+    ],
+    "difficulty": "Beginner",
+    "type": "Interactive Course",
+    "verified": true,
+    "source_domain": "skillbuilder.aws"
+  },
+  {
+    "id": "res-fcc-relational-db",
+    "title": "Relational Database Certification (PostgreSQL & Linux CLI)",
+    "provider": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/learn/relational-database/",
+    "skills": [
+      "SQL",
+      "PostgreSQL",
+      "Database Management Systems",
+      "Bash",
+      "Git"
+    ],
+    "difficulty": "Beginner to Intermediate",
+    "type": "Interactive Coding Certification",
+    "verified": true,
+    "source_domain": "freecodecamp.org"
+  },
+  {
+    "id": "res-fcc-data-analysis-python",
+    "title": "Data Analysis with Python Certification",
+    "provider": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/learn/data-analysis-with-python/",
+    "skills": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Data Analysis",
+      "Matplotlib"
+    ],
+    "difficulty": "Intermediate",
+    "type": "Interactive Coding Certification",
+    "verified": true,
+    "source_domain": "freecodecamp.org"
+  },
+  {
+    "id": "res-docker-getting-started",
+    "title": "Docker Getting Started Guide & Container Fundamentals",
+    "provider": "Docker Inc.",
+    "url": "https://docs.docker.com/get-started/",
+    "skills": [
+      "Docker",
+      "Containerization",
+      "DevOps",
+      "CI/CD",
+      "Developer Tools"
+    ],
+    "difficulty": "Beginner to Intermediate",
+    "type": "Official Documentation & Tutorial",
+    "verified": true,
+    "source_domain": "docs.docker.com"
+  }
+]

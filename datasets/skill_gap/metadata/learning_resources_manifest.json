@@ -1,0 +1,22 @@
+[
+  {
+    "filename": "learning_resources_catalog.json",
+    "total_resources": 14,
+    "source_domains": [
+      "learn.microsoft.com",
+      "docs.docker.com",
+      "pytorch.org",
+      "freecodecamp.org",
+      "cloudskillsboost.google",
+      "fastapi.tiangolo.com",
+      "react.dev",
+      "skillbuilder.aws",
+      "docs.python.org",
+      "scikit-learn.org"
+    ],
+    "file_size_bytes": 6799,
+    "sha256": "fabb43286d6525b2eb7d2bd98d02d27c26549b43cc0eabf40a92f5c1f4db19cf",
+    "verified_urls": true,
+    "compiled_at": "2026-11-21T16:43:52.288800"
+  }
+]

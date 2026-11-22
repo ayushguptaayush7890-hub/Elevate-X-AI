@@ -1,0 +1,44 @@
+[
+  {
+    "current_occupation": "Electrician",
+    "target_occupation": "Solar Photovoltaic Installer",
+    "expected_fit_category": "Low Friction",
+    "expected_fit_min": 70.0
+  },
+  {
+    "current_occupation": "Software Developer",
+    "target_occupation": "Data Engineer",
+    "expected_fit_category": "Low Friction",
+    "expected_fit_min": 72.0
+  },
+  {
+    "current_occupation": "Apparel Quality Assurance Specialist",
+    "target_occupation": "Quality Control Inspector",
+    "expected_fit_category": "Low Friction",
+    "expected_fit_min": 75.0
+  },
+  {
+    "current_occupation": "Customer Service Representative",
+    "target_occupation": "Technical Support Specialist",
+    "expected_fit_category": "Moderate Bridge",
+    "expected_fit_min": 55.0
+  },
+  {
+    "current_occupation": "Mechanical Drafter",
+    "target_occupation": "Civil Engineering Technician",
+    "expected_fit_category": "Moderate Bridge",
+    "expected_fit_min": 58.0
+  },
+  {
+    "current_occupation": "Bookkeeper",
+    "target_occupation": "Financial Analyst",
+    "expected_fit_category": "Moderate Bridge",
+    "expected_fit_min": 52.0
+  },
+  {
+    "current_occupation": "Carpenter",
+    "target_occupation": "Software Developer",
+    "expected_fit_category": "High Pivot",
+    "expected_fit_min": 15.0
+  }
+]

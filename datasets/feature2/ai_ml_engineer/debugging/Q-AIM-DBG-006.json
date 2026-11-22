@@ -1,0 +1,59 @@
+{
+  "question_id": "Q-AIM-DBG-006",
+  "role_id": "ai_ml_engineer",
+  "skill_id": "AIM-SKL-01",
+  "skill_name": "Machine Learning Foundations & Regularization",
+  "subtopic": "Gradient Flow & Numerical Debugging",
+  "assessment_type": "debugging",
+  "difficulty": "easy",
+  "question_text": "Diagnose and repair a gradient failure in an AI training pipeline (Machine Learning Foundations & Regularization).\n\n### Defective Code:\n```python\nimport torch\ndef train_step_6(model, optimizer, criterion, x, y):\n    # Defect: Missing optimizer.zero_grad(), causing gradient accumulation\n    out = model(x)\n    loss = criterion(out, y)\n    loss.backward()\n    optimizer.step()\n    return loss.item()\n```\n\n### Reported Anomaly / Error:\nLoss explodes after several iterations because gradients accumulate across minibatches in Machine Learning Foundations & Regularization.\n\nIdentify the root cause of the defect and provide the corrected code snippet with rationale.",
+  "options": null,
+  "correct_answer": "import torch\ndef train_step_6(model, optimizer, criterion, x, y):\n    # Fixed: zero_grad clears previous gradients before backprop\n    optimizer.zero_grad()\n    out = model(x)\n    loss = criterion(out, y)\n    loss.backward()\n    optimizer.step()\n    return loss.item()",
+  "answer_explanation": "In PyTorch, gradients accumulate by default on tensor `.grad` buffers. Calling `optimizer.zero_grad()` at each training step is mandatory.",
+  "reference_solution": "import torch\ndef train_step_6(model, optimizer, criterion, x, y):\n    # Fixed: zero_grad clears previous gradients before backprop\n    optimizer.zero_grad()\n    out = model(x)\n    loss = criterion(out, y)\n    loss.backward()\n    optimizer.step()\n    return loss.item()",
+  "coding_language": "python",
+  "sample_input": "Defective snippet causing runtime failure or logical discrepancy.",
+  "expected_output": "Corrected code snippet passing all edge conditions.",
+  "visible_test_cases": [
+    {
+      "input": "Defective state execution",
+      "output": "Root cause isolated and fixed"
+    }
+  ],
+  "hidden_test_cases": [
+    {
+      "input": "Edge condition regression check",
+      "output": "Zero regressions"
+    }
+  ],
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Root Cause Identification",
+        "weight": 0.4,
+        "description": "Accurately identifies the exact line and logic error causing failure."
+      },
+      {
+        "name": "Remediation Precision",
+        "weight": 0.4,
+        "description": "Provides clean fix without side effects or performance regressions."
+      },
+      {
+        "name": "Technical Rationale",
+        "weight": 0.2,
+        "description": "Explains underlying runtime or structural mechanics clearly."
+      }
+    ],
+    "max_score": 6.0
+  },
+  "estimated_time": 15,
+  "marks": 6,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/debugging",
+  "license": "MIT",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

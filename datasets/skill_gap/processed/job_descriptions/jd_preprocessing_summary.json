@@ -1,0 +1,8 @@
+{
+  "dataset": "Unified Authentic Job Descriptions (lang-uk + Shresth786)",
+  "processed_at": "2026-11-21T16:44:06.305865",
+  "total_records": 6167,
+  "license": "MIT",
+  "distinct_titles": 3540,
+  "distinct_companies": 2269
+}

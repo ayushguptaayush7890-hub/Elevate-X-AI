@@ -1,0 +1,42 @@
+{
+  "passed": 9,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Roadmap Generation: AI Engineer",
+      "status": "PASSED"
+    },
+    {
+      "name": "Roadmap Generation: Data Scientist",
+      "status": "PASSED"
+    },
+    {
+      "name": "Roadmap Generation: Backend Developer",
+      "status": "PASSED"
+    },
+    {
+      "name": "Roadmap Generation: Software Developer",
+      "status": "PASSED"
+    },
+    {
+      "name": "Roadmap Generation: Apparel Quality Assurance Specialist (Export Standard)",
+      "status": "PASSED"
+    },
+    {
+      "name": "Task Completion Toggle & Live Progress Recalculation",
+      "status": "PASSED"
+    },
+    {
+      "name": "Milestone Completion Toggle Cascade",
+      "status": "PASSED"
+    },
+    {
+      "name": "Edge Case: Empty Candidate Profile",
+      "status": "PASSED"
+    },
+    {
+      "name": "Edge Case: Custom / Unknown Occupation Semantic Mapping",
+      "status": "PASSED"
+    }
+  ]
+}

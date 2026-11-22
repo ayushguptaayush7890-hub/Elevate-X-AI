@@ -35,6 +35,8 @@ from app.schemas.technical_assessment import (
     SQLRunResponse,
     AdaptiveStepRequest,
     AdaptiveStepResponse,
+    AssessmentSessionProgressRequest,
+    AssessmentSessionStateResponse,
 )
 from app.services.question_service import question_service
 from app.services.adaptive_engine import adaptive_engine
@@ -129,20 +131,29 @@ def start_technical_assessment(
         for q in questions
     ]
 
+    # Calculate estimated duration (approx 2 mins per question)
+    duration_mins = max(10, len(questions) * 2)
+    start_dt = datetime.now(timezone.utc)
+    expiry_ts = start_dt.timestamp() + (duration_mins * 60)
+
     # Store active session metadata
     _ACTIVE_SESSIONS[session_id] = {
+        "session_id": session_id,
         "user_id": str(current_user.id),
         "role_id": payload.role_id,
         "role_title": role["title"],
         "difficulty_mode": payload.difficulty or "adaptive",
         "theta": 0.0,
         "question_ids": [q["question_id"] for q in questions],
+        "masked_questions": [q.model_dump() for q in masked_questions],
         "answered_ids": [],
-        "started_at": datetime.now(timezone.utc).isoformat(),
+        "current_index": 0,
+        "answers": {},
+        "duration_minutes": duration_mins,
+        "started_at": start_dt.isoformat(),
+        "expiry_timestamp": expiry_ts,
+        "is_completed": False,
     }
-
-    # Calculate estimated duration (approx 2 mins per question)
-    duration_mins = max(10, len(questions) * 2)
 
     return TechnicalAssessmentStartResponse(
         session_id=session_id,
@@ -150,9 +161,89 @@ def start_technical_assessment(
         role_title=role["title"],
         difficulty_mode=payload.difficulty or "adaptive",
         duration_minutes=duration_mins,
+        expiry_timestamp=expiry_ts,
         total_questions=len(masked_questions),
         questions=masked_questions,
     )
+
+
+@router.get("/sessions/{session_id}", response_model=AssessmentSessionStateResponse)
+def get_assessment_session(
+    session_id: str,
+    current_user: User = Depends(get_current_active_user),
+):
+    """Retrieve an active assessment session to resume state and timer after reload."""
+    session = _ACTIVE_SESSIONS.get(session_id)
+    if not session or session["user_id"] != str(current_user.id):
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Assessment session not found or access denied.",
+        )
+
+    if session.get("is_completed", False):
+        raise HTTPException(
+            status_code=status.HTTP_410_GONE,
+            detail="Assessment session has already been completed.",
+        )
+
+    now_ts = datetime.now(timezone.utc).timestamp()
+    time_left = max(0, int(session["expiry_timestamp"] - now_ts))
+
+    return AssessmentSessionStateResponse(
+        session_id=session_id,
+        role_id=session["role_id"],
+        role_title=session["role_title"],
+        difficulty_mode=session["difficulty_mode"],
+        questions=[TechnicalQuestionMasked(**mq) for mq in session["masked_questions"]],
+        current_index=session.get("current_index", 0),
+        answers=session.get("answers", {}),
+        time_left_seconds=time_left,
+        remaining_seconds=time_left,
+        is_expired=time_left <= 0,
+        total_questions=len(session["masked_questions"]),
+    )
+
+
+@router.post("/sessions/{session_id}/progress")
+def save_assessment_session_progress(
+    session_id: str,
+    payload: AssessmentSessionProgressRequest,
+    current_user: User = Depends(get_current_active_user),
+):
+    """Persist current question index and candidate answers during an active timed assessment."""
+    session = _ACTIVE_SESSIONS.get(session_id)
+    if not session or session["user_id"] != str(current_user.id):
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Assessment session not found.",
+        )
+
+    if session.get("is_completed", False):
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Cannot update a completed session.",
+        )
+
+    session["current_index"] = payload.current_index
+    session["answers"].update(payload.answers)
+    return {
+        "success": True,
+        "saved_answers_count": len(session["answers"]),
+        "current_index": session["current_index"],
+        "answers": session["answers"]
+    }
+
+
+@router.post("/sessions/{session_id}/cancel")
+def cancel_assessment_session(
+    session_id: str,
+    current_user: User = Depends(get_current_active_user),
+):
+    """Explicitly release assessment lock and discard active test session."""
+    session = _ACTIVE_SESSIONS.get(session_id)
+    if session and session["user_id"] == str(current_user.id):
+        _ACTIVE_SESSIONS.pop(session_id, None)
+    return {"success": True, "status": "cancelled", "message": "Assessment session released."}
 
 
 @router.post("/sandbox/run-code", response_model=CodeRunResponse)

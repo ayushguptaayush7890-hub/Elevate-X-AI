@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-DVO-MCQ-045",
+  "role_id": "devops_engineer",
+  "skill_id": "DVO-SKL-05",
+  "skill_name": "Observability, Telemetry & Incident Mitigation",
+  "subtopic": "Prometheus Metrics Types (Counter, Gauge, Histogram, Summary)",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "[Observability, Telemetry & Incident Mitigation - Q45] Why is a Prometheus `Counter` metric reset-resilient when queried using the `rate()` function in PromQL?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Prometheus stores counter values in Redis"
+    },
+    {
+      "id": "B",
+      "text": "The `rate()` function automatically detects when counter values drop (indicating process restart) and adjusts calculations to handle counter resets seamlessly"
+    },
+    {
+      "id": "C",
+      "text": "Counters cannot be reset in Linux"
+    },
+    {
+      "id": "D",
+      "text": "Rate function only works on Gauges"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "The `rate()` and `irate()` functions in PromQL assume counters strictly increase, so any observed decrease is interpreted as an instance restart, adding the counter value before reset.",
+  "reference_solution": "Correct Choice: B. Rationale: The `rate()` and `irate()` functions in PromQL assume counters strictly increase, so any observed decrease is interpreted as an instance restart, adding the counter value before reset.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

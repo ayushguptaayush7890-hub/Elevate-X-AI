@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-029",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-03",
+  "skill_name": "Concurrency, Multithreading & Memory Management",
+  "subtopic": "Asynchronous Event Loops and Coroutines",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "In a single-threaded asynchronous event loop (e.g. Node.js or Python asyncio), what causes event loop starvation?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Handling 10,000 idle TCP socket connections"
+    },
+    {
+      "id": "B",
+      "text": "Executing long-running CPU-bound synchronous computations on the main thread"
+    },
+    {
+      "id": "C",
+      "text": "Excessive awaiting of non-blocking network I/O"
+    },
+    {
+      "id": "D",
+      "text": "Using too many async generator functions"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "Because the event loop runs on a single thread, any synchronous CPU-bound task blocks the execution thread, preventing the loop from dispatching pending I/O callbacks.",
+  "reference_solution": "Correct Choice: B. Rationale: Because the event loop runs on a single thread, any synchronous CPU-bound task blocks the execution thread, preventing the loop from dispatching pending I/O callbacks.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

@@ -1,0 +1,5 @@
+split,record_count,total_tokens,avg_tokens_per_sentence,skill_span_count,knowledge_span_count,total_entities,entity_density_per_100_tokens,sentences_with_entities_count,sentences_with_entities_pct
+train,4800,93453,19.47,2221,2969,5190,5.55,1584,33.0
+dev,3174,40057,12.62,1070,1093,2163,5.4,914,28.8
+test,3569,42786,11.99,1091,1174,2265,5.29,974,27.29
+total,11543,176296,15.27,4382,5236,9618,5.46,3472,30.08

@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SEC-MCQ-018",
+  "role_id": "cybersecurity_engineer",
+  "skill_id": "SEC-SKL-03",
+  "skill_name": "Cryptography, PKI & Key Management",
+  "subtopic": "Symmetric Encryption (AES-GCM) vs Asymmetric (RSA, ECC)",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "[Cryptography, PKI & Key Management - Q18] Why is AES in Galois/Counter Mode (AES-GCM) preferred over AES in Cipher Block Chaining (AES-CBC) for modern network encryption?",
+  "options": [
+    {
+      "id": "A",
+      "text": "AES-GCM requires no encryption keys"
+    },
+    {
+      "id": "B",
+      "text": "AES-GCM provides Authenticated Encryption with Associated Data (AEAD), guaranteeing both confidentiality and cryptographic integrity verification without padding oracle vulnerabilities"
+    },
+    {
+      "id": "C",
+      "text": "AES-GCM only works on text files"
+    },
+    {
+      "id": "D",
+      "text": "AES-CBC has an 8-bit key limit"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "AES-GCM combines counter mode encryption with GMAC authentication tags, providing cryptographic integrity verification and immunity to padding oracle attacks.",
+  "reference_solution": "Correct Choice: B. Rationale: AES-GCM combines counter mode encryption with GMAC authentication tags, providing cryptographic integrity verification and immunity to padding oracle attacks.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

@@ -1,0 +1,61 @@
+{
+  "question_id": "Q-AIM-SCN-015",
+  "role_id": "ai_ml_engineer",
+  "skill_id": "AIM-SKL-02",
+  "skill_name": "Deep Learning Architectures (CNN, RNN, Transformers)",
+  "subtopic": "Multi-Head Self-Attention, KV Caching and FlashAttention",
+  "assessment_type": "scenario",
+  "difficulty": "hard",
+  "question_text": "### Production Incident Scenario:\nProduction Incident #15: A distributed deep learning model serving endpoint experienced severe throughput degradation and GPU memory fragmentation in Deep Learning Architectures (CNN, RNN, Transformers). During sustained peak inference, memory utilization hit 98% with OOM aborts specifically during 'Multi-Head Self-Attention, KV Caching and FlashAttention' execution.\n\n### Engineering Challenge:\nWhat is the optimal MLOps and architectural resolution to eliminate OOMs and optimize serving throughput for 'Multi-Head Self-Attention, KV Caching and FlashAttention'?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Allocate a static contiguous GPU VRAM tensor buffer sized to maximum possible sequence length for every incoming request."
+    },
+    {
+      "id": "B",
+      "text": "Disable model pipelining and force all transformer attention heads onto host system RAM via CPU swap."
+    },
+    {
+      "id": "C",
+      "text": "Implement dynamic batching with continuous paged KV-cache management (PagedAttention) and FP16/INT8 activation quantization."
+    },
+    {
+      "id": "D",
+      "text": "Retrain the model from scratch using a single linear feedforward layer to bypass attention."
+    }
+  ],
+  "correct_answer": "C",
+  "answer_explanation": "In Deep Learning Architectures (CNN, RNN, Transformers), static allocation for sequence generation creates massive memory fragmentation. Continuous paged KV-cache allocation (such as vLLM) partitions key-value memory into non-contiguous blocks, slashing memory waste and preventing OOMs while maximizing concurrent throughput.",
+  "reference_solution": "Recommended Remediation: Option C. Rationale: In Deep Learning Architectures (CNN, RNN, Transformers), static allocation for sequence generation creates massive memory fragmentation. Continuous paged KV-cache allocation (such as vLLM) partitions key-value memory into non-contiguous blocks, slashing memory waste and preventing OOMs while maximizing concurrent throughput.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Architecture & Operational Assessment",
+        "weight": 0.6,
+        "description": "Evaluates risk, system constraints, and root cause accurately."
+      },
+      {
+        "name": "Mitigation Strategy",
+        "weight": 0.4,
+        "description": "Selects the optimal zero-downtime or resilient recovery path."
+      }
+    ],
+    "max_score": 10.0
+  },
+  "estimated_time": 18,
+  "marks": 10,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/scenarios",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

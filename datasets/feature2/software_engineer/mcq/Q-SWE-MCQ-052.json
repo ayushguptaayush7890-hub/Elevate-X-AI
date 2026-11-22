@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-052",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-05",
+  "skill_name": "API Architecture & Distributed RPC",
+  "subtopic": "API Rate Limiting (Token Bucket, Leaky Bucket)",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "What behavior distinguishes the Token Bucket rate-limiting algorithm from the Leaky Bucket algorithm?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Token bucket permits bursts of requests up to its capacity, whereas leaky bucket enforces a strictly smooth, constant output rate"
+    },
+    {
+      "id": "B",
+      "text": "Leaky bucket permits bursts, while token bucket drops all bursts"
+    },
+    {
+      "id": "C",
+      "text": "Token bucket requires distributed database locks"
+    },
+    {
+      "id": "D",
+      "text": "Leaky bucket is only applicable to UDP packets"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "Token bucket allows accumulating tokens to be spent rapidly during spikes (burstiness). Leaky bucket processes requests at a constant, unyielding drip rate, buffering or dropping excess.",
+  "reference_solution": "Correct Choice: A. Rationale: Token bucket allows accumulating tokens to be spent rapidly during spikes (burstiness). Leaky bucket processes requests at a constant, unyielding drip rate, buffering or dropping excess.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

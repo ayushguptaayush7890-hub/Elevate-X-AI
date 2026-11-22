@@ -1,0 +1,5053 @@
+{
+  "Model B": {
+    "samples": [
+      {
+        "record_id": "MOCK-TRD-01-00087",
+        "occupation_id": "TRD-01",
+        "occupation_name": "Tailor and Garment Worker",
+        "language_mode": "hindi",
+        "input_text": "सुरक्षा को ध्यान में रखकर हम ओवरलॉक सिलाई करते हैं और समय-समय पर ग्राहक का नाप लेना।",
+        "gold_spans": [
+          {
+            "skill": "ओवरलॉक सिलाई",
+            "offsets": [
+              29,
+              41
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "ग्राहक का नाप लेना",
+            "offsets": [
+              65,
+              83
+            ],
+            "category": "measurement_planning"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "ओवरलॉक सिलाई",
+            "offsets": [
+              29,
+              41
+            ]
+          },
+          {
+            "skill": "ग्राहक का नाप लेना।",
+            "offsets": [
+              65,
+              84
+            ]
+          }
+        ],
+        "exact_matches": [
+          "ओवरलॉक सिलाई"
+        ],
+        "fp": [
+          "ग्राहक का नाप लेना।"
+        ],
+        "fn": [
+          "ग्राहक का नाप लेना"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-01-00032",
+        "occupation_id": "TRD-01",
+        "occupation_name": "Tailor and Garment Worker",
+        "language_mode": "hindi",
+        "input_text": "जब ग्राहक साइट पर बुलाते हैं तो पहले बकरम चिपकाना और कॉलर बनाना करते हैं और फिर ओवरलॉक सिलाई।",
+        "gold_spans": [
+          {
+            "skill": "बकरम चिपकाना और कॉलर बनाना",
+            "offsets": [
+              37,
+              63
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "ओवरलॉक सिलाई",
+            "offsets": [
+              80,
+              92
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "बकरम चिपकाना और कॉलर बनाना",
+            "offsets": [
+              37,
+              63
+            ]
+          },
+          {
+            "skill": "ओवरलॉक सिलाई।",
+            "offsets": [
+              80,
+              93
+            ]
+          }
+        ],
+        "exact_matches": [
+          "बकरम चिपकाना और कॉलर बनाना"
+        ],
+        "fp": [
+          "ओवरलॉक सिलाई।"
+        ],
+        "fn": [
+          "ओवरलॉक सिलाई"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-01-00082",
+        "occupation_id": "TRD-01",
+        "occupation_name": "Tailor and Garment Worker",
+        "language_mode": "hindi",
+        "input_text": "दैनिक रूटीन में सबसे पहले फिटिंग अल्टरेशन करना की तैयारी करते हैं, उसके बाद नीडल गार्ड सेफ्टी चेक और फिर सिलाई मशीन चलाना की जांच करते हैं।",
+        "gold_spans": [
+          {
+            "skill": "फिटिंग अल्टरेशन करना",
+            "offsets": [
+              26,
+              46
+            ],
+            "category": "troubleshooting_repair"
+          },
+          {
+            "skill": "नीडल गार्ड सेफ्टी चेक",
+            "offsets": [
+              76,
+              97
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "सिलाई मशीन चलाना",
+            "offsets": [
+              105,
+              121
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "फिटिंग अल्टरेशन करना",
+            "offsets": [
+              26,
+              46
+            ]
+          },
+          {
+            "skill": "नीडल गार्ड सेफ्टी चेक",
+            "offsets": [
+              76,
+              97
+            ]
+          },
+          {
+            "skill": "सिलाई मशीन चलाना",
+            "offsets": [
+              105,
+              121
+            ]
+          }
+        ],
+        "exact_matches": [
+          "फिटिंग अल्टरेशन करना",
+          "नीडल गार्ड सेफ्टी चेक",
+          "सिलाई मशीन चलाना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-01-00168",
+        "occupation_id": "TRD-01",
+        "occupation_name": "Tailor and Garment Worker",
+        "language_mode": "roman_hindi",
+        "input_text": "Customer ke hisaab se pehle customer se design baat-chit karte hain aur delivery se pehle kapde ki cutting check karte hain.",
+        "gold_spans": [
+          {
+            "skill": "customer se design baat-chit",
+            "offsets": [
+              28,
+              56
+            ],
+            "category": "client_communication"
+          },
+          {
+            "skill": "kapde ki cutting",
+            "offsets": [
+              90,
+              106
+            ],
+            "category": "measurement_planning"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "customer se design baat-chit",
+            "offsets": [
+              28,
+              56
+            ]
+          },
+          {
+            "skill": "kapde ki cutting",
+            "offsets": [
+              90,
+              106
+            ]
+          }
+        ],
+        "exact_matches": [
+          "kapde ki cutting",
+          "customer se design baat-chit"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-01-00177",
+        "occupation_id": "TRD-01",
+        "occupation_name": "Tailor and Garment Worker",
+        "language_mode": "roman_hindi",
+        "input_text": "Mera main kaam overlock silai ka hai lekin project par katori blouse dart silai bhi handle karta hu.",
+        "gold_spans": [
+          {
+            "skill": "overlock silai",
+            "offsets": [
+              15,
+              29
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "katori blouse dart silai",
+            "offsets": [
+              55,
+              79
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "overlock silai",
+            "offsets": [
+              15,
+              29
+            ]
+          },
+          {
+            "skill": "katori blouse dart silai",
+            "offsets": [
+              55,
+              79
+            ]
+          }
+        ],
+        "exact_matches": [
+          "katori blouse dart silai",
+          "overlock silai"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-01-00252",
+        "occupation_id": "TRD-01",
+        "occupation_name": "Tailor and Garment Worker",
+        "language_mode": "hinglish",
+        "input_text": "Safety protocol follow karte huye body measurement taking compulsory hai aur alongside customer design consultation karte hain.",
+        "gold_spans": [
+          {
+            "skill": "body measurement taking",
+            "offsets": [
+              34,
+              57
+            ],
+            "category": "measurement_planning"
+          },
+          {
+            "skill": "customer design consultation",
+            "offsets": [
+              87,
+              115
+            ],
+            "category": "client_communication"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "body measurement taking",
+            "offsets": [
+              34,
+              57
+            ]
+          },
+          {
+            "skill": "customer design consultation",
+            "offsets": [
+              87,
+              115
+            ]
+          }
+        ],
+        "exact_matches": [
+          "customer design consultation",
+          "body measurement taking"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-01-00266",
+        "occupation_id": "TRD-01",
+        "occupation_name": "Tailor and Garment Worker",
+        "language_mode": "hinglish",
+        "input_text": "Service quality maintain karne ke liye pehle fabric cutting and pattern marking and handover se pehle lockstitch machine stitching inspect karte hain.",
+        "gold_spans": [
+          {
+            "skill": "fabric cutting and pattern marking",
+            "offsets": [
+              45,
+              79
+            ],
+            "category": "measurement_planning"
+          },
+          {
+            "skill": "lockstitch machine stitching",
+            "offsets": [
+              102,
+              130
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "fabric cutting and pattern marking",
+            "offsets": [
+              45,
+              79
+            ]
+          },
+          {
+            "skill": "lockstitch machine stitching",
+            "offsets": [
+              102,
+              130
+            ]
+          }
+        ],
+        "exact_matches": [
+          "fabric cutting and pattern marking",
+          "lockstitch machine stitching"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-01-00333",
+        "occupation_id": "TRD-01",
+        "occupation_name": "Tailor and Garment Worker",
+        "language_mode": "english",
+        "input_text": "My daily workshop duties include checking machine finger safety guards and conducting fusible collar stiffener attachment when required.",
+        "gold_spans": [
+          {
+            "skill": "checking machine finger safety guards",
+            "offsets": [
+              33,
+              70
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "fusible collar stiffener attachment",
+            "offsets": [
+              86,
+              121
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "checking machine finger safety guards",
+            "offsets": [
+              33,
+              70
+            ]
+          },
+          {
+            "skill": "fusible collar stiffener attachment",
+            "offsets": [
+              86,
+              121
+            ]
+          }
+        ],
+        "exact_matches": [
+          "checking machine finger safety guards",
+          "fusible collar stiffener attachment"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-01-00319",
+        "occupation_id": "TRD-01",
+        "occupation_name": "Tailor and Garment Worker",
+        "language_mode": "english",
+        "input_text": "My core technical competence is fusible collar stiffener attachment, with extensive project experience in garment alteration and seam restructuring.",
+        "gold_spans": [
+          {
+            "skill": "fusible collar stiffener attachment",
+            "offsets": [
+              32,
+              67
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "garment alteration and seam restructuring",
+            "offsets": [
+              106,
+              147
+            ],
+            "category": "troubleshooting_repair"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "fusible collar stiffener attachment,",
+            "offsets": [
+              32,
+              68
+            ]
+          },
+          {
+            "skill": "garment alteration and seam restructuring.",
+            "offsets": [
+              106,
+              148
+            ]
+          }
+        ],
+        "exact_matches": [],
+        "fp": [
+          "fusible collar stiffener attachment,",
+          "garment alteration and seam restructuring."
+        ],
+        "fn": [
+          "garment alteration and seam restructuring",
+          "fusible collar stiffener attachment"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-01-00491",
+        "occupation_id": "TRD-01",
+        "occupation_name": "Tailor and Garment Worker",
+        "language_mode": "mixed",
+        "input_text": "Main workshop me tailor chalk से fabric cutting karta hu aur customer requirement par customer requirement consultation execute karta hu.",
+        "gold_spans": [
+          {
+            "skill": "tailor chalk से fabric cutting",
+            "offsets": [
+              17,
+              47
+            ],
+            "category": "measurement_planning"
+          },
+          {
+            "skill": "customer requirement consultation",
+            "offsets": [
+              86,
+              119
+            ],
+            "category": "client_communication"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "tailor chalk से fabric cutting",
+            "offsets": [
+              17,
+              47
+            ]
+          },
+          {
+            "skill": "customer requirement consultation",
+            "offsets": [
+              86,
+              119
+            ]
+          }
+        ],
+        "exact_matches": [
+          "tailor chalk से fabric cutting",
+          "customer requirement consultation"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-01-00505",
+        "occupation_id": "TRD-01",
+        "occupation_name": "Tailor and Garment Worker",
+        "language_mode": "mixed",
+        "input_text": "हमारा routine task inch tape से client measurement है और site पर 5-thread overlock मशीन चलाना का काम संभालते हैं।",
+        "gold_spans": [
+          {
+            "skill": "inch tape से client measurement",
+            "offsets": [
+              19,
+              50
+            ],
+            "category": "measurement_planning"
+          },
+          {
+            "skill": "5-thread overlock मशीन चलाना",
+            "offsets": [
+              65,
+              93
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "inch tape से client measurement",
+            "offsets": [
+              19,
+              50
+            ]
+          },
+          {
+            "skill": "5-thread overlock मशीन चलाना",
+            "offsets": [
+              65,
+              93
+            ]
+          }
+        ],
+        "exact_matches": [
+          "inch tape से client measurement",
+          "5-thread overlock मशीन चलाना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-02-00591",
+        "occupation_id": "TRD-02",
+        "occupation_name": "Electrician",
+        "language_mode": "hindi",
+        "input_text": "ग्राहक की संतुष्टि के लिए पहले दीवार में झिरी काटकर पाइप डालना करते हैं और कार्य समाप्त होने पर शॉर्ट सर्किट ढूंढकर ठीक करना करते हैं।",
+        "gold_spans": [
+          {
+            "skill": "दीवार में झिरी काटकर पाइप डालना",
+            "offsets": [
+              31,
+              62
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "शॉर्ट सर्किट ढूंढकर ठीक करना",
+            "offsets": [
+              96,
+              124
+            ],
+            "category": "troubleshooting_repair"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "दीवार में झिरी काटकर पाइप डालना",
+            "offsets": [
+              31,
+              62
+            ]
+          },
+          {
+            "skill": "शॉर्ट सर्किट ढूंढकर ठीक करना",
+            "offsets": [
+              96,
+              124
+            ]
+          }
+        ],
+        "exact_matches": [
+          "दीवार में झिरी काटकर पाइप डालना",
+          "शॉर्ट सर्किट ढूंढकर ठीक करना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-02-00573",
+        "occupation_id": "TRD-02",
+        "occupation_name": "Electrician",
+        "language_mode": "hindi",
+        "input_text": "हमारा मुख्य काम अर्थिंग चेक और गड्ढा तैयार करना है, लेकिन बड़े प्रोजेक्ट में मल्टीमीटर से वोल्टेज चेक करना भी करना पड़ता है।",
+        "gold_spans": [
+          {
+            "skill": "अर्थिंग चेक और गड्ढा तैयार करना",
+            "offsets": [
+              16,
+              47
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "मल्टीमीटर से वोल्टेज चेक करना",
+            "offsets": [
+              77,
+              106
+            ],
+            "category": "troubleshooting_repair"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "अर्थिंग चेक और गड्ढा तैयार करना",
+            "offsets": [
+              16,
+              47
+            ]
+          },
+          {
+            "skill": "मल्टीमीटर से वोल्टेज चेक करना",
+            "offsets": [
+              77,
+              106
+            ]
+          }
+        ],
+        "exact_matches": [
+          "मल्टीमीटर से वोल्टेज चेक करना",
+          "अर्थिंग चेक और गड्ढा तैयार करना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-02-00613",
+        "occupation_id": "TRD-02",
+        "occupation_name": "Electrician",
+        "language_mode": "hindi",
+        "input_text": "सुरक्षा को ध्यान में रखकर हम दीवार में झिरी काटकर पाइप डालना करते हैं और समय-समय पर अर्थिंग चेक और गड्ढा तैयार करना।",
+        "gold_spans": [
+          {
+            "skill": "दीवार में झिरी काटकर पाइप डालना",
+            "offsets": [
+              29,
+              60
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "अर्थिंग चेक और गड्ढा तैयार करना",
+            "offsets": [
+              84,
+              115
+            ],
+            "category": "safety_compliance"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "दीवार में झिरी काटकर पाइप डालना",
+            "offsets": [
+              29,
+              60
+            ]
+          },
+          {
+            "skill": "अर्थिंग चेक और गड्ढा तैयार करना।",
+            "offsets": [
+              84,
+              116
+            ]
+          }
+        ],
+        "exact_matches": [
+          "दीवार में झिरी काटकर पाइप डालना"
+        ],
+        "fp": [
+          "अर्थिंग चेक और गड्ढा तैयार करना।"
+        ],
+        "fn": [
+          "अर्थिंग चेक और गड्ढा तैयार करना"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-02-00659",
+        "occupation_id": "TRD-02",
+        "occupation_name": "Electrician",
+        "language_mode": "roman_hindi",
+        "input_text": "Jab bhi koi fault ya dikkat aati hai to turant deewar me jhirri conduit fitting karke solve karte hain.",
+        "gold_spans": [
+          {
+            "skill": "deewar me jhirri conduit fitting",
+            "offsets": [
+              47,
+              79
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "deewar me jhirri conduit fitting",
+            "offsets": [
+              47,
+              79
+            ]
+          }
+        ],
+        "exact_matches": [
+          "deewar me jhirri conduit fitting"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-02-00681",
+        "occupation_id": "TRD-02",
+        "occupation_name": "Electrician",
+        "language_mode": "roman_hindi",
+        "input_text": "Customer ke hisaab se pehle insulated gloves pehanna karte hain aur delivery se pehle deewar me jhirri conduit fitting check karte hain.",
+        "gold_spans": [
+          {
+            "skill": "insulated gloves pehanna",
+            "offsets": [
+              28,
+              52
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "deewar me jhirri conduit fitting",
+            "offsets": [
+              86,
+              118
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "insulated gloves pehanna",
+            "offsets": [
+              28,
+              52
+            ]
+          },
+          {
+            "skill": "deewar me jhirri conduit fitting",
+            "offsets": [
+              86,
+              118
+            ]
+          }
+        ],
+        "exact_matches": [
+          "insulated gloves pehanna",
+          "deewar me jhirri conduit fitting"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-02-00761",
+        "occupation_id": "TRD-02",
+        "occupation_name": "Electrician",
+        "language_mode": "hinglish",
+        "input_text": "Proper workflow ke liye pehle inverter and backup battery connection mandate hai, then wire stripper cable peeling and final stage me concealed wall conduit chasing perform karte hain.",
+        "gold_spans": [
+          {
+            "skill": "inverter and backup battery connection",
+            "offsets": [
+              30,
+              68
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "wire stripper cable peeling",
+            "offsets": [
+              87,
+              114
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "concealed wall conduit chasing",
+            "offsets": [
+              134,
+              164
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "inverter and backup battery connection",
+            "offsets": [
+              30,
+              68
+            ]
+          },
+          {
+            "skill": "wire stripper cable peeling",
+            "offsets": [
+              87,
+              114
+            ]
+          },
+          {
+            "skill": "concealed wall conduit chasing",
+            "offsets": [
+              134,
+              164
+            ]
+          }
+        ],
+        "exact_matches": [
+          "concealed wall conduit chasing",
+          "inverter and backup battery connection",
+          "wire stripper cable peeling"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-02-00743",
+        "occupation_id": "TRD-02",
+        "occupation_name": "Electrician",
+        "language_mode": "hinglish",
+        "input_text": "Senior technician ke sath MCB distribution board termination me hands-on practice kiya hai aur independently short circuit fault tracing manage karta hu.",
+        "gold_spans": [
+          {
+            "skill": "MCB distribution board termination",
+            "offsets": [
+              26,
+              60
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "short circuit fault tracing",
+            "offsets": [
+              109,
+              136
+            ],
+            "category": "troubleshooting_repair"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "MCB distribution board termination",
+            "offsets": [
+              26,
+              60
+            ]
+          },
+          {
+            "skill": "short circuit fault tracing",
+            "offsets": [
+              109,
+              136
+            ]
+          }
+        ],
+        "exact_matches": [
+          "MCB distribution board termination",
+          "short circuit fault tracing"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-02-00880",
+        "occupation_id": "TRD-02",
+        "occupation_name": "Electrician",
+        "language_mode": "english",
+        "input_text": "The standard task sequence involves locating and rectifying circuit short faults, proceeding to donning high-voltage rubber protective gloves, and finalizing with cutting masonry channels for electrical conduits.",
+        "gold_spans": [
+          {
+            "skill": "locating and rectifying circuit short faults",
+            "offsets": [
+              36,
+              80
+            ],
+            "category": "troubleshooting_repair"
+          },
+          {
+            "skill": "donning high-voltage rubber protective gloves",
+            "offsets": [
+              96,
+              141
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "cutting masonry channels for electrical conduits",
+            "offsets": [
+              163,
+              211
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "locating and rectifying circuit short faults,",
+            "offsets": [
+              36,
+              81
+            ]
+          },
+          {
+            "skill": "donning high-voltage rubber protective gloves,",
+            "offsets": [
+              96,
+              142
+            ]
+          },
+          {
+            "skill": "cutting masonry channels for electrical conduits.",
+            "offsets": [
+              163,
+              212
+            ]
+          }
+        ],
+        "exact_matches": [],
+        "fp": [
+          "donning high-voltage rubber protective gloves,",
+          "cutting masonry channels for electrical conduits.",
+          "locating and rectifying circuit short faults,"
+        ],
+        "fn": [
+          "donning high-voltage rubber protective gloves",
+          "locating and rectifying circuit short faults",
+          "cutting masonry channels for electrical conduits"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-02-00921",
+        "occupation_id": "TRD-02",
+        "occupation_name": "Electrician",
+        "language_mode": "english",
+        "input_text": "At the job site, I first execute locating and rectifying circuit short faults and subsequently carry out calculating domestic electrical wattage load.",
+        "gold_spans": [
+          {
+            "skill": "locating and rectifying circuit short faults",
+            "offsets": [
+              33,
+              77
+            ],
+            "category": "troubleshooting_repair"
+          },
+          {
+            "skill": "calculating domestic electrical wattage load",
+            "offsets": [
+              105,
+              149
+            ],
+            "category": "measurement_planning"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "locating and rectifying circuit short faults",
+            "offsets": [
+              33,
+              77
+            ]
+          },
+          {
+            "skill": "calculating domestic electrical wattage load.",
+            "offsets": [
+              105,
+              150
+            ]
+          }
+        ],
+        "exact_matches": [
+          "locating and rectifying circuit short faults"
+        ],
+        "fp": [
+          "calculating domestic electrical wattage load."
+        ],
+        "fn": [
+          "calculating domestic electrical wattage load"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-02-01025",
+        "occupation_id": "TRD-02",
+        "occupation_name": "Electrician",
+        "language_mode": "mixed",
+        "input_text": "Pehle MCB panel board termination finalize hota hai, uske baad inverter wiring और battery setup aur aakhir me load calculation और wattage planning verify karte hain.",
+        "gold_spans": [
+          {
+            "skill": "MCB panel board termination",
+            "offsets": [
+              6,
+              33
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "inverter wiring और battery setup",
+            "offsets": [
+              63,
+              95
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "load calculation और wattage planning",
+            "offsets": [
+              110,
+              146
+            ],
+            "category": "measurement_planning"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "MCB panel board termination",
+            "offsets": [
+              6,
+              33
+            ]
+          },
+          {
+            "skill": "inverter wiring और battery setup",
+            "offsets": [
+              63,
+              95
+            ]
+          },
+          {
+            "skill": "load calculation और wattage planning",
+            "offsets": [
+              110,
+              146
+            ]
+          }
+        ],
+        "exact_matches": [
+          "load calculation और wattage planning",
+          "inverter wiring और battery setup",
+          "MCB panel board termination"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-02-00946",
+        "occupation_id": "TRD-02",
+        "occupation_name": "Electrician",
+        "language_mode": "mixed",
+        "input_text": "Main workshop me wall me PVC conduit fitting karta hu aur customer requirement par load calculation और wattage planning execute karta hu.",
+        "gold_spans": [
+          {
+            "skill": "wall me PVC conduit fitting",
+            "offsets": [
+              17,
+              44
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "load calculation और wattage planning",
+            "offsets": [
+              83,
+              119
+            ],
+            "category": "measurement_planning"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "wall me PVC conduit fitting",
+            "offsets": [
+              17,
+              44
+            ]
+          },
+          {
+            "skill": "load calculation और wattage planning",
+            "offsets": [
+              83,
+              119
+            ]
+          }
+        ],
+        "exact_matches": [
+          "load calculation और wattage planning",
+          "wall me PVC conduit fitting"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-03-01111",
+        "occupation_id": "TRD-03",
+        "occupation_name": "Plumber",
+        "language_mode": "hindi",
+        "input_text": "सुरक्षा को ध्यान में रखकर हम वाटर लाइन का ढलान नापना करते हैं और समय-समय पर फ्लश टैंक का फ्लोट वाल्व बदलना।",
+        "gold_spans": [
+          {
+            "skill": "वाटर लाइन का ढलान नापना",
+            "offsets": [
+              29,
+              52
+            ],
+            "category": "measurement_planning"
+          },
+          {
+            "skill": "फ्लश टैंक का फ्लोट वाल्व बदलना",
+            "offsets": [
+              76,
+              106
+            ],
+            "category": "troubleshooting_repair"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "वाटर लाइन का ढलान नापना",
+            "offsets": [
+              29,
+              52
+            ]
+          },
+          {
+            "skill": "फ्लश टैंक का फ्लोट वाल्व बदलना।",
+            "offsets": [
+              76,
+              107
+            ]
+          }
+        ],
+        "exact_matches": [
+          "वाटर लाइन का ढलान नापना"
+        ],
+        "fp": [
+          "फ्लश टैंक का फ्लोट वाल्व बदलना।"
+        ],
+        "fn": [
+          "फ्लश टैंक का फ्लोट वाल्व बदलना"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-03-01121",
+        "occupation_id": "TRD-03",
+        "occupation_name": "Plumber",
+        "language_mode": "hindi",
+        "input_text": "ग्राहक की संतुष्टि के लिए पहले सीपीवीसी पाइप में सॉल्वेंट लगाना करते हैं और कार्य समाप्त होने पर हेक्सॉ से पाइप की सीधी कटिंग करते हैं।",
+        "gold_spans": [
+          {
+            "skill": "सीपीवीसी पाइप में सॉल्वेंट लगाना",
+            "offsets": [
+              31,
+              63
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "हेक्सॉ से पाइप की सीधी कटिंग",
+            "offsets": [
+              97,
+              125
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "सीपीवीसी पाइप में सॉल्वेंट लगाना",
+            "offsets": [
+              31,
+              63
+            ]
+          },
+          {
+            "skill": "हेक्सॉ से पाइप की सीधी कटिंग",
+            "offsets": [
+              97,
+              125
+            ]
+          }
+        ],
+        "exact_matches": [
+          "सीपीवीसी पाइप में सॉल्वेंट लगाना",
+          "हेक्सॉ से पाइप की सीधी कटिंग"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-03-01107",
+        "occupation_id": "TRD-03",
+        "occupation_name": "Plumber",
+        "language_mode": "hindi",
+        "input_text": "मैं पिछले 12 वर्षों से कार्यशाला में सीपीवीसी पाइप में सॉल्वेंट लगाना करता हूं।",
+        "gold_spans": [
+          {
+            "skill": "सीपीवीसी पाइप में सॉल्वेंट लगाना",
+            "offsets": [
+              37,
+              69
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "सीपीवीसी पाइप में सॉल्वेंट लगाना",
+            "offsets": [
+              37,
+              69
+            ]
+          }
+        ],
+        "exact_matches": [
+          "सीपीवीसी पाइप में सॉल्वेंट लगाना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-03-01233",
+        "occupation_id": "TRD-03",
+        "occupation_name": "Plumber",
+        "language_mode": "roman_hindi",
+        "input_text": "Safety ke liye hum pehle teflon tape lagakar nal kasna karte hain aur uske baad water line ka dhalan naapna.",
+        "gold_spans": [
+          {
+            "skill": "teflon tape lagakar nal kasna",
+            "offsets": [
+              25,
+              54
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "water line ka dhalan naapna",
+            "offsets": [
+              80,
+              107
+            ],
+            "category": "measurement_planning"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "teflon tape lagakar nal kasna",
+            "offsets": [
+              25,
+              54
+            ]
+          },
+          {
+            "skill": "water line ka dhalan naapna.",
+            "offsets": [
+              80,
+              108
+            ]
+          }
+        ],
+        "exact_matches": [
+          "teflon tape lagakar nal kasna"
+        ],
+        "fp": [
+          "water line ka dhalan naapna."
+        ],
+        "fn": [
+          "water line ka dhalan naapna"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-03-01205",
+        "occupation_id": "TRD-03",
+        "occupation_name": "Plumber",
+        "language_mode": "roman_hindi",
+        "input_text": "Customer ke ghar jaakar pehle pipe cutting me chashma pehanna karte hain aur phir bathroom diverter fitting karte hain.",
+        "gold_spans": [
+          {
+            "skill": "pipe cutting me chashma pehanna",
+            "offsets": [
+              30,
+              61
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "bathroom diverter fitting",
+            "offsets": [
+              82,
+              107
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "pipe cutting me chashma pehanna",
+            "offsets": [
+              30,
+              61
+            ]
+          },
+          {
+            "skill": "bathroom diverter fitting",
+            "offsets": [
+              82,
+              107
+            ]
+          }
+        ],
+        "exact_matches": [
+          "bathroom diverter fitting",
+          "pipe cutting me chashma pehanna"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-03-01341",
+        "occupation_id": "TRD-03",
+        "occupation_name": "Plumber",
+        "language_mode": "hinglish",
+        "input_text": "Daily tasks me initially drain blockage clearing with auger complete hota hai, followed by teflon tape application on bib cocks aur last me drainage slope level measurement verify karte hain.",
+        "gold_spans": [
+          {
+            "skill": "drain blockage clearing with auger",
+            "offsets": [
+              25,
+              59
+            ],
+            "category": "troubleshooting_repair"
+          },
+          {
+            "skill": "teflon tape application on bib cocks",
+            "offsets": [
+              91,
+              127
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "drainage slope level measurement",
+            "offsets": [
+              140,
+              172
+            ],
+            "category": "measurement_planning"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "drain blockage clearing with auger",
+            "offsets": [
+              25,
+              59
+            ]
+          },
+          {
+            "skill": "teflon tape application on bib cocks",
+            "offsets": [
+              91,
+              127
+            ]
+          },
+          {
+            "skill": "drainage slope level measurement",
+            "offsets": [
+              140,
+              172
+            ]
+          }
+        ],
+        "exact_matches": [
+          "teflon tape application on bib cocks",
+          "drain blockage clearing with auger",
+          "drainage slope level measurement"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-03-01273",
+        "occupation_id": "TRD-03",
+        "occupation_name": "Plumber",
+        "language_mode": "hinglish",
+        "input_text": "Senior technician ke sath CPVC pipe solvent cement jointing me hands-on practice kiya hai aur independently safety glasses usage during pipe cutting manage karta hu.",
+        "gold_spans": [
+          {
+            "skill": "CPVC pipe solvent cement jointing",
+            "offsets": [
+              26,
+              59
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "safety glasses usage during pipe cutting",
+            "offsets": [
+              108,
+              148
+            ],
+            "category": "safety_compliance"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "CPVC pipe solvent cement jointing",
+            "offsets": [
+              26,
+              59
+            ]
+          },
+          {
+            "skill": "safety glasses usage during pipe cutting",
+            "offsets": [
+              108,
+              148
+            ]
+          }
+        ],
+        "exact_matches": [
+          "CPVC pipe solvent cement jointing",
+          "safety glasses usage during pipe cutting"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-03-01409",
+        "occupation_id": "TRD-03",
+        "occupation_name": "Plumber",
+        "language_mode": "english",
+        "input_text": "I have been professionally performing verifying sewer line slope with spirit levels for over 8 years in industrial workshops.",
+        "gold_spans": [
+          {
+            "skill": "verifying sewer line slope with spirit levels",
+            "offsets": [
+              38,
+              83
+            ],
+            "category": "measurement_planning"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "verifying sewer line slope with spirit levels",
+            "offsets": [
+              38,
+              83
+            ]
+          }
+        ],
+        "exact_matches": [
+          "verifying sewer line slope with spirit levels"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-03-01388",
+        "occupation_id": "TRD-03",
+        "occupation_name": "Plumber",
+        "language_mode": "english",
+        "input_text": "My core technical competence is verifying sewer line slope with spirit levels, with extensive project experience in installing concealed thermostatic shower diverters.",
+        "gold_spans": [
+          {
+            "skill": "verifying sewer line slope with spirit levels",
+            "offsets": [
+              32,
+              77
+            ],
+            "category": "measurement_planning"
+          },
+          {
+            "skill": "installing concealed thermostatic shower diverters",
+            "offsets": [
+              116,
+              166
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "verifying sewer line slope with spirit levels,",
+            "offsets": [
+              32,
+              78
+            ]
+          },
+          {
+            "skill": "installing concealed thermostatic shower diverters.",
+            "offsets": [
+              116,
+              167
+            ]
+          }
+        ],
+        "exact_matches": [],
+        "fp": [
+          "installing concealed thermostatic shower diverters.",
+          "verifying sewer line slope with spirit levels,"
+        ],
+        "fn": [
+          "installing concealed thermostatic shower diverters",
+          "verifying sewer line slope with spirit levels"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-03-01527",
+        "occupation_id": "TRD-03",
+        "occupation_name": "Plumber",
+        "language_mode": "mixed",
+        "input_text": "Workplace safety ke liye plumbing line pressure leak test mandatory hai aur alongside drainage blockage cleaning follow karte hain.",
+        "gold_spans": [
+          {
+            "skill": "plumbing line pressure leak test",
+            "offsets": [
+              25,
+              57
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "drainage blockage cleaning",
+            "offsets": [
+              86,
+              112
+            ],
+            "category": "troubleshooting_repair"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "plumbing line pressure leak test",
+            "offsets": [
+              25,
+              57
+            ]
+          },
+          {
+            "skill": "drainage blockage cleaning",
+            "offsets": [
+              86,
+              112
+            ]
+          }
+        ],
+        "exact_matches": [
+          "plumbing line pressure leak test",
+          "drainage blockage cleaning"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-03-01469",
+        "occupation_id": "TRD-03",
+        "occupation_name": "Plumber",
+        "language_mode": "mixed",
+        "input_text": "Pehle teflon tape sealing और tap fitting finalize hota hai, uske baad GI pipe die threading aur aakhir me pipe cutter से square cutting verify karte hain.",
+        "gold_spans": [
+          {
+            "skill": "teflon tape sealing और tap fitting",
+            "offsets": [
+              6,
+              40
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "GI pipe die threading",
+            "offsets": [
+              70,
+              91
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "pipe cutter से square cutting",
+            "offsets": [
+              106,
+              135
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "teflon tape sealing और tap fitting",
+            "offsets": [
+              6,
+              40
+            ]
+          },
+          {
+            "skill": "GI pipe die threading",
+            "offsets": [
+              70,
+              91
+            ]
+          },
+          {
+            "skill": "pipe cutter से square cutting",
+            "offsets": [
+              106,
+              135
+            ]
+          }
+        ],
+        "exact_matches": [
+          "teflon tape sealing और tap fitting",
+          "GI pipe die threading",
+          "pipe cutter से square cutting"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-04-01623",
+        "occupation_id": "TRD-04",
+        "occupation_name": "Motor Mechanic",
+        "language_mode": "hindi",
+        "input_text": "दैनिक रूटीन में सबसे पहले शॉकर आयल सील बदलना की तैयारी करते हैं, उसके बाद कार्बोरेटर की ट्यूनिंग करना और फिर ट्रॉली जैक पर सेफ्टी स्टैंड लगाना की जांच करते हैं।",
+        "gold_spans": [
+          {
+            "skill": "शॉकर आयल सील बदलना",
+            "offsets": [
+              26,
+              44
+            ],
+            "category": "troubleshooting_repair"
+          },
+          {
+            "skill": "कार्बोरेटर की ट्यूनिंग करना",
+            "offsets": [
+              74,
+              101
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "ट्रॉली जैक पर सेफ्टी स्टैंड लगाना",
+            "offsets": [
+              109,
+              142
+            ],
+            "category": "safety_compliance"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "शॉकर आयल सील बदलना",
+            "offsets": [
+              26,
+              44
+            ]
+          },
+          {
+            "skill": "कार्बोरेटर की ट्यूनिंग करना",
+            "offsets": [
+              74,
+              101
+            ]
+          },
+          {
+            "skill": "ट्रॉली जैक पर सेफ्टी स्टैंड लगाना",
+            "offsets": [
+              109,
+              142
+            ]
+          }
+        ],
+        "exact_matches": [
+          "शॉकर आयल सील बदलना",
+          "कार्बोरेटर की ट्यूनिंग करना",
+          "ट्रॉली जैक पर सेफ्टी स्टैंड लगाना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-04-01571",
+        "occupation_id": "TRD-04",
+        "occupation_name": "Motor Mechanic",
+        "language_mode": "hindi",
+        "input_text": "हमारी दुकान पर हर दिन शॉकर आयल सील बदलना और जरूरत पड़ने पर ट्रॉली जैक पर सेफ्टी स्टैंड लगाना किया जाता है।",
+        "gold_spans": [
+          {
+            "skill": "शॉकर आयल सील बदलना",
+            "offsets": [
+              22,
+              40
+            ],
+            "category": "troubleshooting_repair"
+          },
+          {
+            "skill": "ट्रॉली जैक पर सेफ्टी स्टैंड लगाना",
+            "offsets": [
+              59,
+              92
+            ],
+            "category": "safety_compliance"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "शॉकर आयल सील बदलना",
+            "offsets": [
+              22,
+              40
+            ]
+          },
+          {
+            "skill": "ट्रॉली जैक पर सेफ्टी स्टैंड लगाना",
+            "offsets": [
+              59,
+              92
+            ]
+          }
+        ],
+        "exact_matches": [
+          "शॉकर आयल सील बदलना",
+          "ट्रॉली जैक पर सेफ्टी स्टैंड लगाना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-04-01581",
+        "occupation_id": "TRD-04",
+        "occupation_name": "Motor Mechanic",
+        "language_mode": "hindi",
+        "input_text": "जब ग्राहक साइट पर बुलाते हैं तो पहले टॉर्क रिंच से नट टाइट करना करते हैं और फिर इंजन आयल ड्रेन और नया आयल डालना।",
+        "gold_spans": [
+          {
+            "skill": "टॉर्क रिंच से नट टाइट करना",
+            "offsets": [
+              37,
+              63
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "इंजन आयल ड्रेन और नया आयल डालना",
+            "offsets": [
+              80,
+              111
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "टॉर्क रिंच से नट टाइट करना",
+            "offsets": [
+              37,
+              63
+            ]
+          },
+          {
+            "skill": "इंजन आयल ड्रेन और नया आयल डालना।",
+            "offsets": [
+              80,
+              112
+            ]
+          }
+        ],
+        "exact_matches": [
+          "टॉर्क रिंच से नट टाइट करना"
+        ],
+        "fp": [
+          "इंजन आयल ड्रेन और नया आयल डालना।"
+        ],
+        "fn": [
+          "इंजन आयल ड्रेन और नया आयल डालना"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-04-01697",
+        "occupation_id": "TRD-04",
+        "occupation_name": "Motor Mechanic",
+        "language_mode": "roman_hindi",
+        "input_text": "Kaam start karne se pehle hydrometer se battery gravity check zaroori hai, uske baad trolley jack par safety stand lagana aur end me disc brake ki air nikalna karte hain.",
+        "gold_spans": [
+          {
+            "skill": "hydrometer se battery gravity check",
+            "offsets": [
+              26,
+              61
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "trolley jack par safety stand lagana",
+            "offsets": [
+              85,
+              121
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "disc brake ki air nikalna",
+            "offsets": [
+              133,
+              158
+            ],
+            "category": "troubleshooting_repair"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "hydrometer se battery gravity check",
+            "offsets": [
+              26,
+              61
+            ]
+          },
+          {
+            "skill": "trolley jack par safety stand lagana",
+            "offsets": [
+              85,
+              121
+            ]
+          },
+          {
+            "skill": "disc brake ki air nikalna",
+            "offsets": [
+              133,
+              158
+            ]
+          }
+        ],
+        "exact_matches": [
+          "hydrometer se battery gravity check",
+          "disc brake ki air nikalna",
+          "trolley jack par safety stand lagana"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-04-01747",
+        "occupation_id": "TRD-04",
+        "occupation_name": "Motor Mechanic",
+        "language_mode": "roman_hindi",
+        "input_text": "Mera main kaam trolley jack par safety stand lagana ka hai lekin project par disc brake ki air nikalna bhi handle karta hu.",
+        "gold_spans": [
+          {
+            "skill": "trolley jack par safety stand lagana",
+            "offsets": [
+              15,
+              51
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "disc brake ki air nikalna",
+            "offsets": [
+              77,
+              102
+            ],
+            "category": "troubleshooting_repair"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "trolley jack par safety stand lagana",
+            "offsets": [
+              15,
+              51
+            ]
+          },
+          {
+            "skill": "disc brake ki air nikalna",
+            "offsets": [
+              77,
+              102
+            ]
+          }
+        ],
+        "exact_matches": [
+          "disc brake ki air nikalna",
+          "trolley jack par safety stand lagana"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-04-01871",
+        "occupation_id": "TRD-04",
+        "occupation_name": "Motor Mechanic",
+        "language_mode": "hinglish",
+        "input_text": "Client requirement ke according pehle engine oil draining and replacement hota hai aur next step me torque wrench bolt tightening karte hain.",
+        "gold_spans": [
+          {
+            "skill": "engine oil draining and replacement",
+            "offsets": [
+              38,
+              73
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "torque wrench bolt tightening",
+            "offsets": [
+              100,
+              129
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "engine oil draining and replacement",
+            "offsets": [
+              38,
+              73
+            ]
+          },
+          {
+            "skill": "torque wrench bolt tightening",
+            "offsets": [
+              100,
+              129
+            ]
+          }
+        ],
+        "exact_matches": [
+          "engine oil draining and replacement",
+          "torque wrench bolt tightening"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-04-01787",
+        "occupation_id": "TRD-04",
+        "occupation_name": "Motor Mechanic",
+        "language_mode": "hinglish",
+        "input_text": "Daily tasks me initially carburetor air-fuel tuning complete hota hai, followed by front fork oil seal replacement aur last me spark plug cleaning and electrode gapping verify karte hain.",
+        "gold_spans": [
+          {
+            "skill": "carburetor air-fuel tuning",
+            "offsets": [
+              25,
+              51
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "front fork oil seal replacement",
+            "offsets": [
+              83,
+              114
+            ],
+            "category": "troubleshooting_repair"
+          },
+          {
+            "skill": "spark plug cleaning and electrode gapping",
+            "offsets": [
+              127,
+              168
+            ],
+            "category": "troubleshooting_repair"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "carburetor air-fuel tuning",
+            "offsets": [
+              25,
+              51
+            ]
+          },
+          {
+            "skill": "front fork oil seal replacement",
+            "offsets": [
+              83,
+              114
+            ]
+          },
+          {
+            "skill": "spark plug cleaning and electrode gapping",
+            "offsets": [
+              127,
+              168
+            ]
+          }
+        ],
+        "exact_matches": [
+          "spark plug cleaning and electrode gapping",
+          "front fork oil seal replacement",
+          "carburetor air-fuel tuning"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-04-01923",
+        "occupation_id": "TRD-04",
+        "occupation_name": "Motor Mechanic",
+        "language_mode": "english",
+        "input_text": "At the job site, I first execute tightening cylinder head bolts with torque wrenches and subsequently carry out overhauling multi-plate wet clutch assemblies.",
+        "gold_spans": [
+          {
+            "skill": "tightening cylinder head bolts with torque wrenches",
+            "offsets": [
+              33,
+              84
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "overhauling multi-plate wet clutch assemblies",
+            "offsets": [
+              112,
+              157
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "tightening cylinder head bolts with torque wrenches",
+            "offsets": [
+              33,
+              84
+            ]
+          },
+          {
+            "skill": "overhauling multi-plate wet clutch assemblies.",
+            "offsets": [
+              112,
+              158
+            ]
+          }
+        ],
+        "exact_matches": [
+          "tightening cylinder head bolts with torque wrenches"
+        ],
+        "fp": [
+          "overhauling multi-plate wet clutch assemblies."
+        ],
+        "fn": [
+          "overhauling multi-plate wet clutch assemblies"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-04-01930",
+        "occupation_id": "TRD-04",
+        "occupation_name": "Motor Mechanic",
+        "language_mode": "english",
+        "input_text": "The standard task sequence involves measuring lead-acid battery electrolyte gravity, proceeding to bleeding hydraulic air bubbles from disc brake lines, and finalizing with securing elevated vehicle frames on jack stands.",
+        "gold_spans": [
+          {
+            "skill": "measuring lead-acid battery electrolyte gravity",
+            "offsets": [
+              36,
+              83
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "bleeding hydraulic air bubbles from disc brake lines",
+            "offsets": [
+              99,
+              151
+            ],
+            "category": "troubleshooting_repair"
+          },
+          {
+            "skill": "securing elevated vehicle frames on jack stands",
+            "offsets": [
+              173,
+              220
+            ],
+            "category": "safety_compliance"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "measuring lead-acid battery electrolyte gravity,",
+            "offsets": [
+              36,
+              84
+            ]
+          },
+          {
+            "skill": "bleeding hydraulic air bubbles from disc brake lines,",
+            "offsets": [
+              99,
+              152
+            ]
+          },
+          {
+            "skill": "securing elevated vehicle frames on jack stands.",
+            "offsets": [
+              173,
+              221
+            ]
+          }
+        ],
+        "exact_matches": [],
+        "fp": [
+          "measuring lead-acid battery electrolyte gravity,",
+          "securing elevated vehicle frames on jack stands.",
+          "bleeding hydraulic air bubbles from disc brake lines,"
+        ],
+        "fn": [
+          "measuring lead-acid battery electrolyte gravity",
+          "securing elevated vehicle frames on jack stands",
+          "bleeding hydraulic air bubbles from disc brake lines"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-04-02068",
+        "occupation_id": "TRD-04",
+        "occupation_name": "Motor Mechanic",
+        "language_mode": "mixed",
+        "input_text": "Ustaad ji ke supervision me clutch plate overhaul और replacement seekha aur ab complete engine oil change और oil filter fix manage karta hu.",
+        "gold_spans": [
+          {
+            "skill": "clutch plate overhaul और replacement",
+            "offsets": [
+              28,
+              64
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "engine oil change और oil filter fix",
+            "offsets": [
+              88,
+              123
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "clutch plate overhaul और replacement",
+            "offsets": [
+              28,
+              64
+            ]
+          },
+          {
+            "skill": "engine oil change और oil filter fix",
+            "offsets": [
+              88,
+              123
+            ]
+          }
+        ],
+        "exact_matches": [
+          "engine oil change और oil filter fix",
+          "clutch plate overhaul और replacement"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-04-02038",
+        "occupation_id": "TRD-04",
+        "occupation_name": "Motor Mechanic",
+        "language_mode": "mixed",
+        "input_text": "Pehle engine oil change और oil filter fix finalize hota hai, uske baad jack stand safety verification aur aakhir me fork suspension oil seal repair verify karte hain.",
+        "gold_spans": [
+          {
+            "skill": "engine oil change और oil filter fix",
+            "offsets": [
+              6,
+              41
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "jack stand safety verification",
+            "offsets": [
+              71,
+              101
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "fork suspension oil seal repair",
+            "offsets": [
+              116,
+              147
+            ],
+            "category": "troubleshooting_repair"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "engine oil change और oil filter fix",
+            "offsets": [
+              6,
+              41
+            ]
+          },
+          {
+            "skill": "jack stand safety verification",
+            "offsets": [
+              71,
+              101
+            ]
+          },
+          {
+            "skill": "fork suspension oil seal repair",
+            "offsets": [
+              116,
+              147
+            ]
+          }
+        ],
+        "exact_matches": [
+          "jack stand safety verification",
+          "engine oil change और oil filter fix",
+          "fork suspension oil seal repair"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-05-02112",
+        "occupation_id": "TRD-05",
+        "occupation_name": "Carpenter",
+        "language_mode": "hindi",
+        "input_text": "काम की शुरुआत में चौरासी से मोरटाइज टेनन जोड़ बनाना करना जरूरी है, उसके बाद पीवीसी एज बेंडिंग टेप चिपकाना और अंत में फेविकोल लगाकर सनमाइका पेस्ट करना करते हैं।",
+        "gold_spans": [
+          {
+            "skill": "चौरासी से मोरटाइज टेनन जोड़ बनाना",
+            "offsets": [
+              18,
+              51
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "पीवीसी एज बेंडिंग टेप चिपकाना",
+            "offsets": [
+              76,
+              105
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "फेविकोल लगाकर सनमाइका पेस्ट करना",
+            "offsets": [
+              117,
+              149
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "चौरासी से मोरटाइज टेनन जोड़ बनाना",
+            "offsets": [
+              18,
+              51
+            ]
+          },
+          {
+            "skill": "पीवीसी एज बेंडिंग टेप चिपकाना",
+            "offsets": [
+              76,
+              105
+            ]
+          },
+          {
+            "skill": "फेविकोल लगाकर सनमाइका पेस्ट करना",
+            "offsets": [
+              117,
+              149
+            ]
+          }
+        ],
+        "exact_matches": [
+          "फेविकोल लगाकर सनमाइका पेस्ट करना",
+          "चौरासी से मोरटाइज टेनन जोड़ बनाना",
+          "पीवीसी एज बेंडिंग टेप चिपकाना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-05-02127",
+        "occupation_id": "TRD-05",
+        "occupation_name": "Carpenter",
+        "language_mode": "hindi",
+        "input_text": "दैनिक रूटीन में सबसे पहले कटिंग के समय डस्ट मास्क पहनना की तैयारी करते हैं, उसके बाद गुनिया से 90 डिग्री चेक करना और फिर फेविकोल लगाकर सनमाइका पेस्ट करना की जांच करते हैं।",
+        "gold_spans": [
+          {
+            "skill": "कटिंग के समय डस्ट मास्क पहनना",
+            "offsets": [
+              26,
+              55
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "गुनिया से 90 डिग्री चेक करना",
+            "offsets": [
+              85,
+              113
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "फेविकोल लगाकर सनमाइका पेस्ट करना",
+            "offsets": [
+              121,
+              153
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "कटिंग के समय डस्ट मास्क पहनना",
+            "offsets": [
+              26,
+              55
+            ]
+          },
+          {
+            "skill": "गुनिया से 90 डिग्री चेक करना",
+            "offsets": [
+              85,
+              113
+            ]
+          },
+          {
+            "skill": "फेविकोल लगाकर सनमाइका पेस्ट करना",
+            "offsets": [
+              121,
+              153
+            ]
+          }
+        ],
+        "exact_matches": [
+          "फेविकोल लगाकर सनमाइका पेस्ट करना",
+          "गुनिया से 90 डिग्री चेक करना",
+          "कटिंग के समय डस्ट मास्क पहनना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-05-02178",
+        "occupation_id": "TRD-05",
+        "occupation_name": "Carpenter",
+        "language_mode": "hindi",
+        "input_text": "काम की शुरुआत में गुनिया से 90 डिग्री चेक करना करना जरूरी है, उसके बाद कैबिनेट में सॉफ्ट क्लोज कब्जा लगाना और अंत में सर्कुलर सॉ से प्लाईवुड काटना करते हैं।",
+        "gold_spans": [
+          {
+            "skill": "गुनिया से 90 डिग्री चेक करना",
+            "offsets": [
+              18,
+              46
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "कैबिनेट में सॉफ्ट क्लोज कब्जा लगाना",
+            "offsets": [
+              71,
+              106
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "सर्कुलर सॉ से प्लाईवुड काटना",
+            "offsets": [
+              118,
+              146
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "गुनिया से 90 डिग्री चेक करना",
+            "offsets": [
+              18,
+              46
+            ]
+          },
+          {
+            "skill": "कैबिनेट में सॉफ्ट क्लोज कब्जा लगाना",
+            "offsets": [
+              71,
+              106
+            ]
+          },
+          {
+            "skill": "सर्कुलर सॉ से प्लाईवुड काटना",
+            "offsets": [
+              118,
+              146
+            ]
+          }
+        ],
+        "exact_matches": [
+          "गुनिया से 90 डिग्री चेक करना",
+          "कैबिनेट में सॉफ्ट क्लोज कब्जा लगाना",
+          "सर्कुलर सॉ से प्लाईवुड काटना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-05-02249",
+        "occupation_id": "TRD-05",
+        "occupation_name": "Carpenter",
+        "language_mode": "roman_hindi",
+        "input_text": "Subah routine me pehle fevicol lagakar sunmica paste karna karte hain, phir guniya se 90 degree check karna aur aakhiri me PVC edge banding tape chipkana check karte hain.",
+        "gold_spans": [
+          {
+            "skill": "fevicol lagakar sunmica paste karna",
+            "offsets": [
+              23,
+              58
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "guniya se 90 degree check karna",
+            "offsets": [
+              76,
+              107
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "PVC edge banding tape chipkana",
+            "offsets": [
+              123,
+              153
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "fevicol lagakar sunmica paste karna",
+            "offsets": [
+              23,
+              58
+            ]
+          },
+          {
+            "skill": "guniya se 90 degree check karna",
+            "offsets": [
+              76,
+              107
+            ]
+          },
+          {
+            "skill": "PVC edge banding tape chipkana",
+            "offsets": [
+              123,
+              153
+            ]
+          }
+        ],
+        "exact_matches": [
+          "fevicol lagakar sunmica paste karna",
+          "guniya se 90 degree check karna",
+          "PVC edge banding tape chipkana"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-05-02265",
+        "occupation_id": "TRD-05",
+        "occupation_name": "Carpenter",
+        "language_mode": "roman_hindi",
+        "input_text": "Main pichhle 3 saal se dukan me circular saw se plywood kaatna karta hu.",
+        "gold_spans": [
+          {
+            "skill": "circular saw se plywood kaatna",
+            "offsets": [
+              32,
+              62
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "circular saw se plywood kaatna",
+            "offsets": [
+              32,
+              62
+            ]
+          }
+        ],
+        "exact_matches": [
+          "circular saw se plywood kaatna"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-05-02302",
+        "occupation_id": "TRD-05",
+        "occupation_name": "Carpenter",
+        "language_mode": "hinglish",
+        "input_text": "Safety protocol follow karte huye telescopic drawer channel installation compulsory hai aur alongside wood moisture content inspection karte hain.",
+        "gold_spans": [
+          {
+            "skill": "telescopic drawer channel installation",
+            "offsets": [
+              34,
+              72
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "wood moisture content inspection",
+            "offsets": [
+              102,
+              134
+            ],
+            "category": "measurement_planning"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "telescopic drawer channel installation",
+            "offsets": [
+              34,
+              72
+            ]
+          },
+          {
+            "skill": "wood moisture content inspection",
+            "offsets": [
+              102,
+              134
+            ]
+          }
+        ],
+        "exact_matches": [
+          "telescopic drawer channel installation",
+          "wood moisture content inspection"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-05-02375",
+        "occupation_id": "TRD-05",
+        "occupation_name": "Carpenter",
+        "language_mode": "hinglish",
+        "input_text": "Safety protocol follow karte huye telescopic drawer channel installation compulsory hai aur alongside soft-close cabinet hinge installation karte hain.",
+        "gold_spans": [
+          {
+            "skill": "telescopic drawer channel installation",
+            "offsets": [
+              34,
+              72
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "soft-close cabinet hinge installation",
+            "offsets": [
+              102,
+              139
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "telescopic drawer channel installation",
+            "offsets": [
+              34,
+              72
+            ]
+          },
+          {
+            "skill": "soft-close cabinet hinge installation",
+            "offsets": [
+              102,
+              139
+            ]
+          }
+        ],
+        "exact_matches": [
+          "telescopic drawer channel installation",
+          "soft-close cabinet hinge installation"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-05-02471",
+        "occupation_id": "TRD-05",
+        "occupation_name": "Carpenter",
+        "language_mode": "english",
+        "input_text": "At the job site, I first execute chiseling traditional mortise-and-tenon wood joints and subsequently carry out mounting ball-bearing drawer slide channels.",
+        "gold_spans": [
+          {
+            "skill": "chiseling traditional mortise-and-tenon wood joints",
+            "offsets": [
+              33,
+              84
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "mounting ball-bearing drawer slide channels",
+            "offsets": [
+              112,
+              155
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "chiseling traditional mortise-and-tenon wood joints",
+            "offsets": [
+              33,
+              84
+            ]
+          },
+          {
+            "skill": "mounting ball-bearing drawer slide channels.",
+            "offsets": [
+              112,
+              156
+            ]
+          }
+        ],
+        "exact_matches": [
+          "chiseling traditional mortise-and-tenon wood joints"
+        ],
+        "fp": [
+          "mounting ball-bearing drawer slide channels."
+        ],
+        "fn": [
+          "mounting ball-bearing drawer slide channels"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-05-02445",
+        "occupation_id": "TRD-05",
+        "occupation_name": "Carpenter",
+        "language_mode": "english",
+        "input_text": "Our operational procedure requires measuring timber moisture content before manufacturing, followed by wearing particulate respirators during wood sanding, and concluding with chiseling traditional mortise-and-tenon wood joints.",
+        "gold_spans": [
+          {
+            "skill": "measuring timber moisture content before manufacturing",
+            "offsets": [
+              35,
+              89
+            ],
+            "category": "measurement_planning"
+          },
+          {
+            "skill": "wearing particulate respirators during wood sanding",
+            "offsets": [
+              103,
+              154
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "chiseling traditional mortise-and-tenon wood joints",
+            "offsets": [
+              176,
+              227
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "measuring timber moisture content before manufacturing,",
+            "offsets": [
+              35,
+              90
+            ]
+          },
+          {
+            "skill": "wearing particulate respirators during wood sanding,",
+            "offsets": [
+              103,
+              155
+            ]
+          },
+          {
+            "skill": "chiseling traditional mortise-and-tenon wood joints.",
+            "offsets": [
+              176,
+              228
+            ]
+          }
+        ],
+        "exact_matches": [],
+        "fp": [
+          "chiseling traditional mortise-and-tenon wood joints.",
+          "measuring timber moisture content before manufacturing,",
+          "wearing particulate respirators during wood sanding,"
+        ],
+        "fn": [
+          "wearing particulate respirators during wood sanding",
+          "chiseling traditional mortise-and-tenon wood joints",
+          "measuring timber moisture content before manufacturing"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-05-02560",
+        "occupation_id": "TRD-05",
+        "occupation_name": "Carpenter",
+        "language_mode": "mixed",
+        "input_text": "हमारा routine task mortise tenon wood joinery बनाना है और site पर guniya try square से angle verification का काम संभालते हैं।",
+        "gold_spans": [
+          {
+            "skill": "mortise tenon wood joinery बनाना",
+            "offsets": [
+              19,
+              51
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "guniya try square से angle verification",
+            "offsets": [
+              66,
+              105
+            ],
+            "category": "quality_inspection"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "mortise tenon wood joinery बनाना",
+            "offsets": [
+              19,
+              51
+            ]
+          },
+          {
+            "skill": "guniya try square से angle verification",
+            "offsets": [
+              66,
+              105
+            ]
+          }
+        ],
+        "exact_matches": [
+          "mortise tenon wood joinery बनाना",
+          "guniya try square से angle verification"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-05-02519",
+        "occupation_id": "TRD-05",
+        "occupation_name": "Carpenter",
+        "language_mode": "mixed",
+        "input_text": "Pehle cabinet soft-close hinges fitting finalize hota hai, uske baad PVC edge banding tape fitting aur aakhir me sunmica sheet laminate pressing verify karte hain.",
+        "gold_spans": [
+          {
+            "skill": "cabinet soft-close hinges fitting",
+            "offsets": [
+              6,
+              39
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "PVC edge banding tape fitting",
+            "offsets": [
+              69,
+              98
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "sunmica sheet laminate pressing",
+            "offsets": [
+              113,
+              144
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "cabinet soft-close hinges fitting",
+            "offsets": [
+              6,
+              39
+            ]
+          },
+          {
+            "skill": "PVC edge banding tape fitting",
+            "offsets": [
+              69,
+              98
+            ]
+          },
+          {
+            "skill": "sunmica sheet laminate pressing",
+            "offsets": [
+              113,
+              144
+            ]
+          }
+        ],
+        "exact_matches": [
+          "cabinet soft-close hinges fitting",
+          "PVC edge banding tape fitting",
+          "sunmica sheet laminate pressing"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-06-02665",
+        "occupation_id": "TRD-06",
+        "occupation_name": "Welder",
+        "language_mode": "hindi",
+        "input_text": "यदि कोई तकनीकी दिक्कत आए तो तुरंत अर्थिंग क्लैंप को सही लगाना करते हैं।",
+        "gold_spans": [
+          {
+            "skill": "अर्थिंग क्लैंप को सही लगाना",
+            "offsets": [
+              34,
+              61
+            ],
+            "category": "safety_compliance"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "अर्थिंग क्लैंप को सही लगाना",
+            "offsets": [
+              34,
+              61
+            ]
+          }
+        ],
+        "exact_matches": [
+          "अर्थिंग क्लैंप को सही लगाना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-06-02610",
+        "occupation_id": "TRD-06",
+        "occupation_name": "Welder",
+        "language_mode": "hindi",
+        "input_text": "मैं पिछले 10 वर्षों से कार्यशाला में 11 नंबर शेड का वेल्डिंग हेलमेट पहनना करता हूं।",
+        "gold_spans": [
+          {
+            "skill": "11 नंबर शेड का वेल्डिंग हेलमेट पहनना",
+            "offsets": [
+              37,
+              73
+            ],
+            "category": "safety_compliance"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "11 नंबर शेड का वेल्डिंग हेलमेट पहनना",
+            "offsets": [
+              37,
+              73
+            ]
+          }
+        ],
+        "exact_matches": [
+          "11 नंबर शेड का वेल्डिंग हेलमेट पहनना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-06-02668",
+        "occupation_id": "TRD-06",
+        "occupation_name": "Welder",
+        "language_mode": "hindi",
+        "input_text": "दैनिक रूटीन में सबसे पहले आर्क वेल्डिंग से टांका लगाना की तैयारी करते हैं, उसके बाद वेल्डिंग जोड़ में क्रैक चेक करना और फिर गेट ग्रिल का वजन और रेट तय करना की जांच करते हैं।",
+        "gold_spans": [
+          {
+            "skill": "आर्क वेल्डिंग से टांका लगाना",
+            "offsets": [
+              26,
+              54
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "वेल्डिंग जोड़ में क्रैक चेक करना",
+            "offsets": [
+              84,
+              116
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "गेट ग्रिल का वजन और रेट तय करना",
+            "offsets": [
+              124,
+              155
+            ],
+            "category": "client_communication"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "आर्क वेल्डिंग से टांका लगाना",
+            "offsets": [
+              26,
+              54
+            ]
+          },
+          {
+            "skill": "वेल्डिंग जोड़ में क्रैक चेक करना",
+            "offsets": [
+              84,
+              116
+            ]
+          },
+          {
+            "skill": "गेट ग्रिल का वजन और रेट तय करना",
+            "offsets": [
+              124,
+              155
+            ]
+          }
+        ],
+        "exact_matches": [
+          "वेल्डिंग जोड़ में क्रैक चेक करना",
+          "गेट ग्रिल का वजन और रेट तय करना",
+          "आर्क वेल्डिंग से टांका लगाना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-06-02799",
+        "occupation_id": "TRD-06",
+        "occupation_name": "Welder",
+        "language_mode": "roman_hindi",
+        "input_text": "Subah routine me pehle 11 number shade ka helmet pehanna karte hain, phir gas cutter se MS plate kaatna aur aakhiri me angle grinder se kinari ghisna check karte hain.",
+        "gold_spans": [
+          {
+            "skill": "11 number shade ka helmet pehanna",
+            "offsets": [
+              23,
+              56
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "gas cutter se MS plate kaatna",
+            "offsets": [
+              74,
+              103
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "angle grinder se kinari ghisna",
+            "offsets": [
+              119,
+              149
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "11 number shade ka helmet pehanna",
+            "offsets": [
+              23,
+              56
+            ]
+          },
+          {
+            "skill": "gas cutter se MS plate kaatna",
+            "offsets": [
+              74,
+              103
+            ]
+          },
+          {
+            "skill": "angle grinder se kinari ghisna",
+            "offsets": [
+              119,
+              149
+            ]
+          }
+        ],
+        "exact_matches": [
+          "11 number shade ka helmet pehanna",
+          "gas cutter se MS plate kaatna",
+          "angle grinder se kinari ghisna"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-06-02781",
+        "occupation_id": "TRD-06",
+        "occupation_name": "Welder",
+        "language_mode": "roman_hindi",
+        "input_text": "Main pichhle 10 saal se dukan me chipping hammer se slag hatana karta hu.",
+        "gold_spans": [
+          {
+            "skill": "chipping hammer se slag hatana",
+            "offsets": [
+              33,
+              63
+            ],
+            "category": "quality_inspection"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "chipping hammer se slag hatana",
+            "offsets": [
+              33,
+              63
+            ]
+          }
+        ],
+        "exact_matches": [
+          "chipping hammer se slag hatana"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-06-02874",
+        "occupation_id": "TRD-06",
+        "occupation_name": "Welder",
+        "language_mode": "hinglish",
+        "input_text": "Daily tasks me initially welding electrode oven conditioning complete hota hai, followed by weld slag chipping and cleaning aur last me weld visual crack and porosity check verify karte hain.",
+        "gold_spans": [
+          {
+            "skill": "welding electrode oven conditioning",
+            "offsets": [
+              25,
+              60
+            ],
+            "category": "material_handling"
+          },
+          {
+            "skill": "weld slag chipping and cleaning",
+            "offsets": [
+              92,
+              123
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "weld visual crack and porosity check",
+            "offsets": [
+              136,
+              172
+            ],
+            "category": "quality_inspection"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "welding electrode oven conditioning",
+            "offsets": [
+              25,
+              60
+            ]
+          },
+          {
+            "skill": "weld slag chipping and cleaning",
+            "offsets": [
+              92,
+              123
+            ]
+          },
+          {
+            "skill": "weld visual crack and porosity check",
+            "offsets": [
+              136,
+              172
+            ]
+          }
+        ],
+        "exact_matches": [
+          "welding electrode oven conditioning",
+          "weld visual crack and porosity check",
+          "weld slag chipping and cleaning"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-06-02892",
+        "occupation_id": "TRD-06",
+        "occupation_name": "Welder",
+        "language_mode": "hinglish",
+        "input_text": "Daily tasks me initially angle grinder V-groove edge beveling complete hota hai, followed by shade 11 welding helmet protection aur last me weld slag chipping and cleaning verify karte hain.",
+        "gold_spans": [
+          {
+            "skill": "angle grinder V-groove edge beveling",
+            "offsets": [
+              25,
+              61
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "shade 11 welding helmet protection",
+            "offsets": [
+              93,
+              127
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "weld slag chipping and cleaning",
+            "offsets": [
+              140,
+              171
+            ],
+            "category": "quality_inspection"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "angle grinder V-groove edge beveling",
+            "offsets": [
+              25,
+              61
+            ]
+          },
+          {
+            "skill": "shade 11 welding helmet protection",
+            "offsets": [
+              93,
+              127
+            ]
+          },
+          {
+            "skill": "weld slag chipping and cleaning",
+            "offsets": [
+              140,
+              171
+            ]
+          }
+        ],
+        "exact_matches": [
+          "angle grinder V-groove edge beveling",
+          "shade 11 welding helmet protection",
+          "weld slag chipping and cleaning"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-06-02951",
+        "occupation_id": "TRD-06",
+        "occupation_name": "Welder",
+        "language_mode": "english",
+        "input_text": "I have been professionally performing preheating low-hydrogen electrodes in drying ovens for over 4 years in industrial workshops.",
+        "gold_spans": [
+          {
+            "skill": "preheating low-hydrogen electrodes in drying ovens",
+            "offsets": [
+              38,
+              88
+            ],
+            "category": "material_handling"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "preheating low-hydrogen electrodes in drying ovens",
+            "offsets": [
+              38,
+              88
+            ]
+          }
+        ],
+        "exact_matches": [
+          "preheating low-hydrogen electrodes in drying ovens"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-06-02971",
+        "occupation_id": "TRD-06",
+        "occupation_name": "Welder",
+        "language_mode": "english",
+        "input_text": "At the job site, I first execute tack welding metal joints to prevent heat distortion and subsequently carry out depositing manual metal arc welds with 6013 electrodes.",
+        "gold_spans": [
+          {
+            "skill": "tack welding metal joints to prevent heat distortion",
+            "offsets": [
+              33,
+              85
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "depositing manual metal arc welds with 6013 electrodes",
+            "offsets": [
+              113,
+              167
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "tack welding metal joints to prevent heat distortion",
+            "offsets": [
+              33,
+              85
+            ]
+          },
+          {
+            "skill": "depositing manual metal arc welds with 6013 electrodes.",
+            "offsets": [
+              113,
+              168
+            ]
+          }
+        ],
+        "exact_matches": [
+          "tack welding metal joints to prevent heat distortion"
+        ],
+        "fp": [
+          "depositing manual metal arc welds with 6013 electrodes."
+        ],
+        "fn": [
+          "depositing manual metal arc welds with 6013 electrodes"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-06-03030",
+        "occupation_id": "TRD-06",
+        "occupation_name": "Welder",
+        "language_mode": "mixed",
+        "input_text": "Workplace safety ke liye welding helmet shade 11 safety mandatory hai aur alongside fabrication estimation और client quoting follow karte hain.",
+        "gold_spans": [
+          {
+            "skill": "welding helmet shade 11 safety",
+            "offsets": [
+              25,
+              55
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "fabrication estimation और client quoting",
+            "offsets": [
+              84,
+              124
+            ],
+            "category": "client_communication"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "welding helmet shade 11 safety",
+            "offsets": [
+              25,
+              55
+            ]
+          },
+          {
+            "skill": "fabrication estimation और client quoting",
+            "offsets": [
+              84,
+              124
+            ]
+          }
+        ],
+        "exact_matches": [
+          "fabrication estimation और client quoting",
+          "welding helmet shade 11 safety"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-06-03036",
+        "occupation_id": "TRD-06",
+        "occupation_name": "Welder",
+        "language_mode": "mixed",
+        "input_text": "Main workshop me weld joint crack inspection karta hu aur customer requirement par tack welding frame alignment execute karta hu.",
+        "gold_spans": [
+          {
+            "skill": "weld joint crack inspection",
+            "offsets": [
+              17,
+              44
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "tack welding frame alignment",
+            "offsets": [
+              83,
+              111
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "weld joint crack inspection",
+            "offsets": [
+              17,
+              44
+            ]
+          },
+          {
+            "skill": "tack welding frame alignment",
+            "offsets": [
+              83,
+              111
+            ]
+          }
+        ],
+        "exact_matches": [
+          "weld joint crack inspection",
+          "tack welding frame alignment"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-07-03147",
+        "occupation_id": "TRD-07",
+        "occupation_name": "Mason",
+        "language_mode": "hindi",
+        "input_text": "ग्राहक की संतुष्टि के लिए पहले फ्लोर पर टाइल केमिकल से लगाना करते हैं और कार्य समाप्त होने पर गुरमाले से प्लास्टर की घूंटाई करना करते हैं।",
+        "gold_spans": [
+          {
+            "skill": "फ्लोर पर टाइल केमिकल से लगाना",
+            "offsets": [
+              31,
+              60
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "गुरमाले से प्लास्टर की घूंटाई करना",
+            "offsets": [
+              94,
+              128
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "फ्लोर पर टाइल केमिकल से लगाना",
+            "offsets": [
+              31,
+              60
+            ]
+          },
+          {
+            "skill": "गुरमाले से प्लास्टर की घूंटाई करना",
+            "offsets": [
+              94,
+              128
+            ]
+          }
+        ],
+        "exact_matches": [
+          "फ्लोर पर टाइल केमिकल से लगाना",
+          "गुरमाले से प्लास्टर की घूंटाई करना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-07-03191",
+        "occupation_id": "TRD-07",
+        "occupation_name": "Mason",
+        "language_mode": "hindi",
+        "input_text": "उस्ताद जी के साथ रहकर मैंने साहुल गिराकर दीवार की सीध जांचना में महारत हासिल की है और अब एल्युमिनियम फंटी से प्लास्टर काटना भी आसानी से कर लेता हूं।",
+        "gold_spans": [
+          {
+            "skill": "साहुल गिराकर दीवार की सीध जांचना",
+            "offsets": [
+              28,
+              60
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "एल्युमिनियम फंटी से प्लास्टर काटना",
+            "offsets": [
+              89,
+              123
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "साहुल गिराकर दीवार की सीध जांचना",
+            "offsets": [
+              28,
+              60
+            ]
+          },
+          {
+            "skill": "एल्युमिनियम फंटी से प्लास्टर काटना",
+            "offsets": [
+              89,
+              123
+            ]
+          }
+        ],
+        "exact_matches": [
+          "साहुल गिराकर दीवार की सीध जांचना",
+          "एल्युमिनियम फंटी से प्लास्टर काटना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-07-03196",
+        "occupation_id": "TRD-07",
+        "occupation_name": "Mason",
+        "language_mode": "hindi",
+        "input_text": "हमारी दुकान पर हर दिन एल्युमिनियम फंटी से प्लास्टर काटना और जरूरत पड़ने पर साहुल गिराकर दीवार की सीध जांचना किया जाता है।",
+        "gold_spans": [
+          {
+            "skill": "एल्युमिनियम फंटी से प्लास्टर काटना",
+            "offsets": [
+              22,
+              56
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "साहुल गिराकर दीवार की सीध जांचना",
+            "offsets": [
+              75,
+              107
+            ],
+            "category": "quality_inspection"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "एल्युमिनियम फंटी से प्लास्टर काटना",
+            "offsets": [
+              22,
+              56
+            ]
+          },
+          {
+            "skill": "साहुल गिराकर दीवार की सीध जांचना",
+            "offsets": [
+              75,
+              107
+            ]
+          }
+        ],
+        "exact_matches": [
+          "एल्युमिनियम फंटी से प्लास्टर काटना",
+          "साहुल गिराकर दीवार की सीध जांचना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-07-03247",
+        "occupation_id": "TRD-07",
+        "occupation_name": "Mason",
+        "language_mode": "roman_hindi",
+        "input_text": "Kaam start karne se pehle tasle se masala uthakar pahunchana zaroori hai, uske baad floor par tile chemical se lagana aur end me aluminum fanti se plaster kaatna karte hain.",
+        "gold_spans": [
+          {
+            "skill": "tasle se masala uthakar pahunchana",
+            "offsets": [
+              26,
+              60
+            ],
+            "category": "material_handling"
+          },
+          {
+            "skill": "floor par tile chemical se lagana",
+            "offsets": [
+              84,
+              117
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "aluminum fanti se plaster kaatna",
+            "offsets": [
+              129,
+              161
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "tasle se masala uthakar pahunchana",
+            "offsets": [
+              26,
+              60
+            ]
+          },
+          {
+            "skill": "floor par tile chemical se lagana",
+            "offsets": [
+              84,
+              117
+            ]
+          },
+          {
+            "skill": "aluminum fanti se plaster kaatna",
+            "offsets": [
+              129,
+              161
+            ]
+          }
+        ],
+        "exact_matches": [
+          "tasle se masala uthakar pahunchana",
+          "floor par tile chemical se lagana",
+          "aluminum fanti se plaster kaatna"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-07-03327",
+        "occupation_id": "TRD-07",
+        "occupation_name": "Mason",
+        "language_mode": "roman_hindi",
+        "input_text": "Hamari workshop me daily scaffolding ki mazbooti check karna aur zarurat padne par nayi deewar ki tarai karna hota hai.",
+        "gold_spans": [
+          {
+            "skill": "scaffolding ki mazbooti check karna",
+            "offsets": [
+              25,
+              60
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "nayi deewar ki tarai karna",
+            "offsets": [
+              83,
+              109
+            ],
+            "category": "troubleshooting_repair"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "scaffolding ki mazbooti check karna",
+            "offsets": [
+              25,
+              60
+            ]
+          },
+          {
+            "skill": "nayi deewar ki tarai karna",
+            "offsets": [
+              83,
+              109
+            ]
+          }
+        ],
+        "exact_matches": [
+          "nayi deewar ki tarai karna",
+          "scaffolding ki mazbooti check karna"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-07-03350",
+        "occupation_id": "TRD-07",
+        "occupation_name": "Mason",
+        "language_mode": "hinglish",
+        "input_text": "Proper workflow ke liye pehle ceramic tile adhesive fixing mandate hai, then straight edge aluminum screeding and final stage me bricklaying in cement mortar perform karte hain.",
+        "gold_spans": [
+          {
+            "skill": "ceramic tile adhesive fixing",
+            "offsets": [
+              30,
+              58
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "straight edge aluminum screeding",
+            "offsets": [
+              77,
+              109
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "bricklaying in cement mortar",
+            "offsets": [
+              129,
+              157
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "ceramic tile adhesive fixing",
+            "offsets": [
+              30,
+              58
+            ]
+          },
+          {
+            "skill": "straight edge aluminum screeding",
+            "offsets": [
+              77,
+              109
+            ]
+          },
+          {
+            "skill": "bricklaying in cement mortar",
+            "offsets": [
+              129,
+              157
+            ]
+          }
+        ],
+        "exact_matches": [
+          "ceramic tile adhesive fixing",
+          "straight edge aluminum screeding",
+          "bricklaying in cement mortar"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-07-03391",
+        "occupation_id": "TRD-07",
+        "occupation_name": "Mason",
+        "language_mode": "hinglish",
+        "input_text": "Primary specialization plumb bob vertical alignment check me hai while advanced projects me clear water tube level transfer actively deliver karta hu.",
+        "gold_spans": [
+          {
+            "skill": "plumb bob vertical alignment check",
+            "offsets": [
+              23,
+              57
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "clear water tube level transfer",
+            "offsets": [
+              92,
+              123
+            ],
+            "category": "quality_inspection"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "plumb bob vertical alignment check",
+            "offsets": [
+              23,
+              57
+            ]
+          },
+          {
+            "skill": "clear water tube level transfer",
+            "offsets": [
+              92,
+              123
+            ]
+          }
+        ],
+        "exact_matches": [
+          "clear water tube level transfer",
+          "plumb bob vertical alignment check"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-07-03474",
+        "occupation_id": "TRD-07",
+        "occupation_name": "Mason",
+        "language_mode": "english",
+        "input_text": "Adhering strictly to safety regulations, I always prioritize transferring datum bench levels using transparent water tubes along with laying vitrified floor tiles using polymer cement adhesives.",
+        "gold_spans": [
+          {
+            "skill": "transferring datum bench levels using transparent water tubes",
+            "offsets": [
+              61,
+              122
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "laying vitrified floor tiles using polymer cement adhesives",
+            "offsets": [
+              134,
+              193
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "transferring datum bench levels using transparent water tubes",
+            "offsets": [
+              61,
+              122
+            ]
+          },
+          {
+            "skill": "laying vitrified floor tiles using polymer cement adhesives.",
+            "offsets": [
+              134,
+              194
+            ]
+          }
+        ],
+        "exact_matches": [
+          "transferring datum bench levels using transparent water tubes"
+        ],
+        "fp": [
+          "laying vitrified floor tiles using polymer cement adhesives."
+        ],
+        "fn": [
+          "laying vitrified floor tiles using polymer cement adhesives"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-07-03468",
+        "occupation_id": "TRD-07",
+        "occupation_name": "Mason",
+        "language_mode": "english",
+        "input_text": "To ensure quality assurance, I initially conduct transferring datum bench levels using transparent water tubes and perform checking vertical wall plumb using brass plumb bobs prior to final handover.",
+        "gold_spans": [
+          {
+            "skill": "transferring datum bench levels using transparent water tubes",
+            "offsets": [
+              49,
+              110
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "checking vertical wall plumb using brass plumb bobs",
+            "offsets": [
+              123,
+              174
+            ],
+            "category": "quality_inspection"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "transferring datum bench levels using transparent water tubes",
+            "offsets": [
+              49,
+              110
+            ]
+          },
+          {
+            "skill": "checking vertical wall plumb using brass plumb bobs",
+            "offsets": [
+              123,
+              174
+            ]
+          }
+        ],
+        "exact_matches": [
+          "checking vertical wall plumb using brass plumb bobs",
+          "transferring datum bench levels using transparent water tubes"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-07-03556",
+        "occupation_id": "TRD-07",
+        "occupation_name": "Mason",
+        "language_mode": "mixed",
+        "input_text": "Main workshop me brickwork curing पानी तराई karta hu aur customer requirement par cement sand mortar mixing execute karta hu.",
+        "gold_spans": [
+          {
+            "skill": "brickwork curing पानी तराई",
+            "offsets": [
+              17,
+              43
+            ],
+            "category": "troubleshooting_repair"
+          },
+          {
+            "skill": "cement sand mortar mixing",
+            "offsets": [
+              82,
+              107
+            ],
+            "category": "material_handling"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "brickwork curing पानी तराई",
+            "offsets": [
+              17,
+              43
+            ]
+          },
+          {
+            "skill": "cement sand mortar mixing",
+            "offsets": [
+              82,
+              107
+            ]
+          }
+        ],
+        "exact_matches": [
+          "brickwork curing पानी तराई",
+          "cement sand mortar mixing"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-07-03581",
+        "occupation_id": "TRD-07",
+        "occupation_name": "Mason",
+        "language_mode": "mixed",
+        "input_text": "हमारा routine task brickwork curing पानी तराई है और site पर bricklaying cement mortar chunai का काम संभालते हैं।",
+        "gold_spans": [
+          {
+            "skill": "brickwork curing पानी तराई",
+            "offsets": [
+              19,
+              45
+            ],
+            "category": "troubleshooting_repair"
+          },
+          {
+            "skill": "bricklaying cement mortar chunai",
+            "offsets": [
+              60,
+              92
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "brickwork curing पानी तराई",
+            "offsets": [
+              19,
+              45
+            ]
+          },
+          {
+            "skill": "bricklaying cement mortar chunai",
+            "offsets": [
+              60,
+              92
+            ]
+          }
+        ],
+        "exact_matches": [
+          "brickwork curing पानी तराई",
+          "bricklaying cement mortar chunai"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-08-03725",
+        "occupation_id": "TRD-08",
+        "occupation_name": "Painter",
+        "language_mode": "hindi",
+        "input_text": "जब ग्राहक साइट पर बुलाते हैं तो पहले रेगमार से दीवार घिसकर चिकनी करना करते हैं और फिर पुराना पेंट खुरचकर हटाना।",
+        "gold_spans": [
+          {
+            "skill": "रेगमार से दीवार घिसकर चिकनी करना",
+            "offsets": [
+              37,
+              69
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "पुराना पेंट खुरचकर हटाना",
+            "offsets": [
+              86,
+              110
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "रेगमार से दीवार घिसकर चिकनी करना",
+            "offsets": [
+              37,
+              69
+            ]
+          },
+          {
+            "skill": "पुराना पेंट खुरचकर हटाना।",
+            "offsets": [
+              86,
+              111
+            ]
+          }
+        ],
+        "exact_matches": [
+          "रेगमार से दीवार घिसकर चिकनी करना"
+        ],
+        "fp": [
+          "पुराना पेंट खुरचकर हटाना।"
+        ],
+        "fn": [
+          "पुराना पेंट खुरचकर हटाना"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-08-03718",
+        "occupation_id": "TRD-08",
+        "occupation_name": "Painter",
+        "language_mode": "hindi",
+        "input_text": "सुरक्षा को ध्यान में रखकर हम रेगमार से दीवार घिसकर चिकनी करना करते हैं और समय-समय पर दरवाजों पर मास्किंग टेप चिपकाना।",
+        "gold_spans": [
+          {
+            "skill": "रेगमार से दीवार घिसकर चिकनी करना",
+            "offsets": [
+              29,
+              61
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "दरवाजों पर मास्किंग टेप चिपकाना",
+            "offsets": [
+              85,
+              116
+            ],
+            "category": "measurement_planning"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "रेगमार से दीवार घिसकर चिकनी करना",
+            "offsets": [
+              29,
+              61
+            ]
+          },
+          {
+            "skill": "दरवाजों पर मास्किंग टेप चिपकाना।",
+            "offsets": [
+              85,
+              117
+            ]
+          }
+        ],
+        "exact_matches": [
+          "रेगमार से दीवार घिसकर चिकनी करना"
+        ],
+        "fp": [
+          "दरवाजों पर मास्किंग टेप चिपकाना।"
+        ],
+        "fn": [
+          "दरवाजों पर मास्किंग टेप चिपकाना"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-08-03652",
+        "occupation_id": "TRD-08",
+        "occupation_name": "Painter",
+        "language_mode": "hindi",
+        "input_text": "जब ग्राहक साइट पर बुलाते हैं तो पहले ऊंचाई पर काम करते समय सीढ़ी लॉक करना करते हैं और फिर दीवार पर इमल्शन पेंट करना।",
+        "gold_spans": [
+          {
+            "skill": "ऊंचाई पर काम करते समय सीढ़ी लॉक करना",
+            "offsets": [
+              37,
+              73
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "दीवार पर इमल्शन पेंट करना",
+            "offsets": [
+              90,
+              115
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "ऊंचाई पर काम करते समय सीढ़ी लॉक करना",
+            "offsets": [
+              37,
+              73
+            ]
+          },
+          {
+            "skill": "दीवार पर इमल्शन पेंट करना।",
+            "offsets": [
+              90,
+              116
+            ]
+          }
+        ],
+        "exact_matches": [
+          "ऊंचाई पर काम करते समय सीढ़ी लॉक करना"
+        ],
+        "fp": [
+          "दीवार पर इमल्शन पेंट करना।"
+        ],
+        "fn": [
+          "दीवार पर इमल्शन पेंट करना"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-08-03808",
+        "occupation_id": "TRD-08",
+        "occupation_name": "Painter",
+        "language_mode": "roman_hindi",
+        "input_text": "Mera main kaam purana paint khurach kar hatana ka hai lekin project par seelan jagah waterproofing chemical lagana bhi handle karta hu.",
+        "gold_spans": [
+          {
+            "skill": "purana paint khurach kar hatana",
+            "offsets": [
+              15,
+              46
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "seelan jagah waterproofing chemical lagana",
+            "offsets": [
+              72,
+              114
+            ],
+            "category": "troubleshooting_repair"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "purana paint khurach kar hatana",
+            "offsets": [
+              15,
+              46
+            ]
+          },
+          {
+            "skill": "seelan jagah waterproofing chemical lagana",
+            "offsets": [
+              72,
+              114
+            ]
+          }
+        ],
+        "exact_matches": [
+          "purana paint khurach kar hatana",
+          "seelan jagah waterproofing chemical lagana"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-08-03824",
+        "occupation_id": "TRD-08",
+        "occupation_name": "Painter",
+        "language_mode": "roman_hindi",
+        "input_text": "Jab bhi koi fault ya dikkat aati hai to turant shade card se color match karna karke solve karte hain.",
+        "gold_spans": [
+          {
+            "skill": "shade card se color match karna",
+            "offsets": [
+              47,
+              78
+            ],
+            "category": "quality_inspection"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "shade card se",
+            "offsets": [
+              47,
+              60
+            ]
+          },
+          {
+            "skill": "color match karna",
+            "offsets": [
+              61,
+              78
+            ]
+          }
+        ],
+        "exact_matches": [],
+        "fp": [
+          "shade card se",
+          "color match karna"
+        ],
+        "fn": [
+          "shade card se color match karna"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-08-03920",
+        "occupation_id": "TRD-08",
+        "occupation_name": "Painter",
+        "language_mode": "hinglish",
+        "input_text": "Proper workflow ke liye pehle masking tape boundary application mandate hai, then shade card color shade matching and final stage me steel blade wall putty skimming perform karte hain.",
+        "gold_spans": [
+          {
+            "skill": "masking tape boundary application",
+            "offsets": [
+              30,
+              63
+            ],
+            "category": "measurement_planning"
+          },
+          {
+            "skill": "shade card color shade matching",
+            "offsets": [
+              82,
+              113
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "steel blade wall putty skimming",
+            "offsets": [
+              133,
+              164
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "masking tape boundary application",
+            "offsets": [
+              30,
+              63
+            ]
+          },
+          {
+            "skill": "shade card color shade matching",
+            "offsets": [
+              82,
+              113
+            ]
+          },
+          {
+            "skill": "steel blade wall putty skimming",
+            "offsets": [
+              133,
+              164
+            ]
+          }
+        ],
+        "exact_matches": [
+          "masking tape boundary application",
+          "steel blade wall putty skimming",
+          "shade card color shade matching"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-08-03882",
+        "occupation_id": "TRD-08",
+        "occupation_name": "Painter",
+        "language_mode": "hinglish",
+        "input_text": "Safety protocol follow karte huye old paint film scraping compulsory hai aur alongside water-based primer roller sealing karte hain.",
+        "gold_spans": [
+          {
+            "skill": "old paint film scraping",
+            "offsets": [
+              34,
+              57
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "water-based primer roller sealing",
+            "offsets": [
+              87,
+              120
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "old paint film scraping",
+            "offsets": [
+              34,
+              57
+            ]
+          },
+          {
+            "skill": "water-based primer roller sealing",
+            "offsets": [
+              87,
+              120
+            ]
+          }
+        ],
+        "exact_matches": [
+          "old paint film scraping",
+          "water-based primer roller sealing"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-08-03965",
+        "occupation_id": "TRD-08",
+        "occupation_name": "Painter",
+        "language_mode": "english",
+        "input_text": "Our operational procedure requires sanding uneven dry plaster with 120-grit emery paper, followed by applying skim coats of wall putty with flexible steel blades, and concluding with stripping peeled old paint coatings using steel scrapers.",
+        "gold_spans": [
+          {
+            "skill": "sanding uneven dry plaster with 120-grit emery paper",
+            "offsets": [
+              35,
+              87
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "applying skim coats of wall putty with flexible steel blades",
+            "offsets": [
+              101,
+              161
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "stripping peeled old paint coatings using steel scrapers",
+            "offsets": [
+              183,
+              239
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "sanding uneven dry plaster with 120-grit emery paper,",
+            "offsets": [
+              35,
+              88
+            ]
+          },
+          {
+            "skill": "applying skim coats of wall putty with flexible steel blades,",
+            "offsets": [
+              101,
+              162
+            ]
+          },
+          {
+            "skill": "stripping peeled old paint coatings using steel scrapers.",
+            "offsets": [
+              183,
+              240
+            ]
+          }
+        ],
+        "exact_matches": [],
+        "fp": [
+          "stripping peeled old paint coatings using steel scrapers.",
+          "applying skim coats of wall putty with flexible steel blades,",
+          "sanding uneven dry plaster with 120-grit emery paper,"
+        ],
+        "fn": [
+          "applying skim coats of wall putty with flexible steel blades",
+          "sanding uneven dry plaster with 120-grit emery paper",
+          "stripping peeled old paint coatings using steel scrapers"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-08-03998",
+        "occupation_id": "TRD-08",
+        "occupation_name": "Painter",
+        "language_mode": "english",
+        "input_text": "My core technical competence is sanding uneven dry plaster with 120-grit emery paper, with extensive project experience in rolling uniform coats of acrylic emulsion paints.",
+        "gold_spans": [
+          {
+            "skill": "sanding uneven dry plaster with 120-grit emery paper",
+            "offsets": [
+              32,
+              84
+            ],
+            "category": "tool_operation"
+          },
+          {
+            "skill": "rolling uniform coats of acrylic emulsion paints",
+            "offsets": [
+              123,
+              171
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "sanding uneven dry plaster with 120-grit emery paper,",
+            "offsets": [
+              32,
+              85
+            ]
+          },
+          {
+            "skill": "rolling uniform coats of acrylic emulsion paints.",
+            "offsets": [
+              123,
+              172
+            ]
+          }
+        ],
+        "exact_matches": [],
+        "fp": [
+          "rolling uniform coats of acrylic emulsion paints.",
+          "sanding uneven dry plaster with 120-grit emery paper,"
+        ],
+        "fn": [
+          "sanding uneven dry plaster with 120-grit emery paper",
+          "rolling uniform coats of acrylic emulsion paints"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-08-04138",
+        "occupation_id": "TRD-08",
+        "occupation_name": "Painter",
+        "language_mode": "mixed",
+        "input_text": "Breakdown case me waterproofing damp treatment execute karke technical fault clear karte hain.",
+        "gold_spans": [
+          {
+            "skill": "waterproofing damp treatment",
+            "offsets": [
+              18,
+              46
+            ],
+            "category": "troubleshooting_repair"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "waterproofing damp treatment",
+            "offsets": [
+              18,
+              46
+            ]
+          }
+        ],
+        "exact_matches": [
+          "waterproofing damp treatment"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-08-04066",
+        "occupation_id": "TRD-08",
+        "occupation_name": "Painter",
+        "language_mode": "mixed",
+        "input_text": "Main workshop me waterproofing damp treatment karta hu aur customer requirement par masking tape protection लगाना execute karta hu.",
+        "gold_spans": [
+          {
+            "skill": "waterproofing damp treatment",
+            "offsets": [
+              17,
+              45
+            ],
+            "category": "troubleshooting_repair"
+          },
+          {
+            "skill": "masking tape protection लगाना",
+            "offsets": [
+              84,
+              113
+            ],
+            "category": "measurement_planning"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "waterproofing damp treatment",
+            "offsets": [
+              17,
+              45
+            ]
+          },
+          {
+            "skill": "masking tape protection लगाना",
+            "offsets": [
+              84,
+              113
+            ]
+          }
+        ],
+        "exact_matches": [
+          "waterproofing damp treatment",
+          "masking tape protection लगाना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-09-04243",
+        "occupation_id": "TRD-09",
+        "occupation_name": "Construction Worker",
+        "language_mode": "hindi",
+        "input_text": "उस्ताद जी के साथ रहकर मैंने फावड़े से नींव की खुदाई करना में महारत हासिल की है और अब साइट पर हेलमेट और सेफ्टी जूते पहनना भी आसानी से कर लेता हूं।",
+        "gold_spans": [
+          {
+            "skill": "फावड़े से नींव की खुदाई करना",
+            "offsets": [
+              28,
+              56
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "साइट पर हेलमेट और सेफ्टी जूते पहनना",
+            "offsets": [
+              85,
+              120
+            ],
+            "category": "safety_compliance"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "फावड़े से नींव की खुदाई करना",
+            "offsets": [
+              28,
+              56
+            ]
+          },
+          {
+            "skill": "साइट पर हेलमेट और सेफ्टी जूते पहनना",
+            "offsets": [
+              85,
+              120
+            ]
+          }
+        ],
+        "exact_matches": [
+          "साइट पर हेलमेट और सेफ्टी जूते पहनना",
+          "फावड़े से नींव की खुदाई करना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-09-04263",
+        "occupation_id": "TRD-09",
+        "occupation_name": "Construction Worker",
+        "language_mode": "hindi",
+        "input_text": "मैं पिछले 2 वर्षों से कार्यशाला में सरिया मोड़ना और बाइंडिंग वायर बांधना करता हूं।",
+        "gold_spans": [
+          {
+            "skill": "सरिया मोड़ना और बाइंडिंग वायर बांधना",
+            "offsets": [
+              36,
+              72
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "सरिया मोड़ना और बाइंडिंग वायर बांधना",
+            "offsets": [
+              36,
+              72
+            ]
+          }
+        ],
+        "exact_matches": [
+          "सरिया मोड़ना और बाइंडिंग वायर बांधना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-09-04171",
+        "occupation_id": "TRD-09",
+        "occupation_name": "Construction Worker",
+        "language_mode": "hindi",
+        "input_text": "हमारी दुकान पर हर दिन सरिया मोड़ना और बाइंडिंग वायर बांधना और जरूरत पड़ने पर मचान बांधना और सेफ्टी बेल्ट लगाना किया जाता है।",
+        "gold_spans": [
+          {
+            "skill": "सरिया मोड़ना और बाइंडिंग वायर बांधना",
+            "offsets": [
+              22,
+              58
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "मचान बांधना और सेफ्टी बेल्ट लगाना",
+            "offsets": [
+              77,
+              110
+            ],
+            "category": "safety_compliance"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "सरिया मोड़ना और बाइंडिंग वायर बांधना",
+            "offsets": [
+              22,
+              58
+            ]
+          },
+          {
+            "skill": "मचान बांधना और सेफ्टी बेल्ट लगाना",
+            "offsets": [
+              77,
+              110
+            ]
+          }
+        ],
+        "exact_matches": [
+          "मचान बांधना और सेफ्टी बेल्ट लगाना",
+          "सरिया मोड़ना और बाइंडिंग वायर बांधना"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-09-04269",
+        "occupation_id": "TRD-09",
+        "occupation_name": "Construction Worker",
+        "language_mode": "roman_hindi",
+        "input_text": "Ustaad ji ke sath milkar maine scaffold erection safety belt pehanna achhi tarah seekha aur ab plywood shuttering support lagana bhi karta hu.",
+        "gold_spans": [
+          {
+            "skill": "scaffold erection safety belt pehanna",
+            "offsets": [
+              31,
+              68
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "plywood shuttering support lagana",
+            "offsets": [
+              95,
+              128
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "scaffold erection safety belt pehanna",
+            "offsets": [
+              31,
+              68
+            ]
+          },
+          {
+            "skill": "plywood shuttering support lagana",
+            "offsets": [
+              95,
+              128
+            ]
+          }
+        ],
+        "exact_matches": [
+          "scaffold erection safety belt pehanna",
+          "plywood shuttering support lagana"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-09-04348",
+        "occupation_id": "TRD-09",
+        "occupation_name": "Construction Worker",
+        "language_mode": "roman_hindi",
+        "input_text": "Kaam start karne se pehle phawda se neev excavation karna zaroori hai, uske baad scaffold erection safety belt pehanna aur end me cement bajri ret concrete banana karte hain.",
+        "gold_spans": [
+          {
+            "skill": "phawda se neev excavation karna",
+            "offsets": [
+              26,
+              57
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "scaffold erection safety belt pehanna",
+            "offsets": [
+              81,
+              118
+            ],
+            "category": "safety_compliance"
+          },
+          {
+            "skill": "cement bajri ret concrete banana",
+            "offsets": [
+              130,
+              162
+            ],
+            "category": "material_handling"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "phawda se neev excavation karna",
+            "offsets": [
+              26,
+              57
+            ]
+          },
+          {
+            "skill": "scaffold erection safety belt pehanna",
+            "offsets": [
+              81,
+              118
+            ]
+          },
+          {
+            "skill": "cement bajri ret concrete banana",
+            "offsets": [
+              130,
+              162
+            ]
+          }
+        ],
+        "exact_matches": [
+          "scaffold erection safety belt pehanna",
+          "cement bajri ret concrete banana",
+          "phawda se neev excavation karna"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-09-04467",
+        "occupation_id": "TRD-09",
+        "occupation_name": "Construction Worker",
+        "language_mode": "hinglish",
+        "input_text": "Primary specialization rebar bending and binding wire tying me hai while advanced projects me scaffolding erection and fall protection actively deliver karta hu.",
+        "gold_spans": [
+          {
+            "skill": "rebar bending and binding wire tying",
+            "offsets": [
+              23,
+              59
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "scaffolding erection and fall protection",
+            "offsets": [
+              94,
+              134
+            ],
+            "category": "safety_compliance"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "rebar bending and binding wire tying",
+            "offsets": [
+              23,
+              59
+            ]
+          },
+          {
+            "skill": "scaffolding erection and fall protection",
+            "offsets": [
+              94,
+              134
+            ]
+          }
+        ],
+        "exact_matches": [
+          "scaffolding erection and fall protection",
+          "rebar bending and binding wire tying"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-09-04442",
+        "occupation_id": "TRD-09",
+        "occupation_name": "Construction Worker",
+        "language_mode": "hinglish",
+        "input_text": "Site par daily routine me column center line string alignment aur critical issues me concrete formwork shuttering support execute karta hu.",
+        "gold_spans": [
+          {
+            "skill": "column center line string alignment",
+            "offsets": [
+              26,
+              61
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "concrete formwork shuttering support",
+            "offsets": [
+              85,
+              121
+            ],
+            "category": "technical_tactile"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "column center line string alignment",
+            "offsets": [
+              26,
+              61
+            ]
+          },
+          {
+            "skill": "concrete formwork shuttering support",
+            "offsets": [
+              85,
+              121
+            ]
+          }
+        ],
+        "exact_matches": [
+          "concrete formwork shuttering support",
+          "column center line string alignment"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-09-04515",
+        "occupation_id": "TRD-09",
+        "occupation_name": "Construction Worker",
+        "language_mode": "english",
+        "input_text": "Whenever a technical fault arises, I promptly undertake compacting freshly poured slab concrete with immersion vibrators to restore operations.",
+        "gold_spans": [
+          {
+            "skill": "compacting freshly poured slab concrete with immersion vibrators",
+            "offsets": [
+              56,
+              120
+            ],
+            "category": "tool_operation"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "compacting freshly poured slab concrete with immersion vibrators",
+            "offsets": [
+              56,
+              120
+            ]
+          }
+        ],
+        "exact_matches": [
+          "compacting freshly poured slab concrete with immersion vibrators"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-09-04518",
+        "occupation_id": "TRD-09",
+        "occupation_name": "Construction Worker",
+        "language_mode": "english",
+        "input_text": "The standard task sequence involves aligning and propping plywood formwork shuttering for beams, proceeding to batching Portland cement, sand, and coarse aggregates for concrete, and finalizing with logging incoming cement bag batches and steel reinforcement stacks.",
+        "gold_spans": [
+          {
+            "skill": "aligning and propping plywood formwork shuttering for beams",
+            "offsets": [
+              36,
+              95
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "batching Portland cement, sand, and coarse aggregates for concrete",
+            "offsets": [
+              111,
+              177
+            ],
+            "category": "material_handling"
+          },
+          {
+            "skill": "logging incoming cement bag batches and steel reinforcement stacks",
+            "offsets": [
+              199,
+              265
+            ],
+            "category": "measurement_planning"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "aligning and propping plywood formwork shuttering for beams,",
+            "offsets": [
+              36,
+              96
+            ]
+          },
+          {
+            "skill": "batching Portland cement, sand, and coarse aggregates for concrete,",
+            "offsets": [
+              111,
+              178
+            ]
+          },
+          {
+            "skill": "logging incoming cement bag batches and steel reinforcement stacks.",
+            "offsets": [
+              199,
+              266
+            ]
+          }
+        ],
+        "exact_matches": [],
+        "fp": [
+          "logging incoming cement bag batches and steel reinforcement stacks.",
+          "aligning and propping plywood formwork shuttering for beams,",
+          "batching Portland cement, sand, and coarse aggregates for concrete,"
+        ],
+        "fn": [
+          "aligning and propping plywood formwork shuttering for beams",
+          "logging incoming cement bag batches and steel reinforcement stacks",
+          "batching Portland cement, sand, and coarse aggregates for concrete"
+        ]
+      },
+      {
+        "record_id": "MOCK-TRD-09-04605",
+        "occupation_id": "TRD-09",
+        "occupation_name": "Construction Worker",
+        "language_mode": "mixed",
+        "input_text": "Daily sequence me site material inventory counting initiate karte hain, followed by column grid string alignment aur अंत में safety helmet और steel-toe boots inspect karte hain.",
+        "gold_spans": [
+          {
+            "skill": "site material inventory counting",
+            "offsets": [
+              18,
+              50
+            ],
+            "category": "measurement_planning"
+          },
+          {
+            "skill": "column grid string alignment",
+            "offsets": [
+              84,
+              112
+            ],
+            "category": "quality_inspection"
+          },
+          {
+            "skill": "safety helmet और steel-toe boots",
+            "offsets": [
+              125,
+              157
+            ],
+            "category": "safety_compliance"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "site material inventory counting",
+            "offsets": [
+              18,
+              50
+            ]
+          },
+          {
+            "skill": "column grid string alignment",
+            "offsets": [
+              84,
+              112
+            ]
+          },
+          {
+            "skill": "safety helmet और steel-toe boots",
+            "offsets": [
+              125,
+              157
+            ]
+          }
+        ],
+        "exact_matches": [
+          "site material inventory counting",
+          "safety helmet और steel-toe boots",
+          "column grid string alignment"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-09-04601",
+        "occupation_id": "TRD-09",
+        "occupation_name": "Construction Worker",
+        "language_mode": "mixed",
+        "input_text": "Ustaad ji ke supervision me concrete aggregate batching seekha aur ab complete site material inventory counting manage karta hu.",
+        "gold_spans": [
+          {
+            "skill": "concrete aggregate batching",
+            "offsets": [
+              28,
+              55
+            ],
+            "category": "material_handling"
+          },
+          {
+            "skill": "site material inventory counting",
+            "offsets": [
+              79,
+              111
+            ],
+            "category": "measurement_planning"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "concrete aggregate batching",
+            "offsets": [
+              28,
+              55
+            ]
+          },
+          {
+            "skill": "site material inventory counting",
+            "offsets": [
+              79,
+              111
+            ]
+          }
+        ],
+        "exact_matches": [
+          "concrete aggregate batching",
+          "site material inventory counting"
+        ],
+        "fp": [],
+        "fn": []
+      },
+      {
+        "record_id": "MOCK-TRD-10-04682",
+        "occupation_id": "TRD-10",
+        "occupation_name": "Appliance Repair Technician",
+        "language_mode": "hindi",
+        "input_text": "जब ग्राहक साइट पर बुलाते हैं तो पहले कंप्रेसर का पीटीसी रिले बदलना करते हैं और फिर गीजर का थर्मोस्टेट टेस्ट करना।",
+        "gold_spans": [
+          {
+            "skill": "कंप्रेसर का पीटीसी रिले बदलना",
+            "offsets": [
+              37,
+              66
+            ],
+            "category": "technical_tactile"
+          },
+          {
+            "skill": "गीजर का थर्मोस्टेट टेस्ट करना",
+            "offsets": [
+              83,
+              112
+            ],
+            "category": "quality_inspection"
+          }
+        ],
+        "pred_spans": [
+          {
+            "skill": "कंप्रेसर का पीटीसी रिले बदलना",
+            "offsets": [
+              37,
+              66
+            ]
+          },
+          {
+            "skill": "गीजर का थर्मोस्टेट टेस्ट करना।",
+            "offsets": [
+              83,
+              113
+            ]
+          }
+        ],
+        "exact_matches": [
+          "कंप्रेसर का पीटीसी रिले बदलना"
+        ],
+        "fp": [
+          "गीजर का थर्मोस्टेट टेस्ट करना।"
+        ],
+        "fn": [
+          "गीजर का थर्मोस्टेट टेस्ट करना"
+        ]
+      }
+    ],
+    "error_summary": {
+      "exact_match": 179,
+      "partial_overlap": 38,
+      "false_positive": 38,
+      "false_negative": 37,
+      "offset_invariant_verified": 217
+    }
+  }
+}

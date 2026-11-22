@@ -1,0 +1,114 @@
+{
+  "splits": {
+    "train": {
+      "record_count": 4800,
+      "doc_count": 140,
+      "total_tokens": 93453,
+      "avg_tokens_per_sentence": 19.47,
+      "alignment_errors": 0,
+      "invalid_tags": 0,
+      "empty_lines": 0,
+      "sources": {
+        "tech": 3133,
+        "house": 1667
+      },
+      "skill_tags": {
+        "O": 83382,
+        "B": 2221,
+        "I": 7850
+      },
+      "knowledge_tags": {
+        "O": 87888,
+        "B": 2969,
+        "I": 2596
+      },
+      "total_skill_spans": 2221,
+      "total_knowledge_spans": 2969,
+      "unique_skill_phrases": 1976,
+      "unique_knowledge_phrases": 1988,
+      "sentences_with_skill_only": 648,
+      "sentences_with_knowledge_only": 583,
+      "sentences_with_both": 353,
+      "sentences_with_neither": 3216,
+      "unique_sentences_in_split": 3952
+    },
+    "dev": {
+      "record_count": 3174,
+      "doc_count": 58,
+      "total_tokens": 40057,
+      "avg_tokens_per_sentence": 12.62,
+      "alignment_errors": 0,
+      "invalid_tags": 0,
+      "empty_lines": 0,
+      "sources": {
+        "tech": 2156,
+        "house": 1018
+      },
+      "skill_tags": {
+        "O": 35190,
+        "B": 1070,
+        "I": 3797
+      },
+      "knowledge_tags": {
+        "O": 38051,
+        "B": 1093,
+        "I": 913
+      },
+      "total_skill_spans": 1070,
+      "total_knowledge_spans": 1093,
+      "unique_skill_phrases": 993,
+      "unique_knowledge_phrases": 830,
+      "sentences_with_skill_only": 461,
+      "sentences_with_knowledge_only": 311,
+      "sentences_with_both": 142,
+      "sentences_with_neither": 2260,
+      "unique_sentences_in_split": 2611
+    },
+    "test": {
+      "record_count": 3569,
+      "doc_count": 65,
+      "total_tokens": 42786,
+      "avg_tokens_per_sentence": 11.99,
+      "alignment_errors": 0,
+      "invalid_tags": 0,
+      "empty_lines": 0,
+      "sources": {
+        "tech": 2286,
+        "house": 1283
+      },
+      "skill_tags": {
+        "O": 38560,
+        "B": 1090,
+        "I": 3136
+      },
+      "knowledge_tags": {
+        "O": 40698,
+        "B": 1174,
+        "I": 914
+      },
+      "total_skill_spans": 1091,
+      "total_knowledge_spans": 1174,
+      "unique_skill_phrases": 985,
+      "unique_knowledge_phrases": 721,
+      "sentences_with_skill_only": 462,
+      "sentences_with_knowledge_only": 390,
+      "sentences_with_both": 122,
+      "sentences_with_neither": 2595,
+      "unique_sentences_in_split": 2670
+    }
+  },
+  "cross_split_overlaps": {
+    "train_dev": 151,
+    "train_test": 174,
+    "dev_test": 159,
+    "all_three": 86
+  },
+  "aggregate": {
+    "total_sentences": 11543,
+    "total_tokens": 176296,
+    "total_skill_spans": 4382,
+    "total_knowledge_spans": 5236,
+    "total_unique_skills": 3758,
+    "total_unique_knowledge": 3055
+  }
+}

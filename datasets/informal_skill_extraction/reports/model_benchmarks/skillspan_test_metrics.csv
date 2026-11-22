@@ -1,0 +1,14 @@
+metric_name,value,unit
+test_samples,3569,count
+token_precision,0.2102,score
+token_recall,0.2951,score
+token_f1,0.2455,score
+exact_span_precision,0.2102,score
+exact_span_recall,0.2951,score
+exact_span_f1,0.2455,score
+partial_overlap_precision,0.5046,score
+partial_overlap_recall,0.7085,score
+partial_overlap_f1,0.5894,score
+mean_latency_ms,11.27,milliseconds
+p95_latency_ms,13.50,milliseconds
+throughput_sent_per_sec,88.6,sentences_per_second

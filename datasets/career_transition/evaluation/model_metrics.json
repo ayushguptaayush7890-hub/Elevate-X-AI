@@ -1,0 +1,24 @@
+{
+  "evaluation_timestamp": "2026-11-22T00:30:24.916707",
+  "graph_embeddings": {
+    "num_nodes": 19208,
+    "embedding_dimension": 64,
+    "mean_node_norm": 1.1792577505111694,
+    "std_node_norm": 1.7098973989486694,
+    "evaluation_status": "CONVERGED_STABLE"
+  },
+  "skill_encoder": {
+    "benchmark_pairs": 1001,
+    "synonym_recall_at_85": 0.942,
+    "unrelated_rejection_rate_at_65": 0.988,
+    "f1_score": 0.964,
+    "calibration_status": "OPTIMAL"
+  },
+  "transition_ranker": {
+    "total_benchmark_transitions": 7,
+    "benchmark_accuracy": 1.0,
+    "mean_reciprocal_rank": 0.912,
+    "ndcg_at_5": 0.887
+  },
+  "overall_readiness": "PRODUCTION_READY"
+}

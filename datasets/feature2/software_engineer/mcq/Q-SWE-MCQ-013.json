@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-013",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-02",
+  "skill_name": "Object-Oriented & Functional Design Patterns",
+  "subtopic": "SOLID Principles and Component Coupling",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "According to the Liskov Substitution Principle (LSP), which of the following is an unacceptable modification when subclassing?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Strengthening preconditions in the subclass method"
+    },
+    {
+      "id": "B",
+      "text": "Weakening preconditions in the subclass method"
+    },
+    {
+      "id": "C",
+      "text": "Strengthening postconditions in the subclass method"
+    },
+    {
+      "id": "D",
+      "text": "Throwing fewer exception types than the superclass"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "LSP requires that subtype methods must not demand more (strengthen preconditions) than the parent type, as existing client code written for the parent contract would break.",
+  "reference_solution": "Correct Choice: A. Rationale: LSP requires that subtype methods must not demand more (strengthen preconditions) than the parent type, as existing client code written for the parent contract would break.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

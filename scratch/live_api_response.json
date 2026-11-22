@@ -1,0 +1,485 @@
+{
+  "targetOccupation": "artificial intelligence engineer",
+  "sourceTaxonomy": "ESCO v1.1.1",
+  "overallMatchScore": 57.5,
+  "totalCompetenciesRequired": 20,
+  "verifiedSkillsCount": 3,
+  "partialSkillsCount": 17,
+  "gapSkillsCount": 0,
+  "competencies": [
+    {
+      "skillName": "information extraction",
+      "canonicalName": "information extraction",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.785,
+      "evidence": "Related foundational competence identified: 'Natural Language Processing'",
+      "priorityRank": 2,
+      "recommendedResources": []
+    },
+    {
+      "skillName": "principles of artificial intelligence",
+      "canonicalName": "principles of artificial intelligence",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.784,
+      "evidence": "Related foundational competence identified: 'Machine Learning'",
+      "priorityRank": 2,
+      "recommendedResources": [
+        {
+          "id": "res-ms-ai-engineer",
+          "title": "Develop AI Solutions with Azure AI Services",
+          "provider": "Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-ai-services/",
+          "skills": [
+            "Artificial Intelligence",
+            "Large Language Models",
+            "Computer Vision",
+            "Azure AI"
+          ],
+          "difficulty": "Intermediate",
+          "type": "Interactive Learning Path",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "skillName": "computer programming",
+      "canonicalName": "computer programming",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.765,
+      "evidence": "Related foundational competence identified: 'Python'",
+      "priorityRank": 2,
+      "recommendedResources": []
+    },
+    {
+      "skillName": "data models",
+      "canonicalName": "data models",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.761,
+      "evidence": "Related foundational competence identified: 'Large Language Models'",
+      "priorityRank": 2,
+      "recommendedResources": [
+        {
+          "id": "res-pytorch-tutorials-deep-learning",
+          "title": "Deep Learning with PyTorch: A 60 Minute Blitz",
+          "provider": "PyTorch / Linux Foundation",
+          "url": "https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html",
+          "skills": [
+            "PyTorch",
+            "Deep Learning",
+            "Neural Networks",
+            "Tensors",
+            "GPU Computing"
+          ],
+          "difficulty": "Intermediate",
+          "type": "Official Interactive Tutorial",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "skillName": "computer simulation",
+      "canonicalName": "computer simulation",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.749,
+      "evidence": "Related foundational competence identified: 'Computer Vision'",
+      "priorityRank": 2,
+      "recommendedResources": []
+    },
+    {
+      "skillName": "digital data processing",
+      "canonicalName": "digital data processing",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.747,
+      "evidence": "Related foundational competence identified: 'Computer Vision'",
+      "priorityRank": 2,
+      "recommendedResources": [
+        {
+          "id": "res-fcc-relational-db",
+          "title": "Relational Database Certification (PostgreSQL & Linux CLI)",
+          "provider": "freeCodeCamp",
+          "url": "https://www.freecodecamp.org/learn/relational-database/",
+          "skills": [
+            "SQL",
+            "PostgreSQL",
+            "Database Management Systems",
+            "Bash",
+            "Git"
+          ],
+          "difficulty": "Beginner to Intermediate",
+          "type": "Interactive Coding Certification",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "skillName": "data science",
+      "canonicalName": "data science",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.746,
+      "evidence": "Related foundational competence identified: 'Machine Learning'",
+      "priorityRank": 2,
+      "recommendedResources": []
+    },
+    {
+      "skillName": "algorithms",
+      "canonicalName": "algorithms",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.743,
+      "evidence": "Related foundational competence identified: 'NumPy'",
+      "priorityRank": 2,
+      "recommendedResources": [
+        {
+          "id": "res-py-dsa-stdlib",
+          "title": "Data Structures and Algorithms in Python (Standard Library Reference)",
+          "provider": "Python Software Foundation",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html",
+          "skills": [
+            "Data Structures",
+            "Algorithms",
+            "Python"
+          ],
+          "difficulty": "Intermediate",
+          "type": "Official Documentation",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "skillName": "resource description framework query language",
+      "canonicalName": "resource description framework query language",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.737,
+      "evidence": "Related foundational competence identified: 'Large Language Models'",
+      "priorityRank": 2,
+      "recommendedResources": []
+    },
+    {
+      "skillName": "task algorithmisation",
+      "canonicalName": "task algorithmisation",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.716,
+      "evidence": "Related foundational competence identified: 'Deep Learning'",
+      "priorityRank": 2,
+      "recommendedResources": []
+    },
+    {
+      "skillName": "unstructured data",
+      "canonicalName": "unstructured data",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.714,
+      "evidence": "Related foundational competence identified: 'Natural Language Processing'",
+      "priorityRank": 2,
+      "recommendedResources": []
+    },
+    {
+      "skillName": "visual presentation techniques",
+      "canonicalName": "visual presentation techniques",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.712,
+      "evidence": "Related foundational competence identified: 'Computer Vision'",
+      "priorityRank": 2,
+      "recommendedResources": []
+    },
+    {
+      "skillName": "information categorisation",
+      "canonicalName": "information categorisation",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.709,
+      "evidence": "Related foundational competence identified: 'Retrieval-Augmented Generation'",
+      "priorityRank": 2,
+      "recommendedResources": []
+    },
+    {
+      "skillName": "information architecture",
+      "canonicalName": "information architecture",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.665,
+      "evidence": "Related foundational competence identified: 'SQL'",
+      "priorityRank": 2,
+      "recommendedResources": []
+    },
+    {
+      "skillName": "systems development life-cycle",
+      "canonicalName": "systems development life-cycle",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.661,
+      "evidence": "Related foundational competence identified: 'Node.js'",
+      "priorityRank": 2,
+      "recommendedResources": []
+    },
+    {
+      "skillName": "information structure",
+      "canonicalName": "information structure",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.66,
+      "evidence": "Related foundational competence identified: 'SQL'",
+      "priorityRank": 2,
+      "recommendedResources": []
+    },
+    {
+      "skillName": "business process modelling",
+      "canonicalName": "business process modelling",
+      "category": "Core Technical Requirement",
+      "status": "partially_supported",
+      "importance": "essential",
+      "candidateLevel": "Foundational",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.658,
+      "evidence": "Related foundational competence identified: 'Large Language Models'",
+      "priorityRank": 2,
+      "recommendedResources": [
+        {
+          "id": "res-pytorch-tutorials-deep-learning",
+          "title": "Deep Learning with PyTorch: A 60 Minute Blitz",
+          "provider": "PyTorch / Linux Foundation",
+          "url": "https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html",
+          "skills": [
+            "PyTorch",
+            "Deep Learning",
+            "Neural Networks",
+            "Tensors",
+            "GPU Computing"
+          ],
+          "difficulty": "Intermediate",
+          "type": "Official Interactive Tutorial",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "skillName": "Python (computer programming)",
+      "canonicalName": "Python (computer programming)",
+      "category": "Core Technical Requirement",
+      "status": "verified_match",
+      "importance": "essential",
+      "candidateLevel": "Intermediate",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.91,
+      "evidence": "Verified from candidate profile: 'Python'",
+      "priorityRank": 5,
+      "recommendedResources": []
+    },
+    {
+      "skillName": "artificial neural networks",
+      "canonicalName": "artificial neural networks",
+      "category": "Core Technical Requirement",
+      "status": "verified_match",
+      "importance": "essential",
+      "candidateLevel": "Intermediate",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.822,
+      "evidence": "Verified from candidate profile: 'Deep Learning'",
+      "priorityRank": 5,
+      "recommendedResources": []
+    },
+    {
+      "skillName": "data mining",
+      "canonicalName": "data mining",
+      "category": "Core Technical Requirement",
+      "status": "verified_match",
+      "importance": "essential",
+      "candidateLevel": "Intermediate",
+      "expectedLevel": "Advanced",
+      "similarityScore": 0.813,
+      "evidence": "Verified from candidate profile: 'Machine Learning'",
+      "priorityRank": 5,
+      "recommendedResources": []
+    }
+  ],
+  "learningResources": [
+    {
+      "id": "res-fcc-relational-db",
+      "title": "Relational Database Certification (PostgreSQL & Linux CLI)",
+      "provider": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/learn/relational-database/",
+      "skills": [
+        "SQL",
+        "PostgreSQL",
+        "Database Management Systems",
+        "Bash",
+        "Git"
+      ],
+      "difficulty": "Beginner to Intermediate",
+      "type": "Interactive Coding Certification",
+      "verified": true
+    },
+    {
+      "id": "res-py-dsa-stdlib",
+      "title": "Data Structures and Algorithms in Python (Standard Library Reference)",
+      "provider": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/datastructures.html",
+      "skills": [
+        "Data Structures",
+        "Algorithms",
+        "Python"
+      ],
+      "difficulty": "Intermediate",
+      "type": "Official Documentation",
+      "verified": true
+    },
+    {
+      "id": "res-pytorch-tutorials-deep-learning",
+      "title": "Deep Learning with PyTorch: A 60 Minute Blitz",
+      "provider": "PyTorch / Linux Foundation",
+      "url": "https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html",
+      "skills": [
+        "PyTorch",
+        "Deep Learning",
+        "Neural Networks",
+        "Tensors",
+        "GPU Computing"
+      ],
+      "difficulty": "Intermediate",
+      "type": "Official Interactive Tutorial",
+      "verified": true
+    },
+    {
+      "id": "res-ms-ai-engineer",
+      "title": "Develop AI Solutions with Azure AI Services",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-ai-services/",
+      "skills": [
+        "Artificial Intelligence",
+        "Large Language Models",
+        "Computer Vision",
+        "Azure AI"
+      ],
+      "difficulty": "Intermediate",
+      "type": "Interactive Learning Path",
+      "verified": true
+    }
+  ],
+  "aiStrategy": {
+    "targetRole": "artificial intelligence engineer",
+    "overallMatchScore": 57.5,
+    "executiveSummary": "**4-Week Learning Roadmap for Artificial Intelligence Engineer**\n\n**Week 1: Introduction to AI and Python**\n- **Action Item:** Read \"Artificial Intelligence: A Very Short Introduction\" by James Landay and Andrew Zisserman. Focus on the first chapter.\n- **Action Item:** Watch \"Introduction to Artificial Intelligence\" by MIT OpenCourseWare. Complete the first week of the course.\n- **Action Item:** Start a Python project on GitHub. Create a new repository for your AI projects.\n\n**Week 2: Deep Dive into AI**\n- **Action Item:** Watch \"Machine Learning for AI Engineers\" by Udacity. Complete the first week of the course.\n- **Action Item:** Read \"Hands-On Machine Learning with Python\" by Andreas C. Oltean. Focus on the first chapter.\n- **Action Item:** Start a data science project on GitHub. Create a new repository for your data science projects.\n\n**Week 3: Neural Networks and Data Mining**\n- **Action Item:** Watch \"Neural Networks for AI Engineers\" by Udacity. Complete the second week of the course.\n- **Action Item:** Read \"Neural Networks and Deep Learning\" by Goodfellow, Bengio, and Courville. Focus on the first chapter.\n- **Action Item:** Start a data mining project on GitHub. Create a new repository for your data mining projects.\n\n**Week 4: Advanced Topics**\n- **Action Item:** Watch \"Advanced Topics in AI Engineering",
+    "weeklyMilestones": [
+      {
+        "week": 1,
+        "title": "Foundational Competency Bridge",
+        "focusSkills": [
+          "Core Frameworks"
+        ],
+        "actionItems": [
+          "Review official documentation for Target Tech.",
+          "Build an isolated micro-utility implementing core interfaces."
+        ],
+        "suggestedResourceUrl": "https://docs.python.org/3/tutorial/"
+      },
+      {
+        "week": 2,
+        "title": "Advanced Architecture & Integration",
+        "focusSkills": [
+          "information extraction",
+          "principles of artificial intelligence"
+        ],
+        "actionItems": [
+          "Implement production REST API endpoints with robust type safety.",
+          "Configure unit testing and automated evaluation benchmarks."
+        ],
+        "suggestedResourceUrl": "https://fastapi.tiangolo.com/tutorial/"
+      },
+      {
+        "week": 3,
+        "title": "End-to-End System Deployment",
+        "focusSkills": [
+          "Docker",
+          "Deployment",
+          "CI/CD"
+        ],
+        "actionItems": [
+          "Containerize the application using official Docker best practices.",
+          "Implement logging, metrics instrumentation, and structured error handling."
+        ],
+        "suggestedResourceUrl": "https://docs.docker.com/get-started/"
+      },
+      {
+        "week": 4,
+        "title": "Portfolio Capstone & Technical Evaluation",
+        "focusSkills": [
+          "artificial intelligence engineer",
+          "Technical Interview Readiness"
+        ],
+        "actionItems": [
+          "Publish open-source capstone repository demonstrating artificial intelligence engineer capabilities.",
+          "Conduct automated technical assessment on Elevate X AI platform."
+        ],
+        "suggestedResourceUrl": "https://github.com"
+      }
+    ],
+    "practicalProjects": [
+      "Production-grade artificial intelligence engineer microservice with Docker containerization and automated testing.",
+      "Real-world data or model pipeline bridging advanced features with live inference."
+    ],
+    "assessmentMilestones": [
+      "Complete Elevate X AI Technical Assessment for verified credentialing.",
+      "Review codebase with automated architecture compliance checks."
+    ],
+    "groundingDisclaimer": "Roadmap synthesized strictly from verified candidate skills and authentic occupational requirements without hallucinated qualifications."
+  },
+  "evaluatedAt": "2026-11-21T17:04:33.436349"
+}

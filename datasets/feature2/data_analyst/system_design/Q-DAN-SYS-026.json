@@ -1,0 +1,54 @@
+{
+  "question_id": "Q-DAN-SYS-026",
+  "role_id": "data_analyst",
+  "skill_id": "DAN-SKL-04",
+  "skill_name": "BI Dashboards & Visual Analytics (PowerBI/Tableau/Metabase)",
+  "subtopic": "Enterprise Dimensional Data Warehouse Architecture",
+  "assessment_type": "system_design",
+  "difficulty": "hard",
+  "question_text": "### System Design Challenge: Modern Enterprise Data Warehouse & BI Semantic Layer #26\n\n#### Functional Requirements:\n- Ingest transactional data from 12 operational databases with incremental CDC sync\n- Model Kimball dimensional Star Schemas (Fact, Dimension, SCD Type 2 tables)\n- Power executive BI dashboards with sub-3s query response time for 2,000 concurrent analysts\n\n#### Non-Functional & Scale Requirements:\n- Data freshness SLA < 15 minutes from transaction commit to dashboard refresh\n- Column-level and row-level access control (RBAC) compliant with GDPR/HIPAA\n- Comprehensive data lineage and automated schema drift alerts\n\n#### Scale Parameters:\n- **Total Data Warehouse Storage**: 150 Terabytes\n- **Daily Ingested Transactions**: 120 Million\n- **BI Dashboard Queries per Minute**: 10,000\n\nDesign the end-to-end architecture. Specify API contracts, high-level data flow, database storage models, caching layers, partition keys, consensus mechanisms, and failure recovery strategies.",
+  "options": null,
+  "correct_answer": "### Reference Architecture Breakdown:\nTransactional DBs stream via Debezium CDC -> Kafka buffers raw events -> Snowflake / BigQuery raw staging -> dbt (data build tool) runs orchestrated transformations into dimensional models (Dim_User_SCD2, Fact_Orders) -> Cube / dbt Semantic Layer defines unified business metrics -> Preset / Tableau / Metabase serve cached analytical queries.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nPre-aggregating metric rollups in materialized views speeds up dashboard loads but increases warehouse storage costs and refresh complexity. Setting incremental clustering keys optimizes query pruning.",
+  "answer_explanation": "Evaluates modern analytical data architecture balancing dimensional modeling, governed semantic layers, and sub-second BI query latency.",
+  "reference_solution": "### Reference Architecture Breakdown:\nTransactional DBs stream via Debezium CDC -> Kafka buffers raw events -> Snowflake / BigQuery raw staging -> dbt (data build tool) runs orchestrated transformations into dimensional models (Dim_User_SCD2, Fact_Orders) -> Cube / dbt Semantic Layer defines unified business metrics -> Preset / Tableau / Metabase serve cached analytical queries.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nPre-aggregating metric rollups in materialized views speeds up dashboard loads but increases warehouse storage costs and refresh complexity. Setting incremental clustering keys optimizes query pruning.",
+  "coding_language": null,
+  "sample_input": "Enterprise-scale production traffic load and availability SLA constraints.",
+  "expected_output": "Comprehensive architectural blueprint detailing data models, caching, and resiliency.",
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Dimensional Modeling (Kimball)",
+        "weight": 0.3,
+        "description": "Designs Star schema, grain, facts, and SCD Type 2 handling."
+      },
+      {
+        "name": "Semantic Layer & Metric Governance",
+        "weight": 0.25,
+        "description": "Defines unified metric definitions (dbt semantic layer)."
+      },
+      {
+        "name": "Query Performance & Caching",
+        "weight": 0.25,
+        "description": "Applies clustering, partitioning, and BI caching."
+      },
+      {
+        "name": "Data Quality & Lineage",
+        "weight": 0.2,
+        "description": "Implements dbt tests, Great Expectations, and lineage tracking."
+      }
+    ],
+    "max_score": 20.0
+  },
+  "estimated_time": 40,
+  "marks": 20,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/system-design",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

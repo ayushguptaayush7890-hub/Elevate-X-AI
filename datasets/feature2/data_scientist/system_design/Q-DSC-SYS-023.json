@@ -1,0 +1,54 @@
+{
+  "question_id": "Q-DSC-SYS-023",
+  "role_id": "data_scientist",
+  "skill_id": "DSC-SKL-04",
+  "skill_name": "Experiment Design & A/B Testing",
+  "subtopic": "Experimentation Platform Architecture",
+  "assessment_type": "system_design",
+  "difficulty": "hard",
+  "question_text": "### System Design Challenge: Enterprise A/B Experimentation Platform #23\n\n#### Functional Requirements:\n- Deterministic user bucketing via consistent hashing with zero database read overhead per impression\n- Real-time sample ratio mismatch (SRM) detection alerting within 15 minutes of launch\n- Automated CUPED variance reduction computation across 100+ business metrics\n\n#### Non-Functional & Scale Requirements:\n- Sub-1ms bucketing evaluation latency on client/edge SDKs\n- Guaranteed orthogonal multi-layer experimentation without interaction contamination\n- Scalable batch ETL processing 50 Billion daily user interaction telemetry logs\n\n#### Scale Parameters:\n- **Daily Active Users**: 80 Million\n- **Concurrent Active Experiments**: 1,500\n- **Telemetry Event Ingestion**: 200,000 events/sec\n\nDesign the end-to-end architecture. Specify API contracts, high-level data flow, database storage models, caching layers, partition keys, consensus mechanisms, and failure recovery strategies.",
+  "options": null,
+  "correct_answer": "### Reference Architecture Breakdown:\nClient / Server SDK evaluates hash(user_id + experiment_salt) % 100 in memory -> Kafka ingests exposure and conversion events -> ClickHouse / Snowflake stores raw logs -> Daily Apache Spark batch job executes CUPED regression and outputs p-values, SRM chi-square tests, and confidence intervals to Postgres.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nClient-side evaluation minimizes latency but risks exposure logging discrepancies if users drop off before network dispatch. Pre-fetching experiment configs on app start mitigates network stalls.",
+  "answer_explanation": "Evaluates architecture of modern experimentation platforms balancing statistical rigor, client latency, and high-volume event aggregation.",
+  "reference_solution": "### Reference Architecture Breakdown:\nClient / Server SDK evaluates hash(user_id + experiment_salt) % 100 in memory -> Kafka ingests exposure and conversion events -> ClickHouse / Snowflake stores raw logs -> Daily Apache Spark batch job executes CUPED regression and outputs p-values, SRM chi-square tests, and confidence intervals to Postgres.\n\n### Key Architectural Trade-Offs & Bottlenecks:\nClient-side evaluation minimizes latency but risks exposure logging discrepancies if users drop off before network dispatch. Pre-fetching experiment configs on app start mitigates network stalls.",
+  "coding_language": null,
+  "sample_input": "Enterprise-scale production traffic load and availability SLA constraints.",
+  "expected_output": "Comprehensive architectural blueprint detailing data models, caching, and resiliency.",
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Bucketing & Randomization Logic",
+        "weight": 0.3,
+        "description": "Ensures hash independence and SRM prevention."
+      },
+      {
+        "name": "Statistical Engine & Metrics",
+        "weight": 0.3,
+        "description": "Implements CUPED, variance calculation, and multiple testing adjustments."
+      },
+      {
+        "name": "Telemetry Pipeline Scalability",
+        "weight": 0.2,
+        "description": "Scales event ingestion and prevents data loss."
+      },
+      {
+        "name": "Operational Safeguards",
+        "weight": 0.2,
+        "description": "Includes guardrails, kill switches, and automated rollbacks."
+      }
+    ],
+    "max_score": 20.0
+  },
+  "estimated_time": 40,
+  "marks": 20,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/system-design",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

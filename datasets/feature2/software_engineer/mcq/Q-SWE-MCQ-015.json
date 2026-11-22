@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-015",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-02",
+  "skill_name": "Object-Oriented & Functional Design Patterns",
+  "subtopic": "Structural Patterns (Adapter, Decorator, Facade)",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "What is the primary architectural intent of the Facade design pattern?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Dynamically add responsibilities to an object transparently"
+    },
+    {
+      "id": "B",
+      "text": "Provide a unified, simplified high-level interface to a complex subsystem"
+    },
+    {
+      "id": "C",
+      "text": "Convert the interface of a class into another interface clients expect"
+    },
+    {
+      "id": "D",
+      "text": "Ensure a class only has one instance"
+    }
+  ],
+  "correct_answer": "B",
+  "answer_explanation": "A Facade encapsulates a complex set of subsystem interfaces behind a single, cohesive, high-level entry point, decoupling external consumers from internal subsystem churn.",
+  "reference_solution": "Correct Choice: B. Rationale: A Facade encapsulates a complex set of subsystem interfaces behind a single, cohesive, high-level entry point, decoupling external consumers from internal subsystem churn.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

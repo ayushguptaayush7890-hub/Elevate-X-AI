@@ -1,0 +1,61 @@
+{
+  "question_id": "Q-AIM-SCN-030",
+  "role_id": "ai_ml_engineer",
+  "skill_id": "AIM-SKL-04",
+  "skill_name": "Computer Vision & Feature Extraction",
+  "subtopic": "Object Detection Anchors and Non-Maximum Suppression (NMS)",
+  "assessment_type": "scenario",
+  "difficulty": "medium",
+  "question_text": "### Production Incident Scenario:\nProduction Incident #30: A distributed deep learning model serving endpoint experienced severe throughput degradation and GPU memory fragmentation in Computer Vision & Feature Extraction. During sustained peak inference, memory utilization hit 98% with OOM aborts specifically during 'Object Detection Anchors and Non-Maximum Suppression (NMS)' execution.\n\n### Engineering Challenge:\nWhat is the optimal MLOps and architectural resolution to eliminate OOMs and optimize serving throughput for 'Object Detection Anchors and Non-Maximum Suppression (NMS)'?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Implement dynamic batching with continuous paged KV-cache management (PagedAttention) and FP16/INT8 activation quantization."
+    },
+    {
+      "id": "B",
+      "text": "Allocate a static contiguous GPU VRAM tensor buffer sized to maximum possible sequence length for every incoming request."
+    },
+    {
+      "id": "C",
+      "text": "Disable model pipelining and force all transformer attention heads onto host system RAM via CPU swap."
+    },
+    {
+      "id": "D",
+      "text": "Retrain the model from scratch using a single linear feedforward layer to bypass attention."
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "In Computer Vision & Feature Extraction, static allocation for sequence generation creates massive memory fragmentation. Continuous paged KV-cache allocation (such as vLLM) partitions key-value memory into non-contiguous blocks, slashing memory waste and preventing OOMs while maximizing concurrent throughput.",
+  "reference_solution": "Recommended Remediation: Option A. Rationale: In Computer Vision & Feature Extraction, static allocation for sequence generation creates massive memory fragmentation. Continuous paged KV-cache allocation (such as vLLM) partitions key-value memory into non-contiguous blocks, slashing memory waste and preventing OOMs while maximizing concurrent throughput.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Architecture & Operational Assessment",
+        "weight": 0.6,
+        "description": "Evaluates risk, system constraints, and root cause accurately."
+      },
+      {
+        "name": "Mitigation Strategy",
+        "weight": 0.4,
+        "description": "Selects the optimal zero-downtime or resilient recovery path."
+      }
+    ],
+    "max_score": 6.0
+  },
+  "estimated_time": 12,
+  "marks": 6,
+  "source_type": "original_authored",
+  "source_url": "https://elevatex.ai/assessments/scenarios",
+  "license": "Proprietary-ElevateX",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

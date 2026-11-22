@@ -1,0 +1,54 @@
+{
+  "audit_timestamp": "2026-11-21T16:54:51.892299",
+  "datasets": {
+    "esco": {
+      "name": "ESCO (European Skills, Competences, Qualifications and Occupations)",
+      "source": "https://esco.ec.europa.eu/en/use-esco",
+      "license": "ODbL / Open Data",
+      "version": "v1.1.1",
+      "canonical_skills_count": 13938,
+      "canonical_occupations_count": 3039,
+      "mapped_occupational_profiles": 3039
+    },
+    "onet": {
+      "name": "O*NET Occupational Database",
+      "source": "https://www.onetcenter.org/database.html",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "version": "v31.0",
+      "occupations_count": 1016,
+      "tech_skills_examples_count": 0,
+      "profiles_count": 1016
+    },
+    "job_descriptions": {
+      "name": "Authentic Job Descriptions (lang-uk & Shresth786)",
+      "sources": [
+        "https://huggingface.co/datasets/lang-uk/recruitment-dataset-job-descriptions-english",
+        "https://huggingface.co/datasets/Shresth786/job-resume-matching"
+      ],
+      "license": "MIT",
+      "total_records": 6167,
+      "distinct_titles": 3540,
+      "distinct_companies": 2269,
+      "mean_description_length_chars": 2135.112858764391,
+      "null_descriptions": 0
+    },
+    "learning_resources": {
+      "name": "Verified Official Learning Resource Catalog",
+      "total_verified_resources": 14,
+      "total_indexed_competencies": 55,
+      "official_providers": [
+        "AWS Training & Certification",
+        "Docker Inc.",
+        "Google Cloud Skills Boost",
+        "Meta Open Source / React Core Team",
+        "Microsoft Learn",
+        "PyTorch / Linux Foundation",
+        "Python Software Foundation",
+        "Scikit-learn Developers",
+        "Tiangolo / FastAPI",
+        "freeCodeCamp"
+      ],
+      "verification_status": "ALL URLS VERIFIED AGAINST OFFICIAL DOMAINS"
+    }
+  }
+}

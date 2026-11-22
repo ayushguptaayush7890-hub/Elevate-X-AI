@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-CLD-MCQ-036",
+  "role_id": "cloud_engineer",
+  "skill_id": "CLD-SKL-01",
+  "skill_name": "Cloud Infrastructure & Virtual Networks (VPC, Subnets)",
+  "subtopic": "VPC CIDR Subnetting (Public vs Private vs Isolated Subnets)",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "[Cloud Infrastructure & Virtual Networks (VPC, Subnets) - Q36] What routing configuration distinguishes a public subnet from a private subnet in an AWS Virtual Private Cloud (VPC)?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A public subnet has an explicit route in its route table pointing `0.0.0.0/0` to an Internet Gateway (IGW); a private subnet routes `0.0.0.0/0` to a NAT Gateway or has no internet egress"
+    },
+    {
+      "id": "B",
+      "text": "Public subnets have 10.0.0.0/8 IP ranges; private subnets have 192.168.0.0/16 ranges"
+    },
+    {
+      "id": "C",
+      "text": "Private subnets disable all security groups"
+    },
+    {
+      "id": "D",
+      "text": "Public subnets do not support EC2 instances"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "The definition of a public subnet in cloud networking is having a route table destination `0.0.0.0/0` targeting an Internet Gateway, allowing public IPv4 allocation and direct inbound internet routing.",
+  "reference_solution": "Correct Choice: A. Rationale: The definition of a public subnet in cloud networking is having a route table destination `0.0.0.0/0` targeting an Internet Gateway, allowing public IPv4 allocation and direct inbound internet routing.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

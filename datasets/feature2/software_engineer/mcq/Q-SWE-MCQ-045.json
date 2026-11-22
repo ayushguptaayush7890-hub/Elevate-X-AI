@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-045",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-04",
+  "skill_name": "Database Systems & Transaction Isolation",
+  "subtopic": "ANSI SQL Isolation Levels (Read Committed to Serializable)",
+  "assessment_type": "mcq",
+  "difficulty": "medium",
+  "question_text": "Under Serializable isolation via Two-Phase Locking (2PL), when may a transaction release its acquired locks?",
+  "options": [
+    {
+      "id": "A",
+      "text": "Immediately after reading each row"
+    },
+    {
+      "id": "B",
+      "text": "During the growing phase before making updates"
+    },
+    {
+      "id": "C",
+      "text": "Only during the shrinking phase after all locks have been acquired, or at transaction commit/rollback (Strict 2PL)"
+    },
+    {
+      "id": "D",
+      "text": "When the connection pool closes"
+    }
+  ],
+  "correct_answer": "C",
+  "answer_explanation": "In 2PL, once a transaction releases any lock, it enters the shrinking phase and may acquire no further locks. Strict 2PL holds all exclusive write locks until transaction completion to prevent cascading aborts.",
+  "reference_solution": "Correct Choice: C. Rationale: In 2PL, once a transaction releases any lock, it enters the shrinking phase and may acquire no further locks. Strict 2PL holds all exclusive write locks until transaction completion to prevent cascading aborts.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

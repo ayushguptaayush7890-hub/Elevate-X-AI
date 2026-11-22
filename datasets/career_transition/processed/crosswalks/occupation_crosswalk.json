@@ -1,0 +1,4502 @@
+[
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1111.0100",
+    "source_title": "Elected Official, Union Government",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1111.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "1111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1111.0200",
+    "source_title": "Elected Official, State Government",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1111.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "1111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1111.0300",
+    "source_title": "Elected Official, Local Bodies",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1111.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "1111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1111.9900",
+    "source_title": "Legislators, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1111.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "1111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1112.0100",
+    "source_title": "Administrative Official, Union Government",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1112.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "1112"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1112.0200",
+    "source_title": "Diplomat",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1112.3",
+    "match_type": "exact_title",
+    "isco_unit_group": "1112"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1112.0300",
+    "source_title": "Executive Officials, Union Government",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1112.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "1112"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1112.0400",
+    "source_title": "Administrative Official, State Government",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1112.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "1112"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1112.0500",
+    "source_title": "Executive Official, State Government",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1112.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "1112"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1112.0600",
+    "source_title": "Administrative and Executive Officials, Quasi",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1112.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "1112"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1112.0800",
+    "source_title": "Administrative and Executive Officials, Local",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1112.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "1112"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1112.9900",
+    "source_title": "Senior Government Officials, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1112.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "1112"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1114.0100",
+    "source_title": "Political Worker",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1114.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1114.0200",
+    "source_title": "Senior Officials of Employers, Workers and Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1114.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1114.0300",
+    "source_title": "Director, Disaster Management Services",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1114.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1114.9900",
+    "source_title": "Senior Officials of Special Interest Organizations,",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1114.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.0100",
+    "source_title": "Working Proprietor, Electricity",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.0200",
+    "source_title": "Working Proprietor, Gas",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.0300",
+    "source_title": "Working Proprietor, Water Supply",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.0400",
+    "source_title": "Director, Electricity",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.0500",
+    "source_title": "Director, Gas",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.0600",
+    "source_title": "Director, Water Supply",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.0700",
+    "source_title": "Director, Bank",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.0800",
+    "source_title": "Director, Insurance",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.0900",
+    "source_title": "Working Proprietor, Mines/Proprietor, Mines",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.1000",
+    "source_title": "Working Proprietor, Quarry/Proprietor, Quarry",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.1100",
+    "source_title": "Working Proprietor, Well Drilling/Proprietor,",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.1200",
+    "source_title": "Working Proprietor, Construction/Proprietor,",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.1300",
+    "source_title": "Director, Construction",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.1400",
+    "source_title": "Director, Mines",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.1500",
+    "source_title": "Director, Quarry",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.1600",
+    "source_title": "Director, Well Drilling",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.1700",
+    "source_title": "Working Proprietor, Manufacturing/Proprietor,",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.1800",
+    "source_title": "Director Manufacturing",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.1900",
+    "source_title": "Working Proprietor, Wholesale Trade/Proprietor,",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.2000",
+    "source_title": "Working Proprietor, Retail Trade/Proprietor,",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.2100",
+    "source_title": "Director, Wholesale Trade",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.2200",
+    "source_title": "Director, Retail Trade",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.2300",
+    "source_title": "Working Proprietor, Transport",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.2400",
+    "source_title": "Director, Transport",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.2500",
+    "source_title": "Director, Communication",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.2600",
+    "source_title": "Director, Airport",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.2700",
+    "source_title": "Working Proprietor, Storage and Warehousing",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.2800",
+    "source_title": "Director, Storage and Warehousing",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.2900",
+    "source_title": "Working Proprietor, Lodging and Catering",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.3000",
+    "source_title": "Director, Lodging and Catering Services/Director",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.3100",
+    "source_title": "Executive Chef",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.3200",
+    "source_title": "Working Proprietor, Recreation and",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.3300",
+    "source_title": "Director, Recreation and Entertainment",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.3400",
+    "source_title": "Station Director, Radio/TV",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.3401",
+    "source_title": "Account Director ( Advertising Agency)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.3402",
+    "source_title": "Sales Director (Media Org)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.3500",
+    "source_title": "Working Proprietor, Other Services",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.3600",
+    "source_title": "Director, Other Services",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.3700",
+    "source_title": "Director, Museum/Zoo",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.3800",
+    "source_title": "Chief Librarian",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.3900",
+    "source_title": "Principal, College",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1120.9900",
+    "source_title": "Managing Directors and Chief Executives, Others",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1120.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1211.0100",
+    "source_title": "General Manager, Bank",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1211.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1211"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1211.0200",
+    "source_title": "General Manager, Insurance",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1211.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1211"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1211.0300",
+    "source_title": "Purser, Ship",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1211.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1211"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1211.9900",
+    "source_title": "Finance Managers, Others",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1211.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1211"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1212.0100",
+    "source_title": "Personnel Manager",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1212.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "1212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1212.9900",
+    "source_title": "Personnel and Industrial Relations Managers,",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1212.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "1212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1213.0100",
+    "source_title": "Manager, Automotive Service",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1213.5.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1213"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1213.0101",
+    "source_title": "Quality Assurance Standards In-Charge",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1213.5.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1213"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1213.0200",
+    "source_title": "Manager, Automotive Service Station",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1213.5.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1213"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1213.0201",
+    "source_title": "Area Service Manager",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1213.5.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1213"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1213.0202",
+    "source_title": "Territory Service Manager",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1213.5.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1213"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1213.9900",
+    "source_title": "Managers, Other Services",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1213.5.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1213"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1219.0100",
+    "source_title": "Manager, Import and Export",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1219.5.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1219"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1219.0101",
+    "source_title": "Export Manager",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1219.5.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1219"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1219.0200",
+    "source_title": "Manager, Health Club/Manager, Fitness",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1219.5.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1219"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1221.0100",
+    "source_title": "Sales Manager (Wholesale Trade)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1221.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1221"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1221.0200",
+    "source_title": "Sales Manager (Retail Trade)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1221.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1221"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1221.0301",
+    "source_title": "Home Delivery Manager",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1221.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1221"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1221.0401",
+    "source_title": "Territory Sales Manager (Broadband)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1221.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1221"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1221.0501",
+    "source_title": "Territory Sales Manager (Prepaid)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1221.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1221"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1221.0601",
+    "source_title": "Sales Co-Ordinator (Media Org)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1221.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1221"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1221.0602",
+    "source_title": "Sales Manager (Media Org)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1221.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1221"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1221.9900",
+    "source_title": "Sales and Marketing Managers, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1221.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1221"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1222.0100",
+    "source_title": "Manager, Advertising and Promotion",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1222.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1222"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1222.0102",
+    "source_title": "Advertising Operations Co-Ordinator (Digital)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1222.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1222"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1222.0200",
+    "source_title": "Manager, Fashion/Fashion Manager",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1222.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1222"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1222.9900",
+    "source_title": "Advertising and Public Relations Department",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1222.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1222"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1223.0101",
+    "source_title": "Manager Testing Facility",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1223.2.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1223"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1223.0102",
+    "source_title": "Manager Material Testing",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1223.2.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1223"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1223.0201",
+    "source_title": "Research Associate",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1223.2.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1223"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.0100",
+    "source_title": "General Manager, Plantation",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.0200",
+    "source_title": "General Manager, Horticulture",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.0300",
+    "source_title": "General Manager, Agricultural Farm",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.0400",
+    "source_title": "General Manager, Livestock Farm",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.0500",
+    "source_title": "General Manager, Dairy Farm",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.0600",
+    "source_title": "General Manager, Poultry",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.0700",
+    "source_title": "Manager, Agricultural Farm",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.0800",
+    "source_title": "Manager, Plantation",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.0900",
+    "source_title": "Manager, Nursery",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.0901",
+    "source_title": "Rubber Nursery Manager",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.1000",
+    "source_title": "Manager, Aerial Planting and Cultivation",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.1100",
+    "source_title": "Manager, Orchard",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.1200",
+    "source_title": "Manager, Horticulture Farm",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.1300",
+    "source_title": "Manager, Livestock Farm",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.1400",
+    "source_title": "Manager, Dairy Farm",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.1500",
+    "source_title": "Manager, Poultry Farm",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1311.9900",
+    "source_title": "Agricultural and Forestry Production Managers,",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1311.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1311"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1321.0100",
+    "source_title": "Manager, Electricity",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1321.2.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1321"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1321.0200",
+    "source_title": "Terminal Manager",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1321.2.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1321"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1321.0300",
+    "source_title": "Manager, Gas",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1321.2.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1321"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1321.0400",
+    "source_title": "Manager, Water Supply",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1321.2.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1321"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1321.0500",
+    "source_title": "Manager, Food Processing Plant",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1321.2.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1321"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1321.0600",
+    "source_title": "Manager, Manufacturing",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1321.2.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1321"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1321.0700",
+    "source_title": "General Manager, Electricity",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1321.2.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1321"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1321.0800",
+    "source_title": "General Manager, Gas",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1321.2.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1321"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1321.0900",
+    "source_title": "General Manager, Water Supply",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1321.2.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1321"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1321.1000",
+    "source_title": "General Manager, Manufacturing",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1321.2.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1321"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1321.9900",
+    "source_title": "Manufacturing Managers, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1321.2.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1321"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1322.0100",
+    "source_title": "Manager, Mine",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1322.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1322"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1322.0200",
+    "source_title": "Manager, Quarry",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1322.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1322"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1322.0300",
+    "source_title": "Manager, Well Drilling",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1322.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1322"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1322.0400",
+    "source_title": "General Manager, Mine",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1322.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1322"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1322.0500",
+    "source_title": "General Manager, Quarry",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1322.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1322"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1322.0600",
+    "source_title": "General Manager, Well Drilling",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1322.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1322"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1322.9900",
+    "source_title": "Mining Managers, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1322.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1322"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1323.0100",
+    "source_title": "Manager, Construction/Manager Construction",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1323.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1323"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1323.0200",
+    "source_title": "Manager, Land Survey",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1323.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1323"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1323.0300",
+    "source_title": "General Manager, Construction/General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1323.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1323"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1323.9900",
+    "source_title": "Construction Managers, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1323.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1323"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.0100",
+    "source_title": "Manager, Material Control/Manager Materials",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.0101",
+    "source_title": "Manager Supplier Quality",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.0102",
+    "source_title": "Material Co-Ordination Manager",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.0103",
+    "source_title": "Manager Vendor Development",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.0200",
+    "source_title": "Manager, Transport",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.0300",
+    "source_title": "Station Master, Roadways",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.0400",
+    "source_title": "Traffic Inspector, Motor Transport",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.0500",
+    "source_title": "Manager, Traffic",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.0600",
+    "source_title": "Traffic Inspector, Railway",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.0700",
+    "source_title": "Traffic Inspector, Tram",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.0800",
+    "source_title": "Manager, Flight Operation",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.0900",
+    "source_title": "Aerodrome Officer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.1000",
+    "source_title": "Flight Operation Officer, Air Service",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.1100",
+    "source_title": "Traffic Officer, Air Service/Traffic Controller",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.1200",
+    "source_title": "Manager, Storage and Warehousing",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.1201",
+    "source_title": "Warehouse Supervisor",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.1300",
+    "source_title": "Goods Supervisor, Railway",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.1400",
+    "source_title": "Goods Supervisor, Road Transport",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.1500",
+    "source_title": "Station Master, Railway",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.1600",
+    "source_title": "Platform Inspector, Railway",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.1700",
+    "source_title": "Rates Inspector, Railway",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.1800",
+    "source_title": "Depot Starter, Tram",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.1900",
+    "source_title": "Section Controller, Railway",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.2000",
+    "source_title": "Accident Officer, Tram",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.2100",
+    "source_title": "General Manager, Transport",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.2200",
+    "source_title": "General Manager, Storage and Warehousing",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1324.9900",
+    "source_title": "Supply, Distribution and Related Managers and",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1324.3.2.22",
+    "match_type": "isco_group",
+    "isco_unit_group": "1324"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1330.0100",
+    "source_title": "Manager, Communication",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1330.9",
+    "match_type": "isco_group",
+    "isco_unit_group": "1330"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1330.0101",
+    "source_title": "Communication Analyst",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1330.9",
+    "match_type": "isco_group",
+    "isco_unit_group": "1330"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1330.0200",
+    "source_title": "Contract Officer, Telephone/Liaising Officer/",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1330.9",
+    "match_type": "isco_group",
+    "isco_unit_group": "1330"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1330.0300",
+    "source_title": "Post Master",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1330.9",
+    "match_type": "isco_group",
+    "isco_unit_group": "1330"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1330.0600",
+    "source_title": "General Manager, Communication",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1330.9",
+    "match_type": "isco_group",
+    "isco_unit_group": "1330"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1330.0701",
+    "source_title": "Cluster Manager",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1330.9",
+    "match_type": "isco_group",
+    "isco_unit_group": "1330"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1330.9900",
+    "source_title": "Information and Communication Technology",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1330.9",
+    "match_type": "isco_group",
+    "isco_unit_group": "1330"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1345.0100",
+    "source_title": "Headmaster",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1345.1.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "1345"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1346.0100",
+    "source_title": "Manager, Bank",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1346.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "1346"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1346.0200",
+    "source_title": "Manager, Insurance",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1346.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "1346"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1346.9900",
+    "source_title": "Financial and Insurance Service Branch",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1346.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "1346"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1411.0100",
+    "source_title": "Manager, Lodging and Catering",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1411.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "1411"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1411.0200",
+    "source_title": "General Manager, Lodging and Catering Services",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1411.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "1411"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1411.9900",
+    "source_title": "Hotel Managers, Others",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1411.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "1411"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1412.0100",
+    "source_title": "Manager, Fast Food Service",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1412.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1412"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1412.9900",
+    "source_title": "Restaurant Managers, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1412.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "1412"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1420.0100",
+    "source_title": "Manager, Wholesale Trade",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1420.4.42",
+    "match_type": "isco_group",
+    "isco_unit_group": "1420"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1420.0200",
+    "source_title": "Manager, Retail Trade",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1420.4.42",
+    "match_type": "isco_group",
+    "isco_unit_group": "1420"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1420.0300",
+    "source_title": "Manager, Export",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1420.4.42",
+    "match_type": "isco_group",
+    "isco_unit_group": "1420"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1420.0400",
+    "source_title": "General Manager, Wholesale Trade/Senior",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1420.4.42",
+    "match_type": "isco_group",
+    "isco_unit_group": "1420"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1420.0500",
+    "source_title": "General Manager, Retail Trade, Senior Manager,",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1420.4.42",
+    "match_type": "isco_group",
+    "isco_unit_group": "1420"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1420.9900",
+    "source_title": "Retail and Wholesale Trade Managers, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1420.4.42",
+    "match_type": "isco_group",
+    "isco_unit_group": "1420"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1431.0100",
+    "source_title": "General Manager, Recreation and Entertainment",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1431.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1431"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:1431.9900",
+    "source_title": "Sports, Recreation and Cultural Centre Manager,",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:1431.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "1431"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2111.0100",
+    "source_title": "Physicist, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2111.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2111.0200",
+    "source_title": "Physicist, Mechanics",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2111.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2111.0300",
+    "source_title": "Physicist, Heat",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2111.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2111.0400",
+    "source_title": "Physicist, Light",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2111.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2111.0500",
+    "source_title": "Physicist, Sound",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2111.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2111.0600",
+    "source_title": "Physicist, Electricity and Magnetism",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2111.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2111.0700",
+    "source_title": "Physicist, Electronics",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2111.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2111.0800",
+    "source_title": "Physicist, Nuclear",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2111.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2111.0900",
+    "source_title": "Astronomer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2111.1",
+    "match_type": "exact_title",
+    "isco_unit_group": "2111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2111.1000",
+    "source_title": "Metrologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2112.2",
+    "match_type": "exact_title",
+    "isco_unit_group": "2111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2111.1100",
+    "source_title": "Material Scientist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2111.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2111.9900",
+    "source_title": "Physicists and Astronomers, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2111.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2111"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2112.0100",
+    "source_title": "Meteorologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2112.1",
+    "match_type": "exact_title",
+    "isco_unit_group": "2112"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2112.9900",
+    "source_title": "Meteorologists, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2112.1.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "2112"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2113.0100",
+    "source_title": "Chemist, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2113.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2113"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2113.0200",
+    "source_title": "Chemist, Organic",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2113.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2113"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2113.0300",
+    "source_title": "Chemist, Inorganic",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2113.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2113"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2113.0400",
+    "source_title": "Chemist, Physical",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2113.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2113"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2113.0500",
+    "source_title": "Chemist, Analytical",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2113.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2113"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2113.0600",
+    "source_title": "Chemist, Industrial",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2113.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2113"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2113.0601",
+    "source_title": "Quality Control Chemist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2113.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2113"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2113.0800",
+    "source_title": "Chemist, Forensic Science",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2113.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2113"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2113.0901",
+    "source_title": "Quality Assurance Chemist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2113.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2113"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2113.9900",
+    "source_title": "Chemists, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2113.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2113"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2114.0100",
+    "source_title": "Geologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2114.1",
+    "match_type": "exact_title",
+    "isco_unit_group": "2114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2114.0200",
+    "source_title": "Petrologists",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2114.1.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "2114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2114.0300",
+    "source_title": "Palaeontologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2114.1.9",
+    "match_type": "exact_title",
+    "isco_unit_group": "2114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2114.0400",
+    "source_title": "Geophysicist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2114.2",
+    "match_type": "exact_title",
+    "isco_unit_group": "2114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2114.0500",
+    "source_title": "Hydrologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2114.1.5",
+    "match_type": "exact_title",
+    "isco_unit_group": "2114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2114.0600",
+    "source_title": "Mineralogist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2114.3",
+    "match_type": "exact_title",
+    "isco_unit_group": "2114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2114.0700",
+    "source_title": "Seismologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2114.1.10",
+    "match_type": "exact_title",
+    "isco_unit_group": "2114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2114.0800",
+    "source_title": "Oceanographer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2114.1.8",
+    "match_type": "exact_title",
+    "isco_unit_group": "2114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2114.1500",
+    "source_title": "Geologist, Petroleum",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2114.1.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "2114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2114.5500",
+    "source_title": "Hydrographer, Waterworks",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2114.1.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "2114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2114.9900",
+    "source_title": "Geologists and Geophysicists, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2114.1.6",
+    "match_type": "isco_group",
+    "isco_unit_group": "2114"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2120.0100",
+    "source_title": "Mathematician",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2120.5",
+    "match_type": "exact_title",
+    "isco_unit_group": "2120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2120.0200",
+    "source_title": "Actuary",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2120.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2120.0300",
+    "source_title": "Statistician",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2120.6",
+    "match_type": "exact_title",
+    "isco_unit_group": "2120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2120.0400",
+    "source_title": "Statistician, Applied",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2120.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2120.0500",
+    "source_title": "Operation Research Analyst",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2120.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2120.9900",
+    "source_title": "Mathematicians, Actuaries and Statisticians,",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2120.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2120"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.0100",
+    "source_title": "Biologist, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.0200",
+    "source_title": "Marine Biologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.4.9",
+    "match_type": "exact_title",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.0300",
+    "source_title": "Cytologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.0400",
+    "source_title": "Botanist, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.0500",
+    "source_title": "Economic Botanist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.0600",
+    "source_title": "Plant Breeder",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.0700",
+    "source_title": "Mycologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.0800",
+    "source_title": "Algologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.0900",
+    "source_title": "Zoologist, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.1000",
+    "source_title": "Entomologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.1100",
+    "source_title": "Parasitologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.1200",
+    "source_title": "Bacteriologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.1300",
+    "source_title": "Chemist, Biological",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.1400",
+    "source_title": "Chemist, Food",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.1500",
+    "source_title": "Plant Pathologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.1800",
+    "source_title": "Plant Physiologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2131.9900",
+    "source_title": "Biologists, Botanists, Zoologists and Related",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2131"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2132.0100",
+    "source_title": "Agronomist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2132.2",
+    "match_type": "exact_title",
+    "isco_unit_group": "2132"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2132.0200",
+    "source_title": "Horticulturist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2132.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2132"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2132.0300",
+    "source_title": "Soil Scientist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2133.11",
+    "match_type": "exact_title",
+    "isco_unit_group": "2132"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2132.0400",
+    "source_title": "Soil Conservationist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2132.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2132"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2132.0500",
+    "source_title": "Silviculturist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2132.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2132"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2132.0600",
+    "source_title": "Wood Anatomist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2132.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2132"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2132.0700",
+    "source_title": "Dairy Scientist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2132.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2132"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2132.0800",
+    "source_title": "Poultry Scientist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2132.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2132"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2132.0900",
+    "source_title": "Pisciculturist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2132.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2132"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2132.1000",
+    "source_title": "Farm Overseer, Crop Production",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2132.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2132"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2132.9900",
+    "source_title": "Agronomists and Related Professionals, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2132.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2132"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2133.0100",
+    "source_title": "Ecologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2133.5",
+    "match_type": "exact_title",
+    "isco_unit_group": "2133"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2133.0200",
+    "source_title": "Environment Scientist (Including Health)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2133.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2133"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2133.0300",
+    "source_title": "Taxonomist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2133.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2133"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2133.0400",
+    "source_title": "Paleobotanist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2133.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2133"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.0100",
+    "source_title": "Works Inspector, Engineering/Inspection",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.0200",
+    "source_title": "Instrument Engineer/Instrumentation Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.0300",
+    "source_title": "Industrial Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.4",
+    "match_type": "exact_title",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.0301",
+    "source_title": "Industrial Engineer Executive",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.0400",
+    "source_title": "Packaging Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.0500",
+    "source_title": "Planning Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.0600",
+    "source_title": "Methods Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.0800",
+    "source_title": "Engineering Estimator/Estimation Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.0900",
+    "source_title": "Agricultural Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.2",
+    "match_type": "exact_title",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.1000",
+    "source_title": "Textile Technologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.11",
+    "match_type": "exact_title",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.1100",
+    "source_title": "Nuclear Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2149.9.4",
+    "match_type": "exact_title",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.1200",
+    "source_title": "Jute Technologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.1300",
+    "source_title": "Fibre Technologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.1400",
+    "source_title": "Spinning Master",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.1500",
+    "source_title": "Weaving Master",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.1600",
+    "source_title": "Dyeing and Bleaching Master (Textiles)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.1700",
+    "source_title": "Printing Master (Textile)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.1800",
+    "source_title": "Sugar Technologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.1900",
+    "source_title": "Dairy Technologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.2000",
+    "source_title": "Wood Technologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.2100",
+    "source_title": "Leather Technologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.2200",
+    "source_title": "Glass Technologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.2300",
+    "source_title": "Ceramic Technologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.2400",
+    "source_title": "Printing Technologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2141.2500",
+    "source_title": "Safety Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2141"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.0100",
+    "source_title": "Civil Engineer, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.0200",
+    "source_title": "Civil Engineer, Building",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.0300",
+    "source_title": "Civil Engineer, Structural",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.0301",
+    "source_title": "Plumbing Site Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.0400",
+    "source_title": "Civil Engineer, Irrigation",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.0500",
+    "source_title": "Hydraulic Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.0501",
+    "source_title": "Fire Protection Systems Design Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.0600",
+    "source_title": "Civil Engineer, Highways and Roads",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.0700",
+    "source_title": "Civil Engineer, Railways",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.0800",
+    "source_title": "Airport Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.0900",
+    "source_title": "Civil Engineer, Public Health",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.0901",
+    "source_title": "Public Health System Design Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.1000",
+    "source_title": "Engineer, Waterworks",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.1001",
+    "source_title": "Groundwater Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.1002",
+    "source_title": "Wastewater Systems Design",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2142.9900",
+    "source_title": "Civil Engineers, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2142.1.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2142"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2143.0100",
+    "source_title": "Solar Energy System Designer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2143.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2143"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2143.0200",
+    "source_title": "Bio-Medical Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2149.5.1",
+    "match_type": "exact_title",
+    "isco_unit_group": "2143"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2143.0300",
+    "source_title": "Radiation Protection Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2143.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2143"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2143.0400",
+    "source_title": "Waste Management Engineer, Radioactive",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2143.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2143"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2143.0500",
+    "source_title": "Pollution Control Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2143.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2143"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0100",
+    "source_title": "Mechanical Engineer, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0101",
+    "source_title": "Process Design Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0102",
+    "source_title": "Process Try-Out Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0103",
+    "source_title": "Process Try-Out Technician",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0104",
+    "source_title": "Process Validation Executive",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0105",
+    "source_title": "Manager, Process Engineering",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0200",
+    "source_title": "Designer, Machine",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0201",
+    "source_title": "Designer - Mechanical",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0300",
+    "source_title": "Tool Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0301",
+    "source_title": "Equipment Designer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0401",
+    "source_title": "Mechanical Engineer, Production",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0402",
+    "source_title": "Product Conceptualization Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0403",
+    "source_title": "Production Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2141.4.2",
+    "match_type": "exact_title",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0500",
+    "source_title": "Mechanical Engineer, Structural",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0600",
+    "source_title": "Mechanical Engineer, Maintenance",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0700",
+    "source_title": "Mechanical Engineer, Automobile",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0701",
+    "source_title": "Prototyping Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0800",
+    "source_title": "Automobile Designer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0801",
+    "source_title": "Product Design Manager",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0802",
+    "source_title": "Modeller",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0803",
+    "source_title": "Product Design Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0804",
+    "source_title": "Prototyping Manager",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.0900",
+    "source_title": "Mechanical Engineer, Aeronautical",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.1000",
+    "source_title": "Mechanical Engineer, Marine",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.1100",
+    "source_title": "Architect, Naval",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.1200",
+    "source_title": "Mechanical Engineer, Air-Conditioning",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.1301",
+    "source_title": "Layout Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.1302",
+    "source_title": "Industrial Engineer (Workstation",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2144.9900",
+    "source_title": "Mechanical Engineers, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2144.1.21",
+    "match_type": "isco_group",
+    "isco_unit_group": "2144"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.0100",
+    "source_title": "Chemical Engineer, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.0200",
+    "source_title": "Designer, Chemical Engineering",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.0300",
+    "source_title": "Chemical Engineer, Paints and Varnish",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.0400",
+    "source_title": "Chemical Engineer, Drugs and Acids",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.0500",
+    "source_title": "Chemical Engineer, Petroleum",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.0600",
+    "source_title": "Chemical Engineer, Fertilizers",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.0700",
+    "source_title": "Chemical Engineer, Food",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.0800",
+    "source_title": "Technologist, Food/Chemical Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.0900",
+    "source_title": "Technologist, Fuel",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.1000",
+    "source_title": "Oil Technologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.1100",
+    "source_title": "Technologist, Paper",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.1200",
+    "source_title": "Technologist, Alcohol",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.1300",
+    "source_title": "Technologist, Rubber",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.1400",
+    "source_title": "Technologist, Plastics",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2145.9900",
+    "source_title": "Chemical Engineers and Technologists, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2145.1.7",
+    "match_type": "isco_group",
+    "isco_unit_group": "2145"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2146.0100",
+    "source_title": "Mining Engineer, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2146.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2146"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2146.0200",
+    "source_title": "Mining Engineer, Non-Metals",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2146.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2146"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2146.0300",
+    "source_title": "Mining Engineer, Metal",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2146.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2146"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2146.0400",
+    "source_title": "Mining Engineer, Petroleum and Gas",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2146.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2146"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2146.0500",
+    "source_title": "Metallurgist, Extractive",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2146.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2146"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2146.0501",
+    "source_title": "Manager Heat Treatment/Metallurgist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2146.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2146"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2146.0600",
+    "source_title": "Metallurgists, Adaptive",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2146.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2146"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2146.9900",
+    "source_title": "Mining Engineers, Metallurgists and Related",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2146.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2146"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2149.0100",
+    "source_title": "Engineers and Related Technologists, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2149.8",
+    "match_type": "isco_group",
+    "isco_unit_group": "2149"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2151.0100",
+    "source_title": "Electrical Engineer, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2151.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2151"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2151.0200",
+    "source_title": "Designer, Electrical Engineering",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2151.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2151"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2151.0201",
+    "source_title": "Design Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2149.2.4",
+    "match_type": "exact_title",
+    "isco_unit_group": "2151"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2151.0202",
+    "source_title": "Electrical Design Developer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2151.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2151"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2151.0300",
+    "source_title": "Electrical Engineer, Generation and Supply",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2151.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2151"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2151.0400",
+    "source_title": "Illumination Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2151.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2151"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2151.0403",
+    "source_title": "LED Light Design Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2151.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2151"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2151.0404",
+    "source_title": "LED Light Design Validation Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2151.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2151"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2151.0601",
+    "source_title": "System Analyst (PCB Design)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2151.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2151"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2151.0602",
+    "source_title": "Systems Designer (PCB Design)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2151.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2151"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2151.0701",
+    "source_title": "Design-For-Manufacture Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2151.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2151"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2151.9900",
+    "source_title": "Electrical Engineers, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2151.1.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2151"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2152.0200",
+    "source_title": "Electronic Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2152.1.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "2152"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2152.0301",
+    "source_title": "Stress Analyst/Computer-Aided Test Executive",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2152.1.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "2152"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2152.0400",
+    "source_title": "Electro-Optical Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2152.1.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "2152"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2152.0501",
+    "source_title": "Design Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2149.2.4",
+    "match_type": "exact_title",
+    "isco_unit_group": "2152"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2152.0502",
+    "source_title": "Design-For-Test Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2152.1.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "2152"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2152.0601",
+    "source_title": "Quality Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2149.2.7",
+    "match_type": "exact_title",
+    "isco_unit_group": "2152"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2152.0801",
+    "source_title": "Electronic Hardware Design Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2152.1.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "2152"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2152.0901",
+    "source_title": "Verification Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2152.1.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "2152"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2152.0902",
+    "source_title": "Testing and Validation Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2152.1.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "2152"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2152.9900",
+    "source_title": "Electronics Engineers, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2152.1.5",
+    "match_type": "isco_group",
+    "isco_unit_group": "2152"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2153.0100",
+    "source_title": "Telecommunication Engineer, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2153.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2153"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2153.0101",
+    "source_title": "Telecom Terminal Equipment Application",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2153.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2153"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2153.0102",
+    "source_title": "Telecom Terminal Equipment Application (Native",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2153.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2153"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2153.0200",
+    "source_title": "Radio Engineer, Telecommunication",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2153.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2153"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2153.0300",
+    "source_title": "Microwave Engineer, Telecommunication",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2153.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2153"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2153.0400",
+    "source_title": "Line Communication Engineer, Tele-",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2153.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2153"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2153.0500",
+    "source_title": "Sound Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2153.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2153"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2153.0501",
+    "source_title": "Sound Engineer, Media",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2153.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2153"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2153.0511",
+    "source_title": "Sound Designer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:3521.1.7",
+    "match_type": "exact_title",
+    "isco_unit_group": "2153"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2153.0601",
+    "source_title": "Core Engineer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2153.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2153"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2153.9900",
+    "source_title": "Telecommunication Engineers, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2153.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2153"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2161.0100",
+    "source_title": "Architect",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2161.1",
+    "match_type": "exact_title",
+    "isco_unit_group": "2161"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2161.9900",
+    "source_title": "Building Architects, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2161.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2161"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2163.0100",
+    "source_title": "Package Designer/Packaging Designer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2163.1.3.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2163"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2163.0201",
+    "source_title": "Design Merchandiser",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2163.1.3.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2163"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2163.0301",
+    "source_title": "Hand Sketch Designer (Basic)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2163.1.3.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2163"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2163.0400",
+    "source_title": "Furniture Designer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2163.1.4",
+    "match_type": "exact_title",
+    "isco_unit_group": "2163"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2163.0500",
+    "source_title": "Fashion Designer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2163.1.3",
+    "match_type": "exact_title",
+    "isco_unit_group": "2163"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2163.0600",
+    "source_title": "Textile Designer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2163.1.8",
+    "match_type": "exact_title",
+    "isco_unit_group": "2163"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2164.0100",
+    "source_title": "Town Planner",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2164.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2164"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2164.0200",
+    "source_title": "Traffic Planner",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2164.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2164"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2165.0100",
+    "source_title": "Cartographer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2165.2",
+    "match_type": "exact_title",
+    "isco_unit_group": "2165"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2165.0200",
+    "source_title": "Surveyor, Topographical",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2165.4.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2165"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2165.0400",
+    "source_title": "Surveyor, Photogrammetric",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2165.4.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2165"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2165.0500",
+    "source_title": "Surveyor, Mine",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2165.4.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2165"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2165.0600",
+    "source_title": "Surveyor, Hydrographic",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2165.4.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2165"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2165.9900",
+    "source_title": "Cartographers and Surveyors, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2165.4.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2165"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0100",
+    "source_title": "Commercial Artist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0111",
+    "source_title": "Art Director",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2654.1",
+    "match_type": "exact_title",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0201",
+    "source_title": "Multimedia Artist and Animator/Animator",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0202",
+    "source_title": "Modeller",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0203",
+    "source_title": "Rigging Artist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0204",
+    "source_title": "Texturing Artist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0205",
+    "source_title": "Animation Director",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2654.1.1",
+    "match_type": "exact_title",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0206",
+    "source_title": "Character Designer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0207",
+    "source_title": "Clean-Up Artist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0208",
+    "source_title": "Compositor",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0209",
+    "source_title": "Storyboard Artist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2651.10",
+    "match_type": "exact_title",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0210",
+    "source_title": "Rendering Artist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0211",
+    "source_title": "VFX Editor",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0212",
+    "source_title": "Roto Artist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0300",
+    "source_title": "Web Designer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.15",
+    "match_type": "exact_title",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0401",
+    "source_title": "Designer (CAD)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0501",
+    "source_title": "Graphic Designer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.9",
+    "match_type": "exact_title",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0511",
+    "source_title": "Colour Key Artist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2166.0512",
+    "source_title": "Colourist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2166.11",
+    "match_type": "isco_group",
+    "isco_unit_group": "2166"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2211.0100",
+    "source_title": "Physician, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2211.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2211"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2211.0200",
+    "source_title": "Surgeon, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2211.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2211"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2211.0300",
+    "source_title": "Anatomist, Medical",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2211.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2211"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2211.0400",
+    "source_title": "Anaesthetist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2211.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2211"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2211.0500",
+    "source_title": "Psychiatrist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2211.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2211"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2211.9900",
+    "source_title": "Generalist Medical Practitioners, Allopathic,",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2211.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2211"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.0100",
+    "source_title": "Neurologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.0200",
+    "source_title": "Dermatologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.0300",
+    "source_title": "Allergy Specialist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.0400",
+    "source_title": "Ear, Nose and Throat Specialist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.0500",
+    "source_title": "Cardiologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.0600",
+    "source_title": "Radiologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.0700",
+    "source_title": "Tuberculosis Specialist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.0800",
+    "source_title": "Ophthalmologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.0900",
+    "source_title": "Urologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.1000",
+    "source_title": "Venereologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.1100",
+    "source_title": "Obstetrician",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.1200",
+    "source_title": "Gynaecologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.1300",
+    "source_title": "Paediatrician",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.1400",
+    "source_title": "Orthopaedist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.1500",
+    "source_title": "Pharmacologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2131.7",
+    "match_type": "exact_title",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.1600",
+    "source_title": "Toxicologist (Pharmaceutical)",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.1700",
+    "source_title": "Pathologist, Medical",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.1800",
+    "source_title": "Malariologist, Medical",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.1900",
+    "source_title": "Physiologist, Medical",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2212.9900",
+    "source_title": "Specialist Medical Practitioners, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2212.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2212"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2221.0100",
+    "source_title": "Nurse, Specialist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2221.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "2221"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2221.9900",
+    "source_title": "Professional Nurses, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2221.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "2221"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2230.0100",
+    "source_title": "Physician, Ayurvedic",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2230.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2230"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2230.0200",
+    "source_title": "Physician, Homeopathic",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2230.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2230"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2230.0300",
+    "source_title": "Physician, Bio-Chemic/Bio Chemist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2230.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2230"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2230.0400",
+    "source_title": "Physician, Unani",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2230.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2230"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2230.9900",
+    "source_title": "Traditional Medicine Practitioners, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2230.2.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2230"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2240.0100",
+    "source_title": "Laboratory Assistant, Clinical",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "",
+    "match_type": "none",
+    "isco_unit_group": "2240"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2240.0400",
+    "source_title": "Dresser",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:3435.7",
+    "match_type": "exact_title",
+    "isco_unit_group": "2240"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2240.9900",
+    "source_title": "Paramedical Practitioners, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "",
+    "match_type": "none",
+    "isco_unit_group": "2240"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2250.0100",
+    "source_title": "Animal Pathologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2250.8",
+    "match_type": "isco_group",
+    "isco_unit_group": "2250"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2250.0200",
+    "source_title": "Veterinarian, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2250.8",
+    "match_type": "isco_group",
+    "isco_unit_group": "2250"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2250.0300",
+    "source_title": "Veterinarian, Surgeon",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2250.8",
+    "match_type": "isco_group",
+    "isco_unit_group": "2250"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2250.0400",
+    "source_title": "Animal Genetist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2250.8",
+    "match_type": "isco_group",
+    "isco_unit_group": "2250"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2250.0500",
+    "source_title": "Zoo Veterinarian",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2250.8",
+    "match_type": "isco_group",
+    "isco_unit_group": "2250"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2250.0600",
+    "source_title": "Veterinarian, Poultry",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2250.8",
+    "match_type": "isco_group",
+    "isco_unit_group": "2250"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2250.9900",
+    "source_title": "Veterinarians, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2250.8",
+    "match_type": "isco_group",
+    "isco_unit_group": "2250"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2261.0100",
+    "source_title": "Dentist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2261.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2261"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2261.0200",
+    "source_title": "Oral and Maxillofacial Surgeon",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2261.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2261"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2261.0300",
+    "source_title": "Orthodontist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2261.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2261"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2261.0400",
+    "source_title": "Periodontist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2261.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2261"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2261.0500",
+    "source_title": "Prosthodontist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2261.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2261"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2261.0600",
+    "source_title": "Paediatric Dentist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2261.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2261"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2261.9900",
+    "source_title": "Dental Specialists, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2261.4",
+    "match_type": "isco_group",
+    "isco_unit_group": "2261"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2262.0100",
+    "source_title": "Chemist, Pharmaceuticals",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2262.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2262"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2262.0101",
+    "source_title": "Chemist, Pharmaceuticals",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2262.1.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2262"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2263.0100",
+    "source_title": "Health Officer",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2263.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2263"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2263.0200",
+    "source_title": "Administrator, Hospital",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2263.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2263"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2263.9900",
+    "source_title": "Environmental and Occupational Health and",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2263.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2263"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2264.0100",
+    "source_title": "Physiotherapist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2264.2",
+    "match_type": "exact_title",
+    "isco_unit_group": "2264"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2264.0300",
+    "source_title": "Chiropodist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2264.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2264"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2264.0400",
+    "source_title": "Masseur",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2264.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2264"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2264.0401",
+    "source_title": "Sports Masseur",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2264.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2264"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2264.9900",
+    "source_title": "Physiotherapists and Related Associate",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2264.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2264"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2265.0100",
+    "source_title": "Nutritionist, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2265.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2265"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2265.0200",
+    "source_title": "Dietician, General",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2265.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2265"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2265.0201",
+    "source_title": "Dietician Assistant",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2265.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2265"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2265.0300",
+    "source_title": "Animal Nutritionist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2265.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2265"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2265.9900",
+    "source_title": "Dieticians and Nutritionists, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2265.1",
+    "match_type": "isco_group",
+    "isco_unit_group": "2265"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2266.0100",
+    "source_title": "Speech Therapist and Audiologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2266.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2266"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2266.0200",
+    "source_title": "Speech Pathologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2266.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2266"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2266.0300",
+    "source_title": "Voice Pathologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2266.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2266"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2266.0401",
+    "source_title": "Speech Language Pathologist and Audiologist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2266.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2266"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2267.9900",
+    "source_title": "Optometrists and Opticians, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2267.2",
+    "match_type": "isco_group",
+    "isco_unit_group": "2267"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2269.0100",
+    "source_title": "Naturopath",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2269.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "2269"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2269.0200",
+    "source_title": "Physician, Osteopathic",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2269.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "2269"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2269.0300",
+    "source_title": "Physician, Sidha",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2269.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "2269"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2269.0400",
+    "source_title": "Physicians and Surgeons, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2269.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "2269"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2269.0500",
+    "source_title": "Orthotist and Prosthetist",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2269.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "2269"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2269.0700",
+    "source_title": "Medical and Health Technicians, Other",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2269.3",
+    "match_type": "isco_group",
+    "isco_unit_group": "2269"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2310.0100",
+    "source_title": "University and College Teacher, Arts",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2310.1.30",
+    "match_type": "isco_group",
+    "isco_unit_group": "2310"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2310.0200",
+    "source_title": "University and College Teacher, Commerce",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2310.1.30",
+    "match_type": "isco_group",
+    "isco_unit_group": "2310"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2310.0300",
+    "source_title": "University and College Teacher, Management",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2310.1.30",
+    "match_type": "isco_group",
+    "isco_unit_group": "2310"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2310.0400",
+    "source_title": "University and College Teacher,",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2310.1.30",
+    "match_type": "isco_group",
+    "isco_unit_group": "2310"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2310.0500",
+    "source_title": "University and College Teacher,",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2310.1.30",
+    "match_type": "isco_group",
+    "isco_unit_group": "2310"
+  },
+  {
+    "source_taxonomy": "India NCO-2015",
+    "source_id": "NCO:2310.0600",
+    "source_title": "University and College Teacher, Science",
+    "target_taxonomy": "ESCO v1.2.1",
+    "target_id": "ESCO:2310.1.30",
+    "match_type": "isco_group",
+    "isco_unit_group": "2310"
+  }
+]

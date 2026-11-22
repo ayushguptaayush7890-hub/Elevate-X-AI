@@ -106,6 +106,7 @@ async def extract_skills_endpoint(
     payload: SkillExtractionRequest
 ) -> SkillExtractionResponse:
     SkillExtractionService = _get_skill_extraction_service()
+    default_config = _get_default_config()
     if not payload.text or not payload.text.strip():
         raise HTTPException(
             status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
@@ -113,10 +114,16 @@ async def extract_skills_endpoint(
         )
 
     t0 = time.time()
-    raw_res = SkillExtractionService.extract_from_narrative(
-        text=payload.text,
-        occupation_hint=payload.occupation_hint
-    )
+    try:
+        raw_res = SkillExtractionService.extract_from_narrative(
+            text=payload.text,
+            occupation_hint=payload.occupation_hint
+        )
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Inference execution failed: {str(e)}"
+        )
     latency_ms = (time.time() - t0) * 1000.0
 
     detected_occ = DetectedOccupation(

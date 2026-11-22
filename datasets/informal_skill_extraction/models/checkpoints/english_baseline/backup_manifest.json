@@ -1,0 +1,24 @@
+{
+  "checkpoint_id": "exp_b_xlm_roberta_skillspan_baseline",
+  "backup_timestamp": "2026-11-15T12:35:00+05:30",
+  "source_directory": "datasets/informal_skill_extraction/models/checkpoints/best_skillspan_model",
+  "model_type": "xlm-roberta-base",
+  "task": "token-classification-bio",
+  "labels": ["O", "B-SKILL", "I-SKILL"],
+  "num_labels": 3,
+  "hidden_size": 768,
+  "training_strategy": "Exp B: Partially unfrozen top 2 encoder layers (10-11) + classification head",
+  "frozen_layers": "0-9 (eval mode to avoid MPS SDPA dropout crash)",
+  "unfrozen_layers": "10-11 and classifier",
+  "loss_function": "Weighted CrossEntropyLoss([1.0, 10.0, 8.0])",
+  "dataset": "Official English SkillSpan (train.json, dev.json)",
+  "metrics_reported": {
+    "test_exact_span_f1": 0.2455,
+    "test_partial_overlap_f1": 0.5894,
+    "test_token_f1": 0.2455,
+    "throughput_sent_per_sec": 88.6
+  },
+  "hardware": "Apple Silicon M2 (MPS)",
+  "status": "PRESERVED_ENGLISH_BASELINE"
+}
+

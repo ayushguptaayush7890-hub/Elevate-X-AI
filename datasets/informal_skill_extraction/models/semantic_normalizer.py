@@ -22,6 +22,8 @@ DISALLOWED_STANDALONE_WORDS = {
     "kaam", "work", "working", "service", "servicing", "chalata", "operate",
     "kar", "karta", "karti", "karte", "karna", "lagata", "lagana", "banata", "banana",
     "silta", "silna", "leta", "lena", "change", "testing",
+    "know", "knows", "knowing", "have", "has", "had", "experience", "experienced",
+    "janta", "aata", "seekha", "seekh", "kare",
     
     # Generic isolated nouns without task specification
     "customer", "client", "grahak", "machine", "machines", "tool", "tools",
@@ -30,7 +32,7 @@ DISALLOWED_STANDALONE_WORDS = {
     
     # Connectives, conjunctions & pronouns
     "aur", "and", "or", "ka", "ki", "ke", "se", "ko", "mein", "me", "par", "pe",
-    "main", "hum", "mera", "meri", "mere", "aap", "tum"
+    "main", "hum", "mera", "meri", "mere", "aap", "tum", "i", "we", "you", "they", "he", "she", "it"
 }
 
 # Controlled vocational compound patterns for Indian trade contexts
@@ -128,8 +130,10 @@ class SemanticSkillNormalizer:
     def is_disallowed_standalone(phrase: str) -> bool:
         """Checks if a phrase is a standalone generic word."""
         clean = phrase.strip().lower()
-        clean = re.sub(r"[^\w\s]", "", clean)
-        return clean in DISALLOWED_STANDALONE_WORDS or len(clean) < 3
+        if clean in ("c++", "c#", "ai", "ml", "js", "ts", "sql", "r", "go", "git", "aws", "gcp"):
+            return False
+        clean_stripped = re.sub(r"[^\w\s]", "", clean)
+        return clean_stripped in DISALLOWED_STANDALONE_WORDS or len(clean_stripped) < 3
 
     @staticmethod
     def find_compound_matches(text: str) -> List[Dict[str, Any]]:
@@ -160,58 +164,37 @@ class SemanticSkillNormalizer:
         occupation_id: Optional[str] = None
     ) -> List[Dict[str, Any]]:
         """
-        Master post-processing pipeline:
-        1. Inject high-precision compound task matches.
-        2. Merge overlapping or immediately adjacent spans.
-        3. Extend isolated technical nouns with attached action verbs.
-        4. Prune disallowed standalone generic tokens.
-        5. Assign normalized competency titles.
+        Pure ML model post-processing pipeline:
+        1. Takes ONLY model-predicted spans (strictly no synthetic or regex compound injection).
+        2. Filters out disallowed standalone conversational tokens (e.g. 'aur', 'main').
+        3. Assigns standardized normalized display labels while strictly preserving verbatim offsets.
         """
-        # Step 1: Gather candidate compound task matches
-        compounds = SemanticSkillNormalizer.find_compound_matches(text)
-        
-        all_candidates = list(compounds)
-        
-        # Step 2: Integrate raw model/heuristic spans if not overlapping with compounds
+        all_candidates = []
+
+        # Process model-predicted spans
         for r_sp in raw_spans:
             st = r_sp["start_offset"]
             en = r_sp["end_offset"]
-            extracted = r_sp["extracted_skill"]
-            
-            # Check overlap with already found compound tasks
-            overlap = any(
-                max(st, c["start_offset"]) < min(en, c["end_offset"])
-                for c in all_candidates
-            )
-            if not overlap:
-                # Try extending noun with subsequent action verb if present in text
-                # e.g., 'MCB' followed by 'install' -> 'MCB install'
-                extended_en = en
-                after_text = text[en:min(len(text), en + 20)]
-                for v_pat in ACTION_VERB_PATTERNS:
-                    vm = re.match(rf"^\s+({v_pat})", after_text, re.IGNORECASE)
-                    if vm:
-                        extended_en = en + vm.end(1)
-                        break
-                        
-                final_phrase = text[st:extended_en].strip()
-                final_en = st + len(final_phrase)
-                
-                # Check disallowed standalone words
-                if SemanticSkillNormalizer.is_disallowed_standalone(final_phrase):
-                    continue
-                    
-                norm_label = SemanticSkillNormalizer.get_normalized_label(final_phrase, r_sp.get("skill_category"))
-                
-                all_candidates.append({
-                    "start_offset": st,
-                    "end_offset": final_en,
-                    "extracted_skill": text[st:final_en],
-                    "normalized_skill": norm_label,
-                    "evidence_text": text[st:final_en],
-                    "skill_category": r_sp.get("skill_category", "technical_tactile"),
-                    "confidence_score": r_sp.get("confidence_score", 0.85)
-                })
+            extracted = r_sp["extracted_skill"].strip()
+
+            if not extracted:
+                continue
+
+            # Check disallowed standalone words
+            if SemanticSkillNormalizer.is_disallowed_standalone(extracted):
+                continue
+
+            norm_label = SemanticSkillNormalizer.get_normalized_label(extracted, r_sp.get("skill_category"))
+
+            all_candidates.append({
+                "start_offset": st,
+                "end_offset": en,
+                "extracted_skill": extracted,
+                "normalized_skill": norm_label,
+                "evidence_text": extracted,
+                "skill_category": r_sp.get("skill_category", "technical_tactile"),
+                "confidence_score": r_sp.get("confidence_score", 0.90)
+            })
 
         # Step 3: Sort by start offset and resolve any remaining overlaps
         all_candidates.sort(key=lambda x: (x["start_offset"], -x["end_offset"]))

@@ -1,0 +1,431 @@
+[
+  {
+    "id": "res-py-official-tutorial",
+    "title": "The Python Tutorial \u2014 Official Python 3 Documentation",
+    "provider": "Python Software Foundation",
+    "url": "https://docs.python.org/3/tutorial/",
+    "skills": [
+      "Python",
+      "Object-Oriented Programming",
+      "Data Structures",
+      "Scripting"
+    ],
+    "difficulty": "Beginner to Intermediate",
+    "type": "Official Documentation",
+    "verified": true,
+    "source_domain": "docs.python.org"
+  },
+  {
+    "id": "res-py-dsa-stdlib",
+    "title": "Data Structures and Algorithms in Python (Standard Library Reference)",
+    "provider": "Python Software Foundation",
+    "url": "https://docs.python.org/3/tutorial/datastructures.html",
+    "skills": [
+      "Data Structures",
+      "Algorithms",
+      "Python"
+    ],
+    "difficulty": "Intermediate",
+    "type": "Official Documentation",
+    "verified": true,
+    "source_domain": "docs.python.org"
+  },
+  {
+    "id": "res-pytorch-tutorials-deep-learning",
+    "title": "Deep Learning with PyTorch: A 60 Minute Blitz",
+    "provider": "PyTorch / Linux Foundation",
+    "url": "https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html",
+    "skills": [
+      "PyTorch",
+      "Deep Learning",
+      "Neural Networks",
+      "Tensors",
+      "GPU Computing"
+    ],
+    "difficulty": "Intermediate",
+    "type": "Official Interactive Tutorial",
+    "verified": true,
+    "source_domain": "pytorch.org"
+  },
+  {
+    "id": "res-pytorch-nlp-tutorials",
+    "title": "Natural Language Processing (NLP) with TorchText & Transformers",
+    "provider": "PyTorch / Linux Foundation",
+    "url": "https://pytorch.org/tutorials/beginner/text_sentiment_ngrams_tutorial.html",
+    "skills": [
+      "PyTorch",
+      "Natural Language Processing",
+      "NLP",
+      "Text Classification"
+    ],
+    "difficulty": "Advanced",
+    "type": "Official Tutorial",
+    "verified": true,
+    "source_domain": "pytorch.org"
+  },
+  {
+    "id": "res-sklearn-user-guide",
+    "title": "Scikit-Learn Machine Learning in Python: User Guide & Model Selection",
+    "provider": "Scikit-learn Developers",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "skills": [
+      "Machine Learning",
+      "Scikit-learn",
+      "Classification",
+      "Regression",
+      "Clustering"
+    ],
+    "difficulty": "Intermediate",
+    "type": "Official Documentation",
+    "verified": true,
+    "source_domain": "scikit-learn.org"
+  },
+  {
+    "id": "res-react-quick-start",
+    "title": "Quick Start \u2014 Learn React",
+    "provider": "Meta Open Source / React Core Team",
+    "url": "https://react.dev/learn",
+    "skills": [
+      "React.js",
+      "JavaScript",
+      "Frontend Development",
+      "Component Architecture",
+      "State Management"
+    ],
+    "difficulty": "Beginner to Intermediate",
+    "type": "Official Documentation",
+    "verified": true,
+    "source_domain": "react.dev"
+  },
+  {
+    "id": "res-fastapi-tutorial",
+    "title": "FastAPI Tutorial \u2014 User Guide",
+    "provider": "Tiangolo / FastAPI",
+    "url": "https://fastapi.tiangolo.com/tutorial/",
+    "skills": [
+      "FastAPI",
+      "Python",
+      "REST APIs",
+      "API Development",
+      "Microservices",
+      "Pydantic"
+    ],
+    "difficulty": "Intermediate",
+    "type": "Official Documentation",
+    "verified": true,
+    "source_domain": "fastapi.tiangolo.com"
+  },
+  {
+    "id": "res-ms-azure-fundamentals",
+    "title": "Microsoft Azure Fundamentals: Describe Cloud Concepts (AZ-900)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+    "skills": [
+      "Cloud Computing",
+      "Microsoft Azure",
+      "Cloud Architecture"
+    ],
+    "difficulty": "Beginner",
+    "type": "Interactive Learning Path",
+    "verified": true,
+    "source_domain": "learn.microsoft.com"
+  },
+  {
+    "id": "res-ms-ai-engineer",
+    "title": "Microsoft Certified: Azure AI Engineer Associate & AI Foundations",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/",
+    "skills": [
+      "Artificial Intelligence",
+      "Large Language Models",
+      "Computer Vision",
+      "Azure AI"
+    ],
+    "difficulty": "Intermediate",
+    "type": "Interactive Learning Path & Official Certification Guide",
+    "verified": true,
+    "source_domain": "learn.microsoft.com"
+  },
+  {
+    "id": "res-gcp-genai-pathway",
+    "title": "Generative AI Fundamentals Learning Path",
+    "provider": "Google Cloud Skills Boost",
+    "url": "https://www.cloudskillsboost.google/paths/118",
+    "skills": [
+      "Generative AI",
+      "Large Language Models",
+      "LLMs",
+      "RAG",
+      "Prompt Engineering"
+    ],
+    "difficulty": "Beginner to Intermediate",
+    "type": "Hands-on Lab Course",
+    "verified": true,
+    "source_domain": "cloudskillsboost.google"
+  },
+  {
+    "id": "res-aws-cloud-practitioner",
+    "title": "AWS Cloud Practitioner Essentials",
+    "provider": "AWS Training & Certification",
+    "url": "https://skillbuilder.aws/course/aws-cloud-practitioner-essentials",
+    "skills": [
+      "AWS",
+      "Cloud Computing",
+      "DevOps",
+      "Infrastructure"
+    ],
+    "difficulty": "Beginner",
+    "type": "Interactive Course",
+    "verified": true,
+    "source_domain": "skillbuilder.aws"
+  },
+  {
+    "id": "res-fcc-relational-db",
+    "title": "Relational Database Certification (PostgreSQL & Linux CLI)",
+    "provider": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/learn/relational-database/",
+    "skills": [
+      "SQL",
+      "PostgreSQL",
+      "Database Management Systems",
+      "Bash",
+      "Git"
+    ],
+    "difficulty": "Beginner to Intermediate",
+    "type": "Interactive Coding Certification",
+    "verified": true,
+    "source_domain": "freecodecamp.org"
+  },
+  {
+    "id": "res-fcc-data-analysis-python",
+    "title": "Data Analysis with Python Certification",
+    "provider": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/learn/data-analysis-with-python/",
+    "skills": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Data Analysis",
+      "Matplotlib"
+    ],
+    "difficulty": "Intermediate",
+    "type": "Interactive Coding Certification",
+    "verified": true,
+    "source_domain": "freecodecamp.org"
+  },
+  {
+    "id": "res-docker-getting-started",
+    "title": "Docker Getting Started Guide & Container Fundamentals",
+    "provider": "Docker Inc.",
+    "url": "https://docs.docker.com/get-started/",
+    "skills": [
+      "Docker",
+      "Containerization",
+      "DevOps",
+      "CI/CD",
+      "Developer Tools"
+    ],
+    "difficulty": "Beginner to Intermediate",
+    "type": "Official Documentation & Tutorial",
+    "verified": true,
+    "source_domain": "docs.docker.com"
+  },
+  {
+    "id": "res-nptel-textile-testing",
+    "title": "Testing of Functional and Technical Textiles \u2014 NPTEL / IIT Delhi",
+    "provider": "NPTEL / Ministry of Education, Govt of India",
+    "url": "https://nptel.ac.in/courses/116102029",
+    "skills": [
+      "Fabric Grading & 4-Point System",
+      "Textile Lab Testing (Shrinkage & Colorfastness)",
+      "Garment Inspection",
+      "Quality Management Systems (QMS)"
+    ],
+    "difficulty": "Intermediate to Advanced",
+    "type": "Official University / MOOC Course",
+    "verified": true,
+    "source_domain": "nptel.ac.in"
+  },
+  {
+    "id": "res-swayam-apparel-quality",
+    "title": "Quality Assurance in Garment Manufacturing \u2014 SWAYAM Portal",
+    "provider": "SWAYAM / NIFT (National Institute of Fashion Technology)",
+    "url": "https://swayam.gov.in/explorer?searchText=apparel+quality",
+    "skills": [
+      "Garment Inspection",
+      "AQL 2.5 Sampling Standards",
+      "Stitch & Seam Quality Analysis",
+      "Apparel Export Documentation"
+    ],
+    "difficulty": "Intermediate",
+    "type": "National Vocational Learning Portal",
+    "verified": true,
+    "source_domain": "swayam.gov.in"
+  },
+  {
+    "id": "res-astm-textile-standards",
+    "title": "ASTM D5430 Standard Test Methods for Visually Inspecting and Grading Fabrics",
+    "provider": "ASTM International / Textile Standards Organization",
+    "url": "https://www.astm.org/d5430-13r17.html",
+    "skills": [
+      "Fabric Grading & 4-Point System",
+      "Garment Inspection",
+      "Apparel Standards"
+    ],
+    "difficulty": "Advanced Reference Standard",
+    "type": "Official International Engineering Standard",
+    "verified": true,
+    "source_domain": "astm.org"
+  },
+  {
+    "id": "res-iso-2859-sampling",
+    "title": "NIST Engineering Statistics Handbook: Acceptance Sampling & Operating Characteristic Plans",
+    "provider": "National Institute of Standards and Technology (NIST) / ITL",
+    "url": "https://www.itl.nist.gov/div898/handbook/pmc/section2/pmc2.htm",
+    "skills": [
+      "AQL 2.5 Sampling Standards",
+      "Quality Management Systems (QMS)",
+      "Buyer Compliance & Audit Protocols"
+    ],
+    "difficulty": "Advanced Reference Standard",
+    "type": "Official Public Engineering Reference",
+    "verified": true,
+    "source_domain": "itl.nist.gov"
+  },
+  {
+    "id": "res-skill-india-apparel-ssc",
+    "title": "Apparel, Made-Ups & Home Furnishing Sector Skill Council (AMHSSC) Standards",
+    "provider": "National Skill Development Corporation (NSDC) / Skill India",
+    "url": "https://sscamh.com/",
+    "skills": [
+      "Garment Inspection",
+      "Apparel Export Documentation",
+      "Pattern Making & Tech Pack Review",
+      "Buyer Compliance & Audit Protocols"
+    ],
+    "difficulty": "Vocational Competency Pack",
+    "type": "National Sector Skill Standard",
+    "verified": true,
+    "source_domain": "sscamh.com"
+  },
+  {
+    "id": "res-dgt-electrician-cts",
+    "title": "Directorate General of Training (DGT) \u2014 CTS Electrician NSQF-4 Curriculum & Engineering Standards",
+    "provider": "Ministry of Skill Development & Entrepreneurship / DGT",
+    "url": "https://dgt.gov.in/sites/default/files/2024-12/Electrician_CTS2.0_NSQF-4%20%281%29.pdf",
+    "skills": [
+      "Building systems monitoring technology",
+      "Conduit installation",
+      "Electrical wiring plans",
+      "Earthing and ground fault protection",
+      "Distribution boards and switchgear",
+      "Electricity transmission and distribution"
+    ],
+    "difficulty": "Vocational NSQF-4 Standard",
+    "type": "National Vocational Curriculum",
+    "verified": true,
+    "source_domain": "dgt.gov.in"
+  },
+  {
+    "id": "res-nptel-electrical-circuits",
+    "title": "Basic Electrical Circuits, Power Systems & Distribution \u2014 NPTEL / IIT Kharagpur",
+    "provider": "NPTEL / Ministry of Education, Govt of India",
+    "url": "https://nptel.ac.in/courses/108108076",
+    "skills": [
+      "Electricity",
+      "Circuit diagnostics",
+      "Single-phase and three-phase power",
+      "Building electrical installations",
+      "Test procedures in electricity transmission"
+    ],
+    "difficulty": "Intermediate",
+    "type": "University MOOC Course",
+    "verified": true,
+    "source_domain": "nptel.ac.in"
+  },
+  {
+    "id": "res-cea-safety-regulations",
+    "title": "Central Electricity Authority (CEA) Safety & Electric Supply Regulations",
+    "provider": "Central Electricity Authority / Ministry of Power, Govt of India",
+    "url": "https://cea.nic.in/regulations/",
+    "skills": [
+      "Electrical safety regulations",
+      "Resolve equipment malfunctions",
+      "Workplace electrical hazard mitigation",
+      "Earthing pit standards",
+      "High voltage isolation"
+    ],
+    "difficulty": "Statutory Standard",
+    "type": "Government Regulatory Standard",
+    "verified": true,
+    "source_domain": "cea.nic.in"
+  },
+  {
+    "id": "res-osha-electrical-loto",
+    "title": "OSHA 29 CFR 1910 Electrical Safety & Lockout/Tagout (LOTO) Standards",
+    "provider": "Occupational Safety and Health Administration (OSHA) / USDOL",
+    "url": "https://www.osha.gov/electrical",
+    "skills": [
+      "Lockout / tagout (LOTO)",
+      "Arc flash hazard prevention",
+      "Personal protective equipment (PPE)",
+      "Work ergonomically",
+      "Industrial electrical safety"
+    ],
+    "difficulty": "Mandatory Compliance Standard",
+    "type": "Official Occupational Safety Standard",
+    "verified": true,
+    "source_domain": "osha.gov"
+  },
+  {
+    "id": "res-bis-nec-sp30",
+    "title": "Bureau of Indian Standards: National Electrical Code of India (SP 30)",
+    "provider": "Bureau of Indian Standards (BIS)",
+    "url": "https://www.bis.gov.in/",
+    "skills": [
+      "National Electrical Code (NEC)",
+      "Install construction profiles",
+      "Cable tray installation and busbar routing",
+      "Short-circuit protection and circuit breakers",
+      "Building electrification design"
+    ],
+    "difficulty": "Engineering Reference",
+    "type": "National Technical Code",
+    "verified": true,
+    "source_domain": "bis.gov.in"
+  },
+  {
+    "id": "res-nift-patternmaking-grading",
+    "title": "Flat Pattern Making, Draping & Grading Standards \u2014 NIFT / SWAYAM",
+    "provider": "National Institute of Fashion Technology (NIFT) / Ministry of Textiles",
+    "url": "https://swayam.gov.in/explorer?searchText=pattern+making",
+    "skills": [
+      "Pattern making",
+      "Apparel manufacturing technology",
+      "Dart manipulation and seam allowances",
+      "Pattern grading and standard sizing systems",
+      "Tech pack specifications"
+    ],
+    "difficulty": "Intermediate to Advanced",
+    "type": "National Textile Learning Module",
+    "verified": true,
+    "source_domain": "swayam.gov.in"
+  },
+  {
+    "id": "res-amhssc-cad-patternmaker",
+    "title": "CAD Patternmaker (Apparel) National Occupational Standards (AMH/Q1101)",
+    "provider": "Apparel, Made-Ups & Home Furnishing Sector Skill Council (AMHSSC) / NSDC",
+    "url": "https://sscamh.com/qualification-pack.php",
+    "skills": [
+      "Computer-aided pattern design (CAD)",
+      "Pattern digitization",
+      "Fabric consumption and marker planning",
+      "Precision cut line drafting",
+      "Grading multidimensional garments"
+    ],
+    "difficulty": "Vocational Competency Standard",
+    "type": "National Sector Skill Standard",
+    "verified": true,
+    "source_domain": "sscamh.com"
+  }
+]

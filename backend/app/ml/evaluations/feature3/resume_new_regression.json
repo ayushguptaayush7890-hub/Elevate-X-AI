@@ -1,0 +1,246 @@
+{
+  "candidate": {
+    "name": "AYUSH GUPTA",
+    "email": "ayush.gupta.ayush7890@gmail.com",
+    "document": "Resume_New.pdf",
+    "extracted_skills_count": 6,
+    "projects_count": 3
+  },
+  "performance": {
+    "parse_latency_ms": 5016.6590213775635,
+    "jd_analysis_latency_ms": 1.6608238220214844,
+    "cold_match_latency_ms": 1664.7071838378906,
+    "warm_match_latency_ms": 676.8722534179688,
+    "memory_delta_mb": 287.546875,
+    "memory_final_mb": 881.59375
+  },
+  "scores": {
+    "overall_ats_score": 70.7,
+    "part_a_score": 42.8,
+    "part_b_score": 27.9,
+    "part_a_details": {
+      "requiredSkillsScore": 16.7,
+      "preferredSkillsScore": 7.4,
+      "responsibilitiesScore": 11.5,
+      "qualificationsScore": 7.2
+    },
+    "part_b_details": {
+      "actionVerbsAndImpactScore": 7.9,
+      "formattingAndParseabilityScore": 10.0,
+      "sectionCompletenessScore": 10.0
+    }
+  },
+  "target_skills_eval": {
+    "total_tested": 22,
+    "verified_count": 22,
+    "pass_rate": 1.0,
+    "records": [
+      {
+        "skill": "Python",
+        "status": "explicitly_matched",
+        "statusLabel": "Explicit Match (Semantic)",
+        "score": 0.755,
+        "evidence": "[Project Evidence] Project: Smart Kitchen, Tech: Python, HTML, CSS, JavaScript, MySQL, GitHub - Recipe & Meal Management Web Application",
+        "note": "High semantic alignment (0.75) identified via DistilBERT representation.",
+        "passed": true
+      },
+      {
+        "skill": "C++",
+        "status": "partially_supported",
+        "statusLabel": "Partially Supported (1/2 skills verified)",
+        "score": 0.675,
+        "evidence": "[Technical Skill] C++",
+        "note": "Partial requirement coverage: verified (C++).",
+        "passed": true
+      },
+      {
+        "skill": "Machine Learning",
+        "status": "explicitly_matched",
+        "statusLabel": "Explicit Match (Semantic)",
+        "score": 0.797,
+        "evidence": "[Summary Evidence] B.Tech Artificial Intelligence undergraduate with a strong foundation in machine learning, full-stack development, and problem-solving. Passionate about building",
+        "note": "High semantic alignment (0.80) identified via DistilBERT representation.",
+        "passed": true
+      },
+      {
+        "skill": "Deep Learning",
+        "status": "explicitly_matched",
+        "statusLabel": "Explicit Match (Semantic)",
+        "score": 0.797,
+        "evidence": "[Summary Evidence] B.Tech Artificial Intelligence undergraduate with a strong foundation in machine learning, full-stack development, and problem-solving. Passionate about building",
+        "note": "High semantic alignment (0.80) identified via DistilBERT representation.",
+        "passed": true
+      },
+      {
+        "skill": "LLM",
+        "status": "explicitly_matched",
+        "statusLabel": "Explicit Match (Semantic)",
+        "score": 0.746,
+        "evidence": "[Summary Evidence] B.Tech Artificial Intelligence undergraduate with a strong foundation in machine learning, full-stack development, and problem-solving. Passionate about building",
+        "note": "High semantic alignment (0.75) identified via DistilBERT representation.",
+        "passed": true
+      },
+      {
+        "skill": "RAG",
+        "status": "explicitly_matched",
+        "statusLabel": "Explicit Match (Semantic)",
+        "score": 0.746,
+        "evidence": "[Summary Evidence] B.Tech Artificial Intelligence undergraduate with a strong foundation in machine learning, full-stack development, and problem-solving. Passionate about building",
+        "note": "High semantic alignment (0.75) identified via DistilBERT representation.",
+        "passed": true
+      },
+      {
+        "skill": "NLP",
+        "status": "partially_supported",
+        "statusLabel": "Partially Supported (1/2 skills verified)",
+        "score": 0.675,
+        "evidence": "[Technical Skill] Computer Vision",
+        "note": "Partial requirement coverage: verified (Computer Vision).",
+        "passed": true
+      },
+      {
+        "skill": "Computer Vision",
+        "status": "partially_supported",
+        "statusLabel": "Partially Supported (1/2 skills verified)",
+        "score": 0.675,
+        "evidence": "[Technical Skill] Computer Vision",
+        "note": "Partial requirement coverage: verified (Computer Vision).",
+        "passed": true
+      },
+      {
+        "skill": "Flask",
+        "status": "partially_supported",
+        "statusLabel": "Partially Supported (1/2 skills verified)",
+        "score": 0.675,
+        "evidence": "[Technical Skill] FastAPI",
+        "note": "Partial requirement coverage: verified (FastAPI).",
+        "passed": true
+      },
+      {
+        "skill": "FastAPI",
+        "status": "partially_supported",
+        "statusLabel": "Partially Supported (1/2 skills verified)",
+        "score": 0.675,
+        "evidence": "[Technical Skill] FastAPI",
+        "note": "Partial requirement coverage: verified (FastAPI).",
+        "passed": true
+      },
+      {
+        "skill": "PyTorch",
+        "status": "partially_supported",
+        "statusLabel": "Partially Supported (1/2 skills verified)",
+        "score": 0.675,
+        "evidence": "[Technical Skill] TensorFlow",
+        "note": "Partial requirement coverage: verified (TensorFlow).",
+        "passed": true
+      },
+      {
+        "skill": "TensorFlow",
+        "status": "partially_supported",
+        "statusLabel": "Partially Supported (1/2 skills verified)",
+        "score": 0.675,
+        "evidence": "[Technical Skill] TensorFlow",
+        "note": "Partial requirement coverage: verified (TensorFlow).",
+        "passed": true
+      },
+      {
+        "skill": "NumPy",
+        "status": "partially_supported",
+        "statusLabel": "Partially Supported (2/4 skills verified)",
+        "score": 0.675,
+        "evidence": "[Technical Skill] NumPy | [Technical Skill] Pandas",
+        "note": "Partial requirement coverage: verified (NumPy, Pandas).",
+        "passed": true
+      },
+      {
+        "skill": "Pandas",
+        "status": "partially_supported",
+        "statusLabel": "Partially Supported (2/4 skills verified)",
+        "score": 0.675,
+        "evidence": "[Technical Skill] NumPy | [Technical Skill] Pandas",
+        "note": "Partial requirement coverage: verified (NumPy, Pandas).",
+        "passed": true
+      },
+      {
+        "skill": "Docker",
+        "status": "partially_supported",
+        "statusLabel": "Partially Supported (Semantic)",
+        "score": 0.718,
+        "evidence": "[Project Evidence] Integrated product catalog, secure transactions, order management, and user authentication.",
+        "note": "Moderate semantic correlation (0.72) identified in resume.",
+        "passed": true
+      },
+      {
+        "skill": "Postman",
+        "status": "partially_supported",
+        "statusLabel": "Partially Supported (1/3 skills verified)",
+        "score": 0.567,
+        "evidence": "[Technical Skill] Postman",
+        "note": "Minor skill overlap (Postman).",
+        "passed": true
+      },
+      {
+        "skill": "React.js",
+        "status": "partially_supported",
+        "statusLabel": "Partially Supported (1/3 skills verified)",
+        "score": 0.567,
+        "evidence": "[Technical Skill] Node.js",
+        "note": "Minor skill overlap (Node.js).",
+        "passed": true
+      },
+      {
+        "skill": "Node.js",
+        "status": "partially_supported",
+        "statusLabel": "Partially Supported (1/3 skills verified)",
+        "score": 0.567,
+        "evidence": "[Technical Skill] Node.js",
+        "note": "Minor skill overlap (Node.js).",
+        "passed": true
+      },
+      {
+        "skill": "SQL",
+        "status": "explicitly_matched",
+        "statusLabel": "Explicit Match (Semantic)",
+        "score": 0.755,
+        "evidence": "[Project Evidence] Project: Smart Kitchen, Tech: Python, HTML, CSS, JavaScript, MySQL, GitHub - Recipe & Meal Management Web Application",
+        "note": "High semantic alignment (0.75) identified via DistilBERT representation.",
+        "passed": true
+      },
+      {
+        "skill": "Git",
+        "status": "explicitly_matched",
+        "statusLabel": "Explicit Match (Semantic)",
+        "score": 0.755,
+        "evidence": "[Project Evidence] Project: Smart Kitchen, Tech: Python, HTML, CSS, JavaScript, MySQL, GitHub - Recipe & Meal Management Web Application",
+        "note": "High semantic alignment (0.75) identified via DistilBERT representation.",
+        "passed": true
+      },
+      {
+        "skill": "GitHub",
+        "status": "explicitly_matched",
+        "statusLabel": "Explicit Match (Semantic)",
+        "score": 0.755,
+        "evidence": "[Project Evidence] Project: Smart Kitchen, Tech: Python, HTML, CSS, JavaScript, MySQL, GitHub - Recipe & Meal Management Web Application",
+        "note": "High semantic alignment (0.75) identified via DistilBERT representation.",
+        "passed": true
+      },
+      {
+        "skill": "Data Structures and Algorithms",
+        "status": "explicitly_matched",
+        "statusLabel": "Explicit Match (Semantic)",
+        "score": 0.721,
+        "evidence": "[Certification Evidence] Certification: Data Structures and Algorithms (Infosys Springboard) by Certified Authority",
+        "note": "High semantic alignment (0.72) identified via DistilBERT representation.",
+        "passed": true
+      }
+    ]
+  },
+  "rubric_breakdown": {
+    "explicit_matches_count": 10,
+    "partial_matches_count": 12,
+    "not_found_count": 0,
+    "uncertain_extractions_count": 0,
+    "confirmed_missing_count": 0
+  },
+  "timestamp": "2026-11-21T14:30:45Z"
+}

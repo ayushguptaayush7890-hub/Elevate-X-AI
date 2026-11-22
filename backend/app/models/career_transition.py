@@ -140,3 +140,88 @@ class TransitionRequirement(Base, TimestampMixin):
     # Relationship
     transition: Mapped["CareerTransition"] = relationship("CareerTransition", back_populates="requirements")
 
+
+class UserCareerTransitionGoal(Base, TimestampMixin):
+    """User adopted career transition goal and learning blueprint tracking."""
+
+    __tablename__ = "user_career_transition_goals"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        Uuid(as_uuid=True),
+        primary_key=True,
+        default=uuid.uuid4,
+    )
+    user_id: Mapped[uuid.UUID] = mapped_column(
+        Uuid(as_uuid=True),
+        ForeignKey("users.id", ondelete="CASCADE"),
+        index=True,
+        nullable=False,
+    )
+    from_occupation_title: Mapped[str] = mapped_column(
+        String(255),
+        nullable=False,
+    )
+    target_occupation_id: Mapped[str] = mapped_column(
+        String(255),
+        nullable=False,
+    )
+    target_occupation_title: Mapped[str] = mapped_column(
+        String(255),
+        nullable=False,
+    )
+    target_taxonomy: Mapped[str] = mapped_column(
+        String(100),
+        default="ESCO v1.2.1",
+        nullable=False,
+    )
+    fit_percentage: Mapped[float] = mapped_column(
+        Float,
+        default=0.0,
+        nullable=False,
+    )
+    transition_delta: Mapped[float] = mapped_column(
+        Float,
+        default=0.0,
+        nullable=False,
+    )
+    difficulty_category: Mapped[str] = mapped_column(
+        String(50),
+        default="Moderate Bridge",
+        nullable=False,
+    )
+    status: Mapped[str] = mapped_column(
+        String(50),
+        default="active",  # active, paused, completed
+        nullable=False,
+    )
+    blueprint_json: Mapped[Optional[str]] = mapped_column(
+        Text,
+        nullable=True,
+    )
+    progress_percentage: Mapped[float] = mapped_column(
+        Float,
+        default=0.0,
+        nullable=False,
+    )
+    academic_evidence_json: Mapped[Optional[str]] = mapped_column(
+        Text,
+        nullable=True,
+    )
+    scoring_methodology: Mapped[Optional[str]] = mapped_column(
+        String(100),
+        default="BGE-Small v1.5 + Node2Vec Graph v2.1",
+        nullable=True,
+    )
+    transferable_skills_json: Mapped[Optional[str]] = mapped_column(
+        Text,
+        nullable=True,
+    )
+    missing_skills_json: Mapped[Optional[str]] = mapped_column(
+        Text,
+        nullable=True,
+    )
+
+    # Relationship
+    user: Mapped["User"] = relationship("User")
+
+

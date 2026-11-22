@@ -1,0 +1,48 @@
+{
+  "id": "harsh72877287/job_resume_fit",
+  "author": "harsh72877287",
+  "sha": "87d05ec634e760c1625b03aa946775e71d3fb4bd",
+  "created_at": "2026-10-10 18:43:32+00:00",
+  "last_modified": "2026-10-10 18:43:32+00:00",
+  "private": false,
+  "gated": false,
+  "tags": [
+    "task_categories:text-classification",
+    "task_categories:zero-shot-classification",
+    "language:en",
+    "license:other",
+    "size_categories:1K<n<10K",
+    "format:csv",
+    "modality:tabular",
+    "modality:text",
+    "library:datasets",
+    "library:pandas",
+    "library:polars",
+    "library:mlcroissant",
+    "region:us",
+    "resume",
+    "job-matching",
+    "skill-extraction"
+  ],
+  "card_data": {
+    "annotations_creators": [],
+    "language_creators": [],
+    "language": [
+      "en"
+    ],
+    "license": "other",
+    "size_categories": [
+      "1K<n<10K"
+    ],
+    "task_categories": [
+      "text-classification",
+      "zero-shot-classification"
+    ],
+    "pretty_name": "Resume-Job Fit Dataset",
+    "tags": [
+      "resume",
+      "job-matching",
+      "skill-extraction"
+    ]
+  }
+}

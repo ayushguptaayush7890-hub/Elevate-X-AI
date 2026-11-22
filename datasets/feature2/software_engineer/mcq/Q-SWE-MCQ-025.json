@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-SWE-MCQ-025",
+  "role_id": "software_engineer",
+  "skill_id": "SWE-SKL-03",
+  "skill_name": "Concurrency, Multithreading & Memory Management",
+  "subtopic": "Thread Synchronization, Mutexes and Semaphores",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "What is the difference between a binary semaphore and a reentrant mutex?",
+  "options": [
+    {
+      "id": "A",
+      "text": "A mutex has ownership semantics and can only be unlocked by the thread that locked it; a semaphore can be signaled by any thread"
+    },
+    {
+      "id": "B",
+      "text": "Semaphores cannot be used across processes"
+    },
+    {
+      "id": "C",
+      "text": "Mutexes permit arbitrary thread counts simultaneously"
+    },
+    {
+      "id": "D",
+      "text": "Binary semaphores are implemented exclusively in user space"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "Mutexes embody ownership: only the acquiring thread may release the lock. Semaphores are signaling mechanisms without ownership, allowing thread A to signal thread B.",
+  "reference_solution": "Correct Choice: A. Rationale: Mutexes embody ownership: only the acquiring thread may release the lock. Semaphores are signaling mechanisms without ownership, allowing thread A to signal thread B.",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

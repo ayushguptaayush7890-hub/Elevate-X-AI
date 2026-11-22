@@ -1,0 +1,56 @@
+{
+  "question_id": "Q-DAN-MCQ-021",
+  "role_id": "data_analyst",
+  "skill_id": "DAN-SKL-01",
+  "skill_name": "Advanced SQL Querying & Relational Joins",
+  "subtopic": "Window Functions (ROW_NUMBER, RANK, DENSE_RANK, NTILE)",
+  "assessment_type": "mcq",
+  "difficulty": "easy",
+  "question_text": "[Advanced SQL Querying & Relational Joins - Q21] If three employees have identical sales of $10,000, what rank values are assigned to them and the subsequent employee by `RANK()` vs `DENSE_RANK()`?",
+  "options": [
+    {
+      "id": "A",
+      "text": "RANK assigns 1, 1, 1, 4; DENSE_RANK assigns 1, 1, 1, 2"
+    },
+    {
+      "id": "B",
+      "text": "RANK assigns 1, 2, 3, 4; DENSE_RANK assigns 1, 1, 1, 1"
+    },
+    {
+      "id": "C",
+      "text": "Both functions assign 1, 2, 3, 4"
+    },
+    {
+      "id": "D",
+      "text": "RANK assigns 1, 1, 1, 2; DENSE_RANK assigns 1, 1, 1, 4"
+    }
+  ],
+  "correct_answer": "A",
+  "answer_explanation": "RANK skips positions after ties (1, 1, 1, 4), preserving the absolute rank count. DENSE_RANK does not skip positions (1, 1, 1, 2).",
+  "reference_solution": "Correct Choice: A. Rationale: RANK skips positions after ties (1, 1, 1, 4), preserving the absolute rank count. DENSE_RANK does not skip positions (1, 1, 1, 2).",
+  "coding_language": null,
+  "sample_input": null,
+  "expected_output": null,
+  "visible_test_cases": null,
+  "hidden_test_cases": null,
+  "SQL_schema": null,
+  "sample_database": null,
+  "expected_SQL_result": null,
+  "evaluation_rubric": {
+    "criteria": [
+      {
+        "name": "Correctness",
+        "weight": 1.0,
+        "description": "Selects the exact correct technical option."
+      }
+    ],
+    "max_score": 2.0
+  },
+  "estimated_time": 3,
+  "marks": 2,
+  "source_type": "curated_benchmark",
+  "source_url": "https://elevatex.ai/assessments/benchmarks",
+  "license": "CC-BY-SA-4.0",
+  "content_version": "1.0.0",
+  "review_status": "approved"
+}

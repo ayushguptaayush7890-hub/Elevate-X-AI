@@ -1,0 +1,18 @@
+{
+  "dataset": "Verified Official Learning Resource Catalog",
+  "processed_at": "2026-11-21T16:44:06.444136",
+  "total_verified_resources": 14,
+  "total_indexed_skills": 55,
+  "providers": [
+    "AWS Training & Certification",
+    "Docker Inc.",
+    "PyTorch / Linux Foundation",
+    "Scikit-learn Developers",
+    "freeCodeCamp",
+    "Microsoft Learn",
+    "Tiangolo / FastAPI",
+    "Python Software Foundation",
+    "Google Cloud Skills Boost",
+    "Meta Open Source / React Core Team"
+  ]
+}

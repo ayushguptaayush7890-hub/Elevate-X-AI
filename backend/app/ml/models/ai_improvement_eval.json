@@ -1,0 +1,63 @@
+{
+  "benchmark": "Feature 3 AI Improvement Multi-Profile Evaluation",
+  "model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit (Apple Silicon Metal)",
+  "profiles_evaluated": 4,
+  "aggregate_metrics": {
+    "output_validity_rate": 1.0,
+    "total_unsupported_claims": 0,
+    "hallucination_rate": 0.0,
+    "skill_preservation_rate": 1.0,
+    "mean_latency_ms": 2787.4
+  },
+  "case_results": [
+    {
+      "case_id": "eval-cand-1-fullstack",
+      "candidate": "Aarav Sharma",
+      "role": "Full Stack Software Developer",
+      "suggestions_count": 3,
+      "output_validity_rate": 1.0,
+      "unsupported_claims_count": 0,
+      "skill_preservation_rate": 1.0,
+      "company_preservation": true,
+      "targeted_questions_count": 2,
+      "latency_ms": 7972.9
+    },
+    {
+      "case_id": "eval-cand-2-aiml",
+      "candidate": "Priya Patel",
+      "role": "AI / ML Research Engineer",
+      "suggestions_count": 3,
+      "output_validity_rate": 1.0,
+      "unsupported_claims_count": 0,
+      "skill_preservation_rate": 1.0,
+      "company_preservation": true,
+      "targeted_questions_count": 2,
+      "latency_ms": 1166.8
+    },
+    {
+      "case_id": "eval-cand-3-exec-lead",
+      "candidate": "Rajesh Verma",
+      "role": "Engineering Director / VP",
+      "suggestions_count": 2,
+      "output_validity_rate": 1.0,
+      "unsupported_claims_count": 0,
+      "skill_preservation_rate": 1.0,
+      "company_preservation": true,
+      "targeted_questions_count": 1,
+      "latency_ms": 831.9
+    },
+    {
+      "case_id": "eval-cand-4-backend",
+      "candidate": "Vikram Sen",
+      "role": "Senior Backend Platform Engineer",
+      "suggestions_count": 3,
+      "output_validity_rate": 1.0,
+      "unsupported_claims_count": 0,
+      "skill_preservation_rate": 1.0,
+      "company_preservation": true,
+      "targeted_questions_count": 2,
+      "latency_ms": 1178.2
+    }
+  ],
+  "timestamp": "2026-11-21T11:38:59Z"
+}
